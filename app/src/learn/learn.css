@@ -67,12 +67,9 @@
 .ln-avy-w { display: flex; flex-direction: column; align-items: flex-start; padding: 4px 10px; border-radius: 10px; border: 1px solid #ede9fe; background: #faf5ff; cursor: pointer; }
 .ln-avy-w b { font-family: 'Noto Sans Devanagari', serif; font-size: 1.05rem; color: #1e2638; }
 .ln-avy-w small { font-size: .72rem; color: #526079; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; }
-.ln-source { margin-top: 18px; font-size: .78rem; color: #64748b; }
 .ln-sub td, .ln-sub th { font-size: .86rem; }
 .ln-sub tr.ln-sub-first td, .ln-sub tr.ln-sub-first th { border-top: 2px solid #f3e8ff; }
 .ln-small { font-size: .82rem !important; color: #6b21a8; }
-.ln-claim { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 14px; padding: 12px 16px; margin: 10px 0; color: #14532d; }
-.ln-claim ol { margin: 6px 0 6px 20px; display: flex; flex-direction: column; gap: 4px; }
 .ln-hu { margin: 8px 0; }
 .ln-hu td { font-size: .82rem; }
 .ln-open { background: #fff7ed; border: 1px dashed #fb923c; border-radius: 10px; padding: 6px 10px; list-style-position: inside; }

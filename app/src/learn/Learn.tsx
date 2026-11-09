@@ -37,7 +37,6 @@ const Learn: React.FC = () => {
         ))}
       </div>
       {ch === "shabda" ? <Shabda /> : ch === "dhatu" ? <Dhatu /> : <Avyaya />}
-      <p className="ln-source">आधारः · Based on Rajeswararao, <i>PhD thesis</i>: ch. 4.7 (सुबन्तदिशा), tables 4.7.2.2.1 (case tables of 20 languages), 4.7.2.2.3–4, ch. 4.8.6–4.8.11 (तिङन्तदिशा, conjugation tables) and ch. 5 (उपसंहारः); Pāṇini, <i>Aṣṭādhyāyī</i>.</p>
     </div>
   );
 };
@@ -189,15 +188,6 @@ const Shabda: React.FC = () => {
         <p>The thesis compares Sanskrit's case analysis with systems in about twenty languages. It argues that the kāraka categories can be used to analyze noun relations in the languages it studies. Languages may mark a relation with an ending, a separate word, or word order; the categories and how they are grammaticalized do not always line up one-to-one.</p>
         <div className="ln-table-wrap"><table className="ln-table ln-world"><thead><tr><th>Language</th><th>How it marks the 8 relations</th><th>Markers</th></tr></thead>
           <tbody>{WORLD.map(([l, h, m]) => <tr key={l}><th>{l}</th><td>{h}</td><td>{m}</td></tr>)}</tbody></table></div>
-        <div className="ln-claim">
-          <b>The claim, stated precisely.</b> In this analysis, a noun-stem use is treated as one of three things:
-          <ol>
-            <li>one of its <b>24 forms</b>, carrying one of the 8 relations with its Pāṇinian finer meanings;</li>
-            <li>an <b>avyaya</b> made from it (ततः, तत्र, बहुशः, राजवत्…), whose meaning Pāṇini states through those same vibhakti meanings; or</li>
-            <li>a <b>new stem</b> (समास, तद्धित, नामधातु) with its own 24.</li>
-          </ol>
-          This is the framework the thesis uses to compare noun relations across languages.
-        </div>
         <p>The table below shows it live. Choose a word and some languages: each row is one relation, and each language fills it in its own way.</p>
         <div className="ln-demo-bar">
           <label>शब्दः <select value={wid} onChange={e => setWid(e.target.value)}>{nouns.map(x => <option key={x.id} value={x.id}>{headForm(x)} · {wordMeaning(x, "en").split(";")[0]}</option>)}</select></label>
