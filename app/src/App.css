@@ -1,0 +1,174 @@
+/* ═══════════════════════════════════════════════════════════════
+   App.css — page frame (same look as Akṣarābhyāsaḥ) + quiz, sentence
+   builder, flag dialog. Colours/animation live in theme.css.
+   ═══════════════════════════════════════════════════════════════ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', 'Noto Sans Devanagari', 'Noto Sans Telugu', sans-serif; color: #1e2638; min-height: 100vh; }
+button, input, select, textarea { font-family: inherit; }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #6366f1; outline-offset: 2px; }
+
+.app-root { max-width: 1100px; margin: 0 auto; padding: 40px 16px 104px; }
+
+/* ── header ── */
+.app-header { margin-bottom: 20px; }
+.app-header-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.app-header h1 {
+  font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: 1.65rem; font-weight: 700; line-height: 1.2; margin: 0;
+  background: linear-gradient(135deg, #f97316, #ec4899, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.app-header h1 small { display: block; font-family: 'Poppins', sans-serif; font-size: .78rem; letter-spacing: .3px; -webkit-text-fill-color: #2a0d9c; margin-top: 2px; }
+.app-menu-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 8px 14px; border: 1px solid rgba(15,23,42,.16); border-radius: 50px; background: rgba(255,255,255,.82); color: #303c5a; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.app-menu-toggle span { font-size: 1.1rem; line-height: 1; }
+.app-menu-toggle:hover { border-color: #818cf8; color: #1e2638; }
+.app-header-panel { padding-top: 10px; text-align: center; }
+.app-header p { color: #42527b; font-size: 1rem; }
+.view-switch { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 14px; }
+.view-btn {
+  display: inline-flex; flex-direction: column; align-items: center; line-height: 1.2;
+  font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: .95rem; font-weight: 600;
+  border-radius: 50px; padding: 9px 22px; cursor: pointer;
+}
+.view-btn small { font-family: 'Poppins', sans-serif; font-size: .7rem; font-weight: 500; }
+
+/* ── footer ── */
+.app-footer { margin-top: 40px; padding: 18px 0 6px; border-top: 1px solid rgba(15,23,42,0.12); display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.app-footer span { font-size: .85rem; color: #4b5d8b; align-self: center; }
+.app-site-footer { position: fixed; z-index: 40; inset-inline: 0; bottom: 0; padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); border-top: 1px solid rgba(15,23,42,.14); background: rgba(255,255,255,.97); box-shadow: 0 -4px 18px rgba(30,41,59,.1); }
+.app-site-footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.app-site-footer .app-credit { color: #334155; font-size: .82rem; font-weight: 600; line-height: 1.25; }
+.app-footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; }
+.app-footer-links a { min-height: 40px; display: inline-flex; align-items: center; padding: 4px 8px; border-radius: 8px; color: #3730a3; font-size: .88rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.app-footer-links a:hover { color: #7c2d12; background: rgba(255,255,255,.65); }
+.app-footer-links a:focus-visible { outline: 3px solid #6366f1; outline-offset: 2px; }
+.app-footer button { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: .85rem; color: #42527b; background: rgba(255,255,255,.7); border: 1px solid rgba(15,23,42,0.16); border-radius: 50px; padding: 6px 14px; cursor: pointer; }
+.app-footer button:hover { color: #1e2638; border-color: #818cf8; }
+
+/* ── meaning language picker ── */
+.lang-pick { display: inline-flex; align-items: center; gap: 8px; font-size: .8rem; color: #42527b; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.lang-pick select { font-size: .9rem; padding: 5px 10px; border-radius: 50px; border: 1px solid rgba(15,23,42,0.2); background: rgba(255,255,255,.85); color: #1e2638; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+
+/* ═══════════ quiz ═══════════ */
+.qz, .sb { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.qz-empty { text-align: center; color: #42527b; padding: 40px; }
+.qz-card {
+  position: relative; width: 100%; max-width: 680px; text-align: center; padding: 22px 18px 16px; border-radius: 22px;
+  background: rgba(255,255,255,0.78); border: 1px solid rgba(15,23,42,0.12); transition: background .25s, border-color .25s;
+}
+.qz-right { border-color: #4ade80; background: linear-gradient(180deg, rgba(220,252,231,.9), rgba(255,255,255,.85)); }
+.qz-wrong { border-color: #f87171; background: linear-gradient(180deg, rgba(254,226,226,.9), rgba(255,255,255,.85)); }
+.qz-prompt { font-family: 'Noto Sans Devanagari', serif; font-size: 3.4rem; line-height: 1.25; font-weight: 700; color: #1e2638; }
+.qz-sentence { font-family: 'Noto Sans Devanagari', serif; font-size: 2rem; line-height: 1.6; color: #1e2638; }
+.qz-roman { font-style: italic; color: #0d299c; font-size: 1.05rem; margin-top: 2px; }
+.qz-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 10px; }
+.qz-tags span {
+  font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: .88rem; padding: 3px 12px; border-radius: 20px; font-weight: 600;
+  background: color-mix(in srgb, var(--rc) 14%, #ffffff); color: color-mix(in srgb, var(--rc) 55%, #1e293b); border: 1px solid color-mix(in srgb, var(--rc) 35%, transparent);
+}
+.qz-clue { margin-top: 8px; color: #303c5a; font-size: .95rem; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.qz-ask { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 10px; color: #42527b; font-size: .9rem; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.ab-round { position: absolute; top: 10px; right: 14px; font-size: .75rem; color: #42527b; }
+.ab-speak { font-size: 1.15rem; background: rgba(255,255,255,0.8); border: 1px solid rgba(15,23,42,0.2); border-radius: 50%; width: 40px; height: 40px; cursor: pointer; flex: none; }
+.ab-blank { display: inline-block; min-width: 70px; margin: 0 6px; padding: 0 10px; border-bottom: 3px dashed var(--rc); color: #7f460a; }
+.ab-timer { width: 100%; max-width: 680px; height: 6px; border-radius: 6px; background: rgba(255,255,255,0.74); overflow: hidden; }
+.ab-timer div { height: 100%; background: #22d3ee; transition: width .2s linear; }
+.ab-timer-low div { background: #f87171; }
+
+.qz-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; max-width: 680px; }
+.qz-opt {
+  min-height: 64px; padding: 12px 14px; border-radius: 16px; cursor: pointer; font-size: 1.1rem; color: #1e2638;
+  font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; line-height: 1.35;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--rc) 16%, #ffffff), rgba(255,255,255,0.92));
+  border: 2px solid color-mix(in srgb, var(--rc) 45%, white); box-shadow: 0 5px 0 color-mix(in srgb, var(--rc) 25%, #ffffff);
+  transition: transform .1s, box-shadow .1s;
+}
+.qz-opt:hover:not(:disabled) { transform: translateY(-2px); }
+.qz-opt:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 2px 0 color-mix(in srgb, var(--rc) 25%, #ffffff); }
+.qz-deva { font-family: 'Noto Sans Devanagari', serif; font-size: 1.6rem; }
+.qz-opt-right { background: #dcfce7 !important; border-color: #22c55e !important; box-shadow: 0 5px 0 #86efac !important; }
+.qz-opt-wrong { background: #fee2e2 !important; border-color: #ef4444 !important; box-shadow: 0 5px 0 #fca5a5 !important; animation: abShake .4s; }
+.qz-opt-dim { opacity: .45; }
+.qz-opt:disabled { cursor: default; }
+@keyframes abShake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+.qz-foot { width: 100%; max-width: 680px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; min-height: 48px; }
+.qz-foot-r { display: flex; gap: 8px; align-items: center; margin-left: auto; }
+.qz-foot button:not(.fl-btn) { font-weight: 600; font-size: .92rem; cursor: pointer; color: #1e2638; background: rgba(255,255,255,0.8); border: 1px solid rgba(15,23,42,0.2); border-radius: 50px; padding: 9px 18px; }
+.qz-hint small { opacity: .65; }
+.qz-hint:disabled { opacity: .45; cursor: default; }
+.qz-feedback { font-weight: 700; font-size: 1.05rem; display: flex; flex-direction: column; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.qz-feedback.ok { color: #15803d; } .qz-feedback.no { color: #b91c1c; }
+.qz-feedback small { font-weight: 500; color: #42527b; font-size: .85rem; }
+
+/* ═══════════ sentence builder ═══════════ */
+.sb-en { font-size: 1.4rem; font-weight: 600; color: #1e2638; }
+.sb-line {
+  width: 100%; max-width: 680px; min-height: 76px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;
+  padding: 12px; border-radius: 18px; border: 2px dashed rgba(15,23,42,0.22); background: rgba(255,255,255,.55);
+}
+.sb-ok { border-style: solid; border-color: #4ade80; background: rgba(220,252,231,.7); }
+.ab-slot-wrong { border-color: #f87171; background: rgba(248,113,113,.12); animation: abShake .4s; }
+.sb-placeholder { color: #94a3b8; font-size: 1.4rem; }
+.sb-tray { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 680px; min-height: 70px; padding: 12px; border-radius: 18px; background: rgba(255,255,255,0.6); width: 100%; }
+.sb-tile {
+  font-family: 'Noto Sans Devanagari', serif; font-size: 1.6rem; padding: 8px 18px; border-radius: 14px; cursor: pointer; color: #1e2638;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--rc) 40%, #ffffff), rgba(255,255,255,0.9));
+  border: 2px solid color-mix(in srgb, var(--rc) 70%, white 10%); box-shadow: 0 5px 0 color-mix(in srgb, var(--rc) 30%, #ffffff);
+  animation: jyIn .25s ease;
+}
+.sb-in { box-shadow: none; background: #fff; }
+.sb-answer { font-family: 'Noto Sans Devanagari', serif; font-size: 1.3rem; }
+
+/* ═══════════ memory: words are longer than letters ═══════════ */
+.mm-word { font-size: 1.5rem !important; padding: 4px; text-align: center; line-height: 1.25; word-break: break-word; }
+.mm-text { font-size: .95rem !important; padding: 6px; text-align: center; line-height: 1.25; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif !important; }
+
+/* ═══════════ flags ═══════════ */
+.fl-btn {
+  background: none; border: none; cursor: pointer; color: #a8b0c0; font-size: .95rem; padding: 2px 4px; margin-left: 4px; border-radius: 8px; line-height: 1; vertical-align: middle;
+}
+.fl-btn:hover { color: #e11d48; background: rgba(225,29,72,.08); }
+.fl-on { color: #e11d48; }
+.fl-wide { font-size: .82rem; color: #64748b; border: 1px solid rgba(15,23,42,0.14); padding: 7px 12px; border-radius: 50px; background: rgba(255,255,255,.7); font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.fl-bg { position: fixed; inset: 0; z-index: 90; background: rgba(30,41,59,.35); backdrop-filter: blur(3px); display: grid; place-items: center; padding: 16px; }
+.fl-box { width: min(460px, 100%); background: #fff; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 20px 60px rgba(30,41,59,.25); animation: jyIn .2s ease; text-align: left; }
+.fl-box h3 { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; color: #be123c; font-size: 1.15rem; }
+.fl-where { font-size: .85rem; color: #42527b; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.fl-value { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; font-size: 1.4rem; color: #1e2638; }
+.fl-box label { display: flex; flex-direction: column; gap: 4px; font-size: .85rem; color: #42527b; }
+.fl-box label small { color: #94a3b8; }
+.fl-box select, .fl-box input, .fl-box textarea { font-size: 1rem; padding: 8px 10px; border: 1px solid rgba(15,23,42,0.2); border-radius: 10px; color: #1e2638; font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Poppins', sans-serif; }
+.fl-btns { display: flex; justify-content: flex-end; gap: 8px; }
+.fl-btns button { font-weight: 600; cursor: pointer; border-radius: 50px; padding: 9px 18px; border: 1px solid rgba(15,23,42,0.2); background: #fff; color: #1e2638; }
+.fl-toast { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 95; background: #1e293b; color: #fff; padding: 9px 18px; border-radius: 50px; font-size: .9rem; animation: jyIn .2s ease; }
+
+@media (max-width: 640px) {
+  .app-root { padding: 24px 12px 104px; }
+  .app-header h1 { font-size: 1.45rem; }
+  .view-btn { min-height: 44px; padding: 7px 12px; font-size: .88rem; }
+  .qz-prompt { font-size: 2.6rem; }
+  .qz-sentence { font-size: 1.5rem; }
+  .qz-opts { grid-template-columns: 1fr; gap: 9px; }
+  .qz-opt { min-height: 54px; }
+  .sb-tile { font-size: 1.35rem; padding: 6px 13px; }
+  .mm-word { font-size: 1.15rem !important; }
+  .mm-text { font-size: .8rem !important; }
+}
+.gs-stage > .qz, .gs-stage > .sb, .gs-stage > .mm { box-shadow: none !important; backdrop-filter: none !important; }
+
+/* ✓ correct */
+.rv-pair { display: inline-flex; gap: 0; vertical-align: middle; }
+.ok-btn { background: none; border: none; cursor: pointer; color: #a8b0c0; font-size: .9rem; padding: 2px 4px; margin-left: 4px; border-radius: 8px; line-height: 1; font-weight: 700; }
+.ok-btn:hover { color: #15803d; background: rgba(21,128,61,.08); }
+.ok-on { color: #15803d; background: rgba(34,197,94,.14); }
+.rv-pair .fl-btn { margin-left: 0; }
+
+/* ── learner view: content only. Reviewer mode shows sources, ✓ / ⚑, IDs and notes ── */
+.is-learner .fl-btn, .is-learner .ok-btn, .is-learner .rv-pair, .is-learner .ks-pill, .is-learner .ks-note, .is-learner .ks-id,
+.is-learner .ks-l-ch, .is-learner .ks-flagdot, .is-learner .ks-only, .is-learner .rv-only { display: none !important; }
+.rv-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: .85rem; color: #42527b; cursor: pointer; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+  background: rgba(255,255,255,.7); border: 1px solid rgba(15,23,42,0.16); border-radius: 50px; padding: 6px 14px; }
+
+/* Sanskrit can be shown in any Brahmic script: give every Devanāgarī font stack the other scripts too */
+.qz-prompt, .qz-sentence, .qz-deva, .sb-tile, .ks-form, .ks-l-sa, .ks-head h3, .mm-deva, .ln-deva { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Kannada', 'Noto Sans Malayalam', 'Noto Sans Bengali', 'Noto Sans Oriya', 'Noto Sans Gujarati', 'Poppins', serif; }
+.qz-mark{margin-top:6px;color:var(--accent,#c2410c)}
+.sb-roman{font-style:italic;color:#5b4a8b;font-size:.95rem;margin-top:2px;text-align:center}

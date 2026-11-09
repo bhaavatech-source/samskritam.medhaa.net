@@ -1,0 +1,2284 @@
+{
+ "document_metadata": {
+  "title": "Gold Data for training of Sanskrit Corpus - Sandhi Rules (UPDATED COMPLETE VERSION)",
+  "author": "Dr. B Rajeswara Rao",
+  "institution": "Bhaavajaalam Research Center, Visakhapatnam",
+  "date_updated": "2025-11-08",
+  "version": "2.1 - UPDATED with all expanded examples",
+  "encoding": "UTF-8 with Devanagari",
+  "note": "This is the UPDATED and COMPLETE version with extensive examples section"
+ },
+ "PART_1_INTRODUCTION": {
+  "title": "Introduction",
+  "fundamental_principle": "The entire language or speech is nothing but the sequence of vowels and consonants",
+  "linguistic_sequences": [
+   {
+    "pattern": "V+C",
+    "devanagari": "स्वरः + व्यञ्जनम्"
+   },
+   {
+    "pattern": "V+V",
+    "devanagari": "स्वरः + स्वरः"
+   },
+   {
+    "pattern": "C+V",
+    "devanagari": "व्यञ्जनम् + स्वरः"
+   },
+   {
+    "pattern": "V+C+V",
+    "devanagari": "स्वरः + व्यञ्जनम् + स्वरः"
+   },
+   {
+    "pattern": "C+V+C",
+    "devanagari": "व्यञ्जनम् + स्वरः + व्यञ्जनम्"
+   },
+   {
+    "pattern": "C+C+V",
+    "devanagari": "व्यञ्जनम् + व्यञ्जनम् + स्वरः"
+   },
+   {
+    "pattern": "V+C+C",
+    "devanagari": "स्वरः + व्यञ्जनम् + व्यञ्जनम्"
+   },
+   {
+    "pattern": "V+C+C+C",
+    "devanagari": "स्वरः + व्यञ्जनम् + व्यञ्जनम् + व्यञ्जनम्"
+   },
+   {
+    "pattern": "V+C+C+C+C",
+    "devanagari": "स्वरः + व्यञ्जनम् + व्यञ्जनम् + व्यञ्जनम् + व्यञ्जनम्"
+   },
+   {
+    "pattern": "C+C+C+V",
+    "devanagari": "व्यञ्जनम् + व्यञ्जनम् + व्यञ्जनम् स्वरः and so on"
+   }
+  ],
+  "key_facts": [
+   "There will not be any ending or limitation to this sequence",
+   "Native speakers give meaningful pauses to sequence flow, Sometimes.",
+   "Sometimes, they Continuously speak without any break, especially when they speack fast",
+   "However, local speakers understand this clearly. But others face many problems.",
+   "At the sametime, language gets changed in order to place and time.",
+   "Rishis understood the information that is coded in the form for squence of vowels and consonants.",
+   "So they artificially created धातुs, प्रातिपदिकs, उपसर्गs, etc. to break sequences logically",
+   "Sometimes, it is only imagination, those forms not used in the society. Ex: लट्, लिट् etc.",
+   "With the hlep of this imagination, we can understand the intention and information of the speaker accurately.",
+   "After breaking down the sequences of vowels and consonants, it becomes a problem for laymen to understand where and how to join",
+   "With help of imagination, we can break the sequences of vowels and consonants meaningfully.",
+   "So, to learn the rules of breaking the sequences, sometimes, it is important to know the imagination as well.",
+   "व्याकरण and प्रातिशाख्य deal with this imagination"
+  ]
+ },
+ "PART_2_DEFINITION_OF_SANDHI": {
+  "title": "Definition of Sandhi",
+  "definition_simple": "Sandhi means junction or connection or combination",
+  "definition_detailed": "When two or more entities meet at a single point, that point can generally be referred to as a 'Sandhi'",
+  "linguistic_context": "In the context of व्याकरण, those two entities are वर्णs (letters)",
+  "important_note": "The term 'Sandhi' is used only when two or more वर्णs join or confront 'the results', rather than referring to individual वर्णs",
+  "principle": "In all sandhis, the first part's last letter and the second part's first letter will be involved",
+  "definition_sloka": "विशिष्टास्तु स्वराः यत्र व्यञ्जनं वापि योगतः। सन्धीयते पदे यस्मात्तस्मात् सन्धिः प्रकीर्तितः।। इति।"
+ },
+ "PART_3_SANDHI_RESULT_TYPES": {
+  "title": "Two Main Types of Sandhi Results",
+  "TYPE_1_AGAMA": {
+   "name": "आगमसन्धि",
+   "english": "Agama Sandhi (Addition)",
+   "definition": "When two or more वर्णs join, a new वर्ण is added to or pronounced along with one of the existing वर्णs",
+   "example": {
+    "step_1": "सुगण्",
+    "step_2": "ईशः",
+    "combination": "सुगण् + ईशः",
+    "intermediate": "सुगण् + ण् + ईशः",
+    "result": "सुगण्णीशः",
+    "explanation": "The णकार is added before the ईकार"
+   }
+  },
+  "TYPE_2_ADESHA": {
+   "name": "आदेशसन्धि",
+   "english": "Adesha Sandhi (Substitution)",
+   "definition": "When two or more वर्णs join, a new वर्ण is pronounced in the place of the existing वर्ण",
+   "example": {
+    "before": "चित् + मय",
+    "after": "चिन्मयम्",
+    "explanation": "नकार replaces तकार"
+   },
+   "SUBTYPE_1": {
+    "name": "एकादेशसन्धि",
+    "definition": "One वर्ण will be replaced in place of two वर्णs",
+    "example": {
+     "before": "इह + आस्ते",
+     "after": "इहास्ते",
+     "explanation": "One वर्ण (आकार) replaces the place of अकार and आकार"
+    }
+   },
+   "SUBTYPE_2": {
+    "name": "लोपसन्धि",
+    "definition": "One वर्ण will be deleted or omitted or elided",
+    "example": {
+     "before": "रामाः + गच्छन्ति",
+     "after": "रामा गच्छन्ति",
+     "explanation": "One विसर्ग got omitted, and the other गकार remains the same"
+    }
+   }
+  },
+  "IMPORTANT_NOTE": "Continuous articulation is NOT sandhi. There must be one of the mentioned actions. Therefore, 'वनम् अत्र' has no sandhi."
+ },
+ "PART_4_VARNA_CLASSIFICATION": {
+  "title": "Classification of Varnas",
+  "definition": "The air released from oral parts of human body is shaped into sounds. The smallest sound particle capable of changing meaning is called वर्ण",
+  "two_main_types": [
+   {
+    "name": "स्वरs",
+    "english": "Vowels",
+    "definition": "Sound particles not obstructed by any part of mouth",
+    "list": [
+     "अ",
+     "आ",
+     "इ",
+     "ई",
+     "उ",
+     "ऊ",
+     "ऋ",
+     "ऌ",
+     "ए",
+     "ऐ",
+     "ओ",
+     "औ"
+    ],
+    "count": 10,
+    "note": "Long vowels (दीर्घ) and very long vowels (प्लुत) also included"
+   },
+   {
+    "name": "व्यञ्जनs",
+    "english": "Consonants",
+    "definition": "Sound particles hit or obstructed by any part of mouth",
+    "organized_by_place": [
+     {
+      "place": "Velar (कु)",
+      "consonants": [
+       "क",
+       "ख",
+       "ग",
+       "घ",
+       "ङ"
+      ]
+     },
+     {
+      "place": "Palatal (चु)",
+      "consonants": [
+       "च",
+       "छ",
+       "ज",
+       "झ",
+       "ञ"
+      ]
+     },
+     {
+      "place": "Retroflex (टु)",
+      "consonants": [
+       "ट",
+       "ठ",
+       "ड",
+       "ढ",
+       "ण"
+      ]
+     },
+     {
+      "place": "Dental (तु)",
+      "consonants": [
+       "त",
+       "थ",
+       "द",
+       "ध",
+       "न"
+      ]
+     },
+     {
+      "place": "Labial (पु)",
+      "consonants": [
+       "प",
+       "फ",
+       "ब",
+       "भ",
+       "म"
+      ]
+     },
+     {
+      "place": "Semi-vowels (अन्तस्थाः)",
+      "consonants": [
+       "य",
+       "र",
+       "ल",
+       "व"
+      ]
+     },
+     {
+      "place": "Sibilants and Aspirate (ऊष्माणः)",
+      "consonants": [
+       "श",
+       "ष",
+       "स",
+       "ह"
+      ]
+     }
+    ],
+    "count": 33
+   },
+   {
+    "name": "उभयाक्षरs / अयोगवाहs",
+    "english": "Neither vowel nor consonant proper",
+    "definition": "Sometimes not changing meaning, still referred to as 'वर्णs' for grammatical purposes",
+    "list": [
+     "विसर्ग",
+     "अनुस्वार",
+     "यम",
+     "जिह्वाममूलीय",
+     "उपध्मानीय"
+    ]
+   }
+  ],
+  "माहेश्वरसूत्रs": {
+   "title": "14 Coding Sutras",
+   "purpose": "All स्वर and व्यञ्जन technically coded and listed for maintaining brevity (लाघवम्)",
+   "sutras": [
+    {
+     "no": 1,
+     "text": "अइउण्",
+     "meaning": "Vowels a, i, u + anchor न्"
+    },
+    {
+     "no": 2,
+     "text": "ऋऌक्",
+     "meaning": "Vowels ri, li + anchor क्"
+    },
+    {
+     "no": 3,
+     "text": "एओङ्",
+     "meaning": "Vowels e, o + anchor ङ्"
+    },
+    {
+     "no": 4,
+     "text": "ऐऔच्",
+     "meaning": "Vowels ai, au + anchor च्"
+    },
+    {
+     "no": 5,
+     "text": "हयवरट्",
+     "meaning": "h, y, v, r + anchor ट्"
+    },
+    {
+     "no": 6,
+     "text": "लण्",
+     "meaning": "l + anchor ण्"
+    },
+    {
+     "no": 7,
+     "text": "ञमङणनम्",
+     "meaning": "Nasals"
+    },
+    {
+     "no": 8,
+     "text": "झभञ्",
+     "meaning": "Palatal affricates + anchor ञ्"
+    },
+    {
+     "no": 9,
+     "text": "घढधष्",
+     "meaning": "Voiced aspirates + anchor ष्"
+    },
+    {
+     "no": 10,
+     "text": "जबगडदश्",
+     "meaning": "Voiced stops + anchor श्"
+    },
+    {
+     "no": 11,
+     "text": "खफछठथचटतव्",
+     "meaning": "Voiceless stops + anchor व्"
+    },
+    {
+     "no": 12,
+     "text": "कपय्",
+     "meaning": "k, p, y + anchor य्"
+    },
+    {
+     "no": 13,
+     "text": "शषसर्",
+     "meaning": "Sibilants: sh, ṣ, s + anchor र्"
+    },
+    {
+     "no": 14,
+     "text": "हल्",
+     "meaning": "All consonants"
+    }
+   ],
+   "mechanism": "Last letter of each sutra acts as anchor to connect with first letter of next sutra",
+   "example_अच्": {
+    "term": "अच्",
+    "composition": "अ, इ, उ, ऋ, ऌ, ए, ओ, ऐ, औ",
+    "note": "Long vowels (दीर्घ) and very long vowels (प्लुत) also included"
+   }
+  }
+ },
+ "PART_5_INTERNAL_VS_EXTERNAL_SANDHI": {
+  "title": "Internal vs External Sandhi",
+  "three_analysis_layers": [
+   {
+    "layer": 1,
+    "name": "प्रथमः स्तरः",
+    "english": "First Layer",
+    "type": "बहिरङ्गसन्धि (External Sandhi)",
+    "example": "रामः रावणं जघान",
+    "note": "Complete sentence with word boundaries"
+   },
+   {
+    "layer": 2,
+    "name": "द्वितीयः स्तरः",
+    "english": "Second Layer",
+    "type": "Internal Sandhi",
+    "example": "राम [सु] रावण [अम्] हन [लिट्]",
+    "description": "Breaking into stems (प्रातिपदिक) and suffixes (सुप्/तिङ्)",
+    "note": "Internal sandhis MANDATORY at this level"
+   },
+   {
+    "layer": 3,
+    "name": "तृतीयः स्तरः",
+    "english": "Third Layer",
+    "type": "Internal Sandhi",
+    "example": "रम् [घञ् स्], रु [अन अम्], हन् [तिप्]",
+    "description": "Breaking into ultimate roots (धातु) and derivation markers",
+    "note": "Internal sandhis MANDATORY at this level"
+   }
+  ],
+  "internal_sandhi_detailed": {
+   "definition": "Sandhi within a पद (word/unit) - occurs in 2nd and 3rd layers",
+   "mandatory": "Generally mandatory, unless exception",
+   "characteristic": "The पद is the full chunk, so last letter is NOT पदान्त",
+   "examples": [
+    {
+     "first": "नै",
+     "second": "अक",
+     "rule": "आयादेश",
+     "result": "नायकः",
+     "explanation": "पद is full chunk 'नायकः', so last letter of 'नै' is not पदान्त"
+    },
+    {
+     "first": "भो",
+     "second": "अति",
+     "rule": "अवादेश",
+     "result": "भवति",
+     "explanation": "पद is full chunk 'भवति', so last letter of 'भो' is not पदान्त"
+    },
+    {
+     "first": "दैत्य",
+     "second": "अरि",
+     "result": "दैत्यारिः",
+     "explanation": "पद is full chunk 'दैत्यारि', so last letter of 'दैत्य' is not पदान्त"
+    }
+   ]
+  },
+  "external_sandhi_detailed": {
+   "definition": "Sandhi between different पदs - occurs in 1st layer",
+   "mandatory": "Optional",
+   "condition": "If speed speech exists, all sandhis should be formed",
+   "characteristic": "वर्णs involved typically part of पद-suffix (सुप् or तिङ्) or related",
+   "examples": [
+    {
+     "first": "अस्ति",
+     "second": "अत्र",
+     "without_sandhi": "अस्ति अत्र",
+     "with_sandhi": "अस्यत्र",
+     "explanation": "वर्ण 'इ' is part of suffix तिङ्, so external and optional"
+    },
+    {
+     "first": "अत्र",
+     "second": "अस्ति",
+     "without_sandhi": "अत्र अस्ति",
+     "with_sandhi": "अत्रास्ति",
+     "explanation": "वर्ण 'अ' closely related to सुप्, so external and optional"
+    }
+   ]
+  },
+  "critical_notes": [
+   "All internal sandhis are generally mandatory, unless there is an exception",
+   "All external sandhis are optional",
+   "If three वर्णs are involved, the sandhi is external only"
+  ]
+ },
+ "PART_6_IMPORTANT_QUESTIONS": {
+  "title": "Three Important Questions for Sandhi Analysis",
+  "questions": [
+   {
+    "question": "कः भवति?",
+    "english": "What becomes?",
+    "answer": "Which transformation takes place"
+   },
+   {
+    "question": "कदा भवति?",
+    "english": "When does it become?",
+    "answer": "Under what conditions"
+   },
+   {
+    "question": "कस्य भवति?",
+    "english": "For whom does it become?",
+    "answer": "Which वर्ण is affected"
+   }
+  ],
+  "note": "Understanding these three questions helps comprehend all sandhis easily"
+ },
+ "PART_7_SVARA_SANDHI_COMPREHENSIVE": {
+  "title": "स्वरसन्धि (Vowel Sandhi) - COMPREHENSIVE",
+  "general_rule": "When two स्वर (vowels) join, they may be joined, replaced, or deleted",
+  "characteristic": "Most स्वरसन्धिs are only आदेशसन्धिs (substitution type)",
+  "prerequisite": "Learning माहेश्वरसूत्रs is essential",
+  "RULE_1_YANADESH": {
+   "name": "यणादेशसन्धि",
+   "definition": "Letters इ, उ, ऋ, ऌ are replaced with य, व, र, ल when followed by a vowel",
+   "formal_rule": "इक् + अच् = यण्",
+   "explanation": "'इ, उ, ऋ, ऌ' called 'इक्', 'य, व, र, ल' called 'यण्'",
+   "internal_examples": [
+    {
+     "first": "दधि",
+     "second": "ऋण",
+     "result": "दध्यृणम्",
+     "replacement": "य"
+    },
+    {
+     "first": "दधि",
+     "second": "ऌकार",
+     "result": "दध्यॢकारः",
+     "replacement": "य"
+    },
+    {
+     "first": "दधि",
+     "second": "ओदन",
+     "result": "दध्योदनः",
+     "replacement": "य"
+    },
+    {
+     "first": "दधि",
+     "second": "ऐक्य",
+     "result": "दध्यैक्यम्",
+     "replacement": "य"
+    },
+    {
+     "first": "दधि",
+     "second": "औषध",
+     "result": "दध्यौषधम्",
+     "replacement": "य"
+    },
+    {
+     "first": "मधु",
+     "second": "ऋण",
+     "result": "मध्वृणम्",
+     "replacement": "व"
+    },
+    {
+     "first": "मधु",
+     "second": "ऌकार",
+     "result": "मध्वॢकारः",
+     "replacement": "व"
+    },
+    {
+     "first": "प्रति",
+     "second": "एकम्",
+     "result": "प्रत्येकम्",
+     "replacement": "य"
+    },
+    {
+     "first": "नदी",
+     "second": "उदक",
+     "result": "नद्युदकम्",
+     "replacement": "य"
+    },
+    {
+     "first": "स्त्री",
+     "second": "उत्सव",
+     "result": "स्त्र्युत्सवः",
+     "replacement": "य"
+    },
+    {
+     "first": "सुधी",
+     "second": "उपास्य",
+     "result": "सुध्युपास्यः",
+     "replacement": "य"
+    },
+    {
+     "first": "अनु",
+     "second": "अय",
+     "result": "अन्वयः",
+     "replacement": "व"
+    },
+    {
+     "first": "सु",
+     "second": "आगत",
+     "result": "स्वागतम्",
+     "replacement": "व"
+    },
+    {
+     "first": "मधु",
+     "second": "अरि",
+     "result": "मध्वरिः",
+     "replacement": "व"
+    },
+    {
+     "first": "गुरु",
+     "second": "आदेश",
+     "result": "गुर्वादेशः",
+     "replacement": "य"
+    },
+    {
+     "first": "वधू",
+     "second": "आगम",
+     "result": "वध्वागमः",
+     "replacement": "य"
+    }
+   ],
+   "external_examples": [
+    {
+     "first": "दधि",
+     "second": "अत्र",
+     "result": "दध्यत्र",
+     "replacement": "य"
+    },
+    {
+     "first": "दधि",
+     "second": "उदकम्",
+     "result": "दध्युदकम्",
+     "replacement": "य"
+    },
+    {
+     "first": "दधि",
+     "second": "एधते",
+     "result": "दध्येधते",
+     "replacement": "य"
+    },
+    {
+     "first": "मधु",
+     "second": "अत्र",
+     "result": "मध्वत्र",
+     "replacement": "व"
+    },
+    {
+     "first": "मधु",
+     "second": "इदम्",
+     "result": "मध्विदम्",
+     "replacement": "व"
+    },
+    {
+     "first": "इति",
+     "second": "अत्र",
+     "result": "इत्यत्र",
+     "replacement": "य"
+    },
+    {
+     "first": "इति",
+     "second": "आदि",
+     "result": "इत्यादि",
+     "replacement": "य"
+    },
+    {
+     "first": "इति",
+     "second": "अलम्",
+     "result": "इत्यलम्",
+     "replacement": "य"
+    },
+    {
+     "first": "गमिष्यामि",
+     "second": "अपहास्यताम्",
+     "result": "गमिष्याम्यपहास्यताम्",
+     "replacement": "य"
+    },
+    {
+     "first": "यदि",
+     "second": "अपि",
+     "result": "यद्यपि",
+     "replacement": "य"
+    },
+    {
+     "first": "साधु",
+     "second": "इति",
+     "result": "साध्विति",
+     "replacement": "व"
+    },
+    {
+     "first": "अनु",
+     "second": "आगच्छति",
+     "result": "अन्वागच्छति",
+     "replacement": "व"
+    },
+    {
+     "first": "साधु",
+     "second": "इति",
+     "result": "साध्विति",
+     "replacement": "व"
+    }
+   ]
+  },
+  "RULE_2_AYAVAYAVA": {
+   "name": "अयवायावादेशसन्धि",
+   "definition": "ए, ऐ, ओ, औ transform when followed by another vowel",
+   "formal_rule": "एज्वर्णेभ्यः अचः परत्वेन भवन्ति तर्हि प्रत्येकम्",
+   "transformation": "ए→अय्, ओ→अव्, ऐ→आय्, औ→आव्",
+   "internal_examples": [
+    {
+     "first": "हरे",
+     "second": "ए",
+     "result": "हरये",
+     "replacement": "अय्"
+    },
+    {
+     "first": "भो",
+     "second": "अति",
+     "result": "भवति",
+     "replacement": "अव्"
+    },
+    {
+     "first": "नै",
+     "second": "अक",
+     "result": "नायकः",
+     "replacement": "आय्"
+    },
+    {
+     "first": "गै",
+     "second": "अक",
+     "result": "गायकः",
+     "replacement": "आय्"
+    }
+   ],
+   "external_examples": [
+    {
+     "first": "तौ",
+     "second": "ऊचुः",
+     "result": "तावूचुः",
+     "replacement": "आव्"
+    },
+    {
+     "first": "तौ",
+     "second": "इमौ",
+     "result": "ताविमौ",
+     "replacement": "आव्"
+    },
+    {
+     "first": "उभौ",
+     "second": "एतौ",
+     "result": "उभावेतौ",
+     "replacement": "आव्"
+    },
+    {
+     "first": "एतौ",
+     "second": "इह",
+     "result": "एताविह",
+     "replacement": "आव्"
+    },
+    {
+     "first": "एधै",
+     "second": "अहम्",
+     "result": "एधायहम्",
+     "replacement": "आय्"
+    }
+   ]
+  },
+  "RULE_3_GUNA": {
+   "name": "गुणसन्धि",
+   "definition": "When अ is followed by इक्/उक्/ऋक्/ऌक्, intermediate vowels are created",
+   "pattern": "अ + इक्/उक्/ऋक्/ऌक् = ए/ओ/अर्/अल्",
+   "internal_examples": [
+    {
+     "first": "गङ्गा",
+     "second": "उदक",
+     "result": "गङ्गोदकम्",
+     "replacement": "ओ"
+    },
+    {
+     "first": "गण",
+     "second": "ईश",
+     "result": "गणेशः",
+     "replacement": "ए"
+    },
+    {
+     "first": "यथा",
+     "second": "इच्छा",
+     "result": "यथेच्छम्",
+     "replacement": "ए"
+    },
+    {
+     "first": "गज",
+     "second": "इन्द्र",
+     "result": "गजेन्द्रः",
+     "replacement": "ए"
+    },
+    {
+     "first": "रमा",
+     "second": "ईश",
+     "result": "रमेशः",
+     "replacement": "ए"
+    },
+    {
+     "first": "राज",
+     "second": "ईश",
+     "result": "राजेशः",
+     "replacement": "ए"
+    },
+    {
+     "first": "सूर्य",
+     "second": "उदय",
+     "result": "सूर्योदयः",
+     "replacement": "ओ"
+    },
+    {
+     "first": "महा",
+     "second": "उज्वल",
+     "result": "महोज्वलः",
+     "replacement": "ओ"
+    },
+    {
+     "first": "महा",
+     "second": "उन्नति",
+     "result": "महोन्नतिः",
+     "replacement": "ओ"
+    },
+    {
+     "first": "चन्द्र",
+     "second": "उदय",
+     "result": "चन्द्रोदयः",
+     "replacement": "ओ"
+    }
+   ],
+   "external_examples": [
+    {
+     "first": "अत्र",
+     "second": "इदम्",
+     "result": "अत्रेदम्",
+     "replacement": "ए"
+    },
+    {
+     "first": "इह",
+     "second": "उदकम्",
+     "result": "इहोदकम्",
+     "replacement": "ओ"
+    },
+    {
+     "first": "तव",
+     "second": "इह",
+     "result": "तवेह",
+     "replacement": "ए"
+    },
+    {
+     "first": "तथा",
+     "second": "उक्तम्",
+     "result": "तथोक्तम्",
+     "replacement": "ओ"
+    },
+    {
+     "first": "तव",
+     "second": "ऌकारः",
+     "result": "तवल्कारः",
+     "replacement": "अल्"
+    },
+    {
+     "first": "मया",
+     "second": "ऊहितम्",
+     "result": "मयोहितम्",
+     "replacement": "ओ"
+    },
+    {
+     "first": "तथा",
+     "second": "इति",
+     "result": "तथेति",
+     "replacement": "ए"
+    },
+    {
+     "first": "मम",
+     "second": "इष्टम्",
+     "result": "ममेष्टम्",
+     "replacement": "ए"
+    },
+    {
+     "first": "न",
+     "second": "इष्टम्",
+     "result": "नेष्टम्",
+     "replacement": "ए"
+    },
+    {
+     "first": "न",
+     "second": "इच्छन्ति",
+     "result": "नेच्छन्ति",
+     "replacement": "ए"
+    },
+    {
+     "first": "न",
+     "second": "उवाच",
+     "result": "नोवाच",
+     "replacement": "ओ"
+    },
+    {
+     "first": "न",
+     "second": "ऊहितम्",
+     "result": "नोहितम्",
+     "replacement": "ओ"
+    },
+    {
+     "first": "न",
+     "second": "इति",
+     "result": "नेति",
+     "replacement": "ए"
+    }
+   ],
+   "exceptions": [
+    {
+     "first": "प्र",
+     "second": "ऋण",
+     "result": "प्रार्णम्",
+     "replacement": "आर्"
+    },
+    {
+     "first": "ऋण",
+     "second": "ऋण",
+     "result": "ऋणार्णम्",
+     "replacement": "आर्"
+    },
+    {
+     "first": "प्र",
+     "second": "ऋच्छति",
+     "result": "प्रार्च्छति",
+     "replacement": "आर्"
+    }
+   ]
+  },
+  "RULE_4_VRIDDHI": {
+   "name": "वृद्धिसन्धि",
+   "definition": "When अ is followed by ए/ओ/ऐ/औ, long vowels are created",
+   "pattern": "अ + ए/ओ/ऐ/औऐ/औ/ऐ/औ = ऐ/औ/ऐ/औ",
+   "internal_examples": [
+    {
+     "first": "गङ्गा",
+     "second": "ओघ",
+     "result": "गङ्घौघः",
+     "replacement": "औ"
+    },
+    {
+     "first": "ब्रह्म",
+     "second": "ऐक्य",
+     "result": "ब्रह्मैक्यम्",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "लता",
+     "second": "औषध",
+     "result": "लतौषधम्",
+     "replacement": "औ"
+    },
+    {
+     "first": "एक",
+     "second": "एक",
+     "result": "एकैकम्",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "लिङ्ग",
+     "second": "ऐक्य",
+     "result": "लिङ्गैक्यम्",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "शिव",
+     "second": "ऐक्य",
+     "result": "शिवैक्यम्",
+     "replacement": "ऐ"
+    }
+   ],
+   "external_examples": [
+    {
+     "first": "अत्र",
+     "second": "एव",
+     "result": "अत्रैव",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "तव",
+     "second": "एव",
+     "result": "तवैव",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "मम",
+     "second": "ओषधिः",
+     "result": "ममौषधिः",
+     "replacement": "औ"
+    },
+    {
+     "first": "एव",
+     "second": "एते",
+     "result": "एवैते",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "न",
+     "second": "एके",
+     "result": "नैके",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "एव",
+     "second": "एनम्",
+     "result": "एवैनम्",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "एषा",
+     "second": "एव",
+     "result": "एषैव",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "च",
+     "second": "एव",
+     "result": "चैव",
+     "replacement": "ऐ"
+    },
+    {
+     "first": "सा",
+     "second": "एका",
+     "result": "सैका",
+     "replacement": "ऐ"
+    }
+   ]
+  },
+  "RULE_5_SAVARNA_DIRGH": {
+   "name": "सवर्णदीर्घसन्धि",
+   "definition": "When same vowels meet, they combine into one long vowel",
+   "pattern": "Same vowel + Same vowel = One long vowel",
+   "internal_examples": [
+    {
+     "first": "दश",
+     "second": "आनन",
+     "result": "दशाननः",
+     "replacement": "आ"
+    },
+    {
+     "first": "हरि",
+     "second": "ईश",
+     "result": "हरीशः",
+     "replacement": "ई"
+    },
+    {
+     "first": "क्षिति",
+     "second": "ईश",
+     "result": "क्षतीशः",
+     "replacement": "ई"
+    },
+    {
+     "first": "मातृ",
+     "second": "ऋण",
+     "result": "मातॄणाम्",
+     "replacement": "ॠ"
+    },
+    {
+     "first": "विद्या",
+     "second": "आलय",
+     "result": "विद्यालयः",
+     "replacement": "आ"
+    },
+    {
+     "first": "राम",
+     "second": "अयन",
+     "result": "रामायणम्",
+     "replacement": "आ"
+    },
+    {
+     "first": "सीता",
+     "second": "अनुज्ञ",
+     "result": "सीतानुज्ञा",
+     "replacement": "आ"
+    },
+    {
+     "first": "राम",
+     "second": "आज्ञा",
+     "result": "रामाज्ञ",
+     "replacement": "आ"
+    },
+    {
+     "first": "महा",
+     "second": "आत्मन्",
+     "result": "महात्मा",
+     "replacement": "आ"
+    }
+   ],
+   "external_examples": [
+    {
+     "first": "अत्र",
+     "second": "अपि",
+     "result": "अत्रापि",
+     "replacement": "आ"
+    },
+    {
+     "first": "तव",
+     "second": "अस्मि",
+     "result": "तवास्मि",
+     "replacement": "आ"
+    },
+    {
+     "first": "इह",
+     "second": "अपि",
+     "result": "इहापि",
+     "replacement": "आ"
+    },
+    {
+     "first": "रामस्य",
+     "second": "अप",
+     "result": "रामस्यापि",
+     "replacement": "आ"
+    },
+    {
+     "first": "गच्छति",
+     "second": "इव",
+     "result": "गच्छतीव",
+     "replacement": "ई"
+    },
+    {
+     "first": "इच्छति",
+     "second": "इमम्",
+     "result": "इच्छतीमम्",
+     "replacement": "ई"
+    },
+    {
+     "first": "गच्छतु",
+     "second": "ऊर्ध्वम्",
+     "result": "गच्छतूर्ध्वम्",
+     "replacement": "ऊ"
+    },
+    {
+     "first": "अपि",
+     "second": "इह",
+     "result": "अपीह",
+     "replacement": "ई"
+    },
+    {
+     "first": "तस्य",
+     "second": "अपि",
+     "result": "तस्यापि",
+     "replacement": "आ"
+    },
+    {
+     "first": "च",
+     "second": "अल्पविषया",
+     "result": "चाल्पविषया",
+     "replacement": "आ"
+    },
+    {
+     "first": "उडुपेन",
+     "second": "अस्मि",
+     "result": "उडुपेनास्मि",
+     "replacement": "आ"
+    },
+    {
+     "first": "च",
+     "second": "अस्ति",
+     "result": "चास्ति",
+     "replacement": "आ"
+    },
+    {
+     "first": "च",
+     "second": "अत्र",
+     "result": "चात्र",
+     "replacement": "आ"
+    },
+    {
+     "first": "भवतु",
+     "second": "उदयः",
+     "result": "भवतूदयः",
+     "replacement": "ऊ"
+    },
+    {
+     "first": "गच्छतु",
+     "second": "उक्त्वा",
+     "result": "गच्छतूक्त्वा",
+     "replacement": "ऊ"
+    },
+    {
+     "first": "भवतु",
+     "second": "उक्तम्",
+     "result": "भवतूक्तम्",
+     "replacement": "ऊ"
+    },
+    {
+     "first": "तु",
+     "second": "उवाच",
+     "result": "तूवाच",
+     "replacement": "ऊ"
+    }
+   ]
+  },
+  "RULE_6_PURVARDPA": {
+   "name": "पूर्वरूपसन्धि",
+   "definition": "ए-ओ followed by short अकार - the second vowel is absorbed into the first",
+   "pattern": "ए/ओ + अ (short) = ए/ओ",
+   "internal_examples": [
+    {
+     "first": "हरे",
+     "second": "अस्",
+     "result": "हरेः",
+     "replacement": "ए remains"
+    },
+    {
+     "first": "मते",
+     "second": "अस्",
+     "result": "मतेः",
+     "replacement": "ए remains"
+    },
+    {
+     "first": "गुरो",
+     "second": "अस्",
+     "result": "गुरोः",
+     "replacement": "ओ remains"
+    },
+    {
+     "first": "शम्भो",
+     "second": "अस्",
+     "result": "शम्भोः",
+     "replacement": "ओ remains"
+    }
+   ],
+   "external_examples": [
+    {
+     "first": "ते",
+     "second": "अपि",
+     "result": "तेऽपि",
+     "replacement": "ए remains"
+    },
+    {
+     "first": "शुद्धे",
+     "second": "अन्तर्लीनम्",
+     "result": "शुद्धेऽन्तर्लीनम्",
+     "replacement": "ए remains"
+    },
+    {
+     "first": "हरे",
+     "second": "अव",
+     "result": "हरेऽव",
+     "replacement": "ए remains"
+    },
+    {
+     "first": "शिवे",
+     "second": "अस्मि",
+     "result": "शिवेऽस्मि",
+     "replacement": "ए remains"
+    },
+    {
+     "first": "शिवो",
+     "second": "अहम्",
+     "result": "शिवोऽहम्",
+     "replacement": "ओ remains"
+    },
+    {
+     "first": "सो",
+     "second": "अहम्",
+     "result": "सोऽहम्",
+     "replacement": "ओ remains"
+    }
+   ],
+   "note": "अवग्रहः (ऽ) written to indicate this sandhi. When double ऽऽ appears, दीर्घ आकार forms"
+  },
+  "EXCEPTIONS_TO_SVARA_SANDHI": [
+   {
+    "exception": "पूर्वभागः ईकारान्तं द्विवचनान्तम्",
+    "rule": "If first part ends in ई with dual form, and second starts with अज्, NO sandhi",
+    "example": "हरी एतौ - here ई doesn't undergo yanadesh"
+   },
+   {
+    "exception": "अच् प्लुतसञ्ज्ञकः",
+    "rule": "If the last vowel of first part is marked as प्लुत (with 3 dots), NO sandhi",
+    "example": "राम(3) अत्र, राम(3) इह, राम(3) एहि - no sandhi applied"
+   },
+   {
+    "exception": "पूर्वभागः एकाज् निपातः",
+    "rule": "If first part is एकाज् निपात (indeclinable), NO sandhi",
+    "example": "इ इन्द्रः, उ उमेशः - no दीर्घसन्धि"
+   },
+   {
+    "exception": "पूर्वभागः ओदन्तनिपातः",
+    "rule": "If first part is ओ-ending निपात, NO sandhi",
+    "example": "अहो ईशाः - no अवादेश"
+   },
+   {
+    "exception": "अदस्-शब्दसम्बन्धिनः अन्त्यस्य अचः",
+    "rule": "If related to अदस् (demonstrative), NO sandhi",
+    "example": "अमी ईशाः, अमू इमौ - no sandhi"
+   }
+  ]
+ },
+ "PART_8_VYANJANA_SANDHI": {
+  "title": "व्यञ्जनसन्धि (Consonant Sandhi)",
+  "note": "There are 33 consonants. Multiple transformations occur based on pratyaharas and place of articulation",
+  "key_question": "कः भवति?, कदा भवति?, कस्य भवति? - Three questions to understand all व्यञ्जनसन्धिs",
+  "PRATYAHARAS": {
+   "चर्": "First consonants of groups (कचटतप) and sibilants (शषस)",
+   "खर्": "First two consonants of groups and sibilants",
+   "झश्": "Third and fourth consonants of groups",
+   "झय्": "First, second, third, fourth consonants of groups",
+   "झल्": "All consonants except fifth consonant of groups and semi-vowels",
+   "अट्": "All vowels and semi-vowels (य, र, ल, व)",
+   "शर्": "Sibilants (श, ष, स)",
+   "यर्": "All consonants except ह",
+   "हल्": "All consonants"
+  },
+  "RULE_1_JASHTTVA": {
+   "name": "जश्त्वसन्धि",
+   "rule": "Final झल् consonants become third consonant of their group before झश् consonants",
+   "when": "At पदान्त, when followed by झश्-consonants",
+   "internal_examples": [
+    {
+     "before": "सुध् ध्य् उपास्य",
+     "after": "सुद्ध्युपास्यः",
+     "note": "First ध् becomes द्"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "वाक् + ईश",
+     "after": "वागीशः",
+     "note": "क् becomes ग्"
+    },
+    {
+     "before": "वाक् + अर्थ",
+     "after": "वागर्थौ",
+     "note": "क् becomes ग्"
+    },
+    {
+     "before": "सत् + आचार",
+     "after": "सदाचारः",
+     "note": "त् becomes द्"
+    },
+    {
+     "before": "चित् + आनन्द",
+     "after": "चिदानन्दः",
+     "note": "त् becomes द्"
+    },
+    {
+     "before": "जगत् + बन्धु",
+     "after": "जगद्बन्धुः",
+     "note": "त् becomes द्"
+    }
+   ]
+  },
+  "RULE_2_CHRTVA": {
+   "name": "चर्त्वसन्धि",
+   "rule": "चर् consonants remain before खर्-consonants",
+   "internal_examples": [
+    {
+     "before": "तज् छिव",
+     "after": "तच्छिवः",
+     "note": "ज् becomes च्"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "रामाद्",
+     "after": "रामाद्/रामात्",
+     "note": "optional चर्त्व"
+    }
+   ]
+  },
+  "RULE_3_SHCHUTVA": {
+   "name": "श्चुत्वसन्धि",
+   "rule": "स् + तवर्ग → श् + चवर्ग before च्छ्ज्झ्ञ्",
+   "internal_examples": [
+    {
+     "before": "निस् शब्द",
+     "after": "निश्शब्दः",
+     "note": "स् becomes श्"
+    },
+    {
+     "before": "दुस् चरित्र",
+     "after": "दुश्चरित्रम्",
+     "note": "स् becomes श्"
+    },
+    {
+     "before": "मनस् शान्ति",
+     "after": "मनश्शान्तिः",
+     "note": "स् becomes श्"
+    },
+    {
+     "before": "उत् छेद",
+     "after": "उच्छेदः",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "उत् छिन्न",
+     "after": "उच्छिन्नः",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "उत् चारण",
+     "after": "उच्चारणम्",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "सत् चिदानन्द",
+     "after": "सच्चिदानन्दः",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "परित् छेद",
+     "after": "परिच्छेदः",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "वित् छेद",
+     "after": "विच्छेदः",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "उद् ज्वल",
+     "after": "उज्ज्वलः",
+     "note": "द् becomes ज्"
+    },
+    {
+     "before": "याच् ना",
+     "after": "याच्ञा",
+     "note": "च् + ञ्"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "हरिस् शेते",
+     "after": "हरिश्शेते",
+     "note": "स् becomes श्"
+    },
+    {
+     "before": "तत् च",
+     "after": "तच्च",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "कस् चित्",
+     "after": "कश्चित्",
+     "note": "स् becomes श्"
+    },
+    {
+     "before": "सत् चरित्रम्",
+     "after": "सच्चरित्रम्",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "लक्ष्मीत् छाया",
+     "after": "लक्ष्मीच्छाया",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "तत् चक्रम्",
+     "after": "तच्चक्रम्",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "महत् चित्रम्",
+     "after": "महच्चित्रम्",
+     "note": "त् becomes च्"
+    },
+    {
+     "before": "रामस् च",
+     "after": "रामश्च",
+     "note": "स् becomes श्"
+    },
+    {
+     "before": "कस् शान्तः",
+     "after": "कश्शान्तः",
+     "note": "स् becomes श्"
+    },
+    {
+     "before": "श्रेयस् चकार",
+     "after": "श्रेयश्चकार",
+     "note": "स् becomes श्"
+    }
+   ]
+  },
+  "RULE_4_SHTUTVA": {
+   "name": "ष्टुत्वसन्धि",
+   "rule": "स् + तवर्ग → ष् + टवर्ग before ट्ठ्ड्ढ्",
+   "internal_examples": [
+    {
+     "before": "धनुस् टंकार",
+     "after": "धनुष्टंकारः",
+     "note": "स् becomes ष्"
+    },
+    {
+     "before": "विष् नु",
+     "after": "विष्णुः",
+     "note": "स् becomes ष्"
+    },
+    {
+     "before": "उद् डीन",
+     "after": "उड्डीनः",
+     "note": "द् becomes ड्"
+    },
+    {
+     "before": "मत् डमरु",
+     "after": "मड्डमरुः",
+     "note": "त् becomes ड्"
+    },
+    {
+     "before": "आकृष् त",
+     "after": "आकृष्टः",
+     "note": "स् becomes ष्"
+    },
+    {
+     "before": "हृष् त",
+     "after": "हृष्टः",
+     "note": "स् becomes ष्"
+    },
+    {
+     "before": "द्रष् तृ",
+     "after": "द्रष्टृ",
+     "note": "स् becomes ष्"
+    },
+    {
+     "before": "द्रष् तृ",
+     "after": "द्रष्टा",
+     "note": "स् becomes ष्"
+    },
+    {
+     "before": "राष् त्र",
+     "after": "राष्ट्रम्",
+     "note": "स् becomes ष्"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "रामस् टीकते",
+     "after": "रामष्टीकते",
+     "note": "स् becomes ष्"
+    },
+    {
+     "before": "रामस् षष्ठः",
+     "after": "रामष्षष्ठः",
+     "note": "स् becomes ष्"
+    }
+   ]
+  },
+  "RULE_5_ANUNASIKA": {
+   "name": "अनुनासिकसन्धि",
+   "rule": "यर् consonants + हल् → अनुनासिक substitution",
+   "internal_examples": [
+    {
+     "before": "एतद् मुरारि",
+     "after": "एतन्मुरारिः/एतद्मुरारिः",
+     "note": "द् becomes न्"
+    },
+    {
+     "before": "तद् मात्र",
+     "after": "तन्मात्रम्",
+     "note": "always नकार"
+    },
+    {
+     "before": "चित् मय",
+     "after": "चिन्मयम्",
+     "note": "always नकार"
+    },
+    {
+     "before": "अप् मय",
+     "after": "अम्मयम्",
+     "note": "प् becomes म्"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "तद् मम",
+     "after": "तन्मम्/तद्मम्",
+     "note": "optional"
+    },
+    {
+     "before": "एतद् मादृशम्",
+     "after": "एतन्मादृशम्/एतद्मादृशम्",
+     "note": "optional"
+    }
+   ]
+  },
+  "RULE_6_ANUSVARA": {
+   "name": "अनुस्वारसन्धि",
+   "rule": "म्/न् + हल् → अनुस्वार (ं)",
+   "internal_examples": [
+    {
+     "before": "यशान् सि",
+     "after": "यशांसि",
+     "note": "न् becomes ं"
+    },
+    {
+     "before": "पयान् सि",
+     "after": "पयांसि",
+     "note": "न् becomes ं"
+    },
+    {
+     "before": "आक्रम् स्यते",
+     "after": "आक्रंस्यते",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "गम् स्यते",
+     "after": "गंस्यते",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "दम् पती",
+     "after": "दंपती",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "मन् स्यते",
+     "after": "मंस्यते",
+     "note": "न् becomes ं"
+    },
+    {
+     "before": "अन् कित",
+     "after": "अंकित",
+     "note": "न् becomes ं"
+    },
+    {
+     "before": "घन् टा",
+     "after": "घंटा",
+     "note": "न् becomes ं"
+    },
+    {
+     "before": "भयम् कर",
+     "after": "भयंकर",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "पतन् जलि",
+     "after": "पतंजलि",
+     "note": "न् becomes ं"
+    },
+    {
+     "before": "सम् धि",
+     "after": "संधि",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "अन् चित",
+     "after": "अंचित",
+     "note": "न् becomes ं"
+    },
+    {
+     "before": "सम् जात",
+     "after": "संजात",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "आशम् कित",
+     "after": "आशंकित",
+     "note": "म् becomes ं"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "हरिम् वन्दे",
+     "after": "हरिं वन्दे",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "शिवम् मनुते",
+     "after": "शिवं मनुते",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "अहम् तत्र",
+     "after": "अहं तत्र",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "त्वम् कुत्र",
+     "after": "त्वं कुत्र",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "इयम् पाठशाला",
+     "after": "इयं पाठशाला",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "इदम् गृहम्",
+     "after": "इदं गृहम्",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "वक्तुम् शक्यते",
+     "after": "वक्तुं शक्यते",
+     "note": "म् becomes ं"
+    },
+    {
+     "before": "सन्देहम् वद",
+     "after": "सन्देहं वद",
+     "note": "म् becomes ं"
+    }
+   ],
+   "note": "अनुस्वार alone doesn't satisfy phonetic requirements - parasavarna necessary"
+  },
+  "RULE_7_ANUSVARA_PARASAVARNA": {
+   "name": "अनुस्वारपरसवर्णसन्धि",
+   "rule": "अनुस्वार + यय्-consonants → parasavarna (homorganic nasal)",
+   "yay_includes": "Velar group, Palatal group, Retroflex group, Dental group, Labial group, Semi-vowels",
+   "internal_examples": [
+    {
+     "before": "अं कित",
+     "after": "अङ्कितम्",
+     "note": "ङ्"
+    },
+    {
+     "before": "अं चित",
+     "after": "अञ्चितः",
+     "note": "ञ्"
+    },
+    {
+     "before": "पतं जलि",
+     "after": "पतञ्जलिः",
+     "note": "ञ्"
+    },
+    {
+     "before": "अं जन",
+     "after": "अञ्जनम्",
+     "note": "ञ्"
+    },
+    {
+     "before": "चं दन",
+     "after": "चन्दनम्",
+     "note": "न्"
+    },
+    {
+     "before": "सं धि",
+     "after": "सन्धिः",
+     "note": "न्"
+    },
+    {
+     "before": "बं धन",
+     "after": "बन्धनम्",
+     "note": "न्"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "त्वं करोषि",
+     "after": "त्वङ्करोषि/त्वं करोषि",
+     "note": "optional"
+    },
+    {
+     "before": "अन्नं खादति",
+     "after": "अन्नङ्खादति/अन्नं खादति",
+     "note": "optional"
+    },
+    {
+     "before": "रिपुं जयति",
+     "after": "रिपुञ्जयति/रिपुं जयति",
+     "note": "optional"
+    },
+    {
+     "before": "ग्रन्थं टीकते",
+     "after": "ग्रन्थण्टीकते/ग्रन्थं टीकते",
+     "note": "optional"
+    },
+    {
+     "before": "निन्दनं पापम्",
+     "after": "निन्दनम्पापम्/निन्दनं पापम्",
+     "note": "optional"
+    },
+    {
+     "before": "हलं चालयाति",
+     "after": "हलञ्चालयति/हलं चालयति",
+     "note": "optional"
+    }
+   ]
+  },
+  "RULE_8_LAKARA_PARASAVARNA": {
+   "name": "लकारपरसवर्णसन्धि",
+   "rule": "ल् + ल् → ल् (no change)",
+   "note": "Sanskrit doesn't allow ल् + non-ल् consonants",
+   "internal_examples": [
+    {
+     "before": "उद् लेख",
+     "after": "उल्लेखः",
+     "note": "द् becomes ल् (actually becomes ल्)"
+    },
+    {
+     "before": "उद् लास",
+     "after": "उल्लासः",
+     "note": "द् becomes ल्"
+    },
+    {
+     "before": "तद् लीन",
+     "after": "तल्लीनः",
+     "note": "द् becomes ल्"
+    },
+    {
+     "before": "तद् लय",
+     "after": "तल्लयः",
+     "note": "द् becomes ल्"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "विद्वान् लिखति",
+     "after": "विद्वाल्लिखति/विद्वान् लिखति",
+     "note": "optional"
+    },
+    {
+     "before": "अर्थात् लकारस्य",
+     "after": "अर्थाल्लकारस्य/अर्थात् लकारस्य",
+     "note": "optional"
+    },
+    {
+     "before": "विद्वत् लेखनम्",
+     "after": "विद्वल्लेखनम्/विद्वत् लेखनम्",
+     "note": "optional"
+    }
+   ]
+  },
+  "RULE_9_TUGAGAMA": {
+   "name": "तुगागमसन्धि",
+   "rule": "Short vowel + छ् → तुग् added before छ्",
+   "internal_examples": [
+    {
+     "before": "परि छेद",
+     "after": "परित्छेद",
+     "note": "तु added"
+    },
+    {
+     "before": "वि छेद",
+     "after": "वित्छेद",
+     "note": "तु added"
+    }
+   ],
+   "external_examples": [
+    {
+     "before": "लक्ष्मी छाया",
+     "after": "लक्ष्मीत्छाया/लक्ष्मी छाया",
+     "note": "optional"
+    },
+    {
+     "before": "पूर्वपदे दीर्घ हो तो तुगागमः विकल्पेन भवति"
+    }
+   ]
+  },
+  "RULE_10_PURVASA VARNA_ADESHA": {
+   "name": "पूर्वसवर्णादेशसन्धि",
+   "rule": "पदान्त झय्-consonants + ह् → homorganic consonant + ह्",
+   "examples": [
+    {
+     "before": "वाग् हरि",
+     "after": "वाग्घरिः/वाग्हरिः",
+     "note": "ह् becomes घ्"
+    },
+    {
+     "before": "तद् हि",
+     "after": "तद्धि/तद्हि",
+     "note": "ह् becomes ध्"
+    }
+   ]
+  }
+ },
+ "PART_9_THREE_VARNA_SANDHI": {
+  "title": "वर्णत्रयापेक्षितसन्धयः (Three-Varna Sandhi)",
+  "definition": "Sandhis where three वर्णs are involved",
+  "RULE_1_CHATVA": {
+   "name": "वर्णत्रयापेक्षितछत्वसन्धि",
+   "pattern": "Consonant (झय्) + श् + vowel (अट्)",
+   "rule": "श् becomes छ्",
+   "example": {
+    "before": "तज् शिव",
+    "after": "तज्छिव",
+    "note": "छ् replaces श्"
+   }
+  },
+  "RULE_2_NGMUDAGAMA": {
+   "name": "ङमुडागमसन्धि",
+   "pattern": "Short vowel + nasal (ङम्) + vowel (अच्)",
+   "rule": "Nasal addition based on preceding consonant's group",
+   "examples": [
+    {
+     "before": "कुर्वन् अस्ति",
+     "after": "कुर्वन्नस्ति",
+     "explanation": "न् is added (ङुडागम)"
+    },
+    {
+     "before": "सन् अच्युतः",
+     "after": "सन्नच्युतः",
+     "explanation": "न् is added"
+    },
+    {
+     "before": "प्रत्यङ् आत्मा",
+     "after": "प्रत्यङ्ङात्मा",
+     "explanation": "ङ् is added"
+    },
+    {
+     "before": "सुगण् ईशः",
+     "after": "सुग्ण्णात्मा",
+     "explanation": "ण् is added"
+    }
+   ]
+  }
+ },
+ "PART_10_VISARGA_SANDHI_EXPANDED": {
+  "title": "विसर्गसन्धि - COMPREHENSIVE WITH ALL EXAMPLES",
+  "definition": "विसर्गः undergoes multiple transformations based on context",
+  "TYPE_1_VISARGA_LOPA": {
+   "name": "1. विसर्गलोपः",
+   "condition": "अकारान्तः + : + उत्तरपदे अ भिन्नस्वरः = विसर्ग is deleted",
+   "examples": [
+    {
+     "before": "सः + इच्छति",
+     "after": "स इच्छति"
+    },
+    {
+     "before": "एषः + ईक्षते",
+     "after": "एष ईक्षते"
+    },
+    {
+     "before": "एषः + विचरति",
+     "after": "एष विचरति"
+    },
+    {
+     "before": "सः + आगच्छति",
+     "after": "स आगच्छति"
+    },
+    {
+     "before": "कृष्णः + एति",
+     "after": "कृष्ण एति"
+    },
+    {
+     "before": "मृगः + इति",
+     "after": "मृग इति"
+    },
+    {
+     "before": "गजः + उत्सहते",
+     "after": "गज उत्सहते"
+    },
+    {
+     "before": "मूषकः + उत्पतति",
+     "after": "मूषक उत्पतति"
+    },
+    {
+     "before": "लताः + अत्र",
+     "after": "लता अत्र"
+    },
+    {
+     "before": "बालाः + यान्ति",
+     "after": "बाला यान्ति"
+    },
+    {
+     "before": "बालाः + जाग्रति",
+     "after": "बाला जाग्रति"
+    },
+    {
+     "before": "गोपालाः + हसन्ति",
+     "after": "गोपाला हसन्ति"
+    },
+    {
+     "before": "लताः + वर्धन्ते",
+     "after": "लता वर्धन्ते"
+    },
+    {
+     "before": "एषः + उत्तिष्ठति",
+     "after": "एष उत्तिष्ठति"
+    },
+    {
+     "before": "सः + गच्छति",
+     "after": "स गच्छति"
+    },
+    {
+     "before": "एषः + नमति",
+     "after": "एष नमति"
+    },
+    {
+     "before": "रामः + आगच्छति",
+     "after": "राम आगच्छति"
+    },
+    {
+     "before": "रहीमः + इच्छति",
+     "after": "रहीम इच्छति"
+    },
+    {
+     "before": "सिंहः + इदानीम्",
+     "after": "सिंह इदानीम्"
+    },
+    {
+     "before": "ईश्वरः + ईक्षते",
+     "after": "ईश्वर ईक्षते"
+    },
+    {
+     "before": "तपः + उच्यते",
+     "after": "तप उच्यते"
+    },
+    {
+     "before": "ताः + गच्छन्ति",
+     "after": "ता गच्छन्ति"
+    },
+    {
+     "before": "वृक्षाः + वर्धन्ते",
+     "after": "वक्षा वर्धन्ते"
+    },
+    {
+     "before": "तरुणाः + नमति",
+     "after": "तरुणा नमति"
+    },
+    {
+     "before": "वृध्दाः + अत्र",
+     "after": "वृध्दा अत्र"
+    },
+    {
+     "before": "बालिकाः + नमन्ति",
+     "after": "बालिका नमन्ति"
+    }
+   ]
+  },
+  "TYPE_2_OGUNA": {
+   "name": "2. ओकारत्वेन (when अ: + अ)",
+   "rule": "अ: + अ → अ + ऽ (with अवग्रहः) or अ: + ओ + अ",
+   "examples": [
+    {
+     "before": "सः + अस्ति",
+     "after": "सोऽस्ति"
+    },
+    {
+     "before": "एषः + अपि",
+     "after": "एषोऽपि"
+    },
+    {
+     "before": "सः + अवदत्",
+     "after": "सोऽवदत्"
+    },
+    {
+     "before": "सः + अपतत्",
+     "after": "सोऽपतत्"
+    },
+    {
+     "before": "एषः + अवदत्",
+     "after": "एषोऽवदत्"
+    },
+    {
+     "before": "एषः + अत्र",
+     "after": "एषोऽत्र"
+    },
+    {
+     "before": "सः + अपि",
+     "after": "सोऽपि"
+    },
+    {
+     "before": "एषः + अस्ति",
+     "after": "एषोऽस्ति"
+    },
+    {
+     "before": "सः + अतीव",
+     "after": "सोऽतीव"
+    },
+    {
+     "before": "एषः + अतीव",
+     "after": "एषोऽतीव"
+    },
+    {
+     "before": "बालः + अस्ति",
+     "after": "बालोऽस्ति"
+    },
+    {
+     "before": "नृपः + अतीव",
+     "after": "नृपोऽतीव"
+    },
+    {
+     "before": "मृगः + अपि",
+     "after": "मृगोऽपि"
+    },
+    {
+     "before": "सिंहः + अत्र",
+     "after": "सिंहोऽत्र"
+    },
+    {
+     "before": "चन्द्रः + अयम्",
+     "after": "चन्द्रोऽयम्"
+    },
+    {
+     "before": "पुरुषः + अपि",
+     "after": "पुरुषोऽपि"
+    },
+    {
+     "before": "रामः + अयम्",
+     "after": "रामोऽयम्"
+    },
+    {
+     "before": "कृष्णः + अस्ति",
+     "after": "कृष्णोऽस्ति"
+    },
+    {
+     "before": "कः + अत्र",
+     "after": "कोऽत्र"
+    },
+    {
+     "before": "वृध्दः + अत्र",
+     "after": "वृध्दोऽत्र"
+    }
+   ]
+  },
+  "TYPE_3_OGUNA_HAV_RAV": {
+   "name": "3. विसर्गः ओकारत्वम् (अ: + ह्, य्, व्, र्)",
+   "rule": "अ: + ह्/य्/व्/र् → ओ (गुणसन्धि) + consonant",
+   "examples": [
+    {
+     "before": "तपः + वनम्",
+     "after": "तपोवनम्"
+    },
+    {
+     "before": "बालः + हसति",
+     "after": "बालोहसति"
+    },
+    {
+     "before": "वृक्षः + वर्धते",
+     "after": "वृक्षोवर्धते"
+    },
+    {
+     "before": "वृक्षः + रक्षति",
+     "after": "वृक्षोरक्षति"
+    },
+    {
+     "before": "देवः + जनानाम्",
+     "after": "देवोजनानाम्"
+    },
+    {
+     "before": "देवः + गच्छति",
+     "after": "देवोगच्छति"
+    },
+    {
+     "before": "मनः + हरः",
+     "after": "मनोहरः"
+    }
+   ]
+  },
+  "TYPE_4_RAKARA": {
+   "name": "4. रकारादेशः (विसर्ग: becomes र् before non-अ vowel)",
+   "rule": "Non-अ vowel + : + vowel/consonant → र्",
+   "examples": [
+    {
+     "before": "महीषीः + इति",
+     "after": "महिषीरिति"
+    },
+    {
+     "before": "तैः + भक्ष्यते",
+     "after": "तैर्भक्ष्यते"
+    },
+    {
+     "before": "एतैः + नम्यते",
+     "after": "एतैर्नम्यते"
+    },
+    {
+     "before": "पत्युः + गृहम्",
+     "after": "पत्युर्गृहम्"
+    },
+    {
+     "before": "गुरुः + वदति",
+     "after": "गुरुर्वदति"
+    },
+    {
+     "before": "हरिः + जयति",
+     "after": "हरिर्जयति"
+    },
+    {
+     "before": "मृत्युः + भयम्",
+     "after": "मृत्युर्भयम्"
+    },
+    {
+     "before": "मनिः + गच्छति",
+     "after": "मुनिर्गच्छति"
+    },
+    {
+     "before": "धेनुः + धावति",
+     "after": "धेनुर्धावति"
+    },
+    {
+     "before": "जनैः + गम्यते",
+     "after": "जनैर्गम्यते"
+    },
+    {
+     "before": "गुरुः + घृहम्",
+     "after": "गुरुर्घृहम्"
+    },
+    {
+     "before": "धेनुभिः + आगतम्",
+     "after": "धेनुभिरागतम्"
+    },
+    {
+     "before": "अन्नैः + भागम्",
+     "after": "अन्नैर्भागम्"
+    },
+    {
+     "before": "भवेयुः + बहवः",
+     "after": "भवेयुर्बहवः"
+    }
+   ],
+   "avyaya_examples": [
+    {
+     "before": "प्रातः + गच्छति",
+     "after": "प्रातर्गच्छति"
+    },
+    {
+     "before": "पुनः + उपविशति",
+     "after": "पुनरुपविशति"
+    },
+    {
+     "before": "प्रातः + उत्तिष्ठति",
+     "after": "प्रातरुत्तिष्ठति"
+    },
+    {
+     "before": "प्रातः + उदेति",
+     "after": "प्रातरुदेति"
+    },
+    {
+     "before": "पुनः + आस्ते",
+     "after": "पुनरास्ते"
+    },
+    {
+     "before": "प्रातः + वन्दनीयः",
+     "after": "प्रातर्वन्दनीयः"
+    }
+   ]
+  },
+  "TYPE_5_NO_CHANGE": {
+   "name": "5. क्, ख्, प्, फ् - NO SANDHI",
+   "rule": "Visarga before these consonants remains unchanged",
+   "examples": [
+    {
+     "before": "बालः + करोति",
+     "after": "बालः करोति"
+    },
+    {
+     "before": "कृष्णः + पचति",
+     "after": "कृष्णः पचति"
+    },
+    {
+     "before": "रामः + खादति",
+     "after": "रामः खादति"
+    },
+    {
+     "before": "वृक्षः + फलति",
+     "after": "वृक्षः फलति"
+    }
+   ]
+  },
+  "TYPE_6_SSHAKARA": {
+   "name": "6. स्, ष्, श्-कार आदेशसन्धिः",
+   "rule": "(स्/त्/थ् परे) → स्, (ष्/ट्/ठ् परे) → ष्, (श्/च्/छ् परे) → श्",
+   "examples": [
+    {
+     "before": "बालः + तत्र",
+     "after": "बालस्तत्र",
+     "note": "ः + त् = स् + त्"
+    },
+    {
+     "before": "कृष्णः + तदा",
+     "after": "कृष्णस्तदा",
+     "note": "ः + त् = स् + त्"
+    },
+    {
+     "before": "गोपालः + तथैव",
+     "after": "गोपालस्तथैव",
+     "note": "ः + त् = स् + त्"
+    },
+    {
+     "before": "भक्तः + सेवते",
+     "after": "भक्तस्सेवते",
+     "note": "ः + स् = स् + स्"
+    },
+    {
+     "before": "डयमानः + टिट्टिभः",
+     "after": "डयमानष्टिट्टिभः",
+     "note": "ः + ट् = ष् + ट्"
+    },
+    {
+     "before": "धनुः + टङ्कारः",
+     "after": "धनुष्टङ्कारः",
+     "note": "ः + ट् = ष् + ट्"
+    },
+    {
+     "before": "रूप्यकैः + ठनठनायते",
+     "after": "रूप्यकैष्ठनठनायते",
+     "note": "ः + ठ् = ष् + ठ्"
+    },
+    {
+     "before": "रामः + च",
+     "after": "रामश्च",
+     "note": "ः + च् = श् + च्"
+    },
+    {
+     "before": "शावकः + चलति",
+     "after": "शावकश्चलति",
+     "note": "ः + च् = श् + च्"
+    },
+    {
+     "before": "भक्तः + शोभते",
+     "after": "भक्तश्शोभते",
+     "note": "ः + श् = श् + श्"
+    },
+    {
+     "before": "भक्तः + चलति",
+     "after": "भक्तश्चलति",
+     "note": "ः + च् = श् + च्"
+    },
+    {
+     "before": "छात्रः + छादयति",
+     "after": "छात्रश्छादयति",
+     "note": "ः + छ् = श् + छ्"
+    }
+   ]
+  }
+ },
+ "PART_11_INTERACTION_AND_PRECEDENCE": {
+  "title": "Sandhi Interaction Rules & Stage-by-Stage Analysis",
+  "principle": "Multiple stages may apply before final form",
+  "critical": "Must check PREVIOUS transformations before applying new rules",
+  "EXAMPLE_1": {
+   "sentence": "हर + इह",
+   "stage_1": {
+    "form": "हरे + इह",
+    "explanation": "with अच्-परकत्व",
+    "rule": "Adding अच् for following vowel"
+   },
+   "stage_2": {
+    "form": "हरय् + इह",
+    "explanation": "यणादेशसन्धि applies",
+    "rule": "ए → अय् before vowel"
+   },
+   "stage_3": {
+    "form": "हर + इह",
+    "explanation": "य् is dropped",
+    "rule": "Final य् removed"
+   },
+   "note": "NO गुणसन्धि at stage 3, even though अ + इ could form ए"
+  },
+  "EXAMPLE_2": {
+   "sentence": "देवा + अत्र",
+   "stage_1": {
+    "form": "देवाः + अत्र",
+    "explanation": "nominative plural"
+   },
+   "stage_2": {
+    "form": "देवास् + अत्र",
+    "explanation": "ः → स् (सकारादेश)"
+   },
+   "stage_3": {
+    "form": "देवाय् + अत्र",
+    "explanation": "स् → य् (यणादेश)"
+   },
+   "stage_4": {
+    "form": "देवा + अत्र",
+    "explanation": "य् dropped"
+   },
+   "note": "NO दीर्घसन्धि even though अ + अ could form आ"
+  }
+ },
+ "FINAL_SUMMARY": {
+  "key_principles": [
+   "Internal sandhis are generally mandatory",
+   "External sandhis are optional",
+   "Three questions essential: कः भवति?, कदा भवति?, कस्य भवति?",
+   "Always check previous transformation stages",
+   "Multiple simultaneous transformations can affect rules",
+   "निपात (indeclinables) have special exceptions",
+   "प्लुत (very long vowels) prevent sandhi"
+  ],
+  "note": "These are the very important sandhis. Many other sandhis follow typical system and logic."
+ }
+}

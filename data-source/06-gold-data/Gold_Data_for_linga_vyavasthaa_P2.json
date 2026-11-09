@@ -1,0 +1,1758 @@
+{
+ "document_metadata": {
+  "title": "शास्त्रीयलिङ्गम् (Classical Sanskrit Gender Classification)",
+  "original_author": "Dr. B Rajeswara Rao",
+  "institution": "Bhaavajaalam Research Center, Visakhapatnam",
+  "language": "Sanskrit",
+  "topic": "Gender (liṅga) classification rules in Sanskrit",
+  "document_type": "Gold Data for training of Sanskrit Corpus"
+ },
+ "introduction": {
+  "upodghatah": {
+   "title": "उपोद्घातः",
+   "title_english": "Introduction"
+  },
+  "linga_svarupam": {
+   "title": "लिङ्गस्वरूपम्",
+   "title_english": "Nature of Gender",
+   "definition_sanskrit": "लिङ्गं नाम चिह्मम् इत्यर्थः।",
+   "definition_english": "Gender (liṅga) means a marker/characteristic.",
+   "worldly_understanding_sanskrit": "स्तनादिचिह्नादिमस्ति तर्हि स्त्री इति, अधिकलोमानि सन्ति चेत् पुरुष इति, एतस्माद् अन्यत् सर्वं नपुंसकमिति लोके व्यवहारः वर्तते। तादृशव्यवहाराय विविधलिङ्गेषु विभिन्नानि पदनि सन्ति।",
+   "worldly_understanding_english": "In common usage, if breast-like characteristics are present, it is feminine (strī); if excessive body hair is present, it is masculine (purusha); everything else is neuter (napuṃsaka). Various words exist in different genders for such usage."
+  },
+  "problem": {
+   "title": "अत्र समस्या",
+   "title_english": "The Problem",
+   "problem_statement_sanskrit": "संस्कृते तावद् इयं युक्तिः पर्याप्ता न भवति। यतः पत्नीरूपार्थं वक्तुं दाराशब्दः पुंसि बहुवचनान्तः, कळत्रशब्दः नपुंसकलिङ्गे च प्रयुज्यते। वृक्षादिशब्दाः पुंसि प्रयुज्यते। लतादिशब्दाः स्त्रियां प्रयुज्यन्ते।",
+   "problem_statement_english": "In Sanskrit, this logic is not sufficient. For the meaning of 'wife', the word दारा is used in masculine plural, and कळत्र is used in neuter. Words like वृक्ष (tree) are masculine. Words like लता (creeper) are feminine.",
+   "question_sanskrit": "किमर्थमेवं भवतीति।",
+   "question_english": "Why is it so?"
+  },
+  "solution": {
+   "title": "अत्र समाधानम्",
+   "title_english": "The Solution",
+   "principle_sanskrit": "संस्कृते शब्दानां लिङ्गं प्रत्येकं पदार्थे सत्त्वरजस्तमोगुणानामपचयोपचस्थितिभिः निश्चीयते। यत्रापचयः तत्र स्त्रीत्वम्, उपचये पुंस्त्वम्, केवलं स्थितिमात्रेण नपुंसकत्वमिति निर्णयः।",
+   "principle_english": "In Sanskrit, the gender of words is determined for each entity by the diminution (apacaya), enhancement (upacaya), or stasis (sthiti) of the qualities of sattva, rajas, and tamas. Where there is diminution - femininity; in enhancement - masculinity; in mere stasis alone - neuter gender."
+  }
+ },
+ "samasta_pada_linga_vyavastha": {
+  "title": "समस्तपदेषु लिङ्गव्यवस्था",
+  "title_english": "Gender System in Compound Words",
+  "rules": [
+   {
+    "compound_type": "द्वन्द्व तत्पुरुष",
+    "compound_type_english": "Dvandva and Tatpurusha compounds",
+    "rule_sanskrit": "द्वन्द्वतत्पुरुषसमासयोः परपदस्य यल्लिङ्गं तदेव भवति।",
+    "rule_english": "In Dvandva and Tatpurusha compounds, the gender of the final word (uttarapada) becomes the gender of the compound.",
+    "examples": [
+     {
+      "type": "द्वन्द्व",
+      "analysis_sanskrit": "सीता च रामश्च सीतारामौ। अत्र उत्तरपदस्य यत् लिङ्गं (पुंस्त्वं) तदेव समस्तपदस्य भवति।",
+      "analysis_english": "Sita and Rama = Sītārāmau. Here, the gender of the final word (masculine) becomes the gender of the compound.",
+      "compound": "सीतारामौ",
+      "gender": "पुंस्"
+     },
+     {
+      "type": "तत्पुरुष",
+      "analysis_sanskrit": "पार्वत्याः पुत्रः पार्वतीपुत्रः। पुत्र इति उत्तरपदम्, स पुंल्लिङ्गे वर्तते इति कृत्वा समस्तपदमपि पुंलिङ्गे भवति।",
+      "analysis_english": "Son of Parvati = Pārvatīputraḥ. Putra is the final word, it is in masculine, therefore the compound is also masculine.",
+      "compound": "पार्वतीपुत्रः",
+      "gender": "पुंस्"
+     }
+    ]
+   },
+   {
+    "compound_type": "अव्ययीभाव",
+    "compound_type_english": "Avyayībhāva compounds",
+    "rule_sanskrit": "अव्ययीभावः सर्वदा नपुंसकलिङ्गे एव भवति।",
+    "rule_english": "Avyayībhāva compounds are always neuter.",
+    "examples": [
+     {
+      "word": "यथाशक्ति",
+      "meaning": "according to capacity",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "उपगङ्गम्",
+      "meaning": "near the Ganga",
+      "gender": "नपुंसकम्"
+     }
+    ]
+   },
+   {
+    "compound_type": "समाहारद्वन्द्व",
+    "compound_type_english": "Samāhāra Dvandva (aggregate dvandva)",
+    "rule_sanskrit": "समाहारद्वन्द्वे नपुंसकलिङ्गं भवति।",
+    "rule_english": "In Samāhāra Dvandva, the gender is neuter.",
+    "examples": [
+     {
+      "word": "पाणिपादम्",
+      "meaning": "hands and feet",
+      "gender": "नपुंसकम्"
+     }
+    ]
+   },
+   {
+    "compound_type": "समाहारद्विगु",
+    "compound_type_english": "Samāhāra Dvigu (aggregate dvigu)",
+    "rule_sanskrit": "समाहारद्विगौ स्त्रीलिङ्गं भवति।",
+    "rule_english": "In Samāhāra Dvigu, the gender is feminine.",
+    "examples": [
+     {
+      "word": "त्रिलोकी",
+      "meaning": "three worlds",
+      "gender": "स्त्री"
+     }
+    ]
+   },
+   {
+    "compound_type": "बहुव्रीहि",
+    "compound_type_english": "Bahuvrīhi compounds",
+    "rule_sanskrit": "बहुव्रीहिसमासे अन्यपदार्थलिङ्गमेव भवति।",
+    "rule_english": "In Bahuvrīhi compounds, the gender of the external referent (not the compound itself) is used.",
+    "examples": [
+     {
+      "compound": "पीताम्बरः",
+      "full_form": "पीताम्बरो विष्णुः",
+      "meaning": "One who has yellow garments (Vishnu)",
+      "gender": "पुंस्"
+     },
+     {
+      "compound": "पीताम्बरा",
+      "full_form": "पीताम्बरा सरस्वती",
+      "meaning": "One who has yellow garments (Saraswati)",
+      "gender": "स्त्री"
+     }
+    ]
+   }
+  ]
+ },
+ "samanya_pada_linga_vyavastha": {
+  "title": "सामान्यपदेषु लिङ्गव्यवस्था",
+  "title_english": "Gender System in Simple/Regular Words",
+  "detailed_rules": [
+   {
+    "rule_number": 1,
+    "rule_scope_sanskrit": "ऋ-कारान्ताः",
+    "rule_scope_english": "Words ending in ṛ",
+    "rule_scope_devanagari": "{ऋ-कारान्ताः}",
+    "specificity_sanskrit": "मातृ, दुहितृ, स्वसृ, पोतृ, ननान्दृ",
+    "specificity_english": "Specifically for mātṛ, duhitṛ, svasṛ, potṛ, nanāndṛ",
+    "specificity_devanagari": "{मातृ}, {दुहितृ}, {स्वसृ}, {पोतृ}, {ननान्दृ}",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "मातृ",
+      "transliteration": "mātṛ",
+      "meaning": "mother"
+     },
+     {
+      "word": "स्वसृ",
+      "transliteration": "svasṛ",
+      "meaning": "sister"
+     }
+    ],
+    "citation_source_type": "Word Ending / Fixed List"
+   },
+   {
+    "rule_number": 2,
+    "rule_scope_sanskrit": "अन्-प्रत्ययान्तः, नि-प्रत्ययान्तः, ऊ-प्रत्ययान्तः धातुः",
+    "rule_scope_english": "Roots ending in an, ni, or ū suffixes",
+    "rule_scope_devanagari": "{अन्-प्रत्ययान्तः}, {नि-प्रत्ययान्तः}, {ऊ-प्रत्ययान्तः} {धातुः}",
+    "specificity_sanskrit": "धातुः",
+    "specificity_english": "Verbal roots with these endings",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "अवनिः",
+      "transliteration": "avaniḥ",
+      "meaning": "earth"
+     },
+     {
+      "word": "चमूः",
+      "transliteration": "camūḥ",
+      "meaning": "army"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 3,
+    "rule_scope_sanskrit": "अशनि, भरणि, अरणिः",
+    "rule_scope_english": "Specific words: aśani, bharaṇi, araṇiḥ",
+    "rule_scope_devanagari": "{अशनि}, {भरणि}, {अरणिः}",
+    "resulting_gender_sanskrit": "पुंस् च स्त्री",
+    "resulting_gender_devanagari": "{पुंस्} {च} {स्त्री}",
+    "resulting_gender_english": "Masculine and Feminine",
+    "example_words": [
+     {
+      "word": "अशनिः",
+      "transliteration": "aśaniḥ",
+      "meaning": "thunderbolt",
+      "gender": "पुंस्/स्त्री"
+     }
+    ],
+    "citation_source_type": "Fixed List / Dual"
+   },
+   {
+    "rule_number": 4,
+    "rule_scope_sanskrit": "वह्नि, वृष्णि, अग्नयः",
+    "rule_scope_english": "vahni, vṛṣṇi, agnayaḥ",
+    "rule_scope_devanagari": "{वह्नि}, {वृष्णि}, {अग्नयः}",
+    "apavada_note_sanskrit": "नि-अन्तः अपवादः",
+    "apavada_note_english": "Exception (Apavāda) to ni-ending rule",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "वह्निः",
+      "transliteration": "vahniḥ",
+      "meaning": "fire"
+     },
+     {
+      "word": "अग्निः",
+      "transliteration": "agniḥ",
+      "meaning": "fire"
+     }
+    ],
+    "citation_source_type": "Fixed List"
+   },
+   {
+    "rule_number": 5,
+    "rule_scope_sanskrit": "श्रोणि, योनि, ऊर्मयः",
+    "rule_scope_english": "śroṇi, yoni, ūrmayaḥ",
+    "rule_scope_devanagari": "{श्रोणि}, {योनि}, {ऊर्मयः}",
+    "resulting_gender_sanskrit": "पुंस् च स्त्री",
+    "resulting_gender_devanagari": "{पुंस्} {च} {स्त्री}",
+    "resulting_gender_english": "Masculine and Feminine",
+    "example_words": [
+     {
+      "word": "श्रोणिः",
+      "transliteration": "śroṇiḥ",
+      "meaning": "hip/pelvis"
+     }
+    ],
+    "citation_source_type": "Fixed List / Dual"
+   },
+   {
+    "rule_number": 6,
+    "rule_scope_sanskrit": "क्तिन्-अन्तः",
+    "rule_scope_english": "Words ending in ktin suffix",
+    "rule_scope_devanagari": "{क्तिन्-अन्तः}",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "कृतिः",
+      "transliteration": "kṛtiḥ",
+      "meaning": "creation/action"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 7,
+    "rule_scope_sanskrit": "ई-कारान्तः",
+    "rule_scope_english": "Words ending in ī",
+    "rule_scope_devanagari": "{ई-कारान्तः}",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "लक्ष्मीः",
+      "transliteration": "Lakṣmīḥ",
+      "meaning": "Goddess Lakshmi"
+     }
+    ],
+    "citation_source_type": "Word Ending / Suffix"
+   },
+   {
+    "rule_number": 8,
+    "rule_scope_sanskrit": "ऊँङ्, आप् अन्तः",
+    "rule_scope_english": "Words ending in ūṅ or āp suffixes",
+    "rule_scope_devanagari": "{ऊँङ्}, {आप्} अन्तः",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "कुरूः",
+      "transliteration": "kurūḥ",
+      "meaning": "Kuru"
+     },
+     {
+      "word": "विद्या",
+      "transliteration": "vidyā",
+      "meaning": "knowledge"
+     }
+    ],
+    "citation_source_type": "Feminine Suffix"
+   },
+   {
+    "rule_number": 9,
+    "rule_scope_sanskrit": "ई/ऊ अन्तं एकाक्षरम्",
+    "rule_scope_english": "Single-syllable words ending in ī or ū",
+    "rule_scope_devanagari": "{ई/ऊ} अन्तं {एकाक्षरम्}",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "श्रीः",
+      "transliteration": "Śrīḥ",
+      "meaning": "Sri/Lakshmi"
+     },
+     {
+      "word": "भूः",
+      "transliteration": "Bhūḥ",
+      "meaning": "earth"
+     }
+    ],
+    "citation_source_type": "Word Ending / Length"
+   },
+   {
+    "rule_number": 10,
+    "rule_scope_sanskrit": "विंशत्यादिः आनवतेः",
+    "rule_scope_english": "Numerals from 20 up to 90",
+    "rule_scope_devanagari": "{विंशत्यादिः} {आनवतेः}",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "विंशतिः",
+      "transliteration": "viṃśatiḥ",
+      "meaning": "twenty"
+     },
+     {
+      "word": "सप्ततिः",
+      "transliteration": "saptatiḥ",
+      "meaning": "seventy"
+     },
+     {
+      "word": "नवतिः",
+      "transliteration": "navatiḥ",
+      "meaning": "ninety"
+     }
+    ],
+    "citation_source_type": "Fixed List / Numeral"
+   },
+   {
+    "rule_number": 11,
+    "rule_scope_sanskrit": "तल्-अन्तः",
+    "rule_scope_english": "Words ending in tal suffix",
+    "rule_scope_devanagari": "{तल्-अन्तः}",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "शुक्लता",
+      "transliteration": "śuklatā",
+      "meaning": "whiteness"
+     },
+     {
+      "word": "देवता",
+      "transliteration": "devatā",
+      "meaning": "deity"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 12,
+    "rule_scope_sanskrit": "यादस्",
+    "rule_scope_english": "yādas (meaning river)",
+    "rule_scope_devanagari": "{यादस्}",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "यादः",
+      "transliteration": "yādaḥ",
+      "meaning": "water/river"
+     }
+    ],
+    "citation_source_type": "Fixed List"
+   },
+   {
+    "rule_number": 13,
+    "rule_scope_sanskrit": "अप्, सुमनस्, समास्, सिकता, वर्षाणाम्",
+    "rule_scope_english": "ap, sumanas, samās, sikatā, varṣāṇām (in plural)",
+    "rule_scope_devanagari": "{अप्}, {सुमनस्}, {समास्}, {सिकता}, {वर्षाणाम्}",
+    "resulting_gender_sanskrit": "स्त्री",
+    "resulting_gender_devanagari": "{स्त्री}",
+    "resulting_gender_english": "Feminine",
+    "example_words": [
+     {
+      "word": "आपः",
+      "transliteration": "āpaḥ",
+      "meaning": "waters"
+     }
+    ],
+    "citation_source_type": "Fixed List / Plural Use"
+   },
+   {
+    "rule_number": 14,
+    "rule_scope_sanskrit": "घञ् अथवा अप् अन्तः भावे",
+    "rule_scope_english": "Words ending in ghañ or ap suffix expressing bhāva (abstract action)",
+    "rule_scope_devanagari": "{घञ्} ({ghañ}) or {अप्} ({ap}) अन्तः",
+    "context": "भावे (when expressing bhāva/action)",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "पाकः",
+      "transliteration": "pākaḥ",
+      "meaning": "cooking"
+     },
+     {
+      "word": "त्यागः",
+      "transliteration": "tyāgaḥ",
+      "meaning": "renunciation"
+     },
+     {
+      "word": "करः",
+      "transliteration": "karaḥ",
+      "meaning": "doing"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix / Bhāva"
+   },
+   {
+    "rule_number": 15,
+    "rule_scope_sanskrit": "भय, लिङ्ग, भग, पदानि",
+    "rule_scope_english": "bhaya, liṅga, bhaga, pada",
+    "rule_scope_devanagari": "{भय}, {लिङ्ग}, {भग}, {पदानि}",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "भयम्",
+      "transliteration": "bhayam",
+      "meaning": "fear"
+     },
+     {
+      "word": "लिङ्गम्",
+      "transliteration": "liṅgam",
+      "meaning": "gender/mark"
+     },
+     {
+      "word": "भगम्",
+      "transliteration": "bhagam",
+      "meaning": "fortune"
+     },
+     {
+      "word": "पदम्",
+      "transliteration": "padam",
+      "meaning": "foot/word"
+     }
+    ],
+    "citation_source_type": "Fixed List"
+   },
+   {
+    "rule_number": 16,
+    "rule_scope_sanskrit": "नङ्-अन्तः",
+    "rule_scope_english": "Words ending in naṅ suffix",
+    "rule_scope_devanagari": "{नङ्-अन्तः}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "यज्ञः",
+      "transliteration": "yajñaḥ",
+      "meaning": "sacrifice"
+     },
+     {
+      "word": "यत्नः",
+      "transliteration": "yatnaḥ",
+      "meaning": "effort"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 17,
+    "rule_scope_sanskrit": "क्य्-अन्तः घुः",
+    "rule_scope_english": "Dhatu with ghu designation ending in ky suffix",
+    "rule_scope_devanagari": "{क्य्-अन्तः} {घुः}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "आधिः",
+      "transliteration": "ādhiḥ",
+      "meaning": "anxiety"
+     },
+     {
+      "word": "निधिः",
+      "transliteration": "nidhiḥ",
+      "meaning": "treasure"
+     },
+     {
+      "word": "उदधिः",
+      "transliteration": "udadhiḥ",
+      "meaning": "ocean"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 18,
+    "rule_scope_sanskrit": "इषुधिः",
+    "rule_scope_english": "iṣudhiḥ (quiver)",
+    "rule_scope_devanagari": "{इषुधिः}",
+    "resulting_gender_sanskrit": "पुंस् च स्त्री",
+    "resulting_gender_devanagari": "{पुंस्} {च} {स्त्री}",
+    "resulting_gender_english": "Masculine and Feminine",
+    "example_words": [
+     {
+      "word": "इषुधिः",
+      "transliteration": "iṣudhiḥ",
+      "meaning": "quiver"
+     }
+    ],
+    "citation_source_type": "Fixed List / Dual"
+   },
+   {
+    "rule_number": 19,
+    "rule_scope_sanskrit": "देवादि-अभिधानानि",
+    "rule_scope_english": "Words denoting deva, giri, kesa, danta, etc.",
+    "rule_scope_devanagari": "{देवादि-अभिधानानि}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "देवः",
+      "transliteration": "devaḥ",
+      "meaning": "god"
+     },
+     {
+      "word": "गिरिः",
+      "transliteration": "giriḥ",
+      "meaning": "mountain"
+     },
+     {
+      "word": "स्तनः",
+      "transliteration": "stanaḥ",
+      "meaning": "breast"
+     }
+    ],
+    "citation_source_type": "Fixed List"
+   },
+   {
+    "rule_number": 20,
+    "rule_scope_sanskrit": "त्रिविष्टप, त्रिभुवने",
+    "rule_scope_english": "triviṣṭapa and tribhuvane (heaven)",
+    "rule_scope_devanagari": "{त्रिविष्टप}, {त्रिभुवने}",
+    "context": "स्वर्गार्थे (in the sense of heaven)",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "त्रिविष्टपम्",
+      "transliteration": "triviṣṭapam",
+      "meaning": "heaven"
+     },
+     {
+      "word": "त्रिभुवनम्",
+      "transliteration": "tribhuvanam",
+      "meaning": "three worlds"
+     }
+    ],
+    "citation_source_type": "Fixed List"
+   },
+   {
+    "rule_number": 21,
+    "rule_scope_sanskrit": "नान्तः",
+    "rule_scope_english": "Words ending in na (न)",
+    "rule_scope_devanagari": "{नान्त:}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "राजा",
+      "transliteration": "rājā",
+      "meaning": "king"
+     },
+     {
+      "word": "तक्षा",
+      "transliteration": "takṣā",
+      "meaning": "carpenter"
+     }
+    ],
+    "citation_source_type": "Word Ending"
+   },
+   {
+    "rule_number": 22,
+    "rule_scope_sanskrit": "अभ्रम्",
+    "rule_scope_english": "abhram (cloud)",
+    "rule_scope_devanagari": "{अभ्रम्}",
+    "apavada_note_sanskrit": "मेघाभिधानानि अपवादः",
+    "apavada_note_english": "Exception to cloud-denoting words",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "अभ्रम्",
+      "transliteration": "abhram",
+      "meaning": "cloud"
+     }
+    ],
+    "citation_source_type": "Fixed List"
+   },
+   {
+    "rule_number": 23,
+    "rule_scope_sanskrit": "उकारान्तः",
+    "rule_scope_english": "Words ending in u",
+    "rule_scope_devanagari": "{उकारान्तः}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "प्रभुः",
+      "transliteration": "prabhuḥ",
+      "meaning": "lord"
+     },
+     {
+      "word": "इक्षुः",
+      "transliteration": "ikṣuḥ",
+      "meaning": "sugarcane"
+     }
+    ],
+    "citation_source_type": "Word Ending"
+   },
+   {
+    "rule_number": 24,
+    "rule_scope_sanskrit": "श्मश्रु, जानु, वसु, स्वादु, अश्रु, जतु, त्रपु, तामून्",
+    "rule_scope_english": "śmaśru, jānu, vasu, svādu, aśru, jatu, trapu, tāmūn",
+    "rule_scope_devanagari": "{श्मश्रु}, {जानु}, {वसु}, {स्वादु}, {अश्रु}, {जतु}, {त्रपु}, {तामून्}",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "श्मश्रु",
+      "transliteration": "śmaśru",
+      "meaning": "beard"
+     },
+     {
+      "word": "जानु",
+      "transliteration": "jānu",
+      "meaning": "knee"
+     }
+    ],
+    "citation_source_type": "Fixed List"
+   },
+   {
+    "rule_number": 25,
+    "rule_scope_sanskrit": "मद्गु, मधु, शीधु, सानु, कमण्डलूनि",
+    "rule_scope_english": "madgu, madhu, śīdhu, sānu, kamaṇḍalūni",
+    "rule_scope_devanagari": "{मद्गु}, {मधु}, {शीधु}, {सानु}, {कमण्डलूनि}",
+    "resulting_gender_sanskrit": "पुंस् च नपुंसकम्",
+    "resulting_gender_devanagari": "{पुंस्} {च} {नपुंसकम्}",
+    "resulting_gender_english": "Masculine and Neuter",
+    "example_words": [
+     {
+      "word": "मद्गुः/मद्गु",
+      "transliteration": "madguḥ/madgu",
+      "meaning": "waterfowl"
+     }
+    ],
+    "citation_source_type": "Fixed List / Dual"
+   }
+  ]
+ },
+ "upadha_based_rules": {
+  "title": "उपधा-आधारितं लिङ्गव्यवस्था",
+  "title_english": "Gender Based on Penultimate Letter (Upadha)",
+  "description": "Rules for अकारान्त (a-ending) words based on the penultimate consonant",
+  "rules": [
+   {
+    "rule_number": 26,
+    "upadha": "क (k)",
+    "rule_scope_sanskrit": "क-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with k as penultimate",
+    "rule_scope_devanagari": "{क-उपधः} {अकारान्तः}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "स्तबकः",
+      "transliteration": "stabakaḥ",
+      "meaning": "cluster"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "चिबुकम्",
+      "transliteration": "cibukam",
+      "meaning": "chin",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "शालूकम्",
+      "transliteration": "śālūkam",
+      "meaning": "water lily",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "प्रातिपदिकम्",
+      "transliteration": "prātipadikam",
+      "meaning": "prātipadika",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "अंशुका",
+      "transliteration": "aṃśukā",
+      "meaning": "garment",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "उल्मुकानि",
+      "transliteration": "ulmukāni",
+      "meaning": "firebrand",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "dual_gender_words": [
+     {
+      "word": "कण्टकः/कण्टकम्",
+      "transliteration": "kaṇṭakaḥ/kaṇṭakam",
+      "meaning": "thorn"
+     },
+     {
+      "word": "आनीकः/आनीकम्",
+      "transliteration": "ānīkaḥ/ānīkam",
+      "meaning": "army face"
+     },
+     {
+      "word": "सरकः/सरकम्",
+      "transliteration": "sarakaḥ/sarakam",
+      "meaning": "pond"
+     },
+     {
+      "word": "ओदकः/ओदकम्",
+      "transliteration": "odakaḥ/odakam",
+      "meaning": "wet"
+     },
+     {
+      "word": "चषकः/चषकम्",
+      "transliteration": "caṣakaḥ/caṣakam",
+      "meaning": "cup"
+     },
+     {
+      "word": "मस्तकः/मस्तकम्",
+      "transliteration": "mastakaḥ/mastakam",
+      "meaning": "head"
+     },
+     {
+      "word": "पुस्तकः/पुस्तकम्",
+      "transliteration": "pustakaḥ/pustakam",
+      "meaning": "book"
+     },
+     {
+      "word": "तडाकः/तडाकम्",
+      "transliteration": "taḍākaḥ/taḍākam",
+      "meaning": "pond"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 27,
+    "upadha": "ट (ṭ)",
+    "rule_scope_sanskrit": "ट-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with ṭ as penultimate",
+    "rule_scope_devanagari": "{ट-उपधः} {अकारान्तः}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "घटः",
+      "transliteration": "ghaṭaḥ",
+      "meaning": "pot"
+     },
+     {
+      "word": "पटः",
+      "transliteration": "paṭaḥ",
+      "meaning": "cloth"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 28,
+    "upadha": "ण (ṇ)",
+    "rule_scope_sanskrit": "ण-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with ṇ as penultimate",
+    "rule_scope_devanagari": "{ण}-उपधः {अकारान्तः}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "गुणाः",
+      "transliteration": "guṇāḥ",
+      "meaning": "qualities"
+     },
+     {
+      "word": "गणाः",
+      "transliteration": "gaṇāḥ",
+      "meaning": "groups"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "ऋणम्",
+      "transliteration": "ṛṇam",
+      "meaning": "debt",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "लवणम्",
+      "transliteration": "lavaṇam",
+      "meaning": "salt",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "पर्णम्",
+      "transliteration": "parṇam",
+      "meaning": "leaf",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "तोरणम्",
+      "transliteration": "toraṇam",
+      "meaning": "arch",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "रणोष्णानि",
+      "transliteration": "raṇoṣṇāni",
+      "meaning": "heat of battle",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 29,
+    "upadha": "थ (th)",
+    "rule_scope_sanskrit": "थ-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with th as penultimate",
+    "rule_scope_devanagari": "{थ}-उपधः",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "रथः",
+      "transliteration": "rathaḥ",
+      "meaning": "chariot"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "काष्ठम्",
+      "transliteration": "kāṣṭham",
+      "meaning": "wood",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "पृष्ठम्",
+      "transliteration": "pṛṣṭham",
+      "meaning": "back",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "सिक्थम्",
+      "transliteration": "siktham",
+      "meaning": "wax",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "उक्थानि",
+      "transliteration": "ukthāni",
+      "meaning": "hymn",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "dual_gender_words": [
+     {
+      "word": "तीर्थः/तीर्थम्",
+      "transliteration": "tīrthaḥ/tīrtham",
+      "meaning": "pilgrimage"
+     },
+     {
+      "word": "प्रोथः/प्रोथम्",
+      "transliteration": "prothaḥ/protham",
+      "meaning": "spread"
+     },
+     {
+      "word": "यूथः/यूथम्",
+      "transliteration": "yūthaḥ/yūtham",
+      "meaning": "herd"
+     },
+     {
+      "word": "गाथा/गाथानि",
+      "transliteration": "gāthā/gāthāni",
+      "meaning": "verse"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 30,
+    "upadha": "न (n)",
+    "rule_scope_sanskrit": "न्-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with n as penultimate",
+    "rule_scope_devanagari": "{न्}-उपधः {अदन्तः}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "इनः",
+      "transliteration": "inaḥ",
+      "meaning": "powerful"
+     },
+     {
+      "word": "फेनः",
+      "transliteration": "phenaḥ",
+      "meaning": "foam"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "जघनम्",
+      "transliteration": "jaghanam",
+      "meaning": "hip",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "अजिनम्",
+      "transliteration": "ajinam",
+      "meaning": "skin",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "तुहिनम्",
+      "transliteration": "tuhinam",
+      "meaning": "frost",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "काननम्",
+      "transliteration": "kānanam",
+      "meaning": "forest",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "वनम्",
+      "transliteration": "vanam",
+      "meaning": "forest",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "वृजिनम्",
+      "transliteration": "vṛjinam",
+      "meaning": "sin",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "विपिनम्",
+      "transliteration": "vipinam",
+      "meaning": "forest",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "dual_gender_words": [
+     {
+      "word": "मानः/मानम्",
+      "transliteration": "mānaḥ/mānam",
+      "meaning": "respect"
+     },
+     {
+      "word": "यानः/यानम्",
+      "transliteration": "yānaḥ/yānam",
+      "meaning": "vehicle"
+     },
+     {
+      "word": "अभिधानः/अभिधानम्",
+      "transliteration": "abhidhānaḥ/abhidhānam",
+      "meaning": "name"
+     },
+     {
+      "word": "नलिनः/नलिनम्",
+      "transliteration": "nalinaḥ/nalinam",
+      "meaning": "lotus"
+     },
+     {
+      "word": "पुलिनः/पुलिनम्",
+      "transliteration": "pulinaḥ/pulinam",
+      "meaning": "sandbank"
+     },
+     {
+      "word": "उद्यानः/उद्यानम्",
+      "transliteration": "udyānaḥ/udyānam",
+      "meaning": "garden"
+     },
+     {
+      "word": "शयनः/शयनम्",
+      "transliteration": "śayanaḥ/śayanam",
+      "meaning": "bed"
+     },
+     {
+      "word": "आसनः/आसनम्",
+      "transliteration": "āsanaḥ/āsanam",
+      "meaning": "seat"
+     },
+     {
+      "word": "स्थानः/स्थानम्",
+      "transliteration": "sthānaḥ/sthānam",
+      "meaning": "place"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 31,
+    "upadha": "प (p)",
+    "rule_scope_sanskrit": "प-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with p as penultimate",
+    "rule_scope_devanagari": "{अदन्तः}",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "यूपः",
+      "transliteration": "yūpaḥ",
+      "meaning": "sacrificial post"
+     },
+     {
+      "word": "दीपः",
+      "transliteration": "dīpaḥ",
+      "meaning": "lamp"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "पापम्",
+      "transliteration": "pāpam",
+      "meaning": "sin",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "रुपम्",
+      "transliteration": "rupam",
+      "meaning": "form",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "ओडम्",
+      "transliteration": "oḍam",
+      "meaning": "raft",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "पतल्पम्",
+      "transliteration": "patalpam",
+      "meaning": "mat",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "शिल्पम्",
+      "transliteration": "śilpam",
+      "meaning": "craft",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "पुष्पम्",
+      "transliteration": "puṣpam",
+      "meaning": "flower",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "समीपम्",
+      "transliteration": "samīpam",
+      "meaning": "near",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "अन्तरीपाणि",
+      "transliteration": "antarīpāṇi",
+      "meaning": "island",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "dual_gender_words": [
+     {
+      "word": "शूर्पः/शूर्पम्",
+      "transliteration": "śūrpaḥ/śūrpam",
+      "meaning": "winnowing fan"
+     },
+     {
+      "word": "कुतपः/कुतपम्",
+      "transliteration": "kutapaḥ/kutapam",
+      "meaning": "blanket"
+     },
+     {
+      "word": "कुणपः/कुणपम्",
+      "transliteration": "kuṇapaḥ/kuṇapam",
+      "meaning": "corpse"
+     },
+     {
+      "word": "द्वीपः/द्वीपम्",
+      "transliteration": "dvīpaḥ/dvīpam",
+      "meaning": "island"
+     },
+     {
+      "word": "विटपः/विटपम्",
+      "transliteration": "viṭapaḥ/viṭapam",
+      "meaning": "branch"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 32,
+    "upadha": "भ (bh)",
+    "rule_scope_sanskrit": "भ्-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with bh as penultimate",
+    "rule_scope_devanagari": "{भ्}-उपधः",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "स्तम्भः",
+      "transliteration": "stambhaḥ",
+      "meaning": "pillar"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "तलभम्",
+      "transliteration": "talabham",
+      "meaning": "palate",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 33,
+    "upadha": "म (m)",
+    "rule_scope_sanskrit": "म्-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with m as penultimate",
+    "rule_scope_devanagari": "{म्}-उपधः",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "सोमः",
+      "transliteration": "somaḥ",
+      "meaning": "soma/moon"
+     },
+     {
+      "word": "भीमः",
+      "transliteration": "bhīmaḥ",
+      "meaning": "terrible"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "रुक्मम्",
+      "transliteration": "rukmam",
+      "meaning": "gold",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "सिध्मम्",
+      "transliteration": "sidhmam",
+      "meaning": "sieve",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "युध्मम्",
+      "transliteration": "yudhmam",
+      "meaning": "battle",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "एध्मम्",
+      "transliteration": "edhmam",
+      "meaning": "fuel",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "गुल्मम्",
+      "transliteration": "gulmam",
+      "meaning": "bush",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "अध्यात्मम्",
+      "transliteration": "adhyātmam",
+      "meaning": "spirituality",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "कुङ्कुमानि",
+      "transliteration": "kuṅkumāni",
+      "meaning": "saffron",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 34,
+    "upadha": "य (y)",
+    "rule_scope_sanskrit": "य्-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with y as penultimate",
+    "rule_scope_devanagari": "{य्}-उपधः",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "समयः",
+      "transliteration": "samayaḥ",
+      "meaning": "time"
+     },
+     {
+      "word": "हयः",
+      "transliteration": "hayaḥ",
+      "meaning": "horse"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "किसलयम्",
+      "transliteration": "kisalayam",
+      "meaning": "sprout",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "हृदयम्",
+      "transliteration": "hṛdayam",
+      "meaning": "heart",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "इन्द्रियम्",
+      "transliteration": "indriyam",
+      "meaning": "sense organ",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "उत्तरीयाणि",
+      "transliteration": "uttarīyāṇi",
+      "meaning": "upper garment",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 35,
+    "upadha": "र (r)",
+    "rule_scope_sanskrit": "र्-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with r as penultimate",
+    "rule_scope_devanagari": "{र्}-उपधः",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "क्षुरः",
+      "transliteration": "kṣuraḥ",
+      "meaning": "razor"
+     },
+     {
+      "word": "अङ्कुरः",
+      "transliteration": "aṅkuraḥ",
+      "meaning": "sprout"
+     }
+    ],
+    "special_case": {
+     "word": "शुक्रम्",
+     "transliteration": "śukram",
+     "context_sanskrit": "रेतोऽर्थे",
+     "context_english": "when referring to semen (not the deity)",
+     "gender": "नपुंसकम्"
+    },
+    "dual_gender_words": [
+     {
+      "word": "चक्रः/चक्रम्",
+      "transliteration": "cakraḥ/cakram",
+      "meaning": "wheel"
+     },
+     {
+      "word": "वज्रः/वज्रम्",
+      "transliteration": "vajraḥ/vajram",
+      "meaning": "thunderbolt"
+     },
+     {
+      "word": "अन्धकारः/अन्धकारम्",
+      "transliteration": "andhakāraḥ/andhakāram",
+      "meaning": "darkness"
+     },
+     {
+      "word": "सारः/सारम्",
+      "transliteration": "sāraḥ/sāram",
+      "meaning": "essence"
+     },
+     {
+      "word": "आवारः/आवारम्",
+      "transliteration": "āvāraḥ/āvāram",
+      "meaning": "area"
+     },
+     {
+      "word": "पारः/पारम्",
+      "transliteration": "pāraḥ/pāram",
+      "meaning": "shore"
+     },
+     {
+      "word": "क्षीरः/क्षीरम्",
+      "transliteration": "kṣīraḥ/kṣīram",
+      "meaning": "milk"
+     },
+     {
+      "word": "तोमरः/तोमरम्",
+      "transliteration": "tomaraḥ/tomaram",
+      "meaning": "lance"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 36,
+    "upadha": "ष (ṣ)",
+    "rule_scope_sanskrit": "ष्-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with ṣ as penultimate",
+    "rule_scope_devanagari": "{ष्}-उपधः",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "वृषः",
+      "transliteration": "vṛṣaḥ",
+      "meaning": "bull"
+     },
+     {
+      "word": "वृक्षः",
+      "transliteration": "vṛkṣaḥ",
+      "meaning": "tree"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "शिरीषम्",
+      "transliteration": "śirīṣam",
+      "meaning": "siris tree",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "जीषम्",
+      "transliteration": "rjīṣam",
+      "meaning": "victory",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "अम्बरीषम्",
+      "transliteration": "ambarīṣam",
+      "meaning": "frying pan",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "पीयूषम्",
+      "transliteration": "pīyūṣam",
+      "meaning": "nectar",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "किल्बिषम्",
+      "transliteration": "kilbiṣam",
+      "meaning": "sin",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "कल्माषाणि",
+      "transliteration": "kalmāṣāṇi",
+      "meaning": "spotted",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "dual_gender_words": [
+     {
+      "word": "यूषः/यूषम्",
+      "transliteration": "yūṣaḥ/yūṣam",
+      "meaning": "soup"
+     },
+     {
+      "word": "करीषः/करीषम्",
+      "transliteration": "karīṣaḥ/karīṣam",
+      "meaning": "dung"
+     },
+     {
+      "word": "मिषः/मिषम्",
+      "transliteration": "miṣaḥ/miṣam",
+      "meaning": "ram"
+     },
+     {
+      "word": "विषः/विषम्",
+      "transliteration": "viṣaḥ/viṣam",
+      "meaning": "poison"
+     },
+     {
+      "word": "वर्षाणि",
+      "transliteration": "varṣāṇi",
+      "meaning": "years"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   },
+   {
+    "rule_number": 37,
+    "upadha": "स (s)",
+    "rule_scope_sanskrit": "स्-उपधः अकारान्तः",
+    "rule_scope_english": "Words ending in a with s as penultimate",
+    "rule_scope_devanagari": "{स्}-उपधः",
+    "resulting_gender_sanskrit": "पुंस्",
+    "resulting_gender_devanagari": "{पुंस्}",
+    "resulting_gender_english": "Masculine",
+    "example_words": [
+     {
+      "word": "वत्सः",
+      "transliteration": "vatsaḥ",
+      "meaning": "calf"
+     },
+     {
+      "word": "वायसः",
+      "transliteration": "vāyasaḥ",
+      "meaning": "crow"
+     }
+    ],
+    "exceptions": [
+     {
+      "word": "पनसम्",
+      "transliteration": "panasam",
+      "meaning": "jackfruit",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "बिसम्",
+      "transliteration": "bisam",
+      "meaning": "lotus root",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "बुसम्",
+      "transliteration": "busam",
+      "meaning": "chaff",
+      "gender": "नपुंसकम्"
+     },
+     {
+      "word": "साहसानि",
+      "transliteration": "sāhasāni",
+      "meaning": "violence",
+      "gender": "नपुंसकम्"
+     }
+    ],
+    "dual_gender_words": [
+     {
+      "word": "चमसः/चमसम्",
+      "transliteration": "camasaḥ/camasam",
+      "meaning": "cup"
+     },
+     {
+      "word": "अंसः/अंसम्",
+      "transliteration": "aṃsaḥ/aṃsam",
+      "meaning": "shoulder"
+     },
+     {
+      "word": "रसः/रसम्",
+      "transliteration": "rasaḥ/rasam",
+      "meaning": "juice"
+     },
+     {
+      "word": "निर्यासः/निर्यासम्",
+      "transliteration": "niryāsaḥ/niryāsam",
+      "meaning": "gum"
+     },
+     {
+      "word": "उपवासः/उपवासम्",
+      "transliteration": "upavāsaḥ/upavāsam",
+      "meaning": "fasting"
+     },
+     {
+      "word": "कार्पासः/कार्पासम्",
+      "transliteration": "kārpāsaḥ/kārpāsam",
+      "meaning": "cotton"
+     },
+     {
+      "word": "वासः/वासम्",
+      "transliteration": "vāsaḥ/vāsam",
+      "meaning": "dwelling"
+     },
+     {
+      "word": "मासः/मासम्",
+      "transliteration": "māsaḥ/māsam",
+      "meaning": "month"
+     },
+     {
+      "word": "कासः/कासम्",
+      "transliteration": "kāsaḥ/kāsam",
+      "meaning": "cough"
+     },
+     {
+      "word": "कांसः/कांसम्",
+      "transliteration": "kāṃsaḥ/kāṃsam",
+      "meaning": "bronze"
+     },
+     {
+      "word": "मांसानि",
+      "transliteration": "māṃsāni",
+      "meaning": "meat"
+     }
+    ],
+    "citation_source_type": "Phonetic Rule"
+   }
+  ]
+ },
+ "bhava_karma_rules": {
+  "title": "भावकर्म-आधारितं लिङ्गव्यवस्था",
+  "title_english": "Gender Based on Abstract/Action Meaning",
+  "rules": [
+   {
+    "rule_number": 38,
+    "suffix": "ल्युट्",
+    "rule_scope_sanskrit": "भावे ल्युट्-अन्तः",
+    "rule_scope_english": "Words ending in lyuṭ suffix denoting bhāva (abstract action)",
+    "rule_scope_devanagari": "{भावे} {ल्युट्}-अन्तः",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "हसनम्",
+      "transliteration": "hasanam",
+      "meaning": "laughing"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 39,
+    "suffix": "निष्ठा (क्त)",
+    "rule_scope_sanskrit": "भावे निष्ठा",
+    "rule_scope_english": "Words ending in niṣṭhā (kta) suffix denoting bhāva",
+    "rule_scope_devanagari": "{भावे} {निष्ठा}",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "हसितम्",
+      "transliteration": "hasitam",
+      "meaning": "laughed"
+     },
+     {
+      "word": "गीतम्",
+      "transliteration": "gītam",
+      "meaning": "sung"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 40,
+    "suffix": "त्व, ष्यञ्",
+    "rule_scope_sanskrit": "त्व, ष्यञ् तद्धितौ",
+    "rule_scope_english": "Words with tva or ṣyañ taddhita suffixes",
+    "rule_scope_devanagari": "{त्व}, {ष्यञ्} तद्धितौ",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "शुक्लत्वम्",
+      "transliteration": "śuklatvam",
+      "meaning": "whiteness"
+     },
+     {
+      "word": "शौक्ल्यम्",
+      "transliteration": "śauklyam",
+      "meaning": "whiteness"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 41,
+    "suffix": "यत्, ढक्, घ्यण्, ण्यत्, घञ्, वुञ्, छ",
+    "rule_scope_sanskrit": "यत्, ढक्, घ्यण्, ण्यत्, घञ्, वुञ्, छ तद्धिताः",
+    "rule_scope_english": "Specific taddhita suffixes for bhāva/karma",
+    "rule_scope_devanagari": "{यत्}, {ढक्}, {घ्यण्}, {ण्यत्}, {घञ्}, {वुञ्}, {छ} तद्धिताः",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "स्तेयम्",
+      "transliteration": "steyam",
+      "meaning": "theft"
+     },
+     {
+      "word": "सख्यम्",
+      "transliteration": "sakhyam",
+      "meaning": "friendship"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 42,
+    "rule_scope_sanskrit": "द्वन्द्वैकत्वम्",
+    "rule_scope_english": "Dvandva compounds in singular",
+    "rule_scope_devanagari": "{द्वन्द्वैकत्वम्}",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "पाणिपादम्",
+      "transliteration": "pāṇipādam",
+      "meaning": "hand and foot"
+     }
+    ],
+    "citation_source_type": "Compound Rule"
+   },
+   {
+    "rule_number": 43,
+    "rule_scope_sanskrit": "संख्यापूर्वा रात्रिः",
+    "rule_scope_english": "Night preceded by a numeral",
+    "rule_scope_devanagari": "{संख्यापूर्वा} {रात्रिः}",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "त्रिरात्रम्",
+      "transliteration": "trirātram",
+      "meaning": "three nights"
+     }
+    ],
+    "citation_source_type": "Compound Rule"
+   },
+   {
+    "rule_number": 44,
+    "suffix": "इसुन्, उस्",
+    "rule_scope_sanskrit": "इसुसन्तः",
+    "rule_scope_english": "Words ending in isun or us suffixes",
+    "rule_scope_devanagari": "{इसुसन्तः}",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "हविः",
+      "transliteration": "haviḥ",
+      "meaning": "oblation"
+     },
+     {
+      "word": "धनुः",
+      "transliteration": "dhanuḥ",
+      "meaning": "bow"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 45,
+    "suffix": "मन्",
+    "rule_scope_sanskrit": "मन्-अन्तः द्व्यच्कः अकर्तरि",
+    "rule_scope_english": "Two-syllable words ending in man suffix (not agent)",
+    "rule_scope_devanagari": "{मन्}-अन्तः {द्व्यच्कः} {अकर्तरि}",
+    "resulting_gender_sanskrit": "नपुंसकम्",
+    "resulting_gender_devanagari": "{नपुंसकम्}",
+    "resulting_gender_english": "Neuter",
+    "example_words": [
+     {
+      "word": "वर्मम्",
+      "transliteration": "varmam",
+      "meaning": "armor"
+     },
+     {
+      "word": "चर्मम्",
+      "transliteration": "carmam",
+      "meaning": "skin"
+     }
+    ],
+    "citation_source_type": "Derivational Suffix"
+   },
+   {
+    "rule_number": 46,
+    "rule_scope_sanskrit": "गुणवचनम् उकारान्तम्",
+    "rule_scope_english": "Adjectives ending in u",
+    "rule_scope_devanagari": "{गुणवचनम्} {उकारान्तम्}",
+    "resulting_gender_sanskrit": "त्रि-लिङ्गम्",
+    "resulting_gender_devanagari": "{त्रि-लिङ्गम्}",
+    "resulting_gender_english": "Tri-gendered (masculine, feminine, neuter)",
+    "example_words": [
+     {
+      "adjective": "पटु",
+      "transliteration": "paṭu",
+      "meaning": "clever",
+      "masculine": "पटुः",
+      "feminine": "पट्वी",
+      "neuter": "पटु"
+     }
+    ],
+    "citation_source_type": "Adjectival Rule"
+   },
+   {
+    "rule_number": 47,
+    "rule_scope_sanskrit": "श्रृङ्ग, अर्ध, निदाघ, उद्यम, शल्य, ढढाः",
+    "rule_scope_english": "śṛṅga, ardha, nidāgha, udyama, śalya, ḍhaḍhāḥ",
+    "rule_scope_devanagari": "{श्रृङ्ग}, {अर्ध}, {निदाघ}, {उद्यम}, {शल्य}, {द्दढाः}",
+    "resulting_gender_sanskrit": "पुंस् च नपुंसकम्",
+    "resulting_gender_devanagari": "{पुंस्} {च} {नपुंसकम्}",
+    "resulting_gender_english": "Masculine and Neuter",
+    "example_words": [
+     {
+      "word": "श्रृङ्गः/श्रृङ्गम्",
+      "transliteration": "śṛṅgaḥ/śṛṅgam",
+      "meaning": "horn"
+     }
+    ],
+    "citation_source_type": "Fixed List / Dual"
+   }
+  ]
+ }
+}

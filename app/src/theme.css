@@ -1,0 +1,182 @@
+/* ═══════════════════════════════════════════════════════════════
+   theme.css — light, colourful, gently animated
+   Text is always dark slate on white/pastel; colours are for accents.
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+  --ink: #1e293b;
+  --ink-2: #334155;
+  --muted: #526079;
+  --card: rgba(255, 255, 255, 0.78);
+  --card-border: rgba(148, 163, 184, 0.28);
+  --shadow-soft: 0 10px 30px rgba(99, 102, 241, 0.10), 0 2px 6px rgba(15, 23, 42, 0.06);
+  color-scheme: light;
+}
+
+html, body { background: #fff8f1; }
+body {
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 700px at 0% 0%, #ffe8d6 0%, transparent 60%),
+    radial-gradient(1000px 800px at 100% 0%, #ffe1f0 0%, transparent 55%),
+    radial-gradient(1100px 900px at 100% 100%, #e3f2ff 0%, transparent 60%),
+    radial-gradient(900px 800px at 0% 100%, #e6fbef 0%, transparent 60%),
+    linear-gradient(135deg, #fff8f1, #fdf4ff 50%, #f0f9ff);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+#root { border-inline: none !important; background: transparent; position: relative; z-index: 1; }
+
+/* drifting colour blobs */
+.bg-blobs { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.bg-blobs i { position: absolute; border-radius: 50%; filter: blur(60px); opacity: .55; mix-blend-mode: multiply; }
+.bg-blobs i:nth-child(1) { width: 46vmax; height: 46vmax; left: -12vmax; top: -10vmax; background: #fed7aa; animation: blob1 26s ease-in-out infinite alternate; }
+.bg-blobs i:nth-child(2) { width: 40vmax; height: 40vmax; right: -12vmax; top: 12vh; background: #fbcfe8; animation: blob2 30s ease-in-out infinite alternate; }
+.bg-blobs i:nth-child(3) { width: 44vmax; height: 44vmax; left: 25vw; bottom: -18vmax; background: #c7d2fe; animation: blob3 34s ease-in-out infinite alternate; }
+.bg-blobs i:nth-child(4) { width: 30vmax; height: 30vmax; left: 8vw; top: 55vh; background: #bbf7d0; animation: blob2 38s ease-in-out infinite alternate-reverse; opacity: .45; }
+@keyframes blob1 { to { transform: translate(14vw, 10vh) scale(1.15); } }
+@keyframes blob2 { to { transform: translate(-12vw, 14vh) scale(.9); } }
+@keyframes blob3 { to { transform: translate(-10vw, -12vh) scale(1.1); } }
+
+/* faint floating letters */
+.bg-letters { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.bg-letters span {
+  position: absolute; font-family: 'Noto Sans Devanagari', serif; font-weight: 700; line-height: 1;
+  color: var(--c); opacity: .11; animation: floaty var(--d) ease-in-out infinite alternate; animation-delay: var(--delay);
+}
+@keyframes floaty { from { transform: translateY(0) rotate(-6deg); } to { transform: translateY(-38px) rotate(6deg); } }
+
+.app-root { position: relative; z-index: 1; }
+
+/* title: gently moving gradient */
+.app-header h1 {
+  background: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6, #06b6d4, #f97316) !important;
+  background-size: 300% 100% !important;
+  -webkit-background-clip: text !important; background-clip: text !important;
+  animation: titleFlow 12s linear infinite;
+  filter: drop-shadow(0 2px 0 rgba(255,255,255,.8));
+}
+.app-header h1 small { -webkit-text-fill-color: #6d28d9 !important; }
+.app-header > p { color: var(--muted) !important; }
+@keyframes titleFlow { to { background-position: 300% 0; } }
+
+/* navigation pills */
+.view-btn {
+  background: rgba(255,255,255,.75) !important; color: var(--ink-2) !important;
+  border: 1px solid var(--card-border) !important; box-shadow: 0 3px 10px rgba(15,23,42,.06);
+  transition: transform .15s, box-shadow .15s, background .2s !important;
+}
+.view-btn small { color: var(--muted); opacity: 1 !important; }
+.view-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(99,102,241,.18); }
+.view-btn-active {
+  background: linear-gradient(135deg, #f97316, #ec4899 55%, #8b5cf6) !important; color: #fff !important;
+  border-color: transparent !important; box-shadow: 0 8px 22px rgba(236,72,153,.32) !important;
+}
+.view-btn-active small { color: #fff !important; opacity: .9 !important; }
+
+/* cards: glassy white, soft colourful shadow, gentle entrance */
+.jy-region, .lk-main, .rc4, .vv-intro, .vv-examples, .vv-tool, .rc-bar, .rc-card, .gs-stage > *:first-child,
+.ab-prompt, .lk-tips, .rv-svgbox, .rc-export, .wp-verdict, .vv-card {
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(6px);
+}
+.jy-region, .lk-main, .rc4, .vv-intro, .vv-examples, .vv-tool, .rc-card, .wp-verdict { animation: fadeUp .5s ease both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } }
+
+/* journey nodes pop in one after another */
+.jy-node { animation: nodeIn .45s cubic-bezier(.34,1.56,.64,1) both; animation-delay: calc(var(--i, 0) * 55ms); }
+@keyframes nodeIn { from { opacity: 0; transform: translate(-50%, -20px) scale(.6); } }
+.jy-boss .jy-node-circle { box-shadow: 0 6px 0 color-mix(in srgb, var(--rc) 50%, #ffffff), 0 0 0 6px rgba(253,230,138,.5), 0 10px 24px rgba(245,158,11,.3) !important; }
+
+/* stars twinkle */
+.jy-node-stars .on, .gs-result-stars .on, .lk-letter i .y { animation: twinkle 2.6s ease-in-out infinite; display: inline-block; }
+@keyframes twinkle { 50% { transform: scale(1.18); filter: brightness(1.15); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001s !important; animation-iteration-count: 1 !important; transition-duration: .001s !important; }
+  .bg-letters { display: none; }
+}
+
+/* backdrop sits behind the content (it is rendered inside .app-root) */
+.bg-blobs, .bg-letters { z-index: -1; }
+
+/* page headings: deep saffron → magenta, always readable */
+.jy-title, .lk-title, .rc-title, .vv-title, .gs-result h2 {
+  color: #c2410c !important;
+  background: linear-gradient(90deg, #c2410c, #be185d); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.jy-title span, .lk-title span, .rc-title span, .vv-title span { -webkit-text-fill-color: var(--muted); }
+.jy-total, .rc-total { color: #b45309 !important; }
+
+/* stars: earned = amber, not yet = soft grey */
+.jy-node-stars, .gs-result-stars, .lk-letter i, .mstar { color: #cbd5e1 !important; }
+.jy-node-stars .on, .gs-result-stars .on, .lk-letter i .y { color: #f59e0b !important; text-shadow: 0 1px 0 #fff, 0 0 10px rgba(245,158,11,.35); }
+
+/* bubble sky: light and airy, dark letters on pastel bubbles */
+.bp-sky { background: radial-gradient(ellipse at 50% 120%, color-mix(in srgb, var(--rc) 22%, transparent), transparent 70%), linear-gradient(180deg, #e0f2fe, #fdf4ff) !important; border-color: rgba(148,163,184,.3) !important; }
+.bp-ball {
+  color: #1e293b !important; text-shadow: 0 1px 0 rgba(255,255,255,.9);
+  background: radial-gradient(circle at 30% 28%, rgba(255,255,255,.95) 0 8%, hsla(var(--h), 90%, 82%, .9) 26%, hsla(var(--h), 85%, 68%, .85) 75%) !important;
+  border: 2px solid hsla(var(--h), 80%, 60%, .7) !important;
+  box-shadow: inset 0 -6px 14px hsla(var(--h), 80%, 45%, .25), 0 6px 16px hsla(var(--h), 80%, 50%, .25) !important;
+}
+
+/* builder: the target letter shown solid in writing stations */
+.ab-target-solid { color: var(--ink) !important; }
+
+/* ── contrast fixes (measured) ── */
+/* white text only on deep enough colours */
+.view-btn-active, .jy-go, .gs-primary, .lk-cta, .lk-group.on, .bp-speak, .rc-mic, .wp-tools .wp-check, .rc-export button, .rv-export button {
+  background: linear-gradient(135deg, #c2410c, #be185d 55%, #6d28d9) !important; color: #fff !important; border-color: transparent !important;
+}
+.wp-tools .wp-check { background: linear-gradient(135deg, #15803d, #0f766e) !important; }
+.lk-group.on small { color: #fff !important; }
+/* region colours as text → deepened so they read on white */
+.jy-region-name, .gs-title-sa, .jy-card-region { color: color-mix(in srgb, var(--rc) 55%, #1e293b) !important; }
+.jy-node-stars, .lk-letter i { color: #b9c4d4 !important; }
+
+/* chart: coloured romanisation deepened, faint greys made solid */
+:root { --color-text-muted: #475569; --color-text-faint: #526079; }
+.lc__roman, .mc__sound, .cjc4__roman, .numc__roman { filter: none; }
+.lc__roman  { color: color-mix(in srgb, var(--lc-color, #6d28d9) 55%, #1e293b) !important; }
+.mc__sound  { color: color-mix(in srgb, var(--mc-color, #6d28d9) 55%, #1e293b) !important; }
+.cjc4__roman { color: color-mix(in srgb, var(--cjc4-c, #6d28d9) 55%, #1e293b) !important; }
+.numc__roman { color: color-mix(in srgb, var(--numc-c, #6d28d9) 55%, #1e293b) !important; }
+.lc__tag { color: #fff !important; filter: saturate(1.1) brightness(.85); }
+.cjc4__parts, .hc4__roman { color: #475569 !important; }
+.cjc4__eg, .rc4__tip-box, .rc4__tip-box span, .rc4__tip-icon { color: #526079 !important; }
+.rc4__tip-box strong { color: #1e293b !important; }
+
+/* small numbered badges: deepen their colour behind white text */
+.rv-num { background: color-mix(in srgb, var(--c) 72%, #1e293b) !important; }
+.vv-trio-n { background: linear-gradient(135deg, #c2410c, #be185d) !important; }
+.vv-legend-item { filter: brightness(.82) saturate(1.2); }
+.lk-mode.on { background: linear-gradient(135deg, #4338ca, #6d28d9) !important; color: #fff !important; border-color: transparent !important; box-shadow: 0 6px 16px rgba(99,102,241,.3) !important; }
+.lk-mode.on small { color: #e0e7ff !important; }
+.lc__tag { background: color-mix(in srgb, var(--lc-color, #01696f) 70%, #1e293b) !important; filter: none; }
+.vv-legend-item, .vv-tile .vv-tile-r { filter: none; }
+.vv-k-vowel { color: #9d174d !important; } .vv-k-consonant { color: #1d4ed8 !important; } .vv-k-full { color: #047857 !important; }
+.vv-k-matra { color: #92400e !important; } .vv-k-mark { color: #6d28d9 !important; } .vv-k-other { color: #475569 !important; }
+.vv-tile-d { color: #1e293b !important; } .vv-tile-r { color: #475569 !important; }
+
+/* word cards: keep the listen icon in its own corner, away from the letters */
+.wc { position: relative; padding-right: 44px !important; }
+.wc__listen {
+  position: absolute !important; top: auto !important; left: auto !important; right: 10px !important; bottom: 10px !important;
+  margin: 0 !important; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
+  font-size: .8rem !important; line-height: 1; background: color-mix(in srgb, var(--wc-color, #6d28d9) 14%, #ffffff);
+  border: 1px solid color-mix(in srgb, var(--wc-color, #6d28d9) 35%, #ffffff); pointer-events: none;
+}
+.wc__num { position: absolute; top: 8px; right: 12px; }
+.wc__dev { position: relative; z-index: 1; }
+
+/* ── medhaa.net page shell (bhava-responsive.css / .js) ──
+   This game is designed for upright phones, so the "rotate your device" prompts are not needed. */
+#bhava-rotate-banner, #bhava-rotate-block { display: none !important; }
+/* The shared toolkit gives every button and checkbox a 44 px minimum size.
+   Keep our small controls small; their tap area is enlarged invisibly instead. */
+.app-root input[type="checkbox"] { min-width: 0 !important; min-height: 0 !important; width: 18px; height: 18px; }
+.lk-inks button { min-width: 0 !important; min-height: 0 !important; position: relative; }
+.lk-inks button::after { content: ""; position: absolute; inset: -10px; }
+
+/* memory card back: a plain question mark */
+.mm-back { font-family: 'Poppins', sans-serif !important; font-weight: 800; font-size: 2.2rem !important; }

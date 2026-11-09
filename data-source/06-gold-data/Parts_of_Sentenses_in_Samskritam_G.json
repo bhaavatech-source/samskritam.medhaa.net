@@ -1,0 +1,2737 @@
+{
+ "metadata": {
+  "title": "Parts of Sentences in Samskritam",
+  "authors": [
+   "Dr. B Rajeswara Rao",
+   "Bhaavajaalam Research Center, Visakhapatnam"
+  ],
+  "purpose": "Gold Data for training of Sanskrit Corpus"
+ },
+ "sentence_definition": {
+  "definition": "The sentence (Vaakya) is of many types. A sentence is a group of पदs where multiple nouns and one verb are used generally. Each पद is divided into three ways.",
+  "parts_of_sentences": [
+   "तिङन्तपदम्",
+   "सुबन्तम्",
+   "अव्ययसञ्ज्ञकम्"
+  ]
+ },
+ "tinantapadam_section": {
+  "heading": "तिङन्तपदम्",
+  "definition": "तिङन्तपद is a technical term that indicates साध्यावस्थापन्नक्रिया (the status of action), the information about कर्तृ, कर्म, भाव, tense or mood, and person.",
+  "role": "तिङन्तपद plays a very crucial role. तिङन्तपदs are क्रियाप्रधानs (action-centric words). Therefore, all others play supportive roles.",
+  "example": "Ex: गच्छति। Here, the sentence indicates the status of action and provides information about कर्ता, 'tense,' and 'person.'",
+  "types_based_on_karaka": {
+   "heading": "Types of तिङन्तपद based on कारक",
+   "categories": [
+    {
+     "name": "कर्तृ तिङन्तपदम्",
+     "description": "कर्ता understood by listening to this.",
+     "example": "रामः ग्रामं गच्छति। Here, by this “गच्छति,” कर्ता is understood."
+    },
+    {
+     "name": "कर्म तिङन्तपदम्",
+     "description": "कर्म is understood by listening to this.",
+     "example": "रामेण ग्रामः गम्यते. Here, by this “गम्यते,” कर्म is understood."
+    },
+    {
+     "name": "भाव तिङन्तपदम्",
+     "description": "भाव is understood by listening to this.",
+     "example": "रामेण हस्यते। Here, by this हस्यते, भाव is understood."
+    }
+   ]
+  },
+  "dhatu_types": {
+   "heading": "Types of धातुs",
+   "sakaraka_dhatu": {
+    "name": "सकर्मकधातु (Transitive verb)",
+    "definition": "The धातु that has curiosity regarding “कर्म.”",
+    "example": "पठधातु - श्लोकं पठति। After listening to this पद, पठति, one becomes curious about what it refers to. The expression could refer to श्लोक, पाठं, वेदं, सूत्रं, or any similar कर्म. Until that point, he was unable to satisfy his curiosity. Therefore, पठ is a सकर्मकधातु."
+   },
+   "akarmaka_dhatu": {
+    "name": "अकर्मकधातु (Intransitive verb)",
+    "definition": "The धातु that has no curiosity regarding “कर्म.”",
+    "example": "Ex: सः हसति। After listening to this पद, हसति, one remains incurious. Therefore, हस is an अकर्मकधातु."
+   },
+   "note_on_usage": "सकर्मकधातुः अस्ति चेदपि योग्यता तत्र वर्तते वा न वा इत्यपि चिन्तनीयम्। (Even if it is a transitive verb, one must consider whether the capacity/appropriateness is there or not.)",
+   "incorrect_examples": [
+    "रामं फलं पचति—इदम् अशुद्धं वाक्यम्, यतः पचनक्रियायाः फलस्य कर्मत्वं न भवति।",
+    "रामः पच्यते—इदमपि अशुद्धं वाक्यम्। पच्-धातुक्रियायां कर्मत्वं रामस्य न सम्भवतीति हेतोः।"
+   ],
+   "akarmaka_dhatu_list": [
+    "शीङ्",
+    "हस",
+    "स्वप्",
+    "उपविश",
+    "स्था",
+    "लज्ज्",
+    "ह्री",
+    "भू",
+    "अस्",
+    "विद् (सत्तायाम्)",
+    "वृतु",
+    "जागृ",
+    "वृध्",
+    "एध्",
+    "प्याय्",
+    "क्षि",
+    "भी",
+    "जीव्",
+    "अन्",
+    "मृङ्",
+    "सस्",
+    "क्रीड्",
+    "खेल्",
+    "रम्",
+    "रुच्",
+    "दीप्",
+    "ज्वल्",
+    "शम",
+    "पत्"
+   ]
+  },
+  "dhatu_tinantapadam_relationship": {
+   "heading": "The relationship between धातुs and तिङन्तपदs",
+   "sakaraka_dhatu_output": "सकर्मकधातुs can produce कर्तृ तिङन्तपदम् and कर्मतिङन्तपदम्.",
+   "akarmaka_dhatu_output": "अकर्मकधातुs can produce कर्तृ तिङन्तपदम् and भावतिङन्तपदम्.",
+   "nijanta_conversion": "All अकर्मक-धातुs become सकर्मकs in णिजन्त. Ex: “जनाः हसन्ति” इति अकर्मकं वाक्यम्। But, in णिजन्त, it becomes सकर्मक. Ex: विदूषकः जनान् हासयति इति। Here, \"हासि\" is a णिजन्तधातु; it becomes सकर्मक."
+  },
+  "types_based_on_dhatus": {
+   "heading": "Types of तिङन्तपदs based on धातुs",
+   "broad_categories": [
+    "धातुप्रकृतिकतिङन्तपद",
+    "सुबन्तप्रकृतिकतिङन्तपद",
+    "प्रातिपदिकप्रकृतिकतिङन्तपद"
+   ],
+   "first_category_types": [
+    {
+     "name": "केवलधातुप्रकृतिकतिङन्तपद",
+     "example": "पचति, लिखति"
+    },
+    {
+     "name": "णिच्प्रकृतिकतिङन्तपद",
+     "example": "हारयति, कारयति, भावयति"
+    },
+    {
+     "name": "सन्प्रकृतिकतिङन्तपद",
+     "example": "जिज्ञासते, दिदृक्षते, चिकीर्षति"
+    },
+    {
+     "name": "यङ्प्रकृतिकतिङन्तपद",
+     "example": "बोभूयते, लेलिख्यते"
+    },
+    {
+     "name": "यङ्लुङन्तप्रकृतिकतिङन्तपद",
+     "example": "बोभवीति, लेलिखीति"
+    },
+    {
+     "name": "णिङ्प्रकृतिकतिङन्तपद",
+     "example": "कामयते"
+    },
+    {
+     "name": "सन्नन्तधातुप्रकृतिकणिजन्तप्रकृतिकतिङन्तपद",
+     "example": "जिज्ञासयति, विवक्षयति"
+    }
+   ],
+   "usage_note": "There can be an infinite loop (a while loop that has no end) for the तिङन्तपदs. Such usages should be aligned with the usage in the literature compiled by a शिष्ट (a renowned expert in any science without proper education and free from all tendencies and a native speaker of संस्कृतम्)."
+  },
+  "lakaara_system": {
+   "tenses_and_moods": "All तिङन्तपदs are used in six tenses and four moods. They are called लकार and are eleven in number.",
+   "tenses": {
+    "present_tense": "One present tense (वर्तमानकाल) - लट्",
+    "past_tenses": [
+     "सामान्यभूत (General Past) - लुङ्",
+     "भूतानद्यतन (the past that did not happen on the same day) - लङ्",
+     "भूतानद्यतनपरोक्ष (the past that happened without consciousness; not on the same day) - लिट्"
+    ],
+    "future_tenses": [
+     "सामान्यभविष्यत् (general future) - लृट्",
+     "अनद्यतनभविष्यत् (the future that will not happen today) - लुट्"
+    ]
+   },
+   "moods": {
+    "names": [
+     "request",
+     "order",
+     "benediction",
+     "condition"
+    ],
+    "terms": [
+     "लेट् (Veda only)",
+     "लोट् (Order)",
+     "विधिलिङ् (Request)",
+     "आशीर्लिङ् (Benediction)",
+     "लृङ् (Condition)"
+    ]
+   },
+   "sentence_reliance": "The entire sentence is based on तिङन्तपद. All other पदs must follow तिङन्तपदम्."
+  },
+  "voice_rules": {
+   "kartri_tinantapadam": "If कर्तृतिङन्तपदम् is used, that sentence must be in **active voice** (कर्तृवाक्य) only.",
+   "karma_tinantapadam": "A कर्मतिङन्तपद necessitates the use of the **passive voice** (कर्मवाक्य).",
+   "bhava_tinantapadam": "If it is a भावतिङन्तपदम्, then that sentence must be in **भावेप्रयोग** (Maybe translated as “middle voice”) (भाववाक्य).",
+   "kartri_vakya_vibhakti_rule": "When the कर्तृतिङन्तपदम् is being used, then the कर्ता (doer) should be in the **Prathamaa vibhakti**, and the कर्म should be in the **dvitiiya vibhakti**."
+  },
+  "vachya_parivartana_examples": {
+   "heading": "वाच्यपरिवर्तन-उदाहरणानि (Voice Change Examples)",
+   "kartri_vachya_to_karma_vachya": [
+    {
+     "kartri_vachya": "आञ्जनेयः गीतं लिखति।",
+     "karma_vachya": "आञ्जनेयेन गीतं लिख्यते।"
+    },
+    {
+     "kartri_vachya": "सः पाठं पठति ।",
+     "karma_vachya": "तेन पाठः पठ्यते ।"
+    },
+    {
+     "kartri_vachya": "अशोकः लेखं लिखति ।",
+     "karma_vachya": "अशोकेन लेखः लिख्यते ।"
+    },
+    {
+     "kartri_vachya": "सः माम् पश्यति ।",
+     "karma_vachya": "तेन अहम् दृश्ये ।"
+    },
+    {
+     "kartri_vachya": "अहं त्वाम् पश्यामि ।",
+     "karma_vachya": "मया त्वं दृश्यसे ।"
+    },
+    {
+     "kartri_vachya": "कृष्णः पत्रं लिखति ।",
+     "karma_vachya": "कृष्णेन पत्रं लिख्यते ।"
+    },
+    {
+     "kartri_vachya": "पुत्रः पितरं प्रणमति ।",
+     "karma_vachya": "पुत्रेण पिता प्रणम्यते ।"
+    },
+    {
+     "kartri_vachya": "अहं आम्रफलानि क्रीणामि ।",
+     "karma_vachya": "मया आम्रफलानि क्रीयन्ते।"
+    },
+    {
+     "kartri_vachya": "माता भोजनं पचति ।",
+     "karma_vachya": "मात्रा भोजनं पच्यते ।"
+    },
+    {
+     "kartri_vachya": "बालकाः वन्दनां कुर्वन्ति ।",
+     "karma_vachya": "बालकैः वन्दना क्रियते।"
+    },
+    {
+     "kartri_vachya": "महिलाः जलघटम् आनयन्ति ।",
+     "karma_vachya": "महिलाभिः जलघटः आनीयते ।"
+    },
+    {
+     "kartri_vachya": "रमेशः ग्रामं गच्छति ।",
+     "karma_vachya": "रमेशेन ग्रामः गम्यते ।"
+    },
+    {
+     "kartri_vachya": "यूयं पर्वतान् पश्यथ ।",
+     "karma_vachya": "युष्माभिः पर्वताः दृश्यन्ते ।"
+    },
+    {
+     "kartri_vachya": "अहं त्वाम् आह्वयामि ।",
+     "karma_vachya": "मया त्वम् आहूयसे ।"
+    },
+    {
+     "kartri_vachya": "अहं त्वाम् उत्थापयामि ।",
+     "karma_vachya": "मया त्वम् उत्थाप्यसे ।"
+    },
+    {
+     "kartri_vachya": "विहगाः जालं हरन्ति ।",
+     "karma_vachya": "विहगैः जालं ह्रियते ।"
+    },
+    {
+     "kartri_vachya": "त्वं फलं प्राप्स्यसि ।",
+     "karma_vachya": "त्वया फलं प्राप्स्यते।"
+    },
+    {
+     "kartri_vachya": "व्याघ्रः अजां नयति ।",
+     "karma_vachya": "व्याघ्रेण अजा नीयते ।"
+    },
+    {
+     "kartri_vachya": "अहं वार्तां शृणोमि ।",
+     "karma_vachya": "मया वर्ता श्रूयते ।"
+    },
+    {
+     "kartri_vachya": "बालिका गानं गायति ।",
+     "karma_vachya": "बालिकया गानं गीयते।"
+    },
+    {
+     "kartri_vachya": "नृपः शत्रुं हन्ति ।",
+     "karma_vachya": "नृपेण शत्रुः हन्यते ।"
+    },
+    {
+     "kartri_vachya": "त्वं ग्रामं गच्छसि ।",
+     "karma_vachya": "त्वया ग्रामः गम्यते ।"
+    },
+    {
+     "kartri_vachya": "सः पुस्तकं पठति ।",
+     "karma_vachya": "तेन पुस्तकं पठ्यते ।"
+    },
+    {
+     "kartri_vachya": "बालाः कोलाहलं कुर्वन्ति ।",
+     "karma_vachya": "बालकैः कोलाहलः क्रियते।"
+    },
+    {
+     "kartri_vachya": "श्यामः जलं पिबति ।",
+     "karma_vachya": "श्यामेन जलं पीयते ।"
+    },
+    {
+     "kartri_vachya": "त्वं कार्यं करोषि ।",
+     "karma_vachya": "त्वया कार्यं क्रियते ।"
+    },
+    {
+     "kartri_vachya": "सः पाठं स्मरति ।",
+     "karma_vachya": "तेन पाठः स्मर्यते ।"
+    },
+    {
+     "kartri_vachya": "अहं जलं पिबामि ।",
+     "karma_vachya": "मया जलं पीयते ।"
+    },
+    {
+     "kartri_vachya": "सः गां दोग्ध ।",
+     "karma_vachya": "तेन गौः दुह्यते ।"
+    },
+    {
+     "kartri_vachya": "आवां पुस्तके पठावः ।",
+     "karma_vachya": "आवाभ्यां पुस्तके पठ्यते।"
+    },
+    {
+     "kartri_vachya": "त्वं पर्वतं पश्यसि ।",
+     "karma_vachya": "त्वया पर्वतः दृश्यते ।"
+    },
+    {
+     "kartri_vachya": "कन्या गीतं गायति ।",
+     "karma_vachya": "कन्यया गीतं गीयते ।"
+    },
+    {
+     "kartri_vachya": "शिष्यः गुरं पृच्छति ।",
+     "karma_vachya": "शिष्येण गुरुः पृच्छ्यते"
+    },
+    {
+     "kartri_vachya": "सः भोजनं भक्षयति ।",
+     "karma_vachya": "तेन भोजनं भक्ष्यते ।"
+    },
+    {
+     "kartri_vachya": "आवां ग्रामं गच्छावः ।",
+     "karma_vachya": "आवाभ्यां ग्रामः गम्यते ।"
+    },
+    {
+     "kartri_vachya": "नृत्यं चित्तं हरति ।",
+     "karma_vachya": "नृत्येन चित्तं ह्रियते ।"
+    },
+    {
+     "kartri_vachya": "सः तं हन्ति ।",
+     "karma_vachya": "तेन सः हन्यते ।"
+    },
+    {
+     "kartri_vachya": "त्वं पत्रं लिखसि ।",
+     "karma_vachya": "त्वया पत्रं लिख्यते ।"
+    },
+    {
+     "kartri_vachya": "त्वं कुत्र गच्छसि ।",
+     "karma_vachya": "त्वया कुत्र गम्यते ।"
+    },
+    {
+     "kartri_vachya": "छात्राः ग्रन्थान् पठन्ति ।",
+     "karma_vachya": "छात्रैः ग्रन्थाः पठ्यन्ते ।"
+    },
+    {
+     "kartri_vachya": "अहं राजानं पश्यामि ।",
+     "karma_vachya": "मया राजा दृश्यते ।"
+    },
+    {
+     "kartri_vachya": "किं त्वं मां न पश्यसि ।",
+     "karma_vachya": "किं त्वया अहं न दश्ये ।"
+    },
+    {
+     "kartri_vachya": "अहं फलानि क्रीडामि ।",
+     "karma_vachya": "माया फलामि क्रीयन्ते ।"
+    },
+    {
+     "kartri_vachya": "महिलाः जलम् आनयन्ति ।",
+     "karma_vachya": "महिलाभिः जलम् आनीयते।"
+    },
+    {
+     "kartri_vachya": "अहं पत्रं लिखामि ।",
+     "karma_vachya": "मया पत्रं लिख्यते ।"
+    },
+    {
+     "kartri_vachya": "अहं लोभं त्यजामि ।",
+     "karma_vachya": "मया लोभः त्यच्यते ।"
+    },
+    {
+     "kartri_vachya": "आचार्याः छात्रान् उपदिशन्ति ।",
+     "karma_vachya": "आचार्यैः छात्राः उपदिश्यन्ते ।"
+    },
+    {
+     "kartri_vachya": "राष्ट्रपतिः राष्ट्रं सम्बोधयति ।",
+     "karma_vachya": "राष्ट्रपतिना राष्ट्रं सम्बुध्यते।"
+    },
+    {
+     "kartri_vachya": "लाकारः वृक्षान् सिञ्चति ।",
+     "karma_vachya": "मालाकारेण वृक्षाः सिच्यन्ते ।"
+    },
+    {
+     "kartri_vachya": "क्रोधः ज्ञानं नाशयति ।",
+     "karma_vachya": "क्रोधेन ज्ञानं नाश्यते ।"
+    },
+    {
+     "kartri_vachya": "छात्रः पाठम् अभ्यस्यति ।",
+     "karma_vachya": "छात्रेण पाठः अभ्यस्यते ।"
+    },
+    {
+     "kartri_vachya": "मित्रं सहयोगं ददाति ।",
+     "karma_vachya": "मित्रेण सहयोगः दीयते।"
+    },
+    {
+     "kartri_vachya": "नराः धनम् इच्छन्ति ।",
+     "karma_vachya": "नरैः धनम् इष्यते ।"
+    },
+    {
+     "kartri_vachya": "सः ग्रामं गच्छति ।",
+     "karma_vachya": "तेन ग्रामः गम्यते ।"
+    },
+    {
+     "kartri_vachya": "अहं सत्यं वदामि ।",
+     "karma_vachya": "मया सत्यम् उद्यते ।"
+    },
+    {
+     "kartri_vachya": "गरवः किं न जानन्ति ।",
+     "karma_vachya": "गुरुभिः किं न ज्ञायते ।"
+    },
+    {
+     "kartri_vachya": "वयं रामं स्मरामः ।",
+     "karma_vachya": "अस्माभिः रामः स्मर्यते ।"
+    },
+    {
+     "kartri_vachya": "वृक्षाः फलानि ददति ।",
+     "karma_vachya": "वृक्षैः फलानि दीयन्ते ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् तं पश्यति।",
+     "karma_vachya": "तेन सः दृश्यते।"
+    },
+    {
+     "kartri_vachya": "सः/तत् तां पश्यति।",
+     "karma_vachya": "तेन सा दृश्यते।"
+    },
+    {
+     "kartri_vachya": "सः/तत् तत् पश्यति ।",
+     "karma_vachya": "तेन तत् दृश्यते ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् तौ पश्यति ।",
+     "karma_vachya": "तेन तौ दृश्येते ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् तान् पश्तति ।",
+     "karma_vachya": "तेन ते दृश्यन्ते ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् ताः पश्यति ।",
+     "karma_vachya": "तेन ताः दृश्यन्ते ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् त्वां पश्यति ।",
+     "karma_vachya": "तेन त्वं दृश्यसे ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् युवां पश्यति ।",
+     "karma_vachya": "तेन युवां दृश्येथे ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् युष्मान् पश्यति ।",
+     "karma_vachya": "तेन यूयं दृश्यध्वे ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् मां पश्यति ।",
+     "karma_vachya": "तेन अहं दृश्ये ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् आवां पश्यति ।",
+     "karma_vachya": "तेन आवां दृश्यावहे ।"
+    },
+    {
+     "kartri_vachya": "सः/तत् अस्मान् पश्यति ।",
+     "karma_vachya": "तेन वयं दश्यामहे ।"
+    },
+    {
+     "kartri_vachya": "ते/तानि मां पश्यन्ति ।",
+     "karma_vachya": "तैः अहं दृश्ये ।"
+    },
+    {
+     "kartri_vachya": "ते मां पश्यतः ।",
+     "karma_vachya": "ताभ्याम् अहं दृश्ये ।"
+    },
+    {
+     "kartri_vachya": "ताः मां पश्यन्ति ।",
+     "karma_vachya": "ताभिः अहं दृश्ये ।"
+    },
+    {
+     "kartri_vachya": "युवां तं पश्यथः ।",
+     "karma_vachya": "युवाभ्यां सः दृश्यते ।"
+    },
+    {
+     "kartri_vachya": "यूयं तं पश्यथ ।",
+     "karma_vachya": "युष्माभिः सः दृश्यते ।"
+    },
+    {
+     "kartri_vachya": "अहं त्वां पश्यामि ।",
+     "karma_vachya": "मया त्वं दृश्यसे ।"
+    },
+    {
+     "kartri_vachya": "वयं त्वां पश्यामः ।",
+     "karma_vachya": "अस्माभिः त्वं दृश्यसे ।"
+    },
+    {
+     "kartri_vachya": "रामः मोहनं पश्यति ।",
+     "karma_vachya": "रामेण मोहनः दृश्यते ।"
+    },
+    {
+     "kartri_vachya": "त्वं पुष्पाणि चिनोषि ।",
+     "karma_vachya": "त्वया पुष्पाणि चीयन्ते ।"
+    },
+    {
+     "kartri_vachya": "सः पुस्तकं पठति ।",
+     "karma_vachya": "तेन पुस्तकं पठ्यते ।"
+    },
+    {
+     "kartri_vachya": "वयं गीतं गायामः ।",
+     "karma_vachya": "अस्माभिः गीतं गीयते ।"
+    },
+    {
+     "kartri_vachya": "रमेशः पुस्तकं लिखति ।",
+     "karma_vachya": "रमेशेन पुस्तकं लिख्यते।"
+    }
+   ],
+   "bhava_vachya_examples": [
+    "रामेण हस्यते।",
+    "कृष्णेन शय्यते।",
+    "बालकेन स्थीयते।",
+    "गुरुणा उपविश्यते।",
+    "जनेन जीव्यते।",
+    "मया भाव्यते",
+    "त्वया लज्यते।",
+    "मया सुप्यते",
+    "तेन स्थीयते",
+    "मया हस्यते"
+   ]
+  }
+ },
+ "subantam_section": {
+  "heading": "सुबन्तम्",
+  "definition": "The सुबन्त is a technical term used for indicating “the involved पदार्थs” in any action. Sometimes, they directly involved; sometimes, indirectly.",
+  "karakas": {
+   "definition": "The पदार्थs that directly help generate the action (क्रिया) are called कारकs. They are six: कर्ता, कर्म, करण, सम्प्रदान, अपादान, and अधिकरण। Other than these कारकs (are not karakas).",
+   "sakaraka_example": {
+    "sentence": "रमेशः भोजनाय वाहनेन कार्यालयात् रात्रौ मित्रस्य गृहं गच्छति।",
+    "analysis": {
+     "क्रिया": "गमनम्",
+     "कर्ता": "रमेशः",
+     "कर्म": "गृहं",
+     "करणम्": "वाहनेन",
+     "सम्प्रदानम्": "भोजनम्",
+     "अपादानम्": "कार्यालयः",
+     "अधिकरणम्": "रात्रिः",
+     "non_karaka": "मित्रम् (सम्बन्धवाची)"
+    },
+    "note": "Since गम्-धातु is a transitive verb (सकर्मक क्रिया), it can have six कारकs."
+   },
+   "akarmaka_example": {
+    "sentence": "रमेशः भोजनाय सप्तवादनात् मित्रस्य गृहे इच्छया उपविशति।",
+    "analysis": {
+     "कर्ता": "रमेशः",
+     "करणम्": "इच्छा",
+     "सम्प्रदानम्": "भोजनम्",
+     "अपादानम्": "सप्तवादनम्",
+     "अधिकरणम्": "गृहम्",
+     "non_karaka": "मित्रस्य (सम्बन्धवाची)"
+    },
+    "note": "Since उपवेशनम् is intransitive, it only has five कारकs."
+   },
+   "usage_note": "Though there is a possibility of five or six कारकs, we hardly use them all in our general conversation."
+  },
+  "visheshanas": {
+   "heading": "विशेषणs (Adjectives)",
+   "usage": "We use विशेषणs to explicitly mark anything. These विशेषणs can be for all types of पदs. Each and every पद is eligible for having numerous विशेषणs.",
+   "example": {
+    "sentence": "बुभुक्षितः सुन्दरः युवा रमेशः शीघ्रगामिना वाहनेन उत्तमाय भोजनाय दूरस्थात् कार्यालयात् अस्यां रात्रौ प्रियतमस्य मित्रस्य समृद्धं गृहं गच्छति।",
+    "analysis": {
+     "कर्ता_visheshanas": "बुभुक्षितः सुन्दरः युवा (for रमेशः)",
+     "vahana_visheshana": "शीघ्रगामिना (for वाहनम्)",
+     "bhojana_visheshana": "उत्तमाय (for भोजनम्)",
+     "karyalaya_visheshana": "दूरस्थात् (for कार्यालयः)",
+     "ratri_visheshana": "अस्यां (for रात्रि)",
+     "mitra_visheshana": "प्रियतमस्य (for मित्र)",
+     "griha_visheshana": "समृद्धं (for गृहम्)"
+    }
+   },
+   "optionality": "All of these विशेषणs are optional. Sometimes we use them, sometimes we do not. As per the context, we do use these विशेषणs."
+  },
+  "kriya_visheshanam": {
+   "heading": "क्रियाविशेषणम् (Adverb)",
+   "usage": "If we want to mention the type of क्रिया, we use क्रियाविशेषणम्.",
+   "example": {
+    "sentence": "बुभुक्षितः सुन्दरः युवा रमेशः शीघ्रगामिना वाहनेन उत्तमाय भोजनाय दूरस्थात् कार्यालयात् अस्यां रात्रौ प्रियतमस्य मित्रस्य समृद्धं गृहं मन्दं गच्छति।",
+    "analysis": "मन्दं is the विशेषण of गमनम् (गमिक्रिया)."
+   }
+  }
+ },
+ "avyayam_section": {
+  "heading": "अव्ययम् (Indeclinables)",
+  "definition": "Parts of sentences that are not like सुबन्तs and तिङन्तपदs, are called ‘अव्ययs.’",
+  "technical_characteristics": "An अव्यय is capable of having only one सुप्, i.e., एकवचन सु or all एकवचनs of all विभक्तिs, so it is a पद. It won’t have other suffixes for सुप् or तिङ्. Hence, this cannot be treated as a सुबन्त or तिङन्तपद. An अपद cannot be used in any sentence.",
+  "examples_in_sentences": [
+   {
+    "sentence": "अहं तत्र गच्छामि.",
+    "analysis": "तत्र is an अव्यय. It is a पद since it has एकवचन सु’. The sentence has three पदs."
+   },
+   {
+    "sentence": "सः पाठशालां गन्तुम् इच्छति.",
+    "analysis": "गन्तुं is an अव्यय."
+   }
+  ],
+  "familiar_avyayas": [
+   {
+    "Sanskrit": "कथम्",
+    "English": "How"
+   },
+   {
+    "Sanskrit": "किमर्थम्",
+    "English": "why because"
+   },
+   {
+    "Sanskrit": "नूनम्",
+    "English": "Strong"
+   },
+   {
+    "Sanskrit": "यदि",
+    "English": "Suppose"
+   },
+   {
+    "Sanskrit": "तर्हि",
+    "English": "But"
+   },
+   {
+    "Sanskrit": "तूष्णीम्",
+    "English": "Calm"
+   },
+   {
+    "Sanskrit": "बहिः",
+    "English": "Out side"
+   },
+   {
+    "Sanskrit": "अन्तः",
+    "English": "In side"
+   },
+   {
+    "Sanskrit": "कुतः",
+    "English": "From where"
+   },
+   {
+    "Sanskrit": "सर्वदा",
+    "English": "Always"
+   },
+   {
+    "Sanskrit": "नमः",
+    "English": "Wish"
+   },
+   {
+    "Sanskrit": "कदा",
+    "English": "When"
+   },
+   {
+    "Sanskrit": "यदा",
+    "English": "Then"
+   },
+   {
+    "Sanskrit": "तदा",
+    "English": "Then"
+   },
+   {
+    "Sanskrit": "धिक्",
+    "English": "Refuse"
+   },
+   {
+    "Sanskrit": "दिवा",
+    "English": "Day"
+   },
+   {
+    "Sanskrit": "नक्तम्",
+    "English": "Night"
+   },
+   {
+    "Sanskrit": "हि",
+    "English": "Only, indeed"
+   },
+   {
+    "Sanskrit": "अधः",
+    "English": "Down"
+   },
+   {
+    "Sanskrit": "उपरि",
+    "English": "Above"
+   },
+   {
+    "Sanskrit": "इति",
+    "English": "Like this"
+   },
+   {
+    "Sanskrit": "साधु",
+    "English": "Good"
+   },
+   {
+    "Sanskrit": "सम्यक्",
+    "English": "Good way"
+   },
+   {
+    "Sanskrit": "वै",
+    "English": "Certain"
+   },
+   {
+    "Sanskrit": "प्रति",
+    "English": "To wards"
+   },
+   {
+    "Sanskrit": "अतीव",
+    "English": "Over, too"
+   },
+   {
+    "Sanskrit": "अति",
+    "English": "Many, more"
+   },
+   {
+    "Sanskrit": "शनैः",
+    "English": "Slowly"
+   },
+   {
+    "Sanskrit": "सहसा",
+    "English": "Suddenly"
+   },
+   {
+    "Sanskrit": "कति",
+    "English": "Howmany"
+   },
+   {
+    "Sanskrit": "सदा",
+    "English": "Always"
+   },
+   {
+    "Sanskrit": "ह्यः",
+    "English": "Yesterday"
+   },
+   {
+    "Sanskrit": "अनन्तरम्",
+    "English": "After, Next"
+   },
+   {
+    "Sanskrit": "श्वः",
+    "English": "Tomorrow"
+   },
+   {
+    "Sanskrit": "अद्य",
+    "English": "Today"
+   },
+   {
+    "Sanskrit": "उच्चैः",
+    "English": "Above(Loudly)"
+   },
+   {
+    "Sanskrit": "इदानीम्",
+    "English": "Now"
+   },
+   {
+    "Sanskrit": "खलु",
+    "English": "Certainly"
+   },
+   {
+    "Sanskrit": "स्म",
+    "English": "Formal (pastance)"
+   },
+   {
+    "Sanskrit": "शीघ्रम्",
+    "English": "Quickly"
+   },
+   {
+    "Sanskrit": "परम्परम्",
+    "English": "Each other"
+   },
+   {
+    "Sanskrit": "विना",
+    "English": "Without"
+   },
+   {
+    "Sanskrit": "अपि",
+    "English": "Also"
+   },
+   {
+    "Sanskrit": "न",
+    "English": "No"
+   },
+   {
+    "Sanskrit": "सह",
+    "English": "With, alongwith"
+   },
+   {
+    "Sanskrit": "किम्",
+    "English": "What"
+   },
+   {
+    "Sanskrit": "तु",
+    "English": "But"
+   },
+   {
+    "Sanskrit": "अत्र",
+    "English": "Here"
+   },
+   {
+    "Sanskrit": "तत्र",
+    "English": "Where (referring to a previous 'यत्र')"
+   },
+   {
+    "Sanskrit": "यत्र",
+    "English": "Where"
+   },
+   {
+    "Sanskrit": "कुत्र",
+    "English": "Where"
+   },
+   {
+    "Sanskrit": "एव",
+    "English": "Only"
+   },
+   {
+    "Sanskrit": "सायम्",
+    "English": "Evening"
+   },
+   {
+    "Sanskrit": "प्रातः",
+    "English": "Early morning"
+   },
+   {
+    "Sanskrit": "आम्",
+    "English": "Yes"
+   },
+   {
+    "Sanskrit": "इव",
+    "English": "Equal"
+   },
+   {
+    "Sanskrit": "एकदा",
+    "English": "Once"
+   },
+   {
+    "Sanskrit": "अचिरम्",
+    "English": "Quickly"
+   },
+   {
+    "Sanskrit": "चिरम्",
+    "English": "Long time"
+   },
+   {
+    "Sanskrit": "पुरा",
+    "English": "In ancient period"
+   },
+   {
+    "Sanskrit": "प्राक्",
+    "English": "before"
+   },
+   {
+    "Sanskrit": "मा",
+    "English": "No (prohibitive)"
+   },
+   {
+    "Sanskrit": "यथा",
+    "English": "As"
+   },
+   {
+    "Sanskrit": "तथा",
+    "English": "like that"
+   },
+   {
+    "Sanskrit": "नाम",
+    "English": "Name"
+   },
+   {
+    "Sanskrit": "ननु",
+    "English": "Certainly"
+   },
+   {
+    "Sanskrit": "पर्यन्तम्",
+    "English": "Upto"
+   },
+   {
+    "Sanskrit": "चेत्",
+    "English": "Incase"
+   },
+   {
+    "Sanskrit": "इतस्ततः",
+    "English": "This side That side"
+   },
+   {
+    "Sanskrit": "सततम्",
+    "English": "Always"
+   },
+   {
+    "Sanskrit": "सत्वरम्",
+    "English": "Quickly"
+   },
+   {
+    "Sanskrit": "पुनः",
+    "English": "Again"
+   },
+   {
+    "Sanskrit": "परितः",
+    "English": "Around"
+   },
+   {
+    "Sanskrit": "उभयतः",
+    "English": "Bothside"
+   },
+   {
+    "Sanskrit": "सर्वतः",
+    "English": "Every where"
+   },
+   {
+    "Sanskrit": "पुरतः",
+    "English": "Front"
+   },
+   {
+    "Sanskrit": "अग्रतः",
+    "English": "First"
+   },
+   {
+    "Sanskrit": "कदाचित्",
+    "English": "at one time, possibility"
+   },
+   {
+    "Sanskrit": "अलम्",
+    "English": "Enough"
+   },
+   {
+    "Sanskrit": "यावत्",
+    "English": "Until that"
+   },
+   {
+    "Sanskrit": "तावत्",
+    "English": "Until they"
+   },
+   {
+    "Sanskrit": "क्रमेण",
+    "English": "Order wise"
+   },
+   {
+    "Sanskrit": "साम्प्रतम्",
+    "English": "Now"
+   },
+   {
+    "Sanskrit": "अद्यत्वे",
+    "English": "Nowadays"
+   },
+   {
+    "Sanskrit": "प्रतिवर्षम्",
+    "English": "Every Year"
+   }
+  ],
+  "other_avyaya_lists": [
+   "स्वर्",
+   "अन्तर्",
+   "प्रातर्",
+   "पुनर्",
+   "सनुतर्",
+   "उच्चैस्",
+   "नीचैस्",
+   "शनैस्",
+   "ऋधक्",
+   "ऋते",
+   "युगपत्",
+   "आरात्",
+   "अन्तिकात्",
+   "पृथक्",
+   "ह्यस्",
+   "श्वस्",
+   "दिवा",
+   "रात्रौ",
+   "सायम्",
+   "चिरम्",
+   "मनाक्",
+   "ईषत्",
+   "शश्वत्",
+   "जोषम्",
+   "तूष्णीम्",
+   "बहिस्",
+   "अधस्",
+   "अवस्",
+   "समया",
+   "निकषा",
+   "स्वयम्",
+   "मृषा",
+   "नक्तम्",
+   "नञ्",
+   "हेतौ",
+   "हे",
+   "है",
+   "इद्धा",
+   "अद्धा",
+   "सामि",
+   "वत्",
+   "यथा ब्राह्मणवत्, क्षत्रियवत्",
+   "सना",
+   "सनत्",
+   "सनात्",
+   "उपधा",
+   "तिरस्",
+   "अन्तरा",
+   "अन्तरेण",
+   "मक्",
+   "ज्योक्",
+   "योक्",
+   "नक्",
+   "कम्",
+   "शम्",
+   "सहसा",
+   "श्रद्धा",
+   "अलम्",
+   "स्वधा",
+   "वषट्",
+   "विना",
+   "नाना",
+   "स्वस्ति",
+   "अन्यत्",
+   "अस्ति",
+   "उपांशु",
+   "क्षमा",
+   "विहायसा",
+   "दोषा",
+   "मिथ्या",
+   "दिष्ट्या",
+   "वृथा",
+   "पुरा",
+   "मिथो",
+   "मिथस्",
+   "प्रायस्",
+   "मुहुस्",
+   "प्रवाहुकम्",
+   "प्रवाहिका",
+   "आर्यहलम्",
+   "अभीक्ष्णम्",
+   "साकम्",
+   "सार्धम्",
+   "सत्रम्",
+   "समम्",
+   "नमस्",
+   "हिरुक्",
+   "अथ",
+   "अम्",
+   "आम्",
+   "प्रताम्",
+   "प्रतान्",
+   "प्रशान्",
+   "तथाहि",
+   "मा",
+   "माङ्",
+   "श्रम्",
+   "कामम्",
+   "प्रकामम्",
+   "भूयस्",
+   "परम्",
+   "साक्षात्",
+   "साचि",
+   "सावि",
+   "सत्यम्",
+   "मंक्षु",
+   "संवत्",
+   "अवश्यम्",
+   "सपदि",
+   "प्रादुस्",
+   "आविस्",
+   "अनिशम्",
+   "नित्यम्",
+   "नित्यदा",
+   "सदा",
+   "अजस्रम्",
+   "सन्ततम्",
+   "उषा",
+   "ओम्",
+   "भूर्",
+   "भुवर्",
+   "झटिति",
+   "तरसा",
+   "सुष्ठु",
+   "कु",
+   "अञ्जसा",
+   "अ",
+   "मिथु",
+   "अमिथु",
+   "विथक्",
+   "भाजक्",
+   "अन्वक्",
+   "चिराय",
+   "चिररात्राय",
+   "चिरस्य",
+   "चिरेण",
+   "चिरात्",
+   "अस्तम्",
+   "आनुषक्",
+   "अनुषक्",
+   "अनुषट्",
+   "अम्नस्",
+   "अम्भस्",
+   "अम्नर्",
+   "अम्भर्",
+   "स्थाने",
+   "वरम्",
+   "दुष्ठु",
+   "बलात्",
+   "शु",
+   "अर्वाक्",
+   "शुदि",
+   "वदि",
+   "च",
+   "वा",
+   "ह",
+   "अह",
+   "एवम्",
+   "नूनम्",
+   "चेत्",
+   "चण्",
+   "कच्चित्",
+   "नह",
+   "हन्त",
+   "माकिम्",
+   "माकीम्",
+   "माकिर्",
+   "नकिम्",
+   "नकीम्",
+   "नकिर्",
+   "आकीम्",
+   "माङ",
+   "तावत्",
+   "यावत्",
+   "त्वा",
+   "त्वै",
+   "द्वै",
+   "न्वै",
+   "रै",
+   "रे",
+   "श्रौषट्",
+   "वौषट्",
+   "स्वाहा",
+   "वषट्",
+   "स्वधा",
+   "ओम्",
+   "तथा",
+   "खलु",
+   "किल",
+   "स्म",
+   "इ",
+   "उ",
+   "ऋ",
+   "ऌ",
+   "ए",
+   "ऐ",
+   "ओ",
+   "औ",
+   "आदह",
+   "उञ्",
+   "उकञ्",
+   "वेलायाम्",
+   "मात्रायाम्",
+   "यथा",
+   "यत्",
+   "तत्",
+   "किम्",
+   "वधा",
+   "वध्वा",
+   "धिक्",
+   "हाहा",
+   "हेहै",
+   "हहे",
+   "पाट्",
+   "प्याट्",
+   "आहो",
+   "उताहो",
+   "हो",
+   "अहो",
+   "नो",
+   "नौ",
+   "अथो",
+   "ननु",
+   "मन्ये",
+   "असि",
+   "ब्रूहि",
+   "तु",
+   "नु",
+   "इति",
+   "इव",
+   "वत्",
+   "वात्",
+   "वन",
+   "बत",
+   "सम्",
+   "वशम्",
+   "शिकम्",
+   "दिकम्",
+   "सनुकं",
+   "छंवट्",
+   "छंबट्",
+   "शङ्के",
+   "शुकम्",
+   "खम्",
+   "नहिकम्",
+   "ऋतम्",
+   "नोचेत्",
+   "नचेत्",
+   "नहि",
+   "जातु",
+   "कथम्",
+   "कुतः",
+   "कुत्र",
+   "अव",
+   "अनु",
+   "हा",
+   "हे",
+   "है",
+   "आहोस्वित्",
+   "पशु",
+   "नट्",
+   "सह",
+   "आनुषट्",
+   "आनुषक्",
+   "अङ्ग",
+   "लट्",
+   "ताजक्",
+   "अये",
+   "अरे",
+   "वाट्",
+   "चाटु",
+   "कुम्",
+   "खुम्",
+   "घुम्",
+   "अम्",
+   "ईम्",
+   "सीम्",
+   "सिम्",
+   "सि",
+   "वै",
+   "ऊरी",
+   "उररी",
+   "तन्थी",
+   "ताली",
+   "आत्ताली",
+   "वेताली",
+   "धूली",
+   "धूस",
+   "शक_ला",
+   "संशकला",
+   "ध्वंसकला",
+   "भ्रंसकला",
+   "गुलुगुधा",
+   "सजूस्",
+   "फल",
+   "फली",
+   "विक्ली",
+   "आक्ली",
+   "आलोष्ठी",
+   "केवाली",
+   "केवासी",
+   "सेवा_सी",
+   "पर्याली",
+   "शेवाली",
+   "वर्षाली",
+   "अत्यूमशा",
+   "मश्मशा",
+   "मस्मसा",
+   "मसमसा",
+   "औषट्",
+   "श्रत्",
+   "आविस्",
+   "चिन्ता",
+   "भद्रा",
+   "रोचना",
+   "आस्था",
+   "अमा",
+   "श्रद्धा",
+   "प्राजर्या",
+   "प्राजरुहा",
+   "बीजर्या",
+   "बीजरुहा",
+   "संसर्या",
+   "अर्थे",
+   "लवणम्",
+   "उष्णम्",
+   "शीतम्",
+   "उदकम्",
+   "आर्द्रम्",
+   "अग्नौ",
+   "वशे",
+   "विहसने",
+   "प्रसहने",
+   "प्रतपने",
+   "तिष्ठद्गु",
+   "वहद्गु",
+   "आयतीगवम्",
+   "खलेयवम्",
+   "खलेबुसम्",
+   "लूनयवम्",
+   "लूयमानयवम्",
+   "पूतयवम्",
+   "पूयमानयवम्",
+   "संहृतयवम्",
+   "संह्रियमाणायवम्",
+   "संहृतबुसम्",
+   "संह्रियमाणाबुसम्",
+   "समभूमि",
+   "समपदाति",
+   "सुषमम्",
+   "विषमम्",
+   "दुःषमम्",
+   "निःषमम्",
+   "अपरसमम्",
+   "आयतीसमम्",
+   "प्रौढम्",
+   "पापसमम्",
+   "पुण्यसमम्",
+   "प्राह्णम्",
+   "प्ररथम्",
+   "प्रभृगम्",
+   "प्रदक्षिणम्",
+   "अपरदक्षिणम्",
+   "संप्रति",
+   "असंप्रति"
+  ]
+ },
+ "types_of_sentences": {
+  "heading": "Types of sentences",
+  "categories": [
+   "A sentence with all कारकs with one तिङन्तपद.",
+   "A sentence with some कारकs and some अव्ययs with one तिङन्तपद.",
+   "A sentence with only one or two कारकs with one अव्यय and तिङन्तपद.",
+   "A sentence with all कारकs without one तिङन्तपद.",
+   "A sentence with all कारकs and many adjectives and one तिङन्तपद.",
+   "A sentence with one or two कारकs and many adjectives and one तिङन्तपद.",
+   "Occasionally one कारक forms a sentence.",
+   "Sometimes one one अव्यय forms a sentence."
+  ],
+  "note": "Even without using all कारकs and तिङन्तपद, the sentence is still meaningful. The circumstances often assist listeners in understanding the meaning."
+ },
+ "sentence_analysis_examples": {
+  "heading": "Example sentences and Analysis (from the story)",
+  "story_snippet": "एकदा दश बालकाः स्नानाय नदीम् अगच्छन्। ते नदी जले चिरं स्नानम् अकुर्वन्। ततः ते तीर्वा पारं गताः। तदा तेषां नायकः अपृच्छत् :- अपि सर्वे बालका: नदीम् उत्तीर्णाः? तदा कश्चित् बालकः अगणयत् :- एकः, द्वौ , त्रयः, चत्वारः, पञ्च, षट्, सप्त, अष्टौ, नव इति। सः स्वं न अगणयत्। अतः सः अवदत् :-नव एव सन्ति। दशमः न अस्ति। अपरः अपि बालकः पुनः अन्यान् बालकान् अगणयत्। तदा अपि नव एव आसन्। अतः ते निश्चयम् अकुर्वन् यत् दशमः नद्यां मग्नः। ते दुःखिताः तूष्णीम् अतिष्ठन्। तदा कश्चित् पथिकः तत्र आगच्छत्। सः तान् बालकान् दुःखितान् दृष्ट्वा अपृच्छत् :-बालकाः! युष्माकं दुःखस्य कारणं किम्? बालकानां नायकः अकथयत् :- ‘वयं दश बालकाः स्नातुम् आगताः। इदानीं नव एव स्मः। एकः नद्यां मग्नः’ इति। पथिकः तान् अगणयत्। तत्र दश बालकाः एव आसन्। सः नायकम् आदिशत् :-त्वं बालकान् गणय। सः तु नव बालकान् एव अगणयत्। तदा पथिकः अवदत् :-“दशमः त्वम् असि इति।” तत् श्रुत्वा प्रहृष्टाः भूत्वा सर्वे गृहम् अगच्छन्।",
+  "sentences": [
+   {
+    "id": 1,
+    "Sanskrit": "एकदा दश बालकाः स्नानाय नदीम् अगच्छन्।",
+    "analysis": [
+     {
+      "word": "एकदा",
+      "type": "अव्ययम् (सुबन्तप्रकृतिकम्)"
+     },
+     {
+      "word": "दश बालकाः",
+      "type": "सुबन्ते पदे विशेष्यविशेषणे (अभिहितकर्तृकारकम्)"
+     },
+     {
+      "word": "स्नानाय",
+      "type": "सुबन्तम् (सम्प्रदानम् कारकम्)"
+     },
+     {
+      "word": "नदीम्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "अगच्छन्",
+      "type": "तिङन्तपदम् (गम-धातोः लङि प्रथमपुरुषैकवचनान्तम्)"
+     }
+    ],
+    "summary": "एकम् अव्ययम्, चत्वारि सुबन्तानि, एकं तिङन्तं च सन्ति।"
+   },
+   {
+    "id": 2,
+    "Sanskrit": "ते नदी जले चिरं स्नानम् अकुर्वन्।",
+    "analysis": [
+     {
+      "word": "ते",
+      "type": "सुबन्तम् (अभिहितकर्तृकारकम्)"
+     },
+     {
+      "word": "नदीजले",
+      "type": "समस्तं सुबन्तम् (अधकरणम्)"
+     },
+     {
+      "word": "चिरं",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "स्नानम्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "अकुर्वन्",
+      "type": "तिङन्तपदम् (लङ्, प्र.पु ए. व)"
+     }
+    ],
+    "summary": "एकम् अव्ययम्, त्रीणि सुबन्तानि, एकं तिङन्तं च वर्तते।"
+   },
+   {
+    "id": 3,
+    "Sanskrit": "ततः ते तीर्वा पारं गताः।",
+    "analysis": [
+     {
+      "word": "ततः",
+      "type": "अव्ययम् (conjunction/adverb of time)"
+     },
+     {
+      "word": "ते",
+      "type": "सुबन्तम् (अभिहितकर्तृकारकम्)"
+     },
+     {
+      "word": "तीर्वा",
+      "type": "अव्ययम् (क्त्वान्तम्)"
+     },
+     {
+      "word": "पारम्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "गताः",
+      "type": "कृदन्तप्रकृतिकं सुबन्तम् (अप्रधानक्रियापदम्)"
+     }
+    ],
+    "note": "अत्र “आसन्” इत्यादेः तिङन्तक्रियापदस्य अध्याहारः अवश्यं कर्तव्यः भवति। (Imputation of a main verb like आसन् is necessary.)",
+    "summary": "अव्ययद्वयम्, त्रीणि सुबन्तानि (अध्याहृतं तिङन्तं च) वर्तन्ते"
+   },
+   {
+    "id": 4,
+    "Sanskrit": "तदा तेषां नायकः अपृच्छत् :-",
+    "analysis": [
+     {
+      "word": "तदा",
+      "type": "अव्ययम् (सुबन्तप्रकृतिकम् अव्ययम्)"
+     },
+     {
+      "word": "तेषां",
+      "type": "सम्बन्धवाचि सुबन्तपदम् (कर्तुः सम्बन्धः)"
+     },
+     {
+      "word": "नायकः",
+      "type": "सुबन्तम् (अनभिहितकर्ता)"
+     },
+     {
+      "word": "अपृच्छत्",
+      "type": "तिङन्तपदम् (लङ्, प्र पु, ए व)"
+     }
+    ],
+    "summary": "अव्ययमेकं सुबन्तद्वयम्, एकं तिङन्तं च वर्न्तते।"
+   },
+   {
+    "id": 5,
+    "Sanskrit": "अपि सर्वे बालका: नदीम् उत्तीर्णाः?",
+    "analysis": [
+     {
+      "word": "अपि",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "सर्वे बालका:",
+      "type": "सुबन्तद्वयम् (अभिहितकर्ता, विशेष्यविशेषणे)"
+     },
+     {
+      "word": "नदीम्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "उत्तीर्णाः",
+      "type": "कृदन्तप्रकृतिकं सुबन्तम् (अप्रधानक्रियापदम्)"
+     }
+    ],
+    "note": "योग्यं प्रधानं तिङन्तक्रियापदम् (अभूवन् इत्यादिकम्) अध्याहर्तव्यम्। (Imputation of a main verb like अभूवन् is necessary.)",
+    "summary": "एकमव्ययम्, सुबन्तत्रयं च वर्तते।"
+   },
+   {
+    "id": 6,
+    "Sanskrit": "तदा कश्चित् बालकः अगणयत् :-",
+    "analysis": [
+     {
+      "word": "तदा",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "कः",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "चित्",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "बालकः",
+      "type": "सुबन्तम् (कः बालकः अभिहतकर्ता; चित् अव्ययम्)"
+     },
+     {
+      "word": "अगणयत्",
+      "type": "तिङन्तपदम् (गण-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "note": "कः, चित् इति पदद्वयं मिलित्वा नूतनमर्थं बोधयति, तच्च बालकस्य विशेषणम्।",
+    "summary": "एकम् अव्ययम्, त्रीणि सुबन्तानि, एकं तिङन्तं च वर्तते।"
+   },
+   {
+    "id": 7,
+    "Sanskrit": "एकः, द्वौ , त्रयः, चत्वारः, पञ्च, षट्, सप्त, अष्टौ, नव इति।",
+    "analysis": [
+     {
+      "word": "एकः, द्वौ , त्रयः, चत्वारः, पञ्च, षट्, सप्त, अष्टौ, नव",
+      "type": "सुबन्तानि।"
+     },
+     {
+      "word": "इति",
+      "type": "अव्ययम्"
+     }
+    ],
+    "note": "पूर्वोक्तस्य अगणयत् इति तिङन्तक्रियापदस्य अन्वयः वक्तव्यः। कथमगणयत् इत्यस्य प्रश्नस्य एकः, द्वौ इत्यादिकं सुबन्तं विशेषणत्वेन अन्वेति।",
+    "summary": "एकम् अव्ययम्, एक इत्यादीनि नव सुबन्तानि सन्ति।"
+   },
+   {
+    "id": 8,
+    "Sanskrit": "सः स्वं न अगणयत्।",
+    "analysis": [
+     {
+      "word": "सः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "स्वं",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "न",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "अगणयत्",
+      "type": "तिङन्तपदम् (गण-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "सुबन्तद्वयम्, एकमव्ययम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 9,
+    "Sanskrit": "अतः सः अवदत् :-",
+    "analysis": [
+     {
+      "word": "अतः",
+      "type": "अव्ययम् (conjunction)"
+     },
+     {
+      "word": "सः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "अवदत्",
+      "type": "तिङन्तपदम् (वद-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "एकमव्ययम्, एकं सुबन्तम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 10,
+    "Sanskrit": "नव एव सन्ति।",
+    "analysis": [
+     {
+      "word": "नव",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "एव",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "सन्ति",
+      "type": "तिङन्तपदम् (अस-धातुः लट्-प्र. पु, ब व)"
+     }
+    ],
+    "summary": "एकमव्ययम्, एकं सुबन्तम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 11,
+    "Sanskrit": "दशमः न अस्ति।",
+    "analysis": [
+     {
+      "word": "दशमः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "न",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "अस्ति",
+      "type": "तिङन्तपदम् (अस-धातुः लट्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "एकमव्ययम्, एकं सुबन्तम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 12,
+    "Sanskrit": "अपरः अपि बालकः पुनः अन्यान् बालकान् अगणयत्।",
+    "analysis": [
+     {
+      "word": "अपरः बालकः",
+      "type": "सुबन्तद्वयं विशेष्यविशेषणे (अभिहितकर्ता)"
+     },
+     {
+      "word": "अपि",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "पुनः",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "अन्यान् बालकान्",
+      "type": "सुबन्तद्वयं विशेष्यविशेषणे (अनभिहितकर्म)"
+     },
+     {
+      "word": "अगणयत्",
+      "type": "तिङन्तपदम् (गण-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "एकमव्ययम्, एकं सुबन्तम्, एकं तिङन्तं च वर्तन्ते। (Note: The summary of the number of words seems simplified, for example, 'सुबन्तम्' likely refers to the compounded noun phrases.)"
+   },
+   {
+    "id": 13,
+    "Sanskrit": "तदा अपि नव एव आसन्।",
+    "analysis": [
+     {
+      "word": "तदा",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "अपि",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "नव",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "एव",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "आसन्",
+      "type": "तिङन्तपदम् (अस-धातुः लङ्-प्र. पु, ब व)"
+     }
+    ],
+    "summary": "एकं सुबन्तम्, त्रीणि अव्ययानि, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 14,
+    "Sanskrit": "अतः ते निश्चयम् अकुर्वन् यत् दशमः नद्यां मग्नः।",
+    "analysis": [
+     {
+      "word": "अतः",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "ते",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "निश्चयम्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "अकुर्वन्",
+      "type": "तिङन्तपदम् (कृ-धातुः लङ्-प्र. पु, ब)"
+     },
+     {
+      "word": "यत्",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "दशमः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "नद्यां",
+      "type": "सुबन्तम् (अधिकरणम्)"
+     },
+     {
+      "word": "मग्नः",
+      "type": "कृदन्तप्रकृतिकसुबन्तम्विशेषण (past participle adjectival)"
+     }
+    ],
+    "summary": "एकमव्ययम्, एकं सुबन्तम्, एकं तिङन्तं च वर्तन्ते। (Note: Summary seems simplified given the number of words in the analysis.)"
+   },
+   {
+    "id": 15,
+    "Sanskrit": "ते दुःखिताः तूष्णीम् अतिष्ठन्।",
+    "analysis": [
+     {
+      "word": "ते",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "दुःखिताः",
+      "type": "सुबन्तम् (विशेष्यविशेषणभावसम्बन्धः with ते)"
+     },
+     {
+      "word": "तूष्णीम्",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "अतिष्ठन्",
+      "type": "तिङन्तपदम् (ष्ठा-धातुः लङ्-प्र. पु, ब व)"
+     }
+    ],
+    "summary": "एकमव्ययम्, सुबन्तद्वयम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 16,
+    "Sanskrit": "तदा कश्चित् पथिकः तत्र आगच्छत्।",
+    "analysis": [
+     {
+      "word": "तदा",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "कः",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "चित्",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "पथिकः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "तत्र",
+      "type": "अव्ययम् (adverb, place)"
+     },
+     {
+      "word": "आगच्छत्",
+      "type": "तिङन्तपदम् (आङ्-पूर्व-गम-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "त्रीणि अव्ययानि, द्वे सुबन्ते पदे, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 17,
+    "Sanskrit": "सः तान् बालकान् दुःखितान् दृष्ट्वा अपृच्छत् :-",
+    "analysis": [
+     {
+      "word": "सः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "तान् बालकान्",
+      "type": "सुबन्तद्वयम्, विशेष्यविशेषणभावसम्बन्धः (अनभिहितकर्म)"
+     },
+     {
+      "word": "दुःखितान्",
+      "type": "सुबन्तम् (कर्मः अन्यद् विशेषणम्)"
+     },
+     {
+      "word": "दृष्ट्वा",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "अपृच्छत्",
+      "type": "तिङन्तपदम् (प्रच्छ-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "एकमव्ययम्, चत्वारि सुबन्तानि, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 18,
+    "Sanskrit": "बालकाः! युष्माकं दुःखस्य कारणं किम्?",
+    "analysis": [
+     {
+      "word": "बालकाः",
+      "type": "सुबन्तम् (सम्बोधनम्)"
+     },
+     {
+      "word": "युष्माकं",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "दुःखस्य",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "कारणं",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "किम्",
+      "type": "अव्ययम्"
+     }
+    ],
+    "note": "अत्र अस्ति, इति वा भवति इति प्रधानतिङन्तन्तस्य अध्याहारः कर्तव्यः भवति। (Imputation of a main verb like अस्ति or भवति is necessary.)",
+    "summary": "एकमव्ययम्, चत्वारि सुबन्तानि च वर्तन्ते।"
+   },
+   {
+    "id": 19,
+    "Sanskrit": "बालकानां नायकः अकथयत् :-",
+    "analysis": [
+     {
+      "word": "बालकानां",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "नायकः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "अकथयत्",
+      "type": "तिङन्तपदम् (कथ-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "सुबन्तद्वयम्, एकं तिङन्तं च वर्तते।"
+   },
+   {
+    "id": 20,
+    "Sanskrit": "‘वयं दश बालकाः स्नातुम् आगताः।",
+    "analysis": [
+     {
+      "word": "वयं",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "दश बालकाः",
+      "type": "सुबन्तद्वयम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "स्नातुम्",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "आगताः",
+      "type": "कृदन्तप्रकृतिकसुबन्तम्"
+     }
+    ],
+    "note": "योग्यतिङन्तक्रियापदस्य अध्याहारः कर्तव्यः। (Imputation of a suitable main verb is necessary.)",
+    "summary": "एकमव्ययम्, चत्वारि सुबन्तानि च वर्तन्ते।"
+   },
+   {
+    "id": 21,
+    "Sanskrit": "इदानीं नव एव स्मः।",
+    "analysis": [
+     {
+      "word": "इदानीम्",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "नव",
+      "type": "सुबन्तम् (numeral nominal)"
+     },
+     {
+      "word": "एव",
+      "type": "अव्ययम् (emphatic particle)"
+     },
+     {
+      "word": "स्मः",
+      "type": "तिङन्तम् (अस-धातुः लट्-उ. पु, ब व)"
+     }
+    ],
+    "summary": "अव्ययद्वयम्, एकं सुबन्तम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 22,
+    "Sanskrit": "एकः नद्यां मग्नः’ इति।",
+    "analysis": [
+     {
+      "word": "एकः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "नद्यां",
+      "type": "सुबन्तम् (अधिकरणम्)"
+     },
+     {
+      "word": "मग्नः",
+      "type": "कृदन्तप्रकृतिकसुबन्तम्"
+     },
+     {
+      "word": "इति",
+      "type": "अव्ययम्"
+     }
+    ],
+    "summary": "एकमव्ययम्, त्रीणि सुबन्तानि च वर्तन्ते।"
+   },
+   {
+    "id": 23,
+    "Sanskrit": "पथिकः तान् अगणयत्।",
+    "analysis": [
+     {
+      "word": "पथिकः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "तान्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "अगणयत्",
+      "type": "तिङन्तपदम् (अस-धातुः लङ्-प्र. पु, ए व) (Note: The धातु is likely 'गण' as in other examples, not 'अस')"
+     }
+    ],
+    "summary": "सुबन्तद्वयम्, एकं तिङन्तं च वर्तन्ते."
+   },
+   {
+    "id": 24,
+    "Sanskrit": "तत्र दश बालकाः एव आसन्।",
+    "analysis": [
+     {
+      "word": "तत्र",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "दश बालकाः",
+      "type": "सुबन्तद्वयम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "एव",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "आसन्",
+      "type": "तिङन्तपदम् (अस-धातुः लङ्-प्र. पु, ब व)"
+     }
+    ],
+    "summary": "अव्ययद्वयम्, सुबन्तद्वयम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 25,
+    "Sanskrit": "सः नायकम् आदिशत् :-",
+    "analysis": [
+     {
+      "word": "सः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "नायकम्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "आदिशत्",
+      "type": "तिङन्तपदम् (आङ-पूर्वक-दिश-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "सुबन्तद्वयम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 26,
+    "Sanskrit": "त्वं बालकान् गणय।",
+    "analysis": [
+     {
+      "word": "त्वं",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "बालकान्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "गणय",
+      "type": "तिङन्तपदम् (गण-धातुः लोट्-म. पु, ए व)"
+     }
+    ],
+    "summary": "सुबन्तद्वयम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 27,
+    "Sanskrit": "सः तु नव बालकान् एव अगणयत्।",
+    "analysis": [
+     {
+      "word": "सः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "तु",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "नव बालकान्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "एव",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "अगणयत्",
+      "type": "तिङन्तपदम् (गण-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "अव्ययद्वयम्, सुबन्तत्रयम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 28,
+    "Sanskrit": "तदा पथिकः अवदत् :-",
+    "analysis": [
+     {
+      "word": "तदा",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "पथिकः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "अवदत्",
+      "type": "तिङन्तपदम् (वद-धातुः लङ्-प्र. पु, ए व)"
+     }
+    ],
+    "summary": "एकमव्ययम्, एकं सुबन्तम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 29,
+    "Sanskrit": "“दशमः त्वम् असि इति।”",
+    "analysis": [
+     {
+      "word": "दशमः",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "त्वम्",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "असि",
+      "type": "तिङन्तपदम् (अस-धातुः लट्-म. पु, ए व)"
+     },
+     {
+      "word": "इति",
+      "type": "अव्ययम्"
+     }
+    ],
+    "summary": "एकमव्ययम्, सुबन्तद्वयम्, एकं तिङन्तं च वर्तन्ते।"
+   },
+   {
+    "id": 30,
+    "Sanskrit": "तत् श्रुत्वा प्रहृष्टाः भूत्वा सर्वे गृहम् अगच्छन्।",
+    "analysis": [
+     {
+      "word": "तत्",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "श्रुत्वा",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "प्रहृष्टाः",
+      "type": "सुबन्तम्"
+     },
+     {
+      "word": "भूत्वा",
+      "type": "अव्ययम्"
+     },
+     {
+      "word": "सर्वे",
+      "type": "सुबन्तम् (अभिहितकर्ता)"
+     },
+     {
+      "word": "गृहम्",
+      "type": "सुबन्तम् (अनभिहितकर्म)"
+     },
+     {
+      "word": "अगच्छन्",
+      "type": "तिङन्तपदम् (गम-धातुः लङ्-प्र. पु, ब व)"
+     }
+    ],
+    "summary": "अव्ययत्रयम्, सुबन्तत्रयम्, एकं तिङन्तं च वर्तन्ते।"
+   }
+  ]
+ },
+ "correction_examples": {
+  "heading": "अशुद्धि – संशोधनम् (Error Correction)",
+  "rules_based_on": "वचन-लिङ्ग-पुरुष-लकार-विभक्तिदृष्ट्या संशोधनम् (Correction based on number, gender, person, tense, and case)",
+  "examples_table_1": [
+   {
+    "incorrect": "विद्यालये शताः छात्राः सन्ति ।",
+    "correct": "विद्यालये शतं छात्राः सन्ति ।"
+   },
+   {
+    "incorrect": "कक्षायां विंशत्यः छात्राः सन्ति ।",
+    "correct": "कक्षायां विंशतिः छात्राः सन्ति ।"
+   },
+   {
+    "incorrect": "सहस्राः जनाः धावन्ति ।",
+    "correct": "सहस्रं जनाः धावन्ति ।"
+   },
+   {
+    "incorrect": "त्रयः बालकः पठन्ति ।",
+    "correct": "त्रयः बालकाः पठन्ति ।"
+   },
+   {
+    "incorrect": "बालकत्रयं हसन्ति ।",
+    "correct": "बालकत्रयं हसति ।"
+   },
+   {
+    "incorrect": "मम गृहे शतानि पुस्तकानि सन्ति ।",
+    "correct": "मम गृहे शतं पुस्तकानि सन्ति ।"
+   },
+   {
+    "incorrect": "सिंहः वने वसन्ति ।",
+    "correct": "सिंहः वने वसति ।"
+   },
+   {
+    "incorrect": "युवां ध्यानेन पठथ ।",
+    "correct": "युवां ध्यानेन पठथः ।"
+   },
+   {
+    "incorrect": "पाण्डवाः पञ्च आसीत् ।",
+    "correct": "पाण्डवाः पञ्च आसन् ।"
+   },
+   {
+    "incorrect": "ते संस्कृतं पठति लिखति च ।",
+    "correct": "ते संस्कृतं पठन्ति लिखन्ति च ।"
+   },
+   {
+    "incorrect": "चत्वारः वेदाः अस्ति ।",
+    "correct": "चत्वारः वेदाः सन्ति ।"
+   },
+   {
+    "incorrect": "वृक्षात् फलानि पतति ।",
+    "correct": "वृक्षात् फलानि पतन्ति ।"
+   },
+   {
+    "incorrect": "धनानि सुखाय अस्ति ।",
+    "correct": "धनानि सुखाय सन्ति ।"
+   },
+   {
+    "incorrect": "द्वे बालिके विद्यालयं गच्छति ।",
+    "correct": "द्वे बालिके विद्यायलं गच्छतः ।"
+   },
+   {
+    "incorrect": "इदानीं त्वं किं न कुरुथ ?",
+    "correct": "इदानीं त्वं किं न करोषि ?"
+   },
+   {
+    "incorrect": "बालिकाः विद्यालयं गच्छति ।",
+    "correct": "बालिकाः विद्यालयं गच्छन्ति ।"
+   },
+   {
+    "incorrect": "यूयं कदा व्यायामं करोषि ?",
+    "correct": "यूयं कदा व्यायामं कुरुथ ?"
+   },
+   {
+    "incorrect": "भवान् किं पठन्ति ?",
+    "correct": "भवान् किं पठति ?"
+   },
+   {
+    "incorrect": "ते कन्ये पठति ।",
+    "correct": "ते कन्ये पठतः ।"
+   },
+   {
+    "incorrect": "ते परधनं न चोरयति ।",
+    "correct": "ते परधनं न चोरयन्ति ।"
+   },
+   {
+    "incorrect": "त्वं तस्य सेवां कुरुत ।",
+    "correct": "त्व तस्य सेवां कुरु ।"
+   },
+   {
+    "incorrect": "ते सर्वे ह्यः न अपठत् ।",
+    "correct": "ते सर्वे ह्यः न अपठन् ।"
+   },
+   {
+    "incorrect": "अत्र सरोवरे आपः अस्ति ।",
+    "correct": "अत्र सरोवरे आपः सन्ति ।"
+   },
+   {
+    "incorrect": "छात्रद्वयं पठतः ।",
+    "correct": "छात्रद्वयं पठति ।"
+   },
+   {
+    "incorrect": "विद्वान् सर्वत्र पूज्यन्ते ।",
+    "correct": "विद्वान् सर्वत्र पूज्यते ।"
+   },
+   {
+    "incorrect": "सर्वः स्वार्थं समीहन्ते ।",
+    "correct": "सर्वः स्वार्थं समीहते ।"
+   },
+   {
+    "incorrect": "पितरौ पुत्रं पालयन्ति ।",
+    "correct": "पितरौ पुत्रं पालयतः ।"
+   },
+   {
+    "incorrect": "वृक्षेषु कपिः वसन्ति ।",
+    "correct": "वृक्षेषु कपयः वसन्ति ।"
+   },
+   {
+    "incorrect": "पुरा वीरवरो नाम राजा आसन् ।",
+    "correct": "पारा वीरवरो नाम राजा आसीत् ।"
+   },
+   {
+    "incorrect": "ते बालिके गृहे एव अपठत् ।",
+    "correct": "ते बालिके गृहे एव अपठताम् ।"
+   },
+   {
+    "incorrect": "एकदा चत्वारि मित्राणि वनम् अगच्छत् ।",
+    "correct": "एकदा चत्वारि मित्राणि वनम् अगच्छन् ।"
+   },
+   {
+    "incorrect": "वयं भारतीयाः अस्मि ।",
+    "correct": "वयं भारतीयाः स्मः ।"
+   },
+   {
+    "incorrect": "ते सर्वे ह्यः न अपठत् ।",
+    "correct": "ते सर्वे ह्यः न अपठन् ।"
+   },
+   {
+    "incorrect": "नद्यः लोकमातरः अस्ति ।",
+    "correct": "नद्यः लोकमातरः सन्ति ।"
+   },
+   {
+    "incorrect": "दम्पती पुत्रम् अभाषत ।",
+    "correct": "दम्पती पुत्रम् अभाषेताम् ।"
+   },
+   {
+    "incorrect": "इमे छात्रौ पठतः ।",
+    "correct": "इमौ छात्रौ पठतः ।"
+   },
+   {
+    "incorrect": "त्रयः बालकः पठन्ति ।",
+    "correct": "त्रयः बालकाः पठन्ति ।"
+   },
+   {
+    "incorrect": "वयं स्वतन्त्रभारतस्य नागरिकः स्मः",
+    "correct": "वयं स्वतन्त्रभारतस्य नागरिकाः स्मः ।"
+   },
+   {
+    "incorrect": "सः सुन्दरं फलानि खादति ।",
+    "correct": "सः सुन्दराणि फलानि खादति ।"
+   },
+   {
+    "incorrect": "राज्ञा तस्मै पञ्चशतानि सुवर्णं दत्तानि ।",
+    "correct": "राज्ञा तस्मै पञ्चशतं सुवर्णानि दत्तानि ।"
+   },
+   {
+    "incorrect": "नद्यः परोपकाराय वहति ।",
+    "correct": "नद्यः परोपकाराय वहन्ति ।"
+   },
+   {
+    "incorrect": "तस्य चत्वारि वर्धते ।",
+    "correct": "तस्य चत्वारि वर्धन्ते ।"
+   },
+   {
+    "incorrect": "ते मम मित्राणि अस्ति ।",
+    "correct": "ते मम मित्राणि सन्ति ।"
+   },
+   {
+    "incorrect": "त्रीणि बालिकाः पुस्तकं पठन्ति ।",
+    "correct": "तिस्रः बालिकाः पुस्तकं पठन्ति ।"
+   },
+   {
+    "incorrect": "तस्य कलत्रं गुणवान् अस्ति ।",
+    "correct": "तस्य कलत्रं गुणवती अस्ति ।"
+   },
+   {
+    "incorrect": "कृष्णवर्णं मृगः धावति ।",
+    "correct": "कृष्णवर्णः मृगः धावति ।"
+   },
+   {
+    "incorrect": "पयः मधुरः अस्ति ।",
+    "correct": "पयः मधुरम् अस्ति ।"
+   },
+   {
+    "incorrect": "अग्निः तीव्रा अस्ति ।",
+    "correct": "अग्निः तीव्रः अस्ति ।"
+   },
+   {
+    "incorrect": "रमणीयः वनं मह्यं रोचते ।",
+    "correct": "रमणीयं वनं मह्यं रोचते ।"
+   },
+   {
+    "incorrect": "पिता चतुरः कन्याः अपाठयत् ।",
+    "correct": "पिता चतस्रः कन्याः अपाठयत् ।"
+   },
+   {
+    "incorrect": "सुशीला पुस्तकं पठितवान् ।",
+    "correct": "सुशीला पुस्तकं पठितवती ।"
+   },
+   {
+    "incorrect": "भ्रमराणां मधु प्रियः भवति ।",
+    "correct": "भ्रमराणां मधु प्रियं भवति ।"
+   },
+   {
+    "incorrect": "मृगाणां गात्राणि मृदु भवन्ति ।",
+    "correct": "मृगाणां गात्राणि मृदूनि भवन्ति ।"
+   },
+   {
+    "incorrect": "इमं कथां शृणु ।",
+    "correct": "इमां कथां शृणु ।"
+   },
+   {
+    "incorrect": "सा विश्वविद्यालये द्वितीयम् आसीत् ।",
+    "correct": "सा विश्वविद्यालये द्वितीया आसीत् ।"
+   },
+   {
+    "incorrect": "सा कक्षायां कीदृशम् आसीत् ?",
+    "correct": "सा कक्षायां कीदृशी आसीत् ?"
+   },
+   {
+    "incorrect": "त्रयः सुन्दराः बालिकाः गच्छन्ति ।",
+    "correct": "तिस्रः सुन्दर्यः बालिकाः गच्छन्ति ।"
+   },
+   {
+    "incorrect": "इयं कन्या गुणवान् अस्ति ।",
+    "correct": "इयं कन्या गुणवती अस्ति ।"
+   },
+   {
+    "incorrect": "अस्य बालिकायाः गृहं कुत्रास्ति ?",
+    "correct": "अस्याः बालिकायाः गृहं कुत्रास्ति ?"
+   },
+   {
+    "incorrect": "त्रीणि बालकाः पुस्तकं पठन्ति ।",
+    "correct": "त्रयः बालकाः पुस्तकं पठन्ति ।"
+   },
+   {
+    "incorrect": "मया रुदन्ती स्त्री दृष्टा ।",
+    "correct": "मया रुदती स्त्री दृष्टा ।"
+   },
+   {
+    "incorrect": "सीता रामस्य प्रियम् आसीत् ।",
+    "correct": "सीता रामस्य प्रिया आसीत् ।"
+   },
+   {
+    "incorrect": "अहं शतान् जनान् अपश्यम् ।",
+    "correct": "अहं शतं जनान् अपश्यम् ।"
+   },
+   {
+    "incorrect": "त्वं धनार्जने रतम् असि ।",
+    "correct": "त्वं धनार्जने रतः अस्ति । (Note: 'अस्ति' should likely be 'असि' to match 'त्वम्')"
+   },
+   {
+    "incorrect": "तस्य मातुः नाम कः अस्ति ?",
+    "correct": "तस्य मातुः नाम किम् अस्ति ?"
+   },
+   {
+    "incorrect": "अहं तं पुस्तकं पठितवान् ।",
+    "correct": "अहं तत् पुस्तकं पठितवान् ।"
+   },
+   {
+    "incorrect": "दूरतः पर्वतानि रम्याः ।",
+    "correct": "दूरतः पर्वताः रम्याः ।"
+   },
+   {
+    "incorrect": "गंगायाः जलं पवित्रः अस्ति ।",
+    "correct": "गंगायाः जलं पवित्रम् अस्ति ।"
+   },
+   {
+    "incorrect": "वृक्षेषु कपयः कूर्दति ।",
+    "correct": "वृक्षेषु कपयः कूर्दन्ति ।"
+   },
+   {
+    "incorrect": "भवान् किमर्थम् विद्यालयं न गच्छसि ।",
+    "correct": "भवान् किमर्थम् विद्यालयं न गच्छति ।"
+   },
+   {
+    "incorrect": "पुस्तकालये शतानि पुस्तकानि सन्ति ।",
+    "correct": "पुस्तकालये शतम् पुस्तकानि सन्ति ।"
+   },
+   {
+    "incorrect": "चत्वारः मित्राणि पठनाय विद्यालयं गच्छन्ति।",
+    "correct": "चत्वारि मित्राणि पठनाय विद्यालयं गच्छन्ति ।"
+   },
+   {
+    "incorrect": "इमे छात्रौ मधुराणि फलानि भक्षयतः।",
+    "correct": "इमौ छात्रौ मधुराणि फलानि भक्षयतः।"
+   },
+   {
+    "incorrect": "मम मित्रं कठोरः अस्ति ।",
+    "correct": "मम मित्रं कठोरम् अस्ति ।"
+   },
+   {
+    "incorrect": "अयम् ललना ग्रामं गच्छति ।",
+    "correct": "इयम् ललना ग्रामं गच्छति ।"
+   },
+   {
+    "incorrect": "अग्निः तीव्रा भवति ।",
+    "correct": "अग्निः तीव्रः भवति ।"
+   },
+   {
+    "incorrect": "मयूरी संस्कृतपुस्तकं पठतवान् ।",
+    "correct": "मयूरी संस्कृतपुस्तकं पठितवती ।"
+   },
+   {
+    "incorrect": "चौराः परद्रव्याणि चोरयति ।",
+    "correct": "चौराः परद्रव्याणि चोरयन्ति ।"
+   },
+   {
+    "incorrect": "वयम् श्वः मुम्बईनगरं गच्छामि ।",
+    "correct": "वयम् श्वः मुम्बईनगरं गमिष्यामः।"
+   },
+   {
+    "incorrect": "शिष्याः सुन्दरं चित्राणि पश्यन्ति ।",
+    "correct": "शिष्याः सुन्दराणी चित्राणि पश्यन्ति ।"
+   }
+  ],
+  "examples_table_2": [
+   {
+    "incorrect": "विद्यालये शता: छात्रा: सन्ति ।",
+    "correct": "विद्यालये शतं छात्राः सन्ति ।"
+   },
+   {
+    "incorrect": "कथायां विषययः छात्राः सन्ति ।",
+    "correct": "कथायां विषयाः छात्राः सन्ति ।"
+   },
+   {
+    "incorrect": "सहस्रः जना: धावति ।",
+    "correct": "सहस्रं जनाः धावन्ति ।"
+   },
+   {
+    "incorrect": "नयः बालक: पठन्ति ।",
+    "correct": "बालकाः पठन्ति ।"
+   },
+   {
+    "incorrect": "बालकयः हसन्ति ।",
+    "correct": "बालकाः हसन्ति ।"
+   },
+   {
+    "incorrect": "बालकः सुन्दराः भवन्ति ।",
+    "correct": "बालकाः सुन्दराः भवन्ति ।"
+   },
+   {
+    "incorrect": "सीता पुस्तकानि पठन्ति ।",
+    "correct": "सीता पुस्तकानि पठति ।"
+   },
+   {
+    "incorrect": "द्वे बालकः लेखम पठन्ति ।",
+    "correct": "द्वौ बालकौ लेखं पठतः ।"
+   },
+   {
+    "incorrect": "सरस्वती देवी गच्छन्ति ।",
+    "correct": "सरस्वती देवी गच्छति ।"
+   },
+   {
+    "incorrect": "गुरवः छात्रः पाठम् पठन्ति ।",
+    "correct": "गुरवः छात्रेभ्यः पाठम् पठन्ति ।"
+   }
+  ],
+  "examples_table_3": [
+   {
+    "incorrect": "अहं विद्यालयं गच्छति ।",
+    "correct": "अहं विद्यालयं गच्छामि ।"
+   },
+   {
+    "incorrect": "त्वं किं करोमि ?",
+    "correct": "त्वं किं करोषि ?"
+   },
+   {
+    "incorrect": "ते बालकाः कुत्र गच्छसि ?",
+    "correct": "ते बालकाः कुत्र गच्छन्ति ?"
+   },
+   {
+    "incorrect": "रामः ग्रामस्य गच्छति ।",
+    "correct": "रामः ग्रामं गच्छति ।"
+   },
+   {
+    "incorrect": "वृक्षस्य पत्राणि पतन्ति ।",
+    "correct": "वृक्षात् पत्राणि पतन्ति ।"
+   },
+   {
+    "incorrect": "गुरोः नमः ।",
+    "correct": "गुरवे नमः ।"
+   },
+   {
+    "incorrect": "सः कलमेन लिखति पत्रम् ।",
+    "correct": "सः कलमेन पत्रं लिखति ।"
+   },
+   {
+    "incorrect": "बालकः मोदकं रोचते ।",
+    "correct": "बालकाय मोदकं रोचते ।"
+   },
+   {
+    "incorrect": "राजा निर्धनस्य धनं ददाति ।",
+    "correct": "राजा निर्धनाय धनं ददाति ।"
+   },
+   {
+    "incorrect": "अहं त्वां पुस्तकं ददामि ।",
+    "correct": "अहं तुभ्यं पुस्तकं ददामि ।"
+   },
+   {
+    "incorrect": "माता पुत्रे स्निह्यति ।",
+    "correct": "माता पुत्राय स्निह्यति ।"
+   },
+   {
+    "incorrect": "सः व्याघ्रं बिभेति ।",
+    "correct": "सः व्याघ्रात् बिभेति ।"
+   },
+   {
+    "incorrect": "ज्ञानस्य विना न सुखम् ।",
+    "correct": "ज्ञानं विना न सुखम् ।"
+   },
+   {
+    "incorrect": "विद्यालयस्य परितः वृक्षाः सन्ति ।",
+    "correct": "विद्यालयं परितः वृक्षाः सन्ति ।"
+   },
+   {
+    "incorrect": "सः मम् अन्तरा अस्ति ।",
+    "correct": "सः माम् अन्तरा अस्ति ।"
+   },
+   {
+    "incorrect": "पर्वतः उपरि मेघाः सन्ति ।",
+    "correct": "पर्वतस्य उपरि मेघाः सन्ति ।"
+   },
+   {
+    "incorrect": "सा बालिका मधुराणि गायति ।",
+    "correct": "सा बालिका मधुरं गायति ।"
+   },
+   {
+    "incorrect": "अश्वाः शीघ्रः धावन्ति ।",
+    "correct": "अश्वाः शीघ्रं धावन्ति ।"
+   },
+   {
+    "incorrect": "भवान् किं पठसि ?",
+    "correct": "भवान् किं पठति ? (Correct, but often confused with त्वम्)"
+   },
+   {
+    "incorrect": "भवती कुत्र गच्छसि ?",
+    "correct": "भवती कुत्र गच्छति ?"
+   },
+   {
+    "incorrect": "एकः बालिका आगच्छति ।",
+    "correct": "एका बालिका आगच्छति ।"
+   },
+   {
+    "incorrect": "त्रीणि फलः सन्ति ।",
+    "correct": "त्रीणि फलानि सन्ति ।"
+   },
+   {
+    "incorrect": "चत्वारि नार्यः नृत्यन्ति ।",
+    "correct": "चतस्रः नार्यः नृत्यन्ति ।"
+   },
+   {
+    "incorrect": "सः पठितुं विद्यालयं गच्छामि ।",
+    "correct": "सः पठितुं विद्यालयं गच्छति ।"
+   },
+   {
+    "incorrect": "सः पठित्वा गृहं अगच्छन् ।",
+    "correct": "ते पठित्वा गृहम् अगच्छन् ।"
+   },
+   {
+    "incorrect": "बालकाः कोलाहलं मा कुरु ।",
+    "correct": "बालकाः कोलाहलं मा कुरुत ।"
+   },
+   {
+    "incorrect": "ईश्वरः वयं रक्षतु ।",
+    "correct": "ईश्वरः अस्मान् रक्षतु ।"
+   },
+   {
+    "incorrect": "मम नामः रामः अस्ति ।",
+    "correct": "मम नाम रामः अस्ति ।"
+   },
+   {
+    "incorrect": "तव गृहे कुत्र अस्ति ?",
+    "correct": "तव गृहं कुत्र अस्ति ?"
+   },
+   {
+    "incorrect": "सः गृहस्य आगच्छत् ह्यः ।",
+    "correct": "सः ह्यः गृहम् आगच्छत् ।"
+   },
+   {
+    "incorrect": "स श्वः गमिष्यामि ।",
+    "correct": "अहं श्वः गमिष्यामि ।"
+   },
+   {
+    "incorrect": "सः बालकः एवम् अवदन् ।",
+    "correct": "सः बालकः एवम् अवदत् ।"
+   },
+   {
+    "incorrect": "यदा सूर्यः उदयति, तदा कमलानि विकसन्ति ।",
+    "correct": "यदा सूर्यः उदेति, तदा कमलानि विकसन्ति ।"
+   },
+   {
+    "incorrect": "यदि त्वं पठिष्यसि, तर्हि उत्तीर्णः भविष्यति ।",
+    "correct": "यदि त्वं पठिष्यसि, तर्हि उत्तीर्णः भविष्यसि ।"
+   },
+   {
+    "incorrect": "यावत् अहं आगच्छामि, तावत् तव अत्रैव तिष्ठ ।",
+    "correct": "यावत् अहम् आगच्छामि, तावत् त्वम् अत्रैव तिष्ठ ।"
+   },
+   {
+    "incorrect": "गंगा हिमालयाय प्रभवति ।",
+    "correct": "गंगा हिमालयात् प्रभवति ।"
+   },
+   {
+    "incorrect": "कविना कालिदासः श्रेष्ठः ।",
+    "correct": "कविषु कालिदासः श्रेष्ठः ।"
+   },
+   {
+    "incorrect": "सः पादस्य खञ्जः अस्ति ।",
+    "correct": "सः पादेन खञ्जः अस्ति ।"
+   },
+   {
+    "incorrect": "आचार्यः शिष्याय क्रुध्यति ।",
+    "correct": "आचार्यः शिष्याय क्रुध्यति । (Correct usage of चतुर्थी)"
+   },
+   {
+    "incorrect": "त्वं पुस्तकं पठितवान् आसीत् ।",
+    "correct": "सः पुस्तकं पठितवान् आसीत् ।"
+   },
+   {
+    "incorrect": "छात्रः गुरुम् प्रश्नेन पृच्छति ।",
+    "correct": "छात्रः गुरुं प्रश्नं पृच्छति ।"
+   },
+   {
+    "incorrect": "ते सर्वे अपि तत्र अगच्छन् ।",
+    "correct": "ते सर्वेऽपि तत्र अगच्छन् ।"
+   },
+   {
+    "incorrect": "रामः च लक्ष्मणः च वनं गतवन्तौ ।",
+    "correct": "रामलक्ष्मणौ वनं गतवन्तौ ।"
+   },
+   {
+    "incorrect": "धिक् मूर्ख ।",
+    "correct": "धिक् मूर्खम् ।"
+   },
+   {
+    "incorrect": "अलं विवादाय ।",
+    "correct": "अलं विवादेन ।"
+   },
+   {
+    "incorrect": "पुत्रस्य सह पिता आगतः ।",
+    "correct": "पुत्रेण सह पिता आगतः ।"
+   },
+   {
+    "incorrect": "सः एकः चक्षुषा काणः अस्ति ।",
+    "correct": "सः चक्षुषा काणः अस्ति ।"
+   },
+   {
+    "incorrect": "रामः श्यामात् पटुतरः अस्मि।",
+    "correct": "रामः श्यामात् पटुतरः अस्ति ।"
+   },
+   {
+    "incorrect": "अयं बालकः तस्मात् बालिकातः बुद्धिमान् ।",
+    "correct": "अयं बालकः तस्मात् बालकात् बुद्धिमान् ।"
+   },
+   {
+    "incorrect": "सः द्वौ पुस्तकौ पठति ।",
+    "correct": "सः द्वे पुस्तके पठति ।"
+   },
+   {
+    "incorrect": "ते त्रीणि फले खादन्ति ।",
+    "correct": "ते त्रीणि फलानि खादन्ति ।"
+   },
+   {
+    "incorrect": "मम पार्श्वे दशभिः रूप्यकाणि सन्ति ।",
+    "correct": "मम पार्श्वे दश रूप्यकाणि सन्ति । (Correct)"
+   },
+   {
+    "incorrect": "त्वं अहं पश्यसि ।",
+    "correct": "त्वं मां पश्यसि ।"
+   },
+   {
+    "incorrect": "वयं देशाय सेवामहे ।",
+    "correct": "वयं देशं सेवामहे ।"
+   },
+   {
+    "incorrect": "लता पुष्पैः शोभन्ते ।",
+    "correct": "लताः पुष्पैः शोभन्ते ।"
+   },
+   {
+    "incorrect": "सः साधुः इव आचरामि ।",
+    "correct": "सः साधुरिव आचरति ।"
+   },
+   {
+    "incorrect": "भवान् अपि चलचित्रं द्रक्ष्यसि ।",
+    "correct": "त्वमपि चलचित्रं द्रक्ष्यसि ।"
+   },
+   {
+    "incorrect": "बालः पठितुम् इच्छन्ति ।",
+    "correct": "बालः पठितुम् इच्छति ।"
+   },
+   {
+    "incorrect": "सा खादित्वा जलम् पिबति ।",
+    "correct": "सा खादित्वा जलं पिबति ।"
+   },
+   {
+    "incorrect": "सः कार्यं कर्तुं शक्नोमि ।",
+    "correct": "सः कार्यं कर्तुं शक्नोति ।"
+   },
+   {
+    "incorrect": "वयं क्रीडितुं बहिः गच्छन्ति ।",
+    "correct": "वयं क्रीडितुं बहिः गच्छामः ।"
+   },
+   {
+    "incorrect": "अहं सत्यं वदेम ।",
+    "correct": "अहं सत्यं वदेयम् ।"
+   },
+   {
+    "incorrect": "यूयं सदा सत्यं वद ।",
+    "correct": "यूयं सदा सत्यं वदत ।"
+   },
+   {
+    "incorrect": "अद्य परीक्षा भविता ।",
+    "correct": "अद्य परीक्षा भविष्यति ।"
+   },
+   {
+    "incorrect": "अहम्, त्वम्, सः च पठान्ति ।",
+    "correct": "अहं त्वं स च पठामः ।"
+   },
+   {
+    "incorrect": "सीतागीते च नृत्यतः ।",
+    "correct": "सीता गीता च नृत्यतः ।"
+   },
+   {
+    "incorrect": "पिता पुत्रं च आपणं गच्छतः ।",
+    "correct": "पिता पुत्रश्च आपणं गच्छतः ।"
+   },
+   {
+    "incorrect": "तस्य लेखनं सुन्दरः अस्ति ।",
+    "correct": "तस्य लेखनं सुन्दरम् अस्ति ।"
+   },
+   {
+    "incorrect": "इमे फलानि मधुराणि सन्ति ।",
+    "correct": "इमानि फलानि मधुराणि सन्ति ।"
+   },
+   {
+    "incorrect": "तेन एकं पुस्तकं पठति ।",
+    "correct": "सः एकं पुस्तकं पठति ।"
+   },
+   {
+    "incorrect": "मृगः वने धावन्ति ।",
+    "correct": "मृगाः वने धावन्ति ।"
+   },
+   {
+    "incorrect": "सिंहः गर्जामि ।",
+    "correct": "सिंहः गर्जति ।"
+   },
+   {
+    "incorrect": "मेघाः वर्षति ।",
+    "correct": "मेघाः वर्षन्ति ।"
+   },
+   {
+    "incorrect": "नद्यः प्रवहति ।",
+    "correct": "नद्यः प्रवहन्ति ।"
+   },
+   {
+    "incorrect": "पक्षिणः आकाशे उत्पतति ।",
+    "correct": "पक्षिणः आकाशे उत्पतन्ति ।"
+   },
+   {
+    "incorrect": "मूषकेन बिलात् निर्गच्छति ।",
+    "correct": "मूषकः बिलात् निर्गच्छति ।"
+   },
+   {
+    "incorrect": "बालकाः कन्दुकस्य क्रीडन्ति ।",
+    "correct": "बालकाः कन्दुकेन क्रीडन्ति ।"
+   },
+   {
+    "incorrect": "सः गृहे अन्तः अस्ति ।",
+    "correct": "सः गृहस्य अन्तः अस्ति ।"
+   },
+   {
+    "incorrect": "तेषां विवादः अभवन् ।",
+    "correct": "तेषां विवादः अभवत् ।"
+   }
+  ]
+ }
+}

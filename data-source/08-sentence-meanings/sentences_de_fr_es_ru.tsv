@@ -1,0 +1,221 @@
+id	de	fr	es	ru
+SN-001	Hallo / Grüß dich.	Bonjour / Salut.	Hola / Saludos.	Здравствуйте.
+SN-002	Guten Tag (förmlich).	Bonjour (formel).	Saludos (formal).	Приветствую (официально).
+SN-003	Guten Morgen.	Bonjour (le matin).	Buenos días.	Доброе утро.
+SN-004	Guten Mittag.	Bon après-midi.	Buenas tardes.	Добрый день.
+SN-005	Guten Abend.	Bonsoir.	Buenas tardes / noches.	Добрый вечер.
+SN-006	Gute Nacht.	Bonne nuit.	Buenas noches.	Спокойной ночи.
+SN-007	Danke.	Merci.	Gracias.	Спасибо.
+SN-008	Willkommen.	Bienvenue.	Bienvenido.	Добро пожаловать.
+SN-009	Bitte.	S'il vous plaît.	Por favor.	Пожалуйста.
+SN-010	Entschuldigung.	Excusez-moi / Pardon.	Perdón / Disculpe.	Извините.
+SN-011	Keine Sorge.	Ne t'inquiète pas.	No te preocupes.	Не волнуйся.
+SN-012	Bis bald.	À bientôt.	Hasta pronto.	До встречи.
+SN-013	Hab einen schönen Tag.	Bonne journée.	Que tengas un buen día.	Хорошего дня.
+SN-014	Wie geht es Ihnen? (zu einem Mann)	Comment allez-vous ? (à un homme)	¿Cómo está usted? (a un hombre)	Как вы поживаете? (мужчине)
+SN-015	Wie geht es Ihnen? (zu einer Frau)	Comment allez-vous ? (à une femme)	¿Cómo está usted? (a una mujer)	Как вы поживаете? (женщине)
+SN-016	Wie heißt du?	Comment tu t'appelles ?	¿Cómo te llamas?	Как тебя зовут?
+SN-017	Was machen Sie? (zu einem Mann)	Que faites-vous ? (à un homme)	¿Qué hace usted? (a un hombre)	Что вы делаете? (мужчине)
+SN-018	Was machen Sie? (zu einer Frau)	Que faites-vous ? (à une femme)	¿Qué hace usted? (a una mujer)	Что вы делаете? (женщине)
+SN-019	Wo sind Sie? (zu einem Mann)	Où êtes-vous ? (à un homme)	¿Dónde está usted? (a un hombre)	Где вы? (мужчине)
+SN-020	Wo sind Sie? (zu einer Frau)	Où êtes-vous ? (à une femme)	¿Dónde está usted? (a una mujer)	Где вы? (женщине)
+SN-021	Hast du schon gegessen?	As-tu déjà mangé ?	¿Ya has comido?	Ты уже поел?
+SN-022	Was gibt's?	Quoi de neuf ?	¿Qué pasa?	Что происходит?
+SN-023	Wann treffen wir uns?	Quand nous voyons-nous ?	¿Cuándo nos vemos?	Когда встретимся?
+SN-024	Was gibt's Neues?	Quoi de spécial ?	¿Qué hay de nuevo?	Что нового?
+SN-025	Mir geht es gut. (Mann)	Je vais bien. (homme)	Estoy bien. (hombre)	У меня всё хорошо. (мужчина)
+SN-026	Mir geht es gut. (Frau)	Je vais bien. (femme)	Estoy bien. (mujer)	У меня всё хорошо. (женщина)
+SN-027	Mir geht es gut.	Je vais bien.	Estoy bien.	Я в порядке.
+SN-028	Alles ist gut.	Tout va bien.	Todo está bien.	Всё хорошо.
+SN-029	Ja.	Oui.	Sí.	Да.
+SN-030	Nein.	Non.	No.	Нет.
+SN-031	Okay / So sei es.	D'accord / Ainsi soit-il.	De acuerdo / Así sea.	Хорошо / Да будет так.
+SN-032	Ich weiß es nicht.	Je ne sais pas.	No lo sé.	Я не знаю.
+SN-033	Ich bin zu Hause.	Je suis à la maison.	Estoy en casa.	Я дома.
+SN-034	Ich arbeite.	Je travaille.	Estoy trabajando.	Я работаю.
+SN-035	Ich lese / lerne.	Je lis / j'étudie.	Estoy leyendo / estudiando.	Я читаю / учусь.
+SN-036	Heute bin ich beschäftigt. (Mann)	Aujourd'hui je suis occupé.	Hoy estoy ocupado.	Сегодня я занят.
+SN-037	Heute bin ich beschäftigt. (Frau)	Aujourd'hui je suis occupée.	Hoy estoy ocupada.	Сегодня я занята.
+SN-038	Auf jeden Fall.	Bien sûr.	Por supuesto.	Обязательно.
+SN-039	So ist es nicht.	Ce n'est pas comme ça.	No es así.	Это не так.
+SN-040	Ich habe gegessen.	J'ai mangé.	Ya he comido.	Я поел.
+SN-041	Nicht jetzt.	Pas maintenant.	Ahora no.	Не сейчас.
+SN-042	Ausgezeichnet!	Excellent !	¡Excelente!	Превосходно!
+SN-043	Gut! / Toll!	Bien ! / Superbe !	¡Bien! / ¡Genial!	Хорошо! / Прекрасно!
+SN-044	Gut gemacht!	Bravo !	¡Bien hecho!	Молодец!
+SN-045	Sehr schön.	Très beau.	Muy bonito.	Очень красиво.
+SN-046	Wahr.	C'est vrai.	Es verdad.	Правда.
+SN-047	Das gefällt mir.	Cela me plaît.	Esto me gusta.	Мне это нравится.
+SN-048	Ich stimme zu. (Frau)	Je suis d'accord.	Estoy de acuerdo.	Я согласна.
+SN-049	Tolles Bild.	Belle image.	Gran foto.	Отличная картина.
+SN-050	Guter Artikel.	Bon article.	Buen artículo.	Хорошая статья.
+SN-051	Leite das weiter.	Transférez ceci.	Reenvía esto.	Перешлите это.
+SN-052	Bitte teilen.	Partagez, s'il vous plaît.	Por favor, comparte.	Пожалуйста, поделитесь.
+SN-053	Herzlichen Glückwunsch!	Félicitations !	¡Felicidades!	Поздравляю!
+SN-054	Was meinst du?	Quel est ton avis ?	¿Cuál es tu opinión?	Каково твоё мнение?
+SN-055	Ha ha ha!	Ha ha ha !	¡Ja ja ja!	Ха-ха-ха!
+SN-056	Ich gehe.	Je m'en vais.	Me voy.	Я иду.
+SN-057	Ich komme.	J'arrive.	Ya voy / Vengo.	Я иду (к вам).
+SN-058	Kommen Sie bitte. (zu einem Mann)	Venez, je vous prie. (à un homme)	Venga usted. (a un hombre)	Проходите. (мужчине)
+SN-059	Kommen Sie bitte. (zu einer Frau)	Venez, je vous prie. (à une femme)	Venga usted. (a una mujer)	Проходите. (женщине)
+SN-060	Ich esse.	Je mange.	Estoy comiendo.	Я ем.
+SN-061	Ich trinke.	Je bois.	Estoy bebiendo.	Я пью.
+SN-062	Ich sehe.	Je vois.	Veo.	Я вижу.
+SN-063	Ich höre.	J'entends.	Oigo.	Я слышу.
+SN-064	Bitte sprechen Sie.	Parlez, s'il vous plaît.	Hable, por favor.	Говорите, пожалуйста.
+SN-065	Setzen Sie sich hierher.	Asseyez-vous ici.	Siéntese aquí.	Садитесь сюда.
+SN-066	Machen Sie es schnell.	Faites-le vite.	Hágalo rápido.	Сделайте это быстро.
+SN-067	Sprechen Sie langsam.	Parlez lentement.	Hable despacio.	Говорите медленно.
+SN-068	Wie geht es deiner Familie?	Comment va ta famille ?	¿Cómo está tu familia?	Как твоя семья?
+SN-069	Zu Hause geht es allen gut.	À la maison, tout le monde va bien.	En casa todos están bien.	Дома все здоровы.
+SN-070	Das ist mein Vater.	Voici mon père.	Este es mi padre.	Это мой отец.
+SN-071	Das ist meine Mutter.	Voici ma mère.	Esta es mi madre.	Это моя мать.
+SN-072	Ich habe einen Bruder.	J'ai un frère.	Tengo un hermano.	У меня есть брат.
+SN-073	Ich habe eine Schwester.	J'ai une sœur.	Tengo una hermana.	У меня есть сестра.
+SN-074	Was gibt es zum Frühstück?	Qu'y a-t-il au petit-déjeuner ?	¿Qué hay de desayuno?	Что на завтрак?
+SN-075	Was gibt es zum Essen?	Qu'y a-t-il au repas ?	¿Qué hay de comida?	Что на обед / ужин?
+SN-076	Ich putze das Haus.	Je nettoie la maison.	Estoy limpiando la casa.	Я убираю дом.
+SN-077	Ich koche.	Je fais la cuisine.	Estoy cocinando.	Я готовлю.
+SN-078	Was arbeiten Sie? (zu einem Mann)	Quel travail faites-vous ? (à un homme)	¿En qué trabaja usted? (a un hombre)	Кем вы работаете? (мужчине)
+SN-079	Was arbeiten Sie? (zu einer Frau)	Quel travail faites-vous ? (à une femme)	¿En qué trabaja usted? (a una mujer)	Кем вы работаете? (женщине)
+SN-080	Ich bin Schüler.	Je suis étudiant.	Soy estudiante. (hombre)	Я ученик.
+SN-081	Ich bin Schülerin.	Je suis étudiante.	Soy estudiante. (mujer)	Я ученица.
+SN-082	Ich bin Lehrer.	Je suis professeur.	Soy profesor.	Я учитель.
+SN-083	Ich bin Lehrerin.	Je suis professeure.	Soy profesora.	Я учительница.
+SN-084	Ich arbeite in einem Büro.	Je travaille dans un bureau.	Trabajo en una oficina.	Я работаю в офисе.
+SN-085	Was studieren Sie? (zu einem Mann)	Qu'étudiez-vous ? (à un homme)	¿Qué estudia usted? (a un hombre)	Что вы изучаете? (мужчине)
+SN-086	Was studieren Sie? (zu einer Frau)	Qu'étudiez-vous ? (à une femme)	¿Qué estudia usted? (a una mujer)	Что вы изучаете? (женщине)
+SN-087	Ich lerne Sanskrit.	J'étudie le sanskrit.	Estudio sánscrito.	Я изучаю санскрит.
+SN-088	Heute ist eine Versammlung.	Il y a une réunion aujourd'hui.	Hoy hay una reunión.	Сегодня собрание.
+SN-089	Meine Arbeit ist fertig.	Mon travail est fini.	Mi trabajo está terminado.	Моя работа закончена.
+SN-090	Heute habe ich frei.	Aujourd'hui, c'est mon jour de congé.	Hoy es mi día libre.	Сегодня у меня выходной.
+SN-091	Wohin gehen Sie? (zu einem Mann)	Où allez-vous ? (à un homme)	¿Adónde va usted? (a un hombre)	Куда вы идёте? (мужчине)
+SN-092	Wohin gehen Sie? (zu einer Frau)	Où allez-vous ? (à une femme)	¿Adónde va usted? (a una mujer)	Куда вы идёте? (женщине)
+SN-093	Ich gehe zum Markt.	Je vais au marché.	Voy al mercado.	Я иду на рынок.
+SN-094	Ich gehe zum Tempel.	Je vais au temple.	Voy al templo.	Я иду в храм.
+SN-095	Ich gehe ins Dorf.	Je vais au village.	Voy al pueblo.	Я еду в деревню.
+SN-096	Wann kommt der Bus?	Quand le bus arrivera-t-il ?	¿Cuándo vendrá el autobús?	Когда придёт автобус?
+SN-097	Wann kommt der Zug?	Quand le train arrivera-t-il ?	¿Cuándo vendrá el tren?	Когда придёт поезд?
+SN-098	Gute Reise!	Bon voyage !	¡Buen viaje!	Счастливого пути!
+SN-099	Ich bin angekommen. (Mann)	Je suis arrivé.	He llegado. (hombre)	Я доехал.
+SN-100	Ich bin angekommen. (Frau)	Je suis arrivée.	He llegado. (mujer)	Я доехала.
+SN-101	Die Reise war gut.	Le voyage s'est bien passé.	El viaje fue bueno.	Поездка была хорошей.
+SN-102	Was essen Sie? (zu einem Mann)	Que mangez-vous ? (à un homme)	¿Qué come usted? (a un hombre)	Что вы едите? (мужчине)
+SN-103	Was essen Sie? (zu einer Frau)	Que mangez-vous ? (à une femme)	¿Qué come usted? (a una mujer)	Что вы едите? (женщине)
+SN-104	Ich esse eine Frucht.	Je mange un fruit.	Como una fruta.	Я ем фрукт.
+SN-105	Ich esse Reis.	Je mange du riz.	Como arroz.	Я ем рис.
+SN-106	Was trinken Sie? (zu einem Mann)	Que buvez-vous ? (à un homme)	¿Qué bebe usted? (a un hombre)	Что вы пьёте? (мужчине)
+SN-107	Was trinken Sie? (zu einer Frau)	Que buvez-vous ? (à une femme)	¿Qué bebe usted? (a una mujer)	Что вы пьёте? (женщине)
+SN-108	Ich trinke Wasser.	Je bois de l'eau.	Bebo agua.	Я пью воду.
+SN-109	Ich trinke Tee.	Je bois du thé.	Bebo té.	Я пью чай.
+SN-110	Das Essen ist sehr lecker.	Le repas est très bon.	La comida está muy rica.	Еда очень вкусная.
+SN-111	Ich mag Süßes.	J'aime les sucreries.	Me gustan los dulces.	Я люблю сладкое.
+SN-112	Das mag ich nicht.	Je n'aime pas ça.	No me gusta.	Мне это не нравится.
+SN-113	Nichts, danke.	Rien, merci.	Nada, gracias.	Ничего не нужно, спасибо.
+SN-114	Ich bin satt.	J'ai le ventre plein.	Estoy lleno.	Я сыт.
+SN-115	Wie ist das Wetter heute?	Quel temps fait-il aujourd'hui ?	¿Qué tiempo hace hoy?	Какая сегодня погода?
+SN-116	Heute ist es sehr heiß.	Il fait très chaud aujourd'hui.	Hoy hace mucho calor.	Сегодня очень жарко.
+SN-117	Heute ist es sehr kalt.	Il fait très froid aujourd'hui.	Hoy hace mucho frío.	Сегодня очень холодно.
+SN-118	Es regnet.	Il pleut.	Está lloviendo.	Идёт дождь.
+SN-119	Wird es regnen?	Va-t-il pleuvoir ?	¿Va a llover?	Будет дождь?
+SN-120	Der Wind weht.	Le vent souffle.	Sopla el viento.	Дует ветер.
+SN-121	Das Wetter ist angenehm.	Il fait beau.	El tiempo es agradable.	Погода приятная.
+SN-122	Wie geht es deiner Gesundheit?	Comment va ta santé ?	¿Cómo está tu salud?	Как твоё здоровье?
+SN-123	Meine Gesundheit ist gut.	Ma santé est bonne.	Mi salud es buena.	У меня хорошее здоровье.
+SN-124	Mir geht es gesundheitlich nicht gut.	Ma santé n'est pas bonne.	Mi salud no es buena.	Мне нездоровится.
+SN-125	Ich bin gesund. (Mann)	Je suis en bonne santé.	Estoy sano.	Я здоров.
+SN-126	Ich bin gesund. (Frau)	Je suis en bonne santé.	Estoy sana.	Я здорова.
+SN-127	Ich habe Kopfschmerzen.	J'ai mal à la tête.	Me duele la cabeza.	У меня болит голова.
+SN-128	Ich habe Fieber.	J'ai de la fièvre.	Tengo fiebre.	У меня температура.
+SN-129	Bitte nehmen Sie die Medizin.	Prenez le médicament, s'il vous plaît.	Por favor, tome la medicina.	Пожалуйста, примите лекарство.
+SN-130	Ruhen Sie sich aus.	Reposez-vous.	Descanse.	Отдохните.
+SN-131	Gute Besserung! (zu einem Mann)	Bon rétablissement ! (à un homme)	¡Que te mejores pronto! (a un hombre)	Скорее поправляйтесь! (мужчине)
+SN-132	Gute Besserung! (zu einer Frau)	Bon rétablissement ! (à une femme)	¡Que te mejores pronto! (a una mujer)	Скорее поправляйтесь! (женщине)
+SN-133	Ich bin zufrieden. (Mann)	Je suis content.	Estoy contento.	Я доволен.
+SN-134	Ich bin zufrieden. (Frau)	Je suis contente.	Estoy contenta.	Я довольна.
+SN-135	Ich bin traurig. (Mann)	Je suis triste. (homme)	Estoy triste. (hombre)	Мне грустно. (мужчина)
+SN-136	Ich bin traurig. (Frau)	Je suis triste. (femme)	Estoy triste. (mujer)	Мне грустно. (женщина)
+SN-137	Ich werde wütend.	Je commence à me fâcher.	Me estoy enfadando.	Я начинаю злиться.
+SN-138	Ich bin müde. (Mann)	Je suis fatigué.	Estoy cansado.	Я устал.
+SN-139	Ich bin müde. (Frau)	Je suis fatiguée.	Estoy cansada.	Я устала.
+SN-140	Ich habe Angst.	J'ai peur.	Tengo miedo.	Мне страшно.
+SN-141	Das ist erstaunlich.	C'est surprenant.	Esto es sorprendente.	Это удивительно.
+SN-142	Ich bin entspannt. (Mann)	Je suis détendu.	Estoy tranquilo.	Я спокоен.
+SN-143	Ich bin entspannt. (Frau)	Je suis détendue.	Estoy tranquila.	Я спокойна.
+SN-144	Bitte helfen Sie.	Aidez-moi, s'il vous plaît.	Ayude, por favor.	Помогите, пожалуйста.
+SN-145	Bitte geben Sie mir Wasser.	Donnez-moi de l'eau, s'il vous plaît.	Por favor, deme agua.	Пожалуйста, дайте мне воды.
+SN-146	Bitte geben Sie mir einen Stift.	Donnez-moi un stylo, s'il vous plaît.	Por favor, deme un bolígrafo.	Пожалуйста, дайте мне ручку.
+SN-147	Bitte sagen Sie es noch einmal.	Répétez, s'il vous plaît.	Por favor, repítalo.	Пожалуйста, повторите.
+SN-148	Bitte öffnen Sie die Tür.	Ouvrez la porte, s'il vous plaît.	Por favor, abra la puerta.	Пожалуйста, откройте дверь.
+SN-149	Bitte schließen Sie die Tür.	Fermez la porte, s'il vous plaît.	Por favor, cierre la puerta.	Пожалуйста, закройте дверь.
+SN-150	Bitte gehen Sie dorthin.	Allez là-bas, s'il vous plaît.	Por favor, vaya allí.	Пожалуйста, идите туда.
+SN-151	Bitte kommen Sie hierher.	Venez ici, s'il vous plaît.	Por favor, venga aquí.	Пожалуйста, идите сюда.
+SN-152	Verzeihen Sie mir.	Pardonnez-moi.	Perdóneme.	Простите меня.
+SN-153	Wie spät ist es jetzt?	Quelle heure est-il ?	¿Qué hora es?	Который сейчас час?
+SN-154	Es ist fünf Uhr.	Il est cinq heures.	Son las cinco.	Пять часов.
+SN-155	Es ist halb sechs.	Il est cinq heures et demie.	Son las cinco y media.	Половина шестого.
+SN-156	Welcher Tag ist heute?	Quel jour sommes-nous ?	¿Qué día es hoy?	Какой сегодня день?
+SN-157	Heute ist Donnerstag.	Aujourd'hui, c'est jeudi.	Hoy es jueves.	Сегодня четверг.
+SN-158	Welches Datum ist heute?	Quelle est la date aujourd'hui ?	¿Qué fecha es hoy?	Какое сегодня число?
+SN-159	Morgen ist Freitag.	Demain, c'est vendredi.	Mañana es viernes.	Завтра пятница.
+SN-160	Gestern war Mittwoch.	Hier, c'était mercredi.	Ayer fue miércoles.	Вчера была среда.
+SN-161	Ich gehe übermorgen.	Je partirai après-demain.	Iré pasado mañana.	Я пойду послезавтра.
+SN-162	Ich bin vorgestern gekommen. (Mann)	Je suis venu avant-hier.	Vine anteayer. (hombre)	Я пришёл позавчера.
+SN-163	Ich bin vorgestern gekommen. (Frau)	Je suis venue avant-hier.	Vine anteayer. (mujer)	Я пришла позавчера.
+SN-164	Ich gehe zum Markt / Laden.	Je vais au marché / au magasin.	Voy al mercado / a la tienda.	Я иду на рынок / в магазин.
+SN-165	Was brauchen Sie?	De quoi avez-vous besoin ?	¿Qué necesita?	Что вам нужно?
+SN-166	Ich brauche Gemüse.	J'ai besoin de légumes.	Necesito verduras.	Мне нужны овощи.
+SN-167	Ich brauche Obst.	J'ai besoin de fruits.	Necesito frutas.	Мне нужны фрукты.
+SN-168	Was kostet das?	Combien ça coûte ?	¿Cuánto cuesta esto?	Сколько это стоит?
+SN-169	Der Preis ist hoch.	Le prix est élevé.	El precio es alto.	Цена высокая.
+SN-170	Bitte machen Sie es etwas billiger.	Baissez un peu, s'il vous plaît.	Por favor, rebájelo un poco.	Пожалуйста, немного уступите.
+SN-171	Nehmen Sie das.	Prenez ceci.	Tome esto.	Возьмите это.
+SN-172	Zeigen Sie mir das.	Montrez-moi cela.	Muéstreme eso.	Покажите мне то.
+SN-173	Zeigen Sie mir ein anderes.	Montrez-m'en un autre.	Muéstreme otro.	Покажите другой.
+SN-174	Das ist gut.	C'est bien.	Esto está bien.	Это хорошо.
+SN-175	Alles Gute zum Fest!	Bonne fête !	¡Felices fiestas!	С праздником!
+SN-176	Frohes Diwali!	Joyeux Dîpâvalî !	¡Feliz Diwali!	С Дивали!
+SN-177	Frohes Ugadi!	Joyeux Ugadi !	¡Feliz Ugadi!	С Угади!
+SN-178	Frohes Sankranti!	Joyeux Sankranti !	¡Feliz Sankranti!	С Санкранти!
+SN-179	Frohes neues Jahr!	Bonne année !	¡Feliz año nuevo!	С Новым годом!
+SN-180	Frohes Holi!	Joyeux Holi !	¡Feliz Holi!	С праздником Холи!
+SN-181	Wie feiern Sie das Fest? (zu einem Mann)	Comment célébrez-vous la fête ? (à un homme)	¿Cómo celebra usted la fiesta? (a un hombre)	Как вы празднуете? (мужчине)
+SN-182	Wie feiern Sie das Fest? (zu einer Frau)	Comment célébrez-vous la fête ? (à une femme)	¿Cómo celebra usted la fiesta? (a una mujer)	Как вы празднуете? (женщине)
+SN-183	Zu Hause wurden Süßigkeiten gemacht.	On a fait des douceurs à la maison.	Se hicieron dulces en casa.	Дома приготовили сладости.
+SN-184	Was ist das Problem?	Quel est le problème ?	¿Cuál es el problema?	В чём проблема?
+SN-185	Ich habe Fieber.	J'ai de la fièvre.	Tengo fiebre.	У меня температура.
+SN-186	Ich habe Bauchschmerzen.	J'ai mal au ventre.	Me duele el estómago.	У меня болит живот.
+SN-187	Wo tut es weh?	Où avez-vous mal ?	¿Dónde le duele?	Где болит?
+SN-188	Bitte öffnen Sie den Mund.	Ouvrez la bouche, s'il vous plaît.	Por favor, abra la boca.	Пожалуйста, откройте рот.
+SN-189	Nehmen Sie diese Medizin.	Prenez ce médicament.	Tome esta medicina.	Примите это лекарство.
+SN-190	Nehmen Sie es dreimal am Tag.	Prenez-le trois fois par jour.	Tómelo tres veces al día.	Принимайте три раза в день.
+SN-191	Trinken Sie warmes Wasser.	Buvez de l'eau chaude.	Beba agua caliente.	Пейте тёплую воду.
+SN-192	Fahren Sie zum Bahnhof? (zu einem Mann)	Allez-vous à la gare ? (à un homme)	¿Va usted a la estación? (a un hombre)	Вы едете на вокзал? (мужчине)
+SN-193	Bringen Sie mich zum Flughafen.	Emmenez-moi à l'aéroport.	Lléveme al aeropuerto.	Отвезите меня в аэропорт.
+SN-194	Wie viel kostet die Fahrt?	Combien coûte la course ?	¿Cuánto es el pasaje?	Сколько стоит проезд?
+SN-195	Halten Sie hier.	Arrêtez-vous ici.	Pare aquí.	Остановитесь здесь.
+SN-196	Fahren Sie geradeaus.	Allez tout droit.	Siga recto.	Езжайте прямо.
+SN-197	Biegen Sie links ab.	Allez à gauche.	Vaya a la izquierda.	Поверните налево.
+SN-198	Biegen Sie rechts ab.	Allez à droite.	Vaya a la derecha.	Поверните направо.
+SN-199	Fahren Sie schnell.	Allez vite.	Vaya rápido.	Езжайте быстрее.
+SN-200	Haben Sie verstanden? (zu einem Schüler)	Avez-vous compris ? (à un élève)	¿Ha entendido? (a un alumno)	Вы поняли? (ученику)
+SN-201	Haben Sie verstanden? (zu einer Schülerin)	Avez-vous compris ? (à une élève)	¿Ha entendido? (a una alumna)	Вы поняли? (ученице)
+SN-202	Ja, ich habe verstanden. (Mann)	Oui, j'ai compris.	Sí, he entendido. (hombre)	Да, я понял.
+SN-203	Ja, ich habe verstanden. (Frau)	Oui, j'ai compris.	Sí, he entendido. (mujer)	Да, я поняла.
+SN-204	Nein, ich habe nicht verstanden. (Mann)	Non, je n'ai pas compris.	No, no he entendido. (hombre)	Нет, я не понял.
+SN-205	Nein, ich habe nicht verstanden. (Frau)	Non, je n'ai pas compris.	No, no he entendido. (mujer)	Нет, я не поняла.
+SN-206	Ich habe eine Frage.	J'ai un doute.	Tengo una duda.	У меня есть вопрос.
+SN-207	Bitte wiederholen Sie.	Répétez, s'il vous plaît.	Por favor, repita.	Пожалуйста, повторите.
+SN-208	Haben Sie die Hausaufgaben gemacht? (zu einem Schüler)	Avez-vous fait vos devoirs ? (à un élève)	¿Ha hecho los deberes? (a un alumno)	Вы сделали домашнее задание? (ученику)
+SN-209	Haben Sie die Hausaufgaben gemacht? (zu einer Schülerin)	Avez-vous fait vos devoirs ? (à une élève)	¿Ha hecho los deberes? (a una alumna)	Вы сделали домашнее задание? (ученице)
+SN-210	Lesen Sie das Buch.	Lisez le livre.	Lea el libro.	Читайте книгу.
+SN-211	Schreiben Sie an die Tafel.	Écrivez au tableau.	Escriba en la pizarra.	Пишите на доске.
+SN-212	Seien Sie still.	Taisez-vous.	Silencio, por favor.	Тише, пожалуйста.
+SN-213	Welchen Film sehen wir uns an?	Quel film allons-nous voir ?	¿Qué película vemos?	Какой фильм посмотрим?
+SN-214	Haben Sie die Karten gekauft? (zu einem Mann)	Avez-vous acheté les billets ? (à un homme)	¿Ha comprado las entradas? (a un hombre)	Вы купили билеты? (мужчине)
+SN-215	Haben Sie die Karten gekauft? (zu einer Frau)	Avez-vous acheté les billets ? (à une femme)	¿Ha comprado las entradas? (a una mujer)	Вы купили билеты? (женщине)
+SN-216	Der Film beginnt.	Le film commence.	La película empieza.	Фильм начинается.
+SN-217	Der Film war gut.	Le film était bien.	La película fue buena.	Фильм был хороший.
+SN-218	Der Film war nicht gut.	Le film n'était pas bien.	La película no fue buena.	Фильм был плохой.
+SN-219	Lass uns etwas zu essen kaufen.	Achetons quelque chose à manger.	Compremos algo de comer.	Давайте купим что-нибудь поесть.
+SN-220	Wo ist dein Platz?	Où est ta place ?	¿Dónde está tu asiento?	Где твоё место?

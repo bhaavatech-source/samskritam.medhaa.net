@@ -1,0 +1,2670 @@
+{
+ "corpus_title": "Gold Data for training of Sanskrit Corpus",
+ "author": "Dr. B Rajeswara Rao, Bhaavajaalam Research Center, Visakhapatnam",
+ "topic": "समासाः (Samāsa - Sanskrit Compounds)",
+ "sections": {
+  "introduction_and_theory": {
+   "introduction": "सन्धीनां परिचयवेलायां वयं स्वरव्यञ्जनयोः राशिरेव भाषणं वाङ्मयमिति च विचारितवन्तः। स्वरव्यञ्जनात्मकः शब्दराशिः सम्पूर्णलौकिकार्थबोधकः शास्त्रीयसञ्ज्ञाविशेषः पदम् इति। एतेषां समुदाय एव भाषणम्। इदं च पदं द्विविधं वर्तते। सुबन्तं तिङन्तं चेति।",
+   "sup_pratyayas_and_vibhakti": {
+    "definition": "सुप् इति कश्चन सञ्ज्ञाविशेषः। येन अधो निर्दिष्टाः प्रत्ययाः सूच्यन्ते।",
+    "pratyayas": "सुँ-औ-जस्-अम्-औट्-शस्-टा-भ्याम्-भिस्-ङे-भ्याम्-भ्यस्-ङसिँ-भ्याम्-भ्यस्-ङस्-ओस्-आम्-ङि-ओस्-सुप्। एतेषां प्रत्ययानां विभक्तिः इति काचित् सञ्ज्ञा अन्यापि वर्तते।",
+    "table": [
+     {
+      "ekavachanam": "सु",
+      "dvvachanam": "औ",
+      "bahuvachanam": "जस्",
+      "vibhakti": "प्रथमा",
+      "notes": ""
+     },
+     {
+      "ekavachanam": "सु",
+      "dvvachanam": "औ",
+      "bahuvachanam": "जस्",
+      "vibhakti": "सम्.प्र.",
+      "notes": "सम्बोधनप्रथमा"
+     },
+     {
+      "ekavachanam": "अम्",
+      "dvvachanam": "औट्",
+      "bahuvachanam": "शस्",
+      "vibhakti": "द्वितीया",
+      "notes": ""
+     },
+     {
+      "ekavachanam": "टा",
+      "dvvachanam": "भ्याम्",
+      "bahuvachanam": "भिस्",
+      "vibhakti": "तृतीया",
+      "notes": ""
+     },
+     {
+      "ekavachanam": "ङे",
+      "dvvachanam": "भ्याम्",
+      "bahuvachanam": "भ्यस्",
+      "vibhakti": "चतुर्थी",
+      "notes": ""
+     },
+     {
+      "ekavachanam": "ङसि",
+      "dvvachanam": "भ्याम्",
+      "bahuvachanam": "भ्यस्",
+      "vibhakti": "पञ्चमी",
+      "notes": ""
+     },
+     {
+      "ekavachanam": "ङस्",
+      "dvvachanam": "ओस्",
+      "bahuvachanam": "आम्",
+      "vibhakti": "षष्ठी",
+      "notes": ""
+     },
+     {
+      "ekavachanam": "ङि",
+      "dvvachanam": "ओस्",
+      "bahuvachanam": "सुप्",
+      "vibhakti": "सप्तमी",
+      "notes": ""
+     }
+    ],
+    "application_contexts": [
+     {
+      "context": "कारकम् (Kāraka)",
+      "details": "क्रिया जनकं कारकम्। इदं षढ्विधम्: कर्ता, कर्म, करणम्, सम्प्रदानम्, अपादानम्, अधिकरणम्। कारकाणाम् अनुक्तत्वे द्वितीयादयः विभक्तयः, उक्तत्वे प्रथमा विभक्तिः।"
+     },
+     {
+      "context": "उपपदम् (Upapada)",
+      "details": "सूत्रेषु वार्तिकेषु च कानिचन पदानि स्वीकृत्य एतेषां योगे इयं विभक्तिः भवति।"
+     },
+     {
+      "context": "कर्मप्रवचनीयः (Karmapravacanīya)",
+      "details": "विशिष्टेषु अर्थेषु उपसर्गाणामेव कर्मप्रवचनीय इति सूत्रेषु विवृतम्। तेषां सम्बन्धे च विविधविभक्तयः भवन्ति।"
+     },
+     {
+      "context": "अर्थः (Artha - Specific Meaning)",
+      "details": "कस्मिंश्चिद् विशिष्टे अर्थे इयं विभक्तिः भवति। यथा हेत्वर्थे तृतीया विभक्तिः।"
+     },
+     {
+      "context": "प्रकृत्यर्थे एव (Only for getting the Padasañjñā)",
+      "details": "क्वचित् केवलं पदसञ्ज्ञासिद्धर्थमेव इमे सुपः भवन्ति। यथा अव्ययानि - अत्र, तत्र, क्व, अपि, च।"
+     }
+    ]
+   },
+   "samasa_definition": {
+    "term": "समासः (Samāsaḥ)",
+    "etymology": "समस्यते इति समासः। सम् इति उपसर्गः, अस्- इति धातुः (क्षेपणमर्थः)।",
+    "meaning": "सम्यक् क्षेपणम् (मेलनम्) इति वक्तुं शक्नुमः। उच्चारणे विषयभूतानां सम्यक्क्षेपणम् (मेलनम्)।",
+    "reason_for_compounding": "सर्वदापि सुब्विभक्तीनाम् उच्चारणम् असहमानः मनुजः समान्यत एव तान् त्यजति। कोशार्थापेक्षया विशिष्टार्थप्रतिपादनेच्छा अन्यत् कारणम्।"
+   },
+   "vigraha_vaakyam": {
+    "definition": "समस्तपदानाम् अर्थकथनमेव विग्रहवाक्यम्।",
+    "types": [
+     {
+      "type": "लौकिकं विग्रहवाक्यम् (Laukika Vigraha Vākya)",
+      "details": "समासपदस्य स्थाने एव यद् वक्तुं शक्यते तत्तद्भाषिसमुदाये लोके सर्वेण अवगन्तुं च शक्यते तद् वाक्यम्। External सन्धयः अत्र भवन्ति।",
+      "note_on_sarvanaama": "समस्तपदस्य क्रियया साकं विद्यमानं सम्बन्धं वक्तुम्, विग्रहवाक्यस्य कथनानन्तरं पुनः अन्येन सर्वनामशब्देन प्रदर्शनं कर्तव्यम्।"
+     },
+     {
+      "type": "अलौकिकं विग्रहवाक्यम् (Alaukika Vigraha Vākya)",
+      "details": "लोके जनैः विज्ञातुं न शक्यते। लौकिकं विग्रहवाक्ये यानि सुबन्तानि सन्ति, तेषां प्रकृतिप्रत्ययविभागरूपप्रदर्शनं शास्त्रप्रक्रियानिर्वहणार्थं यत् क्रियते तद् वाक्यम्। अत्र Internal सन्धयः प्रवर्तन्ते (अवश्यं कर्तव्याः)।"
+     }
+    ]
+   }
+  },
+  "samasa_types_and_classification": {
+   "classification_by_occurrence": {
+    "title": "समासः प्रवृत्तिमाश्रित्य (Classification by Occurrence)",
+    "types": [
+     {
+      "name": "नित्यसमासः (Nitya Samāsa)",
+      "definition": "अस्वपदविग्रहः नित्यसमासः। समस्यमानपदेन यस्य लौकिकं विग्रहवाक्यं वक्तुं न शक्यते। (उदा. यथाशक्ति - शक्तिम् अनतिक्रम्य) "
+     },
+     {
+      "name": "विकल्पसमासाः (Vikalpa Samāsas)",
+      "definition": "समासाः विकल्पेन भवन्ति, समस्तपदानि वक्तुं शक्नुमः, तस्मिन् स्थाने एव विग्रहवाक्यमपि वक्तुं शक्नुमः। (उदा. शिवभक्तः / शिवस्य भक्तः) "
+     }
+    ]
+   },
+   "classification_by_word_count": {
+    "title": "पदसङ्ख्यामाश्रित्य (Classification by Word Count)",
+    "types": [
+     {
+      "name": "पदद्वयसमासाः (Dvipadasamāsa)",
+      "definition": "यत्र पदद्वयमेव मिलितं भवति। (उदा. शिवभक्तः) "
+     },
+     {
+      "name": "बहुपदसमासाः (Bahupadasamāsa)",
+      "definition": "यत्र बहुभिः पदैः समासा भवन्ति। (उदा. रामलक्ष्मणभरतशत्रुघ्नाः) ",
+      "note": "एकं समस्तपदम् अन्येन समस्तपदेन समस्यते चेदपि सः साक्षात् बहुपदसमास इति वक्तुं न शक्यते।"
+     }
+    ]
+   },
+   "classification_by_meaning_dominance": {
+    "title": "अर्थमाश्रित्य (Classification by Meaning Dominance - The Four Major Types)",
+    "details": "प्रायः समासः पदद्वयस्य भवति। तत्र प्रथमस्य पदस्य पूर्वपदमिति, द्वितीयस्य पदस्य उत्तरपदमिति व्यवहारः। यस्य पदस्य अर्थः क्रियायाम् अन्वेति, तत् पदं प्रधानम्।",
+    "four_fold_division": "अव्ययीभावतत्पुरुषद्वन्द्वबहुव्रीहिभेदात्।",
+    "types": [
+     {
+      "name": "अव्ययीभावः (Avyayībhāva)",
+      "meaning_dominance": "पूर्वपदार्थप्रधानः (Dominance of the First Word's Meaning)",
+      "nature": "नित्यसमासः (Nitya Samāsa)",
+      "example_laukika": "उपगङ्गं वाराणासी (गङ्गायाः समीपम्)",
+      "sub_types": [
+       "समीपार्थक:",
+       "अभावार्थक:",
+       "योग्‍यतार्थक:",
+       "वीप्‍सार्थक:",
+       "पदार्थानतिवृत्‍यर्थक:",
+       "मर्यादार्थक:",
+       "अभिविध्‍यर्थक:",
+       "आभिमुख्‍यार्थक:",
+       "मात्रार्थक:",
+       "अवधारणार्थक:",
+       "पारेशब्‍दयुक्‍त:",
+       "मध्‍येशबदयुक्‍त:"
+      ]
+     },
+     {
+      "name": "तत्पुरषसमासः (Tatpuruṣa)",
+      "meaning_dominance": "उत्तरपदार्थप्रधानः (Dominance of the Second Word's Meaning)",
+      "example_laukika": "विष्णुपत्नी (विष्णोः पत्नी)",
+      "sub_types": [
+       {
+        "name": "द्वितीयातत्पुरषः",
+        "condition": "पूर्वपदंं द्वितीयायां विभक्तौ एव भवति। (उदा. कृष्णश्रितः) "
+       },
+       {
+        "name": "तृतीयातत्पुरषः",
+        "condition": "पूर्वपदंं तृतीयायां विभक्तौ एव भवति। (उदा. हरित्रातः) "
+       },
+       {
+        "name": "चतुर्थीतत्पुरषः",
+        "condition": "पूर्वपदंं चतुर्थ्यां विभक्तौ एव भवति। (उदा. भूतबलिः) "
+       },
+       {
+        "name": "पञ्चमीतत्पुरषः",
+        "condition": "पूर्वपदंं पञ्चम्यां विभक्तौ एव भवति। (उदा. चोरभयम्) "
+       },
+       {
+        "name": "षष्ठीतत्पुरुषः",
+        "condition": "पूर्वपदंं षष्ठ्यां विभक्तौ एव भवति। (उदा. शिवभक्तः) "
+       },
+       {
+        "name": "सप्तमीतत्पुरषः",
+        "condition": "पूर्वपदंं सप्तम्यां विभक्तौ एव भवति। (उदा. अक्षशौण्डः) "
+       },
+       {
+        "name": "नञ् तत्पुरुषः",
+        "condition": "नञ् इति अव्ययेन यदा समासो भवति। (उदा. असत्यम्) "
+       },
+       {
+        "name": "कर्मधारयः",
+        "condition": "पूर्वोत्तरपदाभ्याम् एकमेव द्रव्यमुच्यते। (उदा. नीलघटः - नीलश्चासौ घटश्च) ",
+        "sub_types": [
+         "विशेषणपूर्वपद",
+         "विशेषणोत्तरपद",
+         "विशेषणोभयपद",
+         "उपमानपूर्वपद",
+         "उपमानोत्तरपद",
+         "अवधारणापूर्वपद",
+         "सम्भावनापूर्वपद",
+         "मध्यमपदलोप:",
+         "मयूरव्‍यंसकादि:"
+        ]
+       },
+       {
+        "name": "उपपदसमासः",
+        "condition": "उपपदसञ्ज्ञकं पूर्वपदं निमित्तीकृत्य जायमानः समासः। उत्तरपदं सुबन्तं न भवति। (उदा. कुम्भकारः - कुम्भम् करोति इति) "
+       },
+       {
+        "name": "प्रादिसमासः",
+        "condition": "उपपदसमासे अवान्तरसमासः। प्रादिभिः गतादिषु अर्थेषु सुबन्तानां समासो भवति।"
+       }
+      ]
+     },
+     {
+      "name": "द्वन्द्वः (Dvandva)",
+      "meaning_dominance": "उभयपदार्थप्रधानः (Dominance of Both Word's Meaning)",
+      "example_laukika": "पार्वतीपरमेश्वरौ (पार्वती च परमेश्वरश्च)",
+      "sub_types": [
+       "द्विपदद्वन्द्वः",
+       "बहुपदद्वन्दः"
+      ]
+     },
+     {
+      "name": "बहुव्रीहिः (Bahuvrīhi)",
+      "meaning_dominance": "अन्यपदार्थः (Dominance of a Third Word's Meaning)",
+      "example_laukika": "पीताम्बरः (पीतम् अम्बरं यस्य सः - Vishnu/Krishna)",
+      "sub_types": [
+       "द्विपदबहुलव्रीहिः",
+       "बहुपदबहुव्रीहिः"
+      ]
+     }
+    ]
+   },
+   "classification_by_parts_of_speech": {
+    "title": "पदप्रकारमाश्रित्यापि समासाः षोढा (Classification by Parts of Speech - Six Kinds)",
+    "shloka": "सुपां सुपा तिङा नाम्ना धातुनाऽथ तिङां तिङा । सुबन्तेनेति विज्ञेयः समासः षड्विधो बुधैः ॥",
+    "types": [
+     {
+      "combination": "सुपां सुपा (Subanta with Subanta)",
+      "example": "राजपुरुषः"
+     },
+     {
+      "combination": "सुपां तिङा (Subanta with Tiṅanta)",
+      "example": "पर्य्यभूषयत्"
+     },
+     {
+      "combination": "सुपां नाम्ना (Subanta with Prātipadika)",
+      "example": "कुम्भकारः"
+     },
+     {
+      "combination": "सुपां धातुना (Subanta with Dhātu)",
+      "example": "कटप्रुः"
+     },
+     {
+      "combination": "तिङां तिङा (Tiṅanta with Tiṅanta)",
+      "example": "पिबतखादता"
+     },
+     {
+      "combination": "तिङां सुबन्तेन (Tiṅanta with Subanta)",
+      "example": "जहिस्तम्बः"
+     }
+    ]
+   },
+   "general_note_on_samasa": {
+    "difficulty": "सर्वेषां समस्तपदानां शुद्धं विग्रहकथनं सामान्यानां गगनकुसुमवद्भवति।",
+    "context_is_key": "सर्वदा विग्रहवाक्य चिन्तनात् पूर्वम् अवश्यं सन्दर्भः कः इति, वक्तुः इच्छा कीदृशी इति च ज्ञातव्यम्।",
+    "necessity_of_samartha": "कुत्र समासः भवति कुत्र न भवति इत्यत्र पदानां सामर्थ्यमेव कारणम्। यदि तेषां पदानां विवक्षितस्य अर्थस्य (एकीभूत्वा) बोधनसामर्थ्यम् अस्ति चेदेव समासः कर्तव्यः।"
+   }
+  },
+  "samaasa_examples": [
+   {
+    "samastapadam": "भूतपूर्वः",
+    "laukika_vigraha": "पूर्वं भूतः",
+    "alaukika_vigraha": "पूर्व अम् भूत सु",
+    "samasa_name": "केवलसमा",
+    "source_line": 652
+   },
+   {
+    "samastapadam": "यथेच्छम्",
+    "laukika_vigraha": "इच्छाम् अनतिक्रम्य",
+    "alaukika_vigraha": "इच्छा अम् यथा",
+    "samasa_name": "अव्ययीभावः",
+    "source_line": 653
+   },
+   {
+    "samastapadam": "यथाविधि",
+    "laukika_vigraha": "विधिम् अनतिक्रम्य",
+    "alaukika_vigraha": "विधि अम् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 654
+   },
+   {
+    "samastapadam": "यथाशीघ्र",
+    "laukika_vigraha": "शीघ्रस्य योग्यम्",
+    "alaukika_vigraha": "शीघ्र ङस् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 655
+   },
+   {
+    "samastapadam": "यथासंख्य",
+    "laukika_vigraha": "संख्याम् अमतिक्रम्य",
+    "alaukika_vigraha": "सङ्ख्या अम् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 656
+   },
+   {
+    "samastapadam": "यथासमय",
+    "laukika_vigraha": "समयम् योग्यम्",
+    "alaukika_vigraha": "समय अम् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 657
+   },
+   {
+    "samastapadam": "यथास्थान",
+    "laukika_vigraha": "स्थानस्य योग्यम्",
+    "alaukika_vigraha": "स्थान ङस् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 658
+   },
+   {
+    "samastapadam": "यथाशक्ति",
+    "laukika_vigraha": "शक्तिम् अनतिक्रम्य",
+    "alaukika_vigraha": "शक्ति अम् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 659
+   },
+   {
+    "samastapadam": "यथारुचि",
+    "laukika_vigraha": "रुचिम् अमतिक्रम्य",
+    "alaukika_vigraha": "रुचि अम् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 660
+   },
+   {
+    "samastapadam": "यथासंभव",
+    "laukika_vigraha": "सम्भवम् अमतिक्रम्यय",
+    "alaukika_vigraha": "सम्भव अम् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 661
+   },
+   {
+    "samastapadam": "यथामति",
+    "laukika_vigraha": "मतिम् अमतिक्रम्य",
+    "alaukika_vigraha": "मति अम् यथा",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 662
+   },
+   {
+    "samastapadam": "प्रत्येकम्",
+    "laukika_vigraha": "एकम् एकम्",
+    "alaukika_vigraha": "एक सु प्रति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 663
+   },
+   {
+    "samastapadam": "निश्चेष्टम्",
+    "laukika_vigraha": "चेष्टाना्म अभावः",
+    "alaukika_vigraha": "चेष्टा आम् निस्",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 664
+   },
+   {
+    "samastapadam": "निश्शब्दम्",
+    "laukika_vigraha": "शब्दस्याभावः",
+    "alaukika_vigraha": "शब्द ङस् निस्",
+    "samasa_name": "अव्ययीभावः",
+    "source_line": 665
+   },
+   {
+    "samastapadam": "वागर्थाविव",
+    "laukika_vigraha": "वागर्थौ इव",
+    "alaukika_vigraha": "वागर्थ औ इव",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 666
+   },
+   {
+    "samastapadam": "अनुरूपम्",
+    "laukika_vigraha": "रूपस्य योग्यम्",
+    "alaukika_vigraha": "रूप ङस् अनु",
+    "samasa_name": "अव्ययीभावः",
+    "source_line": 667
+   },
+   {
+    "samastapadam": "अधि हरि",
+    "laukika_vigraha": "हरौ",
+    "alaukika_vigraha": "हरि ङि अधि",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 668
+   },
+   {
+    "samastapadam": "अधिगोपं",
+    "laukika_vigraha": "गोपि",
+    "alaukika_vigraha": "गोप ङि अधि",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 669
+   },
+   {
+    "samastapadam": "उपकृष्णम्",
+    "laukika_vigraha": "कृष्णस्य समीपम्",
+    "alaukika_vigraha": "कृष्ण ङस् उप",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 670
+   },
+   {
+    "samastapadam": "सुमद्रम्",
+    "laukika_vigraha": "मद्राणां समृद्धिः",
+    "alaukika_vigraha": "मद्र आम् सु",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 671
+   },
+   {
+    "samastapadam": "सुधान्यम्",
+    "laukika_vigraha": "धान्यस्य समृद्धिः",
+    "alaukika_vigraha": "धान्य ङस् सुप्",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 672
+   },
+   {
+    "samastapadam": "दुर्यवनम्",
+    "laukika_vigraha": "यवनानांव्यृद्धिः",
+    "alaukika_vigraha": "यवन आम् दुर्",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 673
+   },
+   {
+    "samastapadam": "निर्मक्षिकम",
+    "laukika_vigraha": "मक्षिकाणाम् अभावः",
+    "alaukika_vigraha": "मक्षिक आम् निर्",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 674
+   },
+   {
+    "samastapadam": "निर्जलम्",
+    "laukika_vigraha": "जलस्य अभावः",
+    "alaukika_vigraha": "जल ङस् निर्",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 675
+   },
+   {
+    "samastapadam": "निरङ्कुशम्",
+    "laukika_vigraha": "अङ्कुशस्य अभावः",
+    "alaukika_vigraha": "अङ्कुश अम् निर्",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 676
+   },
+   {
+    "samastapadam": "निर्विघ्नं",
+    "laukika_vigraha": "विघ्नानाम् अभावः",
+    "alaukika_vigraha": "विघ्न आम् निर्",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 677
+   },
+   {
+    "samastapadam": "अतिनिद्रम्",
+    "laukika_vigraha": "निद्रा संप्रति न युज्यते",
+    "alaukika_vigraha": "निद्रा सु अति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 678
+   },
+   {
+    "samastapadam": "अतिहिमम्",
+    "laukika_vigraha": "हिमस्य अत्ययः",
+    "alaukika_vigraha": "हिम ङस् अति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 679
+   },
+   {
+    "samastapadam": "इति हरि",
+    "laukika_vigraha": "हरिशब्दस्य प्रकाशः",
+    "alaukika_vigraha": "हरि ङस् इति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 680
+   },
+   {
+    "samastapadam": "अनुविष्णुः",
+    "laukika_vigraha": "विष्णोः पश्चात्",
+    "alaukika_vigraha": "विष्णु ङसि अनु",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 681
+   },
+   {
+    "samastapadam": "अनुवृष्टिः",
+    "laukika_vigraha": "वृष्टेः पश्चात्",
+    "alaukika_vigraha": "वृष्टि ङसि अनु",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 682
+   },
+   {
+    "samastapadam": "अनुरामम्",
+    "laukika_vigraha": "रामस्य पश्चात्",
+    "alaukika_vigraha": "राम ङसि अनु",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 683
+   },
+   {
+    "samastapadam": "अनुरथम्",
+    "laukika_vigraha": "रथस्य पश्चात्",
+    "alaukika_vigraha": "रथ ङस् अनु",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 684
+   },
+   {
+    "samastapadam": "अनुरुपम्",
+    "laukika_vigraha": "रूपस्य योग्यम्",
+    "alaukika_vigraha": "रूप ङस् अनु",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 685
+   },
+   {
+    "samastapadam": "प्रत्यर्थम्",
+    "laukika_vigraha": "अर्थं अर्थं प्रति",
+    "alaukika_vigraha": "अर्थ अम् प्रति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 686
+   },
+   {
+    "samastapadam": "प्रतिदिनं",
+    "laukika_vigraha": "दिन दिने प्रति",
+    "alaukika_vigraha": "दिन सुप् प्रति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 687
+   },
+   {
+    "samastapadam": "सहरिम्",
+    "laukika_vigraha": "हरेः सादृश्यं",
+    "alaukika_vigraha": "हरि ङसि सह",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 688
+   },
+   {
+    "samastapadam": "अनुज्येष्ठम्",
+    "laukika_vigraha": "ज्येष्ठस्य अनुपूर्व्येण",
+    "alaukika_vigraha": "ज्येष्ठ ङस् अनु",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 689
+   },
+   {
+    "samastapadam": "सचक्रम्",
+    "laukika_vigraha": "चक्रेण युगपत्",
+    "alaukika_vigraha": "चक्र टा सह",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 690
+   },
+   {
+    "samastapadam": "उपशरदम्",
+    "laukika_vigraha": "शरदः समीपम्",
+    "alaukika_vigraha": "शरद् ङस् उप",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 691
+   },
+   {
+    "samastapadam": "उपजरसम्",
+    "laukika_vigraha": "जरायाः समीपम्",
+    "alaukika_vigraha": "जरा ङस् उप",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 692
+   },
+   {
+    "samastapadam": "उपचर्मम्",
+    "laukika_vigraha": "चर्मणः समीपम्",
+    "alaukika_vigraha": "चर्मन् ङस् उप",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 693
+   },
+   {
+    "samastapadam": "उपसमिधम्",
+    "laukika_vigraha": "समिधः समीपे",
+    "alaukika_vigraha": "समिध् ङस् उप",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 694
+   },
+   {
+    "samastapadam": "उपवृक्षम्",
+    "laukika_vigraha": "वृक्षस्य समीपम्",
+    "alaukika_vigraha": "वृक्ष ङस् उप",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 695
+   },
+   {
+    "samastapadam": "उपनीडम्",
+    "laukika_vigraha": "नीडस्य समीपम्",
+    "alaukika_vigraha": "नीड ङस् उप",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 696
+   },
+   {
+    "samastapadam": "अध्यात्मम्",
+    "laukika_vigraha": "आत्मनि",
+    "alaukika_vigraha": "आत्मन् ङि अधि",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 697
+   },
+   {
+    "samastapadam": "आजन्म",
+    "laukika_vigraha": "जन्मनः प्रभृति",
+    "alaukika_vigraha": "जन्मन् ङसि आ",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 698
+   },
+   {
+    "samastapadam": "आमरणम्",
+    "laukika_vigraha": "मरणम् अभव्याप्य",
+    "alaukika_vigraha": "मरण ङसि आ",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 699
+   },
+   {
+    "samastapadam": "आकण्ठम्",
+    "laukika_vigraha": "कण्ठम् अभिव्याप्य",
+    "alaukika_vigraha": "कण्ठ ङसि आ",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 700
+   },
+   {
+    "samastapadam": "प्रतिवर्ष",
+    "laukika_vigraha": "वर्षे वर्षे",
+    "alaukika_vigraha": "वर्ष ङि प्रति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 701
+   },
+   {
+    "samastapadam": "प्रतिक्षण",
+    "laukika_vigraha": "क्षणं क्षणं",
+    "alaukika_vigraha": "क्षण ङि\tप्रिति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 702
+   },
+   {
+    "samastapadam": "प्रत्यक्षम्",
+    "laukika_vigraha": "अक्ष्णः प्रति",
+    "alaukika_vigraha": "अक्षि ङस् प्रति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 703
+   },
+   {
+    "samastapadam": "परोक्ष",
+    "laukika_vigraha": "अक्ष्णः परम्",
+    "alaukika_vigraha": "अक्षि ङस् पर",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 704
+   },
+   {
+    "samastapadam": "समक्ष",
+    "laukika_vigraha": "अक्ष्णः समम्",
+    "alaukika_vigraha": "अक्षि ङस् सम",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 705
+   },
+   {
+    "samastapadam": "प्रत्येकम्",
+    "laukika_vigraha": "एकस्मिन् एकस्मिन्",
+    "alaukika_vigraha": "एक ङि प्रति",
+    "samasa_name": "अव्ययीभवः",
+    "source_line": 706
+   },
+   {
+    "samastapadam": "कृष्णाश्रितः",
+    "laukika_vigraha": "कृष्णम् आश्रितः",
+    "alaukika_vigraha": "कृष्ण अम् आश्रित सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 707
+   },
+   {
+    "samastapadam": "पद्माश्रितः",
+    "laukika_vigraha": "पद्मम् आश्रितः",
+    "alaukika_vigraha": "पद्म अम् आश्रित सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 708
+   },
+   {
+    "samastapadam": "अन्नबुभुक्षुः",
+    "laukika_vigraha": "अन्नं बुभुक्षुः",
+    "alaukika_vigraha": "अन्न अम् बुभुक्षु सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 709
+   },
+   {
+    "samastapadam": "दुखातीतः",
+    "laukika_vigraha": "दुखम् अतीतः",
+    "alaukika_vigraha": "दुःख अम् आगत सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 710
+   },
+   {
+    "samastapadam": "मुहूर्तसुखम्",
+    "laukika_vigraha": "मुहूर्तं सुखम्",
+    "alaukika_vigraha": "मुहूर्त अम् सुख सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 711
+   },
+   {
+    "samastapadam": "शरणागतः",
+    "laukika_vigraha": "शरणम् आगतः",
+    "alaukika_vigraha": "शरण अम् आगत सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 712
+   },
+   {
+    "samastapadam": "प्रलयगतः",
+    "laukika_vigraha": "प्रलयं गतः",
+    "alaukika_vigraha": "प्रलय अम् गत सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 713
+   },
+   {
+    "samastapadam": "नरकपतितः",
+    "laukika_vigraha": "नरकं पतितः",
+    "alaukika_vigraha": "नरक अम् पतित सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 714
+   },
+   {
+    "samastapadam": "अग्निपतितः",
+    "laukika_vigraha": "अग्निं पतितः",
+    "alaukika_vigraha": "अग्नि अम् पतित सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 715
+   },
+   {
+    "samastapadam": "मेघात्यस्तः",
+    "laukika_vigraha": "मेघम् अत्यस्तः",
+    "alaukika_vigraha": "मेघ अम् अत्यस्त सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 716
+   },
+   {
+    "samastapadam": "जीवनप्राप्त",
+    "laukika_vigraha": "जीवनं प्राप्तः",
+    "alaukika_vigraha": "जीवन अम् प्राप्त सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 717
+   },
+   {
+    "samastapadam": "कष्टापन्नः",
+    "laukika_vigraha": "कष्टम् आपन्नः",
+    "alaukika_vigraha": "कष्ट अम् आपन्न सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 718
+   },
+   {
+    "samastapadam": "गजारूढः",
+    "laukika_vigraha": "गजम् आरूढ़:",
+    "alaukika_vigraha": "गज अम् आरूढ सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 719
+   },
+   {
+    "samastapadam": "मरणासन्नः",
+    "laukika_vigraha": "मरणम् आसन्न",
+    "alaukika_vigraha": "मरणम् आसन्न सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 720
+   },
+   {
+    "samastapadam": "परलोकगतः",
+    "laukika_vigraha": "परलोकं गतः",
+    "alaukika_vigraha": "परलोक अम् गत सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 721
+   },
+   {
+    "samastapadam": "स्वर्गप्राप्तः",
+    "laukika_vigraha": "स्वर्गं प्राप्तः",
+    "alaukika_vigraha": "स्वर्ग अम् प्राप्त सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 722
+   },
+   {
+    "samastapadam": "गृहागतः",
+    "laukika_vigraha": "गृहम् आगतः",
+    "alaukika_vigraha": "गृह अम् आगत सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 723
+   },
+   {
+    "samastapadam": "देशगतः",
+    "laukika_vigraha": "देशं गतः",
+    "alaukika_vigraha": "देश अम् गत सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 724
+   },
+   {
+    "samastapadam": "आशातीतः",
+    "laukika_vigraha": "आशाम् अतीतः",
+    "alaukika_vigraha": "आशा अम् अतीत सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 725
+   },
+   {
+    "samastapadam": "स्वयङ्कृतम्",
+    "laukika_vigraha": "स्वयं कृतम्",
+    "alaukika_vigraha": "स्वयम् सु कृत सु",
+    "samasa_name": "द्वितीयातत्पुरुषः",
+    "source_line": 726
+   },
+   {
+    "samastapadam": "धनहीनः",
+    "laukika_vigraha": "धनेन हीनः",
+    "alaukika_vigraha": "धन टा हीन सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 727
+   },
+   {
+    "samastapadam": "हरित्रातः",
+    "laukika_vigraha": "हरिणा त्रातः",
+    "alaukika_vigraha": "हरि टा त्रात सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 728
+   },
+   {
+    "samastapadam": "गुरुसदृशः",
+    "laukika_vigraha": "गुरुणा सदृशः",
+    "alaukika_vigraha": "गुरु टा सदृश सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 729
+   },
+   {
+    "samastapadam": "बाणहतः",
+    "laukika_vigraha": "बाणेन हतः",
+    "alaukika_vigraha": "बाणों टा हत सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 730
+   },
+   {
+    "samastapadam": "बुद्धिरहितः",
+    "laukika_vigraha": "बुद्ध्या रहितः",
+    "alaukika_vigraha": "बुद्धि टा रहित सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 731
+   },
+   {
+    "samastapadam": "आचारकुशलः",
+    "laukika_vigraha": "आचारेण कुशलः",
+    "alaukika_vigraha": "आचार टा कुशल सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 732
+   },
+   {
+    "samastapadam": "विद्यारहितः",
+    "laukika_vigraha": "विद्यया रहितः",
+    "alaukika_vigraha": "विद्या टा रहित सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 733
+   },
+   {
+    "samastapadam": "मदरहितः",
+    "laukika_vigraha": "मदेन रहितः",
+    "alaukika_vigraha": "मद टा रहित सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 734
+   },
+   {
+    "samastapadam": "अग्निदग्धः",
+    "laukika_vigraha": "अग्निना दग्धः",
+    "alaukika_vigraha": "अग्नि टा दग्ध सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 735
+   },
+   {
+    "samastapadam": "हस्तलिखित:",
+    "laukika_vigraha": "हस्तेन लिखितः",
+    "alaukika_vigraha": "हस्त टा लिखित सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 736
+   },
+   {
+    "samastapadam": "रेखांकितः",
+    "laukika_vigraha": "रेखया अंकितः",
+    "alaukika_vigraha": "रेखा टा अंकित सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 737
+   },
+   {
+    "samastapadam": "भयाकुलः",
+    "laukika_vigraha": "भयेन् आकुलः",
+    "alaukika_vigraha": "भय टा आकुल सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 738
+   },
+   {
+    "samastapadam": "कष्टसाध्यम्",
+    "laukika_vigraha": "कष्टेन साध्यम्",
+    "alaukika_vigraha": "कष्ट टा साध्य सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 739
+   },
+   {
+    "samastapadam": "काकपेया",
+    "laukika_vigraha": "काकेन पेया",
+    "alaukika_vigraha": "काक टा पेय सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 740
+   },
+   {
+    "samastapadam": "वातच्छेद्यम्",
+    "laukika_vigraha": "वातेन छेद्यम्",
+    "alaukika_vigraha": "वात टा छेद्य सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 741
+   },
+   {
+    "samastapadam": "मासपूर्वः",
+    "laukika_vigraha": "मासेन पूर्वः",
+    "alaukika_vigraha": "मास टा पूर्व सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 742
+   },
+   {
+    "samastapadam": "मातृसदृशः",
+    "laukika_vigraha": "मात्रा सदृशः",
+    "alaukika_vigraha": "मातृ टा समान सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 743
+   },
+   {
+    "samastapadam": "पितृसदृशः",
+    "laukika_vigraha": "पित्रा सदृशः",
+    "alaukika_vigraha": "पितृ टा समान सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 744
+   },
+   {
+    "samastapadam": "माषोनम्",
+    "laukika_vigraha": "माषेन ऊनम्",
+    "alaukika_vigraha": "माष टा ऊन सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 745
+   },
+   {
+    "samastapadam": "वाक्कलहः",
+    "laukika_vigraha": "वाचा कलहः",
+    "alaukika_vigraha": "वाच् टा कलह सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 746
+   },
+   {
+    "samastapadam": "वाग्युद्धम्",
+    "laukika_vigraha": "वाचा युद्धम्",
+    "alaukika_vigraha": "वाच् टा युद्ध सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 747
+   },
+   {
+    "samastapadam": "आचारनिपुणः",
+    "laukika_vigraha": "आचारेण निपुणः",
+    "alaukika_vigraha": "आचार टा निपुण सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 748
+   },
+   {
+    "samastapadam": "गुडमिश्रम्",
+    "laukika_vigraha": "गुडेन मिश्रम्",
+    "alaukika_vigraha": "गुड टा मिश्रित सि",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 749
+   },
+   {
+    "samastapadam": "घर्षणश्लक्ष्णम्",
+    "laukika_vigraha": "घर्षणेन श्लक्ष्णम्",
+    "alaukika_vigraha": "घर्षण टा श्लक्ष्ण सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 750
+   },
+   {
+    "samastapadam": "कुट्टनश्लक्ष्णम्",
+    "laukika_vigraha": "कुट्टनेन श्लक्ष्णम्",
+    "alaukika_vigraha": "कुट्टन टा श्लक्ष्ण सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 751
+   },
+   {
+    "samastapadam": "नखभन्नः",
+    "laukika_vigraha": "नखैः भिन्नः",
+    "alaukika_vigraha": "नख टा भिन्न सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 752
+   },
+   {
+    "samastapadam": "नखनिर्भिन्ननः",
+    "laukika_vigraha": "नखैः निर्भिन्नः",
+    "alaukika_vigraha": "नख टा निर्भिन्न सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 753
+   },
+   {
+    "samastapadam": "दध्योदनः",
+    "laukika_vigraha": "दध्ना उपसिक्तः ओदनः",
+    "alaukika_vigraha": "दधि टा ओदन सु",
+    "samasa_name": "तृतीयातत्पुरुषः",
+    "source_line": 754
+   },
+   {
+    "samastapadam": "यूपदारु",
+    "laukika_vigraha": "यूपाय दारु",
+    "alaukika_vigraha": "यूप ङे दारु सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 755
+   },
+   {
+    "samastapadam": "भूतबलिः",
+    "laukika_vigraha": "भूतेभ्यः बलिः",
+    "alaukika_vigraha": "भूत भ्यस् बलि सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 756
+   },
+   {
+    "samastapadam": "गोहितम्",
+    "laukika_vigraha": "गोभ्यः हितम्",
+    "alaukika_vigraha": "गो भ्यस् हित सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 757
+   },
+   {
+    "samastapadam": "गोसुखम्",
+    "laukika_vigraha": "गोभ्यः सुखम्",
+    "alaukika_vigraha": "गोभ्यः सुख सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 758
+   },
+   {
+    "samastapadam": "धनकामना",
+    "laukika_vigraha": "धनाय कामना",
+    "alaukika_vigraha": "धन ङे कामना सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 759
+   },
+   {
+    "samastapadam": "सुखार्थः",
+    "laukika_vigraha": "सुखाय अयम्",
+    "alaukika_vigraha": "सुख ङे अर्थ सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 760
+   },
+   {
+    "samastapadam": "गुरुदक्षिणा",
+    "laukika_vigraha": "गुरुवे दक्षिणा",
+    "alaukika_vigraha": "गुर ङे दक्षिणा सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 761
+   },
+   {
+    "samastapadam": "द्विजार्थः",
+    "laukika_vigraha": "द्विजाय अयम्",
+    "alaukika_vigraha": "द्विज ङे अर्थ सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 762
+   },
+   {
+    "samastapadam": "देशार्पणम्",
+    "laukika_vigraha": "देशाय अर्पणम्",
+    "alaukika_vigraha": "देश ङे अर्पण सु",
+    "samasa_name": "चतुर्थीतत्पुरुषः",
+    "source_line": 763
+   },
+   {
+    "samastapadam": "चौरभयम्",
+    "laukika_vigraha": "चौरात् भयम्",
+    "alaukika_vigraha": "चोर ङसि भय सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 764
+   },
+   {
+    "samastapadam": "चोरभीः",
+    "laukika_vigraha": "चोरात् भीः",
+    "alaukika_vigraha": "चोर ङसि भी सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 765
+   },
+   {
+    "samastapadam": "चोरभीतिः",
+    "laukika_vigraha": "चोरात् भीतिः",
+    "alaukika_vigraha": "चोर ङसि भीति सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 766
+   },
+   {
+    "samastapadam": "सिंहभयम्",
+    "laukika_vigraha": "सिंहाद् भयम्",
+    "alaukika_vigraha": "सिंह ङसि भय सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 767
+   },
+   {
+    "samastapadam": "दूरातागतः",
+    "laukika_vigraha": "दूराद् आगतः",
+    "alaukika_vigraha": "दूर ङसि आगत सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 768
+   },
+   {
+    "samastapadam": "अश्वपतितः",
+    "laukika_vigraha": "अश्वात् पतितः",
+    "alaukika_vigraha": "अश्व ङसि पतित सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 769
+   },
+   {
+    "samastapadam": "रोग्मुक्तः",
+    "laukika_vigraha": "रोगात् मुक्तः",
+    "alaukika_vigraha": "रोग ङसि मुक्त सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 770
+   },
+   {
+    "samastapadam": "बन्धान्मुक्तः",
+    "laukika_vigraha": "बन्धनात् मुक्तः",
+    "alaukika_vigraha": "बन्धन ङसि मुक्त सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 771
+   },
+   {
+    "samastapadam": "गुरुपठितम्",
+    "laukika_vigraha": "गुरोः पठितम्",
+    "alaukika_vigraha": "गुरु ङसि पठित सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 772
+   },
+   {
+    "samastapadam": "जन्मान्धः",
+    "laukika_vigraha": "जन्मनः अन्धः",
+    "alaukika_vigraha": "जन्म ङसि अन्ध सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 773
+   },
+   {
+    "samastapadam": "पदच्युत",
+    "laukika_vigraha": "पदात् च्युतः",
+    "alaukika_vigraha": "पद ङसि च्युत सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 774
+   },
+   {
+    "samastapadam": "ऋणमुक्त",
+    "laukika_vigraha": "ऋणात् मुक्तः",
+    "alaukika_vigraha": "ऋण ङसि मुक्त सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 775
+   },
+   {
+    "samastapadam": "धर्मभ्रष्ट",
+    "laukika_vigraha": "धर्मात् भ्रष्टः",
+    "alaukika_vigraha": "धर्म ङसि मुक्त सु",
+    "samasa_name": "पञ्चमीविभक्तिः",
+    "source_line": 776
+   },
+   {
+    "samastapadam": "सुरेशः",
+    "laukika_vigraha": "सुराणाम् ईशः",
+    "alaukika_vigraha": "सुर आम् ईश सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 777
+   },
+   {
+    "samastapadam": "ईश्वरभक्तः",
+    "laukika_vigraha": "ईश्वरस्य भक्तः",
+    "alaukika_vigraha": "ईश्वर ङस् भक्त सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 778
+   },
+   {
+    "samastapadam": "नरपतिः",
+    "laukika_vigraha": "नाराणां पतिः",
+    "alaukika_vigraha": "नर आम् पति सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 779
+   },
+   {
+    "samastapadam": "देवपतिः",
+    "laukika_vigraha": "देवानां पतिः",
+    "alaukika_vigraha": "देव आम् पति सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 780
+   },
+   {
+    "samastapadam": "राजपुरुषः",
+    "laukika_vigraha": "राज्ञः पुरुषः",
+    "alaukika_vigraha": "राजन् ङस् पुरुष सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 781
+   },
+   {
+    "samastapadam": "वृक्षछाया",
+    "laukika_vigraha": "वृक्षस्य छाया",
+    "alaukika_vigraha": "वृक्ष आम् छाया सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 782
+   },
+   {
+    "samastapadam": "भवदाज्ञा",
+    "laukika_vigraha": "भवतः आज्ञा",
+    "alaukika_vigraha": "भवत् ङस् आज्ञा सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 783
+   },
+   {
+    "samastapadam": "राजदण्डः",
+    "laukika_vigraha": "राज्ञः दण्डः",
+    "alaukika_vigraha": "राजन् ङस् दण्ड सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 784
+   },
+   {
+    "samastapadam": "विश्वामित्रः",
+    "laukika_vigraha": "विश्वस्य मित्रः",
+    "alaukika_vigraha": "विश्व ङस् मित्र सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 785
+   },
+   {
+    "samastapadam": "धर्मदण्डः",
+    "laukika_vigraha": "धर्मस्य दण्डः",
+    "alaukika_vigraha": "धर्म ङस् दण्ड सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 786
+   },
+   {
+    "samastapadam": "सुवर्णमुद्रा",
+    "laukika_vigraha": "सुवर्णस्य मुद्रा",
+    "alaukika_vigraha": "स्वर्ण ङस् मुद्रा सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 787
+   },
+   {
+    "samastapadam": "गृहस्वामी",
+    "laukika_vigraha": "गृहस्य स्वामी",
+    "alaukika_vigraha": "गृह ङस् स्वामिन् सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 788
+   },
+   {
+    "samastapadam": "रामकथा",
+    "laukika_vigraha": "रामस्य कथा",
+    "alaukika_vigraha": "राम ङस् कथा सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 789
+   },
+   {
+    "samastapadam": "गङ्गाजलम्",
+    "laukika_vigraha": "गङ्गायाः जलम",
+    "alaukika_vigraha": "गंगा ङस् जल सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 790
+   },
+   {
+    "samastapadam": "तत्वार्थनिर्णयः",
+    "laukika_vigraha": "तत्वार्थस्य निर्णयः",
+    "alaukika_vigraha": "तत्वार्थ ङस् निर्णय सु",
+    "samasa_name": "षष्ठीविभक्तिः",
+    "source_line": 791
+   },
+   {
+    "samastapadam": "फलोदयः",
+    "laukika_vigraha": "फलानाम् उदयः",
+    "alaukika_vigraha": "फल आम् उदय सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 792
+   },
+   {
+    "samastapadam": "गङ्गौघः",
+    "laukika_vigraha": "गङ्गायाः ओघः",
+    "alaukika_vigraha": "गङ्गा ङस् ओघ सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 793
+   },
+   {
+    "samastapadam": "दध्यृणम्",
+    "laukika_vigraha": "दध्नः ऋणम्",
+    "alaukika_vigraha": "दधि ङस् ऋण सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 794
+   },
+   {
+    "samastapadam": "वध्वागमः",
+    "laukika_vigraha": "वध्वाः आगमः",
+    "alaukika_vigraha": "वधू ङस् आगम सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 795
+   },
+   {
+    "samastapadam": "गुर्वादेशः",
+    "laukika_vigraha": "गुरूणाम् आदेशः",
+    "alaukika_vigraha": "गुरु आम् आदेश सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 796
+   },
+   {
+    "samastapadam": "वागीशः",
+    "laukika_vigraha": "वाचाम् ईशः",
+    "alaukika_vigraha": "वाच् आम् ईश सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 797
+   },
+   {
+    "samastapadam": "गणेशः",
+    "laukika_vigraha": "गणानाम् ईशः",
+    "alaukika_vigraha": "गण आम् ईश सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 798
+   },
+   {
+    "samastapadam": "राजेशः",
+    "laukika_vigraha": "राज्ञाम् ईशः",
+    "alaukika_vigraha": "राजन् आम् ईश सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 799
+   },
+   {
+    "samastapadam": "मनश्शान्तिः",
+    "laukika_vigraha": "मनसः शान्तिः",
+    "alaukika_vigraha": "मनस् ङस् शान्ति सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 800
+   },
+   {
+    "samastapadam": "विद्यालयः",
+    "laukika_vigraha": "विद्याया आलयः",
+    "alaukika_vigraha": "विद्या ङस् आलय सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 801
+   },
+   {
+    "samastapadam": "सीतानुज्ञा",
+    "laukika_vigraha": "सीतायाः अनुज्ञा",
+    "alaukika_vigraha": "सीता ङस् अनुज्ञा सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 802
+   },
+   {
+    "samastapadam": "रामाज्ञा",
+    "laukika_vigraha": "रामस्य आज्ञा",
+    "alaukika_vigraha": "राम ङस् आज्ञ सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 803
+   },
+   {
+    "samastapadam": "मातॄणाम्",
+    "laukika_vigraha": "मातुः ऋणम्",
+    "alaukika_vigraha": "मातृ ङस् ऋण सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 804
+   },
+   {
+    "samastapadam": "क्षतीशः",
+    "laukika_vigraha": "क्षितेः ईशः",
+    "alaukika_vigraha": "क्षिति ङस् ईश सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 805
+   },
+   {
+    "samastapadam": "नद्युदकम्",
+    "laukika_vigraha": "नद्याः उदकम्",
+    "alaukika_vigraha": "नदी ङस् उदक सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 806
+   },
+   {
+    "samastapadam": "हरीशः",
+    "laukika_vigraha": "हरीणाम् ईशः",
+    "alaukika_vigraha": "हरि आम् ईश सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 807
+   },
+   {
+    "samastapadam": "ऋणार्णम्",
+    "laukika_vigraha": "ऋणस्य अपनयनार्थम् ऋणम्",
+    "alaukika_vigraha": "ऋण सु ऋण सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 808
+   },
+   {
+    "samastapadam": "धनुष्टंकारः",
+    "laukika_vigraha": "धनुषः टङ्कारः",
+    "alaukika_vigraha": "धनुस् ङस् टङ्कार सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 810
+   },
+   {
+    "samastapadam": "मड्डमरुः",
+    "laukika_vigraha": "मम डमरुः",
+    "alaukika_vigraha": "अस्मद् ङस् डमरु सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 811
+   },
+   {
+    "samastapadam": "स्त्र्युत्सवः",
+    "laukika_vigraha": "स्त्रीणाम् उत्सवः",
+    "alaukika_vigraha": "स्त्री आम् उत्सव सु",
+    "samasa_name": "षष्ठीतत्पुरुषः",
+    "source_line": 812
+   },
+   {
+    "samastapadam": "गजेन्द्रः",
+    "laukika_vigraha": "गजेषु इन्द्रः",
+    "alaukika_vigraha": "गज सुप् इन्द्र सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 813
+   },
+   {
+    "samastapadam": "शरच्चन्द्रः",
+    "laukika_vigraha": "शरदि चन्द्रः",
+    "alaukika_vigraha": "शरद् ङि चन्द्र सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 814
+   },
+   {
+    "samastapadam": "अक्षशौण्डः",
+    "laukika_vigraha": "अक्षेषु शौण्डः",
+    "alaukika_vigraha": "अक्ष सुप् शौण्ड सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 815
+   },
+   {
+    "samastapadam": "ब्रह्मैक्यम्",
+    "laukika_vigraha": "ब्रह्मणि ऐक्यम्",
+    "alaukika_vigraha": "ब्रह्मन् ङि एक्य सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 816
+   },
+   {
+    "samastapadam": "लिङ्गैक्यम्",
+    "laukika_vigraha": "लिङ्गे ऐक्यम्",
+    "alaukika_vigraha": "लिङ्ग ङि ऐक्य सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 817
+   },
+   {
+    "samastapadam": "शिवैक्यम्",
+    "laukika_vigraha": "शिवे ऐक्यम्",
+    "alaukika_vigraha": "शिव ङि ऐक्य सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 818
+   },
+   {
+    "samastapadam": "तत्रभुक्तम्",
+    "laukika_vigraha": "तत्र भुक्तम्",
+    "alaukika_vigraha": "तत्र सु भुक्त सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 819
+   },
+   {
+    "samastapadam": "नरोत्तमः",
+    "laukika_vigraha": "नरेषु उत्तमः",
+    "alaukika_vigraha": "नर ङि उत्तम सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 820
+   },
+   {
+    "samastapadam": "रण कुशलः",
+    "laukika_vigraha": "रणे कुशलः",
+    "alaukika_vigraha": "रण ङि कुशल सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 821
+   },
+   {
+    "samastapadam": "पितृस्नेहः",
+    "laukika_vigraha": "पितरि स्नेहः",
+    "alaukika_vigraha": "पितृ ङि स्नेह सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 822
+   },
+   {
+    "samastapadam": "क्षेत्रोत्पन्नः",
+    "laukika_vigraha": "क्षेत्रे उत्त्पन्नः",
+    "alaukika_vigraha": "क्षेत्र ङि उत्पन्न सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 823
+   },
+   {
+    "samastapadam": "प्रेमधूर्तः",
+    "laukika_vigraha": "प्रेम्णि धूर्तः",
+    "alaukika_vigraha": "प्रेम ङि धूर्त सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 824
+   },
+   {
+    "samastapadam": "सभापण्डितः",
+    "laukika_vigraha": "सभायां पण्डितः",
+    "alaukika_vigraha": "सभा ङि पण्डित सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 825
+   },
+   {
+    "samastapadam": "युद्धवीरः",
+    "laukika_vigraha": "युद्धे वीरः",
+    "alaukika_vigraha": "युद्ध ङि वीर सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 826
+   },
+   {
+    "samastapadam": "पुरुषोत्तमः",
+    "laukika_vigraha": "पुरुशेषु उत्तमः",
+    "alaukika_vigraha": "पुरुष सुप् उत्तम सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 827
+   },
+   {
+    "samastapadam": "स्नेहमग्नः",
+    "laukika_vigraha": "स्नेहे मग्नः",
+    "alaukika_vigraha": "स्नेह ङि मग्न सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 828
+   },
+   {
+    "samastapadam": "कार्यकुशलः",
+    "laukika_vigraha": "कार्ये कुशलः",
+    "alaukika_vigraha": "कार्य ङि कुशल सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 829
+   },
+   {
+    "samastapadam": "जलमग्नः",
+    "laukika_vigraha": "जले मग्नः",
+    "alaukika_vigraha": "जल ङि मग्न सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 830
+   },
+   {
+    "samastapadam": "शस्त्रदक्षः",
+    "laukika_vigraha": "शस्त्रेषु दक्षः",
+    "alaukika_vigraha": "शास्त्र सुप् दक्ष सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 831
+   },
+   {
+    "samastapadam": "नीतिनिपुण",
+    "laukika_vigraha": "नीतौ निपुणः",
+    "alaukika_vigraha": "नीति ङि निपुण सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 832
+   },
+   {
+    "samastapadam": "वाक्पटुः",
+    "laukika_vigraha": "वाचि पटुः",
+    "alaukika_vigraha": "वाच् ङि पटु सु",
+    "samasa_name": "सप्तमीतत्पुरुषः",
+    "source_line": 833
+   },
+   {
+    "samastapadam": "अगजः",
+    "laukika_vigraha": "न गजः",
+    "alaukika_vigraha": "न सु गज सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 834
+   },
+   {
+    "samastapadam": "अनुक्तः",
+    "laukika_vigraha": "न उक्तः",
+    "alaukika_vigraha": "न सु उक्त सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 835
+   },
+   {
+    "samastapadam": "अक्षत्रम्",
+    "laukika_vigraha": "न क्षत्रम्",
+    "alaukika_vigraha": "न सु क्षत्र सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 836
+   },
+   {
+    "samastapadam": "अन्यायः",
+    "laukika_vigraha": "न न्यायः",
+    "alaukika_vigraha": "न सु न्याय सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 837
+   },
+   {
+    "samastapadam": "अयोग्यः",
+    "laukika_vigraha": "न योग्यः",
+    "alaukika_vigraha": "न सु योग्य सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 838
+   },
+   {
+    "samastapadam": "अयथाकालम्",
+    "laukika_vigraha": "न यथाकालम्",
+    "alaukika_vigraha": "न सु अयथाकाल सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 839
+   },
+   {
+    "samastapadam": "असत्यम्",
+    "laukika_vigraha": "न सत्यम्",
+    "alaukika_vigraha": "न सु सत्य सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 840
+   },
+   {
+    "samastapadam": "अनश्वरः",
+    "laukika_vigraha": "न नश्वरः",
+    "alaukika_vigraha": "न सु नश्वर सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 841
+   },
+   {
+    "samastapadam": "अधर्मः",
+    "laukika_vigraha": "न धर्मः",
+    "alaukika_vigraha": "न सु धर्म सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 842
+   },
+   {
+    "samastapadam": "अचरः",
+    "laukika_vigraha": "न चरः",
+    "alaukika_vigraha": "न सु चर सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 843
+   },
+   {
+    "samastapadam": "अनागतः",
+    "laukika_vigraha": "न आगतः",
+    "alaukika_vigraha": "न सु आगत सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 844
+   },
+   {
+    "samastapadam": "अनासक्तता",
+    "laukika_vigraha": "न आसक्तता",
+    "alaukika_vigraha": "न सु\tआसक्तता सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 845
+   },
+   {
+    "samastapadam": "अपूज्यः",
+    "laukika_vigraha": "न पूज्यः",
+    "alaukika_vigraha": "न सु पूज्य सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 846
+   },
+   {
+    "samastapadam": "अनब्जम्",
+    "laukika_vigraha": "न अब्जम्",
+    "alaukika_vigraha": "न सु अब्ज सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 847
+   },
+   {
+    "samastapadam": "अनर्थः",
+    "laukika_vigraha": "न अर्थः",
+    "alaukika_vigraha": "न सु अर्थ सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 848
+   },
+   {
+    "samastapadam": "अनन्तः",
+    "laukika_vigraha": "न अन्तः",
+    "alaukika_vigraha": "न सु अन्त सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 849
+   },
+   {
+    "samastapadam": "अनादि",
+    "laukika_vigraha": "न आदि",
+    "alaukika_vigraha": "न सु आदि सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 850
+   },
+   {
+    "samastapadam": "अचेतनः",
+    "laukika_vigraha": "न चेतनः",
+    "alaukika_vigraha": "न सु चेतन सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 851
+   },
+   {
+    "samastapadam": "अनुत्साहः",
+    "laukika_vigraha": "न उत्साहः",
+    "alaukika_vigraha": "न सु उत्साह सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 852
+   },
+   {
+    "samastapadam": "अनास्था",
+    "laukika_vigraha": "न आस्था",
+    "alaukika_vigraha": "न सु आस्था सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 853
+   },
+   {
+    "samastapadam": "अनिच्छा",
+    "laukika_vigraha": "न इच्छा",
+    "alaukika_vigraha": "न सु इच्छा सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 854
+   },
+   {
+    "samastapadam": "अनेकः",
+    "laukika_vigraha": "न एकः",
+    "alaukika_vigraha": "न सु एक सु",
+    "samasa_name": "नञ्-तत्पुरुषः",
+    "source_line": 855
+   },
+   {
+    "samastapadam": "सुन्दरबालकः",
+    "laukika_vigraha": "सुन्दरः चासौ बालकः",
+    "alaukika_vigraha": "सुन्दर सु बालक सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 856
+   },
+   {
+    "samastapadam": "मधुरफल",
+    "laukika_vigraha": "मधुरं च तत् फलम्",
+    "alaukika_vigraha": "मधुर सु फल सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 857
+   },
+   {
+    "samastapadam": "श्रेष्ठपुरुषः",
+    "laukika_vigraha": "श्रेष्ठाः च ते पुरुषाः",
+    "alaukika_vigraha": "श्रेष्ठ जस् पुरुष जस्",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 858
+   },
+   {
+    "samastapadam": "कृष्णसर्प:",
+    "laukika_vigraha": "कृष्णः चासौ सर्पः",
+    "alaukika_vigraha": "कृष्ण सु सर्प सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 859
+   },
+   {
+    "samastapadam": "नीलोत्पलं",
+    "laukika_vigraha": "नीलं च तद् उत्पलं च",
+    "alaukika_vigraha": "नील सु उत्पल सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 860
+   },
+   {
+    "samastapadam": "रक्तकमलम्",
+    "laukika_vigraha": "रक्तं च तत् कमलं च",
+    "alaukika_vigraha": "रक्त सु कमल सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 861
+   },
+   {
+    "samastapadam": "सर्वरात्रः",
+    "laukika_vigraha": "सर्वा च असौ रात्रि",
+    "alaukika_vigraha": "सर्वा सु रात्रि सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 862
+   },
+   {
+    "samastapadam": "कुग्रामः",
+    "laukika_vigraha": "कुत्सितः ग्रामः",
+    "alaukika_vigraha": "कु सु ग्राम सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 863
+   },
+   {
+    "samastapadam": "कुपुरुषः",
+    "laukika_vigraha": "कुत्सितः पुरुषः",
+    "alaukika_vigraha": "कु सु पुरुष सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 864
+   },
+   {
+    "samastapadam": "किम्पुरुषः",
+    "laukika_vigraha": "कुत्सितः पुरुषः",
+    "alaukika_vigraha": "किम् सु पुरुष सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 865
+   },
+   {
+    "samastapadam": "किंसखा",
+    "laukika_vigraha": "कुत्सितः सखा",
+    "alaukika_vigraha": "किम् सु सखि सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 866
+   },
+   {
+    "samastapadam": "कदन्नम्",
+    "laukika_vigraha": "कुत्सितं च तदन्नं च",
+    "alaukika_vigraha": "कु अन्न सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 867
+   },
+   {
+    "samastapadam": "महादेवः",
+    "laukika_vigraha": "महान् चासौ देवः च",
+    "alaukika_vigraha": "महत् सु देव सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 868
+   },
+   {
+    "samastapadam": "पवित्रमनः",
+    "laukika_vigraha": "पवित्रं च तत् मनः च",
+    "alaukika_vigraha": "पवित्र सु मनस् सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 869
+   },
+   {
+    "samastapadam": "विस्तृतनाटिका",
+    "laukika_vigraha": "विस्तृता सा नाटिका च",
+    "alaukika_vigraha": "विस्तृता सु नाटिका सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 870
+   },
+   {
+    "samastapadam": "विकसितपुष्पाणि",
+    "laukika_vigraha": "विकसितानि तानि पुष्पाणि",
+    "alaukika_vigraha": "विकिसित जस् पुष्प जस्",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 871
+   },
+   {
+    "samastapadam": "पुष्पितवृक्षः",
+    "laukika_vigraha": "पुष्पितश्चासौ वृक्षः च",
+    "alaukika_vigraha": "पुष्पित सु वृक्ष सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 872
+   },
+   {
+    "samastapadam": "श्रान्तपथिकः",
+    "laukika_vigraha": "श्रान्तश्चासौ पथिकः च",
+    "alaukika_vigraha": "श्रान्त सु पथिक सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 873
+   },
+   {
+    "samastapadam": "महानात्मा",
+    "laukika_vigraha": "महांश्चासौ आत्मा च",
+    "alaukika_vigraha": "महान् सु आत्मा सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 874
+   },
+   {
+    "samastapadam": "स्वच्छजलम्",
+    "laukika_vigraha": "स्वच्छं च तज्जलं च",
+    "alaukika_vigraha": "स्वच्छ जल सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 875
+   },
+   {
+    "samastapadam": "शीतलसलिलम्",
+    "laukika_vigraha": "शीतलम् सलिलं च",
+    "alaukika_vigraha": "शीतल सलिल सु",
+    "samasa_name": "कर्मधारयः",
+    "source_line": 876
+   },
+   {
+    "samastapadam": "सप्तर्षयः",
+    "laukika_vigraha": "सप्त च ते ऋषयश्च",
+    "alaukika_vigraha": "सप्त जस् ऋषि जस्",
+    "samasa_name": "द्विगुसमा",
+    "source_line": 877
+   },
+   {
+    "samastapadam": "त्रिलोकी",
+    "laukika_vigraha": "त्रयाणां लोकानां समाहारः",
+    "alaukika_vigraha": "त्रि आम् लोक आम्",
+    "samasa_name": "समाहारद्विगुसमा",
+    "source_line": 878
+   },
+   {
+    "samastapadam": "कुम्भकारः",
+    "laukika_vigraha": "कुम्भं करोति इति",
+    "alaukika_vigraha": "कुम्भ ङस् कार",
+    "samasa_name": "उपपदसमा",
+    "source_line": 880
+   },
+   {
+    "samastapadam": "मालाकारः",
+    "laukika_vigraha": "मालां करोति इति",
+    "alaukika_vigraha": "माला ङस् कार",
+    "samasa_name": "उपपदसमा",
+    "source_line": 881
+   },
+   {
+    "samastapadam": "स्वर्णकारः",
+    "laukika_vigraha": "स्वर्णं करोति इति",
+    "alaukika_vigraha": "स्वर्ण ङस् कार",
+    "samasa_name": "उपपदसमा",
+    "source_line": 882
+   },
+   {
+    "samastapadam": "चित्रकारः",
+    "laukika_vigraha": "चित्रम् करोति इति",
+    "alaukika_vigraha": "चित्र ङस् कार",
+    "samasa_name": "उपपदसमा",
+    "source_line": 883
+   },
+   {
+    "samastapadam": "धनदः",
+    "laukika_vigraha": "धनम् ददाति",
+    "alaukika_vigraha": "धन ङस् दा",
+    "samasa_name": "उपपदसमा",
+    "source_line": 884
+   },
+   {
+    "samastapadam": "सामगः",
+    "laukika_vigraha": "साम गायति",
+    "alaukika_vigraha": "साम ङस् गै",
+    "samasa_name": "उपपदसमा",
+    "source_line": 885
+   },
+   {
+    "samastapadam": "धर्मज्ञः",
+    "laukika_vigraha": "धर्मं जानाति",
+    "alaukika_vigraha": "धर्म ङस् ज्ञा",
+    "samasa_name": "उपपदसमा",
+    "source_line": 886
+   },
+   {
+    "samastapadam": "कृतघ्नःः",
+    "laukika_vigraha": "कृतं हन्तीति",
+    "alaukika_vigraha": "कृत ङस् हन्",
+    "samasa_name": "उपपदसमा",
+    "source_line": 887
+   },
+   {
+    "samastapadam": "प्राचार्यः",
+    "laukika_vigraha": "प्रगतः आचार्यः",
+    "alaukika_vigraha": "प्र सु आचार्य सु",
+    "samasa_name": "प्रादिसमा",
+    "source_line": 888
+   },
+   {
+    "samastapadam": "प्रपितामहः",
+    "laukika_vigraha": "प्रगतः पितामहः",
+    "alaukika_vigraha": "प्र सु पितामह सु",
+    "samasa_name": "प्रादिसमास",
+    "source_line": 889
+   },
+   {
+    "samastapadam": "सुपुरुषः",
+    "laukika_vigraha": "शोभनः पुरुषः",
+    "alaukika_vigraha": "सु सु शोभन सु",
+    "samasa_name": "प्रादिसमास",
+    "source_line": 890
+   },
+   {
+    "samastapadam": "ऊरीकृत्य",
+    "laukika_vigraha": "ऊरी कृत्वा",
+    "alaukika_vigraha": "ऊरी सु कृ त्वा",
+    "samasa_name": "गतिसमास",
+    "source_line": 891
+   },
+   {
+    "samastapadam": "शुक्लीकृत्य",
+    "laukika_vigraha": "अशुक्लं शुक्लं सम्पद्यमानं कृत्वा",
+    "alaukika_vigraha": "शुक्ल अम् कृत्वा सु",
+    "samasa_name": "गतिसमा",
+    "source_line": 892
+   },
+   {
+    "samastapadam": "तिरस्कृत्य",
+    "laukika_vigraha": "तिरः कृत्वा",
+    "alaukika_vigraha": "तिरस् सु कृत्वा सु",
+    "samasa_name": "गतिसमा",
+    "source_line": 894
+   },
+   {
+    "samastapadam": "मयूरव्यंसकः",
+    "laukika_vigraha": "मयूरश्च व्यन्सकः च",
+    "alaukika_vigraha": "मयूर सु व्यंसक सु",
+    "samasa_name": "तत्पुरुषः",
+    "source_line": 895
+   },
+   {
+    "samastapadam": "राजान्तरम्",
+    "laukika_vigraha": "अन्यो राजा",
+    "alaukika_vigraha": "राजन् सु अन्तर सु",
+    "samasa_name": "तत्पुरुषः",
+    "source_line": 896
+   },
+   {
+    "samastapadam": "हरिहरौ",
+    "laukika_vigraha": "हरिश्च हरश्च",
+    "alaukika_vigraha": "हरि सु हर सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 897
+   },
+   {
+    "samastapadam": "धवखदिरौ",
+    "laukika_vigraha": "धवश्च खदिरश्च",
+    "alaukika_vigraha": "धव सु खदिर सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 898
+   },
+   {
+    "samastapadam": "ईशकृष्णौ",
+    "laukika_vigraha": "ईशश्च कृष्णश्च",
+    "alaukika_vigraha": "ईश सु कृष्ण सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 899
+   },
+   {
+    "samastapadam": "शिवकेशवौ",
+    "laukika_vigraha": "शिवश्च केशवश्च",
+    "alaukika_vigraha": "शिव सु केशव सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 900
+   },
+   {
+    "samastapadam": "हरिहरगुरवः",
+    "laukika_vigraha": "हरिश्च हरश्च गुरुश्च",
+    "alaukika_vigraha": "हरि सु हर सु गुरु सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 901
+   },
+   {
+    "samastapadam": "कुक्कुटमयूर्यौ",
+    "laukika_vigraha": "कक्कूटश्च मयूरी च",
+    "alaukika_vigraha": "कक्कूट सु मयूरी सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 902
+   },
+   {
+    "samastapadam": "रामलक्ष्मणौ",
+    "laukika_vigraha": "रामः च लक्ष्मणः च",
+    "alaukika_vigraha": "राम सु लक्ष्मण सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 903
+   },
+   {
+    "samastapadam": "आचार्यशिष्यौ",
+    "laukika_vigraha": "आचार्यः च शिष्यः च",
+    "alaukika_vigraha": "आचार्य सु शिष्य सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 904
+   },
+   {
+    "samastapadam": "शिवपार्वत्यौ",
+    "laukika_vigraha": "शिवः च पार्वती च",
+    "alaukika_vigraha": "शिव सु पार्वती सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 905
+   },
+   {
+    "samastapadam": "धर्मार्थौ",
+    "laukika_vigraha": "धर्मश्च अर्थश्च",
+    "alaukika_vigraha": "धर्म सु अर्थ सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 906
+   },
+   {
+    "samastapadam": "मातापितरौ",
+    "laukika_vigraha": "माता च पिता च",
+    "alaukika_vigraha": "मातृ सु पितृ सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 907
+   },
+   {
+    "samastapadam": "सुखदुःख",
+    "laukika_vigraha": "सुखम् च दुःखम् च",
+    "alaukika_vigraha": "सुख सु दुःख सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 908
+   },
+   {
+    "samastapadam": "लाभनष्टौ",
+    "laukika_vigraha": "लाभः च नष्टः च",
+    "alaukika_vigraha": "लाभ सु नष्ट सु",
+    "samasa_name": "इतरेतरद्वन्द्वः",
+    "source_line": 909
+   },
+   {
+    "samastapadam": "पाणिपादम्",
+    "laukika_vigraha": "पाणी च पादौ च एतेषां समाहारः",
+    "alaukika_vigraha": "पाद औ पाणि औ",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 910
+   },
+   {
+    "samastapadam": "गंगाशोणम्",
+    "laukika_vigraha": "गङ्गा च शोणश्च अनयोः समाहारः",
+    "alaukika_vigraha": "गङ्गा सु शाण सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 911
+   },
+   {
+    "samastapadam": "भेरीपटहम्",
+    "laukika_vigraha": "भेरी च पटहश्च अनयोः समाहारः",
+    "alaukika_vigraha": "भेरी सु पटह सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 912
+   },
+   {
+    "samastapadam": "बदरामलकम्",
+    "laukika_vigraha": "बदराणि च आमलकानि च एतेषां समाहारः",
+    "alaukika_vigraha": "बदर जस् आमलक जस्",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 913
+   },
+   {
+    "samastapadam": "अहोरात्रः",
+    "laukika_vigraha": "अहश्च रात्रिश्च अनयोः समाहारः",
+    "alaukika_vigraha": "अहन् सु रात्रि सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 915
+   },
+   {
+    "samastapadam": "अहिनकुलम्",
+    "laukika_vigraha": "अहिश्च नकुलश्च अनयोः समाहारः",
+    "alaukika_vigraha": "अहि सु नकुल सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 916
+   },
+   {
+    "samastapadam": "गोव्याघ्रम्",
+    "laukika_vigraha": "गौश्च व्याघ्रश्च अनयोः समाहारः",
+    "alaukika_vigraha": "गो सु व्याघ्र सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 917
+   },
+   {
+    "samastapadam": "काकोलूकम्",
+    "laukika_vigraha": "काकश्च उलूकश्च अनयोः समाहारः",
+    "alaukika_vigraha": "काक सु उलूक सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 918
+   },
+   {
+    "samastapadam": "आम्रनिम्बम्",
+    "laukika_vigraha": "आम्रश्च निम्बाश्च एतेषां समाहारः",
+    "alaukika_vigraha": "आम्र सु निम्ब जस्",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 919
+   },
+   {
+    "samastapadam": "ब्रीहियवम्",
+    "laukika_vigraha": "ब्रीहिश्च यवाश्च एतेषां समाहारः",
+    "alaukika_vigraha": "ब्रीहि सु यव सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 920
+   },
+   {
+    "samastapadam": "दधिघृतम्",
+    "laukika_vigraha": "दधि च घृतं च अनयोः समाहारः",
+    "alaukika_vigraha": "दधि सु घृत सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 921
+   },
+   {
+    "samastapadam": "कुशकाशम्",
+    "laukika_vigraha": "कुशाश्च काशाश्च एतेषां समाहारः",
+    "alaukika_vigraha": "कुश जस् काश जस्",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 922
+   },
+   {
+    "samastapadam": "गोमहिषम्",
+    "laukika_vigraha": "गावश्च महिषाश्च एतेषां समाहारः",
+    "alaukika_vigraha": "गो जस् महिष जस्",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 923
+   },
+   {
+    "samastapadam": "शुकवकम्",
+    "laukika_vigraha": "शुकाश्च वकाश्च एतेषां समाहारः",
+    "alaukika_vigraha": "शुक जस् वक जस्",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 924
+   },
+   {
+    "samastapadam": "अश्ववडवम्",
+    "laukika_vigraha": "अश्वश्च वडवः च अनयोः समाहारः",
+    "alaukika_vigraha": "अश्व सु वडव सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 925
+   },
+   {
+    "samastapadam": "शिरोग्रीवम्",
+    "laukika_vigraha": "शिरः च ग्रीवा च अनयोः समाहारः",
+    "alaukika_vigraha": "शिरस् सु ग्रीवा सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 926
+   },
+   {
+    "samastapadam": "रथिकाश्वरोहम्",
+    "laukika_vigraha": "रथिकः च अश्वारोहः च अनयोः समाहारः",
+    "alaukika_vigraha": "रथिक सु अश्वारोह सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 927
+   },
+   {
+    "samastapadam": "वाक्त्वचम्",
+    "laukika_vigraha": "वाक् च त्वक् च अनयोः समाहारः",
+    "alaukika_vigraha": "वाच् सु त्वच सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 928
+   },
+   {
+    "samastapadam": "छत्रोपानहम्",
+    "laukika_vigraha": "छत्रम् च उपानहः च अनयोः समाहारः",
+    "alaukika_vigraha": "छत्र सु उपानह् जस्",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 929
+   },
+   {
+    "samastapadam": "गजतुरगम्",
+    "laukika_vigraha": "गजः च तुरगः च अनयोः समाहारः",
+    "alaukika_vigraha": "गज सु तुरग सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 930
+   },
+   {
+    "samastapadam": "हस्तपादम्",
+    "laukika_vigraha": "हस्तौ च पादौ च एतेषां समाहारः",
+    "alaukika_vigraha": "हस्त औ पाद औ",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 931
+   },
+   {
+    "samastapadam": "लोमनखम्",
+    "laukika_vigraha": "लोमानि च नखानि च एतेषां समाहारः",
+    "alaukika_vigraha": "लोमन् जस् नख जस्",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 932
+   },
+   {
+    "samastapadam": "सर्पगरुडम्",
+    "laukika_vigraha": "सर्पः च गरुडः च अनयोः समाहारः",
+    "alaukika_vigraha": "सर्प सु गरुड सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 933
+   },
+   {
+    "samastapadam": "मुखनासिकम्",
+    "laukika_vigraha": "मुखं च नासिका च अनयोः समाहारः",
+    "alaukika_vigraha": "मुख सु नासिका सु",
+    "samasa_name": "समाहारद्वन्द्वः",
+    "source_line": 934
+   },
+   {
+    "samastapadam": "पितरौ",
+    "laukika_vigraha": "माता च पिता च",
+    "alaukika_vigraha": "मातृ सु पितृ सु",
+    "samasa_name": "एकशेषः",
+    "source_line": 936
+   },
+   {
+    "samastapadam": "भ्रातरौ",
+    "laukika_vigraha": "स्वसा च भ्राता च",
+    "alaukika_vigraha": "स्वसृ सु भ्रातृ सु",
+    "samasa_name": "एकशेषः",
+    "source_line": 937
+   },
+   {
+    "samastapadam": "हंसौ",
+    "laukika_vigraha": "हंसी च हंसश्च",
+    "alaukika_vigraha": "हंस सु हंसी सु",
+    "samasa_name": "एकशेषः",
+    "source_line": 938
+   },
+   {
+    "samastapadam": "पुत्रौ",
+    "laukika_vigraha": "पुत्री च पुत्रश्च",
+    "alaukika_vigraha": "पुत्र सु पुत्री सु",
+    "samasa_name": "एकशेषः",
+    "source_line": 939
+   },
+   {
+    "samastapadam": "कृतनिश्चयः",
+    "laukika_vigraha": "कृतः निश्चयः येन",
+    "alaukika_vigraha": "कृत सु निश्चय सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 940
+   },
+   {
+    "samastapadam": "अजिनाम्बरः",
+    "laukika_vigraha": "अजिनम् अम्बरम् यस्य",
+    "alaukika_vigraha": "अजिन सु अम्बर सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 941
+   },
+   {
+    "samastapadam": "चक्रपाणिः",
+    "laukika_vigraha": "चक्रम् पाणौ यस्य",
+    "alaukika_vigraha": "चक्र सु पाणि ङि",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 942
+   },
+   {
+    "samastapadam": "शूलहस्तः",
+    "laukika_vigraha": "शूलम् हस्ते यस्य",
+    "alaukika_vigraha": "शूल सु हस्त ङि",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 943
+   },
+   {
+    "samastapadam": "प्राप्ताग्निः",
+    "laukika_vigraha": "प्राप्तः अग्निः येन",
+    "alaukika_vigraha": "प्राप्त सु अग्नि सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 944
+   },
+   {
+    "samastapadam": "ऊढरथः",
+    "laukika_vigraha": "ऊढः रथः येन",
+    "alaukika_vigraha": "ऊढ सु रथ सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 945
+   },
+   {
+    "samastapadam": "दत्तपशुः",
+    "laukika_vigraha": "दत्तः पशुः यस्मै",
+    "alaukika_vigraha": "दत्त सु पशु सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 946
+   },
+   {
+    "samastapadam": "उद्धृतशरः",
+    "laukika_vigraha": "उद्धृताः शराः यस्मात्",
+    "alaukika_vigraha": "उद्धृत जस् शर जस्",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 947
+   },
+   {
+    "samastapadam": "महाबलः",
+    "laukika_vigraha": "महत् बलम् यस्य",
+    "alaukika_vigraha": "महत् सु बल सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 948
+   },
+   {
+    "samastapadam": "प्राप्तधनः",
+    "laukika_vigraha": "प्राप्तम् धनम् येन",
+    "alaukika_vigraha": "प्राप्त सु धन सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 949
+   },
+   {
+    "samastapadam": "अधीतव्याकरणः",
+    "laukika_vigraha": "अधीतम् व्याकरणम् येन",
+    "alaukika_vigraha": "अधीत सु व्याकरण सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 950
+   },
+   {
+    "samastapadam": "जितेन्द्रियः",
+    "laukika_vigraha": "जितानि इन्द्रियाणि येन",
+    "alaukika_vigraha": "जित जस् इन्द्रिय जस्",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 951
+   },
+   {
+    "samastapadam": "पीतदुग्धः",
+    "laukika_vigraha": "पीतं दुग्धं येन",
+    "alaukika_vigraha": "पीत सु दुग्ध सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 952
+   },
+   {
+    "samastapadam": "कृतकार्यः",
+    "laukika_vigraha": "कृतं कार्यं येन",
+    "alaukika_vigraha": "कृत सु कार्य सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 953
+   },
+   {
+    "samastapadam": "प्रप्तोदकः",
+    "laukika_vigraha": "प्राप्तम् उदकं यम्",
+    "alaukika_vigraha": "प्राप्तोदकः",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 954
+   },
+   {
+    "samastapadam": "दत्तधनः",
+    "laukika_vigraha": "दत्तं धनं यस्मै",
+    "alaukika_vigraha": "दत्त सु धन सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 955
+   },
+   {
+    "samastapadam": "निर्गतभयः",
+    "laukika_vigraha": "निर्गतं भयं यस्मात्",
+    "alaukika_vigraha": "निर्गत सु भय सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 956
+   },
+   {
+    "samastapadam": "पतितपत्रः",
+    "laukika_vigraha": "पतितं पत्रं यस्मात्",
+    "alaukika_vigraha": "पतित सु पत्र सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 957
+   },
+   {
+    "samastapadam": "शुभानना",
+    "laukika_vigraha": "शुभम् आननं यस्याः",
+    "alaukika_vigraha": "शुभ सु आनन सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 958
+   },
+   {
+    "samastapadam": "महाशयः",
+    "laukika_vigraha": "महान् आशयः यस्य",
+    "alaukika_vigraha": "महत् सु आशय सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 959
+   },
+   {
+    "samastapadam": "महायशाः",
+    "laukika_vigraha": "महत् यशः यस्य",
+    "alaukika_vigraha": "महत् सु यशस् सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 960
+   },
+   {
+    "samastapadam": "चित्रगुः",
+    "laukika_vigraha": "चित्रा गावः यस्य",
+    "alaukika_vigraha": "चित्र जस् गो जस्",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 961
+   },
+   {
+    "samastapadam": "रूपवद्भार्यः",
+    "laukika_vigraha": "रूपवती भार्या यस्य",
+    "alaukika_vigraha": "रूपवती सु भार्या सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 962
+   },
+   {
+    "samastapadam": "लम्बोदरः",
+    "laukika_vigraha": "लम्बम् उदरं यस्य",
+    "alaukika_vigraha": "लम्ब सु उदर सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 963
+   },
+   {
+    "samastapadam": "पीताम्बरः",
+    "laukika_vigraha": "पीतम् अम्बरं यस्य",
+    "alaukika_vigraha": "पीत सु अम्बर सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 964
+   },
+   {
+    "samastapadam": "श्वेताम्बरः",
+    "laukika_vigraha": "श्वेतम् अम्बरं यस्य",
+    "alaukika_vigraha": "श्वेत सु अम्बर सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 965
+   },
+   {
+    "samastapadam": "नीलाम्बरः",
+    "laukika_vigraha": "नीलम् अम्बरं यस्य",
+    "alaukika_vigraha": "नील सु अम्बर सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 966
+   },
+   {
+    "samastapadam": "दिगम्बरः",
+    "laukika_vigraha": "दिशः एव अम्बराणि यस्य",
+    "alaukika_vigraha": "दिश् जस् अम्बर जस्",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 967
+   },
+   {
+    "samastapadam": "महासेनः",
+    "laukika_vigraha": "महती सेना यस्य",
+    "alaukika_vigraha": "महती सु सेना सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 968
+   },
+   {
+    "samastapadam": "रम्यपथः",
+    "laukika_vigraha": "रम्यः पन्थाः यस्य",
+    "alaukika_vigraha": "रस्य सु पथिन् सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 969
+   },
+   {
+    "samastapadam": "द्विपाद्",
+    "laukika_vigraha": "द्वौ पादौ यस्य",
+    "alaukika_vigraha": "द्वि औ पाद औ",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 970
+   },
+   {
+    "samastapadam": "महात्मा",
+    "laukika_vigraha": "महान् आत्मा यस्य",
+    "alaukika_vigraha": "महत् सु आत्मा सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 971
+   },
+   {
+    "samastapadam": "चतुर्मुखः",
+    "laukika_vigraha": "चत्वारि मुखानि यस्य",
+    "alaukika_vigraha": "चतुर् जस् मुख जस्",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 972
+   },
+   {
+    "samastapadam": "दशाननः",
+    "laukika_vigraha": "दश आननानि यस्य",
+    "alaukika_vigraha": "दशन् जस् आनन जस्",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 973
+   },
+   {
+    "samastapadam": "मृतपुत्रः",
+    "laukika_vigraha": "मृतः पुत्रः यस्य",
+    "alaukika_vigraha": "मृत सु पुत्र सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 974
+   },
+   {
+    "samastapadam": "मृतभार्यः",
+    "laukika_vigraha": "मृता भार्या यस्य",
+    "alaukika_vigraha": "मृता सु भार्या सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 975
+   },
+   {
+    "samastapadam": "विमलमतिः",
+    "laukika_vigraha": "विमला मतिः यस्य",
+    "alaukika_vigraha": "विमला सु मति सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 976
+   },
+   {
+    "samastapadam": "विद्याधनः",
+    "laukika_vigraha": "विद्या एव धनं यस्य",
+    "alaukika_vigraha": "विद्या सु धन सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 977
+   },
+   {
+    "samastapadam": "शीतांशुः",
+    "laukika_vigraha": "शीताः अंशवः यस्य",
+    "alaukika_vigraha": "शीत जस् अंशु जस्",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 978
+   },
+   {
+    "samastapadam": "नीलकण्ठः",
+    "laukika_vigraha": "नीलः कण्ठः यस्य",
+    "alaukika_vigraha": "नील सु कण्ठ सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 979
+   },
+   {
+    "samastapadam": "लब्धप्रतिष्ठः",
+    "laukika_vigraha": "लब्धा प्रतिष्ठा येन",
+    "alaukika_vigraha": "लब्धा सु प्रतिष्ठा सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 980
+   },
+   {
+    "samastapadam": "भग्नोत्साहः",
+    "laukika_vigraha": "भग्नः उत्साहः यस्य",
+    "alaukika_vigraha": "भग्न सु उत्साह सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 981
+   },
+   {
+    "samastapadam": "प्रियदर्शनी",
+    "laukika_vigraha": "प्रियम् दर्शनं यस्याः",
+    "alaukika_vigraha": "प्रिय सु दर्शन सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 982
+   },
+   {
+    "samastapadam": "अवत्सा",
+    "laukika_vigraha": "अविद्यमानः वत्सः यस्याः",
+    "alaukika_vigraha": "न सु वत्स",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 983
+   },
+   {
+    "samastapadam": "अपुत्रः",
+    "laukika_vigraha": "अविद्यमानः पुत्रः यस्य",
+    "alaukika_vigraha": "न सु पुत्र सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 984
+   },
+   {
+    "samastapadam": "चन्द्रमुखी",
+    "laukika_vigraha": "चन्द्रः इव मुखं यस्याः",
+    "alaukika_vigraha": "चन्द्र सु मुख सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 985
+   },
+   {
+    "samastapadam": "शुभानना",
+    "laukika_vigraha": "शुभम् आननं यस्याः",
+    "alaukika_vigraha": "शुभ सु आनन सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 986
+   },
+   {
+    "samastapadam": "वीरपुरुषः",
+    "laukika_vigraha": "वीराः पुरुषाः यस्मिन्",
+    "alaukika_vigraha": "वीर सु पुरुष सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 987
+   },
+   {
+    "samastapadam": "विमलोदका",
+    "laukika_vigraha": "विमलम् उदकं यस्यां",
+    "alaukika_vigraha": "विमल सु उदक सु",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 988
+   },
+   {
+    "samastapadam": "सपुत्रः",
+    "laukika_vigraha": "पुत्रेण सह विद्यमानः",
+    "alaukika_vigraha": "पुत्र टा सह",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 989
+   },
+   {
+    "samastapadam": "सपरिवारः",
+    "laukika_vigraha": "परिवारेण सह विद्यमानः",
+    "alaukika_vigraha": "परिवार टा सह",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 990
+   },
+   {
+    "samastapadam": "धनुष्पाणिः",
+    "laukika_vigraha": "धनुः पाणौ यस्य (रामः)",
+    "alaukika_vigraha": "धनुस् सु पाणि ङि",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 991
+   },
+   {
+    "samastapadam": "खड्गहस्तः",
+    "laukika_vigraha": "खड्गं हस्ते यस्य",
+    "alaukika_vigraha": "खड्ग अम् पाणि ङि",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 992
+   },
+   {
+    "samastapadam": "अस्त्रपाणिः",
+    "laukika_vigraha": "अस्त्रं पाणौ यस्य",
+    "alaukika_vigraha": "अस्त्र अम् पाणि ङि",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 993
+   },
+   {
+    "samastapadam": "पिनाकपाणिः",
+    "laukika_vigraha": "पिनाकः पाणौ यस्य",
+    "alaukika_vigraha": "पिनाक सु पाणि ङि",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 994
+   },
+   {
+    "samastapadam": "चन्द्रशेखरः",
+    "laukika_vigraha": "चन्द्रः शेखरे यस्य",
+    "alaukika_vigraha": "चन्द्र सु शेखर ङि",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 995
+   },
+   {
+    "samastapadam": "लगुडहस्तः",
+    "laukika_vigraha": "लगुडः हस्ते यस्य",
+    "alaukika_vigraha": "लगुड सु हस्त ङि",
+    "samasa_name": "बहुब्रीहिः",
+    "source_line": 996
+   },
+   {
+    "samastapadam": "केशाकेशि",
+    "laukika_vigraha": "केशेषु केशेषु गृहीत्वा इदं युद्धं प्रवृत्तम्",
+    "alaukika_vigraha": "केश सुप् केश सुप्",
+    "samasa_name": "बहुव्रीहिः",
+    "source_line": 997
+   }
+  ]
+ }
+}

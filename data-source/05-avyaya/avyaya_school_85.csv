@@ -1,0 +1,86 @@
+﻿sa,category,category_sa,en,hi (draft),te (draft)
+कथम्,question,प्रश्नार्थकम्,how,कैसे,ఎలా
+किमर्थम्,question,प्रश्नार्थकम्,"why, for what purpose",किसलिए,ఎందుకు
+नूनम्,emphasis,बलवाचकम्,"surely, certainly","अवश्य, निश्चय ही",తప్పకుండా
+यदि,connective,संयोजकम्,if,"यदि, अगर",ఒకవేళ
+तर्हि,connective,संयोजकम्,then (in that case),तो,అయితే
+तूष्णीम्,manner,रीतिवाचकम्,silently,चुपचाप,మౌనంగా
+बहिः,place,स्थानवाचकम्,outside,बाहर,బయట
+अन्तः,place,स्थानवाचकम्,inside,अंदर,లోపల
+कुतः,question,प्रश्नार्थकम्,from where; why,कहाँ से; क्यों,ఎక్కడినుండి; ఎందుకు
+सर्वदा,time,कालवाचकम्,always,"सदा, हमेशा",ఎల్లప్పుడూ
+नमः,exclamation,उद्गारवाचकम्,"salutation, obeisance",नमस्कार,నమస్కారము
+कदा,question,प्रश्नार्थकम्,when?,कब,ఎప్పుడు
+यदा,connective,संयोजकम्,when (relative),जब,ఎప్పుడైతే
+तदा,time,कालवाचकम्,then,तब,అప్పుడు
+धिक्,exclamation,उद्गारवाचकम्,fie! shame!,धिक्कार,ఛీ
+दिवा,time,कालवाचकम्,by day,दिन में,పగటిపూట
+नक्तम्,time,कालवाचकम्,by night,रात में,రాత్రిపూట
+हि,emphasis,बलवाचकम्,"indeed, because",ही; क्योंकि,నిజంగా; ఎందుకంటే
+अधः,place,स्थानवाचकम्,"below, down",नीचे,కింద
+उपरि,place,स्थानवाचकम्,"above, on",ऊपर,పైన
+इति,connective,संयोजकम्,thus (marks a quotation),"ऐसा, इस प्रकार",అని
+साधु,manner,रीतिवाचकम्,"well, rightly; well done!",अच्छी तरह; शाबाश,బాగా; భేష్
+सम्यक्,manner,रीतिवाचकम्,"properly, well",ठीक से,సరిగా
+वै,emphasis,बलवाचकम्,indeed,निश्चय ही,నిజంగా
+प्रति,relation,सम्बन्धसूचकम्,towards; to,की ओर,వైపు
+अतीव,degree,परिमाणवाचकम्,"very, exceedingly",अत्यधिक,చాలా
+अति,degree,परिमाणवाचकम्,"too much, beyond",बहुत अधिक,మితిమీరి
+शनैः,manner,रीतिवाचकम्,slowly,धीरे,నెమ్మదిగా
+सहसा,manner,रीतिवाचकम्,suddenly,अचानक,అకస్మాత్తుగా
+कति,question,प्रश्नार्थकम्,how many?,कितने,ఎన్ని
+सदा,time,कालवाचकम्,always,सदा,ఎల్లప్పుడూ
+ह्यः,time,कालवाचकम्,yesterday,कल (बीता हुआ),నిన్న
+अनन्तरम्,time,कालवाचकम्,"afterwards, next",बाद में,తరువాత
+श्वः,time,कालवाचकम्,tomorrow,कल (आने वाला),రేపు
+अद्य,time,कालवाचकम्,today,आज,ఈరోజు
+उच्चैः,manner,रीतिवाचकम्,loudly; high,ज़ोर से; ऊँचे,బిగ్గరగా
+इदानीम्,time,कालवाचकम्,now,अब,ఇప్పుడు
+खलु,emphasis,बलवाचकम्,"indeed, certainly",निश्चय ही,నిజంగా
+स्म,time,कालवाचकम्,(with present tense) makes it past,(भूतकाल का सूचक),(గతకాల సూచకము)
+शीघ्रम्,manner,रीतिवाचकम्,quickly,जल्दी,త్వరగా
+परस्परम्,relation,सम्बन्धसूचकम्,"each other, mutually",आपस में,పరస్పరం
+विना,relation,सम्बन्धसूचकम्,without,बिना,లేకుండా
+अपि,connective,संयोजकम्,"also, even",भी,కూడా
+न,negation,निषेधार्थकम्,"not, no",नहीं,కాదు
+सह,relation,सम्बन्धसूचकम्,"with, together with",साथ,తో
+किम्,question,प्रश्नार्थकम्,what? (also marks a question),क्या,ఏమి
+तु,connective,संयोजकम्,but,परंतु,కానీ
+अत्र,place,स्थानवाचकम्,here,यहाँ,ఇక్కడ
+तत्र,place,स्थानवाचकम्,there,वहाँ,అక్కడ
+यत्र,connective,संयोजकम्,where (relative),जहाँ,ఎక్కడైతే
+कुत्र,question,प्रश्नार्थकम्,where?,कहाँ,ఎక్కడ
+एव,emphasis,बलवाचकम्,"only, just",ही,మాత్రమే
+सायम्,time,कालवाचकम्,in the evening,शाम को,సాయంత్రం
+प्रातः,time,कालवाचकम्,in the morning,सुबह,ఉదయం
+आम्,exclamation,उद्गारवाचकम्,yes,हाँ,అవును
+इव,relation,सम्बन्धसूचकम्,"like, as if",जैसे,వలె
+एकदा,time,कालवाचकम्,once (upon a time),एक बार,ఒకసారి
+अचिरम्,time,कालवाचकम्,soon,शीघ्र ही,త్వరలో
+चिरम्,time,कालवाचकम्,for a long time,देर तक,చాలాకాలం
+पुरा,time,कालवाचकम्,"long ago, formerly",प्राचीन काल में,పూర్వం
+प्राक्,time,कालवाचकम्,"before, earlier",पहले,ముందు
+मा,negation,निषेधार्थकम्,don't (prohibition),मत,వద్దు
+यथा,connective,संयोजकम्,"as, just as",जैसे,ఎలాగైతే
+तथा,manner,रीतिवाचकम्,"so, in that way",वैसे,అలాగే
+नाम,emphasis,बलवाचकम्,by name; indeed,नामक; सचमुच,పేరుగల; నిజంగా
+ननु,question,प्रश्नार्थकम्,surely? isn't it?,क्या नहीं?,కదా
+पर्यन्तम्,relation,सम्बन्धसूचकम्,"up to, until",तक,వరకు
+चेत्,connective,संयोजकम्,if,यदि,అయితే
+इतस्ततः,place,स्थानवाचकम्,here and there,इधर-उधर,అటూ ఇటూ
+सततम्,time,कालवाचकम्,constantly,लगातार,నిరంతరం
+सत्वरम्,manner,रीतिवाचकम्,quickly,शीघ्र,త్వరగా
+पुनः,time,कालवाचकम्,again,फिर,మళ్ళీ
+परितः,place,स्थानवाचकम्,all around,चारों ओर,చుట్టూ
+उभयतः,place,स्थानवाचकम्,on both sides,दोनों ओर,రెండువైపులా
+सर्वतः,place,स्थानवाचकम्,"from all sides, everywhere",सब ओर से,అన్నివైపులా
+पुरतः,place,स्थानवाचकम्,in front,सामने,ఎదుట
+अग्रतः,place,स्थानवाचकम्,"in front, ahead",आगे,ముందు
+कदाचित्,time,कालवाचकम्,sometime; perhaps,कभी; शायद,ఎప్పుడైనా; బహుశా
+अलम्,degree,परिमाणवाचकम्,enough; (with 3rd case) stop!,बस; पर्याप्त,చాలు
+यावत्,connective,संयोजकम्,"as long as, until",जब तक,ఎంతవరకు
+तावत्,connective,संयोजकम्,"so long, until then",तब तक,అంతవరకు
+क्रमेण,manner,रीतिवाचकम्,"gradually, in order",क्रमशः,క్రమంగా
+साम्प्रतम्,time,कालवाचकम्,"now, at present",अब,ఇప్పుడు
+अद्यत्वे,time,कालवाचकम्,nowadays,आजकल,ఈరోజుల్లో
+प्रतिवर्षम्,time,कालवाचकम्,every year,प्रतिवर्ष,ప్రతి సంవత్సరం

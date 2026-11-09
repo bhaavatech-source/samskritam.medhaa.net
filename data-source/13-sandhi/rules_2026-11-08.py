@@ -1,0 +1,51 @@
+# Sandhi rules as taught in the game, with sūtras added, and corrections to the Gold examples
+# (Sandhi_Gold_Data_UPDATED_COMPLETE_P1.json). Example index = order in which tools/build_grammar.py
+# reads them (rule by rule, internal then external). Reviewed 2026-11-08.
+RULES = {
+ # gold key: (id, group, Sanskrit name, English, sūtra, what happens)
+ "RULE_1_YANADESH": ("yan", "svara", "यणादेशः", "i/u/ṛ/ḷ become y/v/r/l", "इको यणचि (6.1.77)", "इ ई → य्, उ ऊ → व्, ऋ ॠ → र्, ऌ → ल् before a different vowel"),
+ "RULE_2_AYAVAYAVA": ("ayadi", "svara", "अयादिसन्धिः", "e/ai/o/au become ay/āy/av/āv", "एचोऽयवायावः (6.1.78)", "ए → अय्, ऐ → आय्, ओ → अव्, औ → आव् before a vowel (between words the य्/व् may drop: लोपः शाकल्यस्य 8.3.19)"),
+ "RULE_3_GUNA": ("guna", "svara", "गुणसन्धिः", "a + i/u/ṛ/ḷ → e/o/ar/al", "आद्गुणः (6.1.87)", "अ/आ + इ/ई → ए, + उ/ऊ → ओ, + ऋ → अर्, + ऌ → अल्"),
+ "RULE_4_VRIDDHI": ("vrddhi", "svara", "वृद्धिसन्धिः", "a + e/ai → ai, a + o/au → au", "वृद्धिरेचि (6.1.88)", "अ/आ + ए/ऐ → ऐ, अ/आ + ओ/औ → औ"),
+ "RULE_5_SAVARNA_DIRGH": ("dirgha", "svara", "सवर्णदीर्घसन्धिः", "same vowels merge into a long one", "अकः सवर्णे दीर्घः (6.1.101)", "अ/आ + अ/आ → आ, इ/ई + इ/ई → ई, उ/ऊ + उ/ऊ → ऊ, ऋ + ऋ → ॠ"),
+ "RULE_6_PURVARDPA": ("purvarupa", "svara", "पूर्वरूपसन्धिः", "e/o at the end of a word swallow a following a", "एङः पदान्तादति (6.1.109)", "word-final ए/ओ + अ → ए/ओ, written with ऽ (अवग्रहः)"),
+ "RULE_1_JASHTTVA": ("jash", "vyanjana", "जश्त्वसन्धिः", "a final stop becomes voiced (g, j, ḍ, d, b)", "झलां जशोऽन्ते (8.2.39)", "a word-final झल् becomes the 3rd letter of its row (क्→ग्, त्→द् …); inside a word before झश्: झलां जश् झशि 8.4.53"),
+ "RULE_2_CHRTVA": ("char", "vyanjana", "चर्त्वसन्धिः", "a stop becomes voiceless before a voiceless sound", "खरि च (8.4.55)", "झल् → चर् (1st letter of its row) before खर्; at a pause optionally: वाऽवसाने 8.4.56"),
+ "RULE_3_SHCHUTVA": ("shcutva", "vyanjana", "श्चुत्वसन्धिः", "s / t-row meet ś / c-row → ś / c-row", "स्तोः श्चुना श्चुः (8.4.40)", "स् and त-वर्ग next to श् or च-वर्ग become श् and च-वर्ग"),
+ "RULE_4_SHTUTVA": ("shtutva", "vyanjana", "ष्टुत्वसन्धिः", "s / t-row meet ṣ / ṭ-row → ṣ / ṭ-row", "ष्टुना ष्टुः (8.4.41)", "स् and त-वर्ग next to ष् or ट-वर्ग become ष् and ट-वर्ग"),
+ "RULE_5_ANUNASIKA": ("anunasika", "vyanjana", "अनुनासिकसन्धिः", "a stop becomes nasal before a nasal", "यरोऽनुनासिकेऽनुनासिको वा (8.4.45)", "word-final यर् before a nasal may become the nasal of its row (त्/द् → न्); before a suffix always (प्रत्यये भाषायां नित्यम्)"),
+ "RULE_6_ANUSVARA": ("anusvara", "vyanjana", "अनुस्वारसन्धिः", "m / n become ṃ", "मोऽनुस्वारः (8.3.23) · नश्चापदान्तस्य झलि (8.3.24)", "word-final म् before a consonant → ं; inside a word न्/म् before a झल् → ं"),
+ "RULE_7_ANUSVARA_PARASAVARNA": ("parasavarna", "vyanjana", "परसवर्णसन्धिः", "ṃ becomes the nasal of the next consonant", "अनुस्वारस्य ययि परसवर्णः (8.4.58) · वा पदान्तस्य (8.4.59)", "ं before a stop → that row's nasal; inside a word always, at a word end optionally"),
+ "RULE_8_LAKARA_PARASAVARNA": ("tor-li", "vyanjana", "तोर्लिसन्धिः", "t-row before l becomes l", "तोर्लि (8.4.60)", "त-वर्ग before ल् becomes ल् (न् becomes nasal ल्ँ)"),
+ "RULE_9_TUGAGAMA": ("tuk", "agama", "तुगागमः", "t is added before ch", "छे च (6.1.73) · पदान्ताद्वा (6.1.76)", "after a short vowel त् is added before छ् (then श्चुत्व makes it च्); after a long final vowel optionally"),
+ "RULE_10_PURVASA VARNA_ADESHA": ("purvasavarna", "vyanjana", "पूर्वसवर्णसन्धिः", "h after a stop takes that stop's aspirate", "झयो होऽन्यतरस्याम् (8.4.62)", "ह् after झय् optionally becomes the 4th letter of that row"),
+ "RULE_1_CHATVA": ("chatva", "vyanjana", "छत्वसन्धिः", "ś after a stop becomes ch", "शश्छोऽटि (8.4.63)", "श् between a झय् and a vowel/semivowel optionally becomes छ्"),
+ "RULE_2_NGMUDAGAMA": ("ngamut", "agama", "ङमुडागमः", "ṅ/ṇ/n doubles before a vowel", "ङमो ह्रस्वादचि ङमुण्नित्यम् (8.3.32)", "a word-final ङ्/ण्/न् after a short vowel is doubled before a vowel"),
+ "TYPE_1_VISARGA_LOPA": ("vis-lopa", "visarga", "विसर्गलोपः", "the visarga drops", "भोभगोअघोअपूर्वस्य योऽशि (8.3.17) · लोपः शाकल्यस्य (8.3.19) · हलि सर्वेषाम् (8.3.22) · एतत्तदोः सुलोपः… (6.1.132)", "अः before a vowel other than अ, and आः before a vowel or soft consonant, lose the visarga; सः/एषः lose it before any consonant"),
+ "TYPE_2_OGUNA": ("vis-o", "visarga", "विसर्गः ओकारः (अति)", "aḥ + a → o'", "अतो रोरप्लुतादप्लुते (6.1.113) · एङः पदान्तादति (6.1.109)", "अः + अ → ओऽ"),
+ "TYPE_3_OGUNA_HAV_RAV": ("vis-o2", "visarga", "विसर्गः ओकारः (हशि)", "aḥ before a soft consonant → o", "हशि च (6.1.114)", "अः before a soft consonant (3rd, 4th, 5th of a row, य र ल व ह) → ओ"),
+ "TYPE_4_RAKARA": ("vis-r", "visarga", "रेफादेशः", "visarga after i/u… becomes r", "ससजुषो रुः (8.2.66) — the र् stays", "a visarga after a vowel other than अ/आ (and in प्रातः, पुनः…) becomes र् before a vowel or a soft consonant"),
+ "TYPE_5_NO_CHANGE": ("vis-keep", "visarga", "विसर्गः यथावत्", "visarga stays before k/kh/p/ph", "कुप्वोः ≍क≍पौ च (8.3.37)", "before क ख प फ the visarga stays (or becomes jihvāmūlīya/upadhmānīya)"),
+ "TYPE_6_SSHAKARA": ("vis-s", "visarga", "सत्वम् / श्चुत्वम् / ष्टुत्वम्", "visarga becomes s, ś or ṣ", "विसर्जनीयस्य सः (8.3.34) · 8.4.40 · 8.4.41", "before त थ → स्, before च छ श → श्, before ट ठ ष → ष्"),
+}
+# corrections to individual examples (index as printed by build_grammar.py --list)
+EX_FIX = {
+ 14: {"note": "व"}, 15: {"note": "व"}, 24: {"b": "उपहास्यताम्", "r": "गमिष्याम्युपहास्यताम्"}, 28: "drop",
+ 45: {"b": "उज्ज्वल", "r": "महोज्ज्वलः"}, 64: {"r": "गङ्गौघः"}, 81: {"r": "क्षितीशः"}, 82: {"r": "मातॄणम्"},
+ 85: {"b": "अनुज्ञा"}, 86: {"r": "रामाज्ञा"}, 91: {"b": "अपि"},
+ 145: {"note": "न् becomes ण्"}, 148: {"note": "त् becomes ट्"}, 149: {"note": "त् becomes ट्"}, 150: {"note": "त् becomes ट्"}, 151: "drop", 152: {"note": "त् becomes ट्"},
+ 159: {"r": "तन्मम / तद् मम"},
+ 165: {"r": "दम्पती", "note": "ं first, then परसवर्ण (8.4.58) is compulsory inside a word", "game": 0},
+ 167: {"r": "अङ्कितम्", "note": "ं → ङ् (8.4.58)", "game": 0}, 168: {"r": "घण्टा", "game": 0}, 169: {"r": "भयङ्करः", "game": 0},
+ 170: {"r": "पतञ्जलिः", "game": 0}, 171: {"r": "संधिः / सन्धिः", "game": 0}, 172: {"r": "अञ्चितः", "game": 0},
+ 173: {"r": "संजातः / सञ्जातः", "game": 0}, 174: {"r": "आशङ्कितः", "game": 0},
+ 195: {"a": "हलं", "b": "चालयति", "r": "हलञ्चालयति / हलं चालयति"},
+ 200: {"r": "विद्वाँल्लिखति", "note": "न् + ल् → ल्ँल् (nasal ल्)"},
+ 203: {"r": "परिच्छेदः", "note": "तुक् (छे च), then श्चुत्व"}, 204: {"r": "विच्छेदः", "note": "तुक् (छे च), then श्चुत्व"},
+ 205: {"r": "लक्ष्मीच्छाया / लक्ष्मी छाया", "note": "after a long final vowel optional (पदान्ताद्वा)"}, 206: "drop",
+ 212: {"b": "ईशः", "r": "सुगण्णीशः"},
+ 235: {"r": "वृक्षा वर्धन्ते"}, 236: {"b": "नमन्ति", "r": "तरुणा नमन्ति"}, 237: {"a": "वृद्धाः", "r": "वृद्धा अत्र"},
+ 258: {"a": "वृद्धः", "r": "वृद्धोऽत्र"},
+ 260: {"r": "बालो हसति"}, 261: {"r": "वृक्षो वर्धते"}, 262: {"r": "वृक्षो रक्षति"}, 263: {"r": "देवो जनानाम्"}, 264: {"r": "देवो गच्छति"},
+ 266: {"a": "महिषीः"}, 273: {"a": "मुनिः"}, 276: {"b": "गृहम्", "r": "गुरुर्गृहम्"},
+}

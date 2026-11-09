@@ -1,0 +1,1264 @@
+[
+ {
+  "sentence_pack_name": "Samskrita Social Media Starter Pack",
+  "version": "1.0",
+  "comment": "A foundational set of simple, verified Sanskrit sentences for conversational use.",
+  "categories": [
+   {
+    "category_name_en": "Greetings & Politeness",
+    "category_name_sa": "शुभाशयाः एवं शिष्टाचारः",
+    "sentences": [
+     {
+      "sa": "नमस्ते।",
+      "en": "Hello / Greetings.",
+      "roman": "Namaste."
+     },
+     {
+      "sa": "नमस्कारः।",
+      "en": "Hello (formal).",
+      "roman": "Namaskāraḥ."
+     },
+     {
+      "sa": "सुप्रभातम्।",
+      "en": "Good morning.",
+      "roman": "Suprabhātam."
+     },
+     {
+      "sa": "शुभमध्याह्नम्।",
+      "en": "Good afternoon.",
+      "roman": "Śubhamadhyāhnam."
+     },
+     {
+      "sa": "शुभसायम्।",
+      "en": "Good evening.",
+      "roman": "Śubhā sāyaṁ."
+     },
+     {
+      "sa": "शुभरात्रिः।",
+      "en": "Good night.",
+      "roman": "Śubharātriḥ."
+     },
+     {
+      "sa": "धन्यवादः।",
+      "en": "Thank you.",
+      "roman": "Dhanyavādaḥ."
+     },
+     {
+      "sa": "स्वागतम्।",
+      "en": "Welcome.",
+      "roman": "Svāgatam."
+     },
+     {
+      "sa": "कृपया।",
+      "en": "Please.",
+      "roman": "Kṛpayā."
+     },
+     {
+      "sa": "क्षम्यताम्।",
+      "en": "Excuse me / Sorry.",
+      "roman": "Kṣamyatām."
+     },
+     {
+      "sa": "चिन्ता मास्तु।",
+      "en": "Don't worry.",
+      "roman": "Cintā māstu."
+     },
+     {
+      "sa": "पुनः मिलामः।",
+      "en": "Let's meet again. / See you later.",
+      "roman": "Punaḥ milāmaḥ."
+     },
+     {
+      "sa": "तव दिनं शुभं भवतु।",
+      "en": "Have a good day.",
+      "roman": "Tava dinaṁ śubhaṁ bhavatu."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Common Questions",
+    "category_name_sa": "सामान्याः प्रश्नाः",
+    "sentences": [
+     {
+      "sa": "भवान् कथमस्ति?",
+      "en": "How are you? (to a male)",
+      "roman": "Bhavān kathamasti?"
+     },
+     {
+      "sa": "भवती कथमस्ति?",
+      "en": "How are you? (to a female)",
+      "roman": "Bhavatī kathamasti?"
+     },
+     {
+      "sa": "तव नाम किम्?",
+      "en": "What is your name?",
+      "roman": "Tava nāma kim?"
+     },
+     {
+      "sa": "भवान् किं करोति?",
+      "en": "What are you doing? (to a male)",
+      "roman": "Bhavān kiṁ karoti?"
+     },
+     {
+      "sa": "भवती किं करोति?",
+      "en": "What are you doing? (to a female)",
+      "roman": "Bhavatī kiṁ karoti?"
+     },
+     {
+      "sa": "भवान् कुत्र अस्ति?",
+      "en": "Where are you? (to a male)",
+      "roman": "Bhavān kutra asti?"
+     },
+     {
+      "sa": "भवती कुत्र अस्ति?",
+      "en": "Where are you? (to a female)",
+      "roman": "Bhavatī kutra asti?"
+     },
+     {
+      "sa": "भोजनं जातं वा?",
+      "en": "Is food done? (Have you eaten?)",
+      "roman": "Bhojanaṁ jātaṁ vā?"
+     },
+     {
+      "sa": "किं प्रचलति?",
+      "en": "What's up? / What's going on?",
+      "roman": "Kiṁ pracalati?"
+     },
+     {
+      "sa": "कदा मिलावः?",
+      "en": "When shall we meet?",
+      "roman": "Kadā milāvaḥ?"
+     },
+     {
+      "sa": "को विशेषः?",
+      "en": "What's new / special?",
+      "roman": "Ko viśeṣaḥ?"
+     }
+    ]
+   },
+   {
+    "category_name_en": "Common Answers & Replies",
+    "category_name_sa": "सामान्यानि उत्तराणि",
+    "sentences": [
+     {
+      "sa": "अहं कुशली अस्मि।",
+      "en": "I am fine. (male)",
+      "roman": "Ahaṁ kuśalī asmi."
+     },
+     {
+      "sa": "अहं कुशलिनी अस्मि।",
+      "en": "I am fine. (female)",
+      "roman": "Ahaṁ kuśalinī asmi."
+     },
+     {
+      "sa": "सम्यक् अस्मि।",
+      "en": "I am well.",
+      "roman": "Samyak asmi."
+     },
+     {
+      "sa": "सर्वं कुशलम्।",
+      "en": "All is well.",
+      "roman": "Sarvaṁ kuśalam."
+     },
+     {
+      "sa": "आम्।",
+      "en": "Yes.",
+      "roman": "Ām."
+     },
+     {
+      "sa": "न।",
+      "en": "No.",
+      "roman": "Na."
+     },
+     {
+      "sa": "अस्तु।",
+      "en": "Okay / Alright / So be it.",
+      "roman": "Astu."
+     },
+     {
+      "sa": "न जानामि।",
+      "en": "I don't know.",
+      "roman": "Na jānāmi."
+     },
+     {
+      "sa": "अहं गृहे अस्मि।",
+      "en": "I am at home.",
+      "roman": "Ahaṁ gṛhe asmi."
+     },
+     {
+      "sa": "अहं कार्यं करोमि।",
+      "en": "I am working.",
+      "roman": "Ahaṁ kāryaṁ karomi."
+     },
+     {
+      "sa": "अहं पठामि।",
+      "en": "I am reading / studying.",
+      "roman": "Ahaṁ paṭhāmi."
+     },
+     {
+      "sa": "अद्य अहं व्यस्तः अस्मि।",
+      "en": "I am busy today. (male)",
+      "roman": "Adya ahaṁ vyastaḥ asmi."
+     },
+     {
+      "sa": "अद्य अहं व्यस्ता अस्मि।",
+      "en": "I am busy today. (female)",
+      "roman": "Adya ahaṁ vyastā asmi."
+     },
+     {
+      "sa": "अवश्यम्।",
+      "en": "Definitely / Surely.",
+      "roman": "Avaśyam."
+     },
+     {
+      "sa": "तथा नास्ति।",
+      "en": "It's not like that.",
+      "roman": "Tathā nāsti."
+     },
+     {
+      "sa": "भोजनं जातम्।",
+      "en": "Food is done. (I have eaten.)",
+      "roman": "Bhojanaṁ jātam."
+     },
+     {
+      "sa": "इदानीं न।",
+      "en": "Not now.",
+      "roman": "Idānīṁ na."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Social Media Reactions",
+    "category_name_sa": "सामाजिक-माध्यम-प्रतिक्रियाः",
+    "sentences": [
+     {
+      "sa": "उत्तमम्!",
+      "en": "Excellent!",
+      "roman": "Uttamam!"
+     },
+     {
+      "sa": "शोभनम्!",
+      "en": "Good! / Brilliant!",
+      "roman": "Śobhanam!"
+     },
+     {
+      "sa": "साधु!",
+      "en": "Well done! / Apt!",
+      "roman": "Sādhu!"
+     },
+     {
+      "sa": "अतीव सुन्दरम्।",
+      "en": "Very beautiful.",
+      "roman": "Atīva sundaram."
+     },
+     {
+      "sa": "सत्यम्।",
+      "en": "True.",
+      "roman": "Satyam."
+     },
+     {
+      "sa": "मह्यम् इदं रोचते।",
+      "en": "I like this. (This is pleasing to me.)",
+      "roman": "Mahyam idaṁ rocate."
+     },
+     {
+      "sa": "अहं सहमता।",
+      "en": "I agree. (female)",
+      "roman": "Ahaṁ sahamatā."
+     },
+     {
+      "sa": "उत्तमं चित्रम्।",
+      "en": "Great picture.",
+      "roman": "Uttamaṁ citram."
+     },
+     {
+      "sa": "शोभनः लेखः।",
+      "en": "Good post / article.",
+      "roman": "Śobhanaḥ lekhaḥ."
+     },
+     {
+      "sa": "अग्रे प्रेषयतु।",
+      "en": "Forward this.",
+      "roman": "Agre preṣayatu."
+     },
+     {
+      "sa": "कृपया वितरतु।",
+      "en": "Please share.",
+      "roman": "Kṛpayā vitaratu."
+     },
+     {
+      "sa": "अभिनन्दनानि!",
+      "en": "Congratulations!",
+      "roman": "Abhinandanāni!"
+     },
+     {
+      "sa": "तव मतं किम्?",
+      "en": "What is your opinion?",
+      "roman": "Tava mataṁ kim?"
+     },
+     {
+      "sa": "हा हा हा!",
+      "en": "Ha ha ha! (Laughing)",
+      "roman": "Hā hā hā!"
+     }
+    ]
+   },
+   {
+    "category_name_en": "Simple Actions",
+    "category_name_sa": "सरल-क्रियाः",
+    "sentences": [
+     {
+      "sa": "अहं गच्छामि।",
+      "en": "I am going.",
+      "roman": "Ahaṁ gacchāmi."
+     },
+     {
+      "sa": "अहम् आगच्छामि।",
+      "en": "I am coming.",
+      "roman": "Ahaṁ āgacchāmi."
+     },
+     {
+      "sa": "भवान् आगच्छतु।",
+      "en": "You come. (to a male, formal)",
+      "roman": "Bhavān āgacchatu."
+     },
+     {
+      "sa": "भवती आगच्छतु।",
+      "en": "You come. (to a female, formal)",
+      "roman": "Bhavatī āgacchatu."
+     },
+     {
+      "sa": "अहं खादामि।",
+      "en": "I am eating.",
+      "roman": "Ahaṁ khādāmi."
+     },
+     {
+      "sa": "अहं पिबामि।",
+      "en": "I am drinking.",
+      "roman": "Ahaṁ pibāmi."
+     },
+     {
+      "sa": "अहं पश्यामि।",
+      "en": "I see.",
+      "roman": "Ahaṁ paśyāmi."
+     },
+     {
+      "sa": "अहं शृणोमि।",
+      "en": "I hear.",
+      "roman": "Ahaṁ śṛṇomi."
+     },
+     {
+      "sa": "कृपया वदतु।",
+      "en": "Please tell/speak.",
+      "roman": "Kṛpayā vadatu."
+     },
+     {
+      "sa": "अत्र उपविशतु।",
+      "en": "Sit here.",
+      "roman": "Atra upaviśatu."
+     },
+     {
+      "sa": "शीघ्रं करोतु।",
+      "en": "Do it fast.",
+      "roman": "Śīghraṁ karotu."
+     },
+     {
+      "sa": "शनैः वदतु।",
+      "en": "Speak slowly.",
+      "roman": "Śanaiḥ vadatu."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence_pack_name": "Samskrita Conversational Pack 2",
+  "version": "1.0",
+  "comment": "A second, verified set of sentences focusing on new daily-life categories. Accuracy is prioritized.",
+  "categories": [
+   {
+    "category_name_en": "Family & Home",
+    "category_name_sa": "कुटुम्बः एवं गृहम्",
+    "sentences": [
+     {
+      "sa": "तव कुटुम्बं कथमस्ति?",
+      "en": "How is your family?",
+      "roman": "Tava kuṭumbaṁ kathamasti?"
+     },
+     {
+      "sa": "गृहे सर्वे कुशालिनः सन्ति।",
+      "en": "All are well at home.",
+      "roman": "Gṛhe sarve kuśālinaḥ santi."
+     },
+     {
+      "sa": "एषः मम पिता।",
+      "en": "This is my father.",
+      "roman": "Eṣaḥ mama pitā."
+     },
+     {
+      "sa": "एषा मम माता।",
+      "en": "This is my mother.",
+      "roman": "Eṣā mama mātā."
+     },
+     {
+      "sa": "मम एकः भ्राता अस्ति।",
+      "en": "I have one brother.",
+      "roman": "Mama ekaḥ bhrātā asti."
+     },
+     {
+      "sa": "मम एका भगिनी अस्ति।",
+      "en": "I have one sister.",
+      "roman": "Mama ekā bhaginī asti."
+     },
+     {
+      "sa": "प्रातराशे किं अस्ति?",
+      "en": "What is for breakfast?",
+      "roman": "Prātarāśe kiṁ asti?"
+     },
+     {
+      "sa": "भोजने किं अस्ति?",
+      "en": "What is for lunch/dinner?",
+      "roman": "Bhojane kiṁ asti?"
+     },
+     {
+      "sa": "अहं गृह-शुद्धिं करोमि।",
+      "en": "I am cleaning the house.",
+      "roman": "Ahaṁ gṛha-śuddhiṁ karomi."
+     },
+     {
+      "sa": "अहं पााकं करोमि।",
+      "en": "I am cooking.",
+      "roman": "Ahaṁ pākaṁ karomi."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Work & Study",
+    "category_name_sa": "कार्यम् एवं अध्ययनम्",
+    "sentences": [
+     {
+      "sa": "भवान् किं कार्यं करोति?",
+      "en": "What work do you do? (to a male)",
+      "roman": "Bhavān kiṁ kāryaṁ karoti?"
+     },
+     {
+      "sa": "भवती किं कार्यं करोति?",
+      "en": "What work do you do? (to a female)",
+      "roman": "Bhavatī kiṁ kāryaṁ karoti?"
+     },
+     {
+      "sa": "अहं छात्रः अस्मि।",
+      "en": "I am a student. (male)",
+      "roman": "Ahaṁ chātraḥ asmi."
+     },
+     {
+      "sa": "अहं छात्रा अस्मि।",
+      "en": "I am a student. (female)",
+      "roman": "Ahaṁ chātrā asmi."
+     },
+     {
+      "sa": "अहं शिक्षकः अस्मि।",
+      "en": "I am a teacher. (male)",
+      "roman": "Ahaṁ śikṣakaḥ asmi."
+     },
+     {
+      "sa": "अहं शिक्षिका अस्मि।",
+      "en": "I am a teacher. (female)",
+      "roman": "Ahaṁ śikṣikā asmi."
+     },
+     {
+      "sa": "अहं कार्याालये कार्यं करोमि।",
+      "en": "I work in an office.",
+      "roman": "Ahaṁ kāryālaye kāryaṁ karomi."
+     },
+     {
+      "sa": "भवान् किं पठति?",
+      "en": "What are you studying? (to a male)",
+      "roman": "Bhavān kiṁ paṭhati?"
+     },
+     {
+      "sa": "भवती किं पठति?",
+      "en": "What are you studying? (to a female)",
+      "roman": "Bhavatī kiṁ paṭhati?"
+     },
+     {
+      "sa": "अहं संस्कृतं पठामि।",
+      "en": "I am studying Sanskrit.",
+      "roman": "Ahaṁ saṁskṛtaṁ paṭhāmi."
+     },
+     {
+      "sa": "अद्य सभा अस्ति।",
+      "en": "There is a meeting today.",
+      "roman": "Adya sabhā asti."
+     },
+     {
+      "sa": "मम कार्यं समाप्तम्।",
+      "en": "My work is finished.",
+      "roman": "Mama kāryaṁ samāptam."
+     },
+     {
+      "sa": "अद्य मम विरामः अस्ति।",
+      "en": "It is my holiday/day off today.",
+      "roman": "Adya mama virāmaḥ asti."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Travel",
+    "category_name_sa": "प्रवासः",
+    "sentences": [
+     {
+      "sa": "भवान् कुत्र गच्छति?",
+      "en": "Where are you going? (to a male)",
+      "roman": "Bhavān kutra gacchati?"
+     },
+     {
+      "sa": "भवती कुत्र गच्छति?",
+      "en": "Where are you going? (to a female)",
+      "roman": "Bhavatī kutra gacchati?"
+     },
+     {
+      "sa": "अहम् आपणं गच्छामि।",
+      "en": "I am going to the market.",
+      "roman": "Ahaṁ āpaṇaṁ gacchāmi."
+     },
+     {
+      "sa": "अहं मन्दिरं गच्छामि।",
+      "en": "I am going to the temple.",
+      "roman": "Ahaṁ mandiraṁ gacchāmi."
+     },
+     {
+      "sa": "अहं ग्रामं गच्छामि।",
+      "en": "I am going to the village.",
+      "roman": "Ahaṁ grāmaṁ gacchāmi."
+     },
+     {
+      "sa": "लोकयानं कदा आगमिष्यति?",
+      "en": "When will the bus come?",
+      "roman": "Lokayānam kadā āgamiṣyati?"
+     },
+     {
+      "sa": "रेलयानं कदा आगमिष्यति?",
+      "en": "When will the train come?",
+      "roman": "Relayānam kadā āgamiṣyati?"
+     },
+     {
+      "sa": "तव यात्रा सफला भवतु।",
+      "en": "Have a successful journey.",
+      "roman": "Tava yātrā saphalā bhavatu."
+     },
+     {
+      "sa": "अहं प्राप्तवान्।",
+      "en": "I have reached. (male)",
+      "roman": "Ahaṁ prāptavān."
+     },
+     {
+      "sa": "अहं प्राप्तवती।",
+      "en": "I have reached. (female)",
+      "roman": "Ahaṁ prāptavatī."
+     },
+     {
+      "sa": "यात्रा सम्यक् आसीत्।",
+      "en": "The journey was good.",
+      "roman": "Yātrā samyak āsīt."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence_pack_name": "Samskrita Conversational Pack 3",
+  "version": "1.0",
+  "comment": "A third, verified set of sentences focusing on Food, Weather, and Health.",
+  "categories": [
+   {
+    "category_name_en": "Food & Dining",
+    "category_name_sa": "खाद्यम् एवं भोजनम्",
+    "sentences": [
+     {
+      "sa": "भवान् किं खादति?",
+      "en": "What are you eating? (to a male)",
+      "roman": "Bhavān kiṁ khādati?"
+     },
+     {
+      "sa": "भवती किं खादति?",
+      "en": "What are you eating? (to a female)",
+      "roman": "Bhavatī kiṁ khādati?"
+     },
+     {
+      "sa": "अहं फलं खादामि।",
+      "en": "I am eating a fruit.",
+      "roman": "Ahaṁ phalaṁ khādāmi."
+     },
+     {
+      "sa": "अहं ओदनं खादामि।",
+      "en": "I am eating rice.",
+      "roman": "Ahaṁ odanaṁ khādāmi."
+     },
+     {
+      "sa": "भवान् किं पिबति?",
+      "en": "What are you drinking? (to a male)",
+      "roman": "Bhavān kiṁ pibati?"
+     },
+     {
+      "sa": "भवती किं पिबति?",
+      "en": "What are you drinking? (to a female)",
+      "roman": "Bhavatī kiṁ pibati?"
+     },
+     {
+      "sa": "अहं जलं पिबामि।",
+      "en": "I am drinking water.",
+      "roman": "Ahaṁ jalaṁ pibāmi."
+     },
+     {
+      "sa": "अहं चायं पिबामि।",
+      "en": "I am drinking tea.",
+      "roman": "Ahaṁ cāyaṁ pibāmi."
+     },
+     {
+      "sa": "भोजनं बहु स्वादिष्टम् अस्ति।",
+      "en": "The food is very tasty.",
+      "roman": "Bhojanaṁ bahu svādiṣṭam asti."
+     },
+     {
+      "sa": "मह्यं मधुरं रोचते।",
+      "en": "I like sweets.",
+      "roman": "Mahyaṁ madhuraṁ rocate."
+     },
+     {
+      "sa": "मह्यं न रोचते।",
+      "en": "I don't like it.",
+      "roman": "Mahyaṁ na rocate."
+     },
+     {
+      "sa": "किमपि मास्तु, धन्यवादः।",
+      "en": "Nothing, thank you.",
+      "roman": "Kimapi māstu, dhanyavādaḥ."
+     },
+     {
+      "sa": "मम उदरं पूर्णम्।",
+      "en": "My stomach is full.",
+      "roman": "Mama udaraṁ pūrṇam."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Weather",
+    "category_name_sa": "वातावरणम्",
+    "sentences": [
+     {
+      "sa": "अद्य वातावरणं कथमस्ति?",
+      "en": "How is the weather today?",
+      "roman": "Adya vātāvaraṇaṁ kathamasti?"
+     },
+     {
+      "sa": "अद्य बहु उष्णम् अस्ति।",
+      "en": "It is very hot today.",
+      "roman": "Adya bahu uṣṇam asti."
+     },
+     {
+      "sa": "अद्य बहु शीतम् अस्ति।",
+      "en": "It is very cold today.",
+      "roman": "Adya bahu śītam asti."
+     },
+     {
+      "sa": "वृष्टिः भवति।",
+      "en": "It is raining.",
+      "roman": "Vṛṣṭiḥ bhavati."
+     },
+     {
+      "sa": "वृष्टिः भविष्यति वा?",
+      "en": "Will it rain?",
+      "roman": "Vṛṣṭiḥ bhaviṣyati vā?"
+     },
+     {
+      "sa": "वायुः वाति।",
+      "en": "The wind is blowing.",
+      "roman": "Vāyuḥ vāti."
+     },
+     {
+      "sa": "वातावरणं शोभनम् अस्ति।",
+      "en": "The weather is pleasant.",
+      "roman": "Vātāvaraṇaṁ śobhanam asti."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Health",
+    "category_name_sa": "स्वास्थ्यम्",
+    "sentences": [
+     {
+      "sa": "तव स्वास्थ्यं कथमस्ति?",
+      "en": "How is your health?",
+      "roman": "Tava svāsthyaṁ kathamasti?"
+     },
+     {
+      "sa": "मम स्वास्थ्यं सम्यक् अस्ति।",
+      "en": "My health is good.",
+      "roman": "Mama svāsthyaṁ samyak asti."
+     },
+     {
+      "sa": "मम स्वास्थ्यं सम्यक् नास्ति।",
+      "en": "My health is not good.",
+      "roman": "Mama svāsthyaṁ samyak nāsti."
+     },
+     {
+      "sa": "अहं स्वस्थः अस्मि।",
+      "en": "I am healthy. (male)",
+      "roman": "Ahaṁ svasthaḥ asmi."
+     },
+     {
+      "sa": "अहं स्वस्था अस्मि।",
+      "en": "I am healthy. (female)",
+      "roman": "Ahaṁ svasthā asmi."
+     },
+     {
+      "sa": "मम शिरोवेदना अस्ति।",
+      "en": "I have a headache.",
+      "roman": "Mama śirovedanā asti."
+     },
+     {
+      "sa": "मम ज्वरः अस्ति।",
+      "en": "I have a fever.",
+      "roman": "Mama jvaraḥ asti."
+     },
+     {
+      "sa": "कृपया औषधं स्वीकरोतु।",
+      "en": "Please take medicine.",
+      "roman": "Kṛpayā auṣadhaṁ svīkarotu."
+     },
+     {
+      "sa": "विश्रामं स्वीकरोतु।",
+      "en": "Take rest.",
+      "roman": "Viśrāmaṁ svīkarotu."
+     },
+     {
+      "sa": "शीघ्रं स्वस्थः भवतु।",
+      "en": "Get well soon. (to a male)",
+      "roman": "Śīghraṁ svasthaḥ bhavatu."
+     },
+     {
+      "sa": "शीघ्रं स्वस्था भवतु।",
+      "en": "Get well soon. (to a female)",
+      "roman": "Śīghraṁ svasthā bhavatu."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence_pack_name": "Samskrita Conversational Pack 4",
+  "version": "1.0",
+  "comment": "A fourth, verified set of sentences focusing on Emotions, Requests, and Time/Date.",
+  "categories": [
+   {
+    "category_name_en": "Emotions & Feelings",
+    "category_name_sa": "भावाः एवं भावनाः",
+    "sentences": [
+     {
+      "sa": "अहं सन्तुष्टः अस्मि।",
+      "en": "I am happy / satisfied. (male)",
+      "roman": "Ahaṁ santuṣṭaḥ asmi."
+     },
+     {
+      "sa": "अहं सन्तुष्टा अस्मि।",
+      "en": "I am happy / satisfied. (female)",
+      "roman": "Ahaṁ santuṣṭā asmi."
+     },
+     {
+      "sa": "अहं खिन्नः अस्मि।",
+      "en": "I am sad. (male)",
+      "roman": "Ahaṁ khinnaḥ asmi."
+     },
+     {
+      "sa": "अहं खिन्ना अस्मि।",
+      "en": "I am sad. (female)",
+      "roman": "Ahaṁ khinnā asmi."
+     },
+     {
+      "sa": "मह्यं क्रोधः आगच्छति।",
+      "en": "I am getting angry.",
+      "roman": "Mahyaṁ krodhaḥ āgacchati."
+     },
+     {
+      "sa": "अहं श्रान्तः अस्मि।",
+      "en": "I am tired. (male)",
+      "roman": "Ahaṁ śrāntaḥ asmi."
+     },
+     {
+      "sa": "अहं श्रान्ता अस्मि।",
+      "en": "I am tired. (female)",
+      "roman": "Ahaṁ śrāntā asmi."
+     },
+     {
+      "sa": "मह्यं भयं भवति।",
+      "en": "I am scared. / I feel fear.",
+      "roman": "Mahyaṁ bhayaṁ bhavati."
+     },
+     {
+      "sa": "इदम् आश्चर्यम् अस्ति।",
+      "en": "This is surprising.",
+      "roman": "Idam āścaryam asti."
+     },
+     {
+      "sa": "अहं निश्चिन्ततः अस्मि।",
+      "en": "I am relaxed. (male)",
+      "roman": "Ahaṁ niścintataḥ asmi."
+     },
+     {
+      "sa": "अहं निश्चिन्ता अस्मि।",
+      "en": "I am relaxed. (female)",
+      "roman": "Ahaṁ niścintā asmi."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Common Requests",
+    "category_name_sa": "सामान्याः अभ्यर्थनाः",
+    "sentences": [
+     {
+      "sa": "कृपया साहाय्यं करोतु।",
+      "en": "Please help.",
+      "roman": "Kṛpayā sāhāyyaṁ karotu."
+     },
+     {
+      "sa": "कृपया मह्यं जलं ददातु।",
+      "en": "Please give me water.",
+      "roman": "Kṛpayā mahyaṁ jalaṁ dadātu."
+     },
+     {
+      "sa": "कृपया मह्यं लेखनीं ददातु।",
+      "en": "Please give me a pen.",
+      "roman": "Kṛpayā mahyaṁ lekhanīṁ dadātu."
+     },
+     {
+      "sa": "कृपया पुनः वदतु।",
+      "en": "Please say it again.",
+      "roman": "Kṛpayā punaḥ vadatu."
+     },
+     {
+      "sa": "कृपया द्वारम् उद्घाटयतु।",
+      "en": "Please open the door.",
+      "roman": "Kṛpayā dvāram udghāṭayatu."
+     },
+     {
+      "sa": "कृपया द्वारं पिदधातु।",
+      "en": "Please close the door.",
+      "roman": "Kṛpayā dvāraṁ pidadhātu."
+     },
+     {
+      "sa": "कृपया तत्र गच्छतु।",
+      "en": "Please go there.",
+      "roman": "Kṛpayā tatra gacchatu."
+     },
+     {
+      "sa": "कृपया अत्र आगच्छतु।",
+      "en": "Please come here.",
+      "roman": "Kṛpayā atra āgacchatu."
+     },
+     {
+      "sa": "मां क्षाम्यतु।",
+      "en": "Forgive me.",
+      "roman": "Māṁ kṣāmyatu."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Time & Date",
+    "category_name_sa": "समयः एवं दिनाङ्कः",
+    "sentences": [
+     {
+      "sa": "इदानीं कः समयः?",
+      "en": "What time is it now?",
+      "roman": "Idānīṁ kaḥ samayaḥ?"
+     },
+     {
+      "sa": "पञ्चवादनम्।",
+      "en": "It is 5 o'clock.",
+      "roman": "Pañcavādanam."
+     },
+     {
+      "sa": "सार्ध-पञ्चवादनम्।",
+      "en": "It is 5:30.",
+      "roman": "Sārdha-pañcavādanam."
+     },
+     {
+      "sa": "अद्य कः वासरः?",
+      "en": "What day is it today?",
+      "roman": "Adya kaḥ vāsaraḥ?"
+     },
+     {
+      "sa": "अद्य गुरुवासरः।",
+      "en": "Today is Thursday.",
+      "roman": "Adya guruvāsaraḥ."
+     },
+     {
+      "sa": "अद्य कः दिनाङ्कः?",
+      "en": "What is the date today?",
+      "roman": "Adya kaḥ dināṅkaḥ?"
+     },
+     {
+      "sa": "श्वः शुक्रवासरः।",
+      "en": "Tomorrow is Friday.",
+      "roman": "Śvaḥ śukravāsaraḥ."
+     },
+     {
+      "sa": "ह्यः बुधवासरः आसीत्।",
+      "en": "Yesterday was Wednesday.",
+      "roman": "Hyaḥ budhavāsaraḥ āsīt."
+     },
+     {
+      "sa": "अहं परश्वः गमिष्यामि।",
+      "en": "I will go the day after tomorrow.",
+      "roman": "Ahaṁ paraśvaḥ gamiṣyāmi."
+     },
+     {
+      "sa": "अहं प्रपरश्वः आगतवान्।",
+      "en": "I came the day before yesterday. (male)",
+      "roman": "Ahaṁ paraparaśvaḥ āgatavān."
+     },
+     {
+      "sa": "अहं प्रपरश्वः आगतवती।",
+      "en": "I came the day before yesterday. (female)",
+      "roman": "Ahaṁ paraparaśvaḥ āgatavatī."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence_pack_name": "Samskrita Conversational Pack 5",
+  "version": "1.0",
+  "comment": "A fifth, verified set of sentences focusing on Shopping and Festivals.",
+  "categories": [
+   {
+    "category_name_en": "Shopping & Market",
+    "category_name_sa": "कयणम् एवं आपणः",
+    "sentences": [
+     {
+      "sa": "अहम् आपणं गच्छामि।",
+      "en": "I am going to the market/shop.",
+      "roman": "Aham āpaṇaṁ gacchāmi."
+     },
+     {
+      "sa": "भवते/भवत्यै किम् आवश्यकम्?",
+      "en": "What do you need? (to male/female)",
+      "roman": "Bhavate/Bhavatyai kim āvaśyakam?"
+     },
+     {
+      "sa": "मह्यं शाकानि आवश्यकानि।",
+      "en": "I need vegetables.",
+      "roman": "Mahyaṁ śākāni āvaśyakāni."
+     },
+     {
+      "sa": "मह्यं फलानि आवश्यकानि।",
+      "en": "I need fruits.",
+      "roman": "Mahyaṁ phalāni āvaśyakāni."
+     },
+     {
+      "sa": "एतस्य मूल्यं किम्?",
+      "en": "What is its price?",
+      "roman": "Etasya mūlyaṁ kim?"
+     },
+     {
+      "sa": "मूल्यम् अधिकम् अस्ति।",
+      "en": "The price is high.",
+      "roman": "Mūlyam adhikam asti."
+     },
+     {
+      "sa": "कृपया किञ्चित् न्यूनं करोतु।",
+      "en": "Please reduce it a little.",
+      "roman": "Kṛpayā kiñcit nyūnaṁ karotu."
+     },
+     {
+      "sa": "इदं स्वीकरोतु।",
+      "en": "Take this.",
+      "roman": "Idaṁ svīkarotu."
+     },
+     {
+      "sa": "मह्यं तत् दर्शयतु।",
+      "en": "Show me that.",
+      "roman": "Mahyaṁ tat darśayatu."
+     },
+     {
+      "sa": "अन्यं दर्शयतु।",
+      "en": "Show another one.",
+      "roman": "Anyaṁ darśayatu."
+     },
+     {
+      "sa": "एतत् सम्यक् अस्ति।",
+      "en": "This is good.",
+      "roman": "Etat samyak asti."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Holidays & Festivals",
+    "category_name_sa": "उत्सवाः एवं पर्वाणि",
+    "sentences": [
+     {
+      "sa": "उत्सवस्य अभिनन्दनानि!",
+      "en": "Congratulations for the festival!",
+      "roman": "Utsavasya abhinandanāni!"
+     },
+     {
+      "sa": "दीपावल्याः शुभाशयाः!",
+      "en": "Happy Deepavali!",
+      "roman": "Dīpāvalyāḥ śubhāśayāḥ!"
+     },
+     {
+      "sa": "युगादेः शुभाशयाः!",
+      "en": "Happy Yugadi/Ugadi!",
+      "roman": "Yugādeḥ śubhāśayāḥ!"
+     },
+     {
+      "sa": "संक्रान्ति-शुभाशयाः!",
+      "en": "Happy Sankranti!",
+      "roman": "Saṁkrānti-śubhāśayāḥ!"
+     },
+     {
+      "sa": "नववर्षस्य शुभाशयाः!",
+      "en": "Happy New Year!",
+      "roman": "Navavarṣasya śubhāśayāḥ!"
+     },
+     {
+      "sa": "होली-पर्वणः शुभाशयाः!",
+      "en": "Happy Holi!",
+      "roman": "Holī-parvaṇaḥ śubhāśayāḥ!"
+     },
+     {
+      "sa": "भवान् उत्सवं कथम् आचरति?",
+      "en": "How do you celebrate the festival? (to a male)",
+      "roman": "Bhavān utsavaṁ katham ācarati?"
+     },
+     {
+      "sa": "भवती उत्सवं कथम् आचरति?",
+      "en": "How do you celebrate the festival? (to a female)",
+      "roman": "Bhavatī utsavaṁ katham ācarati?"
+     },
+     {
+      "sa": "गृहे मिष्टान्नं निर्मितम्।",
+      "en": "Sweets are made at home.",
+      "roman": "Gṛhe miṣṭānnaṁ nirmitam."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence_pack_name": "Samskrita Conversational Pack 6",
+  "version": "1.0",
+  "comment": "A sixth, verified set of sentences for specific role-based scenarios (Doctor, Driver, Teacher, Friends).",
+  "categories": [
+   {
+    "category_name_en": "Doctor & Patient",
+    "category_name_sa": "वैद्यः एवं रोगी",
+    "sentences": [
+     {
+      "sa": "का समस्या अस्ति?",
+      "en": "What is the problem?",
+      "roman": "Kā samasyā asti?"
+     },
+     {
+      "sa": "मम ज्वरः अस्ति।",
+      "en": "I have a fever.",
+      "roman": "Mama jvaraḥ asti."
+     },
+     {
+      "sa": "मम उदरवेदना अस्ति।",
+      "en": "I have a stomach ache.",
+      "roman": "Mama udaravedanā asti."
+     },
+     {
+      "sa": "कुत्र वेदना अस्ति?",
+      "en": "Where is the pain?",
+      "roman": "Kutra vedanā asti?"
+     },
+     {
+      "sa": "कृपया मुखम् उद्घाटयतु।",
+      "en": "Please open your mouth.",
+      "roman": "Kṛpayā mukham udghāṭayatu."
+     },
+     {
+      "sa": "इदम् औषधं स्वीकरोतु।",
+      "en": "Take this medicine.",
+      "roman": "Idam auṣadhaṁ svīkarotu."
+     },
+     {
+      "sa": "दिने त्रिवारं स्वीकरोतु।",
+      "en": "Take it three times a day.",
+      "roman": "Dine trivāraṁ svīkarotu."
+     },
+     {
+      "sa": "उष्णजलं पिबतु।",
+      "en": "Drink warm water.",
+      "roman": "Uṣṇajalaṁ pibatu."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Driver & Passenger",
+    "category_name_sa": "चालकः एवं प्रवासी",
+    "sentences": [
+     {
+      "sa": "भवान् रेलस्थानकं गच्छति वा?",
+      "en": "Are you going to the railway station? (to a male)",
+      "roman": "Bhavān relasthānakaṁ gacchati vā?"
+     },
+     {
+      "sa": "मां विमानस्थानकं नयतु।",
+      "en": "Take me to the airport.",
+      "roman": "Māṁ vimānasthānakaṁ nayatu."
+     },
+     {
+      "sa": "भाटकं कियत् अस्ति?",
+      "en": "How much is the fare?",
+      "roman": "Bhāṭakaṁ kiyat asti?"
+     },
+     {
+      "sa": "अत्र तिष्ठतु।",
+      "en": "Stop here.",
+      "roman": "Atra tiṣṭhatu."
+     },
+     {
+      "sa": "सरलं गच्छतु।",
+      "en": "Go straight.",
+      "roman": "Saralaṁ gacchatu."
+     },
+     {
+      "sa": "वामतः गच्छतु।",
+      "en": "Go left.",
+      "roman": "Vāmataḥ gacchatu."
+     },
+     {
+      "sa": "दक्षिणतः गच्छतु।",
+      "en": "Go right.",
+      "roman": "Dakṣiṇataḥ gacchatu."
+     },
+     {
+      "sa": "शीघ्रं गच्छतु।",
+      "en": "Go fast.",
+      "roman": "Śīghraṁ gacchatu."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Teacher & Student",
+    "category_name_sa": "शिक्षकः एवं छात्रः",
+    "sentences": [
+     {
+      "sa": "भवान् ज्ञातवान् वा?",
+      "en": "Did you understand? (to a male student)",
+      "roman": "Bhavān jñātavān vā?"
+     },
+     {
+      "sa": "भवती ज्ञातवती वा?",
+      "en": "Did you understand? (to a female student)",
+      "roman": "Bhavatī jñātavatī vā?"
+     },
+     {
+      "sa": "आम्, अहं ज्ञातवान्।",
+      "en": "Yes, I understood. (male)",
+      "roman": "Ām, ahaṁ jñātavān."
+     },
+     {
+      "sa": "आम्, अहं ज्ञातवती।",
+      "en": "Yes, I understood. (female)",
+      "roman": "Ām, ahaṁ jñātavatī."
+     },
+     {
+      "sa": "न, अहं न ज्ञातवान्।",
+      "en": "No, I did not understand. (male)",
+      "roman": "Na, ahaṁ na jñātavān."
+     },
+     {
+      "sa": "न, अहं न ज्ञातवती।",
+      "en": "No, I did not understand. (female)",
+      "roman": "Na, ahaṁ na jñātavatī."
+     },
+     {
+      "sa": "मम एकः संशयः अस्ति।",
+      "en": "I have one doubt.",
+      "roman": "Mama ekaḥ saṁśayaḥ asti."
+     },
+     {
+      "sa": "कृपया पुनः वदतु।",
+      "en": "Please repeat / say it again.",
+      "roman": "Kṛpayā punaḥ vadatu."
+     },
+     {
+      "sa": "भवान् गृहकार्यं कृतवान् वा?",
+      "en": "Did you do the homework? (to a male)",
+      "roman": "Bhavān gṛhakāryaṁ kṛtavān vā?"
+     },
+     {
+      "sa": "भवती गृहकार्यं कृतवती वा?",
+      "en": "Did you do the homework? (to a female)",
+      "roman": "Bhavatī gṛhakāryaṁ kṛtavatī vā?"
+     },
+     {
+      "sa": "पुस्तकं पठतु।",
+      "en": "Read the book.",
+      "roman": "Pustakaṁ paṭhatu."
+     },
+     {
+      "sa": "फलके लिखतु।",
+      "en": "Write on the board.",
+      "roman": "Phalake likhatu."
+     },
+     {
+      "sa": "तूष्णीं तिष्ठतु।",
+      "en": "Be quiet.",
+      "roman": "Tūṣṇīṁ tiṣṭhatu."
+     }
+    ]
+   },
+   {
+    "category_name_en": "Friends in Movie Theater",
+    "category_name_sa": "मित्राणि - चलच्चित्रमन्दिरे",
+    "sentences": [
+     {
+      "sa": "वयं किं चलच्चित्रं पश्यामः?",
+      "en": "Which movie shall we see?",
+      "roman": "Vayaṁ kiṁ calaccitraṁ paśyāmaḥ?"
+     },
+     {
+      "sa": "भवान् टिकटं क्रीतवान् वा?",
+      "en": "Did you buy the tickets? (to a male)",
+      "roman": "Bhavān ṭikaṭaṁ krītavān vā?"
+     },
+     {
+      "sa": "भवती टिकटं क्रीतवती वा?",
+      "en": "Did you buy the tickets? (to a female)",
+      "roman": "Bhavatī ṭikaṭaṁ krītavatī vā?"
+     },
+     {
+      "sa": "चलच्चित्रम् आरभते।",
+      "en": "The movie is starting.",
+      "roman": "Calaccitram ārabhate."
+     },
+     {
+      "sa": "चलच्चित्रं सम्यक् आसीत्।",
+      "en": "The movie was good.",
+      "roman": "Calaccitraṁ samyak āsīt."
+     },
+     {
+      "sa": "चलच्चित्रं सम्यक् न आसीत्।",
+      "en": "The movie was not good.",
+      "roman": "Calaccitraṁ samyak na āsīt."
+     },
+     {
+      "sa": "किञ्चित् खाद्यं क्रीणीमः।",
+      "en": "Let's buy some food.",
+      "roman": "Kiñcit khādyaṁ krīṇīmaḥ."
+     },
+     {
+      "sa": "तव आसनं कुत्र अस्ति?",
+      "en": "Where is your seat?",
+      "roman": "Tava āsanaṁ kutra asti?"
+     }
+    ]
+   }
+  ]
+ }
+]

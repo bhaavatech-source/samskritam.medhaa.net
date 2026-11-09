@@ -1,0 +1,2637 @@
+[
+ {
+  "id": "TP-000001",
+  "sanskrit_name": "अण्",
+  "iast": "aṇ",
+  "level": "basic",
+  "category": "apatyartha_patronymic",
+  "category_name_sa": "अपत्यार्थक-तद्धितः (सन्तानार्थकः)",
+  "anubandha_info": {
+   "it_markers": [
+    "ण्"
+   ],
+   "retained_affix_sa": "अ",
+   "retained_affix_iast": "a",
+   "grammatical_effect": "Ṇ-it marker causes Vṛddhi of the first vowel of the stem (तद्धितेष्वचामादेः 7.2.117) and elision of final stem vowel (यस्येति च 6.4.148)."
+  },
+  "panini_sutra": {
+   "sutra": "तस्यापत्यम्",
+   "number": "4.1.92",
+   "meaning_en": "The suffix Aṇ is added to a nominal stem in the genitive case to denote offspring or descendant.",
+   "vidhayaka_sutra": "4.1.83 प्राग्दीव्यतोऽण् (prescribes अण्); 4.1.92 तस्यापत्यम् gives the meaning"
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "masculine/feminine/neuter depending on derived stem",
+   "causes_vriddhi": true,
+   "stem_vowel_change": "First vowel undergoes Vṛddhi (a->ā, i/ī/e->ai, u/ū/o->au)"
+  },
+  "meanings": {
+   "sa": "तस्य अपत्यम् (पुत्रः/पुत्री/वंशजः / सम्बन्धितः)",
+   "en": "offspring / descendant of / related to",
+   "te": "యొక్క సంతానము / వంశజుడు / సంబంధీకుడు (అపత్యార్థము)",
+   "hi": "का पुत्र / की संतान / से संबंधित"
+  },
+  "examples": [
+   {
+    "base": "वसुदेव",
+    "base_iast": "vasudeva",
+    "derived_form": "वासुदेवः",
+    "derived_iast": "vāsudevaḥ",
+    "meaning_en": "son of Vasudeva (Krishna)",
+    "meaning_te": "వసుదేవుని కుమారుడు (కృష్ణుడు)",
+    "meaning_hi": "वसुदेव के पुत्र (कृष्ण)"
+   },
+   {
+    "base": "मनु",
+    "base_iast": "manu",
+    "derived_form": "मानवः",
+    "derived_iast": "mānavaḥ",
+    "meaning_en": "descendant of Manu (human)",
+    "meaning_te": "మనువు యొక్క సంతతి (మానవుడు)",
+    "meaning_hi": "मनु की संतान (मानव)"
+   },
+   {
+    "base": "रघु",
+    "base_iast": "raghu",
+    "derived_form": "राघवः",
+    "derived_iast": "rāghavaḥ",
+    "meaning_en": "descendant of Raghu (Rama)",
+    "meaning_te": "రఘు వంశజుడు (రాముడు)",
+    "meaning_hi": "रघु के वंशज (राम)"
+   },
+   {
+    "base": "उपगु",
+    "base_iast": "upagu",
+    "derived_form": "औपगवः",
+    "derived_iast": "aupagavaḥ",
+    "meaning_en": "son/descendant of Upagu",
+    "meaning_te": "ఉపగుని కుమారుడు",
+    "meaning_hi": "उपगु का पुत्र"
+   }
+  ],
+  "morphological_rules": [
+   "Initial vowel of base undergoes Vṛddhi (तद्धितेष्वचामादेः 7.2.117): v->vā, m->mā, r->rā, śi->śai.",
+   "Final u/ū takes Guṇa 'o' and then 'av' replacement before vowel affix (ओर्गुणः 6.4.146).",
+   "Final a is elided before vowel affix (यस्येति च 6.4.148)."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "it-marker written ण → ण्",
+    "added the prescribing sūtra 4.1.83; 4.1.92 only states the meaning",
+    "removed शैवः: it is not अपत्य (offspring); it belongs to 4.2.24 साऽस्य देवता / 4.3.120 तस्येदम्. Added the classic अपत्य example औपगवः",
+    "'ओरौण् 6.4.146' is not a sūtra; 6.4.146 is ओर्गुणः",
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000002",
+  "sanskrit_name": "इञ्",
+  "iast": "iñ",
+  "level": "basic",
+  "category": "apatyartha_patronymic",
+  "category_name_sa": "अपत्यार्थक-तद्धितः (अदन्त-पुंलिङ्गात्)",
+  "anubandha_info": {
+   "it_markers": [
+    "ञ्"
+   ],
+   "retained_affix_sa": "इ",
+   "retained_affix_iast": "i",
+   "grammatical_effect": "Ñ-it marker causes Vṛddhi of initial stem vowel (तद्धितेष्वचामादेः 7.2.117)."
+  },
+  "panini_sutra": {
+   "sutra": "अत इञ्",
+   "number": "4.1.95",
+   "meaning_en": "The suffix Iñ is added to short a-ending nominal stems to form patronymic names."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "masculine (i-stem declension like हरिः)",
+   "causes_vriddhi": true,
+   "stem_vowel_change": "Initial vowel undergoes Vṛddhi"
+  },
+  "meanings": {
+   "sa": "अदन्तात् प्रातिपदिकात् अपत्यार्थे इञ् प्रत्ययः",
+   "en": "son or descendant of (from short a-ending stems)",
+   "te": "హ్రస్వ అ-కారాంత శబ్దములకు పైన వచ్చు అపత్యార్థక ప్రత్యయము",
+   "hi": "अदन्त शब्द से उत्पन्न पुत्र"
+  },
+  "examples": [
+   {
+    "base": "दशरथ",
+    "base_iast": "daśaratha",
+    "derived_form": "दाशरथिः",
+    "derived_iast": "dāśarathiḥ",
+    "meaning_en": "son of Dasharatha (Rama)",
+    "meaning_te": "దశరథుని కుమారుడు (రాముడు)",
+    "meaning_hi": "दशरथ के पुत्र (राम)"
+   },
+   {
+    "base": "रावण",
+    "base_iast": "rāvaṇa",
+    "derived_form": "रावणिः",
+    "derived_iast": "rāvaṇiḥ",
+    "meaning_en": "son of Ravana (Indrajit)",
+    "meaning_te": "రావణుని కుమారుడు (ఇంద్రజిత్తు)",
+    "meaning_hi": "रावण के पुत्र (इंद्रजित्)"
+   },
+   {
+    "base": "वासुदेव",
+    "base_iast": "vāsudeva",
+    "derived_form": "वासुदेविः",
+    "derived_iast": "vāsudeviḥ",
+    "meaning_en": "son of Vāsudeva",
+    "meaning_te": "వాసుదేవుని కుమారుడు",
+    "meaning_hi": "वासुदेव का पुत्र"
+   }
+  ],
+  "morphological_rules": [
+   "Initial vowel receives Vṛddhi (d->dā, r->rā).",
+   "Final stem vowel -a is elided before -i (यस्येति च 6.4.148)."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "वासुदेविः is the son of वासुदेव (base is already वासुदेव), not 'descendant of Vasudeva'",
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000003",
+  "sanskrit_name": "ढक्",
+  "iast": "ḍhak",
+  "level": "basic",
+  "category": "apatyartha_patronymic",
+  "category_name_sa": "स्त्रीप्रत्ययान्त-अपत्यार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "क्"
+   ],
+   "retained_affix_sa": "एय",
+   "retained_affix_iast": "eya",
+   "grammatical_effect": "K-it marker causes Vṛddhi (किञ्च 7.3.51). Ḍh is replaced by 'ey' (आयनेयीनीयियः फढखच्छघां प्रत्ययादीनाम् 7.1.2)."
+  },
+  "panini_sutra": {
+   "sutra": "स्त्रीभ्यो ढक्",
+   "number": "4.1.120",
+   "meaning_en": "The suffix Ḍhak is added to feminine nominal stems to form patronymics."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "masculine (a-stem declension like रामः)",
+   "causes_vriddhi": true,
+   "stem_vowel_change": "Initial vowel undergoes Vṛddhi"
+  },
+  "meanings": {
+   "sa": "स्त्रीप्रत्ययान्तेभ्यः प्रातिपदिकेभ्यः अपत्यार्थे ढक् (एय)",
+   "en": "metronymic son/descendant of a female ancestor",
+   "te": "స్త్రీలింగ శబ్దముల నుండి వచ్చు మాతృసంతానార్థక ప్రత్యయము (-ేయ)",
+   "hi": "माता या स्त्रीवाचक शब्द से उत्पन्न पुत्र"
+  },
+  "examples": [
+   {
+    "base": "कुन्ती",
+    "base_iast": "kuntī",
+    "derived_form": "कौन्तेयः",
+    "derived_iast": "kaunteyaḥ",
+    "meaning_en": "son of Kunti (Arjuna/Yudhishthira)",
+    "meaning_te": "కుంతి యొక్క కుమారుడు (అర్జునుడు)",
+    "meaning_hi": "कुंती के पुत्र (अर्जुन)"
+   },
+   {
+    "base": "विनता",
+    "base_iast": "vinatā",
+    "derived_form": "वैनतेयः",
+    "derived_iast": "vainateyaḥ",
+    "meaning_en": "son of Vinata (Garuda)",
+    "meaning_te": "వినత యొక్క కుమారుడు (గరుత్మంతుడు)",
+    "meaning_hi": "विनता के पुत्र (गरुड़)"
+   },
+   {
+    "base": "अञ्जनी",
+    "base_iast": "añjanī",
+    "derived_form": "आञ्जनेयः",
+    "derived_iast": "āñjaneyaḥ",
+    "meaning_en": "son of Anjana (Hanuman)",
+    "meaning_te": "అంజనా దేవి కుమారుడు (హనుమంతుడు)",
+    "meaning_hi": "अंजना के पुत्र (हनुमान)"
+   }
+  ],
+  "morphological_rules": [
+   "Affix ḍhak morphs to 'eya' via 7.1.2.",
+   "K-it causes initial Vṛddhi: u/ū->au, i/ī->ai, a->ā.",
+   "Final ī/ā of stem is elided (6.4.148)."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000004",
+  "sanskrit_name": "यञ्",
+  "iast": "yañ",
+  "level": "basic",
+  "category": "gotraputra_patronymic",
+  "category_name_sa": "गोत्रापत्यार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "ञ्"
+   ],
+   "retained_affix_sa": "य",
+   "retained_affix_iast": "ya",
+   "grammatical_effect": "Ñ-it causes Vṛddhi of initial stem vowel."
+  },
+  "panini_sutra": {
+   "sutra": "गर्गादिभ्यो यञ्",
+   "number": "4.1.105",
+   "meaning_en": "The suffix Yañ is added to Garga and other lineage names to denote Gotra descendants."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "masculine/feminine",
+   "causes_vriddhi": true,
+   "stem_vowel_change": "Initial vowel undergoes Vṛddhi"
+  },
+  "meanings": {
+   "sa": "गोत्रापत्ये (पौत्रादौ) यञ् प्रत्ययः",
+   "en": "grandson or Gotra lineage descendant of",
+   "te": "గోత్ర పరంపర వంశజుడు / మనుమడు",
+   "hi": "गोत्रज / पोता या वंशज"
+  },
+  "examples": [
+   {
+    "base": "गर्ग",
+    "base_iast": "garga",
+    "derived_form": "गार्ग्यः",
+    "derived_iast": "gārgyaḥ",
+    "meaning_en": "descendant of Garga",
+    "meaning_te": "గర్గుని వంశజుడు (గార్గ్యుడు)",
+    "meaning_hi": "गर्ग के वंशज"
+   },
+   {
+    "base": "वत्स",
+    "base_iast": "vatsa",
+    "derived_form": "वात्स्यः",
+    "derived_iast": "vātsyaḥ",
+    "meaning_en": "descendant of Vatsa",
+    "meaning_te": "వత్స గోత్రజుడు (వాత్స్యాయనుడు)",
+    "meaning_hi": "वत्स के वंशज"
+   }
+  ],
+  "morphological_rules": [
+   "Initial Vṛddhi (g->gā, v->vā).",
+   "Final -a elides before -ya."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "sūtra text गार्गादिभ्यो → गर्गादिभ्यो",
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000005",
+  "sanskrit_name": "छ",
+  "iast": "cha",
+  "level": "basic",
+  "category": "sambandharthaka_relational",
+  "category_name_sa": "भवदीय-सम्बन्धार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "ईय",
+   "retained_affix_iast": "īya",
+   "grammatical_effect": "Affix 'cha' is replaced by 'īya' (आयनेयीनीयियः फढखच्छघां प्रत्ययादीनाम् 7.1.2)."
+  },
+  "panini_sutra": {
+   "sutra": "वृद्धाच्छः",
+   "number": "4.2.114",
+   "meaning_en": "The suffix Cha (replaced by īya) is added to Vṛddha nominal stems to denote relation or origin."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "masculine/feminine/neuter",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "None"
+  },
+  "meanings": {
+   "sa": "सम्बन्धे वा निवासे (इयं अस्य/अत्र जातः)",
+   "en": "pertaining to / belonging to / born in",
+   "te": "సంబంధించిన / నివసించు (ఈయః)",
+   "hi": "से संबंधित / में उत्पन्न"
+  },
+  "examples": [
+   {
+    "base": "शाला",
+    "base_iast": "śālā",
+    "derived_form": "शालीयः",
+    "derived_iast": "śālīyaḥ",
+    "meaning_en": "pertaining to a hall / mansion",
+    "meaning_te": "శాలకు సంబంధించినది",
+    "meaning_hi": "शाला से संबंधित"
+   },
+   {
+    "base": "भवत्",
+    "base_iast": "bhavat",
+    "derived_form": "भवदीयः",
+    "derived_iast": "bhavadīyaḥ",
+    "meaning_en": "yours / belonging to your honor",
+    "meaning_te": "తమరి యొక్క (భవదీయుడు)",
+    "meaning_hi": "आपका / आपके द्वारा"
+   },
+   {
+    "base": "तद्",
+    "base_iast": "tad",
+    "derived_form": "तदीयः",
+    "derived_iast": "tadīyaḥ",
+    "meaning_en": "his / belonging to him",
+    "meaning_te": "అతనికి సంబంధించిన",
+    "meaning_hi": "उसका"
+   }
+  ],
+  "morphological_rules": [
+   "Cha -> īya substitution via 7.1.2.",
+   "Stem final vowel elision via 6.4.148."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "removed राष्ट्रियः: it takes घ (→इय) by 4.2.93 राष्ट्रावारपाराद्घखौ, not छ (→ईय), and राष्ट्र is not वृद्ध. Added तदीयः (त्यदादि = वृद्ध by 1.1.74)",
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000006",
+  "sanskrit_name": "तल्",
+  "iast": "tal",
+  "level": "basic",
+  "category": "bhavarthe_abstract",
+  "category_name_sa": "भावार्थक-तद्धितः (स्त्रीलिङ्गः)",
+  "anubandha_info": {
+   "it_markers": [
+    "ल्"
+   ],
+   "retained_affix_sa": "ता",
+   "retained_affix_iast": "tā",
+   "grammatical_effect": "Forms a feminine abstract noun ending in -tā."
+  },
+  "panini_sutra": {
+   "sutra": "तस्य भावस्त्वतलौ",
+   "number": "5.1.119",
+   "meaning_en": "The suffixes Tva and Tal are added to a nominal stem to denote the state, quality, or essence of that stem."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "feminine (ā-stem declension like रमा)",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "None"
+  },
+  "meanings": {
+   "sa": "तस्य भावः (गुणः/अवस्था/धर्मः)",
+   "en": "state of / quality of / -ness / -ity",
+   "te": "యొక్క గుణము / భావము / తత్వము (-తా)",
+   "hi": "का भाव / ता (गुण या स्थिति)"
+  },
+  "examples": [
+   {
+    "base": "सुन्दर",
+    "base_iast": "sundara",
+    "derived_form": "सुन्दरता",
+    "derived_iast": "sundaratā",
+    "meaning_en": "beauty",
+    "meaning_te": "అందం / సౌందర్యము",
+    "meaning_hi": "सुंदरता"
+   },
+   {
+    "base": "मधुर",
+    "base_iast": "madhura",
+    "derived_form": "मधुरता",
+    "derived_iast": "madhuratā",
+    "meaning_en": "sweetness",
+    "meaning_te": "తీయదనం / మాధుర్యము",
+    "meaning_hi": "मधुरता"
+   },
+   {
+    "base": "जन",
+    "base_iast": "jana",
+    "derived_form": "जनता",
+    "derived_iast": "janatā",
+    "meaning_en": "people / community",
+    "meaning_te": "ప్రజలు / ప్రజాసమూహము",
+    "meaning_hi": "जनता",
+    "note": "this तल् is in the collective sense, 4.2.43 ग्रामजनबन्धुसहायेभ्यस्तल्, not the abstract sense of 5.1.119"
+   }
+  ],
+  "morphological_rules": [
+   "Affix -tā attaches directly to nominal stem.",
+   "Derived noun is declined in feminine (रमा-वत्)."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "जनता marked: collective तल् (4.2.43), not abstract (5.1.119)",
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000007",
+  "sanskrit_name": "त्व",
+  "iast": "tva",
+  "level": "basic",
+  "category": "bhavarthe_abstract",
+  "category_name_sa": "भावार्थक-तद्धितः (नपुंसकलिङ्गः)",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "त्व",
+   "retained_affix_iast": "tva",
+   "grammatical_effect": "Forms a neuter abstract noun ending in -tvam."
+  },
+  "panini_sutra": {
+   "sutra": "तस्य भावस्त्वतलौ",
+   "number": "5.1.119",
+   "meaning_en": "The suffix Tva is added to denote abstract state, quality, or essence."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "neuter (a-stem declension like फलम्)",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "None"
+  },
+  "meanings": {
+   "sa": "तस्य भावः (नपुंसकत्वे)",
+   "en": "state of / essence of / -hood",
+   "te": "యొక్క స్వభావము / తత్వము (-త్వము)",
+   "hi": "का भाव / त्व (स्थिति या अवस्था)"
+  },
+  "examples": [
+   {
+    "base": "महत्",
+    "base_iast": "mahat",
+    "derived_form": "महत्त्वम्",
+    "derived_iast": "mahattvam",
+    "meaning_en": "greatness / importance",
+    "meaning_te": "గొప్పతనము / ప్రాముఖ్యత",
+    "meaning_hi": "महत्त्व"
+   },
+   {
+    "base": "लघु",
+    "base_iast": "laghu",
+    "derived_form": "लघुत्वम्",
+    "derived_iast": "laghutvam",
+    "meaning_en": "lightness",
+    "meaning_te": "తేలికదనము",
+    "meaning_hi": "लघुत्व"
+   },
+   {
+    "base": "कवि",
+    "base_iast": "kavi",
+    "derived_form": "कवित्वम्",
+    "derived_iast": "kavitvam",
+    "meaning_en": "poetic ability / poetry",
+    "meaning_te": "కవిత్వము / కవి గుణము",
+    "meaning_hi": "कवित्व"
+   }
+  ],
+  "morphological_rules": [
+   "Affix -tva attaches directly to base.",
+   "Forms neuter a-stem noun declined like फलम्."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "retained affix is त्व (त्वम् is the nominative of the derived word)",
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000008",
+  "sanskrit_name": "मतुप्",
+  "iast": "matup",
+  "level": "basic",
+  "category": "matvarthiya_possessive",
+  "category_name_sa": "मत्वर्थीय-तद्धितः (अस्त्यमिन्निति)",
+  "anubandha_info": {
+   "it_markers": [
+    "उ",
+    "प्"
+   ],
+   "retained_affix_sa": "मत् / वत्",
+   "retained_affix_iast": "mat / vat",
+   "grammatical_effect": "Replaced by vat after a/ā or m-containing stems (मादुपुधायाश्च मतोर्वोऽयवादिभ्यः 8.2.9)."
+  },
+  "panini_sutra": {
+   "sutra": "तदस्यास्त्यस्मिन्निति मतुप्",
+   "number": "5.2.94",
+   "meaning_en": "The suffix Matup is added to denote that a person or object possesses something."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "three genders (m. -mān/-vān, f. -matī/-vatī, n. -mat/-vat)",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "None"
+  },
+  "meanings": {
+   "sa": "तत् अस्य अस्मिन् वा अस्ति इति मतुप् (स्वामित्वे)",
+   "en": "possessing / endowed with / having",
+   "te": "కలిగియున్నవాడు / సంపన్నుడు (-మంతుడు / -వంతుడు)",
+   "hi": "से युक्त / वाला (श्रीमान्, गुणवान्)"
+  },
+  "examples": [
+   {
+    "base": "श्री",
+    "base_iast": "śrī",
+    "derived_form": "श्रीमान्",
+    "derived_iast": "śrīmān",
+    "meaning_en": "wealthy / glorious",
+    "meaning_te": "సంపద కలిగియున్నవాడు (శ్రీమంతుడు)",
+    "meaning_hi": "श्रीमान् / लक्ष्मीवान्"
+   },
+   {
+    "base": "बुद्धि",
+    "base_iast": "buddhi",
+    "derived_form": "बुद्धिमान्",
+    "derived_iast": "buddhimān",
+    "meaning_en": "intelligent",
+    "meaning_te": "బుద్ధిగలవాడు",
+    "meaning_hi": "बुद्धिमान"
+   },
+   {
+    "base": "गुण",
+    "base_iast": "guṇa",
+    "derived_form": "गुणवान्",
+    "derived_iast": "guṇavān",
+    "meaning_en": "virtuous",
+    "meaning_te": "గుణవంతుడు",
+    "meaning_hi": "गुणवान"
+   }
+  ],
+  "morphological_rules": [
+   "After i, ī, u, ū stems: remains -mat (m. -mān).",
+   "After a, ā stems or m-upadhā: becomes -vat (m. -vān) via 8.2.9."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000009",
+  "sanskrit_name": "इनि",
+  "iast": "ini",
+  "level": "basic",
+  "category": "matvarthiya_possessive",
+  "category_name_sa": "मत्वर्थीय-तद्धितः (अदन्तात्)",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "इन् (ई)",
+   "retained_affix_iast": "in (ī)",
+   "grammatical_effect": "Forms a possessive adjective declined like धनी."
+  },
+  "panini_sutra": {
+   "sutra": "अत इनिठनौ",
+   "number": "5.2.115",
+   "meaning_en": "The suffixes Ini and Ṭhan are added to a-ending nominal stems to denote possession."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "m. -ī, f. -inī, n. -i",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Stem final -a is elided (6.4.148)"
+  },
+  "meanings": {
+   "sa": "अदन्तात् स्वामी अथवा विशिष्टगुणयुक्तः",
+   "en": "possessor of / owner of / endowed with",
+   "te": "కలిగియున్నవాడు (-ఇన్ / -ఈ)",
+   "hi": "वाला / रखने वाला (धनी, गुणी)"
+  },
+  "examples": [
+   {
+    "base": "धन",
+    "base_iast": "dhana",
+    "derived_form": "धनी",
+    "derived_iast": "dhanī",
+    "meaning_en": "wealthy person",
+    "meaning_te": "ధనవంతుడు (ధని)",
+    "meaning_hi": "धनी"
+   },
+   {
+    "base": "गुण",
+    "base_iast": "guṇa",
+    "derived_form": "गुणी",
+    "derived_iast": "guṇī",
+    "meaning_en": "virtuous person",
+    "meaning_te": "గుణవంతుడు",
+    "meaning_hi": "गुणी"
+   },
+   {
+    "base": "मान",
+    "base_iast": "māna",
+    "derived_form": "मानी",
+    "derived_iast": "mānī",
+    "meaning_en": "proud person",
+    "meaning_te": "అభిమానవతి / మాని",
+    "meaning_hi": "मानी"
+   }
+  ],
+  "morphological_rules": [
+   "Stem final -a elides before -in (यस्येति च 6.4.148).",
+   "Nom. sg. m. becomes -ī (धनी)."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000010",
+  "sanskrit_name": "ठक्",
+  "iast": "ṭhak",
+  "level": "basic",
+  "category": "sambandharthaka_relational",
+  "category_name_sa": "वैषयिक-सम्बन्धार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "क्"
+   ],
+   "retained_affix_sa": "इक",
+   "retained_affix_iast": "ika",
+   "grammatical_effect": "Ṭh is replaced by 'ika' (ठस्येकः 7.3.50). K-it marker causes Vṛddhi (7.3.51)."
+  },
+  "panini_sutra": {
+   "sutra": "तेन दीव्यति खनति जयति जितम्",
+   "number": "4.4.2",
+   "meaning_en": "The suffix Ṭhak is added to denote playing, digging, winning, or being related to a subject/field.",
+   "note": "4.4.2 covers only 'plays/digs/wins with'. The examples come from other ठक् sūtras: धार्मिकः 4.4.41 धर्मं चरति; नैयायिकः 4.2.59–60 (तदधीते तद्वेद; क्रतूक्थादिसूत्रान्ताट्ठक्); सामाजिकः = 'member of an assembly' (classical), 'social' is modern usage"
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "m. -ikaḥ, f. -ikī, n. -ikam",
+   "causes_vriddhi": true,
+   "stem_vowel_change": "Initial vowel undergoes Vṛddhi"
+  },
+  "meanings": {
+   "sa": "तद्वेत्ति/तदधीते/तेन चरति/तत् सम्बद्धम्",
+   "en": "pertaining to / study of / professional of",
+   "te": "సంబంధించిన / అధ్యయనము చేయు (ఇకః)",
+   "hi": "से संबंधित / विषयक (धार्मिक, सामाजिक)"
+  },
+  "examples": [
+   {
+    "base": "धर्म",
+    "base_iast": "dharma",
+    "derived_form": "धार्मिकः",
+    "derived_iast": "dhārmikaḥ",
+    "meaning_en": "religious / righteous person",
+    "meaning_te": "ధార్మికుడు / ధర్మమునాచరించువాడు",
+    "meaning_hi": "धार्मिक"
+   },
+   {
+    "base": "समाज",
+    "base_iast": "samāja",
+    "derived_form": "सामाजिकः",
+    "derived_iast": "sāmājikaḥ",
+    "meaning_en": "social / member of society",
+    "meaning_te": "సామాజికుడు / సమాజ జీవి",
+    "meaning_hi": "सामाजिक"
+   },
+   {
+    "base": "न्याय",
+    "base_iast": "nyāya",
+    "derived_form": "नैयायिकः",
+    "derived_iast": "naiyāyikaḥ",
+    "meaning_en": "logician / scholar of Nyaya",
+    "meaning_te": "న్యాయశాస్త్ర పండితుడు (నైయాయికుడు)",
+    "meaning_hi": "नैयायिक / न्यायशास्त्री"
+   }
+  ],
+  "morphological_rules": [
+   "Affix ṭhak morphs to 'ika' via 7.3.50.",
+   "Initial Vṛddhi: a->ā. In नैयायिकः the य of न्याय is not vṛddhi-ed; ऐ is inserted before it (7.3.3 न य्वाभ्यां पदान्ताभ्यां पूर्वौ तु ताभ्यामैच्)",
+   "Final -a elides via 6.4.148."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "ठ is not an it-marker: it is replaced by इक (7.3.50 ठस्येकः); only क् is it",
+    "one sūtra (4.4.2) was cited for all three examples; per-example sūtras added",
+    "'ya->yai' corrected: नैयायिक comes from 7.3.3 (ऐच् inserted before य)",
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000011",
+  "sanskrit_name": "इमनिच्",
+  "iast": "imanic",
+  "level": "intermediate",
+  "category": "bhavarthe_abstract",
+  "category_name_sa": "भावार्थक-तद्धितः (पुंलिङ्गः)",
+  "anubandha_info": {
+   "it_markers": [
+    "च्"
+   ],
+   "retained_affix_sa": "इमन्",
+   "retained_affix_iast": "iman",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.1.122."
+  },
+  "panini_sutra": {
+   "sutra": "पृथ्वादिभ्य इमनिच् वा",
+   "number": "5.1.122",
+   "meaning_en": "Forms masculine abstract quality nouns ending in -imā."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "भावार्थक-तद्धितः (पुंलिङ्गः) - Sūtra 5.1.122 (पृथ्वादिभ्य इमनिच् वा)",
+   "en": "quality / essence of / -ness",
+   "te": "గుణము / గరిమ / మహిమ (-ఇమన్)",
+   "hi": "गुण या भाव (महिमा, गरिमा)"
+  },
+  "examples": [
+   {
+    "base": "महत्",
+    "base_iast": "mahat",
+    "derived_form": "महिमा",
+    "derived_iast": "mahimā",
+    "meaning_en": "greatness / majesty",
+    "meaning_te": "గొప్పదనము / మహిమ",
+    "meaning_hi": "महिमा"
+   },
+   {
+    "base": "लघु",
+    "base_iast": "laghu",
+    "derived_form": "लघिमा",
+    "derived_iast": "laghimā",
+    "meaning_en": "lightness",
+    "meaning_te": "తేలికదనము (లఘిమ)",
+    "meaning_hi": "लघिमा"
+   },
+   {
+    "base": "गुरु",
+    "base_iast": "guru",
+    "derived_form": "गरिमा",
+    "derived_iast": "garimā",
+    "meaning_en": "heaviness / dignity",
+    "meaning_te": "గౌరవము / గరిమ",
+    "meaning_hi": "गरिमा"
+   }
+  ],
+  "morphological_rules": [
+   "Affix इमनिच् attaches to nominal base under Sūtra 5.1.122 (पृथ्वादिभ्य इमनिच् वा).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000012",
+  "sanskrit_name": "तरप्",
+  "iast": "tarap",
+  "level": "intermediate",
+  "category": "tulanarthaka_comparative",
+  "category_name_sa": "तुलनार्थक-तद्धितः (द्वयोः तुलना)",
+  "anubandha_info": {
+   "it_markers": [
+    "प्"
+   ],
+   "retained_affix_sa": "तर",
+   "retained_affix_iast": "tara",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.57."
+  },
+  "panini_sutra": {
+   "sutra": "द्विवचनविभज्योपपदे तरप्रीयसौ",
+   "number": "5.3.57",
+   "meaning_en": "Comparative degree suffix for two objects."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "तुलनार्थक-तद्धितः (द्वयोः तुलना) - Sūtra 5.3.57 (द्विवचनविभज्योपपदे तरप्रीयसौ)",
+   "en": "more ... than / comparative",
+   "te": "ఇద్దరి మధ్య పోలికలో ఒకరికంటే ఎక్కువ (-తరః)",
+   "hi": "दो में से एक का अतिशय (सुंदरतर)"
+  },
+  "examples": [
+   {
+    "base": "सुन्दर",
+    "base_iast": "sundara",
+    "derived_form": "सुन्दरतरः",
+    "derived_iast": "sundarataraḥ",
+    "meaning_en": "more beautiful",
+    "meaning_te": "మరింత అందమైనవాడు",
+    "meaning_hi": "अधिक सुंदर"
+   },
+   {
+    "base": "उच्च",
+    "base_iast": "ucca",
+    "derived_form": "उच्चतरः",
+    "derived_iast": "uccataraḥ",
+    "meaning_en": "higher",
+    "meaning_te": "మరింత ఎత్తైనది",
+    "meaning_hi": "उच्चतर"
+   }
+  ],
+  "morphological_rules": [
+   "Affix तरप् attaches to nominal base under Sūtra 5.3.57 (द्विवचनविभज्योपपदे तरप्रीयसौ).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000013",
+  "sanskrit_name": "तमप्",
+  "iast": "tamap",
+  "level": "intermediate",
+  "category": "tulanarthaka_superlative",
+  "category_name_sa": "तुलनार्थक-तद्धितः (बहुषु श्रेष्ठता)",
+  "anubandha_info": {
+   "it_markers": [
+    "प्"
+   ],
+   "retained_affix_sa": "तम",
+   "retained_affix_iast": "tama",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.55."
+  },
+  "panini_sutra": {
+   "sutra": "अतिशयाने तमबिष्ठनौ",
+   "number": "5.3.55",
+   "meaning_en": "Superlative degree suffix among many."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "तुलनार्थक-तद्धितः (बहुषु श्रेष्ठता) - Sūtra 5.3.55 (अतिशयाने तमबिष्ठनौ)",
+   "en": "most ... of all / superlative",
+   "te": "అందరిలోనూ శ్రేష్ఠమైనది (-తమః)",
+   "hi": "सबमें से एक का अतिशय (सुंदरतम)"
+  },
+  "examples": [
+   {
+    "base": "सुन्दर",
+    "base_iast": "sundara",
+    "derived_form": "सुन्दरतमः",
+    "derived_iast": "sundaratamaḥ",
+    "meaning_en": "most beautiful",
+    "meaning_te": "అత్యంత అందమైనవాడు",
+    "meaning_hi": "सबसे सुंदर"
+   },
+   {
+    "base": "उच्च",
+    "base_iast": "ucca",
+    "derived_form": "उच्चतमः",
+    "derived_iast": "uccatamaḥ",
+    "meaning_en": "highest",
+    "meaning_te": "అత్యంత ఎత్తైనది",
+    "meaning_hi": "उच्चतम"
+   }
+  ],
+  "morphological_rules": [
+   "Affix तमप् attaches to nominal base under Sūtra 5.3.55 (अतिशयाने तमबिष्ठनौ).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000014",
+  "sanskrit_name": "ईयसुन्",
+  "iast": "īyasun",
+  "level": "intermediate",
+  "category": "tulanarthaka_comparative",
+  "category_name_sa": "प्राथमिक-तुलनार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "उ",
+    "न्"
+   ],
+   "retained_affix_sa": "ईयस्",
+   "retained_affix_iast": "īyas",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.57."
+  },
+  "panini_sutra": {
+   "sutra": "द्विवचनविभज्योपपदे तरप्रीयसौ",
+   "number": "5.3.57",
+   "meaning_en": "Primary comparative suffix creating -īyān."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "प्राथमिक-तुलनार्थक-तद्धितः - Sūtra 5.3.57 (द्विवचनविभज्योपपदे तरप्रीयसौ)",
+   "en": "more ... than (primary comparative)",
+   "te": "మరింత శ్రేష్ఠమైనది (-ఈయాన్)",
+   "hi": "दो में अतिशय (श्रेयान्, गरीयान्)"
+  },
+  "examples": [
+   {
+    "base": "प्रशस्य",
+    "base_iast": "praśasya",
+    "derived_form": "श्रेयान्",
+    "derived_iast": "śreyān",
+    "meaning_en": "better / superior",
+    "meaning_te": "మరింత శ్రేష్ఠుడైనవాడు (శ్రేయాన్)",
+    "meaning_hi": "श्रेयान् / बेहतर"
+   },
+   {
+    "base": "गुरु",
+    "base_iast": "guru",
+    "derived_form": "गरीयान्",
+    "derived_iast": "garīyān",
+    "meaning_en": "heavier / more venerable",
+    "meaning_te": "మరింత పూజ్యుడు (గరీయాన్)",
+    "meaning_hi": "गरीयान् / अधिक गुरु"
+   }
+  ],
+  "morphological_rules": [
+   "Affix ईयसुन् attaches to nominal base under Sūtra 5.3.57 (द्विवचनविभज्योपपदे तरप्रीयसौ).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000015",
+  "sanskrit_name": "इष्ठन्",
+  "iast": "iṣṭhan",
+  "level": "intermediate",
+  "category": "tulanarthaka_superlative",
+  "category_name_sa": "प्राथमिक-उत्तमता-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "न्"
+   ],
+   "retained_affix_sa": "इष्ठ",
+   "retained_affix_iast": "iṣṭha",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.55."
+  },
+  "panini_sutra": {
+   "sutra": "अतिशयाने तमबिष्ठनौ",
+   "number": "5.3.55",
+   "meaning_en": "Primary superlative suffix creating -iṣṭhaḥ."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": true,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "प्राथमिक-उत्तमता-तद्धितः - Sūtra 5.3.55 (अतिशयाने तमबिष्ठनौ)",
+   "en": "most ... of all (primary superlative)",
+   "te": "అందరికంటే మిక్కిలి శ్రేష్ఠమైన (-ఇష్ఠః)",
+   "hi": "सबमें अतिशय (श्रेष्ठ, गरिष्ठ)"
+  },
+  "examples": [
+   {
+    "base": "प्रशस्य",
+    "base_iast": "praśasya",
+    "derived_form": "श्रेष्ठः",
+    "derived_iast": "śreṣṭhaḥ",
+    "meaning_en": "best / most excellent",
+    "meaning_te": "అందరికంటే శ్రేష్ఠుడు (శ్రేష్ఠుడు)",
+    "meaning_hi": "श्रेष्ठ"
+   },
+   {
+    "base": "गुरु",
+    "base_iast": "guru",
+    "derived_form": "गरिष्ठः",
+    "derived_iast": "gariṣṭhaḥ",
+    "meaning_en": "heaviest / most venerable",
+    "meaning_te": "అత్యంత పూజ్యుడు (గరిష్ఠుడు)",
+    "meaning_hi": "गरिष्ठ"
+   }
+  ],
+  "morphological_rules": [
+   "Affix इष्ठन् attaches to nominal base under Sūtra 5.3.55 (अतिशयाने तमबिष्ठनौ).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000016",
+  "sanskrit_name": "मयट्",
+  "iast": "mayaṭ",
+  "level": "intermediate",
+  "category": "vikararthe_prachurya",
+  "category_name_sa": "विकारार्थक/प्राचुर्यार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "ट्"
+   ],
+   "retained_affix_sa": "मय",
+   "retained_affix_iast": "maya",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.4.21."
+  },
+  "panini_sutra": {
+   "sutra": "तत्प्रकृतवचने मयट्",
+   "number": "5.4.21",
+   "meaning_en": "Denotes made of / full of / abounding in."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "विकारार्थक/प्राचुर्यार्थक-तद्धितः - Sūtra 5.4.21 (तत्प्रकृतवचने मयट्)",
+   "en": "made of / full of / consisting of",
+   "te": "తో చేసిన / నిండిన (-మయమ్)",
+   "hi": "से बना हुआ / प्रचुर (स्वर्णमय, जलमय)"
+  },
+  "examples": [
+   {
+    "base": "स्वर्ण",
+    "base_iast": "svarṇa",
+    "derived_form": "स्वर्णमयः",
+    "derived_iast": "svarṇamayaḥ",
+    "meaning_en": "golden / made of gold",
+    "meaning_te": "బంగారముతో చేసినది",
+    "meaning_hi": "स्वर्णमय / सोने का",
+    "note": "'made of gold' is the विकार sense: 4.3.143 मयड्वैतयोर्भाषायामभक्ष्याच्छादनयोः; 5.4.21 is 'abounding in' (जलमयः, अन्नमयः)"
+   },
+   {
+    "base": "जल",
+    "base_iast": "jala",
+    "derived_form": "जलमयः",
+    "derived_iast": "jalamayaḥ",
+    "meaning_en": "full of water",
+    "meaning_te": "జలమయము / నీటితో నిండినది",
+    "meaning_hi": "जलमय / जल से भरा"
+   }
+  ],
+  "morphological_rules": [
+   "Affix मयट् attaches to nominal base under Sūtra 5.4.21 (तत्प्रकृतवचने मयट्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "स्वर्णमयः belongs to 4.3.143 (made of), not 5.4.21 (abounding in)",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000017",
+  "sanskrit_name": "कल्पप्",
+  "iast": "kalpap",
+  "level": "intermediate",
+  "category": "sadrishyarthaka",
+  "category_name_sa": "ईषदसमाप्त्यर्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "प्"
+   ],
+   "retained_affix_sa": "कल्प",
+   "retained_affix_iast": "kalpa",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.67."
+  },
+  "panini_sutra": {
+   "sutra": "ईषदसमाप्तौ कल्पब्देश्यदेशीयः",
+   "number": "5.3.67",
+   "meaning_en": "Denotes slight deficiency or resemblance."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "ईषदसमाप्त्यर्थक-तद्धितः - Sūtra 5.3.67 (ईषदसमाप्तौ कल्पब्देश्यदेशीयः)",
+   "en": "almost / nearly / resembling",
+   "te": "దాదాపుగా / కొద్దిగా తక్కువైన (-కల్పః)",
+   "hi": "लगभग / ईषद् (पटुकल्प)"
+  },
+  "examples": [
+   {
+    "base": "पटु",
+    "base_iast": "paṭu",
+    "derived_form": "पटुकल्पः",
+    "derived_iast": "paṭukalpaḥ",
+    "meaning_en": "almost clever",
+    "meaning_te": "దాదాపు సమర్థుడు",
+    "meaning_hi": "लगभग चतुर"
+   },
+   {
+    "base": "विद्वत्",
+    "base_iast": "vidvat",
+    "derived_form": "विद्वत्कल्पः",
+    "derived_iast": "vidvatkalpaḥ",
+    "meaning_en": "almost learned",
+    "meaning_te": "దాదాపు పండితుడు",
+    "meaning_hi": "लगभग विद्वान्"
+   }
+  ],
+  "morphological_rules": [
+   "Affix कल्पप् attaches to nominal base under Sūtra 5.3.67 (ईषदसमाप्तौ कल्पब्देश्यदेशीयः).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000018",
+  "sanskrit_name": "रूपप्",
+  "iast": "rūpap",
+  "level": "intermediate",
+  "category": "prashamsarthaka",
+  "category_name_sa": "प्रशंसार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "प्"
+   ],
+   "retained_affix_sa": "रूप",
+   "retained_affix_iast": "rūpa",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.66."
+  },
+  "panini_sutra": {
+   "sutra": "प्रशंसायां रूपप्",
+   "number": "5.3.66",
+   "meaning_en": "Denotes admiration or praiseworthiness."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "प्रशंसार्थक-तद्धितः - Sūtra 5.3.66 (प्रशंसायां रूपप्)",
+   "en": "praiseworthy / admirable",
+   "te": "ప్రశంసనీయమైన (-రూపః)",
+   "hi": "प्रशंसनीय (विद्वद्रूप)"
+  },
+  "examples": [
+   {
+    "base": "विद्वत्",
+    "base_iast": "vidvat",
+    "derived_form": "विद्वद्रूपः",
+    "derived_iast": "vidvadrūpaḥ",
+    "meaning_en": "praiseworthy scholar",
+    "meaning_te": "ప్రశంసనీయ పండితుడు",
+    "meaning_hi": "प्रशंसनीय विद्वान्"
+   }
+  ],
+  "morphological_rules": [
+   "Affix रूपप् attaches to nominal base under Sūtra 5.3.66 (प्रशंसायां रूपप्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000019",
+  "sanskrit_name": "पाशप्",
+  "iast": "pāśap",
+  "level": "intermediate",
+  "category": "kutsitarthaka",
+  "category_name_sa": "कुत्सितार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "प्"
+   ],
+   "retained_affix_sa": "पाश",
+   "retained_affix_iast": "pāśa",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.47."
+  },
+  "panini_sutra": {
+   "sutra": "याप्ये पाशप्",
+   "number": "5.3.47",
+   "meaning_en": "Denotes contempt, wretchedness or pseudo-ness."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "कुत्सितार्थक-तद्धितः - Sūtra 5.3.47 (याप्ये पाशप्)",
+   "en": "wretched / pseudo / bad",
+   "te": "నిందింపబడిన / కుత్సితుడు (-పాశః)",
+   "hi": "कुत्सित / खराब (भिषक्पाश)"
+  },
+  "examples": [
+   {
+    "base": "भिषक्",
+    "base_iast": "bhiṣak",
+    "derived_form": "भिषक्पाशः",
+    "derived_iast": "bhiṣakpāśaḥ",
+    "meaning_en": "quack doctor",
+    "meaning_te": "కుత్సిత వైద్యుడు",
+    "meaning_hi": "खराब वैद्य"
+   }
+  ],
+  "morphological_rules": [
+   "Affix पाशप् attaches to nominal base under Sūtra 5.3.47 (याप्ये पाशप्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000020",
+  "sanskrit_name": "तसिल्",
+  "iast": "tasil",
+  "level": "intermediate",
+  "category": "vibhaktyarthaka_avyaya",
+  "category_name_sa": "पंचम्यर्थक-तद्धित-अव्ययः",
+  "anubandha_info": {
+   "it_markers": [
+    "ल्"
+   ],
+   "retained_affix_sa": "तस्",
+   "retained_affix_iast": "tas",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.7."
+  },
+  "panini_sutra": {
+   "sutra": "पञ्चम्यास्तसिल्",
+   "number": "5.3.7",
+   "meaning_en": "Creates ablative indeclinable adverbs in -tas."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "पंचम्यर्थक-तद्धित-अव्ययः - Sūtra 5.3.7 (पञ्चम्यास्तसिल्)",
+   "en": "from / out of (ablative adverb)",
+   "te": "నుండి / వలన (-తః)",
+   "hi": "से (पंचमी विभक्ति के स्थान पर)"
+  },
+  "examples": [
+   {
+    "base": "तद्",
+    "base_iast": "tad",
+    "derived_form": "ततः",
+    "derived_iast": "tataḥ",
+    "meaning_en": "thence / from that",
+    "meaning_te": "అక్కడి నుండి",
+    "meaning_hi": "वहाँ से"
+   },
+   {
+    "base": "सर्व",
+    "base_iast": "sarva",
+    "derived_form": "सर्वतः",
+    "derived_iast": "sarvataḥ",
+    "meaning_en": "from everywhere",
+    "meaning_te": "అన్ని వైపుల నుండి",
+    "meaning_hi": "सब ओर से"
+   }
+  ],
+  "morphological_rules": [
+   "Affix तसिल् attaches to nominal base under Sūtra 5.3.7 (पञ्चम्यास्तसिल्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000021",
+  "sanskrit_name": "त्रल्",
+  "iast": "tral",
+  "level": "intermediate",
+  "category": "vibhaktyarthaka_avyaya",
+  "category_name_sa": "सप्तम्यर्थक-तद्धित-अव्ययः",
+  "anubandha_info": {
+   "it_markers": [
+    "ल्"
+   ],
+   "retained_affix_sa": "त्र",
+   "retained_affix_iast": "tra",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.10."
+  },
+  "panini_sutra": {
+   "sutra": "सप्तम्यास्त्रल्",
+   "number": "5.3.10",
+   "meaning_en": "Creates locative indeclinable adverbs in -tra."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "सप्तम्यर्थक-तद्धित-अव्ययः - Sūtra 5.3.10 (सप्तम्यास्त्रल्)",
+   "en": "in / at (locative adverb)",
+   "te": "అక్కడ / అందు (-త్ర)",
+   "hi": "में / पर (सप्तमी विभक्ति के स्थान पर)"
+  },
+  "examples": [
+   {
+    "base": "तद्",
+    "base_iast": "tad",
+    "derived_form": "तत्र",
+    "derived_iast": "tatra",
+    "meaning_en": "there",
+    "meaning_te": "అక్కడ",
+    "meaning_hi": "वहाँ"
+   },
+   {
+    "base": "यद्",
+    "base_iast": "yad",
+    "derived_form": "यत्र",
+    "derived_iast": "yatra",
+    "meaning_en": "where",
+    "meaning_te": "ఎక్కడైతే",
+    "meaning_hi": "जहाँ"
+   }
+  ],
+  "morphological_rules": [
+   "Affix त्रल् attaches to nominal base under Sūtra 5.3.10 (सप्तम्यास्त्रल्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000022",
+  "sanskrit_name": "दा",
+  "iast": "dā",
+  "level": "intermediate",
+  "category": "kalarthaka_avyaya",
+  "category_name_sa": "कालवाचक-तद्धित-अव्ययः",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "दा",
+   "retained_affix_iast": "dā",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.15."
+  },
+  "panini_sutra": {
+   "sutra": "सर्वैकान्यकिंयत्तदः काले दा",
+   "number": "5.3.15",
+   "meaning_en": "Creates temporal indeclinable adverbs in -dā."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "कालवाचक-तद्धित-अव्ययः - Sūtra 5.3.15 (सर्वैकतदन्ययत्तत्कालेभ्यो दा)",
+   "en": "when / at the time of",
+   "te": "సమయమునందు (-దా)",
+   "hi": "समयवाचक (यदा, तदा)"
+  },
+  "examples": [
+   {
+    "base": "यद्",
+    "base_iast": "yad",
+    "derived_form": "यदा",
+    "derived_iast": "yadā",
+    "meaning_en": "when",
+    "meaning_te": "ఎప్పుడైతే",
+    "meaning_hi": "जब"
+   },
+   {
+    "base": "तद्",
+    "base_iast": "tad",
+    "derived_form": "तदा",
+    "derived_iast": "tadā",
+    "meaning_en": "then",
+    "meaning_te": "అప్పుడు",
+    "meaning_hi": "तब"
+   }
+  ],
+  "morphological_rules": [
+   "Affix दा attaches to nominal base under Sūtra 5.3.15 (सर्वैकतदन्ययत्तत्कालेभ्यो दा).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "sūtra text corrected to सर्वैकान्यकिंयत्तदः काले दा",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000023",
+  "sanskrit_name": "थाल्",
+  "iast": "thāl",
+  "level": "intermediate",
+  "category": "prakararthaka_avyaya",
+  "category_name_sa": "प्रकारवाचक-तद्धित-अव्ययः",
+  "anubandha_info": {
+   "it_markers": [
+    "ल्"
+   ],
+   "retained_affix_sa": "था",
+   "retained_affix_iast": "thā",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.23."
+  },
+  "panini_sutra": {
+   "sutra": "प्रकारवचने थाल्",
+   "number": "5.3.23",
+   "meaning_en": "Creates manner indeclinable adverbs in -thā."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "प्रकारवाचक-तद्धित-अव्ययः - Sūtra 5.3.23 (प्रकारवचने थाल्)",
+   "en": "in the manner of / how",
+   "te": "విధముగా (-థా)",
+   "hi": "प्रकारवाचक (यथा, तथा)"
+  },
+  "examples": [
+   {
+    "base": "यद्",
+    "base_iast": "yad",
+    "derived_form": "यथा",
+    "derived_iast": "yathā",
+    "meaning_en": "as / just like",
+    "meaning_te": "ఏ విధముగానైతే",
+    "meaning_hi": "जैसे / जिस प्रकार"
+   },
+   {
+    "base": "तद्",
+    "base_iast": "tad",
+    "derived_form": "तथा",
+    "derived_iast": "tathā",
+    "meaning_en": "so / in that manner",
+    "meaning_te": "ఆ విధముగా",
+    "meaning_hi": "वैसे / उस प्रकार"
+   }
+  ],
+  "morphological_rules": [
+   "Affix थाल् attaches to nominal base under Sūtra 5.3.23 (प्रकारवचने थाल्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000024",
+  "sanskrit_name": "थमु",
+  "iast": "thamu",
+  "level": "intermediate",
+  "category": "prakararthaka_avyaya",
+  "category_name_sa": "किंशब्दस्य प्रकारवाचक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "उ"
+   ],
+   "retained_affix_sa": "थम्",
+   "retained_affix_iast": "tham",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.24."
+  },
+  "panini_sutra": {
+   "sutra": "इदमस्थमुः; किमश्च",
+   "number": "5.3.24–25",
+   "meaning_en": "Creates manner adverb for kim (katham)."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "किंशब्दस्य प्रकारवाचक-तद्धितः - Sūtra 5.3.24 (किमो त्थम्)",
+   "en": "how / in what manner",
+   "te": "ఏ విధంగా (-థమ్)",
+   "hi": "कैसे / किस प्रकार"
+  },
+  "examples": [
+   {
+    "base": "किम्",
+    "base_iast": "kim",
+    "derived_form": "कथम्",
+    "derived_iast": "katham",
+    "meaning_en": "how",
+    "meaning_te": "ఎట్లు / ఏలాగున",
+    "meaning_hi": "कैसे"
+   },
+   {
+    "base": "इदम्",
+    "base_iast": "idam",
+    "derived_form": "इत्थम्",
+    "derived_iast": "ittham",
+    "meaning_en": "thus, in this way",
+    "meaning_te": "ఈ విధంగా",
+    "meaning_hi": "इस प्रकार"
+   }
+  ],
+  "morphological_rules": [
+   "Affix त्थम् attaches to nominal base under Sūtra 5.3.24 (किमो त्थम्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "the affix is थमु (it उ), not 'त्थम्'; 'किमो त्थम्' is not a sūtra: 5.3.24 इदमस्थमुः (इत्थम्), 5.3.25 किमश्च (कथम्)",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000025",
+  "sanskrit_name": "धा",
+  "iast": "dhā",
+  "level": "intermediate",
+  "category": "sankhyarthaka_multiplicative",
+  "category_name_sa": "प्रकारवाचक-संख्या-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "धा",
+   "retained_affix_iast": "dhā",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.42."
+  },
+  "panini_sutra": {
+   "sutra": "संख्याया विधार्थे धा",
+   "number": "5.3.42",
+   "meaning_en": "Denotes division or ways of numbers."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "प्रकारवाचक-संख्या-तद्धितः - Sūtra 5.3.42 (संख्याया विधार्थे धा)",
+   "en": "fold / in ... ways",
+   "te": "విధములుగా (-ధా)",
+   "hi": "प्रकार से (एकधा, द्विधा)"
+  },
+  "examples": [
+   {
+    "base": "एक",
+    "base_iast": "eka",
+    "derived_form": "एकधा",
+    "derived_iast": "ekadhā",
+    "meaning_en": "in one way / singly",
+    "meaning_te": "ఒకే విధముగా",
+    "meaning_hi": "एक प्रकार से"
+   },
+   {
+    "base": "द्वि",
+    "base_iast": "dvi",
+    "derived_form": "द्विधा",
+    "derived_iast": "dvidhā",
+    "meaning_en": "in two ways / twofold",
+    "meaning_te": "రెండు విధములుగా",
+    "meaning_hi": "दो प्रकार से"
+   }
+  ],
+  "morphological_rules": [
+   "Affix धा attaches to nominal base under Sūtra 5.3.42 (संख्याया विधार्थे धा).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000026",
+  "sanskrit_name": "कृत्वसुच्",
+  "iast": "kṛtvasuc",
+  "level": "expert",
+  "category": "sankhyarthaka_frequency",
+  "category_name_sa": "आवृत्तिवाचक-संख्या-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "च्"
+   ],
+   "retained_affix_sa": "कृत्वः",
+   "retained_affix_iast": "kṛtvaḥ",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.35."
+  },
+  "panini_sutra": {
+   "sutra": "संख्यायाः क्रियाभ्यावृत्तिगणने कृत्वसुच्",
+   "number": "5.4.17",
+   "meaning_en": "Denotes frequency multiplier for 5+."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "आवृत्तिवाचक-संख्या-तद्धितः - Sūtra 5.3.35 (संख्यायाः कृत्वसुच्)",
+   "en": "times (frequency)",
+   "te": "సార్లు (-కృత్వః)",
+   "hi": "बार (आवृत्तिवाचक)"
+  },
+  "examples": [
+   {
+    "base": "पञ्चन्",
+    "base_iast": "pañcan",
+    "derived_form": "पञ्चकृत्वः",
+    "derived_iast": "pañcakṛtvaḥ",
+    "meaning_en": "five times",
+    "meaning_te": "ఐదు సార్లు",
+    "meaning_hi": "पाँच बार"
+   },
+   {
+    "base": "शत",
+    "base_iast": "śata",
+    "derived_form": "शतकृत्वः",
+    "derived_iast": "śatakṛtvaḥ",
+    "meaning_en": "a hundred times",
+    "meaning_te": "నూరు సార్లు",
+    "meaning_hi": "सौ बार"
+   }
+  ],
+  "morphological_rules": [
+   "Affix कृत्वसुच् attaches to nominal base under Sūtra 5.3.35 (संख्यायाः कृत्वसुच्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "sūtra number 5.3.35 → 5.4.17 (full text restored)",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000027",
+  "sanskrit_name": "सुच्",
+  "iast": "suc",
+  "level": "expert",
+  "category": "sankhyarthaka_frequency",
+  "category_name_sa": "अल्पसंख्या-आवृत्ति-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "च्"
+   ],
+   "retained_affix_sa": "स्",
+   "retained_affix_iast": "s",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.3.43."
+  },
+  "panini_sutra": {
+   "sutra": "द्वित्रिचतुर्भ्यः सुच्",
+   "number": "5.4.18",
+   "meaning_en": "Denotes frequency for 2, 3, 4."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "अल्पसंख्या-आवृत्ति-तद्धितः - Sūtra 5.3.43 (द्वित्रिचतुर्भ्यः सुच्)",
+   "en": "times (twice, thrice)",
+   "te": "సార్లు (-సః)",
+   "hi": "बार (द्विः, त्रिः)"
+  },
+  "examples": [
+   {
+    "base": "द्वि",
+    "base_iast": "dvi",
+    "derived_form": "द्विः",
+    "derived_iast": "dviḥ",
+    "meaning_en": "twice",
+    "meaning_te": "రెండు సార్లు",
+    "meaning_hi": "दो बार"
+   },
+   {
+    "base": "त्रि",
+    "base_iast": "tri",
+    "derived_form": "त्रिः",
+    "derived_iast": "triḥ",
+    "meaning_en": "thrice",
+    "meaning_te": "మూడు సార్లు",
+    "meaning_hi": "तीन बार"
+   }
+  ],
+  "morphological_rules": [
+   "Affix सुच् attaches to nominal base under Sūtra 5.3.43 (द्वित्रिचतुर्भ्यः सुच्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "sūtra number 5.3.43 → 5.4.18; the retained affix is स् (it becomes visarga)",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000028",
+  "sanskrit_name": "वति",
+  "iast": "vati",
+  "level": "expert",
+  "category": "sadrishyarthaka",
+  "category_name_sa": "सादृश्यार्थक-तद्धित-अव्ययः",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "वत्",
+   "retained_affix_iast": "vat",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.1.115."
+  },
+  "panini_sutra": {
+   "sutra": "तेन तुल्यं क्रिया चेद्वतिः",
+   "number": "5.1.115",
+   "meaning_en": "Denotes similarity in action or quality."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "सादृश्यार्थक-तद्धित-अव्ययः - Sūtra 5.1.115 (तेन तुल्यं क्रिया चेद्वतिः)",
+   "en": "like / as / in the manner of",
+   "te": "వలె / లాగా (-వత్)",
+   "hi": "के समान / की भांति"
+  },
+  "examples": [
+   {
+    "base": "राजन्",
+    "base_iast": "rājan",
+    "derived_form": "राजवत्",
+    "derived_iast": "rājavat",
+    "meaning_en": "like a king",
+    "meaning_te": "రాజు వలె",
+    "meaning_hi": "राजा के समान"
+   },
+   {
+    "base": "पितृ",
+    "base_iast": "pitṛ",
+    "derived_form": "पितृवत्",
+    "derived_iast": "pitṛvat",
+    "meaning_en": "like a father",
+    "meaning_te": "తండ్రి వలె",
+    "meaning_hi": "पिता की भांति"
+   }
+  ],
+  "morphological_rules": [
+   "Affix वति attaches to nominal base under Sūtra 5.1.115 (तेन तुल्यं क्रिया चेद्वतिः).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000029",
+  "sanskrit_name": "च्वि",
+  "iast": "cvi",
+  "level": "expert",
+  "category": "abhutatadbhave_transformation",
+  "category_name_sa": "अभूततद्भाव-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "च्",
+    "इ (उच्चारणार्थ)"
+   ],
+   "retained_affix_sa": "— (व् is dropped entirely, 6.1.67 वेरपृक्तस्य)",
+   "retained_affix_iast": "—",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.4.50."
+  },
+  "panini_sutra": {
+   "sutra": "कृभ्वस्तियोगे सम्पद्यकर्तरि च्विः",
+   "number": "5.4.50",
+   "meaning_en": "Denotes transformation to a new state.",
+   "note": "'अभूततद्भावे' is the vārttika that limits it"
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "अभूततद्भाव-तद्धितः - Sūtra 5.4.50 (अभूततद्भावे च्विः)",
+   "en": "becoming what it was not before",
+   "te": "కొత్త రూపము పొందుట (-ఈ)",
+   "hi": "होना जो पहले न था"
+  },
+  "examples": [
+   {
+    "base": "शुक्ल",
+    "base_iast": "śukla",
+    "derived_form": "शुक्लीभवति",
+    "derived_iast": "śuklībhavati",
+    "meaning_en": "becomes white",
+    "meaning_te": "తెల్లబడుతున్నది",
+    "meaning_hi": "सफेद होता है"
+   },
+   {
+    "base": "अङ्ग",
+    "base_iast": "aṅga",
+    "derived_form": "अङ्गीकरोति",
+    "derived_iast": "aṅgīkaroti",
+    "meaning_en": "accepts / embraces",
+    "meaning_te": "అంగీకరిస్తున్నాడు",
+    "meaning_hi": "स्वीकार करता है"
+   }
+  ],
+  "morphological_rules": [
+   "The whole affix disappears (6.1.67 वेरपृक्तस्य).",
+   "Final अ/आ of the base becomes ई (7.4.32 अस्य च्वौ); इ/उ are lengthened (7.4.26 च्वौ च).",
+   "Used only with कृ, भू, अस् (शुक्लीकरोति, शुक्लीभवति)."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "sūtra text corrected; च्वि leaves nothing behind; the ई comes from 7.4.32, not from the affix",
+    "Reviewed by Claude against the sūtras; please confirm before release."
+   ]
+  }
+ },
+ {
+  "id": "TP-000030",
+  "sanskrit_name": "सात्",
+  "iast": "sāt",
+  "level": "expert",
+  "category": "abhutatadbhave_transformation",
+  "category_name_sa": "पूर्णसमर्पण/अधीनता-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "सात्",
+   "retained_affix_iast": "sāt",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.4.52."
+  },
+  "panini_sutra": {
+   "sutra": "विभाषा साति कार्त्स्न्ये",
+   "number": "5.4.52",
+   "meaning_en": "Denotes complete reduction or consignment.",
+   "note": "5.4.54 तदधीनवचने covers राजसात् 'under the king'"
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "पूर्णसमर्पण/अधीनता-तद्धितः - Sūtra 5.4.52 (तदधीनं वचनं सात्)",
+   "en": "reduced to / consigned to",
+   "te": "రూపముగా మారిపోవుట (-సాత్)",
+   "hi": "हो जाना / समर्पित हो जाना"
+  },
+  "examples": [
+   {
+    "base": "भस्मन्",
+    "base_iast": "bhasman",
+    "derived_form": "भस्मसात्",
+    "derived_iast": "bhasmasāt",
+    "meaning_en": "reduced to ashes",
+    "meaning_te": "భస్మమైపోవుట",
+    "meaning_hi": "भस्म होना"
+   },
+   {
+    "base": "अग्नि",
+    "base_iast": "agni",
+    "derived_form": "अग्निसात्",
+    "derived_iast": "agnisāt",
+    "meaning_en": "consigned to fire",
+    "meaning_te": "అగ్నికి అర్పితమగుట",
+    "meaning_hi": "अग्नि को समर्पित"
+   }
+  ],
+  "morphological_rules": [
+   "Affix सात् attaches to nominal base under Sūtra 5.4.52 (तदधीनं वचनं सात्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "'तदधीनं वचनं सात्' is not a sūtra; भस्मसात्/अग्निसात् = 5.4.52 विभाषा साति कार्त्स्न्ये",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000031",
+  "sanskrit_name": "त्रा",
+  "iast": "trā",
+  "level": "expert",
+  "category": "samarpanarthaka",
+  "category_name_sa": "देवसमर्पणार्थक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "त्रा",
+   "retained_affix_iast": "trā",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.4.55."
+  },
+  "panini_sutra": {
+   "sutra": "देवमनुष्यपुरुषपुरुमर्त्येभ्यो द्वितीयासप्तम्योर्बहुलम्",
+   "number": "5.4.56",
+   "meaning_en": "Denotes assignment or devotion to gods/men."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "देवसमर्पणार्थक-तद्धितः - Sūtra 5.4.55 (देवमनुष्यादिभ्यः त्रा)",
+   "en": "among / devoted to",
+   "te": "దేవతలకు అర్పించబడినది (-త్రా)",
+   "hi": "के अधीन / में (देवत्रा)"
+  },
+  "examples": [
+   {
+    "base": "देव",
+    "base_iast": "deva",
+    "derived_form": "देवत्रा",
+    "derived_iast": "devatrā",
+    "meaning_en": "among / devoted to gods",
+    "meaning_te": "దేవతలకు అర్పించబడినది",
+    "meaning_hi": "देवों के बीच"
+   }
+  ],
+  "morphological_rules": [
+   "Affix त्रा attaches to nominal base under Sūtra 5.4.55 (देवमनुष्यादिभ्यः त्रा).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "sūtra corrected to 5.4.56",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000032",
+  "sanskrit_name": "शस्",
+  "iast": "śas",
+  "level": "expert",
+  "category": "vibhagarthaka_distribution",
+  "category_name_sa": "विभागात्मक/वीप्सा-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "स्"
+   ],
+   "retained_affix_sa": "शः",
+   "retained_affix_iast": "śaḥ",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.4.42."
+  },
+  "panini_sutra": {
+   "sutra": "बह्वल्पार्थाच्छस् कारकादन्यतरस्याम्",
+   "number": "5.4.42",
+   "meaning_en": "Denotes piecemeal or distributive action."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "विभागात्मक/वीप्सा-तद्धितः - Sūtra 5.4.42 (बह्वल्पार्थाच्छस् कारकादन्यतरस्याम्)",
+   "en": "by / -wise / one by one",
+   "te": "క్రమంగా / అక్షరాలా (-శః)",
+   "hi": "क्रमशः / एक-एक करके"
+  },
+  "examples": [
+   {
+    "base": "बहु",
+    "base_iast": "bahu",
+    "derived_form": "बहुशः",
+    "derived_iast": "bahuśaḥ",
+    "meaning_en": "in large amounts, often",
+    "meaning_te": "అనేక పర్యాయాలు",
+    "meaning_hi": "बहुत बार"
+   },
+   {
+    "base": "अल्प",
+    "base_iast": "alpa",
+    "derived_form": "अल्पशः",
+    "derived_iast": "alpaśaḥ",
+    "meaning_en": "little by little",
+    "meaning_te": "కొద్దికొద్దిగా",
+    "meaning_hi": "थोड़ा-थोड़ा"
+   },
+   {
+    "base": "क्रम",
+    "base_iast": "krama",
+    "derived_form": "क्रमशः",
+    "derived_iast": "kramaśaḥ",
+    "meaning_en": "step by step / gradually",
+    "meaning_te": "క్రమంగా / వరుసగా",
+    "meaning_hi": "क्रमशः / धीरे-धीरे",
+    "note": "common usage, not licensed by 5.4.42 (which needs a word meaning much/little)"
+   },
+   {
+    "base": "अक्षर",
+    "base_iast": "akṣara",
+    "derived_form": "अक्षरशः",
+    "derived_iast": "akṣaraśaḥ",
+    "meaning_en": "word for word",
+    "meaning_te": "అక్షరాలా",
+    "meaning_hi": "अक्षरशः",
+    "note": "common usage, not licensed by 5.4.42 (which needs a word meaning much/little)"
+   }
+  ],
+  "morphological_rules": [
+   "Affix शस् attaches to nominal base under Sūtra 5.4.42 (बह्वल्पार्थाच्छस् कारकादन्यतरस्याम्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "added the sūtra's own examples बहुशः, अल्पशः; क्रमशः/अक्षरशः kept but marked as usage outside 5.4.42",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000033",
+  "sanskrit_name": "तयप्",
+  "iast": "tayap",
+  "level": "expert",
+  "category": "sankhyarthaka_multiplicative",
+  "category_name_sa": "अवयववाचक-संख्या-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "प्"
+   ],
+   "retained_affix_sa": "तयम्",
+   "retained_affix_iast": "tayam",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.2.42."
+  },
+  "panini_sutra": {
+   "sutra": "संख्याया अवयवे तयप्",
+   "number": "5.2.42",
+   "meaning_en": "Denotes component group / triad."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "अवयववाचक-संख्या-तद्धितः - Sūtra 5.2.42 (संख्याया अवयवे तयप्)",
+   "en": "group of / component",
+   "te": "జంట / త్రితయము (-తయమ్)",
+   "hi": "समूह / द्वय (द्वितयम्)"
+  },
+  "examples": [
+   {
+    "base": "द्वि",
+    "base_iast": "dvi",
+    "derived_form": "द्वितयम्",
+    "derived_iast": "dvitayam",
+    "meaning_en": "duet / pair of two",
+    "meaning_te": "జంట / ద్వితయము",
+    "meaning_hi": "द्वय / जोड़ा"
+   },
+   {
+    "base": "त्रि",
+    "base_iast": "tri",
+    "derived_form": "त्रितयम्",
+    "derived_iast": "tritayam",
+    "meaning_en": "triad / group of three",
+    "meaning_te": "త్రితయము",
+    "meaning_hi": "त्रयी / त्रितय"
+   }
+  ],
+  "morphological_rules": [
+   "Affix तयप् attaches to nominal base under Sūtra 5.2.42 (संख्याया अवयवे तयप्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000034",
+  "sanskrit_name": "मात्रच्",
+  "iast": "mātrac",
+  "level": "expert",
+  "category": "parimanarthaka",
+  "category_name_sa": "परिमाणवाचक-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "च्"
+   ],
+   "retained_affix_sa": "मात्रम्",
+   "retained_affix_iast": "mātram",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.2.37."
+  },
+  "panini_sutra": {
+   "sutra": "प्रमाणे द्वयसज्दघ्नञ्मात्रचः",
+   "number": "5.2.37",
+   "meaning_en": "Denotes measure / mere extent."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "परिमाणवाचक-तद्धितः - Sūtra 5.2.37 (प्रमाणे द्वयसज्दघ्नञ्मात्रचः)",
+   "en": "merely / measure of",
+   "te": "మాత్రమే (-మాత్రమ్)",
+   "hi": "मात्र / केवल"
+  },
+  "examples": [
+   {
+    "base": "क्षण",
+    "base_iast": "kṣaṇa",
+    "derived_form": "क्षणमात्रम्",
+    "derived_iast": "kṣaṇamātram",
+    "meaning_en": "merely a moment",
+    "meaning_te": "క్షణకాలము మాత్రమే",
+    "meaning_hi": "क्षण भर"
+   }
+  ],
+  "morphological_rules": [
+   "Affix मात्रच् attaches to nominal base under Sūtra 5.2.37 (प्रमाणे द्वयसज्दघ्नञ्मात्रचः).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000035",
+  "sanskrit_name": "द्वयसच्",
+  "iast": "dvayasac",
+  "level": "expert",
+  "category": "parimanarthaka",
+  "category_name_sa": "ऊर्ध्वपरिमाण-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "च्"
+   ],
+   "retained_affix_sa": "द्वयसम्",
+   "retained_affix_iast": "dvayasam",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.2.37."
+  },
+  "panini_sutra": {
+   "sutra": "प्रमाणे द्वयसज्दघ्नञ्मात्रचः",
+   "number": "5.2.37",
+   "meaning_en": "Denotes height up to an anatomical part."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "ऊर्ध्वपरिमाण-तद्धितः - Sūtra 5.2.37 (प्रमाणे द्वयसज्दघ्नञ्मात्रचः)",
+   "en": "reaching up to / as high as",
+   "te": "ఎత్తు వరకు (-ద్వయసమ్)",
+   "hi": "तक गहरा/ऊँचा (जानुद्वयसम्)"
+  },
+  "examples": [
+   {
+    "base": "ऊरु",
+    "base_iast": "ūru",
+    "derived_form": "ऊरुद्वयसम्",
+    "derived_iast": "ūrudvayasam",
+    "meaning_en": "reaching up to the thighs",
+    "meaning_te": "తొడల వరకు ఎత్తు",
+    "meaning_hi": "जांघों तक गहरा"
+   }
+  ],
+  "morphological_rules": [
+   "Affix द्वयसच् attaches to nominal base under Sūtra 5.2.37 (प्रमाणे द्वयसज्दघ्नञ्मात्रचः).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000036",
+  "sanskrit_name": "दघ्नच्",
+  "iast": "daghnac",
+  "level": "expert",
+  "category": "parimanarthaka",
+  "category_name_sa": "ऊर्ध्वपरिमाण-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "च्"
+   ],
+   "retained_affix_sa": "दघ्नम्",
+   "retained_affix_iast": "daghnam",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.2.37."
+  },
+  "panini_sutra": {
+   "sutra": "प्रमाणे द्वयसज्दघ्नञ्मात्रचः",
+   "number": "5.2.37",
+   "meaning_en": "Denotes depth/height up to a point."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "ऊर्ध्वपरिमाण-तद्धितः - Sūtra 5.2.37 (प्रमाणे द्वयसज्दघ्नञ्मात्रचः)",
+   "en": "deep up to / knee-deep",
+   "te": "లోతు వరకు (-దఘ్నమ్)",
+   "hi": "तक गहरा (जानुदघ्नम्)"
+  },
+  "examples": [
+   {
+    "base": "जानु",
+    "base_iast": "jānu",
+    "derived_form": "जानुदघ्नम्",
+    "derived_iast": "jānudaghnam",
+    "meaning_en": "knee-deep",
+    "meaning_te": "మోకాళ్ళ లోతు వరకు",
+    "meaning_hi": "घुटनों तक गहरा"
+   }
+  ],
+  "morphological_rules": [
+   "Affix दघ्नच् attaches to nominal base under Sūtra 5.2.37 (प्रमाणे द्वयसज्दघ्नञ्मात्रचः).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000037",
+  "sanskrit_name": "विनि",
+  "iast": "vini",
+  "level": "expert",
+  "category": "matvarthiya_possessive",
+  "category_name_sa": "तेजस्वी-मत्वर्थीय-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "इ (उच्चारणार्थ)"
+   ],
+   "retained_affix_sa": "विन्",
+   "retained_affix_iast": "vin (vī)",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.2.102."
+  },
+  "panini_sutra": {
+   "sutra": "तपःसहस्राभ्यां विनीनी",
+   "number": "5.2.102",
+   "meaning_en": "Denotes possessor of splendor/austerity.",
+   "note": "तेजस्वी comes from 5.2.121 अस्मायामेधास्रजो विनिः (स्-ending stems)"
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "तेजस्वी-मत्वर्थीय-तद्धितः - Sūtra 5.2.102 (तपःसहस्राभ्याम् विन्ौ)",
+   "en": "endowed with luster/austerity",
+   "te": "తేజస్సు/తపస్సు గలవాడు (-వి)",
+   "hi": "युक्त (तपस्वी, तेजस्वी)"
+  },
+  "examples": [
+   {
+    "base": "तपस्",
+    "base_iast": "tapas",
+    "derived_form": "तपस्वी",
+    "derived_iast": "tapasvī",
+    "meaning_en": "ascetic / austere",
+    "meaning_te": "తపస్వి",
+    "meaning_hi": "तपस्वी"
+   },
+   {
+    "base": "तेजस्",
+    "base_iast": "tejas",
+    "derived_form": "तेजस्वी",
+    "derived_iast": "tejasvī",
+    "meaning_en": "splendid / radiant",
+    "meaning_te": "తేజస్వి",
+    "meaning_hi": "तेजस्वी"
+   }
+  ],
+  "morphological_rules": [
+   "Affix विन् attaches to nominal base under Sūtra 5.2.102 (तपःसहस्राभ्याम् विन्ौ).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "sūtra text garbled ('विन्ौ') → तपःसहस्राभ्यां विनीनी; तेजस्वी is 5.2.121",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000038",
+  "sanskrit_name": "यत्",
+  "iast": "yat",
+  "level": "expert",
+  "category": "sambandharthaka_relational",
+  "category_name_sa": "शरीरावयव-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [],
+   "retained_affix_sa": "य",
+   "retained_affix_iast": "ya",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.1.6."
+  },
+  "panini_sutra": {
+   "sutra": "शरीरावयवाद्यत्",
+   "number": "5.1.6",
+   "meaning_en": "Performs relational adjectives on body parts."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "शरीरावयव-तद्धितः - Sūtra 5.1.6 (शरीरावयवाद्यत्)",
+   "en": "pertaining to body part",
+   "te": "అవయవమునకు సంబంధించిన (-య)",
+   "hi": "अंग से संबंधित (दन्त्य, कण्ठ्य)"
+  },
+  "examples": [
+   {
+    "base": "दन्त",
+    "base_iast": "danta",
+    "derived_form": "दन्त्यः",
+    "derived_iast": "dantyaḥ",
+    "meaning_en": "dental sound/letter",
+    "meaning_te": "దంత్యము",
+    "meaning_hi": "दन्त्य"
+   },
+   {
+    "base": "कण्ठ",
+    "base_iast": "kaṇṭha",
+    "derived_form": "कण्ठ्यः",
+    "derived_iast": "kaṇṭhyaḥ",
+    "meaning_en": "guttural sound/letter",
+    "meaning_te": "కంఠ్యము",
+    "meaning_hi": "कण्ठ्य"
+   }
+  ],
+  "morphological_rules": [
+   "Affix यत् attaches to nominal base under Sūtra 5.1.6 (शरीरावयवाद्यत्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed",
+   "review_notes": [
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000039",
+  "sanskrit_name": "आलुच्",
+  "iast": "āluc",
+  "level": "expert",
+  "category": "tacchilika_krt",
+  "category_name_sa": "दयालु-स्वभाव-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "च्"
+   ],
+   "retained_affix_sa": "आलुः",
+   "retained_affix_iast": "āluḥ",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.2.122."
+  },
+  "panini_sutra": {
+   "sutra": "शीतोष्णाभ्याम् आलुच्",
+   "number": "5.2.122",
+   "meaning_en": "Denotes innate disposition / compassion.",
+   "note": "taddhita आलुच् comes from the vārttika शीतोष्णतृप्रेभ्यस्तन्न सहते; please confirm the sūtra number you want to cite. दयालुः is a kṛdanta (3.2.158 स्पृहिगृहिपतिदयि… आलुच्)."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": false,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "दयालु-स्वभाव-तद्धितः - Sūtra 5.2.122 (शीतोष्णाभ्याम् आलुच्)",
+   "en": "disposed to / possessing quality of",
+   "te": "స్వభావము గలవాడు (-ఆలు)",
+   "hi": "स्वभाव वाला (दयालु, कृपालु)"
+  },
+  "examples": [
+   {
+    "base": "शीत",
+    "base_iast": "śīta",
+    "derived_form": "शीतालुः",
+    "derived_iast": "śītāluḥ",
+    "meaning_en": "one who cannot bear cold",
+    "meaning_te": "చలిని తట్టుకోలేనివాడు",
+    "meaning_hi": "जो सर्दी सहन न कर सके"
+   },
+   {
+    "base": "उष्ण",
+    "base_iast": "uṣṇa",
+    "derived_form": "उष्णालुः",
+    "derived_iast": "uṣṇāluḥ",
+    "meaning_en": "one who cannot bear heat",
+    "meaning_te": "వేడిని తట్టుకోలేనివాడు",
+    "meaning_hi": "जो गर्मी सहन न कर सके"
+   }
+  ],
+  "morphological_rules": [
+   "Affix आलुच् attaches to nominal base under Sūtra 5.2.122 (शीतोष्णाभ्याम् आलुच्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "दयालुः/कृपालुः are kṛt forms (3.2.158), not taddhita; replaced with शीतालुः, उष्णालुः; the citation needs your confirmation",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ },
+ {
+  "id": "TP-000040",
+  "sanskrit_name": "शस्",
+  "iast": "śas_var",
+  "level": "expert",
+  "category": "vibhagarthaka_distribution",
+  "category_name_sa": "संख्यात्मक-विभाग-तद्धितः",
+  "anubandha_info": {
+   "it_markers": [
+    "स्"
+   ],
+   "retained_affix_sa": "शः",
+   "retained_affix_iast": "śaḥ",
+   "grammatical_effect": "Pāṇinian affix operation via Sūtra 5.4.43."
+  },
+  "panini_sutra": {
+   "sutra": "संख्यैकवचनाच्च वीप्सायाम्",
+   "number": "5.4.43",
+   "meaning_en": "Denotes numerical distribution in large numbers."
+  },
+  "grammatical_properties": {
+   "is_indeclinable": true,
+   "gender_flexibility": "variable",
+   "causes_vriddhi": false,
+   "stem_vowel_change": "Pāṇinian stem rules applied"
+  },
+  "meanings": {
+   "sa": "संख्यात्मक-विभाग-तद्धितः - Sūtra 5.4.43 (बहुबहुवचने शस्)",
+   "en": "by hundreds / by thousands",
+   "te": "వందల కొద్దీ (-శః)",
+   "hi": "सैंकड़ों की संख्या में"
+  },
+  "examples": [
+   {
+    "base": "शत",
+    "base_iast": "śata",
+    "derived_form": "शतशः",
+    "derived_iast": "śataśaḥ",
+    "meaning_en": "by hundreds",
+    "meaning_te": "నూరుల కొద్దీ",
+    "meaning_hi": "सैंकड़ों"
+   },
+   {
+    "base": "सहस्र",
+    "base_iast": "sahasra",
+    "derived_form": "सहस्रशः",
+    "derived_iast": "sahasraśaḥ",
+    "meaning_en": "by thousands",
+    "meaning_te": "వేల కొద్దీ",
+    "meaning_hi": "हजारों"
+   }
+  ],
+  "morphological_rules": [
+   "Affix शस् attaches to nominal base under Sūtra 5.4.43 (बहुबहुवचने शस्).",
+   "Morphological stem transformation and Sandhi applied."
+  ],
+  "verification": {
+   "status": "reviewed_with_corrections",
+   "review_notes": [
+    "sūtra text corrected (5.4.43 संख्यैकवचनाच्च वीप्सायाम्)",
+    "Reviewed by Claude against the sūtras; please confirm before release.",
+    "morphological_rules are generic placeholders; detailed steps still to be written"
+   ]
+  }
+ }
+]

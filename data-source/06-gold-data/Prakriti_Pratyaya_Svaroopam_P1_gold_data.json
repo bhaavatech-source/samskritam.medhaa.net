@@ -1,0 +1,920 @@
+{
+ "document_metadata": {
+  "title": "Gold Data for training of Sanskrit Corpus",
+  "authors": [
+   {
+    "name": "Dr. B Rajeswara Rao",
+    "affiliation": "Bhaavajaalam Research Center, Visakhapatnam"
+   }
+  ],
+  "subject_devanagari": "प्रकृतिप्रत्ययस्वरूपम्",
+  "subject_english": "Nature of Root and Affix (Prakrti and Pratyaya)",
+  "document_type": "Educational/Technical Grammar Reference",
+  "purpose": "Gold data for training Sanskrit corpus and NLP models"
+ },
+ "introduction": {
+  "core_concept": "The continuous flow of vowels and consonants constitutes language or speech or literature",
+  "original_sutra": "स्वरव्यञ्जनयोः समीच्चोरणमेव भाषणम् अथवा भाषा अथवा वाङ्मयम् भवति",
+  "terms": {
+   "svara": {
+    "devanagari": "स्वरः",
+    "english": "vowel",
+    "definition": "Any of the vowel sounds in Sanskrit"
+   },
+   "vyanjana": {
+    "devanagari": "व्यञ्जनम्",
+    "english": "consonant",
+    "definition": "Any of the consonant sounds in Sanskrit"
+   }
+  },
+  "sequence_patterns": [
+   "sv_vy (स्व व्य - vowel consonant)",
+   "vy_sv (व्य स्व - consonant vowel)",
+   "sv_sv_vy (स्व स्व व्य - vowel vowel consonant)",
+   "vy_sv_vy (व्य स्व व्य - consonant vowel consonant)",
+   "sv_vy_sv_vy (स्व व्य स्व व्य - alternating pattern)",
+   "sv_sv_vy_vy_sv (स्व स्व व्य व्य स्व)",
+   "sv_vy_vy_sv_vy_sv_vy (स्व व्य व्य स्व व्यस्व व्य)",
+   "sv_sv_sv_vy_sv_vy_vy_vy (स्व स्व स्व व्य स्व व्य व्य व्य - et cetera)"
+  ]
+ },
+ "need_for_grammar": {
+  "problem": "The sequence of vowels and consonants has no fixed rules in natural speech; only native speaker competence provides intuition",
+  "challenges": [
+   "Natural speech changes over time and place",
+   "Without grammar, ancient literature becomes incomprehensible",
+   "Ambiguity in understanding speaker's intention"
+  ],
+  "solution": "व्याकरण (Vyakarana - Grammar Science)",
+  "grammar_function": [
+   "Enables extraction of full intention of the speaker",
+   "Helps listeners decode meaning correctly and meaningfully",
+   "Preserves language form and prevents arbitrary changes due to time and place"
+  ]
+ },
+ "vyakarana_subject_matter": {
+  "definition": "Sacred scholarly meanings and words formulated by grammar experts for conducting grammatical operations and comprehensive understanding of language",
+  "original_sutra": "अत्र शास्त्रज्ञैः शास्त्रप्रक्रियानिर्वाहाय, भाषायाः समग्रपरिशीलनाय च केचन अलौकिकाः (शास्त्रीयाः) अर्थाः, शब्दाश्च परिकल्पिताः",
+  "three_primary_components": {
+   "primary": [
+    {
+     "name": "धातुः",
+     "english": "Dhatu (Root/Verbal Root)",
+     "description": "The fundamental semantic unit from which verbal forms are derived"
+    },
+    {
+     "name": "प्रातिपदिकम्",
+     "english": "Pratipadika (Nominal Stem)",
+     "description": "The fundamental unit for nominal words"
+    },
+    {
+     "name": "प्रत्ययः",
+     "english": "Pratyaya (Affix/Suffix)",
+     "description": "Brings specific meaning to the root or stem"
+    }
+   ],
+   "note": "The first two are collectively called 'Prakrti' (Root/Stem) - the base from which the modified form arises through affixation"
+  }
+ },
+ "dhatu_roots": {
+  "definition": "A combination of vowels and consonants by which a particular action is understood",
+  "devanagari_definition": "धातुः नाम तादृशः स्वरव्यञ्जनयोः राशिः येन क्रिया काचित् बोध्यते",
+  "varieties": [
+   {
+    "type": "धातुपाठे पठिताः",
+    "english": "Roots listed in Dhatupath (dictionary of roots)",
+    "example": "Primary roots as per traditional lists"
+   },
+   {
+    "type": "णिजन्ताः धातवः",
+    "english": "Causative derivatives (with Nic affix)",
+    "formation": "Root + nic suffix",
+    "example": "कृ (to do) → कारि (to cause to do)"
+   },
+   {
+    "type": "सन्नन्ताः धातवः",
+    "english": "Desiderative derivatives (with San affix)",
+    "formation": "Root + san suffix",
+    "function": "Expresses desire to perform action"
+   },
+   {
+    "type": "यङन्ताः धातवः",
+    "english": "Frequentative derivatives (with Yan affix)",
+    "formation": "Root + yan suffix",
+    "function": "Expresses repetition of action"
+   },
+   {
+    "type": "यङ्लुङन्ताः धातवः",
+    "english": "Combined frequentative-perfective",
+    "formation": "Root + yan + lun suffix"
+   },
+   {
+    "type": "नामाधारितधातवः",
+    "english": "Noun-derived roots",
+    "formation": "Derived from nominal stems",
+    "example": "Nouns converted to verbal roots"
+   },
+   {
+    "type": "प्रातिपदिकाधारितधातवः",
+    "english": "Stem-derived roots",
+    "formation": "Derived from pratipadika"
+   }
+  ]
+ },
+ "pratipadika_nominal_stems": {
+  "definition": "A meaningful combination of vowels and consonants that is distinct from roots, distinct from affixes, distinct from affix-endings",
+  "analysis": "प्रतिपदं प्रतिपदं भवं प्रातिपदिकम्",
+  "complete_definition": "Each word, each occurrence, each state (bhava) constitutes a pratipadika (nominal stem)",
+  "characteristics": [
+   "Word form (shabda-svarupa) - combination of vowels and consonants",
+   "Meaningful - carries semantic content",
+   "Distinct from roots, affixes, and affix-endings"
+  ],
+  "types": [
+   {
+    "name": "सञ्ज्ञारूपं प्रातिपदिकम्",
+    "english": "Nominal/Nominal Form Pratipadika",
+    "description": "Pratipadika in the form of proper nouns or substantives",
+    "examples": [
+     {
+      "devanagari": "डित्थ",
+      "english": "Ditttha (a name or noun)"
+     },
+     {
+      "devanagari": "माणवक",
+      "english": "Manavaka (a youth/nom)"
+     }
+    ],
+    "characteristic": "These are nominal forms designated as pratipadika"
+   },
+   {
+    "name": "कृदन्तप्रातिपदिकम्",
+    "english": "Participial/Derived Pratipadika",
+    "description": "Stem ending in a krt (derivational) affix",
+    "formation": "Dhatu + krt-pratyaya",
+    "detailed_definition": "After a root, a krt-affix is provided for agent, object, etc. purposes. The word-form ending in this suffix becomes a pratipadika",
+    "example": {
+     "root": "गम्",
+     "english_root": "gam (to go)",
+     "affix": "क्तवतु",
+     "english_affix": "ktavatu (had gone, past participial affix)",
+     "formation": "गम् + क्तवतु",
+     "result": "गतवत्",
+     "english_result": "gatavat (one who has gone)",
+     "further_formation": "गतवान्, गतवती etc.",
+     "note": "This uninhibited utterance of root + affix is called 'krd-vrtti' (krt-function)"
+    },
+    "famous_krt_pratipadika_endings": [
+     {
+      "devanagari": "कर्तृ",
+      "english": "kartr"
+     },
+     {
+      "devanagari": "कृत",
+      "english": "krita"
+     },
+     {
+      "devanagari": "पक्व",
+      "english": "pakva"
+     }
+    ],
+    "famous_krt_pratipadika_subantas": [
+     {
+      "devanagari": "कर्ता",
+      "english": "kartra"
+     },
+     {
+      "devanagari": "कृतम्",
+      "english": "kritam"
+     },
+     {
+      "devanagari": "पक्वम्",
+      "english": "pakvam"
+     }
+    ]
+   },
+   {
+    "name": "तद्धितान्तप्रातिपदिकम्",
+    "english": "Secondary Derivation Pratipadika",
+    "description": "Stem ending in a taddhita (secondary derivational) affix",
+    "formation": "Subanta (nominal) + taddhita-pratyaya",
+    "detailed_definition": "A taddhita-affix is provided after a nominal (subanta) for offspring, relationship etc. purposes. The word-form ending in this affix becomes a pratipadika",
+    "example": {
+     "meaning": "The offspring of Dasharatha",
+     "base": "दशरथ",
+     "english_base": "dasharatha (proper noun)",
+     "affix": "इञ्",
+     "english_affix": "in (descendant/derived from affix)",
+     "formation": "दशरथ + ङस् + इञ्",
+     "result": "दाशरथि",
+     "english_result": "dasharathi (descendant/related to Dasharatha)",
+     "further_formation": "दाशरथिः etc.",
+     "note": "This uninhibited utterance of nominal + taddhita-affix is called 'taddhita-vrtti' (taddhita-function)"
+    }
+   },
+   {
+    "name": "समाससञ्ज्ञकं प्रातिपदिकम्",
+    "english": "Compound Pratipadika",
+    "description": "A word designated as a compound",
+    "example": {
+     "word": "सीतापतिः",
+     "english_word": "sitapatih (Sita's husband)",
+     "common_meaning": "The husband of Sita as seen in the world",
+     "grammatical_analysis": "सीता + ङस् + पति + सु",
+     "process_name": "compound formation (samasa-vrtti)",
+     "note": "The combination of two nominal words with non-interrupting utterance"
+    }
+   },
+   {
+    "name": "अव्ययसञ्ज्ञकं प्रातिपदिकम्",
+    "english": "Indeclinable Pratipadika",
+    "description": "Words designated as indeclinables",
+    "examples": [
+     {
+      "devanagari": "तत्र",
+      "english": "tatra (there)"
+     },
+     {
+      "devanagari": "अत्र",
+      "english": "atra (here)"
+     }
+    ],
+    "characteristic": "These forms are designated as indeclinable (avyaya) in grammar and still function as pratipadika"
+   }
+  ]
+ },
+ "pratyaya_affixes": {
+  "definition_in_other_texts": "In other sciences, pratyaya means knowledge",
+  "grammar_definition": "In grammar, pratyaya is a meaningful Vowel or combination of vowels and consonants",
+  "nature_of_meaning": {
+   "what_kind": "A specific meaning (not seen separately in the world)",
+   "characteristics": [
+    "Appears individually in one context",
+    "Universally appears in words of the same category (sva-jatiya)",
+    "Both non-universal (unique to world) and universal (across all similar words)",
+    "Often accompanied by any other letter for grammatical process"
+   ]
+  },
+  "function": "Each affix typically has marks and signals indicating other grammatical tasks",
+  "example": {
+   "concept": "Agent meaning across different contexts",
+   "words_with_similar_meaning": [
+    {
+     "devanagari": "कर्ता",
+     "english": "karta (doer-masculine)"
+    },
+    {
+     "devanagari": "हर्ता",
+     "english": "harta (taker-masculine)"
+    },
+    {
+     "devanagari": "गन्ता",
+     "english": "ganta (goer-masculine)"
+    },
+    {
+     "devanagari": "लेखिता",
+     "english": "lekhita (writer-masculine)"
+    },
+    {
+     "devanagari": "कर्त्री",
+     "english": "kartri (doer-feminine)"
+    },
+    {
+     "devanagari": "हन्त्री",
+     "english": "hantri (taker-feminine)"
+    },
+    {
+     "devanagari": "गन्त्री",
+     "english": "gantri (goer-feminine)"
+    },
+    {
+     "devanagari": "लेखित्री",
+     "english": "lekhitri (writer-feminine)"
+    },
+    {
+     "devanagari": "कर्तृ",
+     "english": "kartr (doer-base form)"
+    },
+    {
+     "devanagari": "हर्तृ",
+     "english": "hartr (taker-base form)"
+    },
+    {
+     "devanagari": "गन्तृ",
+     "english": "gantr (goer-base form)"
+    },
+    {
+     "devanagari": "लेखितृ",
+     "english": "lekhitr (writer-base form)"
+    }
+   ],
+   "affix_used": "तृच्",
+   "english_affix": "trich (agent affix)",
+   "semantic_function": "The trich affix is devised to express the agent meaning across all these forms",
+   "notation_meaning": "The 'ch'-mark indicate some grammatical function"
+  },
+  "pratyaya_classification": {
+   "introduction": "Affixes are classified into eleven types based on semantic functions",
+   "eleven_types": [
+    {
+     "number": 1,
+     "type": "क्रियावाचिनः धातोः क्रियान्तरवाचित्वेन (धात्वन्तरत्वेन) विपरिणामार्थं प्रत्ययः",
+     "english": "Affixes causing transformation of one verbal root to another verbal root (Sanadi affixes like nic, san, yan)",
+     "description": "Change one action (verbal root) to another action",
+     "example": {
+      "root": "कृ",
+      "english_root": "kr (to do)",
+      "affix": "णिच्",
+      "english_affix": "nic (causative)",
+      "result": "कारि",
+      "english_result": "kari (to cause to do)",
+      "type": "verbal root transformation"
+     },
+     "subnote": {
+      "context": "Sometimes affixes occur after finite verb forms (तिङन्तs)",
+      "meaning": "For excessive degree",
+      "examples": [
+       {
+        "meaning": "excessively cook",
+        "form": "पचति + तर → पचतितराम्"
+       },
+       {
+        "meaning": "excessively go",
+        "form": "पतति + तम → पततितमाम्"
+       }
+      ]
+     }
+    },
+    {
+     "number": 2,
+     "type": "धातोः नामत्वेन (प्रातिपदिकत्वेन) विपरिणामार्थं प्रत्ययः",
+     "english": "Affixes causing transformation of verbal root to nominal form (Krt affixes)",
+     "description": "Change a verbal root to a noun/name",
+     "example": {
+      "root": "कृ",
+      "english_root": "kr (to do)",
+      "affix": "तृच्",
+      "english_affix": "trich (agent noun affix)",
+      "result": "कर्तृ",
+      "english_result": "kartr (doer/agent - a noun)"
+     }
+    },
+    {
+     "number": 3,
+     "type": "धातोः अव्ययत्वेन (क्रियाविशेषणत्वेन) विपरिणामार्थं प्रत्ययाः",
+     "english": "Affixes causing transformation of verbal root to indeclinable/adverbial form",
+     "description": "Change a verbal root to an indeclinable (adverbial modifier)",
+     "example": {
+      "root": "कृ",
+      "english_root": "kr (to do)",
+      "affix": "क्त्वा",
+      "english_affix": "ktvā (absolutive/conjunctive affix)",
+      "result": "कृत्वा",
+      "english_result": "krtva (having done - an indeclinable)"
+     }
+    },
+    {
+     "number": 4,
+     "type": "सुबन्तस्य क्रियावाचित्वेन (धातुत्वेन) विपरिणामार्थं प्रत्ययः",
+     "english": "Affixes causing transformation of nominal to verbal root",
+     "description": "Change a nominal/noun to a verbal root",
+     "affixes": [
+      "क्यङ्",
+      "क्यज्"
+     ],
+     "example": {
+      "nominal": "पुत्रम्",
+      "english_nominal": "putram (a son - object, substance-focused noun)",
+      "affix": "क्यङ्",
+      "english_affix": "kyaN",
+      "result": "पुत्रीय",
+      "english_result": "putríya (to act as a son - a verbal root)",
+      "note": "The noun-focused substance becomes action-focused"
+     }
+    },
+    {
+     "number": 5,
+     "type": "सुबन्तस्य सुबन्तान्तरत्वेन विपरिणामार्थं प्रत्ययः",
+     "english": "Affixes causing transformation of one nominal to another nominal form (Taddhita affixes)",
+     "description": "Change one noun to another noun (secondary derivation)",
+     "example": {
+      "base": "दशरथ",
+      "english_base": "dasharatha (a proper name)",
+      "affix": "इञ्",
+      "english_affix": "in (descendant affix)",
+      "result": "दाशरथि",
+      "english_result": "dasharathi (descendant of Dasharatha - another noun form)"
+     }
+    },
+    {
+     "number": 6,
+     "type": "सुबन्तस्य अव्ययत्वेन विपरिणामार्थं प्रत्ययः",
+     "english": "Affixes causing transformation of nominal to indeclinable form",
+     "description": "Change a nominal to an indeclinable",
+     "affix": "त्रल्",
+     "example": {
+      "nominal": "तस्मिन्",
+      "english_nominal": "tasmin (in that - locative nominal)",
+      "affix": "त्रल्",
+      "result": "तत्र",
+      "english_result": "tatra (in that place - indeclinable)"
+     }
+    },
+    {
+     "number": 7,
+     "type": "सर्वविधधातोः (क्रियावाचिनः) पदत्वेन विपरिणामार्थं तिङः प्रत्ययः",
+     "english": "तिङ् affixes - causing transformation of any verbal root to finite verb form",
+     "description": "Finite verb conjugation affixes that express person, number, tense",
+     "example": {
+      "base_roots": [
+       {
+        "root": "कृ",
+        "meaning": "alone: does (present, 3rd person singular)",
+        "form": "करोति"
+       },
+       {
+        "root": "कारि (causative)",
+        "meaning": "causative root: causes to do",
+        "form": "कारयति"
+       },
+       {
+        "root": "चिकीर्ष (desiderative)",
+        "meaning": "desiderative: wishes to do",
+        "form": "चिकीर्षति"
+       }
+      ],
+      "note": "All verbal roots take तिङ् affixes in various forms"
+     }
+    },
+    {
+     "number": 8,
+     "type": "सर्वविधप्रातिपदिकस्य सुबन्तत्वेन विपरिणामः सुप्-प्रत्ययाः",
+     "english": "Sup affixes - causing transformation of any pratipadika to nominal form (case declension)",
+     "description": "Nominal case declension affixes expressing number, case, gender",
+     "example": {
+      "base": "कर्तृ",
+      "english_base": "kartr (agent - pratipadika form)",
+      "affix": "सुप् (case affix)",
+      "result": "कर्ता",
+      "english_result": "karta (agent - nominative singular)",
+      "note": "Sup affixes enable nominal declension"
+     }
+    },
+    {
+     "number": 9,
+     "type": "समासान्तप्रत्ययाः",
+     "english": "Affixes involving compounds",
+     "description": "Affixes related to compound word formation"
+    },
+    {
+     "number": 10,
+     "type": "स्त्रीप्रत्ययाः",
+     "english": "Feminine affixes",
+     "description": "Affixes that mark feminine gender"
+    },
+    {
+     "number": 11,
+     "type": "स्वार्थिकप्रत्ययाः",
+     "english": "Reflexive affixes",
+     "description": "Affixes that serve special semantic purposes (some are categorized within other divisions); found throughout various classifications"
+    }
+   ]
+  },
+  "ashtadhyayi_classification": {
+   "introduction": "These eleven types of affixes are distributed in the Ashtadhyayi (Panini's grammar)",
+   "distribution": [
+    {
+     "name": "सनादिप्रत्ययाः",
+     "english": "Sanadi affixes",
+     "description": "Affixes like nic, san, yan etc. that modify verbal roots"
+    },
+    {
+     "name": "कृत्प्रत्ययाः",
+     "english": "Krt affixes",
+     "description": "Affixes derived from verbal roots; includes lad, तिङ् conjugations"
+    },
+    {
+     "name": "सुप्-प्रत्ययाः",
+     "english": "Sup affixes",
+     "description": "Nominal case declension affixes"
+    },
+    {
+     "name": "स्त्रीप्रत्ययाः",
+     "english": "Feminine affixes",
+     "description": "Feminine gender markers"
+    },
+    {
+     "name": "तद्धितप्रत्ययाः",
+     "english": "Taddhita affixes",
+     "description": "Secondary derivational affixes"
+    },
+    {
+     "name": "समासान्ताः",
+     "english": "Compound endings",
+     "description": "Affixes involving compound formation"
+    }
+   ],
+   "note": "तिङ्-प्रत्ययेs come under कृत्-प्रत्ययs and reflexive affixes (svarthika-pratyaya) are distributed throughout all these categories"
+  },
+  "prakrti_root_stem": {
+   "definition": "The prakrti (root/stem) is the limit/boundary for every affix",
+   "devanagari_definition": "सर्वस्यापि प्रत्ययस्य अवधिः प्रकृतिः।",
+   "explanation": "The prakrti is that word-combination from which the affix is formed; it is also called 'anga' (limb/part)",
+   "manifestation": "As affixes manifest in eleven ways, prakrti also manifests in eleven corresponding ways",
+   "classification": "Prakrti can be classified into the same eleven categories as affixes based on their function"
+  },
+  "pratyaya_mala_chain": {
+   "introduction": "Important observation about affix chains",
+   "key_point": "Some affixes arise from roots without any affixes; some arise from roots with one affix; some arise with multiple affixes",
+   "type_1_examples": {
+    "description": "Affix from root alone",
+    "example": {
+     "root": "भू",
+     "english_root": "bhu (to be)",
+     "affix": "लट्",
+     "english_affix": "lat (present tense marker)",
+     "result": "भवति",
+     "english_result": "bhavati (is/exists)"
+    }
+   },
+   "type_2_examples": {
+    "description": "Affixes arising from affixed roots",
+    "example_sequence": {
+     "root": "भू",
+     "step_1": {
+      "transformation": "भू + णिच्",
+      "result": "भावि",
+      "english": "bhav (causative root - to cause to be)",
+      "status": "becomes new root"
+     },
+     "step_2a": {
+      "transformation": "भावि + लट्",
+      "result": "भावयति",
+      "english": "bhavayati (causes to be - 3rd person singular present)",
+      "function": "finite verb"
+     },
+     "step_2b": {
+      "transformation": "भावि + शतृ",
+      "result": "भावयत्",
+      "english": "bhavayat (one who causes - participial form)"
+     },
+     "step_2c": {
+      "transformation": "भावयत् + सुप्",
+      "result": "भावयन्",
+      "english": "bhavayana (declension begins)",
+      "with_feminine": "भावयन्ती (feminine form)"
+     }
+    }
+   },
+   "type_3_examples": {
+    "description": "Further chaining from nominal forms",
+    "sequence": {
+     "step_1": "भावयन् (nominal form from verbal derivative)",
+     "step_2": {
+      "transformation": "भावयत् + ङस् (genitive) + त्व (taddhita affix)",
+      "meaning": "The state of causing to be",
+      "result": "भावयत्त्व",
+      "english": "bhavayatva (the quality of causing)",
+      "step_3": "भावयत्त्व + सुप् = भावयत्त्वम् (nominalized)",
+      "note": "Further derivation from this nominal form"
+     }
+    }
+   }
+  },
+  "pratyaya_chains_comprehensive": {
+   "introduction": "Various combinations of roots, affixes and their chains in world and Vedic usage",
+   "possible_chains": [
+    {
+     "chain": "धातुः + कृत् + सुप् + तद्धित + सुप्",
+     "english": "Root + Krt + Sup + Taddhita + Sup",
+     "description": "Root becomes nominal, then secondary derivation, then declension"
+    },
+    {
+     "chain": "धातुः + णिच् + सन् + कृत् + सुप्",
+     "english": "Root + Nic + San + Krt + Sup",
+     "description": "Root modified for causative, then desiderative, then nominalized"
+    },
+    {
+     "chain": "धातुः + णिच् + सन् + लडादिः + तर",
+     "english": "Root + Nic + San + Lad + tar",
+     "description": "Multiple modifications with comparative marker"
+    },
+    {
+     "chain": "धातुः + सन् + णिच्",
+     "english": "Root + San + Nic",
+     "description": "Desiderative followed by causative"
+    },
+    {
+     "chain": "धातुः + सन् + णिच्/यङ्/क्यच्/क्यङ्/यक् + कृत् + स्त्री + सुप्",
+     "english": "Root + San + Various affixes + Krt + Feminine + Sup",
+     "description": "Multiple modifications with feminine marking"
+    },
+    {
+     "chain": "प्रातिपदिकम् + सुप् + तद्धित + सुप्",
+     "english": "Pratipadika + Sup + Taddhita + Sup",
+     "description": "Nominal form, case marking, secondary derivation, case marking"
+    },
+    {
+     "chain": "प्रातिपदिकम् + स्त्री + सुप् + तद्धित + स्त्री + सुप्",
+     "english": "Pratipadika + Feminine + Sup + Taddhita + Feminine + Sup",
+     "description": "Nominal with feminine marking throughout"
+    }
+   ],
+   "conclusion": "In these manifold ways, affixes appear in the world and in the Vedas based on usage; one must understand this"
+  },
+  "affix_usage_constraints": {
+   "key_principle": "Not all possible affix combinations are used in practice",
+   "constraint_1": "Apada na prayunjita (One should not use 'apada' - non-word forms)",
+   "application": [
+    "One should not use only a root (prakrti) alone",
+    "One should not use only an affix (pratyaya) alone",
+    "Every utterance must be a complete word (pada)"
+   ],
+   "pada_definition": "A pada is a word form that is either:",
+   "pada_types": [
+    {
+     "type": "सुबन्तं पदम्",
+     "english": "Subanta (nominal/declined word)",
+     "description": "Word ending in sup (case) affix"
+    },
+    {
+     "type": "तिङन्तं पदम्",
+     "english": "तिङन्त (finite verb)",
+     "description": "Word ending in तिङ् (verbal) affix"
+    }
+   ],
+   "determination_requirement": "One must know: What word is produced? What portion/part constitutes the word? Only then can segmentation be done correctly anywhere in literature",
+   "principle": "Only complete words are used in speech; never incomplete formations"
+  },
+  "sup_affixes_nominal_declension": {
+   "description": "Sup is a special designation by which the following affixes are indicated",
+   "devanagari_enumeration": "सुँ-औ-जस्-अम्-औट्-शस्-टा-भ्याम्-भिस्-ङे-भ्याम्-भ्यस्-ङसिँ-भ्याम्-भ्यस्-ङस्-ओस्-आम्-ङि-ओस्-सुप्।",
+   "english_enumeration": "su, au, jas, am, aUT, shas, TA, bhyAm, bhis, Nge, bhyAm, bhyas, Ngsi, bhyAm, bhyas, Ngas, os, Am, Ngi, os, sup",
+   "total_count": "Twenty-one affixes included in the term 'sup'",
+   "list": [
+    "सु",
+    "औ",
+    "जस्",
+    "अम्",
+    "औट्",
+    "शस्",
+    "टा",
+    "भ्याम्",
+    "भिस्",
+    "ङे",
+    "भ्याम्",
+    "भ्यस्",
+    "ङसिँ",
+    "भ्याम्",
+    "भ्यस्",
+    "ङस्",
+    "ओस्",
+    "आम्",
+    "ङि",
+    "ओस्",
+    "सुप्"
+   ],
+   "function": "These affixes are applied to pratipadika to express agent and other meanings",
+   "system": "The abbreviation 'sup' is a pratiharya (substitute term) in which twenty-one affixes are embedded",
+   "organization": "The distribution is based on three affixes (triplet system) for different numbers and cases",
+   "triplets": "Seven triplets, each triplet showing singular, dual, plural forms",
+   "case_marking": "Each triplet represents different cases marked with different number-based endings"
+  },
+  "case_system_detailed": {
+   "introduction": "The seven-case system with three numbers",
+   "system_description": "Three markers for singular, dual, plural within each of seven cases",
+   "organizational_principle": "The seven cases are distinguished by specific affixes and marks",
+   "naming_scheme": "First case of a triplet gets duplication; after duplication, the second triplet gets the name 'sambodhan-prathama' (vocative-nominative)",
+   "case_names": [
+    "विभक्ति (vibhakti - designation/case)",
+    "विभक्ति व्यवहार (practical application)"
+   ],
+   "number_system": "Within each triplet, there are three divisions:",
+   "number_types": [
+    {
+     "position": "First of triplet",
+     "name": "एकवचनम्",
+     "english": "Singular (one-ness)",
+     "function": "Used where singularity exists"
+    },
+    {
+     "position": "Second of triplet",
+     "name": "द्विवचनम्",
+     "english": "Dual (two-ness)",
+     "function": "Used where duality exists"
+    },
+    {
+     "position": "Third of triplet",
+     "name": "बहुवचनम्",
+     "english": "Plural (many-ness)",
+     "function": "Used where plurality exists"
+    }
+   ],
+   "principle": "The appropriate affix must be chosen based on the pratipadika and the number concept involved",
+   "result": "All words form correctly from their respective pratipadika through this system"
+  },
+  "sup_affixes_table": {
+   "structure": "Seven cases × Three numbers = 21 affixes",
+   "table": [
+    {
+     "case_number": 1,
+     "case_name": "प्रथमा",
+     "english_case": "Nominative (First case)",
+     "singular_marker": "सु",
+     "dual_marker": "औ",
+     "plural_marker": "जस्",
+     "alternate_name": "सम्बोधन-प्रथमा (Vocative-Nominative)"
+    },
+    {
+     "case_number": 2,
+     "case_name": "द्वितीया",
+     "english_case": "Accusative (Second case)",
+     "singular_marker": "अम्",
+     "dual_marker": "औट्",
+     "plural_marker": "शस्"
+    },
+    {
+     "case_number": 3,
+     "case_name": "तृतीया",
+     "english_case": "Instrumental (Third case)",
+     "singular_marker": "टा",
+     "dual_marker": "भ्याम्",
+     "plural_marker": "भिस्"
+    },
+    {
+     "case_number": 4,
+     "case_name": "चतुर्थी",
+     "english_case": "Dative (Fourth case)",
+     "singular_marker": "ङे",
+     "dual_marker": "भ्याम्",
+     "plural_marker": "भ्यस्"
+    },
+    {
+     "case_number": 5,
+     "case_name": "पञ्चमी",
+     "english_case": "Ablative (Fifth case)",
+     "singular_marker": "ङसि",
+     "dual_marker": "भ्याम्",
+     "plural_marker": "भ्यस्"
+    },
+    {
+     "case_number": 6,
+     "case_name": "षष्ठी",
+     "english_case": "Genitive (Sixth case)",
+     "singular_marker": "ङस्",
+     "dual_marker": "ओस्",
+     "plural_marker": "आम्"
+    },
+    {
+     "case_number": 7,
+     "case_name": "सप्तमी",
+     "english_case": "Locative (Seventh case)",
+     "singular_marker": "ङि",
+     "dual_marker": "ओस्",
+     "plural_marker": "सुप्"
+    }
+   ]
+  },
+  "worked_example_ramen": {
+   "example": "रामेण इति पदम्",
+   "english": "The word 'ramena' (by/with Ram)",
+   "analysis": {
+    "components": [
+     {
+      "component": "राम",
+      "designation": "कृदन्तः स्वरव्यञ्जनराशिः प्रातिपदिकसञ्ज्ञकः",
+      "english": "Participial combination of vowels-consonants designated as pratipadika",
+      "meaning": "The stem 'ram'"
+     },
+     {
+      "component": "टा",
+      "designation": "प्रत्ययसञ्ज्ञकः शब्दराशिः",
+      "english": "combination of sounds designated as affix",
+      "meaning": "Instrumental singular marker"
+     },
+     {
+      "component": "इन",
+      "designation": "प्रत्ययस्यादेशः स्वरव्यञ्जनशब्दराशिः",
+      "english": "Sound-combination that is a substitute for the affix",
+      "meaning": "Substitute form replacing TA"
+     },
+     {
+      "component": "एकारः",
+      "designation": "प्रातिपदिकप्रत्ययोः आदेशः स्वरः",
+      "english": "Vowel that is a substitute for pratipadika and affix",
+      "function": "Connecting vowel"
+     },
+     {
+      "component": "णकारः",
+      "designation": "आदेशस्यादेशः",
+      "english": "Sound that is a substitute for the substitute",
+      "function": "Final marker from anusvara principle"
+     }
+    ]
+   },
+   "derivation_process": [
+    "राम (pratipadika/stem)",
+    "राम + टा (pratipadika + instrumental singular affix)",
+    "राम + आ (substitute transformation)",
+    "राम + इन (further substitute)",
+    "रामेन (full substitution with connecting vowel)",
+    "रामेण (final nasal substitution)"
+   ],
+   "result": "रामेण इति सूबन्तं पदम् (ramena is a declined nominal word)"
+  },
+  "तिङन्त_finite_verbs": {
+   "description": "तिङ् is a special designation indicating verbal affixes",
+   "devanagari_enumeration": "तिप्-तस्-झि-सिप्-थस्-थ-मिप्-वस्-मस्-त-आताम्-झ-थास्-आथाम्-ध्वम्-इड्-वहि-महिङ्।",
+   "english_enumeration": "tip, tas, jhi, sip, thas, tha, mip, vas, mas, ta, AtAm, jha, thAs, AthAm, dhvam, iD, vahi, mahin",
+   "meaning": "The combination of vowels and consonants derived from root + तिङ्-affix with substitutions and modifications",
+   "worked_example": {
+    "verb": "भवति",
+    "english": "bhavati (is/exists - 3rd person singular present)",
+    "components": [
+     {
+      "component": "भू",
+      "designation": "धातुसञ्ज्ञः स्वरव्यञ्जनराशिः",
+      "english": "combination designated as verbal root",
+      "meaning": "Root: to be"
+     },
+     {
+      "component": "लट्",
+      "designation": "प्रत्ययसञ्ज्ञः स्वरव्यञ्जनराशिः",
+      "english": "combination designated as affix",
+      "meaning": "Present tense marker"
+     },
+     {
+      "component": "तिप्",
+      "designation": "प्रत्ययादेशः",
+      "english": "Verbal affix substitute",
+      "meaning": "3rd person singular"
+     },
+     {
+      "component": "शप्",
+      "designation": "स्वरव्यञ्जनराशिः प्रत्ययसञ्ज्ञः",
+      "english": "combination designated as affix",
+      "meaning": "Thematic vowel augment"
+     },
+     {
+      "component": "अव्",
+      "designation": "धात्वादेशः",
+      "english": "Verbal root substitute",
+      "meaning": "Modified form of root"
+     },
+     {
+      "component": "ति",
+      "designation": "final form",
+      "english": "3rd person singular ending",
+      "meaning": "He/she/it marker"
+     }
+    ]
+   },
+   "derivation_sequence": [
+    "भू (root)",
+    "भू + लट् (root + present tense)",
+    "भू + ति (root + 3rd singular verb affix)",
+    "भू + शप् + ति (with thematic augment)",
+    "भू + अ + ति (substitution of shap with 'a')",
+    "भवति (final form)"
+   ],
+   "result": "भवति इति तिङन्तपदम् (bhavati is a finite verb word)"
+  },
+  "word_formation_principle": {
+   "core_principle": "A meaningful combination of vowels and consonants that is produced through combination of pratipadika/dhatu with sup/तिङ्-affix including substitutions and augments",
+   "hidden_elements": "In worldly language, substitutions and augments are typically invisible/not directly observable; they operate according to established rules on dhatu/pratipadika",
+   "two_main_word_categories": [
+    {
+     "category": "तिङन्तं पदम्",
+     "english": "तिङन्त (Finite Verb)",
+     "composition": "Dhatu + तिङ्-affix (with substitutions and augments)",
+     "example": "bhavati"
+    },
+    {
+     "category": "सुबन्तं पदम्",
+     "english": "Subanta (Declined Nominal)",
+     "composition": "Pratipadika + Sup-affix (with substitutions and augments)",
+     "example": "ramena"
+    }
+   ],
+   "principle": "This system represents the extraordinary genius of Paninian grammar, allowing comprehensive understanding of Sanskrit morphology"
+  },
+  "grammatical_constraints": {
+   "principle": "अपदं न प्रयुञ्जीत",
+   "english": "One should not use non-word forms (apada)",
+   "application": [
+    "Neither only prakrti (root/stem) alone should be used",
+    "Nor only pratyaya (affix) alone should be used",
+    "Only forms that are either subanta or तिङन्त should be used",
+    "These represent complete, meaningful words in usage"
+   ],
+   "methodology": "Therefore, words themselves are what we use in speech",
+   "usage_rule": "Words are what should be used in speech"
+  },
+  "research_methodology": {
+   "observation": "Through examination of all sound variations heard in worldly usage",
+   "procedure": "Scholars carefully analyzed these sound variations to formulate the concepts of dhatu, pratipadika, etc.",
+   "purpose": "To understand the underlying structure that produces observable linguistic phenomena",
+   "application": "The grammatical framework enables extraction of complete meaning and prevents arbitrary language change over time"
+  }
+ }
+}

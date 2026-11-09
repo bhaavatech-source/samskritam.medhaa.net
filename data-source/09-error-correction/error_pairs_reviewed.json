@@ -1,0 +1,1373 @@
+{
+ "about": "Error-correction pairs from Parts_of_Sentenses_in_Samskritam_G.json, reviewed 2026-11-08. status ok = used as is; fixed = correction changed (see why); dropped = not used in the game (see why).",
+ "stats": {
+  "ok": 140,
+  "dropped": 18,
+  "fixed": 11
+ },
+ "pairs": [
+  {
+   "id": "ER-1-01",
+   "table": 1,
+   "incorrect": "विद्यालये शताः छात्राः सन्ति ।",
+   "correct_source": "विद्यालये शतं छात्राः सन्ति ।",
+   "status": "ok",
+   "correct": "विद्यालये शतं छात्राः सन्ति ।"
+  },
+  {
+   "id": "ER-1-02",
+   "table": 1,
+   "incorrect": "कक्षायां विंशत्यः छात्राः सन्ति ।",
+   "correct_source": "कक्षायां विंशतिः छात्राः सन्ति ।",
+   "status": "ok",
+   "correct": "कक्षायां विंशतिः छात्राः सन्ति ।"
+  },
+  {
+   "id": "ER-1-03",
+   "table": 1,
+   "incorrect": "सहस्राः जनाः धावन्ति ।",
+   "correct_source": "सहस्रं जनाः धावन्ति ।",
+   "status": "ok",
+   "correct": "सहस्रं जनाः धावन्ति ।"
+  },
+  {
+   "id": "ER-1-04",
+   "table": 1,
+   "incorrect": "त्रयः बालकः पठन्ति ।",
+   "correct_source": "त्रयः बालकाः पठन्ति ।",
+   "status": "ok",
+   "correct": "त्रयः बालकाः पठन्ति ।"
+  },
+  {
+   "id": "ER-1-05",
+   "table": 1,
+   "incorrect": "बालकत्रयं हसन्ति ।",
+   "correct_source": "बालकत्रयं हसति ।",
+   "status": "ok",
+   "correct": "बालकत्रयं हसति ।"
+  },
+  {
+   "id": "ER-1-06",
+   "table": 1,
+   "incorrect": "मम गृहे शतानि पुस्तकानि सन्ति ।",
+   "correct_source": "मम गृहे शतं पुस्तकानि सन्ति ।",
+   "status": "dropped",
+   "why": "शतानि पुस्तकानि ('hundreds of books') is also correct Sanskrit; not an error"
+  },
+  {
+   "id": "ER-1-07",
+   "table": 1,
+   "incorrect": "सिंहः वने वसन्ति ।",
+   "correct_source": "सिंहः वने वसति ।",
+   "status": "ok",
+   "correct": "सिंहः वने वसति ।"
+  },
+  {
+   "id": "ER-1-08",
+   "table": 1,
+   "incorrect": "युवां ध्यानेन पठथ ।",
+   "correct_source": "युवां ध्यानेन पठथः ।",
+   "status": "ok",
+   "correct": "युवां ध्यानेन पठथः ।"
+  },
+  {
+   "id": "ER-1-09",
+   "table": 1,
+   "incorrect": "पाण्डवाः पञ्च आसीत् ।",
+   "correct_source": "पाण्डवाः पञ्च आसन् ।",
+   "status": "ok",
+   "correct": "पाण्डवाः पञ्च आसन् ।"
+  },
+  {
+   "id": "ER-1-10",
+   "table": 1,
+   "incorrect": "ते संस्कृतं पठति लिखति च ।",
+   "correct_source": "ते संस्कृतं पठन्ति लिखन्ति च ।",
+   "status": "ok",
+   "correct": "ते संस्कृतं पठन्ति लिखन्ति च ।"
+  },
+  {
+   "id": "ER-1-11",
+   "table": 1,
+   "incorrect": "चत्वारः वेदाः अस्ति ।",
+   "correct_source": "चत्वारः वेदाः सन्ति ।",
+   "status": "ok",
+   "correct": "चत्वारः वेदाः सन्ति ।"
+  },
+  {
+   "id": "ER-1-12",
+   "table": 1,
+   "incorrect": "वृक्षात् फलानि पतति ।",
+   "correct_source": "वृक्षात् फलानि पतन्ति ।",
+   "status": "ok",
+   "correct": "वृक्षात् फलानि पतन्ति ।"
+  },
+  {
+   "id": "ER-1-13",
+   "table": 1,
+   "incorrect": "धनानि सुखाय अस्ति ।",
+   "correct_source": "धनानि सुखाय सन्ति ।",
+   "status": "ok",
+   "correct": "धनानि सुखाय सन्ति ।"
+  },
+  {
+   "id": "ER-1-14",
+   "table": 1,
+   "incorrect": "द्वे बालिके विद्यालयं गच्छति ।",
+   "correct_source": "द्वे बालिके विद्यायलं गच्छतः ।",
+   "status": "fixed",
+   "correct": "द्वे बालिके विद्यालयं गच्छतः ।",
+   "why": "typo in the correction (विद्यायलं)"
+  },
+  {
+   "id": "ER-1-15",
+   "table": 1,
+   "incorrect": "इदानीं त्वं किं न कुरुथ ?",
+   "correct_source": "इदानीं त्वं किं न करोषि ?",
+   "status": "ok",
+   "correct": "इदानीं त्वं किं न करोषि ?"
+  },
+  {
+   "id": "ER-1-16",
+   "table": 1,
+   "incorrect": "बालिकाः विद्यालयं गच्छति ।",
+   "correct_source": "बालिकाः विद्यालयं गच्छन्ति ।",
+   "status": "ok",
+   "correct": "बालिकाः विद्यालयं गच्छन्ति ।"
+  },
+  {
+   "id": "ER-1-17",
+   "table": 1,
+   "incorrect": "यूयं कदा व्यायामं करोषि ?",
+   "correct_source": "यूयं कदा व्यायामं कुरुथ ?",
+   "status": "ok",
+   "correct": "यूयं कदा व्यायामं कुरुथ ?"
+  },
+  {
+   "id": "ER-1-18",
+   "table": 1,
+   "incorrect": "भवान् किं पठन्ति ?",
+   "correct_source": "भवान् किं पठति ?",
+   "status": "ok",
+   "correct": "भवान् किं पठति ?"
+  },
+  {
+   "id": "ER-1-19",
+   "table": 1,
+   "incorrect": "ते कन्ये पठति ।",
+   "correct_source": "ते कन्ये पठतः ।",
+   "status": "ok",
+   "correct": "ते कन्ये पठतः ।"
+  },
+  {
+   "id": "ER-1-20",
+   "table": 1,
+   "incorrect": "ते परधनं न चोरयति ।",
+   "correct_source": "ते परधनं न चोरयन्ति ।",
+   "status": "ok",
+   "correct": "ते परधनं न चोरयन्ति ।"
+  },
+  {
+   "id": "ER-1-21",
+   "table": 1,
+   "incorrect": "त्वं तस्य सेवां कुरुत ।",
+   "correct_source": "त्व तस्य सेवां कुरु ।",
+   "status": "fixed",
+   "correct": "त्वं तस्य सेवां कुरु ।",
+   "why": "typo in the correction (त्व)"
+  },
+  {
+   "id": "ER-1-22",
+   "table": 1,
+   "incorrect": "ते सर्वे ह्यः न अपठत् ।",
+   "correct_source": "ते सर्वे ह्यः न अपठन् ।",
+   "status": "ok",
+   "correct": "ते सर्वे ह्यः न अपठन् ।"
+  },
+  {
+   "id": "ER-1-23",
+   "table": 1,
+   "incorrect": "अत्र सरोवरे आपः अस्ति ।",
+   "correct_source": "अत्र सरोवरे आपः सन्ति ।",
+   "status": "ok",
+   "correct": "अत्र सरोवरे आपः सन्ति ।"
+  },
+  {
+   "id": "ER-1-24",
+   "table": 1,
+   "incorrect": "छात्रद्वयं पठतः ।",
+   "correct_source": "छात्रद्वयं पठति ।",
+   "status": "ok",
+   "correct": "छात्रद्वयं पठति ।"
+  },
+  {
+   "id": "ER-1-25",
+   "table": 1,
+   "incorrect": "विद्वान् सर्वत्र पूज्यन्ते ।",
+   "correct_source": "विद्वान् सर्वत्र पूज्यते ।",
+   "status": "ok",
+   "correct": "विद्वान् सर्वत्र पूज्यते ।"
+  },
+  {
+   "id": "ER-1-26",
+   "table": 1,
+   "incorrect": "सर्वः स्वार्थं समीहन्ते ।",
+   "correct_source": "सर्वः स्वार्थं समीहते ।",
+   "status": "ok",
+   "correct": "सर्वः स्वार्थं समीहते ।"
+  },
+  {
+   "id": "ER-1-27",
+   "table": 1,
+   "incorrect": "पितरौ पुत्रं पालयन्ति ।",
+   "correct_source": "पितरौ पुत्रं पालयतः ।",
+   "status": "ok",
+   "correct": "पितरौ पुत्रं पालयतः ।"
+  },
+  {
+   "id": "ER-1-28",
+   "table": 1,
+   "incorrect": "वृक्षेषु कपिः वसन्ति ।",
+   "correct_source": "वृक्षेषु कपयः वसन्ति ।",
+   "status": "ok",
+   "correct": "वृक्षेषु कपयः वसन्ति ।"
+  },
+  {
+   "id": "ER-1-29",
+   "table": 1,
+   "incorrect": "पुरा वीरवरो नाम राजा आसन् ।",
+   "correct_source": "पारा वीरवरो नाम राजा आसीत् ।",
+   "status": "fixed",
+   "correct": "पुरा वीरवरो नाम राजा आसीत् ।",
+   "why": "typo in the correction (पारा)"
+  },
+  {
+   "id": "ER-1-30",
+   "table": 1,
+   "incorrect": "ते बालिके गृहे एव अपठत् ।",
+   "correct_source": "ते बालिके गृहे एव अपठताम् ।",
+   "status": "ok",
+   "correct": "ते बालिके गृहे एव अपठताम् ।"
+  },
+  {
+   "id": "ER-1-31",
+   "table": 1,
+   "incorrect": "एकदा चत्वारि मित्राणि वनम् अगच्छत् ।",
+   "correct_source": "एकदा चत्वारि मित्राणि वनम् अगच्छन् ।",
+   "status": "ok",
+   "correct": "एकदा चत्वारि मित्राणि वनम् अगच्छन् ।"
+  },
+  {
+   "id": "ER-1-32",
+   "table": 1,
+   "incorrect": "वयं भारतीयाः अस्मि ।",
+   "correct_source": "वयं भारतीयाः स्मः ।",
+   "status": "ok",
+   "correct": "वयं भारतीयाः स्मः ।"
+  },
+  {
+   "id": "ER-1-33",
+   "table": 1,
+   "incorrect": "ते सर्वे ह्यः न अपठत् ।",
+   "correct_source": "ते सर्वे ह्यः न अपठन् ।",
+   "status": "dropped",
+   "why": "duplicate of item 21"
+  },
+  {
+   "id": "ER-1-34",
+   "table": 1,
+   "incorrect": "नद्यः लोकमातरः अस्ति ।",
+   "correct_source": "नद्यः लोकमातरः सन्ति ।",
+   "status": "ok",
+   "correct": "नद्यः लोकमातरः सन्ति ।"
+  },
+  {
+   "id": "ER-1-35",
+   "table": 1,
+   "incorrect": "दम्पती पुत्रम् अभाषत ।",
+   "correct_source": "दम्पती पुत्रम् अभाषेताम् ।",
+   "status": "ok",
+   "correct": "दम्पती पुत्रम् अभाषेताम् ।"
+  },
+  {
+   "id": "ER-1-36",
+   "table": 1,
+   "incorrect": "इमे छात्रौ पठतः ।",
+   "correct_source": "इमौ छात्रौ पठतः ।",
+   "status": "ok",
+   "correct": "इमौ छात्रौ पठतः ।"
+  },
+  {
+   "id": "ER-1-37",
+   "table": 1,
+   "incorrect": "त्रयः बालकः पठन्ति ।",
+   "correct_source": "त्रयः बालकाः पठन्ति ।",
+   "status": "dropped",
+   "why": "duplicate of item 3"
+  },
+  {
+   "id": "ER-1-38",
+   "table": 1,
+   "incorrect": "वयं स्वतन्त्रभारतस्य नागरिकः स्मः",
+   "correct_source": "वयं स्वतन्त्रभारतस्य नागरिकाः स्मः ।",
+   "status": "ok",
+   "correct": "वयं स्वतन्त्रभारतस्य नागरिकाः स्मः ।"
+  },
+  {
+   "id": "ER-1-39",
+   "table": 1,
+   "incorrect": "सः सुन्दरं फलानि खादति ।",
+   "correct_source": "सः सुन्दराणि फलानि खादति ।",
+   "status": "ok",
+   "correct": "सः सुन्दराणि फलानि खादति ।"
+  },
+  {
+   "id": "ER-1-40",
+   "table": 1,
+   "incorrect": "राज्ञा तस्मै पञ्चशतानि सुवर्णं दत्तानि ।",
+   "correct_source": "राज्ञा तस्मै पञ्चशतं सुवर्णानि दत्तानि ।",
+   "status": "ok",
+   "correct": "राज्ञा तस्मै पञ्चशतं सुवर्णानि दत्तानि ।"
+  },
+  {
+   "id": "ER-1-41",
+   "table": 1,
+   "incorrect": "नद्यः परोपकाराय वहति ।",
+   "correct_source": "नद्यः परोपकाराय वहन्ति ।",
+   "status": "ok",
+   "correct": "नद्यः परोपकाराय वहन्ति ।"
+  },
+  {
+   "id": "ER-1-42",
+   "table": 1,
+   "incorrect": "तस्य चत्वारि वर्धते ।",
+   "correct_source": "तस्य चत्वारि वर्धन्ते ।",
+   "status": "dropped",
+   "why": "fragment: 'four' of what is not stated, so the sentence cannot be judged"
+  },
+  {
+   "id": "ER-1-43",
+   "table": 1,
+   "incorrect": "ते मम मित्राणि अस्ति ।",
+   "correct_source": "ते मम मित्राणि सन्ति ।",
+   "status": "ok",
+   "correct": "ते मम मित्राणि सन्ति ।"
+  },
+  {
+   "id": "ER-1-44",
+   "table": 1,
+   "incorrect": "त्रीणि बालिकाः पुस्तकं पठन्ति ।",
+   "correct_source": "तिस्रः बालिकाः पुस्तकं पठन्ति ।",
+   "status": "ok",
+   "correct": "तिस्रः बालिकाः पुस्तकं पठन्ति ।"
+  },
+  {
+   "id": "ER-1-45",
+   "table": 1,
+   "incorrect": "तस्य कलत्रं गुणवान् अस्ति ।",
+   "correct_source": "तस्य कलत्रं गुणवती अस्ति ।",
+   "status": "fixed",
+   "correct": "तस्य कलत्रं गुणवत् अस्ति ।",
+   "why": "कलत्र is neuter, so the adjective is neuter: गुणवत् (not गुणवती)"
+  },
+  {
+   "id": "ER-1-46",
+   "table": 1,
+   "incorrect": "कृष्णवर्णं मृगः धावति ।",
+   "correct_source": "कृष्णवर्णः मृगः धावति ।",
+   "status": "ok",
+   "correct": "कृष्णवर्णः मृगः धावति ।"
+  },
+  {
+   "id": "ER-1-47",
+   "table": 1,
+   "incorrect": "पयः मधुरः अस्ति ।",
+   "correct_source": "पयः मधुरम् अस्ति ।",
+   "status": "ok",
+   "correct": "पयः मधुरम् अस्ति ।"
+  },
+  {
+   "id": "ER-1-48",
+   "table": 1,
+   "incorrect": "अग्निः तीव्रा अस्ति ।",
+   "correct_source": "अग्निः तीव्रः अस्ति ।",
+   "status": "ok",
+   "correct": "अग्निः तीव्रः अस्ति ।"
+  },
+  {
+   "id": "ER-1-49",
+   "table": 1,
+   "incorrect": "रमणीयः वनं मह्यं रोचते ।",
+   "correct_source": "रमणीयं वनं मह्यं रोचते ।",
+   "status": "ok",
+   "correct": "रमणीयं वनं मह्यं रोचते ।"
+  },
+  {
+   "id": "ER-1-50",
+   "table": 1,
+   "incorrect": "पिता चतुरः कन्याः अपाठयत् ।",
+   "correct_source": "पिता चतस्रः कन्याः अपाठयत् ।",
+   "status": "ok",
+   "correct": "पिता चतस्रः कन्याः अपाठयत् ।"
+  },
+  {
+   "id": "ER-1-51",
+   "table": 1,
+   "incorrect": "सुशीला पुस्तकं पठितवान् ।",
+   "correct_source": "सुशीला पुस्तकं पठितवती ।",
+   "status": "ok",
+   "correct": "सुशीला पुस्तकं पठितवती ।"
+  },
+  {
+   "id": "ER-1-52",
+   "table": 1,
+   "incorrect": "भ्रमराणां मधु प्रियः भवति ।",
+   "correct_source": "भ्रमराणां मधु प्रियं भवति ।",
+   "status": "ok",
+   "correct": "भ्रमराणां मधु प्रियं भवति ।"
+  },
+  {
+   "id": "ER-1-53",
+   "table": 1,
+   "incorrect": "मृगाणां गात्राणि मृदु भवन्ति ।",
+   "correct_source": "मृगाणां गात्राणि मृदूनि भवन्ति ।",
+   "status": "ok",
+   "correct": "मृगाणां गात्राणि मृदूनि भवन्ति ।"
+  },
+  {
+   "id": "ER-1-54",
+   "table": 1,
+   "incorrect": "इमं कथां शृणु ।",
+   "correct_source": "इमां कथां शृणु ।",
+   "status": "ok",
+   "correct": "इमां कथां शृणु ।"
+  },
+  {
+   "id": "ER-1-55",
+   "table": 1,
+   "incorrect": "सा विश्वविद्यालये द्वितीयम् आसीत् ।",
+   "correct_source": "सा विश्वविद्यालये द्वितीया आसीत् ।",
+   "status": "ok",
+   "correct": "सा विश्वविद्यालये द्वितीया आसीत् ।"
+  },
+  {
+   "id": "ER-1-56",
+   "table": 1,
+   "incorrect": "सा कक्षायां कीदृशम् आसीत् ?",
+   "correct_source": "सा कक्षायां कीदृशी आसीत् ?",
+   "status": "ok",
+   "correct": "सा कक्षायां कीदृशी आसीत् ?"
+  },
+  {
+   "id": "ER-1-57",
+   "table": 1,
+   "incorrect": "त्रयः सुन्दराः बालिकाः गच्छन्ति ।",
+   "correct_source": "तिस्रः सुन्दर्यः बालिकाः गच्छन्ति ।",
+   "status": "ok",
+   "correct": "तिस्रः सुन्दर्यः बालिकाः गच्छन्ति ।"
+  },
+  {
+   "id": "ER-1-58",
+   "table": 1,
+   "incorrect": "इयं कन्या गुणवान् अस्ति ।",
+   "correct_source": "इयं कन्या गुणवती अस्ति ।",
+   "status": "ok",
+   "correct": "इयं कन्या गुणवती अस्ति ।"
+  },
+  {
+   "id": "ER-1-59",
+   "table": 1,
+   "incorrect": "अस्य बालिकायाः गृहं कुत्रास्ति ?",
+   "correct_source": "अस्याः बालिकायाः गृहं कुत्रास्ति ?",
+   "status": "ok",
+   "correct": "अस्याः बालिकायाः गृहं कुत्रास्ति ?"
+  },
+  {
+   "id": "ER-1-60",
+   "table": 1,
+   "incorrect": "त्रीणि बालकाः पुस्तकं पठन्ति ।",
+   "correct_source": "त्रयः बालकाः पुस्तकं पठन्ति ।",
+   "status": "ok",
+   "correct": "त्रयः बालकाः पुस्तकं पठन्ति ।"
+  },
+  {
+   "id": "ER-1-61",
+   "table": 1,
+   "incorrect": "मया रुदन्ती स्त्री दृष्टा ।",
+   "correct_source": "मया रुदती स्त्री दृष्टा ।",
+   "status": "ok",
+   "correct": "मया रुदती स्त्री दृष्टा ।"
+  },
+  {
+   "id": "ER-1-62",
+   "table": 1,
+   "incorrect": "सीता रामस्य प्रियम् आसीत् ।",
+   "correct_source": "सीता रामस्य प्रिया आसीत् ।",
+   "status": "ok",
+   "correct": "सीता रामस्य प्रिया आसीत् ।"
+  },
+  {
+   "id": "ER-1-63",
+   "table": 1,
+   "incorrect": "अहं शतान् जनान् अपश्यम् ।",
+   "correct_source": "अहं शतं जनान् अपश्यम् ।",
+   "status": "ok",
+   "correct": "अहं शतं जनान् अपश्यम् ।"
+  },
+  {
+   "id": "ER-1-64",
+   "table": 1,
+   "incorrect": "त्वं धनार्जने रतम् असि ।",
+   "correct_source": "त्वं धनार्जने रतः अस्ति । (Note: 'अस्ति' should likely be 'असि' to match 'त्वम्')",
+   "status": "fixed",
+   "correct": "त्वं धनार्जने रतः असि ।",
+   "why": "with त्वम् the verb is असि (the source itself noted this)"
+  },
+  {
+   "id": "ER-1-65",
+   "table": 1,
+   "incorrect": "तस्य मातुः नाम कः अस्ति ?",
+   "correct_source": "तस्य मातुः नाम किम् अस्ति ?",
+   "status": "ok",
+   "correct": "तस्य मातुः नाम किम् अस्ति ?"
+  },
+  {
+   "id": "ER-1-66",
+   "table": 1,
+   "incorrect": "अहं तं पुस्तकं पठितवान् ।",
+   "correct_source": "अहं तत् पुस्तकं पठितवान् ।",
+   "status": "ok",
+   "correct": "अहं तत् पुस्तकं पठितवान् ।"
+  },
+  {
+   "id": "ER-1-67",
+   "table": 1,
+   "incorrect": "दूरतः पर्वतानि रम्याः ।",
+   "correct_source": "दूरतः पर्वताः रम्याः ।",
+   "status": "ok",
+   "correct": "दूरतः पर्वताः रम्याः ।"
+  },
+  {
+   "id": "ER-1-68",
+   "table": 1,
+   "incorrect": "गंगायाः जलं पवित्रः अस्ति ।",
+   "correct_source": "गंगायाः जलं पवित्रम् अस्ति ।",
+   "status": "ok",
+   "correct": "गंगायाः जलं पवित्रम् अस्ति ।"
+  },
+  {
+   "id": "ER-1-69",
+   "table": 1,
+   "incorrect": "वृक्षेषु कपयः कूर्दति ।",
+   "correct_source": "वृक्षेषु कपयः कूर्दन्ति ।",
+   "status": "ok",
+   "correct": "वृक्षेषु कपयः कूर्दन्ति ।"
+  },
+  {
+   "id": "ER-1-70",
+   "table": 1,
+   "incorrect": "भवान् किमर्थम् विद्यालयं न गच्छसि ।",
+   "correct_source": "भवान् किमर्थम् विद्यालयं न गच्छति ।",
+   "status": "ok",
+   "correct": "भवान् किमर्थम् विद्यालयं न गच्छति ।"
+  },
+  {
+   "id": "ER-1-71",
+   "table": 1,
+   "incorrect": "पुस्तकालये शतानि पुस्तकानि सन्ति ।",
+   "correct_source": "पुस्तकालये शतम् पुस्तकानि सन्ति ।",
+   "status": "ok",
+   "correct": "पुस्तकालये शतम् पुस्तकानि सन्ति ।"
+  },
+  {
+   "id": "ER-1-72",
+   "table": 1,
+   "incorrect": "चत्वारः मित्राणि पठनाय विद्यालयं गच्छन्ति।",
+   "correct_source": "चत्वारि मित्राणि पठनाय विद्यालयं गच्छन्ति ।",
+   "status": "ok",
+   "correct": "चत्वारि मित्राणि पठनाय विद्यालयं गच्छन्ति ।"
+  },
+  {
+   "id": "ER-1-73",
+   "table": 1,
+   "incorrect": "इमे छात्रौ मधुराणि फलानि भक्षयतः।",
+   "correct_source": "इमौ छात्रौ मधुराणि फलानि भक्षयतः।",
+   "status": "ok",
+   "correct": "इमौ छात्रौ मधुराणि फलानि भक्षयतः।"
+  },
+  {
+   "id": "ER-1-74",
+   "table": 1,
+   "incorrect": "मम मित्रं कठोरः अस्ति ।",
+   "correct_source": "मम मित्रं कठोरम् अस्ति ।",
+   "status": "ok",
+   "correct": "मम मित्रं कठोरम् अस्ति ।"
+  },
+  {
+   "id": "ER-1-75",
+   "table": 1,
+   "incorrect": "अयम् ललना ग्रामं गच्छति ।",
+   "correct_source": "इयम् ललना ग्रामं गच्छति ।",
+   "status": "ok",
+   "correct": "इयम् ललना ग्रामं गच्छति ।"
+  },
+  {
+   "id": "ER-1-76",
+   "table": 1,
+   "incorrect": "अग्निः तीव्रा भवति ।",
+   "correct_source": "अग्निः तीव्रः भवति ।",
+   "status": "ok",
+   "correct": "अग्निः तीव्रः भवति ।"
+  },
+  {
+   "id": "ER-1-77",
+   "table": 1,
+   "incorrect": "मयूरी संस्कृतपुस्तकं पठतवान् ।",
+   "correct_source": "मयूरी संस्कृतपुस्तकं पठितवती ।",
+   "status": "ok",
+   "correct": "मयूरी संस्कृतपुस्तकं पठितवती ।"
+  },
+  {
+   "id": "ER-1-78",
+   "table": 1,
+   "incorrect": "चौराः परद्रव्याणि चोरयति ।",
+   "correct_source": "चौराः परद्रव्याणि चोरयन्ति ।",
+   "status": "ok",
+   "correct": "चौराः परद्रव्याणि चोरयन्ति ।"
+  },
+  {
+   "id": "ER-1-79",
+   "table": 1,
+   "incorrect": "वयम् श्वः मुम्बईनगरं गच्छामि ।",
+   "correct_source": "वयम् श्वः मुम्बईनगरं गमिष्यामः।",
+   "status": "ok",
+   "correct": "वयम् श्वः मुम्बईनगरं गमिष्यामः।"
+  },
+  {
+   "id": "ER-1-80",
+   "table": 1,
+   "incorrect": "शिष्याः सुन्दरं चित्राणि पश्यन्ति ।",
+   "correct_source": "शिष्याः सुन्दराणी चित्राणि पश्यन्ति ।",
+   "status": "fixed",
+   "correct": "शिष्याः सुन्दराणि चित्राणि पश्यन्ति ।",
+   "why": "typo in the correction (सुन्दराणी)"
+  },
+  {
+   "id": "ER-2-01",
+   "table": 2,
+   "incorrect": "विद्यालये शता: छात्रा: सन्ति ।",
+   "correct_source": "विद्यालये शतं छात्राः सन्ति ।",
+   "status": "dropped",
+   "why": "duplicate of table 1, item 0"
+  },
+  {
+   "id": "ER-2-02",
+   "table": 2,
+   "incorrect": "कथायां विषययः छात्राः सन्ति ।",
+   "correct_source": "कथायां विषयाः छात्राः सन्ति ।",
+   "status": "dropped",
+   "why": "garbled source (कथायां विषययः); probably table 1, item 1"
+  },
+  {
+   "id": "ER-2-03",
+   "table": 2,
+   "incorrect": "सहस्रः जना: धावति ।",
+   "correct_source": "सहस्रं जनाः धावन्ति ।",
+   "status": "dropped",
+   "why": "duplicate of table 1, item 2"
+  },
+  {
+   "id": "ER-2-04",
+   "table": 2,
+   "incorrect": "नयः बालक: पठन्ति ।",
+   "correct_source": "बालकाः पठन्ति ।",
+   "status": "dropped",
+   "why": "garbled source (नयः बालकः); probably table 1, item 3"
+  },
+  {
+   "id": "ER-2-05",
+   "table": 2,
+   "incorrect": "बालकयः हसन्ति ।",
+   "correct_source": "बालकाः हसन्ति ।",
+   "status": "dropped",
+   "why": "garbled source (बालकयः); probably table 1, item 4"
+  },
+  {
+   "id": "ER-2-06",
+   "table": 2,
+   "incorrect": "बालकः सुन्दराः भवन्ति ।",
+   "correct_source": "बालकाः सुन्दराः भवन्ति ।",
+   "status": "ok",
+   "correct": "बालकाः सुन्दराः भवन्ति ।"
+  },
+  {
+   "id": "ER-2-07",
+   "table": 2,
+   "incorrect": "सीता पुस्तकानि पठन्ति ।",
+   "correct_source": "सीता पुस्तकानि पठति ।",
+   "status": "ok",
+   "correct": "सीता पुस्तकानि पठति ।"
+  },
+  {
+   "id": "ER-2-08",
+   "table": 2,
+   "incorrect": "द्वे बालकः लेखम पठन्ति ।",
+   "correct_source": "द्वौ बालकौ लेखं पठतः ।",
+   "status": "ok",
+   "correct": "द्वौ बालकौ लेखं पठतः ।"
+  },
+  {
+   "id": "ER-2-09",
+   "table": 2,
+   "incorrect": "सरस्वती देवी गच्छन्ति ।",
+   "correct_source": "सरस्वती देवी गच्छति ।",
+   "status": "ok",
+   "correct": "सरस्वती देवी गच्छति ।"
+  },
+  {
+   "id": "ER-2-10",
+   "table": 2,
+   "incorrect": "गुरवः छात्रः पाठम् पठन्ति ।",
+   "correct_source": "गुरवः छात्रेभ्यः पाठम् पठन्ति ।",
+   "status": "fixed",
+   "correct": "गुरवः छात्रान् पाठं पाठयन्ति ।",
+   "why": "teachers teach (पाठयन्ति, causative, two objects), they do not 'read to'"
+  },
+  {
+   "id": "ER-3-01",
+   "table": 3,
+   "incorrect": "अहं विद्यालयं गच्छति ।",
+   "correct_source": "अहं विद्यालयं गच्छामि ।",
+   "status": "ok",
+   "correct": "अहं विद्यालयं गच्छामि ।"
+  },
+  {
+   "id": "ER-3-02",
+   "table": 3,
+   "incorrect": "त्वं किं करोमि ?",
+   "correct_source": "त्वं किं करोषि ?",
+   "status": "ok",
+   "correct": "त्वं किं करोषि ?"
+  },
+  {
+   "id": "ER-3-03",
+   "table": 3,
+   "incorrect": "ते बालकाः कुत्र गच्छसि ?",
+   "correct_source": "ते बालकाः कुत्र गच्छन्ति ?",
+   "status": "ok",
+   "correct": "ते बालकाः कुत्र गच्छन्ति ?"
+  },
+  {
+   "id": "ER-3-04",
+   "table": 3,
+   "incorrect": "रामः ग्रामस्य गच्छति ।",
+   "correct_source": "रामः ग्रामं गच्छति ।",
+   "status": "ok",
+   "correct": "रामः ग्रामं गच्छति ।"
+  },
+  {
+   "id": "ER-3-05",
+   "table": 3,
+   "incorrect": "वृक्षस्य पत्राणि पतन्ति ।",
+   "correct_source": "वृक्षात् पत्राणि पतन्ति ।",
+   "status": "dropped",
+   "why": "वृक्षस्य पत्राणि पतन्ति ('the tree's leaves fall') is grammatical"
+  },
+  {
+   "id": "ER-3-06",
+   "table": 3,
+   "incorrect": "गुरोः नमः ।",
+   "correct_source": "गुरवे नमः ।",
+   "status": "ok",
+   "correct": "गुरवे नमः ।"
+  },
+  {
+   "id": "ER-3-07",
+   "table": 3,
+   "incorrect": "सः कलमेन लिखति पत्रम् ।",
+   "correct_source": "सः कलमेन पत्रं लिखति ।",
+   "status": "dropped",
+   "why": "word order is free in Sanskrit; सः कलमेन लिखति पत्रम् is not an error"
+  },
+  {
+   "id": "ER-3-08",
+   "table": 3,
+   "incorrect": "बालकः मोदकं रोचते ।",
+   "correct_source": "बालकाय मोदकं रोचते ।",
+   "status": "ok",
+   "correct": "बालकाय मोदकं रोचते ।"
+  },
+  {
+   "id": "ER-3-09",
+   "table": 3,
+   "incorrect": "राजा निर्धनस्य धनं ददाति ।",
+   "correct_source": "राजा निर्धनाय धनं ददाति ।",
+   "status": "ok",
+   "correct": "राजा निर्धनाय धनं ददाति ।"
+  },
+  {
+   "id": "ER-3-10",
+   "table": 3,
+   "incorrect": "अहं त्वां पुस्तकं ददामि ।",
+   "correct_source": "अहं तुभ्यं पुस्तकं ददामि ।",
+   "status": "ok",
+   "correct": "अहं तुभ्यं पुस्तकं ददामि ।"
+  },
+  {
+   "id": "ER-3-11",
+   "table": 3,
+   "incorrect": "माता पुत्रे स्निह्यति ।",
+   "correct_source": "माता पुत्राय स्निह्यति ।",
+   "status": "dropped",
+   "why": "माता पुत्रे स्निह्यति is the standard usage: स्निह् takes the सप्तमी. The proposed 'correction' पुत्राय is the questionable one"
+  },
+  {
+   "id": "ER-3-12",
+   "table": 3,
+   "incorrect": "सः व्याघ्रं बिभेति ।",
+   "correct_source": "सः व्याघ्रात् बिभेति ।",
+   "status": "ok",
+   "correct": "सः व्याघ्रात् बिभेति ।"
+  },
+  {
+   "id": "ER-3-13",
+   "table": 3,
+   "incorrect": "ज्ञानस्य विना न सुखम् ।",
+   "correct_source": "ज्ञानं विना न सुखम् ।",
+   "status": "ok",
+   "correct": "ज्ञानं विना न सुखम् ।"
+  },
+  {
+   "id": "ER-3-14",
+   "table": 3,
+   "incorrect": "विद्यालयस्य परितः वृक्षाः सन्ति ।",
+   "correct_source": "विद्यालयं परितः वृक्षाः सन्ति ।",
+   "status": "ok",
+   "correct": "विद्यालयं परितः वृक्षाः सन्ति ।"
+  },
+  {
+   "id": "ER-3-15",
+   "table": 3,
+   "incorrect": "सः मम् अन्तरा अस्ति ।",
+   "correct_source": "सः माम् अन्तरा अस्ति ।",
+   "status": "ok",
+   "correct": "सः माम् अन्तरा अस्ति ।"
+  },
+  {
+   "id": "ER-3-16",
+   "table": 3,
+   "incorrect": "पर्वतः उपरि मेघाः सन्ति ।",
+   "correct_source": "पर्वतस्य उपरि मेघाः सन्ति ।",
+   "status": "ok",
+   "correct": "पर्वतस्य उपरि मेघाः सन्ति ।"
+  },
+  {
+   "id": "ER-3-17",
+   "table": 3,
+   "incorrect": "सा बालिका मधुराणि गायति ।",
+   "correct_source": "सा बालिका मधुरं गायति ।",
+   "status": "dropped",
+   "why": "मधुराणि गायति ('sings sweet [songs]') is grammatical; मधुरं गायति is only more idiomatic"
+  },
+  {
+   "id": "ER-3-18",
+   "table": 3,
+   "incorrect": "अश्वाः शीघ्रः धावन्ति ।",
+   "correct_source": "अश्वाः शीघ्रं धावन्ति ।",
+   "status": "ok",
+   "correct": "अश्वाः शीघ्रं धावन्ति ।"
+  },
+  {
+   "id": "ER-3-19",
+   "table": 3,
+   "incorrect": "भवान् किं पठसि ?",
+   "correct_source": "भवान् किं पठति ? (Correct, but often confused with त्वम्)",
+   "status": "fixed",
+   "correct": "भवान् किं पठति ?",
+   "why": "note removed from the sentence"
+  },
+  {
+   "id": "ER-3-20",
+   "table": 3,
+   "incorrect": "भवती कुत्र गच्छसि ?",
+   "correct_source": "भवती कुत्र गच्छति ?",
+   "status": "ok",
+   "correct": "भवती कुत्र गच्छति ?"
+  },
+  {
+   "id": "ER-3-21",
+   "table": 3,
+   "incorrect": "एकः बालिका आगच्छति ।",
+   "correct_source": "एका बालिका आगच्छति ।",
+   "status": "ok",
+   "correct": "एका बालिका आगच्छति ।"
+  },
+  {
+   "id": "ER-3-22",
+   "table": 3,
+   "incorrect": "त्रीणि फलः सन्ति ।",
+   "correct_source": "त्रीणि फलानि सन्ति ।",
+   "status": "ok",
+   "correct": "त्रीणि फलानि सन्ति ।"
+  },
+  {
+   "id": "ER-3-23",
+   "table": 3,
+   "incorrect": "चत्वारि नार्यः नृत्यन्ति ।",
+   "correct_source": "चतस्रः नार्यः नृत्यन्ति ।",
+   "status": "ok",
+   "correct": "चतस्रः नार्यः नृत्यन्ति ।"
+  },
+  {
+   "id": "ER-3-24",
+   "table": 3,
+   "incorrect": "सः पठितुं विद्यालयं गच्छामि ।",
+   "correct_source": "सः पठितुं विद्यालयं गच्छति ।",
+   "status": "ok",
+   "correct": "सः पठितुं विद्यालयं गच्छति ।"
+  },
+  {
+   "id": "ER-3-25",
+   "table": 3,
+   "incorrect": "सः पठित्वा गृहं अगच्छन् ।",
+   "correct_source": "ते पठित्वा गृहम् अगच्छन् ।",
+   "status": "ok",
+   "correct": "ते पठित्वा गृहम् अगच्छन् ।"
+  },
+  {
+   "id": "ER-3-26",
+   "table": 3,
+   "incorrect": "बालकाः कोलाहलं मा कुरु ।",
+   "correct_source": "बालकाः कोलाहलं मा कुरुत ।",
+   "status": "ok",
+   "correct": "बालकाः कोलाहलं मा कुरुत ।"
+  },
+  {
+   "id": "ER-3-27",
+   "table": 3,
+   "incorrect": "ईश्वरः वयं रक्षतु ।",
+   "correct_source": "ईश्वरः अस्मान् रक्षतु ।",
+   "status": "ok",
+   "correct": "ईश्वरः अस्मान् रक्षतु ।"
+  },
+  {
+   "id": "ER-3-28",
+   "table": 3,
+   "incorrect": "मम नामः रामः अस्ति ।",
+   "correct_source": "मम नाम रामः अस्ति ।",
+   "status": "ok",
+   "correct": "मम नाम रामः अस्ति ।"
+  },
+  {
+   "id": "ER-3-29",
+   "table": 3,
+   "incorrect": "तव गृहे कुत्र अस्ति ?",
+   "correct_source": "तव गृहं कुत्र अस्ति ?",
+   "status": "ok",
+   "correct": "तव गृहं कुत्र अस्ति ?"
+  },
+  {
+   "id": "ER-3-30",
+   "table": 3,
+   "incorrect": "सः गृहस्य आगच्छत् ह्यः ।",
+   "correct_source": "सः ह्यः गृहम् आगच्छत् ।",
+   "status": "ok",
+   "correct": "सः ह्यः गृहम् आगच्छत् ।"
+  },
+  {
+   "id": "ER-3-31",
+   "table": 3,
+   "incorrect": "स श्वः गमिष्यामि ।",
+   "correct_source": "अहं श्वः गमिष्यामि ।",
+   "status": "ok",
+   "correct": "अहं श्वः गमिष्यामि ।"
+  },
+  {
+   "id": "ER-3-32",
+   "table": 3,
+   "incorrect": "सः बालकः एवम् अवदन् ।",
+   "correct_source": "सः बालकः एवम् अवदत् ।",
+   "status": "ok",
+   "correct": "सः बालकः एवम् अवदत् ।"
+  },
+  {
+   "id": "ER-3-33",
+   "table": 3,
+   "incorrect": "यदा सूर्यः उदयति, तदा कमलानि विकसन्ति ।",
+   "correct_source": "यदा सूर्यः उदेति, तदा कमलानि विकसन्ति ।",
+   "status": "ok",
+   "correct": "यदा सूर्यः उदेति, तदा कमलानि विकसन्ति ।"
+  },
+  {
+   "id": "ER-3-34",
+   "table": 3,
+   "incorrect": "यदि त्वं पठिष्यसि, तर्हि उत्तीर्णः भविष्यति ।",
+   "correct_source": "यदि त्वं पठिष्यसि, तर्हि उत्तीर्णः भविष्यसि ।",
+   "status": "ok",
+   "correct": "यदि त्वं पठिष्यसि, तर्हि उत्तीर्णः भविष्यसि ।"
+  },
+  {
+   "id": "ER-3-35",
+   "table": 3,
+   "incorrect": "यावत् अहं आगच्छामि, तावत् तव अत्रैव तिष्ठ ।",
+   "correct_source": "यावत् अहम् आगच्छामि, तावत् त्वम् अत्रैव तिष्ठ ।",
+   "status": "ok",
+   "correct": "यावत् अहम् आगच्छामि, तावत् त्वम् अत्रैव तिष्ठ ।"
+  },
+  {
+   "id": "ER-3-36",
+   "table": 3,
+   "incorrect": "गंगा हिमालयाय प्रभवति ।",
+   "correct_source": "गंगा हिमालयात् प्रभवति ।",
+   "status": "ok",
+   "correct": "गंगा हिमालयात् प्रभवति ।"
+  },
+  {
+   "id": "ER-3-37",
+   "table": 3,
+   "incorrect": "कविना कालिदासः श्रेष्ठः ।",
+   "correct_source": "कविषु कालिदासः श्रेष्ठः ।",
+   "status": "ok",
+   "correct": "कविषु कालिदासः श्रेष्ठः ।"
+  },
+  {
+   "id": "ER-3-38",
+   "table": 3,
+   "incorrect": "सः पादस्य खञ्जः अस्ति ।",
+   "correct_source": "सः पादेन खञ्जः अस्ति ।",
+   "status": "ok",
+   "correct": "सः पादेन खञ्जः अस्ति ।"
+  },
+  {
+   "id": "ER-3-39",
+   "table": 3,
+   "incorrect": "आचार्यः शिष्याय क्रुध्यति ।",
+   "correct_source": "आचार्यः शिष्याय क्रुध्यति । (Correct usage of चतुर्थी)",
+   "status": "dropped",
+   "why": "both sides are the same correct sentence (क्रुध् + चतुर्थी, 1.4.37); no error to correct"
+  },
+  {
+   "id": "ER-3-40",
+   "table": 3,
+   "incorrect": "त्वं पुस्तकं पठितवान् आसीत् ।",
+   "correct_source": "सः पुस्तकं पठितवान् आसीत् ।",
+   "status": "fixed",
+   "correct": "त्वं पुस्तकं पठितवान् आसीः ।",
+   "why": "keep the subject त्वम् and correct the verb (आसीः); the source changed the subject instead"
+  },
+  {
+   "id": "ER-3-41",
+   "table": 3,
+   "incorrect": "छात्रः गुरुम् प्रश्नेन पृच्छति ।",
+   "correct_source": "छात्रः गुरुं प्रश्नं पृच्छति ।",
+   "status": "ok",
+   "correct": "छात्रः गुरुं प्रश्नं पृच्छति ।"
+  },
+  {
+   "id": "ER-3-42",
+   "table": 3,
+   "incorrect": "ते सर्वे अपि तत्र अगच्छन् ।",
+   "correct_source": "ते सर्वेऽपि तत्र अगच्छन् ।",
+   "status": "dropped",
+   "why": "sandhi between words in a sentence is optional (वाक्ये तु सा विवक्षामपेक्षते); not an error"
+  },
+  {
+   "id": "ER-3-43",
+   "table": 3,
+   "incorrect": "रामः च लक्ष्मणः च वनं गतवन्तौ ।",
+   "correct_source": "रामलक्ष्मणौ वनं गतवन्तौ ।",
+   "status": "dropped",
+   "why": "रामः च लक्ष्मणः च … गतवन्तौ is grammatical; a compound is not required"
+  },
+  {
+   "id": "ER-3-44",
+   "table": 3,
+   "incorrect": "धिक् मूर्ख ।",
+   "correct_source": "धिक् मूर्खम् ।",
+   "status": "ok",
+   "correct": "धिक् मूर्खम् ।"
+  },
+  {
+   "id": "ER-3-45",
+   "table": 3,
+   "incorrect": "अलं विवादाय ।",
+   "correct_source": "अलं विवादेन ।",
+   "status": "dropped",
+   "why": "अलम् takes चतुर्थी in the sense 'able / sufficient for' (अलं मल्लो मल्लाय) and तृतीया in the sense 'enough of'; without context both are correct"
+  },
+  {
+   "id": "ER-3-46",
+   "table": 3,
+   "incorrect": "पुत्रस्य सह पिता आगतः ।",
+   "correct_source": "पुत्रेण सह पिता आगतः ।",
+   "status": "ok",
+   "correct": "पुत्रेण सह पिता आगतः ।"
+  },
+  {
+   "id": "ER-3-47",
+   "table": 3,
+   "incorrect": "सः एकः चक्षुषा काणः अस्ति ।",
+   "correct_source": "सः चक्षुषा काणः अस्ति ।",
+   "status": "ok",
+   "correct": "सः चक्षुषा काणः अस्ति ।"
+  },
+  {
+   "id": "ER-3-48",
+   "table": 3,
+   "incorrect": "रामः श्यामात् पटुतरः अस्मि।",
+   "correct_source": "रामः श्यामात् पटुतरः अस्ति ।",
+   "status": "ok",
+   "correct": "रामः श्यामात् पटुतरः अस्ति ।"
+  },
+  {
+   "id": "ER-3-49",
+   "table": 3,
+   "incorrect": "अयं बालकः तस्मात् बालिकातः बुद्धिमान् ।",
+   "correct_source": "अयं बालकः तस्मात् बालकात् बुद्धिमान् ।",
+   "status": "fixed",
+   "correct": "अयं बालकः तस्याः बालिकायाः बुद्धिमान् ।",
+   "why": "keep the comparison with the girl: पञ्चमी of बालिका is बालिकायाः (the source changed the meaning)"
+  },
+  {
+   "id": "ER-3-50",
+   "table": 3,
+   "incorrect": "सः द्वौ पुस्तकौ पठति ।",
+   "correct_source": "सः द्वे पुस्तके पठति ।",
+   "status": "ok",
+   "correct": "सः द्वे पुस्तके पठति ।"
+  },
+  {
+   "id": "ER-3-51",
+   "table": 3,
+   "incorrect": "ते त्रीणि फले खादन्ति ।",
+   "correct_source": "ते त्रीणि फलानि खादन्ति ।",
+   "status": "ok",
+   "correct": "ते त्रीणि फलानि खादन्ति ।"
+  },
+  {
+   "id": "ER-3-52",
+   "table": 3,
+   "incorrect": "मम पार्श्वे दशभिः रूप्यकाणि सन्ति ।",
+   "correct_source": "मम पार्श्वे दश रूप्यकाणि सन्ति । (Correct)",
+   "status": "fixed",
+   "correct": "मम पार्श्वे दश रूप्यकाणि सन्ति ।",
+   "why": "note '(Correct)' removed from the sentence"
+  },
+  {
+   "id": "ER-3-53",
+   "table": 3,
+   "incorrect": "त्वं अहं पश्यसि ।",
+   "correct_source": "त्वं मां पश्यसि ।",
+   "status": "ok",
+   "correct": "त्वं मां पश्यसि ।"
+  },
+  {
+   "id": "ER-3-54",
+   "table": 3,
+   "incorrect": "वयं देशाय सेवामहे ।",
+   "correct_source": "वयं देशं सेवामहे ।",
+   "status": "ok",
+   "correct": "वयं देशं सेवामहे ।"
+  },
+  {
+   "id": "ER-3-55",
+   "table": 3,
+   "incorrect": "लता पुष्पैः शोभन्ते ।",
+   "correct_source": "लताः पुष्पैः शोभन्ते ।",
+   "status": "ok",
+   "correct": "लताः पुष्पैः शोभन्ते ।"
+  },
+  {
+   "id": "ER-3-56",
+   "table": 3,
+   "incorrect": "सः साधुः इव आचरामि ।",
+   "correct_source": "सः साधुरिव आचरति ।",
+   "status": "ok",
+   "correct": "सः साधुरिव आचरति ।"
+  },
+  {
+   "id": "ER-3-57",
+   "table": 3,
+   "incorrect": "भवान् अपि चलचित्रं द्रक्ष्यसि ।",
+   "correct_source": "त्वमपि चलचित्रं द्रक्ष्यसि ।",
+   "status": "ok",
+   "correct": "त्वमपि चलचित्रं द्रक्ष्यसि ।"
+  },
+  {
+   "id": "ER-3-58",
+   "table": 3,
+   "incorrect": "बालः पठितुम् इच्छन्ति ।",
+   "correct_source": "बालः पठितुम् इच्छति ।",
+   "status": "ok",
+   "correct": "बालः पठितुम् इच्छति ।"
+  },
+  {
+   "id": "ER-3-59",
+   "table": 3,
+   "incorrect": "सा खादित्वा जलम् पिबति ।",
+   "correct_source": "सा खादित्वा जलं पिबति ।",
+   "status": "dropped",
+   "why": "जलम् पिबति vs जलं पिबति is only a way of writing the anusvāra; not a grammatical error"
+  },
+  {
+   "id": "ER-3-60",
+   "table": 3,
+   "incorrect": "सः कार्यं कर्तुं शक्नोमि ।",
+   "correct_source": "सः कार्यं कर्तुं शक्नोति ।",
+   "status": "ok",
+   "correct": "सः कार्यं कर्तुं शक्नोति ।"
+  },
+  {
+   "id": "ER-3-61",
+   "table": 3,
+   "incorrect": "वयं क्रीडितुं बहिः गच्छन्ति ।",
+   "correct_source": "वयं क्रीडितुं बहिः गच्छामः ।",
+   "status": "ok",
+   "correct": "वयं क्रीडितुं बहिः गच्छामः ।"
+  },
+  {
+   "id": "ER-3-62",
+   "table": 3,
+   "incorrect": "अहं सत्यं वदेम ।",
+   "correct_source": "अहं सत्यं वदेयम् ।",
+   "status": "ok",
+   "correct": "अहं सत्यं वदेयम् ।"
+  },
+  {
+   "id": "ER-3-63",
+   "table": 3,
+   "incorrect": "यूयं सदा सत्यं वद ।",
+   "correct_source": "यूयं सदा सत्यं वदत ।",
+   "status": "ok",
+   "correct": "यूयं सदा सत्यं वदत ।"
+  },
+  {
+   "id": "ER-3-64",
+   "table": 3,
+   "incorrect": "अद्य परीक्षा भविता ।",
+   "correct_source": "अद्य परीक्षा भविष्यति ।",
+   "status": "ok",
+   "correct": "अद्य परीक्षा भविष्यति ।"
+  },
+  {
+   "id": "ER-3-65",
+   "table": 3,
+   "incorrect": "अहम्, त्वम्, सः च पठान्ति ।",
+   "correct_source": "अहं त्वं स च पठामः ।",
+   "status": "ok",
+   "correct": "अहं त्वं स च पठामः ।"
+  },
+  {
+   "id": "ER-3-66",
+   "table": 3,
+   "incorrect": "सीतागीते च नृत्यतः ।",
+   "correct_source": "सीता गीता च नृत्यतः ।",
+   "status": "ok",
+   "correct": "सीता गीता च नृत्यतः ।"
+  },
+  {
+   "id": "ER-3-67",
+   "table": 3,
+   "incorrect": "पिता पुत्रं च आपणं गच्छतः ।",
+   "correct_source": "पिता पुत्रश्च आपणं गच्छतः ।",
+   "status": "ok",
+   "correct": "पिता पुत्रश्च आपणं गच्छतः ।"
+  },
+  {
+   "id": "ER-3-68",
+   "table": 3,
+   "incorrect": "तस्य लेखनं सुन्दरः अस्ति ।",
+   "correct_source": "तस्य लेखनं सुन्दरम् अस्ति ।",
+   "status": "ok",
+   "correct": "तस्य लेखनं सुन्दरम् अस्ति ।"
+  },
+  {
+   "id": "ER-3-69",
+   "table": 3,
+   "incorrect": "इमे फलानि मधुराणि सन्ति ।",
+   "correct_source": "इमानि फलानि मधुराणि सन्ति ।",
+   "status": "ok",
+   "correct": "इमानि फलानि मधुराणि सन्ति ।"
+  },
+  {
+   "id": "ER-3-70",
+   "table": 3,
+   "incorrect": "तेन एकं पुस्तकं पठति ।",
+   "correct_source": "सः एकं पुस्तकं पठति ।",
+   "status": "ok",
+   "correct": "सः एकं पुस्तकं पठति ।"
+  },
+  {
+   "id": "ER-3-71",
+   "table": 3,
+   "incorrect": "मृगः वने धावन्ति ।",
+   "correct_source": "मृगाः वने धावन्ति ।",
+   "status": "ok",
+   "correct": "मृगाः वने धावन्ति ।"
+  },
+  {
+   "id": "ER-3-72",
+   "table": 3,
+   "incorrect": "सिंहः गर्जामि ।",
+   "correct_source": "सिंहः गर्जति ।",
+   "status": "ok",
+   "correct": "सिंहः गर्जति ।"
+  },
+  {
+   "id": "ER-3-73",
+   "table": 3,
+   "incorrect": "मेघाः वर्षति ।",
+   "correct_source": "मेघाः वर्षन्ति ।",
+   "status": "ok",
+   "correct": "मेघाः वर्षन्ति ।"
+  },
+  {
+   "id": "ER-3-74",
+   "table": 3,
+   "incorrect": "नद्यः प्रवहति ।",
+   "correct_source": "नद्यः प्रवहन्ति ।",
+   "status": "ok",
+   "correct": "नद्यः प्रवहन्ति ।"
+  },
+  {
+   "id": "ER-3-75",
+   "table": 3,
+   "incorrect": "पक्षिणः आकाशे उत्पतति ।",
+   "correct_source": "पक्षिणः आकाशे उत्पतन्ति ।",
+   "status": "ok",
+   "correct": "पक्षिणः आकाशे उत्पतन्ति ।"
+  },
+  {
+   "id": "ER-3-76",
+   "table": 3,
+   "incorrect": "मूषकेन बिलात् निर्गच्छति ।",
+   "correct_source": "मूषकः बिलात् निर्गच्छति ।",
+   "status": "ok",
+   "correct": "मूषकः बिलात् निर्गच्छति ।"
+  },
+  {
+   "id": "ER-3-77",
+   "table": 3,
+   "incorrect": "बालकाः कन्दुकस्य क्रीडन्ति ।",
+   "correct_source": "बालकाः कन्दुकेन क्रीडन्ति ।",
+   "status": "ok",
+   "correct": "बालकाः कन्दुकेन क्रीडन्ति ।"
+  },
+  {
+   "id": "ER-3-78",
+   "table": 3,
+   "incorrect": "सः गृहे अन्तः अस्ति ।",
+   "correct_source": "सः गृहस्य अन्तः अस्ति ।",
+   "status": "ok",
+   "correct": "सः गृहस्य अन्तः अस्ति ।"
+  },
+  {
+   "id": "ER-3-79",
+   "table": 3,
+   "incorrect": "तेषां विवादः अभवन् ।",
+   "correct_source": "तेषां विवादः अभवत् ।",
+   "status": "ok",
+   "correct": "तेषां विवादः अभवत् ।"
+  }
+ ]
+}

@@ -1,0 +1,257 @@
+{
+ "title": "Sanskrit Major Krit and Kritya Suffixes: Detailed Gold Data",
+ "meta_info": {
+  "language": "Sanskrit",
+  "scope": "Major Productive Krit Pratyayas",
+  "basis": "Pāṇini's Aṣṭādhyāyī (Focus on $\\text{Bhāvārtha}$, $\\text{Kartṛartha}$, $\\text{Karmārtha}$)"
+ },
+ "definitions": {
+  "Krit_Suffixes": {
+   "Sanskrit": "कृत् प्रत्यय",
+   "definition": "Primary suffixes attached to a verbal root (Dhātu) to form derivative nouns or adjectives ($\\text{Kridantas}$).",
+   "pāṇini_sūtra": "कृदतिङ् (3.1.93)",
+   "major_count": "Approx. 25-30 major productive suffixes."
+  },
+  "Kritya_Suffixes": {
+   "Sanskrit": "कृत्य प्रत्यय",
+   "definition": "A subset of Krit suffixes always denoting **obligation, fitness, or potential** (e.g., 'must be done', 'fit for').",
+   "pāṇini_sūtra": "कृत्याः (3.1.95) for the group designation.",
+   "count": 7
+  }
+ },
+ "major_categories_and_numbers": {
+  "category_1": {
+   "name": "Kritya Pratyayas",
+   "function": "Potential/Obligatory Adjectives",
+   "count": 7
+  },
+  "category_2": {
+   "name": "Past Participles",
+   "function": "Completed Action",
+   "count": 2
+  },
+  "category_3": {
+   "name": "Present Participles",
+   "function": "Ongoing Action",
+   "count": 2
+  },
+  "category_4": {
+   "name": "Indeclinables (Avyayas)",
+   "function": "Gerunds and Infinitives",
+   "count": 3
+  },
+  "category_5": {
+   "name": "Action, Agent, Object Nouns",
+   "function": "Nominal Derivatives",
+   "count": "Approx. 10-15 major suffixes"
+  }
+ },
+ "krit_suffixes_by_artha_and_vācya": [
+  {
+   "artha": "Kartṛartha (कर्तर्थ)",
+   "vācya": "Active voice (Agent)",
+   "definition": "Derives the **Agent** or **Doer** of the action.",
+   "suffixes": [
+    {
+     "suffix": "तृच् (tṛc)",
+     "form": "तृ",
+     "dhātu_scope": "All",
+     "usage": "Agent Noun (e.g., $\\text{kartṛ}$ - doer, $\\text{dātṛ}$ - giver)"
+    },
+    {
+     "suffix": "ण्वुल् (ṇvul)",
+     "form": "अक",
+     "dhātu_scope": "All",
+     "usage": "Agent Noun, often habitual (e.g., $\\text{pāṭhaka}$ - reader, $\\text{kāraka}$ - doer)"
+    },
+    {
+     "suffix": "णिनि (ṇini)",
+     "form": "इन्",
+     "dhātu_scope": "Specific rules (e.g., $\\text{Upapada}$)",
+     "usage": "Agent Noun (e.g., $\\text{mantrin}$ - counsellor, $\\text{sthayin}$ - standing)"
+    },
+    {
+     "suffix": "शतृ (śatṛ)",
+     "form": "अत्",
+     "dhātu_scope": "Parasmaipadī (Present Participle)",
+     "usage": "Adjective/Substantive (e.g., $\\text{gacchat}$ - going, $\\text{pibat}$ - drinking)"
+    },
+    {
+     "suffix": "शानच् (śānac)",
+     "form": "मान/आन",
+     "dhātu_scope": "Ātmanepadī (Present Participle)",
+     "usage": "Adjective/Substantive (e.g., $\\text{modamāna}$ - rejoicing, $\\text{śayāna}$ - sleeping)"
+    }
+   ]
+  },
+  {
+   "artha": "Karmārtha (कर्मार्थ) and Bhāvārtha (भावार्थ)",
+   "vācya": "Passive/Impersonal (Obligation/Potential)",
+   "definition": "Derives a passive word or a quality/obligation associated with the action.",
+   "kritya_suffixes": [
+    {
+     "suffix": "तव्यत् (tavyat)",
+     "form": "तव्य",
+     "dhātu_scope": "All",
+     "example": "कृ + $\\text{tavyat}$ = $\\text{kartavya}$ (should be done)"
+    },
+    {
+     "suffix": "तव्य (tavya)",
+     "form": "तव्य",
+     "dhātu_scope": "Alternative to $\\text{tavyat}$",
+     "example": "दा + $\\text{tavya}$ = $\\text{dātavya}$ (should be given)"
+    },
+    {
+     "suffix": "अनीयर् (anīyar)",
+     "form": "अनीय",
+     "dhātu_scope": "All",
+     "example": "दृश् + $\\text{anīyar}$ = $\\text{darśanīya}$ (worthy of being seen)"
+    },
+    {
+     "suffix": "यत् (yat)",
+     "form": "य",
+     "dhātu_scope": "Vowel-ending $\\text{Dhātus}$",
+     "example": "दा + $\\text{yat}$ = $\\text{deya}$ (fit to be given)"
+    },
+    {
+     "suffix": "ण्यत् (ṇyat)",
+     "form": "य",
+     "dhātu_scope": "Consonant-ending & $\\text{ṛ}$-ending $\\text{Dhātus}$",
+     "example": "कृ + $\\text{ṇyat}$ = $\\text{kārya}$ (to be done, requires $\\text{vṛddhi}$)"
+    },
+    {
+     "suffix": "क्यप् (kyap)",
+     "form": "य",
+     "dhātu_scope": "Specific restricted $\\text{Dhātus}$ (e.g., $\\text{śās}$)",
+     "example": "शास् + $\\text{kyap}$ = $\\text{śiṣya}$ (to be instructed, disciple)"
+    },
+    {
+     "suffix": "केलिमर (kelimar)",
+     "form": "केलिम",
+     "dhātu_scope": "Less common, potential meaning",
+     "example": "लष् + $\\text{kelimar}$ = $\\text{laṣakelima}$ (desirable)"
+    }
+   ],
+   "past_participles": [
+    {
+     "suffix": "क्त (kta)",
+     "form": "त",
+     "dhātu_scope": "All",
+     "usage": "Past Passive Participle (e.g., $\\text{kṛta}$ - done). $\\text{Bhāvārtha}$ with Intransitive $\\text{Dhātus}$ (e.g., $\\text{gatam}$ - gone)"
+    },
+    {
+     "suffix": "क्तवतु (ktavatu)",
+     "form": "तवत्",
+     "dhātu_scope": "All",
+     "usage": "Past Active Participle (e.g., $\\text{kṛtavat}$ - one who has done)"
+    }
+   ]
+  },
+  {
+   "artha": "Bhāvārtha (भावार्थ)",
+   "vācya": "Abstract Action Nouns",
+   "definition": "Derives the **Act** or **Process** denoted by the root.",
+   "suffixes": [
+    {
+     "suffix": "घञ् (ghañ)",
+     "form": "अ",
+     "gender": "Masculine",
+     "dhātu_scope": "General (Action Noun)",
+     "example": "पच् + $\\text{ghañ}$ = $\\text{pāka}$ (cooking, requires $\\text{vṛddhi}$)"
+    },
+    {
+     "suffix": "ल्युट् (lyuṭ)",
+     "form": "अन",
+     "gender": "Neuter",
+     "dhātu_scope": "General (Action Noun)",
+     "example": "पठ् + $\\text{lyuṭ}$ = $\\text{paṭhana}$ (reading)"
+    },
+    {
+     "suffix": "क्तिन् (ktin)",
+     "form": "ति",
+     "gender": "Feminine",
+     "dhātu_scope": "General (Action Noun)",
+     "example": "गम् + $\\text{ktin}$ = $\\text{gati}$ (going, movement)"
+    },
+    {
+     "suffix": "अप् (ap)",
+     "form": "अ",
+     "gender": "Masculine",
+     "dhātu_scope": "Specific roots (e.g., $\\text{iñ}$)",
+     "example": "यज् + $\\text{ap}$ = $\\text{yaga}$ (sacrifice)"
+    }
+   ]
+  },
+  {
+   "artha": "Karaṇārtha (करणार्थ) and Adhikaraṇārtha (अधिकरणार्थ)",
+   "vācya": "Instrument/Location Nouns",
+   "definition": "Derives the **Instrument** or **Location** of the action.",
+   "suffixes": [
+    {
+     "suffix": "ल्युट् (lyuṭ)",
+     "form": "अन",
+     "dhātu_scope": "General",
+     "usage": "Instrument/Location Noun (e.g., $\\text{karaṇa}$ - instrument, $\\text{āsana}$ - seat)"
+    },
+    {
+     "suffix": "घञ् (ghañ)",
+     "form": "अ",
+     "dhātu_scope": "General",
+     "usage": "Location Noun (e.g., $\\text{prāsāda}$ - palace (from $\\text{sad}$))"
+    }
+   ]
+  },
+  {
+   "artha": "Avyayas (Indeclinables)",
+   "vācya": "Prior Action or Purpose",
+   "definition": "Forms indeclinable words ($\\text{Avyayas}$) indicating completed action or purpose.",
+   "suffixes": [
+    {
+     "suffix": "क्त्वा (ktvā)",
+     "form": "त्वा",
+     "dhātu_scope": "Roots without $\\text{Upasarga}$",
+     "usage": "Gerund (having done) (e.g., $\\text{kṛtvā}$ - having done)"
+    },
+    {
+     "suffix": "ल्यप् (lyap)",
+     "form": "य",
+     "dhātu_scope": "Roots preceded by $\\text{Upasarga}$",
+     "usage": "Gerund (having done) (e.g., $\\text{āgamya}$ - having come, from $\\text{ā} + \text{gam}$)"
+    },
+    {
+     "suffix": "तुमुन् (tumun)",
+     "form": "तुम्",
+     "dhātu_scope": "All",
+     "usage": "Infinitive/Purpose (to do) (e.g., $\\text{gantum}$ - to go, $\\text{kartum}$ - to do)"
+    }
+   ]
+  }
+ ],
+ "dhātu_specific_rules": {
+  "Vowel_Change_Rules": {
+   "guṇa_vṛddhi_trigger": "Suffixes marked with an initial ण् ($\text{ṇ}$) or क् ($\text{k}$) cause stem modifications.",
+   "ṇ_m_k_markers": "Suffixes like $\\text{ṇvul}$, $\\text{ṇini}$, $\\text{ghañ}$, $\\text{ṇyat}$ cause **Vṛddhi** or **Guṇa** to the root's final or penultimate vowel.",
+   "k_markers": "Suffixes like $\\text{kta}$, $\\text{ktvā}$, $\\text{kyap}$ (those beginning with क् ($\text{k}$)) are $\\text{kit}$ and prevent Guṇa/Vṛddhi."
+  },
+  "Kritya_Suffix_Distribution": {
+   "universal": [
+    "तव्यत् (tavyat)",
+    "अनीयर् (anīyar)"
+   ],
+   "restricted_by_root_form": [
+    {
+     "suffix": "यत् (yat)",
+     "restriction": "Primarily for vowel-ending roots ($\text{Ajanta}$)"
+    },
+    {
+     "suffix": "ण्यत् (ṇyat)",
+     "restriction": "Primarily for consonant-ending ($\text{Halanta}$) and $\text{ṛ}$-ending roots"
+    },
+    {
+     "suffix": "क्यप् (kyap)",
+     "restriction": "Strictly $\\text{Gaṇa}$-listed $\\text{Dhātus}$"
+    }
+   ]
+  }
+ }
+}

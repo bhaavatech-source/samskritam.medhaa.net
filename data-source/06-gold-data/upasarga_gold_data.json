@@ -1,0 +1,36 @@
+{
+ "gold_data_upasarga": {
+  "title": "Sanskrit Upasarga: Comprehensive Gold Data",
+  "definition": {
+   "sanskrit": "धात्वर्थं बाधते कश्चित् कश्चित्तमनुवर्तते। तमेव विशिनष्ट्यन्यः उपसर्गगतिस्त्रिधा।।",
+   "english": "Some upasargas negate or counteract the sense of the root (dhatu), some follow its meaning, and others specify or intensify it. The function of upasargas is thus threefold."
+  },
+  "type of pada": "उपसर्गा अपि सुबन्तपदानि एव। सुप्-प्रत्ययाः 24 वर्तन्ते चेदपि केवलं प्रथमैकवचनप्रत्ययः (सुः) एव भवति",
+  "class": "उपसर्गाः अव्ययेषु अन्तर्भवन्ति",
+  "other_names": "उपसर्गाणां गतिः इति",
+  "total_count": 20,
+  "nature_of_upasargas": "उपसर्गाः सर्वदा धातुना योगे सत्येव भवन्ति, लौकिकभाषायां सर्वदा धातोः अव्यवहितपूर्वाश्च भवन्ति. तथा एतेषां वास्तविकार्थो न वर्तते। केवलं धातोः विद्यमानम् अर्थमेव (धात्वर्थमेव) प्रकाशयन्ति।",
+  "list_of_upasargas": [
+   "प्र",
+   "परा",
+   "अप",
+   "सम्",
+   "अनु",
+   "अव",
+   "निस्/निर्",
+   "दुस्/दुर्",
+   "वि",
+   "आ",
+   "नि",
+   "अधि",
+   "अति",
+   "सु",
+   "उत्/उद्",
+   "अभि",
+   "प्रति",
+   "परि",
+   "उप",
+   "अपि"
+  ]
+ }
+}

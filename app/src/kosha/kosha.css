@@ -1,0 +1,127 @@
+/* ═══════════ कोशाः — word, verb and sentence books ═══════════ */
+.ks { text-align: left; --rc: #8b5cf6; }
+.ks .jy-top-right { align-items: flex-end; }
+.ks-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.ks-tabs button, .ks-chips button {
+  font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-weight: 600; font-size: .9rem; cursor: pointer; color: #303c5a;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(15,23,42,0.16); border-radius: 50px; padding: 7px 16px;
+}
+.ks-tabs button.on { background: linear-gradient(135deg, #c2410c, #be185d 55%, #6d28d9); color: #fff; border-color: transparent; }
+.ks-tools { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.ks-tools input[type=search] { flex: 1; min-width: 220px; font-size: 1rem; padding: 10px 16px; border-radius: 50px; border: 1px solid rgba(15,23,42,0.18); background: rgba(255,255,255,.9); font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Poppins', sans-serif; }
+.ks-only { font-size: .85rem; color: #42527b; display: flex; gap: 6px; align-items: center; cursor: pointer; }
+.ks-count { font-size: .8rem; color: #64748b; }
+
+.ks-body { display: grid; grid-template-columns: minmax(220px, 300px) 1fr; gap: 16px; align-items: start; }
+@media (max-width: 760px) { .ks-body { grid-template-columns: 1fr; } .ks-list { max-height: 260px !important; } }
+.ks-list {
+  max-height: 72vh; overflow: auto; border-radius: 18px; background: rgba(255,255,255,.8); border: 1px solid rgba(15,23,42,0.1);
+  box-shadow: var(--shadow-soft); position: sticky; top: 10px;
+}
+.ks-list button {
+  display: flex; align-items: baseline; gap: 8px; width: 100%; text-align: left; padding: 9px 14px; border: none; background: none; cursor: pointer;
+  border-bottom: 1px solid rgba(15,23,42,0.06); color: #1e2638;
+}
+.ks-list button:hover { background: rgba(139,92,246,.06); }
+.ks-list button.on { background: linear-gradient(90deg, rgba(249,115,22,.14), rgba(236,72,153,.08)); }
+.ks-l-sa { font-family: 'Noto Sans Devanagari', serif; font-size: 1.2rem; font-weight: 600; white-space: nowrap; }
+.ks-l-sent { font-size: 1rem; white-space: normal; }
+.ks-l-en { font-size: .8rem; color: #526079; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.ks-l-ch { font-size: .72rem; color: #b45309; }
+.ks-flagdot { color: #e11d48; font-size: .85rem; }
+.ks-none { padding: 14px; color: #64748b; font-size: .9rem; }
+
+.ks-detail { min-width: 0; }
+.ks-card { min-width: 0; max-width: 100%; overflow-x: auto; border-radius: 22px; padding: 20px; background: rgba(255,255,255,.85); border: 1px solid rgba(15,23,42,0.1); box-shadow: var(--shadow-soft); animation: fadeUp .3s ease both; }
+.ks-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.ks-head h3 { font-family: 'Noto Sans Devanagari', serif; font-size: 2.4rem; line-height: 1.2; color: #1e2638; }
+.ks-head h3.ks-sent { font-size: 1.8rem; }
+.ks-sub { font-size: .85rem; color: #526079; flex-basis: 100%; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.ks-speak { font-size: 1rem; background: rgba(255,255,255,.9); border: 1px solid rgba(15,23,42,0.18); border-radius: 50%; width: 36px; height: 36px; cursor: pointer; }
+.ks-main-meaning { margin: 8px 0 12px; font-size: 1.05rem; color: #303c5a; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.ks-artha { font-family: 'Noto Sans Devanagari', serif; color: #64748b; }
+.ks-card h4 { margin: 18px 0 8px; font-size: 1rem; color: #7c2d12; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.ks-card h4 small { font-weight: 400; color: #64748b; font-size: .78rem; }
+
+.ks-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+.ks-gender-filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
+.ks-gender-filters button { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; min-height: 44px; text-align: left; }
+.ks-gender-filters button > span { min-width: 0; overflow-wrap: anywhere; }
+.ks-gender-filters button small { flex: none; white-space: nowrap; }
+.ks-chips-sm button { font-size: .82rem; padding: 5px 12px; }
+.ks-chips button small { font-family: 'Poppins', sans-serif; font-weight: 400; opacity: .75; font-size: .72rem; }
+.ks-chips button.on { background: #6d28d9; color: #fff; border-color: #6d28d9; }
+.ks-tag { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: .85rem; padding: 3px 12px; border-radius: 20px; background: rgba(139,92,246,.1); color: #5b21b6; }
+
+.ks-table-wrap { overflow-x: auto; margin-top: 8px; }
+.ks-table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: .92rem; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #ece6f5; }
+.ks-table th, .ks-table td { padding: 8px 10px; border-bottom: 1px solid #f1ecf7; text-align: left; vertical-align: top; }
+.ks-table thead th { background: linear-gradient(90deg, #fff1e6, #fbeaff); font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-weight: 700; color: #6b21a8; font-size: .88rem; }
+.ks-table tbody th { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-weight: 600; color: #7c2d12; background: #fffaf5; white-space: nowrap; }
+.ks-table tbody th small { display: block; font-family: 'Poppins', sans-serif; font-weight: 400; color: #64748b; font-size: .7rem; }
+.ks-form { font-family: 'Noto Sans Devanagari', serif; font-size: 1.2rem; color: #1e2638; }
+.ks-he { color: #94a3b8; }
+.ks-alt { color: #64748b; font-size: 1rem; }
+.ks-gloss { display: block; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: .78rem; color: #475569; margin-top: 3px; line-height: 1.35; }
+.ks-role { display: block; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; font-weight: 500; color: #7c3aed; font-size: .72rem; margin-top: 2px; }
+.ks-empty { color: #cbd5e1; }
+.ks-krt td:nth-child(3) { font-size: .85rem; color: #303c5a; }
+
+.ks-meanings { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; }
+.ks-meanings > div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; padding: 8px 10px; border-radius: 12px; background: #fff; border: 1px solid #efe9f6; font-size: .92rem; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.ks-meanings > div.on { border-color: #f59e0b; background: #fffbeb; }
+.ks-meanings b { font-size: .72rem; color: #64748b; font-weight: 600; flex-basis: 100%; }
+.ks-meanings span:not(.ks-pill) { flex: 1; color: #1e2638; }
+
+.ks-pill { display: inline-block; font-family: 'Poppins', sans-serif; font-size: .66rem; font-weight: 600; padding: 1px 8px; border-radius: 20px; background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; margin-left: 4px; vertical-align: middle; }
+.ks-pill-direct, .ks-pill-reviewed, .ks-pill-book { background: #dcfce7; color: #166534; border-color: #bbf7d0; }
+.ks-pill-linked, .ks-pill-standard { background: #e0f2fe; color: #075985; border-color: #bae6fd; }
+.ks-pill-corrected { background: #fef3c7; color: #92400e; border-color: #fde68a; }
+.ks-pill-draft { background: #ffe4e6; color: #9f1239; border-color: #fecdd3; }
+.ks-pill-derived { background: #ede9fe; color: #5b21b6; border-color: #ddd6fe; }
+
+.ks-note { font-size: .82rem; color: #526079; margin-top: 10px; }
+.ks-id { font-size: .7rem; color: #94a3b8; margin-top: 12px; text-align: right; }
+
+.ks-flagbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+.ks-flagbar button { font-weight: 600; font-size: .9rem; cursor: pointer; border-radius: 50px; padding: 9px 18px; border: 1px solid rgba(15,23,42,0.2); background: rgba(255,255,255,.85); color: #1e2638; }
+.ks-flagbar button:disabled { opacity: .5; cursor: default; }
+.ks-bignum { font-size: 1.4rem; font-weight: 700; color: #be123c; }
+.ks-flags td small { display: block; font-size: .7rem; color: #94a3b8; }
+.ks-del { background: none; border: none; cursor: pointer; color: #94a3b8; font-size: 1rem; }
+.ks-del:hover { color: #e11d48; }
+.ks-empty-big { text-align: center; padding: 40px 10px; color: #526079; background: rgba(255,255,255,.7); border-radius: 18px; }
+
+.lang-picks { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+.ks-note-plain { font-size: .85rem; color: #64748b; margin: -4px 0 8px; }
+.sb-sloka { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Kannada', 'Noto Sans Malayalam', 'Noto Sans Bengali', 'Noto Sans Oriya', 'Noto Sans Gujarati', serif; font-size: 1.45rem; line-height: 1.7; color: #1e2638; }
+.ks-err { display: flex; align-items: center; gap: 10px; margin: 8px 0; }
+.ks-err-x, .ks-err-ok { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; flex: none; }
+.ks-err-x { background: #fee2e2; color: #b91c1c; } .ks-err-ok { background: #dcfce7; color: #15803d; }
+.ks-sent-big { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; font-size: 1.5rem; }
+.ks-wrong { color: #9f1239; text-decoration: line-through; text-decoration-color: rgba(185,28,28,.45); }
+.ks-padas { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 12px; }
+.ks-padas span { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; font-size: 1.2rem; padding: 4px 12px; border-radius: 10px; background: #f5f3ff; border: 1px solid #ddd6fe; }
+
+.ks-method{min-width:0;max-width:100%;overflow-x:auto;margin:0 0 14px;padding:10px 14px;border-radius:14px;background:var(--card,#fff);box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.ks-method summary{cursor:pointer;font-weight:700}
+.ks-method ol{margin:10px 0 0;padding-left:22px}.ks-method li{margin:8px 0}.ks-method p{margin:4px 0 0;line-height:1.6}
+.ks-verse{white-space:pre-line;line-height:1.7}
+.ks-anvaya{font-size:1.1rem;line-height:1.7}
+.ks-karaka{width:100%;border-collapse:collapse;margin:6px 0 10px}
+.ks-karaka td{padding:6px 8px;border-bottom:1px solid rgba(0,0,0,.07);vertical-align:top}
+.ks-karaka td{overflow-wrap:anywhere}.ks-karaka td:nth-child(3){font-size:.82rem;max-width:300px}
+.ks-roman{margin:-4px 0 8px;font-style:italic;color:#5b4a8b;font-size:.98rem;line-height:1.5}
+.ks-roman-s{display:block;font-size:.8rem;color:#5b4a8b;opacity:.85}
+.gr-sloka{font-size:1.1rem;line-height:1.7;text-align:center;margin:6px 0 10px;color:#7c2d12}
+.gr-sutra{font-weight:700;color:#6d28d9;margin:2px 0 6px}
+.gr-res{font-weight:700}
+.gr-filter{margin:6px 0 10px;flex-wrap:wrap}
+.gr-filter .ks-tag{cursor:pointer;border:none}
+.gr-filter .ks-tag.on{background:#7c3aed;color:#fff}
+.gr-stage{margin:8px 0;padding:8px 12px;border-left:3px solid #c4b5fd;background:rgba(124,58,237,.04);border-radius:8px}
+.gr-upex{display:inline-block;margin-right:12px}
+.gr-ex td:first-child{white-space:nowrap}
+.ks-roman{cursor:pointer}
+.ks-roman-btn{display:inline-block;margin:0 0 6px;padding:1px 8px;border-radius:999px;border:1px solid #c4b5fd;background:#f5f3ff;color:#5b4a8b;font:600 .75rem/1.6 Poppins,system-ui,sans-serif;cursor:pointer}
+.ks-roman-btn:hover{background:#ede9fe}
