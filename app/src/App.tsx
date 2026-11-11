@@ -11,14 +11,18 @@ import { setReviewer, useReviewer } from "./settings";
 export const APP_NAME = { sa: "संस्कृतम्", en: "Saṃskṛtam", tagline: "Learn Saṃskṛtam by playing — words, forms and sentences" };
 
 type View = "game" | "learn" | "words" | "verbs" | "sentences" | "grammar" | "flags";
+type NavItem =
+  | { type: "view"; v: View; icon: string; sa: string; en: string }
+  | { type: "link"; href: string; icon: string; sa: string; en: string };
 
-const NAV: { v: View; icon: string; sa: string; en: string }[] = [
-  { v: "game",      icon: "🗺️", sa: "यात्रा",    en: "Journey" },
-  { v: "learn",     icon: "💡", sa: "बोधः",      en: "Understand" },
-  { v: "words",     icon: "📖", sa: "शब्दकोशः",  en: "Word book" },
-  { v: "verbs",     icon: "🌱", sa: "धातुकोशः",  en: "Verb book" },
-  { v: "sentences", icon: "💬", sa: "वाक्यकोशः", en: "Sentences" },
-  { v: "grammar",   icon: "🔗", sa: "व्याकरणम्",  en: "Sandhi · Samāsa" },
+const NAV: NavItem[] = [
+  { type: "view", v: "game",      icon: "🗺️", sa: "यात्रा",    en: "Journey" },
+  { type: "view", v: "learn",     icon: "💡", sa: "बोधः",      en: "Understand" },
+  { type: "view", v: "words",     icon: "📖", sa: "शब्दकोशः",  en: "Word book" },
+  { type: "view", v: "verbs",     icon: "🌱", sa: "धातुकोशः",  en: "Verb book" },
+  { type: "view", v: "sentences", icon: "💬", sa: "वाक्यकोशः", en: "Sentences" },
+  { type: "view", v: "grammar",   icon: "🔗", sa: "व्याकरणम्",  en: "Sandhi · Samāsa" },
+  { type: "link", href: "https://medhaa.net/games-static/devanagari-game/index.html", icon: "🪷", sa: "अक्षराभ्यासः", en: "Akṣarābhyāsaḥ" },
 ];
 
 // faint floating letters behind everything (decorative)
@@ -76,9 +80,11 @@ const App: React.FC = () => {
             <p>{APP_NAME.tagline}</p>
             <nav className="view-switch" aria-label="Main navigation">
               {NAV.map(n => (
-                <button key={n.v} className={`view-btn ${view === n.v ? "view-btn-active" : ""}`} onClick={() => setView(n.v)}>
-                  <span>{n.icon} {n.sa}</span><small>{n.en}</small>
-                </button>
+                n.type === "link"
+                  ? <a key={n.href} className="view-btn" href={n.href}><span>{n.icon} {n.sa}</span><small>{n.en}</small></a>
+                  : <button key={n.v} className={`view-btn ${view === n.v ? "view-btn-active" : ""}`} onClick={() => setView(n.v)}>
+                      <span>{n.icon} {n.sa}</span><small>{n.en}</small>
+                    </button>
               ))}
             </nav>
         </div>

@@ -26,8 +26,9 @@ button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-
 .view-btn {
   display: inline-flex; flex-direction: column; align-items: center; line-height: 1.2;
   font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: .95rem; font-weight: 600;
-  border-radius: 50px; padding: 9px 22px; cursor: pointer;
+  border-radius: 50px; padding: 9px 22px; cursor: pointer; text-decoration: none;
 }
+.view-btn:focus-visible { outline: 3px solid #6366f1; outline-offset: 2px; }
 .view-btn small { font-family: 'Poppins', sans-serif; font-size: .7rem; font-weight: 500; }
 
 /* ── footer ── */
