@@ -26,10 +26,10 @@ const SandhiTab: React.FC = () => {
         <summary>सन्धिः किम्? · What sandhi is</summary>
         <p className="gr-sloka">{S(G.sandhi.definition)}</p>
         <p>Sandhi is what happens where two sounds meet — the last sound of one piece and the first of the next. It is one of four things:</p>
-        <table className="ks-karaka"><tbody>{G.sandhi.kinds.map(k => <tr key={k.name}><td className="ks-l-sa">{S(k.name)}</td><td>{k.en}</td><td className="ks-l-sa">{S(k.ex)}</td></tr>)}</tbody></table>
+        <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{G.sandhi.kinds.map(k => <tr key={k.name}><td className="ks-l-sa">{S(k.name)}</td><td>{k.en}</td><td className="ks-l-sa">{S(k.ex)}</td></tr>)}</tbody></table></div>
         <p className="ks-note-plain">{S(G.sandhi.not_sandhi)}</p>
         <h4>Two places where sandhi happens</h4>
-        <table className="ks-karaka"><tbody>{G.sandhi.layers.map(k => <tr key={k.name}><td className="ks-l-sa">{S(k.name)}</td><td>{k.en}</td><td className="ks-l-sa">{S(k.ex)}</td></tr>)}</tbody></table>
+        <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{G.sandhi.layers.map(k => <tr key={k.name}><td className="ks-l-sa">{S(k.name)}</td><td>{k.en}</td><td className="ks-l-sa">{S(k.ex)}</td></tr>)}</tbody></table></div>
         <h4>Three questions that unlock every sandhi</h4>
         <ol>{G.sandhi.questions.map(q => <li key={q.q}><b>{S(q.q)}</b> — {q.en}</li>)}</ol>
         <h4>Step by step: why the rules do not undo each other</h4>
@@ -51,10 +51,10 @@ const SandhiTab: React.FC = () => {
             <p className="gr-sutra">{S(r.sutra)}</p>
             <p>{S(r.what)}</p>
             <h4>उदाहरणानि · Examples ({r.ex.length})</h4>
-            <table className="ks-karaka gr-ex"><tbody>{r.ex.map((e, i) => (
+            <div className="ks-table-wrap"><table className="ks-karaka gr-ex"><tbody>{r.ex.map((e, i) => (
               <tr key={i}><td className="ks-l-sa">{S(e.a)} + {S(e.b)}</td><td>→</td><td className="ks-l-sa gr-res">{S(e.r)} <Speak t={e.r.split(" / ")[0]} /></td>
                 <td className="ks-l-en">{e.scope === "int" ? "अन्तरङ्गः" : e.scope === "exc" ? "अपवादः" : "बहिरङ्गः"}{e.note ? ` · ${S(e.note)}` : ""}</td>
-                <td><FlagButton t={{ kind: "grammar", id: `sandhi:${r.id}`, field: "example", value: `${e.a} + ${e.b} = ${e.r}`, where: `${r.name} — example` }} /></td></tr>))}</tbody></table>
+                <td><FlagButton t={{ kind: "grammar", id: `sandhi:${r.id}`, field: "example", value: `${e.a} + ${e.b} = ${e.r}`, where: `${r.name} — example` }} /></td></tr>))}</tbody></table></div>
           </div>)} />
     </>
   );
@@ -78,16 +78,16 @@ const SamasaTab: React.FC = () => {
         {d.vigraha.types.map(t => <p key={t.type}><b>{S(t.type)}</b> — {S(t.details)}</p>)}
         <h4>{S(d.dominance.title)}</h4>
         <p>{S(d.dominance.details)}</p>
-        <table className="ks-karaka"><tbody>{d.dominance.types.map(t => (
+        <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{d.dominance.types.map(t => (
           <tr key={t.name}><td className="ks-l-sa"><b>{S(t.name)}</b></td><td>{S(t.meaning_dominance)}{t.example_laukika ? <><br /><span className="ks-l-sa">{S(t.example_laukika)}</span></> : null}</td>
-            <td className="ks-l-en">{(t.sub_types ?? []).map(x => typeof x === "string" ? S(x) : S(x.name)).join(" · ")}</td></tr>))}</tbody></table>
+            <td className="ks-l-en">{(t.sub_types ?? []).map(x => typeof x === "string" ? S(x) : S(x.name)).join(" · ")}</td></tr>))}</tbody></table></div>
         <h4>{S(d.occurrence.title)}</h4>
         {d.occurrence.types.map(t => <p key={t.name}><b>{S(t.name)}</b> — {S(t.definition)}</p>)}
         <h4>{S(d.count.title)}</h4>
         {d.count.types.map(t => <p key={t.name}><b>{S(t.name)}</b> — {S(t.definition)} {t.note ? S(t.note) : ""}</p>)}
         <h4>{S(d.pos.title)}</h4>
         <p className="gr-sloka">{S(d.pos.shloka)}</p>
-        <table className="ks-karaka"><tbody>{d.pos.types.map(t => <tr key={t.combination}><td>{S(t.combination)}</td><td className="ks-l-sa">{S(t.example)}</td></tr>)}</tbody></table>
+        <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{d.pos.types.map(t => <tr key={t.combination}><td>{S(t.combination)}</td><td className="ks-l-sa">{S(t.example)}</td></tr>)}</tbody></table></div>
         {Object.values(d.notes).map((n, i) => <p key={i} className="ks-note-plain">{S(n)}</p>)}
       </details>
       <div className="ks-chips gr-filter">
@@ -100,11 +100,11 @@ const SamasaTab: React.FC = () => {
         detail={e => (
           <div className="ks-card">
             <div className="ks-head"><h3>{S(e.w)}</h3><Speak t={e.w} /><span className="ks-sub">{S(e.m)}</span></div>
-            <table className="ks-karaka"><tbody>
+            <div className="ks-table-wrap"><table className="ks-karaka"><tbody>
               <tr><td>{S("लौकिकविग्रहः")}<br /><span className="ks-l-en">the phrase</span></td><td className="ks-l-sa gr-res">{S(e.l)} <Speak t={e.l} /></td></tr>
               {e.a && <tr><td>{S("अलौकिकविग्रहः")}<br /><span className="ks-l-en">stems + endings</span></td><td className="ks-l-sa">{S(e.a)}</td></tr>}
               <tr><td>{S("समासनाम")}<br /><span className="ks-l-en">kind</span></td><td className="ks-l-sa">{S(e.t)}</td></tr>
-            </tbody></table>
+            </tbody></table></div>
             {e.n && <p className="ks-note-plain">{S(e.n)}</p>}
             <FlagButton t={{ kind: "grammar", id: `samasa:${e.w}`, field: "entry", value: `${e.w} | ${e.l} | ${e.a} | ${e.t}`, where: `${e.w} — samāsa` }} label="Report" />
           </div>)} />
@@ -130,12 +130,12 @@ const PratyayaTab: React.FC = () => {
           return (
             <div className="ks-card">
               <div className="ks-head"><h3>{S(x.p)}</h3><span className="ks-sub">{S(P.kinds[x.kind][0])} · {P.kinds[x.kind][1]}</span></div>
-              <table className="ks-karaka"><tbody>
+              <div className="ks-table-wrap"><table className="ks-karaka"><tbody>
                 <tr><td>{S("इत्")} <span className="ks-l-en">letters that drop</span></td><td className="ks-l-sa">{S(x.it)}</td></tr>
                 <tr><td>{S("शिष्टः")} <span className="ks-l-en">what is added</span></td><td className="ks-l-sa">{S(x.rem)}</td></tr>
                 <tr><td>{S("सूत्रम्")}</td><td className="ks-l-sa">{S(x.sutra)}</td></tr>
                 <tr><td>{S("अर्थः")} <span className="ks-l-en">meaning</span></td><td>{S(x.artha)}</td></tr>
-              </tbody></table>
+              </tbody></table></div>
               {rows.length > 0 && <><h4>{rows.length} {S("धातवः")} · roots with this suffix ({LANGS[lang]})</h4>
                 <div className="ks-table-wrap"><table className="ks-table ks-krt"><tbody>{rows.map(r => {
                   const v = VERBS.find(y => y.w === r.w); const gl = krtGloss(x.p, lang, r.f[x.p][1], v ? verbMeaning(v, lang) : r.en, r.w);
@@ -155,16 +155,16 @@ const UpasargaTab: React.FC = () => {
     <div className="ks-card">
       <p className="gr-sloka">{S(U.sloka)}</p>
       <p>{U.sloka_en}</p>
-      <table className="ks-karaka"><tbody>{U.three.map(([sa, en, ex]) => <tr key={sa}><td className="ks-l-sa"><b>{S(sa)}</b></td><td>{en}</td><td className="ks-l-sa">{S(ex)}</td></tr>)}</tbody></table>
+      <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{U.three.map(([sa, en, ex]) => <tr key={sa}><td className="ks-l-sa"><b>{S(sa)}</b></td><td>{en}</td><td className="ks-l-sa">{S(ex)}</td></tr>)}</tbody></table></div>
       <h4>{S("हृ")} + 7 {S("उपसर्गाः")} · one root, seven meanings</h4>
       <div className="ks-chips">{U.hr.map(([u, w, en]) => <span key={w} className="ks-tag">{S(u)} → <b>{S(w)}</b> · {en}</span>)}</div>
       <p className="ks-note-plain">{S(U.cls)} {S(U.pada)}</p>
       <p className="ks-note-plain">{S(U.nature)}</p>
       <h4>२० {S("उपसर्गाः")}</h4>
-      <table className="ks-karaka"><tbody>{U.list.map(u => (
+      <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{U.list.map(u => (
         <tr key={u.u}><td className="ks-l-sa"><b>{S(u.u)}</b></td><td>{u.en}</td>
           <td>{u.ex.map(([w, m]) => <span key={w} className="gr-upex"><span className="ks-l-sa">{S(w)}</span> <span className="ks-l-en">{m}</span></span>)}</td>
-          <td><FlagButton t={{ kind: "grammar", id: `upasarga:${u.u}`, field: "entry", value: `${u.u}: ${u.en}`, where: `${u.u} — upasarga` }} /></td></tr>))}</tbody></table>
+          <td><FlagButton t={{ kind: "grammar", id: `upasarga:${u.u}`, field: "entry", value: `${u.u}: ${u.en}`, where: `${u.u} — upasarga` }} /></td></tr>))}</tbody></table></div>
     </div>
   );
 };

@@ -29,6 +29,7 @@ import { flagsCSV, importFlags, ISSUES, OK, removeFlag, saveFile, useFlags, type
 import { useLang, useReadings, setReadings } from "../settings";
 import { speak } from "../speech";
 import { useSa } from "../i18n/script";
+import { PadacchedaIntro, PadyaIntro } from "./Intro";
 import "./kosha.css";
 
 // ── shared list + detail layout ────────────────────────────────
@@ -280,6 +281,8 @@ export const SentenceBook: React.FC = () => {
     <div className="ks">
       <KsTop title="वाक्यकोशः" en="Sentences, ślokas & little words" sub={`${SENTENCES.length} everyday sentences, ${ERRORS.length} mistakes and their corrections, ${PADACCHEDA.length} Rāmāyaṇa ślokas split into words, ${PADYA.verses.length} verses analysed step by step, and ${AVYAYA.length} अव्ययानि.`} />
       <Tabs tabs={[["s", `वाक्यानि · Sentences (${SENTENCES.length})`], ["e", `अशुद्धिशोधनम् · Mistakes (${ERRORS.length})`], ["p", `पदच्छेदः · Ślokas (${PADACCHEDA.length})`], ["v", `पद्यविश्लेषणम् · Verse analysis (${PADYA.verses.length})`], ["a", `अव्ययानि · Avyayas (${AVYAYA.length})`]]} on={tab} set={setTab} />
+      {tab === "p" && <PadacchedaIntro />}
+      {tab === "v" && <PadyaIntro />}
       {tab === "v" && <details className="ks-method"><summary>पद्यविश्लेषणस्य क्रमः · How to analyse a verse ({PADYA.method.length} steps)</summary>
         <ol>{PADYA.method.map(m => <li key={m.n}><b>{S(m.title.replace(/\s*\(.*\)$/, ""))}</b> <span className="ks-l-en">{m.title.match(/\((.*)\)/)?.[1]}</span><p>{S(m.details)}</p></li>)}</ol></details>}
       {tab === "v"
