@@ -1,0 +1,110 @@
+01.1001	bitten	demander	pedir	просить	يطلب	请求	頼む	청하다
+01.1020	graben	creuser	cavar	копать	يحفر	挖	掘る	파다
+01.1023	beobachten	observer	observar	наблюдать	يلاحظ	观察	観察する	관찰하다
+01.1029	gehen	aller	ir	идти	يذهب	去	行く	가다
+01.1043	verbergen	cacher	esconder	прятать	يخفي	隐藏	隠す	숨기다
+01.1047	halten	tenir	sostener	держать	يحمل	持	保つ	지니다
+01.1047+nic	halten	tenir	sostener	держать	يمسك	保持	保持する	유지하다
+01.1049	führen	conduire	guiar	вести	يقود	引导	導く	이끌다
+01.1056	meditieren	méditer	meditar	размышлять	يتأمل	沉思	瞑想する	명상하다
+01.1064	tönen	résonner	sonar	звучать	يصوت	发声	鳴く	소리 내다
+01.1065	singen	chanter	cantar	петь	يغني	唱	歌う	노래하다
+01.1074	trinken	boire	beber	пить	يشرب	喝	飲む	마시다
+01.1075	riechen	sentir	oler	нюхать	يشم	闻	嗅ぐ	냄새 맡다
+01.1076	blasen	souffler	soplar	дуть	ينفخ	吹	吹く	불다
+01.1079	geben	donner	dar	давать	يعطي	给	与える	주다
+01.1080	krumm sein	être tortueux	ser torcido	быть кривым	يعوج	弯曲	曲がる	굽다
+01.1086	gehen	aller	ir	идти	يذهب	去	行く	가다
+01.1095	laufen	courir	correr	бежать	يجري	奔跑	走る	달리다
+01.1096	siegen	vaincre	vencer	побеждать	ينتصر	战胜	勝つ	이기다
+01.1108	entgleiten	glisser	deslizarse	ускользать	ينزلق	滑落	滑り落ちる	미끄러지다
+01.1120	beschützen	protéger	proteger	защищать	يحمي	保护	守る	보호하다
+01.1123	fliegen	voler	volar	летать	يطير	飞	飛ぶ	날다
+01.1129	beginnen	commencer	comenzar	начинать	يبدأ	开始	始める	시작하다
+01.1130	erlangen	obtenir	obtener	получать	ينال	获得	得る	얻다
+01.1136	sich verneigen	s'incliner	inclinarse	кланяться	ينحني	鞠躬	お辞儀する	절하다
+01.1137	gehen	aller	ir	идти	يذهب	去	行く	가다
+01.1141	verlassen	abandonner	abandonar	оставлять	يترك	抛弃	捨てる	버리다
+01.1143	sehen	voir	ver	видеть	يرى	看见	見る	보다
+01.1144	beißen	mordre	morder	кусать	يعض	咬	噛む	물다
+01.1145	pflügen	labourer	arar	пахать	يحرث	耕	耕す	갈다
+01.1146	verbrennen	brûler	quemar	сжигать	يحرق	烧	燃やす	태우다
+01.1151	kochen	cuire	cocinar	варить	يطبخ	煮	料理する	요리하다
+01.1153	verehren	vénérer	venerar	почитать	يعبد	敬奉	崇める	섬기다
+01.1154	färben	teindre	teñir	окрашивать	يصبغ	染	染める	물들이다
+01.1157	opfern	sacrifier	ofrecer sacrificio	приносить жертву	يقدم قربانا	祭祀	祭祀する	제사 지내다
+01.1159	tragen	porter	llevar	нести	يحمل	运	運ぶ	나르다
+01.1160	wohnen	habiter	habitar	жить	يسكن	居住	住む	살다
+01.1164	sprechen	parler	hablar	говорить	يتكلم	说	話す	말하다
+01.1165	schwellen	enfler	hincharse	набухать	ينتفخ	膨胀	膨らむ	부풀다
+02.0001	essen	manger	comer	есть	يأكل	吃	食べる	먹다
+02.0002	töten	tuer	matar	убивать	يقتل	杀	殺す	죽이다
+02.0003	hassen	haïr	odiar	ненавидеть	يكره	憎恨	憎む	미워하다
+02.0004	melken	traire	ordeñar	доить	يحلب	挤奶	乳を搾る	젖을 짜다
+02.0005	bestreichen	enduire	untar	мазать	يدهن	涂抹	塗る	바르다
+02.0006	lecken	lécher	lamer	лизать	يلعق	舔	なめる	핥다
+02.0007	sprechen	parler	hablar	говорить	يتكلم	说	話す	말하다
+02.0010	herrschen	régner	gobernar	править	يحكم	统治	支配する	다스리다
+02.0011	sitzen	être assis	estar sentado	сидеть	يجلس	坐	座る	앉다
+02.0026	liegen	être couché	yacer	лежать	يضطجع	躺	横たわる	눕다
+02.0029	wachsen	croître	crecer	расти	ينمو	增长	増える	자라다
+02.0031	niesen	éternuer	estornudar	чихать	يعطس	打喷嚏	くしゃみする	재채기하다
+02.0034	bedecken	couvrir	cubrir	покрывать	يغطي	覆盖	覆う	덮다
+02.0037	schreien	crier	gritar	кричать	يصيح	叫喊	叫ぶ	외치다
+02.0038	preisen	louer	alabar	восхвалять	يسبح	赞颂	称える	찬미하다
+02.0039	sagen	dire	decir	говорить	يقول	说	言う	말하다
+02.0040	gehen	aller	ir	идти	يذهب	去	行く	가다
+02.0041	studieren	étudier	estudiar	изучать	يدرس	学习	学ぶ	공부하다
+02.0044	gehen	aller	ir	идти	يذهب	去	行く	가다
+02.0046	scheinen	briller	brillar	светить	يضيء	照耀	輝く	빛나다
+02.0047	baden	se baigner	bañarse	купаться	يستحم	沐浴	浴びる	목욕하다
+02.0055	erzählen	raconter	narrar	рассказывать	يحكي	讲述	語る	이야기하다
+02.0056	füllen	remplir	llenar	наполнять	يملأ	充满	満たす	채우다
+02.0057	messen	mesurer	medir	измерять	يقيس	测量	測る	재다
+02.0058	sprechen	parler	hablar	говорить	يتكلم	说	話す	말하다
+02.0059	wissen	savoir	saber	знать	يعرف	知道	知る	알다
+02.0060	sein	être	ser	быть	يكون	是	ある	있다
+02.0061	abwischen	essuyer	limpiar	вытирать	يمسح	擦拭	拭く	닦다
+02.0062	weinen	pleurer	llorar	плакать	يبكي	哭	泣く	울다
+02.0063	schlafen	dormir	dormir	спать	ينام	睡	眠る	자다
+02.0064	atmen	respirer	respirar	дышать	يتنفس	呼吸	息をする	숨 쉬다
+02.0067	wachen	veiller	velar	бодрствовать	يسهر	醒着	目覚めている	깨어 있다
+02.0069	glänzen	briller	brillar	сверкать	يتلألأ	闪耀	輝く	빛나다
+02.0070	unterweisen	instruire	instruir	наставлять	يعلم	教导	教える	가르치다
+02.0075	wünschen	souhaiter	desear	желать	يرغب	希望	望む	원하다
+03.0001	opfern	offrir en oblation	ofrendar	совершать возлияние	يقدم قربانا	献祭	供える	제물을 바치다
+03.0002	fürchten	craindre	temer	бояться	يخاف	害怕	恐れる	두려워하다
+03.0003	erröten	rougir	ruborizarse	краснеть	يخجل	害羞	恥じる	부끄러워하다
+03.0004	füllen	remplir	llenar	наполнять	يملأ	充满	満たす	채우다
+03.0007	messen	mesurer	medir	измерять	يقيس	测量	測る	재다
+03.0008	gehen	aller	ir	идти	يذهب	去	行く	가다
+03.0009	verlassen	quitter	dejar	покидать	يترك	离弃	捨てる	버리다
+03.0010	geben	donner	dar	давать	يعطي	给	与える	주다
+03.0011	legen	placer	poner	класть	يضع	放置	置く	놓다
+03.0012	reinigen	nettoyer	limpiar	очищать	ينظف	洗净	清める	깨끗이 하다
+03.0013	trennen	séparer	separar	отделять	يفصل	分开	分ける	나누다
+03.0017	gehen	aller	ir	идти	يذهب	去	行く	가다
+03.0020	wissen	savoir	saber	знать	يعرف	知道	知る	알다
+03.0025	geboren werden	naître	nacer	рождаться	يولد	出生	生まれる	태어나다
+03.0026	preisen	louer	alabar	восхвалять	يمدح	赞美	褒める	칭송하다
+04.0001	spielen	jouer	jugar	играть	يلعب	玩	遊ぶ	놀다
+04.0010	tanzen	danser	bailar	танцевать	يرقص	跳舞	踊る	춤추다
+04.0011	zittern	trembler	temblar	трепетать	يرتعد	颤抖	おののく	떨다
+04.0012	faulen	pourrir	pudrirse	гнить	يتعفن	腐烂	腐る	썩다
+04.0016	blühen	fleurir	florecer	цвести	يزهر	开花	咲く	꽃피다
+04.0022	sich bewegen	se mouvoir	moverse	двигаться	يتحرك	移动	動く	움직이다
+04.0025	altern	vieillir	envejecer	стареть	يشيخ	衰老	老いる	늙다
+04.0044	geboren werden	naître	nacer	рождаться	يولد	出生	生まれる	태어나다
+04.0045	lodern	flamboyer	arder	пылать	يتوهج	燃烧	燃える	타오르다
+04.0045+nic	anzünden	allumer	encender	зажигать	يشعل	点燃	灯す	불을 켜다
+04.0057	leiden	souffrir	sufrir	страдать	يعاني	受苦	苦しむ	괴로워하다
+04.0063	hängen an	s'attacher	apegarse	привязываться	يتعلق	依恋	執着する	애착하다
+04.0065	gehen	aller	ir	идти	يذهب	去	行く	가다
+04.0066	betrübt sein	s'affliger	afligirse	печалиться	يحزن	悲伤	悲しむ	슬퍼하다
+04.0068	erwachen	s'éveiller	despertar	просыпаться	يستيقظ	醒来	目覚める	깨어나다
+04.0069	kämpfen	combattre	luchar	сражаться	يقاتل	战斗	戦う	싸우다
+04.0073	denken	penser	pensar	думать	يظن	想	思う	생각하다
+04.0074	sich sammeln	se concentrer	concentrarse	сосредоточиваться	يركز	专注	集中する	집중하다
+04.0078	durchbohren	percer	perforar	пронзать	يثقب	刺穿	貫く	꿰뚫다
+04.0079	gedeihen	prospérer	prosperar	процветать	يزدهر	繁荣	栄える	번성하다
+04.0080	austrocknen	sécher	secarse	сохнуть	يجف	干涸	乾く	마르다

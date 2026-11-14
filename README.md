@@ -9,7 +9,7 @@ tools that turn the data into the game. It is separate from the old `samskrita-m
 Unzip so that this README sits at:
 
 ```
-D:\SamskritaMedhaa-Game\README.md
+E:\samskritam.medhaa.net\README.md
 ```
 
 Any other folder name also works. Nothing inside depends on the drive letter.
@@ -46,7 +46,15 @@ D:\SamskritaMedhaa-Game\
 │   ├─ 04-taddhita\          taddhita_pratyaya_corrected.json   (for Adhyetā/Nipuṇa later)
 │   ├─ 05-avyaya\            avyaya_school_85.csv
 │   ├─ 06-gold-data\         your Gold Data (repaired JSON) + REPAIR_LOG.md
-│   └─ 07-old-game-data\     put the old samskrita-medhaa\data folder here (see its README)
+│   ├─ 07-old-game-data\     put the old samskrita-medhaa\data folder here (see its README)
+│   ├─ 08 … 15\              sentence meanings, error pairs, verse analysis, romanisation, samāsa, sandhi,
+│   │                         kṛt meanings, prakriyā
+│   ├─ 16-padaccheda\        the corrected Rāmāyaṇa padaccheda list
+│   ├─ 17-dhatu-400\         README for the 400 recitation dhātus (the data files sit in the top folder:
+│   │                         dhatu_400_tinanta.json, dhatu_400_krt.json — app\src\data\index.ts loads them from there)
+│   ├─ 18-dhatu-meanings\    meanings of the 400 dhātus in 14 more languages + review sheets
+│   ├─ 19-lakara\            what each lakāra means (sūtra, Sanskrit, English)
+│   └─ 20-raghuvamsha\       रघुवंशम् 1.11–1.70 from the Vāvilla Press edition
 │
 ├─ tools\                    Python scripts that build app\src\data from data-source
 │   ├─ build_game_data.py    python tools\build_game_data.py

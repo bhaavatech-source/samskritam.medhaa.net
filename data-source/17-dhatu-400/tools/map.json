@@ -1,0 +1,2392 @@
+{
+"MDH-001": {
+"code": "01.0001",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-002": {
+"code": "01.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-003": {
+"code": "01.0003",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-004": {
+"code": "01.0004",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-005": {
+"code": "01.0005",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-006": {
+"code": "01.0007",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-007": {
+"code": "01.0006",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-008": {
+"code": "01.0008",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-009": {
+"code": "02.0011",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-010": {
+"code": "01.0011",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-011": {
+"code": "01.0012",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-012": {
+"code": "01.0013",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-013": {
+"code": "01.0014",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-014": {
+"code": "01.0021",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-015": {
+"code": "01.0022",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-016": {
+"code": "01.0023",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-017": {
+"code": "01.0024",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-018": {
+"code": "01.0030",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-019": {
+"code": "01.0031",
+"nic": false,
+"note": "the Dhātupāṭha root is युतृँ (युत्), not युती",
+"how": "hand"
+},
+"MDH-020": {
+"code": "01.0037",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-021": {
+"code": "01.0038",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-022": {
+"code": "01.0039",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-023": {
+"code": "01.0040",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-024": {
+"code": "01.0048",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-025": {
+"code": "01.0051",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-026": {
+"code": "01.0053",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-027": {
+"code": "01.0054",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-028": {
+"code": "01.0056",
+"nic": false,
+"note": "Dhātupāṭha णदँ (ṇopadeśa) = नद्",
+"how": "hand"
+},
+"MDH-029": {
+"code": "01.0026",
+"nic": false,
+"note": "no root ह्रद in the Dhātupāṭha; the root with this meaning is ह्रादँ, which is ātmanepadī (ह्रादते)",
+"how": "hand"
+},
+"MDH-030": {
+"code": "02.0001",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-031": {
+"code": "01.0057",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-032": {
+"code": "01.0267",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-033": {
+"code": "01.0215",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-034": {
+"code": "01.0332",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-035": {
+"code": "01.0247",
+"nic": false,
+"note": "अटिँ is इदित्: forms take नुम् (अण्टते)",
+"how": "hand"
+},
+"MDH-036": {
+"code": "01.0232",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-037": {
+"code": "01.0841",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-038": {
+"code": "01.0684",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-039": {
+"code": "09.0059",
+"nic": false,
+"note": "अश भोजने is 9th class (अश्नाति); अशति does not occur. Same root as MDH-364",
+"how": "hand"
+},
+"MDH-040": {
+"code": "01.1029",
+"nic": false,
+"note": "असँ गतिदीप्त्यादानेषु, 1st class (असति/ते); 'to throw' is the 4th-class असुँ क्षेपणे (अस्यति), which is MDH-262",
+"how": "hand"
+},
+"MDH-041": {
+"code": "06.0078",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-042": {
+"code": "01.0694",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-043": {
+"code": "01.0587",
+"nic": false,
+"note": "upadeśa ईर्क्ष्यँ gives ईर्क्ष्यति; the given form ईर्ष्यति belongs to ईर्ष्यँ (01.0588)",
+"how": "hand"
+},
+"MDH-044": {
+"code": "06.0023",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-045": {
+"code": "01.0792",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-046": {
+"code": "01.0735",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-047": {
+"code": "01.1086",
+"nic": false,
+"note": "ऋच्छति is from ऋ गतिप्रापणयोः (1st class, 7.3.78); 3rd-class ऋ गतौ (इयर्ति) is MDH-220",
+"how": "hand"
+},
+"MDH-048": {
+"code": "01.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-049": {
+"code": "01.0511",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-050": {
+"code": "01.0760",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-051": {
+"code": "04.0146",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-052": {
+"code": "08.0010",
+"nic": false,
+"note": "करोति is डुकृञ् करणे (8th class); कृ हिंसायाम् is the 5th-class कृञ् (कृणोति), which is MDH-279",
+"how": "hand"
+},
+"MDH-053": {
+"code": "01.0866",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-054": {
+"code": "01.1145",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-055": {
+"code": "01.0866",
+"nic": false,
+"note": "same root as MDH-053 (कृपूँ = कॢपूँ)",
+"how": "hand"
+},
+"MDH-056": {
+"code": "01.0545",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-057": {
+"code": "01.0405",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-058": {
+"code": "04.0057",
+"nic": false,
+"note": "क्लिशँ उपतापे is 4th class, ātmanepadī (क्लिश्यते); क्लेशति does not occur",
+"how": "hand"
+},
+"MDH-059": {
+"code": "01.0518",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-060": {
+"code": "01.0510",
+"nic": false,
+"note": "1st-class क्षमूँष् सहने, ātmanepadī (क्षमते); the 4th-class क्षमूँ (क्षाम्यति) is MDH-229",
+"how": "hand"
+},
+"MDH-061": {
+"code": "01.0986",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-062": {
+"code": "10.0086",
+"nic": false,
+"note": "the root is क्षलँ (curādi): क्षालयति",
+"how": "hand"
+},
+"MDH-063": {
+"code": "01.0269",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-064": {
+"code": "06.0005",
+"nic": false,
+"note": "क्षिप् प्रेरणे is 6th (क्षिपति/ते) or 4th (क्षिप्यति); the given क्षेपति does not occur",
+"how": "hand"
+},
+"MDH-065": {
+"code": "01.1020",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-066": {
+"code": "01.0051",
+"nic": false,
+"note": "repeats MDH-025",
+"how": "hand"
+},
+"MDH-067": {
+"code": "04.0066",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-068": {
+"code": "02.0055",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-069": {
+"code": "01.1137",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-070": {
+"code": "01.0054",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-071": {
+"code": "01.0723",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-072": {
+"code": "01.0627",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-073": {
+"code": "01.0457",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-074": {
+"code": "03.0026",
+"nic": false,
+"note": "गा स्तुतौ is 3rd class (जिगाति); गायति is from गै शब्दे, which is MDH-077",
+"how": "hand"
+},
+"MDH-075": {
+"code": "01.0461",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-076": {
+"code": "01.1043",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-077": {
+"code": "01.1065",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-078": {
+"code": "09.0049",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-079": {
+"code": "01.0717",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-080": {
+"code": "09.0071",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-081": {
+"code": "01.1075",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-082": {
+"code": "02.0007",
+"nic": false,
+"note": "the root is चक्षिँङ्, 2nd class",
+"how": "hand"
+},
+"MDH-083": {
+"code": "01.0640",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-084": {
+"code": "01.0924",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-085": {
+"code": "01.1023",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-086": {
+"code": "05.0005",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-087": {
+"code": "01.0039",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-088": {
+"code": "01.0495",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-089": {
+"code": "10.0001",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-090": {
+"code": "10.0143",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-091": {
+"code": "01.0463",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-092": {
+"code": "10.0241",
+"nic": false,
+"note": "जभिँ नाशने is curādi (जम्भयति); जम्भते belongs to जभीँ/जृभिँ गात्रविनामे",
+"how": "hand"
+},
+"MDH-093": {
+"code": "01.1096",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-094": {
+"code": "01.0643",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-095": {
+"code": "06.0008",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-096": {
+"code": "04.0025",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-097": {
+"code": "01.0454",
+"nic": false,
+"note": "जृम्भते is from जृभिँ (01.0454); जभीँ (01.0453) gives जम्भते",
+"how": "hand"
+},
+"MDH-098": {
+"code": "10.0196",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-099": {
+"code": "01.1123",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-100": {
+"code": "01.0103",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-101": {
+"code": "01.1141",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-102": {
+"code": "04.0011",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-103": {
+"code": "01.1120",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-104": {
+"code": "01.0884",
+"nic": false,
+"note": "Dhātupāṭha ञित्वराँ",
+"how": "hand"
+},
+"MDH-105": {
+"code": "01.1144",
+"nic": false,
+"note": "Dhātupāṭha दन्शँ",
+"how": "hand"
+},
+"MDH-106": {
+"code": "01.1146",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-107": {
+"code": "01.1079",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-108": {
+"code": "06.0003",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-109": {
+"code": "04.0045",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-110": {
+"code": "02.0004",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-111": {
+"code": "01.1143",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-112": {
+"code": "01.0842",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-113": {
+"code": "01.1095",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-114": {
+"code": "02.0003",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-115": {
+"code": "01.0685",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-116": {
+"code": "01.1056",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-117": {
+"code": "06.0148",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-118": {
+"code": "01.1076",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-119": {
+"code": "01.0070",
+"nic": false,
+"note": "Dhātupāṭha टुनदिँ",
+"how": "hand"
+},
+"MDH-120": {
+"code": "01.1136",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-121": {
+"code": "04.0091",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-122": {
+"code": "01.0069",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-123": {
+"code": "01.1049",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-124": {
+"code": "01.1151",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-125": {
+"code": "01.0381",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-126": {
+"code": "01.0979",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-127": {
+"code": "01.1074",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-128": {
+"code": "06.0173",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-129": {
+"code": "01.0797",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-130": {
+"code": "10.0144",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-131": {
+"code": "06.0149",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-132": {
+"code": "01.0608",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-133": {
+"code": "01.0610",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-134": null,
+"MDH-135": {
+"code": "01.0994",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-136": {
+"code": "01.1153",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-137": {
+"code": "07.0016",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-138": {
+"code": "01.0696",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-139": {
+"code": "01.0711",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-140": {
+"code": "01.0690",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-141": {
+"code": "03.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-142": {
+"code": "06.0153",
+"nic": false,
+"note": "भुजोँ कौटिल्ये is 6th class: भुजति",
+"how": "hand"
+},
+"MDH-143": {
+"code": "01.0777",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-144": {
+"code": "01.0985",
+"nic": false,
+"note": "1st-class भ्रमुँ चलने (भ्रमति, भ्राम्यति); the 4th-class भ्रमुँ अनवस्थाने is MDH-242",
+"how": "hand"
+},
+"MDH-145": {
+"code": "06.0151",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-146": {
+"code": "04.0073",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-147": {
+"code": "06.0165",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-148": {
+"code": "06.0166",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-149": {
+"code": "01.0016",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-150": {
+"code": "04.0095",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-151": {
+"code": "06.0139",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-152": {
+"code": "01.1157",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-153": {
+"code": "01.1001",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-154": {
+"code": "04.0069",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-155": {
+"code": "01.0746",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-156": {
+"code": "01.1154",
+"nic": false,
+"note": "1st-class रञ्ज्: रजति/ते (4th-class रज्यति/ते is MDH-249)",
+"how": "hand"
+},
+"MDH-157": {
+"code": "01.1129",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-158": {
+"code": "01.0989",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-159": {
+"code": "01.0956",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-160": {
+"code": "01.0847",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-161": {
+"code": "01.0995",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-162": {
+"code": "01.1130",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-163": {
+"code": "01.0468",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-164": {
+"code": "06.0092",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-165": {
+"code": "06.0025",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-166": {
+"code": "01.0080",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-167": {
+"code": "01.0188",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-168": {
+"code": "01.1164",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-169": {
+"code": "01.0011",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-170": {
+"code": "01.1160",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-171": {
+"code": "01.1159",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-172": {
+"code": "01.0862",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-173": {
+"code": "01.0863",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-174": {
+"code": "01.0803",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-175": {
+"code": "01.0829",
+"nic": false,
+"note": "Dhātupāṭha शन्सुँ स्तुतौ",
+"how": "hand"
+},
+"MDH-176": {
+"code": "02.0001",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-177": {
+"code": "02.0060",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-178": {
+"code": "02.0040",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-179": {
+"code": "02.0041",
+"nic": false,
+"note": "used with अधि: अधीते",
+"how": "hand"
+},
+"MDH-180": {
+"code": "02.0010",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-181": {
+"code": "02.0011",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-182": {
+"code": "02.0034",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-183": {
+"code": "02.0007",
+"nic": false,
+"note": "repeats MDH-082",
+"how": "hand"
+},
+"MDH-184": {
+"code": "02.0067",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-185": {
+"code": "02.0003",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-186": {
+"code": "02.0004",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-187": {
+"code": "02.0005",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-188": {
+"code": "02.0039",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-189": {
+"code": "02.0061",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-190": {
+"code": "02.0044",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-191": {
+"code": "02.0062",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-192": {
+"code": "02.0006",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-193": {
+"code": "02.0058",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-194": {
+"code": "02.0075",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-195": {
+"code": "02.0059",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-196": {
+"code": "02.0026",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-197": {
+"code": "02.0064",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-198": {
+"code": "02.0038",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-199": {
+"code": "02.0063",
+"nic": false,
+"note": "Dhātupāṭha ञिष्वपँ शये",
+"how": "hand"
+},
+"MDH-200": {
+"code": "02.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-201": {
+"code": "02.0055",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-202": {
+"code": "02.0069",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-203": {
+"code": "02.0070",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-204": {
+"code": "02.0056",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-205": {
+"code": "02.0046",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-206": {
+"code": "02.0057",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-207": {
+"code": "02.0047",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-208": {
+"code": "03.0001",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-209": {
+"code": "03.0009",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-210": {
+"code": "03.0008",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-211": {
+"code": "03.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-212": {
+"code": "03.0003",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-213": {
+"code": "03.0010",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-214": {
+"code": "03.0011",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-215": {
+"code": "03.0007",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-216": {
+"code": "01.1075",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-217": {
+"code": "03.0012",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-218": {
+"code": "03.0013",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-219": {
+"code": "03.0004",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-220": {
+"code": "03.0017",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-221": {
+"code": "01.1047",
+"nic": false,
+"note": "धृञ् is 1st class (धरति/ते); there is no 3rd-class धृ, so दधर्ति does not occur",
+"how": "hand"
+},
+"MDH-222": {
+"code": "03.0020",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-223": {
+"code": "03.0026",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-224": {
+"code": "03.0025",
+"nic": false,
+"note": "the 3rd-class root is जनँ जनने (जजन्ति); जनीँ प्रादुर्भावे (जायते) is 4th class, MDH-231",
+"how": "hand"
+},
+"MDH-225": {
+"code": "01.1064",
+"nic": false,
+"note": "the root is कै शब्दे, 1st class (कायति)",
+"how": "hand"
+},
+"MDH-226": {
+"code": "04.0001",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-227": {
+"code": "04.0146",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-228": {
+"code": "04.0086",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-229": {
+"code": "04.0103",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-230": {
+"code": "04.0066",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-231": {
+"code": "04.0044",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-232": {
+"code": "04.0081",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-233": {
+"code": "04.0141",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-234": {
+"code": "04.0093",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-235": {
+"code": "04.0094",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-236": {
+"code": "04.0091",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-237": {
+"code": "04.0010",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-238": {
+"code": "04.0065",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-239": {
+"code": "04.0079",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-240": {
+"code": "04.0068",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-241": {
+"code": "04.0138",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-242": {
+"code": "04.0102",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-243": {
+"code": "04.0105",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-244": {
+"code": "04.0073",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-245": {
+"code": "04.0095",
+"nic": false,
+"note": "repeats MDH-150",
+"how": "hand"
+},
+"MDH-246": {
+"code": "09.0051",
+"nic": false,
+"note": "the root with क्षोदे is मृदँ, 9th class (मृद्नाति); मृध्यति does not occur",
+"how": "hand"
+},
+"MDH-247": {
+"code": "04.0069",
+"nic": false,
+"note": "repeats MDH-154",
+"how": "hand"
+},
+"MDH-248": {
+"code": "04.0074",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-249": {
+"code": "04.0063",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-250": {
+"code": "05.0018",
+"nic": false,
+"note": "राधँ/साधँ संसिद्धौ are 5th class (राध्नोति, साध्नोति); राध्यति is 4th-class राधँ (another meaning)",
+"how": "hand"
+},
+"MDH-251": {
+"code": "04.0143",
+"nic": false,
+"note": "रुष्यति is 4th-class रुषँ (हिंसायाम्); रुषँ रोषे is curādi (रोषयति, MDH-396)",
+"how": "hand"
+},
+"MDH-252": {
+"code": "04.0153",
+"nic": false,
+"note": "4th-class लुभँ गार्द्ध्ये (लुभ्यति); लुभँ विमोहने is 6th class (लुभति), MDH-165",
+"how": "hand"
+},
+"MDH-253": {
+"code": "04.0078",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-254": {
+"code": "04.0098",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-255": {
+"code": "04.0101",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-256": {
+"code": "04.0080",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-257": {
+"code": "01.1165",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-258": {
+"code": "04.0089",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-259": {
+"code": "06.0170",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-260": {
+"code": "04.0097",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-261": {
+"code": "04.0142",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-262": {
+"code": "04.0106",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-263": {
+"code": "04.0022",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-264": {
+"code": "01.0792",
+"nic": false,
+"note": "उषँ दाहे is 1st class (ओषति); उष्यति does not occur",
+"how": "hand"
+},
+"MDH-265": {
+"code": "04.0160",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-266": {
+"code": "04.0012",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-267": {
+"code": "04.0140",
+"nic": false,
+"note": "the root is कृशँ तनूकरणे (कृश्यति)",
+"how": "hand"
+},
+"MDH-268": {
+"code": "04.0104",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-269": {
+"code": "06.0146",
+"nic": false,
+"note": "गॄ निगरणे is 6th class (गिरति/गिलति); गिर्यति does not occur",
+"how": "hand"
+},
+"MDH-270": {
+"code": "04.0108",
+"nic": false,
+"note": "जस्यति is 4th-class जसुँ मोक्षणे; जसुँ ताडने is curādi (जासयति)",
+"how": "hand"
+},
+"MDH-271": {
+"code": "05.0001",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-272": {
+"code": "05.0016",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-273": {
+"code": "05.0017",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-274": {
+"code": "05.0005",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-275": {
+"code": "05.0006",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-276": {
+"code": "05.0010",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-277": {
+"code": "05.0020",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-278": {
+"code": "05.0008",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-279": {
+"code": "05.0007",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-280": {
+"code": "05.0012",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-281": {
+"code": "05.0004",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-282": {
+"code": "05.0026",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-283": {
+"code": "05.0027",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-284": {
+"code": "05.0023",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-285": {
+"code": "02.0037",
+"nic": false,
+"note": "कु शब्दे is 2nd class (कौति); there is no 5th-class कु",
+"how": "hand"
+},
+"MDH-286": {
+"code": "02.0031",
+"nic": false,
+"note": "क्षु शब्दे is 2nd class (क्षौति); there is no 5th-class क्षु",
+"how": "hand"
+},
+"MDH-287": {
+"code": "02.0029",
+"nic": false,
+"note": "nearest Dhātupāṭha entry; तु वृद्धौ is a sautra root and तवोत्/तुनोति are not standard forms — please check",
+"how": "hand"
+},
+"MDH-288": {
+"code": "01.1108",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-289": null,
+"MDH-290": {
+"code": "08.0005",
+"nic": false,
+"note": "ऋणोति is ऋणुँ गतौ (8th class); there is no 5th-class ऋ. ऋ गतिप्रापणयोः is 1st class (ऋच्छति)",
+"how": "hand"
+},
+"MDH-291": {
+"code": "06.0001",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-292": {
+"code": "06.0003",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-293": {
+"code": "06.0160",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-294": {
+"code": "06.0005",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-295": {
+"code": "06.0158",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-296": {
+"code": "06.0166",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-297": {
+"code": "06.0170",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-298": {
+"code": "06.0149",
+"nic": false,
+"note": "repeats MDH-131",
+"how": "hand"
+},
+"MDH-299": {
+"code": "06.0004",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-300": {
+"code": "06.0151",
+"nic": false,
+"note": "repeats MDH-145",
+"how": "hand"
+},
+"MDH-301": {
+"code": "06.0167",
+"nic": false,
+"note": "लुम्पति is from लुपॢँ छेदने (6th class); लुपँ विमोहने is 4th class (लुप्यति)",
+"how": "hand"
+},
+"MDH-302": {
+"code": "06.0168",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-303": {
+"code": "06.0078",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-304": {
+"code": "06.0006",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-305": {
+"code": "06.0152",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-306": {
+"code": "06.0016",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-307": {
+"code": "06.0093",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-308": {
+"code": "06.0100",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-309": {
+"code": "06.0115",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-310": {
+"code": "04.0147",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-311": {
+"code": "06.0165",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-312": {
+"code": "06.0170",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-313": {
+"code": "06.0081",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-314": {
+"code": "10.0088",
+"nic": false,
+"note": "तुलँ उन्माने is curādi (तोलयति)",
+"how": "hand"
+},
+"MDH-315": {
+"code": "04.0016",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-316": {
+"code": "01.0077",
+"nic": false,
+"note": "शुन्धँ is 1st class",
+"how": "hand"
+},
+"MDH-317": {
+"code": "06.0028",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-318": {
+"code": "06.0036",
+"nic": false,
+"note": "दृम्पति is from दृपँ उत्क्लेशे (6th class, मुचादि); दृपँ हर्षमोहनयोः (दृप्यति) is 4th class, MDH-234",
+"how": "hand"
+},
+"MDH-319": {
+"code": "06.0171",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-320": {
+"code": "06.0049",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-321": {
+"code": "04.0010",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-322": {
+"code": "06.0173",
+"nic": false,
+"note": "repeats MDH-128",
+"how": "hand"
+},
+"MDH-323": {
+"code": "06.0016",
+"nic": false,
+"note": "there is no 6th-class ऋ; ऋच्छति (6th class) is from ऋछँ, as in MDH-306. 3rd-class ऋ गतौ (इयर्ति) is MDH-220",
+"how": "hand"
+},
+"MDH-324": {
+"code": "01.0231",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-325": {
+"code": "01.0254",
+"nic": false,
+"note": "the root is कूजँ अव्यक्ते शब्दे (कूजति)",
+"how": "hand"
+},
+"MDH-326": {
+"code": "07.0001",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-327": {
+"code": "07.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-328": {
+"code": "07.0003",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-329": {
+"code": "07.0017",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-330": {
+"code": "07.0007",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-331": {
+"code": "07.0019",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-332": {
+"code": "07.0018",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-333": {
+"code": "07.0016",
+"nic": false,
+"note": "repeats MDH-137",
+"how": "hand"
+},
+"MDH-334": {
+"code": "07.0011",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-335": {
+"code": "07.0015",
+"nic": false,
+"note": "Dhātupāṭha पिषॢँ",
+"how": "hand"
+},
+"MDH-336": {
+"code": "07.0014",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-337": {
+"code": "07.0021",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-338": {
+"code": "07.0020",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-339": {
+"code": "06.0172",
+"nic": false,
+"note": "खिदँ परिघाते is 6th class (खिन्दति); खिनत्ति does not occur",
+"how": "hand"
+},
+"MDH-340": {
+"code": "07.0005",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-341": {
+"code": "07.0024",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-342": {
+"code": "07.0018",
+"nic": false,
+"note": "Dhātupāṭha तृहँ हिंसायाम्",
+"how": "hand"
+},
+"MDH-343": {
+"code": "08.0001",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-344": {
+"code": "08.0010",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-345": {
+"code": "08.0009",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-346": {
+"code": "08.0005",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-347": {
+"code": "08.0003",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-348": {
+"code": "08.0006",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-349": {
+"code": "08.0007",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-350": {
+"code": "08.0008",
+"nic": false,
+"note": "Dhātupāṭha वनुँ याचने (वनुते)",
+"how": "hand"
+},
+"MDH-351": {
+"code": "08.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-352": {
+"code": "01.0742",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-353": {
+"code": "09.0001",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-354": {
+"code": "09.0043",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-355": {
+"code": "09.0044",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-356": {
+"code": "09.0059",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-357": {
+"code": "09.0014",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-358": {
+"code": "09.0016",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-359": {
+"code": "09.0071",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-360": {
+"code": "09.0045",
+"nic": false,
+"note": "the 9th-class root is वृङ् सम्भक्तौ, ātmanepadī (वृणीते); वृञ् वरणे (वृणोति/वृणुते) is 5th class, MDH-278",
+"how": "hand"
+},
+"MDH-361": {
+"code": "09.0007",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-362": {
+"code": "09.0047",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-363": {
+"code": "09.0054",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-364": {
+"code": "09.0059",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-365": {
+"code": "09.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-366": {
+"code": "09.0020",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-367": {
+"code": "09.0035",
+"nic": false,
+"note": "री गतिरेषणयोः is parasmaipadī (रिणाति); रीङ् is a different, 4th-class root",
+"how": "hand"
+},
+"MDH-368": {
+"code": "09.0039",
+"nic": false,
+"note": "Dhātupāṭha प्ली गतौ, parasmaipadī (प्लिनाति)",
+"how": "hand"
+},
+"MDH-369": {
+"code": "09.0034",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-370": {
+"code": "09.0058",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-371": {
+"code": "01.0452",
+"nic": false,
+"note": "स्कम्भु with श्ना (स्कभ्नाति) is a sautra root (3.1.82), not in the Dhātupāṭha; shown is स्कभिँ प्रतिबन्धे (स्कम्भते) — please check",
+"how": "hand"
+},
+"MDH-372": {
+"code": "09.0008",
+"nic": false,
+"note": "स्तृभु is not in the Dhātupāṭha; nearest is स्तुन्भुँ (स्तुभ्नाति) — please check",
+"how": "hand"
+},
+"MDH-373": {
+"code": "09.0025",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-374": {
+"code": "01.1080",
+"nic": false,
+"note": "the root is ह्वृ कौटिल्ये, 1st class (ह्वरति)",
+"how": "hand"
+},
+"MDH-375": {
+"code": "10.0001",
+"nic": false,
+"note": "repeats MDH-089",
+"how": "hand"
+},
+"MDH-376": {
+"code": "10.0389",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-377": {
+"code": "10.0391",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-378": {
+"code": "10.0002",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-379": {
+"code": "10.0144",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-380": {
+"code": "10.0025",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-381": {
+"code": "10.0403",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-382": {
+"code": "10.0017",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-383": {
+"code": "10.0064",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-384": {
+"code": "10.0086",
+"nic": false,
+"note": "repeats MDH-062",
+"how": "hand"
+},
+"MDH-385": {
+"code": "01.1047",
+"nic": true,
+"note": "धारयति is the causative of धृञ् (there is no 10th-class धृ)",
+"how": "hand"
+},
+"MDH-386": {
+"code": "10.0022",
+"nic": false,
+"note": "Dhātupāṭha पॄ पूरणे (curādi)",
+"how": "hand"
+},
+"MDH-387": {
+"code": "10.0251",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-388": {
+"code": "10.0199",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-389": {
+"code": "10.0442",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-390": {
+"code": "10.0384",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-391": {
+"code": "10.0210",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-392": {
+"code": "10.0098",
+"nic": false,
+"note": "",
+"how": "auto"
+},
+"MDH-393": {
+"code": "06.0025",
+"nic": true,
+"note": "लोभयति is the causative of लुभँ (6th class)",
+"how": "hand"
+},
+"MDH-394": {
+"code": "04.0095",
+"nic": true,
+"note": "मोहयति is the causative of मुहँ (4th class)",
+"how": "hand"
+},
+"MDH-395": {
+"code": "04.0081",
+"nic": true,
+"note": "तोषयति is the causative of तुषँ (4th class)",
+"how": "hand"
+},
+"MDH-396": {
+"code": "10.0187",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-397": {
+"code": "04.0045",
+"nic": true,
+"note": "दीपयति is the causative of दीपीँ (4th class)",
+"how": "hand"
+},
+"MDH-398": {
+"code": "01.0711",
+"nic": true,
+"note": "भासयति is the causative of भासृँ (1st class)",
+"how": "hand"
+},
+"MDH-399": {
+"code": "10.0412",
+"nic": false,
+"note": "",
+"how": "hand"
+},
+"MDH-400": {
+"code": "01.0021",
+"nic": true,
+"note": "कूर्दयति: the root is कुर्दँ (1st class, कूर्दते); shown is its causative",
+"how": "hand"
+}
+}

@@ -3,12 +3,14 @@
 | Script | What it does | Runs on |
 |--------|--------------|---------|
 | `build_game_data.py` | Reads `data-source\` and writes `app\src\data\*.json` (words, verbs, kṛt, sentences, avyaya). It also fixes 5 known spelling slips in the Gold sentences. | Windows / any OS, Python 3 |
+| `build_padaccheda.py` | Builds the corrected Padaccheda list from `data-source\16-padaccheda\` (the author's Updated file plus reviewed corrections). Run it before `build_game_data.py`. | Python 3 |
 | `avyaya85.py` | The 85 school avyayas with category and English/Hindi/Telugu. `build_game_data.py` imports it. Edit the ROWS here to change an avyaya. | (imported) |
 | `regen_sup.py` | Regenerates the 210 declension tables with the Pāṇinian engine *vidyut-prakriya*. It also applies the manual fixes for विद्वस्, सुधी, ग्रामणी, ugit stems, -तृ agent nouns, i-numerals and others. | Claude's workspace only. It needs the vidyut build and is kept here as the record of how the tables were made. |
 
 Typical cycle after Claude has fixed the master files:
 ```powershell
 cd D:\SamskritaMedhaa-Game
+python tools\build_padaccheda.py
 python tools\build_game_data.py
 cd app
 npm run build

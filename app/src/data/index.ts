@@ -13,6 +13,8 @@ import errorsJson from "./errors.json";
 import padacchedaJson from "./padaccheda.json";
 import padyaJson from "./padya.json";
 import grammarJson from "./grammar.json";
+import dhatu400TinantaUrl from "../../../dhatu_400_tinanta.json?url";
+import dhatu400KrtUrl from "../../../dhatu_400_krt.json?url";
 
 /** a meaning in one language: [text, how it was sourced] */
 export type Meaning = [string, string];
@@ -51,13 +53,54 @@ export type Avyaya = { sa: string; cat: string; en: string; hi: string; te: stri
 export const WORDS = wordsJson as unknown as Word[];
 export const VERBS = verbsJson as unknown as Verb[];
 export const KRT = krtJson as unknown as KrtRoot[];
+export type Dhatu400Cell = {
+  form: string | null;
+  variants?: string[];
+  source?: string;
+  meanings?: Record<string, string>;
+  checks?: Record<string, string | string[]>;
+};
+export type Dhatu400Grid = Partial<Record<"prathama_purusha" | "madhyama_purusha" | "uttama_purusha",
+  Partial<Record<"ekavacana" | "dvivacana" | "bahuvacana", Dhatu400Cell>>>>;
+export type LakaraMeaning = { sutra: string; sa: string; en: string; term: string };
+export type Dhatu400Conjugation = {
+  lakara_name_sa: string; lakara_name_en: string; conjugation_grid: Dhatu400Grid; lakara_meaning?: LakaraMeaning;
+};
+export type Dhatu400 = {
+  id: string; lemma: string; given_headword: string; iast: string; gana: string; pada: string;
+  meanings: Record<string, string>; transitivity: string; gloss_verb_en: string;
+  lakara_conjugations: Record<string, Dhatu400Conjugation>;
+  lakara_conjugations_atmanepada?: Record<string, Dhatu400Conjugation>;
+  karmani_conjugations?: Record<string, Dhatu400Conjugation>;
+  bhave_conjugations?: Record<string, Dhatu400Conjugation>;
+  source_verification?: { kartari_cells: number; sanskritverb_same: number; attested_in_samsaadhanii_or_heritage: number };
+  dhatupatha: { code: string; aupadeshika: string; artha: string; set_anit?: string };
+};
+export type Dhatu400KrtForm = {
+  tier?: string; form?: string | null; variants?: string[]; meaning_en?: string;
+  source?: string; status?: string; note?: string; usage?: string; attested_in_dictionary?: boolean;
+};
+export type Dhatu400Krt = {
+  dhatu_id: string; lemma: string; gana: string; pada: string; meaning_en: string;
+  krt_rupas: Record<string, Dhatu400KrtForm>;
+  restricted_krt: Record<string, Dhatu400KrtForm>;
+  source_note: string;
+};
+export async function loadDhatu400Data(): Promise<{ tinanta: Dhatu400[]; krt: Dhatu400Krt[] }> {
+  const responses = await Promise.all([fetch(dhatu400TinantaUrl), fetch(dhatu400KrtUrl)]);
+  const [tinantaResponse, krtResponse] = responses;
+  if (!tinantaResponse.ok) throw new Error(`Could not load tiṅanta data (HTTP ${tinantaResponse.status}).`);
+  if (!krtResponse.ok) throw new Error(`Could not load kṛdanta data (HTTP ${krtResponse.status}).`);
+  const [tinanta, krt] = await Promise.all([tinantaResponse.json(), krtResponse.json()]);
+  return { tinanta: tinanta as Dhatu400[], krt: krt as Dhatu400Krt[] };
+}
 export const SENTENCES = sentencesJson as unknown as Sentence[];
 export const AVYAYA = (avyayaJson as unknown as { items: Avyaya[] }).items;
 export const ERRORS = errorsJson as unknown as ErrorPair[];
 export const PADACCHEDA = padacchedaJson as unknown as Padaccheda[];
 export type KarakaRow = { word: string; role: string; vibhakti?: string; of?: string; note?: string };
 export type Padya = { id: string; source: string; verse: string; padaccheda: string[]; anvaya: string; artha_sa: string;
-  words: { word: string; form: string }[]; karaka: KarakaRow[]; notes: string[]; m: Record<string, string>; r?: Record<string, string> };
+  words: { word: string; form: string }[]; karaka: KarakaRow[]; notes: string[]; m: Record<string, string>; r?: Record<string, string>; free?: boolean };
 export const PADYA = padyaJson as unknown as { method: { n: number; title: string; details: string }[];
   adjectives: Record<string, unknown>; verses: Padya[] };
 export const padyaMeaning = (v: Padya, lang: string) => v.m[lang] || v.m.en || "";
@@ -78,10 +121,13 @@ export const VACANA_EN = ["singular", "dual", "plural"];
 export const PURUSHA = ["प्रथमपुरुषः", "मध्यमपुरुषः", "उत्तमपुरुषः"];
 export const PURUSHA_EN = ["3rd person (he/she/it/they)", "2nd person (you)", "1st person (I/we)"];
 export const LAKARA: Record<string, [string, string]> = {
-  lat: ["लट्", "present"], lan: ["लङ्", "past"], lot: ["लोट्", "command"], vidhilin: ["विधिलिङ्", "should / may"],
-  lrt: ["लृट्", "future"], lut: ["लुट्", "future (a later day)"], lit: ["लिट्", "perfect (long ago)"],
-  lun: ["लुङ्", "aorist past"], asirlin: ["आशीर्लिङ्", "blessing"], lrn: ["लृङ्", "conditional"],
+  lat: ["लट्", "present"], lan: ["लङ्", "past (an earlier day)"], lot: ["लोट्", "command"], vidhilin: ["विधिलिङ्", "should / may"],
+  lrt: ["लृट्", "future"], lut: ["लुट्", "future (a later day)"], lit: ["लिट्", "past (long ago, unseen)"],
+  lun: ["लुङ्", "past (any time)"], asirlin: ["आशीर्लिङ्", "blessing"], lrn: ["लृङ्", "conditional"],
 };
+import lakaraJson from "./lakara.json";
+/** what each lakāra means: sūtra, Sanskrit, English, and the term used for it in the thesis (4.8.6) */
+export const LAKARA_INFO = lakaraJson as Record<string, LakaraMeaning>;
 export const LAKARA_ORDER = Object.keys(LAKARA);
 export const PRAYOGA: Record<"P" | "A" | "K" | "B", [string, string]> = {
   P: ["परस्मैपदम्", "active"], A: ["आत्मनेपदम्", "active (middle)"], K: ["कर्मणि", "passive"], B: ["भावे", "impersonal"],
@@ -113,8 +159,7 @@ export const firstSense = (t: string | undefined, max = 40) => {
   const s = String(t ?? "").split(/\s*;\s*/)[0].trim();
   return s.length > max ? s.slice(0, max - 1) + "…" : s;
 };
-export const wordMeaning = (w: Word, lang: string) =>
-  String(w.m?.[lang]?.[0] || w.m?.en?.[0] || "").split(/\s*;\s*/)[0].trim();
+export const wordMeaning = (w: Word, lang: string) => w.m?.[lang]?.[0] || w.m?.en?.[0] || "";
 export const verbMeaning = (v: Verb, lang: string) => (v.m as Record<string, string | undefined>)[lang] || v.m.en || "";
 /** a sentence's meaning in the chosen language (English when not yet translated) */
 export const sentMeaning = (s: Sentence, lang: string) => s.m?.[lang] || s.en;
@@ -148,3 +193,10 @@ export type Grammar = {
     list: { u: string; en: string; ex: [string, string][] }[] };
 };
 export const GRAMMAR = grammarJson as unknown as Grammar;
+
+// ── बोधः: प्रकृतिः प्रत्ययश्च · प्रक्रिया (tools/build_prakriya.py) ──
+import prakriyaJson from "./prakriya.json";
+export type Derivation = { w: string; en: string; steps: [string, string][] };
+export const PRAKRIYA = prakriyaJson as unknown as {
+  prakriti: Record<string, any>; prakriya: Record<string, any>; derivations: Derivation[]; fixes: [string, string, string][];
+};

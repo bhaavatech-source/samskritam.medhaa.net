@@ -4,7 +4,7 @@
 //  from the data in src/data, so every play is different.
 // ═══════════════════════════════════════════════════════════════
 import {
-  WORDS, VERBS, KRT, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, GRAMMAR, padyaMeaning, padyaRoman, anvayaTokens, sentMeaning, sentRoman, VIBHAKTI, VIBHAKTI_EN, VACANA, VACANA_EN, PURUSHA, LAKARA, prayogaLabel, LINGA,
+  WORDS, VERBS, KRT, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, GRAMMAR, PRAKRIYA, padyaMeaning, padyaRoman, anvayaTokens, sentMeaning, sentRoman, VIBHAKTI, VIBHAKTI_EN, VACANA, VACANA_EN, PURUSHA, LAKARA, prayogaLabel, LINGA,
   shuffle, pick, take, firstSense, wordMeaning, verbMeaning, avyayaMeaning, headForm, tokens,
   type Word, type Verb, type Sentence, type VerbGrid,
 } from "../data";
@@ -186,8 +186,8 @@ const padacchedaItems = (n: number, maxWords: number): BuildItem[] =>
   }));
 /** अन्वयः: put the verse's words into prose order */
 const anvayaItems = (n: number, lang: string): BuildItem[] =>
-  // RV 1.5–1.8 are lists of genitives whose order is free, so they are not used as puzzles
-  take(PADYA.verses.filter(v => v.anvaya && !/^RV-1\.[5-8]$/.test(v.id) && anvayaTokens(v).length <= 14), n).map(v => ({
+  // RV 1.5–1.8 are lists of genitives whose order is free, so they are not used as puzzles; nor are verses marked `free`
+  take(PADYA.verses.filter(v => v.anvaya && !v.free && !/^RV-1\.[5-8]$/.test(v.id) && anvayaTokens(v).length <= 14), n).map(v => ({
     toks: anvayaTokens(v), show: v.verse, clue: padyaMeaning(v, lang), clueR: padyaRoman(v, lang), tags: ["अन्वयः", v.source], ask: "अन्वयं कुरु · Put the words in prose order (anvaya)",
     answer: anvayaTokens(v).join(" "), speak: v.anvaya, flag: { kind: "sentence", id: v.id, field: "anvaya", value: v.anvaya, where: `${v.id} — anvaya` },
   }));
@@ -274,6 +274,24 @@ const pratyayaQ = () => (): QuizItem | null => {
   };
 };
 
+// ── प्रकृतिः प्रत्ययश्च · प्रक्रिया (बोधः chapters, Gold data of Dr. B. Rajeswara Rao) ──
+/** प्रक्रियाक्रमः: put the steps of a derivation in order */
+const prakriyaItems = (n: number): BuildItem[] => take(PRAKRIYA.derivations, n).map(d => ({
+  toks: d.steps.map(s => s[0]), show: d.w, clue: d.en, tags: ["प्रक्रिया", d.steps.length + " steps"],
+  ask: "क्रमेण स्थापय · Put the steps in order, from the root/stem to the finished word",
+  answer: d.steps.map(s => s[0]).join(" "), speak: d.w,
+  flag: { kind: "grammar", id: `prakriya:${d.w}`, field: "steps", value: d.steps.map(s => s[0]).join(" → "), where: `${d.w} — derivation` },
+}));
+/** प्रत्ययभेदाः: which kind of suffix / root / stem is this? */
+const PK = PRAKRIYA.prakriti as { kinds: string[][]; dhatu_kinds: string[][]; pratipadika_kinds: string[][] };
+const pkQ = (list: string[][], ask: string, egIdx: number, tag: string) => (): QuizItem | null => {
+  const row = pick(list.filter(r => r[egIdx]));
+  return {
+    prompt: row[egIdx], tags: [tag], clue: "", ask, options: options(row[0], list.map(r => r[0])), answer: row[0], optDeva: true, speak: "",
+    also: row[1], flag: { kind: "grammar", id: `prakriti:${row[0]}`, field: "kind", value: `${row[egIdx]} = ${row[0]}`, where: `${tag} — ${row[0]}` },
+  };
+};
+
 /** अशुद्धिशोधनम्: which sentence is correct? */
 const errorQ = () => (): QuizItem | null => {
   const e = pick(ERRORS);
@@ -349,6 +367,10 @@ export const STATIONS: Station[] = [
   { id: "a10", region: "ADHYETA", kind: "memory", title: "विग्रहः", en: "Compound & its vigraha", icon: "🪢", lives: null, hints: false,
     blurb: "Match each compound with the phrase it stands for.",
     pairs: () => vigrahaPairs() },
+  { id: "a11", region: "ADHYETA", kind: "quiz", title: "प्रत्ययभेदाः", en: "What does the suffix do?", icon: "🔀", lives: 3, hints: true, rounds: 8,
+    blurb: "कृ + तृच् → कर्तृ, दशरथ + इञ् → दाशरथिः, तस्मिन् → तत्र: which of the eleven kinds of suffix is at work? Also the kinds of root and stem.",
+    items: () => mix(8, [pkQ(PK.kinds, "कः प्रत्ययप्रकारः? · What does this suffix turn into what?", 3, "प्रत्ययप्रकारः"),
+      pkQ(PK.dhatu_kinds, "कः धातुप्रकारः? · Which kind of root?", 2, "धातुप्रकारः"), pkQ(PK.pratipadika_kinds, "कः प्रातिपदिकप्रकारः? · Which kind of stem?", 2, "प्रातिपदिकप्रकारः")]) },
   { id: "a7", region: "ADHYETA", kind: "quiz", title: "अध्येतृ-परीक्षा", en: "Adhyetā challenge", icon: "👑", boss: true, lives: 3, hints: true, rounds: 10, timeLimit: 30,
     blurb: "Cases, pronouns, tenses and participles — against the clock.",
     items: lang => mix(10, [formQ(NOUNS, [0, 1, 2, 3, 4, 5, 6, 7], lang), formQ(PRON_NUM, [0, 1, 2, 3, 4, 5, 6], lang), verbQ(["lan", "lot", "lrt"], "kartari", lang), krtQ(BAALA_KRT, lang), avyayaFillQ()]) },
@@ -384,6 +406,9 @@ export const STATIONS: Station[] = [
   { id: "n8", region: "NIPUNA", kind: "quiz", title: "कृत्प्रत्ययः", en: "Which suffix?", icon: "🏷️", lives: 3, hints: true, rounds: 8,
     blurb: "गन्तुम्, गत्वा, गतः, गमनम्… — which kṛt suffix made the word?",
     items: () => repeat(8, pratyayaQ()) },
+  { id: "n9", region: "NIPUNA", kind: "build", title: "प्रक्रियाक्रमः", en: "Build a word step by step", icon: "🪜", lives: 3, hints: true, rounds: 5,
+    blurb: "राम + टा → राम + आ → राम + इन → रामेन → रामेण. Put the steps of a derivation in the order Pāṇini's rules apply them.",
+    items: () => prakriyaItems(5) },
   { id: "n4", region: "NIPUNA", kind: "quiz", title: "निपुण-परीक्षा", en: "Nipuṇa challenge", icon: "👑", boss: true, lives: 2, hints: false, rounds: 10, timeLimit: 25,
     blurb: "The final test: any form of any word or root. Two lives, no hints.",
     items: lang => mix(10, [formQ(DECLINABLE, [0, 1, 2, 3, 4, 5, 6, 7], lang), verbQ(Object.keys(LAKARA), "kartari", lang), verbQ(["lat", "lrt"], "karmani", lang), krtQ(null, lang)]) },

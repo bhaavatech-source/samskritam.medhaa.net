@@ -1,0 +1,23 @@
+{
+ "_about": "What each lakāra means, by Pāṇini's sūtras, with the term used for it in the thesis (4.8.6 तिङन्तदिशा परिशीलनम्, after Bhartṛhari's Kālasamuddeśa and modern TAM typology). 'Today' (अद्यतन) = from the last yāma of the past night to the first yāma of the coming night.",
+ "lat": {"sutra": "वर्तमाने लट् (3.2.123) · वर्तमानसामीप्ये वर्तमानवद्वा (3.3.131)", "sa": "वर्तमानः — प्रारब्धापरिसमाप्ता क्रिया (मुख्यः); वर्तमानसामीप्यम् (गौणः)",
+         "en": "Present: the action has begun and is not yet finished; also habit and general truth. By 3.3.131 it may also stand for the just-past or the about-to-happen.", "term": "Present (मुख्य / गौण वर्तमान)"},
+ "lan": {"sutra": "अनद्यतने लङ् (3.2.111)", "sa": "अनद्यतनभूतः",
+         "en": "Past, not of today: the action happened on an earlier day.", "term": "Pre-hodiernal past (अनद्यतनभूत)"},
+ "lit": {"sutra": "परोक्षे लिट् (3.2.115)", "sa": "भूतानद्यतनपरोक्षः",
+         "en": "Past, not of today and out of the speaker's sight (परोक्ष) — usually long ago; the tense of narrative and history.", "term": "Remote past (परोक्षभूत)"},
+ "lun": {"sutra": "लुङ् (3.2.110)", "sa": "भूतसामान्यम्",
+         "en": "Past in general: at any past time, today included.", "term": "General past (भूतसामान्य)"},
+ "lrt": {"sutra": "लृट् शेषे च (3.3.13)", "sa": "भविष्यत्सामान्यम्",
+         "en": "Future in general: at any future time, today included.", "term": "General future (भविष्यत्सामान्य)"},
+ "lut": {"sutra": "अनद्यतने लुट् (3.3.15)", "sa": "अनद्यतनभविष्यत्",
+         "en": "Future, not of today: on a later day.", "term": "Post-hodiernal future (अनद्यतनभविष्यत्)"},
+ "lot": {"sutra": "लोट् च (3.3.162) · आशिषि लिङ्लोटौ (3.3.173)", "sa": "विधिनिमन्त्रणादयः, आशीः",
+         "en": "Command, request, invitation, permission; also blessing.", "term": "Imperative (आज्ञार्थ)"},
+ "vidhilin": {"sutra": "विधिनिमन्त्रणामन्त्रणाधीष्टसम्प्रश्नप्रार्थनेषु लिङ् (3.3.161)", "sa": "विधिः, निमन्त्रणम्, आमन्त्रणम्, अधीष्टम्, सम्प्रश्नः, प्रार्थना; सम्भावना",
+         "en": "Injunction (should), invitation, permission, polite request, a question of what to do, prayer; also possibility (may, might).", "term": "Potential / Optative (विधि, सम्भावना)"},
+ "asirlin": {"sutra": "आशिषि लिङ्लोटौ (3.3.173)", "sa": "आशीः",
+         "en": "Blessing or wish: may it be so.", "term": "Benedictive (आशीः)"},
+ "lrn": {"sutra": "लिङ्निमित्ते लृङ् क्रियातिपत्तौ (3.3.139) · भूते च (3.3.140)", "sa": "क्रियातिपत्तिः",
+         "en": "Conditional: the cause of the action was there but the action did not happen — 'if … had …, … would have …'; for past or future.", "term": "Conditional, counterfactual (क्रियातिपत्ति)"}
+}

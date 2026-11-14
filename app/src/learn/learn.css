@@ -1,6 +1,6 @@
 /* ═══════════ ज्ञानम् — explanations ═══════════ */
 .ln { text-align: left; --rc: #8b5cf6; }
-.ln-chapters { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 10px; margin-bottom: 16px; }
+.ln-chapters { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-bottom: 16px; }
 .ln-chapters button { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 12px 16px; border-radius: 16px; cursor: pointer;
   background: rgba(255,255,255,.8); border: 1px solid rgba(15,23,42,.12); color: #1e2638; text-align: left; }
 .ln-chapters button b { font-family: 'Noto Sans Devanagari', serif; font-size: 1.35rem; }
@@ -15,7 +15,7 @@
 .ln-check { border-left: 6px solid #f59e0b; }
 .ln-center { text-align: center; }
 .ln-verse { font-family: 'Noto Sans Devanagari', serif; font-size: 1.2rem; color: #7c2d12; line-height: 1.8; }
-.ln-sutra { font-family: 'Noto Sans Devanagari', serif; color: #6b21a8; background: #f5f3ff; padding: 1px 8px; border-radius: 8px; white-space: normal; overflow-wrap: anywhere; }
+.ln-sutra { font-family: 'Noto Sans Devanagari', serif; color: #6b21a8; background: #f5f3ff; padding: 1px 8px; border-radius: 8px; white-space: normal; }
 .ln-sutra small { font-family: 'Poppins', sans-serif; color: #7c3aed; font-size: .72rem; }
 .ln-eq { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 12px 0; font-size: 1.4rem; font-family: 'Noto Sans Devanagari', serif; }
 .ln-eq small { flex-basis: 100%; text-align: center; font-family: 'Poppins', sans-serif; font-size: .8rem; color: #64748b; }
@@ -34,7 +34,7 @@
 .ln-world td:nth-child(3) { color: #526079; }
 .ln-two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 @media (max-width: 700px) { .ln-two { grid-template-columns: 1fr; } }
-.ln-karakas { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 10px; margin: 12px 0; }
+.ln-karakas { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin: 12px 0; }
 .ln-karaka { position: relative; display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 12px 44px; border-radius: 14px; background: #fff; border: 1px solid #efe9f6; }
 .ln-k-num { position: absolute; left: 12px; top: 12px; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(135deg, #f97316, #ec4899); color: #fff; font-size: .78rem; font-weight: 700; }
 .ln-karaka b { font-family: 'Noto Sans Devanagari', serif; font-size: 1.1rem; color: #1e2638; }
@@ -42,8 +42,8 @@
 .ln-karaka small { color: #526079; }
 .ln-k-eg { font-family: 'Noto Sans Devanagari', serif; color: #166534; font-size: 1.05rem; }
 .ln-demo-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 10px; }
-.ln-demo-bar label { display: flex; flex-wrap: wrap; min-width: 0; max-width: 100%; gap: 8px; align-items: center; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; color: #42527b; }
-.ln-demo-bar select { font-size: 1rem; padding: 7px 12px; border-radius: 50px; border: 1px solid rgba(15,23,42,.2); background: #fff; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; max-width: 100%; }
+.ln-demo-bar label { display: flex; gap: 8px; align-items: center; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; color: #42527b; }
+.ln-demo-bar select { font-size: 1rem; padding: 7px 12px; border-radius: 50px; border: 1px solid rgba(15,23,42,.2); background: #fff; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; max-width: 320px; }
 .ln-langs { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 10px 0 4px; }
 .ln-langs button { font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: .82rem; padding: 4px 11px; border-radius: 50px; border: 1px solid rgba(15,23,42,.16); background: #fff; color: #303c5a; cursor: pointer; }
 .ln-langs button.on { background: #0f766e; border-color: #0f766e; color: #fff; }
@@ -70,6 +70,43 @@
 .ln-sub td, .ln-sub th { font-size: .86rem; }
 .ln-sub tr.ln-sub-first td, .ln-sub tr.ln-sub-first th { border-top: 2px solid #f3e8ff; }
 .ln-small { font-size: .82rem !important; color: #6b21a8; }
+.ln-claim { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 14px; padding: 12px 16px; margin: 10px 0; color: #14532d; }
+.ln-claim ol { margin: 6px 0 6px 20px; display: flex; flex-direction: column; gap: 4px; }
 .ln-hu { margin: 8px 0; }
 .ln-hu td { font-size: .82rem; }
 .ln-open { background: #fff7ed; border: 1px dashed #fb923c; border-radius: 10px; padding: 6px 10px; list-style-position: inside; }
+
+/* ── प्रकृतिः प्रत्ययश्च · प्रक्रिया ── */
+.pk-pick { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.pk-pick button, .pk-dir button { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; border: 1px solid #e9d5ff; background: #fff; border-radius: 999px; padding: 4px 12px; cursor: pointer; color: #4c1d95; }
+.pk-pick button.on, .pk-dir button.on { background: linear-gradient(135deg, #7c3aed, #db2777); color: #fff; border-color: transparent; }
+.pk-dir { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px; }
+.pk-goal { font-family: 'Noto Sans Devanagari', serif; font-size: 1.5rem; color: #166534; text-align: center; margin: 6px 0 10px; }
+.pk-goal small { font-family: 'Poppins', sans-serif; font-size: .85rem; color: #64748b; }
+.pk-steps { list-style: none; counter-reset: s; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.pk-steps li { counter-increment: s; display: grid; grid-template-columns: 28px minmax(110px, auto) 1fr; gap: 10px; align-items: center; background: #fff; border: 1px solid #efe9f6; border-radius: 12px; padding: 8px 12px; }
+.pk-steps li::before { content: counter(s); width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: #ede9fe; color: #5b21b6; font-size: .75rem; font-weight: 700; }
+.pk-steps li.pk-new { border-color: #c4b5fd; box-shadow: 0 4px 14px rgba(124,58,237,.15); animation: fadeUp .3s ease both; }
+.pk-form { font-family: 'Noto Sans Devanagari', serif; font-size: 1.2rem; color: #9a3412; }
+.pk-why { color: #475569; font-size: .88rem; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.pk-btn { border: none; border-radius: 999px; padding: 7px 16px; cursor: pointer; background: linear-gradient(135deg, #f97316, #db2777); color: #fff; font: 600 .85rem 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+.pk-btn.ghost { background: #f5f3ff; color: #5b21b6; }
+.pk-btn:disabled { opacity: .45; cursor: default; }
+.pk-family { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; margin: 10px 0; font-family: 'Noto Sans Devanagari', serif; font-size: 1.1rem; }
+.pk-family span { background: #fff7ed; color: #9a3412; padding: 3px 10px; border-radius: 10px; }
+.pk-family b { color: #5b21b6; }
+.pk-kinds { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; margin: 10px 0; }
+.pk-kind { position: relative; display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 12px 44px; border-radius: 14px; background: #fff; border: 1px solid #efe9f6; }
+.pk-kind b { font-family: 'Noto Sans Devanagari', serif; color: #1e2638; }
+.pk-kind small { color: #526079; }
+.pk-kind-ex { font-family: 'Noto Sans Devanagari', serif; color: #6b21a8; font-size: .92rem; }
+.pk-patterns { margin: 6px 0; padding-left: 20px; font-family: 'Noto Sans Devanagari', serif; color: #334155; }
+.pk-levels { display: flex; flex-direction: column; gap: 8px; }
+.pk-level { background: #fff; border: 1px solid #efe9f6; border-radius: 14px; padding: 10px 12px; }
+.pk-level.pk-new { border-color: #c4b5fd; animation: fadeUp .3s ease both; }
+.pk-level-h { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 6px; }
+.pk-level-h b { font-family: 'Noto Sans Devanagari', serif; color: #7c2d12; }
+.pk-level-h small { color: #64748b; }
+.pk-parts { display: flex; flex-wrap: wrap; gap: 10px; font-family: 'Noto Sans Devanagari', serif; font-size: 1.15rem; }
+.pk-part { display: inline-flex; gap: 4px; }
+@media (max-width: 560px) { .pk-steps li { grid-template-columns: 24px 1fr; } .pk-why { grid-column: 2; } .ln-two { grid-template-columns: 1fr; } }

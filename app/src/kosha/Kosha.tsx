@@ -4,10 +4,11 @@
 //  वाक्यकोशः (sentences + avyayas), दोषसूचनाः (all flags).
 //  Every form and meaning has a ⚑ to report a mistake.
 // ═══════════════════════════════════════════════════════════════
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
-  WORDS, VERBS, KRT, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, padyaMeaning, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LINGA,
-  prayogaLabel, wordMeaning, verbMeaning, avyayaMeaning, sentMeaning, sentRoman, padyaRoman, type Word, type Verb, type KrtRoot,
+  WORDS, loadDhatu400Data, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, padyaMeaning, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO, LINGA,
+  wordMeaning, avyayaMeaning, sentMeaning, sentRoman, padyaRoman, type Word,
+  type Dhatu400, type Dhatu400Conjugation, type Dhatu400Krt, type Dhatu400KrtForm,
 } from "../data";
 import { FlagButton, LangPicker, Review } from "../FlagUI";
 import { romanize } from "../i18n/roman";
@@ -23,7 +24,7 @@ export const Rom: React.FC<{ t: string }> = ({ t }) => {
     ? <p className="ks-roman" lang="und-Latn" dir="ltr" onClick={() => setReadings(false)} title="Hide readings">{t}</p>
     : <button className="ks-roman-btn" onClick={() => setReadings(true)} title="Show how to read it in Latin letters" aria-label="Show reading">Aa</button>;
 };
-import { nounGloss, verbGloss, krtGloss, caseRole } from "../i18n/forms";
+import { nounGloss, caseRole } from "../i18n/forms";
 import { flagsCSV, importFlags, ISSUES, OK, removeFlag, saveFile, useFlags, type FlagKind } from "../flags";
 import { useLang, useReadings, setReadings } from "../settings";
 import { speak } from "../speech";
@@ -112,7 +113,7 @@ const WordDetail: React.FC<{ w: Word }> = ({ w }) => {
       <div className="ks-meanings">
         {langs.map(k => (
           <div key={k} className={k === lang ? "on" : ""}>
-            <b>{LANGS[k]}</b><span>{wordMeaning(w, k)}</span><Pill k={w.m[k][1]} />
+            <b>{LANGS[k]}</b><span>{w.m[k][0]}{romanize(w.m[k][0], k) && <i className="ks-roman-s">{romanize(w.m[k][0], k)}</i>}</span><Pill k={w.m[k][1]} />
             <Review t={{ kind: "word", id: w.id, field: "meaning:" + k, value: w.m[k][0], where: `${w.w} — meaning (${LANGS[k]})` }} />
           </div>
         ))}
@@ -122,13 +123,7 @@ const WordDetail: React.FC<{ w: Word }> = ({ w }) => {
     </div>
   );
 };
-const GENDERS: [string, string, string, string][] = [
-  ["all", "सर्वे", "sarve", "all"],
-  ["m", "पुंलिङ्गशब्दाः", "puṃliṅgaśabdāḥ", "masculine"],
-  ["f", "स्त्रीलिङ्गशब्दाः", "strīliṅgaśabdāḥ", "feminine"],
-  ["n", "नपुंसकलिङ्गशब्दाः", "napuṃsakaliṅgaśabdāḥ", "neuter"],
-  ["c", "सर्वलिङ्गशब्दाः", "sarvaliṅgaśabdāḥ", "pronouns & numbers"],
-];
+const GENDERS: [string, string, string][] = [["all", "सर्वे", "all"], ["m", "पुंलिङ्गाः", "masculine"], ["f", "स्त्रीलिङ्गाः", "feminine"], ["n", "नपुंसकलिङ्गाः", "neuter"], ["c", "सर्वलिङ्गाः", "pronouns & numbers"]];
 const ENDS: [string, string, string][] = [["all", "सर्वे", "all"], ["ac", "अजन्ताः", "vowel-ending"], ["hal", "हलन्ताः", "consonant-ending"]];
 export const WordBook: React.FC = () => {
   const lang = useLang();
@@ -141,7 +136,7 @@ export const WordBook: React.FC = () => {
   return (
     <div className="ks">
       <KsTop title="शब्दकोशः" en="Word book" sub={`${WORDS.length} words with all their forms and meanings in ${Object.keys(LANGS).length - 1} languages.`} />
-      <div className="ks-chips ks-gender-filters gr-filter">{GENDERS.map(([k, sa, iast, en]) => <button key={k} className={`ks-tag ${g === k ? "on" : ""}`} onClick={() => setG(k)} title={en}><span>{lang === "sa" || lang === "hi" ? iast : S(sa)}</span><small>({count(k, end)})</small></button>)}</div>
+      <div className="ks-chips gr-filter">{GENDERS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${g === k ? "on" : ""}`} onClick={() => setG(k)} title={en}>{S(sa)} <small>({count(k, end)})</small></button>)}</div>
       <div className="ks-chips gr-filter">{ENDS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${end === k ? "on" : ""}`} onClick={() => setEnd(k)} title={en}>{S(sa)} <small>({count(g, k)})</small></button>)}</div>
       <ListDetail key={g + end} items={items} idOf={w => w.id} kind="word" placeholder="Search: राम, rāma, boy, బాలుడు…"
         search={w => [w.w, w.iast, w.d[0]?.[0], ...Object.values(w.m ?? {}).map(m => m[0])].join(" ")}
@@ -152,107 +147,126 @@ export const WordBook: React.FC = () => {
 };
 
 // ── धातुकोशः ───────────────────────────────────────────────────
-const VerbDetail: React.FC<{ v: Verb }> = ({ v }) => {
+type Dhatu400Mode = "kartari" | "atmanepada" | "karmani" | "bhave";
+const Dhatu400Detail: React.FC<{ v: Dhatu400; krt?: Dhatu400Krt }> = ({ v, krt }) => {
   const lang = useLang();
   const S = useSa();
-  const keys = (["P", "A", "K", "B"] as const).filter(k => v[k]);
-  const [key, setKey] = useState<(typeof keys)[number]>(keys[0]);
-  const k = keys.includes(key) ? key : keys[0];
-  const grid = v[k]!;
+  const [mode, setMode] = useState<Dhatu400Mode>("kartari");
   const [lk, setLk] = useState("lat");
-  const l = grid[lk] ? lk : LAKARA_ORDER.find(x => grid[x])!;
-  const krt = KRT.find(r => r.w === v.w);
+  const choices: [Dhatu400Mode, string, Record<string, Dhatu400Conjugation> | undefined][] = [
+    ["kartari", `कर्तरि · ${v.pada}`, v.lakara_conjugations],
+    ["atmanepada", "आत्मनेपदम् · Atmanepada", v.lakara_conjugations_atmanepada],
+    ["karmani", "कर्मणि · Passive", v.karmani_conjugations],
+    ["bhave", "भावे · Impersonal", v.bhave_conjugations],
+  ].filter((x): x is [Dhatu400Mode, string, Record<string, Dhatu400Conjugation>] => !!x[2]);
+  const selected = choices.find(x => x[0] === mode) ?? choices[0];
+  const forms = selected[2] || v.lakara_conjugations;
+  const lakaras = LAKARA_ORDER.filter(x => forms[x]);
+  const lakara = forms[lk] ? lk : lakaras[0];
+  const grid = forms[lakara]?.conjugation_grid;
+  const lakaraInfo = forms[lakara]?.lakara_meaning ?? LAKARA_INFO[lakara];
+  const meaning = v.meanings[lang] || v.meanings.en || v.gloss_verb_en;
   return (
     <div className="ks-card">
       <div className="ks-head">
-        <h3>{S(v.w)}</h3><Speak t={v.w} />
-        <span className="ks-sub">{v.iast} · {v.gana} · {v.pada} · {v.trans}</span>
+        <h3>{S(v.lemma)}</h3><Speak t={v.lemma} />
+        <span className="ks-sub">{v.iast} · {v.gana} · {v.pada} · {v.transitivity} · {v.dhatupatha.code}</span>
       </div>
-      <p className="ks-main-meaning" dir="auto">{verbMeaning(v, lang)} <span className="ks-artha">({v.artha})</span>
-        <FlagButton t={{ kind: "verb", id: v.id, field: "meaning", value: [v.m.en, v.m.te, v.m.hi].filter(Boolean).join(" | "), where: `${v.w} — meaning` }} /></p>
-      <Rom t={romanize(verbMeaning(v, lang), lang)} />
-      <h4>सर्वभाषासु अर्थाः · Meaning in every language</h4>
-      <div className="ks-meanings">
-        {Object.keys(LANGS).filter(x => (v.m as Record<string, string>)[x]).map(x => (
-          <div key={x} className={x === lang ? "on" : ""}><b>{LANGS[x]}</b><span>{(v.m as Record<string, string>)[x]}{romanize((v.m as Record<string, string>)[x], x) && <i className="ks-roman-s">{romanize((v.m as Record<string, string>)[x], x)}</i>}</span><Pill k={v.mc?.[x] ?? "direct"} />
-            <Review t={{ kind: "verb", id: v.id, field: "meaning:" + x, value: (v.m as Record<string, string>)[x], where: `${v.w} — meaning (${LANGS[x]})` }} /></div>
-        ))}
-      </div>
+      <p className="ks-main-meaning" dir="auto">{meaning} <span className="ks-artha">({v.dhatupatha.artha})</span></p>
       <h4>रूपाणि · Forms</h4>
-      <div className="ks-chips">{keys.map(x => <button key={x} className={x === k ? "on" : ""} onClick={() => setKey(x)}>{prayogaLabel(v, x)[0]} <small>{prayogaLabel(v, x)[1]}</small></button>)}</div>
-      <div className="ks-chips ks-chips-sm">{LAKARA_ORDER.filter(x => grid[x]).map(x => <button key={x} className={x === l ? "on" : ""} onClick={() => setLk(x)}>{LAKARA[x][0]} <small>{LAKARA[x][1]}</small></button>)}</div>
+      <div className="ks-chips">{choices.map(([key, label]) =>
+        <button key={key} className={key === selected[0] ? "on" : ""} onClick={() => setMode(key)}>{label}</button>)}</div>
+      <div className="ks-chips ks-chips-sm">{lakaras.map(x =>
+        <button key={x} className={x === lakara ? "on" : ""} onClick={() => setLk(x)}>{LAKARA[x][0]} <small>{LAKARA[x][1]}</small></button>)}</div>
+      {lakaraInfo && <p className="ks-lak-info"><b>{S(LAKARA[lakara][0])}</b> <span className="ks-lak-sutra">{S(lakaraInfo.sutra)}</span>
+        <span className="ks-lak-meaning-sa">{S(lakaraInfo.sa)}</span>{lakaraInfo.en} <span className="ks-lak-term">{lakaraInfo.term}</span></p>}
       <div className="ks-table-wrap">
         <table className="ks-table">
           <thead><tr><th>{S("पुरुषः")}</th>{VACANA.map(n => <th key={n}>{S(n)}</th>)}</tr></thead>
-          <tbody>
-            {PURUSHA.map((p, pi) => (
-              <tr key={p}><th>{S(p)}</th>
-                {[0, 1, 2].map(n => {
-                  const c = grid[l]?.[pi]?.[n];
-                  if (!c) return <td key={n} className="ks-empty">—</td>;
-                  return (
-                    <td key={n} className="ks-form">{S(c[0])}{c[1] && <span className="ks-alt"> / {S(c[1])}</span>}
-                      <FlagButton t={{ kind: "verb", id: v.id, field: `${k}:${l}:${pi},${n}`, value: c[0], where: `${v.w} — ${prayogaLabel(v, k)[0]} ${LAKARA[l][0]} ${p} ${VACANA[n]}` }} />
-                      {(() => { const gl = verbGloss(v, k, l, pi, n, lang, c[2]); return (
-                        <span className="ks-gloss" dir="auto">{gl}<RomS t={gl} l={lang} /><Review t={{ kind: "verb", id: v.id, field: `gloss:${lang}:${k}:${l}:${pi},${n}`, value: gl, where: `${v.w} — ${LAKARA[l][0]} ${p} ${VACANA[n]} — meaning (${LANGS[lang]})` }} /></span>); })()}
-                      {c[3] > 0 && <span className="ks-pill ks-pill-book" title="Checked against Dhāturūpa Mañjarī">पृ. {c[3]}</span>}
-                      {c[4] > 0 && <span className="ks-pill ks-pill-draft">≠ book</span>}
-                    </td>
-                  );
-                })}
-              </tr>
-            ))}
-          </tbody>
+          <tbody>{PURUSHA.map((person, pi) => {
+            const personKey = (["prathama_purusha", "madhyama_purusha", "uttama_purusha"] as const)[pi];
+            const personGrid = grid?.[personKey];
+            return <tr key={person}><th>{S(person)}</th>{(["ekavacana", "dvivacana", "bahuvacana"] as const).map((number, ni) => {
+              const cell = personGrid?.[number];
+              if (!cell?.form) return <td key={number} className="ks-empty">—</td>;
+              const gloss = cell.meanings?.[lang] || cell.meanings?.en || "";
+              return <td key={number} className="ks-form">{S(cell.form)}{cell.variants?.length ? <span className="ks-alt"> / {cell.variants.map(S).join(" / ")}</span> : null}
+                <FlagButton t={{ kind: "verb", id: v.id, field: `${selected[0]}:${lakara}:${pi},${ni}`, value: cell.form, where: `${v.lemma} — ${selected[1]} ${LAKARA[lakara][0]} ${person} ${VACANA[ni]}` }} />
+                <span className="ks-gloss" dir="auto">{gloss}{gloss && <RomS t={gloss} l="en" />}</span>
+                {cell.checks?.attested_in && <span className="ks-pill ks-pill-direct" title="Found in independent form lists">✓ {Array.isArray(cell.checks.attested_in) ? cell.checks.attested_in.join(", ") : cell.checks.attested_in}</span>}
+              </td>;
+            })}</tr>;
+          })}</tbody>
         </table>
       </div>
-      <p className="ks-note">पृ. N = page of Dhāturūpa Mañjarī where the form was checked. “/” shows an accepted alternative.</p>
-      {krt && <KrtTable r={krt} verb={verbMeaning(v, lang)} />}
+      <p className="ks-note">Forms are derived with vidyut-prakriya and cross-checked against independent Sanskrit verb lists. “—” means that no form is supplied for that cell.</p>
+      {krt && <Dhatu400KrtTable r={krt} />}
       <p className="ks-id">{v.id}</p>
     </div>
   );
 };
-const KrtTable: React.FC<{ r: KrtRoot; verb?: string }> = ({ r, verb }) => {
-  const lang = useLang();
+const Dhatu400KrtTable: React.FC<{ r: Dhatu400Krt }> = ({ r }) => {
   const S = useSa();
-  return (
-  <>
+  const forms = (entries: [string, Dhatu400KrtForm][]) => entries.map(([suffix, item]) => (
+    <tr key={suffix}><th>{suffix}</th><td className="ks-form">{item.form ? <>{S(item.form)}{item.variants?.length ? <span className="ks-alt"> / {item.variants.map(x => S(x)).join(" / ")}</span> : null}
+      <FlagButton t={{ kind: "krt", id: r.dhatu_id, field: suffix, value: item.form, where: `${r.lemma} + ${suffix}` }} /></> : "—"}</td>
+      <td>{item.meaning_en || item.status || item.note || ""}</td><td className="rv-only">{item.attested_in_dictionary ? "in dictionary" : item.tier || item.status || ""}</td></tr>
+  ));
+  const restricted = Object.entries(r.restricted_krt);
+  return <>
     <h4>कृदन्तानि · Participles &amp; verbal nouns</h4>
-    <div className="ks-table-wrap">
-      <table className="ks-table ks-krt">
-        <thead><tr><th>प्रत्ययः</th><th>रूपम्</th><th>अर्थः · {LANGS[lang]}</th><th className="rv-only">source</th></tr></thead>
-        <tbody>{Object.entries(r.f).map(([k, [form, gloss, att, tier]]) => (
-          <tr key={k}><th>{k}</th>
-            <td className="ks-form">{S(form)}<FlagButton t={{ kind: "krt", id: r.id, field: k, value: form, where: `${r.w} + ${k}` }} /></td>
-            <td>{(() => { const gl = krtGloss(k, lang, gloss, verb ?? r.en, r.w); return <>{gl}<RomS t={gl} l={lang} /><Review t={{ kind: "krt", id: r.id, field: `gloss:${lang}:${k}`, value: gl, where: `${r.w} + ${k} — meaning (${LANGS[lang]})` }} /></>; })()}</td>
-            <td className="rv-only">{att ? <span className="ks-pill ks-pill-direct">in dictionary</span> : <span className="ks-pill ks-pill-derived">grammar only</span>} <span className="ks-pill">{tier}</span></td>
-          </tr>))}</tbody>
-      </table>
-    </div>
-    {lang !== "en" && !verb && <p className="ks-note">This root's meaning is in English only for now; the suffix meaning is in {LANGS[lang]}.</p>}
-    {r.notes?.length > 0 && <p className="ks-note">{r.notes.join(" · ")}</p>}
-  </>
-  );
+    <div className="ks-table-wrap"><table className="ks-table ks-krt">
+      <thead><tr><th>प्रत्ययः</th><th>रूपम्</th><th>अर्थः · English</th><th className="rv-only">source / status</th></tr></thead>
+      <tbody>{forms(Object.entries(r.krt_rupas))}</tbody>
+    </table></div>
+    {restricted.length > 0 && <>
+      <h4>विशिष्टप्रत्ययाः · Restricted derivations</h4>
+      <div className="ks-table-wrap"><table className="ks-table ks-krt">
+        <thead><tr><th>प्रत्ययः</th><th>रूपम्</th><th>अर्थः / नियमः</th><th className="rv-only">source / status</th></tr></thead>
+        <tbody>{forms(restricted)}</tbody>
+      </table></div>
+    </>}
+    <p className="ks-note">{r.source_note}</p>
+  </>;
 };
-type Root = { kind: "verb"; v: Verb } | { kind: "krt"; r: KrtRoot };
 export const VerbBook: React.FC = () => {
   const lang = useLang();
   const S = useSa();
-  const [tab, setTab] = useState("verbs");
-  const others = useMemo(() => KRT.filter(r => !VERBS.some(v => v.w === r.w)), []);
+  const [tab, setTab] = useState("all");
+  const [data, setData] = useState<{ tinanta: Dhatu400[]; krt: Dhatu400Krt[] } | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  useEffect(() => {
+    let active = true;
+    loadDhatu400Data().then(set => {
+      if (active) setData(set);
+    }).catch(error => {
+      console.error("Failed to load the expanded dhātu data.", error);
+      if (active) setLoadError(error instanceof Error ? error.message : String(error));
+    });
+    return () => { active = false; };
+  }, []);
+  if (loadError) return <div className="ks"><KsTop title="धातुकोशः" en="Verb book" sub="The expanded verb data could not be loaded." />
+    <p className="ks-note" role="alert">{loadError}</p></div>;
+  if (!data) return <div className="ks"><KsTop title="धातुकोशः" en="Verb book" sub="Loading the expanded dhātu data…" />
+    <p className="ks-note" role="status">Loading 400-root verb and participle data…</p></div>;
+  const { tinanta, krt } = data;
   return (
     <div className="ks">
-      <KsTop title="धातुकोशः" en="Verb book" sub={`${VERBS.length} roots with all ten lakāras (active, passive, impersonal) and ${KRT.length} roots with their kṛdantas.`} />
-      <Tabs tabs={[["verbs", `धातुरूपाणि · Verb forms (${VERBS.length})`], ["krt", `कृदन्तानि · More roots (${others.length})`]]} on={tab} set={setTab} />
-      {tab === "verbs"
-        ? <ListDetail<Root> items={VERBS.map(v => ({ kind: "verb", v }))} idOf={x => (x.kind === "verb" ? x.v.id : x.r.id)} kind="verb" placeholder="Search: गम्, gam, to go…"
-            search={x => x.kind === "verb" ? [x.v.w, x.v.iast, x.v.m.en, x.v.m.te, x.v.m.hi, x.v.artha].join(" ") : ""}
-            label={x => x.kind === "verb" ? <><span className="ks-l-sa">{S(x.v.w)}</span><span className="ks-l-en">{verbMeaning(x.v, lang)}</span></> : null}
-            detail={x => x.kind === "verb" ? <VerbDetail key={x.v.id} v={x.v} /> : null} />
-        : <ListDetail<KrtRoot> items={others} idOf={r => r.id} kind="krt" placeholder="Search a root or a form: गत्वा, to go…"
-            search={r => [r.w, r.en, ...Object.values(r.f).map(f => f[0])].join(" ")}
-            label={r => <><span className="ks-l-sa">{S(r.w)}</span><span className="ks-l-en">{r.en}</span></>}
-            detail={r => <div className="ks-card"><div className="ks-head"><h3>{S(r.w)}</h3><Speak t={r.w} /><span className="ks-sub">{r.gana} · {r.pada}</span></div>
-              <p className="ks-main-meaning" dir="auto">{r.en}</p><KrtTable r={r} /><p className="ks-id">{r.id}</p></div>} />}
+      <KsTop title="धातुकोशः" en="Verb book" sub={`${tinanta.length} roots with generated tiṅanta forms and ${krt.length} roots with kṛdantas.`} />
+      <p className="ks-note">{tinanta.length} of 400 marked roots currently have generated form records.</p>
+      <Tabs tabs={[
+        ["all", `धातुरूपाणि · All roots (${tinanta.length})`],
+        ["krt400", `कृदन्तानि · All roots (${krt.length})`],
+      ]} on={tab} set={setTab} />
+      {tab === "all" ? <ListDetail<Dhatu400> items={tinanta} idOf={v => v.id} kind="verb" placeholder="Search: गम्, gam, to go…"
+          search={v => [v.lemma, v.iast, v.gana, v.dhatupatha.artha, ...Object.values(v.meanings)].join(" ")}
+          label={v => <><span className="ks-l-sa">{S(v.lemma)}</span><span className="ks-l-en">{v.meanings[lang] || v.meanings.en}</span></>}
+          detail={v => <Dhatu400Detail key={v.id} v={v} krt={krt.find(r => r.dhatu_id === v.id)} />} />
+        : <ListDetail<Dhatu400Krt> items={krt} idOf={r => r.dhatu_id} kind="krt" placeholder="Search a root or a form: गत्वा, to go…"
+          search={r => [r.lemma, r.meaning_en, ...Object.values(r.krt_rupas).map(f => f.form || "")].join(" ")}
+          label={r => <><span className="ks-l-sa">{S(r.lemma)}</span><span className="ks-l-en">{r.meaning_en}</span></>}
+          detail={r => <div className="ks-card"><div className="ks-head"><h3>{S(r.lemma)}</h3><Speak t={r.lemma} /><span className="ks-sub">{r.gana} · {r.pada}</span></div>
+            <p className="ks-main-meaning" dir="auto">{r.meaning_en}</p><Dhatu400KrtTable r={r} /><p className="ks-id">{r.dhatu_id}</p></div>} />}
     </div>
   );
 };

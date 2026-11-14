@@ -1,24 +1,27 @@
 // ═══════════════════════════════════════════════════════════════
 //  learn/Learn.tsx — बोधः: WHY Sanskrit words have the forms they have
 //  शब्दरूपाणि (24 forms), धातुरूपाणि (9 × 10 forms), अव्ययानि (one form),
-//  and how related patterns can be compared across languages (from the author's PhD thesis,
+//  and why the same grid holds every language (from the author's PhD thesis,
 //  ch. 4.7 सुबन्तदिशा, 4.8.6 तिङन्तदिशा, tables 4.7.2.2.1 & 4.8.11).
 // ═══════════════════════════════════════════════════════════════
 import React, { useState } from "react";
 import {
-  WORDS, VERBS, AVYAYA, AVYAYA_CATS, LANGS, MEANING_LANGS, VIBHAKTI, VACANA, PURUSHA, LAKARA, LAKARA_ORDER,
+  WORDS, VERBS, AVYAYA, AVYAYA_CATS, LANGS, MEANING_LANGS, VIBHAKTI, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO,
   headForm, wordMeaning, verbMeaning, avyayaMeaning, type Word,
 } from "../data";
 import { nounGloss, verbGloss } from "../i18n/forms";
 import { useLang } from "../settings";
 import { speak } from "../speech";
+import { PrakritiPratyaya, Prakriya } from "./Prakriya";
 import "./learn.css";
 
-type Ch = "shabda" | "dhatu" | "avyaya";
+type Ch = "shabda" | "dhatu" | "avyaya" | "prakriti" | "prakriya";
 const CHAPTERS: [Ch, string, string][] = [
   ["shabda", "शब्दरूपाणि", "Why every noun has 24 forms"],
   ["dhatu", "धातुरूपाणि", "Why every verb has 9 forms in each tense"],
   ["avyaya", "अव्ययानि", "Words that never change"],
+  ["prakriti", "प्रकृतिः प्रत्ययश्च", "Root, stem and suffix"],
+  ["prakriya", "प्रक्रिया", "How a sentence is taken apart and built"],
 ];
 
 const Learn: React.FC = () => {
@@ -28,7 +31,7 @@ const Learn: React.FC = () => {
       <div className="jy-top">
         <div>
           <h2 className="jy-title">बोधः <span>· How Sanskrit words work</span></h2>
-          <p className="jy-sub">Why Sanskrit words take different forms, and how those forms can be compared across languages.</p>
+          <p className="jy-sub">Why the forms are arranged the way they are, and why the same arrangement fits every language.</p>
         </div>
       </div>
       <div className="ln-chapters">
@@ -36,7 +39,7 @@ const Learn: React.FC = () => {
           <button key={k} className={ch === k ? "on" : ""} onClick={() => setCh(k)}><b>{sa}</b><small>{en}</small></button>
         ))}
       </div>
-      {ch === "shabda" ? <Shabda /> : ch === "dhatu" ? <Dhatu /> : <Avyaya />}
+      {ch === "shabda" ? <Shabda /> : ch === "dhatu" ? <Dhatu /> : ch === "avyaya" ? <Avyaya /> : ch === "prakriti" ? <PrakritiPratyaya /> : <Prakriya />}
     </div>
   );
 };
@@ -184,10 +187,19 @@ const Shabda: React.FC = () => {
         <p>Compound members work the same way. In राजपुरुषः = राज्ञः पुरुषः, the षष्ठी is present and is then dropped (<Sutra t="सुपो धातुप्रातिपदिकयोः" n="2.4.71" />). In aluk compounds it stays visible: युधिष्ठिरः, खेचरः.</p>
       </Card>
 
-      <Card title="तुलना · Comparing noun relations across languages" tone="ln-key">
-        <p>The thesis compares Sanskrit's case analysis with systems in about twenty languages. It argues that the kāraka categories can be used to analyze noun relations in the languages it studies. Languages may mark a relation with an ending, a separate word, or word order; the categories and how they are grammaticalized do not always line up one-to-one.</p>
+      <Card title="सर्वासु भाषासु · The same 24 places in every language" tone="ln-key">
+        <p>The thesis sets the case systems of about twenty languages side by side with the Sanskrit table, stem by stem and ending by ending. Its conclusion: <i>“यदि संस्कृतोक्तकारकविभागः परिशील्यते तर्हि अयं विभागः सर्वासु भाषासु अन्तर्भवति”</i>, the kāraka division is found inside every language. Languages differ only in <b>how</b> they mark the relation: an ending, a separate word before or after, or word order. They do not differ in <b>which</b> relations exist.</p>
         <div className="ln-table-wrap"><table className="ln-table ln-world"><thead><tr><th>Language</th><th>How it marks the 8 relations</th><th>Markers</th></tr></thead>
           <tbody>{WORLD.map(([l, h, m]) => <tr key={l}><th>{l}</th><td>{h}</td><td>{m}</td></tr>)}</tbody></table></div>
+        <div className="ln-claim">
+          <b>The claim, stated precisely.</b> Every use of a noun stem is one of three things:
+          <ol>
+            <li>one of its <b>24 forms</b>, carrying one of the 8 relations with its Pāṇinian finer meanings;</li>
+            <li>an <b>avyaya</b> made from it (ततः, तत्र, बहुशः, राजवत्…), whose meaning Pāṇini states through those same vibhakti meanings; or</li>
+            <li>a <b>new stem</b> (समास, तद्धित, नामधातु) with its own 24.</li>
+          </ol>
+          Every language maps its noun usages onto this inventory.
+        </div>
         <p>The table below shows it live. Choose a word and some languages: each row is one relation, and each language fills it in its own way.</p>
         <div className="ln-demo-bar">
           <label>शब्दः <select value={wid} onChange={e => setWid(e.target.value)}>{nouns.map(x => <option key={x.id} value={x.id}>{headForm(x)} · {wordMeaning(x, "en").split(";")[0]}</option>)}</select></label>
@@ -230,18 +242,7 @@ const Shabda: React.FC = () => {
 // ═══════════ 2. धातुरूपाणि ═══════════
 const TIN = [["तिप्", "तस्", "झि"], ["सिप्", "थस्", "थ"], ["मिप्", "वस्", "मस्"]];
 const TIN_A = [["त", "आताम्", "झ"], ["थास्", "आथाम्", "ध्वम्"], ["इट्", "वहि", "महिङ्"]];
-const LAK_INFO: Record<string, [string, string]> = {
-  lat: ["वर्तमाने लट् (3.2.123)", "now; also habit and general truth"],
-  lan: ["अनद्यतने लङ् (3.2.111)", "past, not today"],
-  lit: ["परोक्षे लिट् (3.2.115)", "remote past, not witnessed by the speaker"],
-  lun: ["लुङ् (3.2.110)", "past in general (including today)"],
-  lut: ["अनद्यतने लुट् (3.3.15)", "future, not today"],
-  lrt: ["लृट् शेषे च (3.3.13)", "future in general"],
-  lot: ["लोट् च (3.3.162)", "command, request, permission"],
-  vidhilin: ["विधिनिमन्त्रण… लिङ् (3.3.161)", "should, may, invitation"],
-  asirlin: ["आशिषि लिङ्लोटौ (3.3.173)", "blessing: may it be so"],
-  lrn: ["लिङ्निमित्ते लृङ् क्रियातिपत्तौ (3.3.139)", "would have …, if … had (unfulfilled)"],
-};
+const LAK_INFO: Record<string, [string, string]> = Object.fromEntries(Object.entries(LAKARA_INFO).map(([k, x]) => [k, [x.sutra, `${x.en} — ${x.term}`]]));
 const Dhatu: React.FC = () => {
   const { langs, toggle } = useCompareLangs();
   const [vid, setVid] = useState(VERBS[1].id);
@@ -251,14 +252,14 @@ const Dhatu: React.FC = () => {
   return (
     <div className="ln-body">
       <Card title="धातुः + तिङ् · A verb is a root plus one of 18 endings">
-        <p>Every verb form is a <b>root</b> (धातुः) plus an <b>ending</b> (तिङ्). Pāṇini lists 18 endings: 9 for परस्मैपदम् and 9 for आत्मनेपदम् (<Sutra t="तिप्तस्झिसिप्थस्थमिब्वस्मस्तातांझथासाथांध्वमिड्वहिमहिङ्" n="3.4.78" />). The endings combine the subject’s grammatical person (<b>puruṣa</b>) with its number (<b>vacana</b>):</p>
+        <p>Every verb form is a <b>root</b> (धातुः) plus an <b>ending</b> (तिङ्). Pāṇini lists 18 endings: 9 for परस्मैपदम् and 9 for आत्मनेपदम् (<Sutra t="तिप्तस्झिसिप्थस्थमिब्वस्मस्तातांझथासाथांध्वमिड्वहिमहिङ्" n="3.4.78" />). The nine are the meeting of <b>who acts</b> (पुरुषः) and <b>how many</b> (वचनम्):</p>
         <div className="ln-two">
           <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>परस्मैपदम्</th>{VACANA.map(x => <th key={x}>{x}</th>)}</tr></thead>
             <tbody>{TIN.map((r, i) => <tr key={i}><th>{PURUSHA[i]}</th>{r.map(x => <td key={x} className="ln-deva">{x}</td>)}</tr>)}</tbody></table></div>
           <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>आत्मनेपदम्</th>{VACANA.map(x => <th key={x}>{x}</th>)}</tr></thead>
             <tbody>{TIN_A.map((r, i) => <tr key={i}><th>{PURUSHA[i]}</th>{r.map(x => <td key={x} className="ln-deva">{x}</td>)}</tr>)}</tbody></table></div>
         </div>
-        <p>Here, <b>puruṣa</b> names the grammatical relation between a nominal subject (a person, thing, or other entity) and the finite verb. Sanskrit classifies the subject as <b>prathama</b> (the one spoken about), <b>madhyama</b> (the addressee), or <b>uttama</b> (the speaker); <b>vacana</b> marks singular, dual, or plural. Languages express these distinctions in different ways—through verb endings, pronouns, or context—and need not mark all nine combinations. The thesis compares how the languages it studies express person and number; it does not claim that every language has the same 3 × 3 verb paradigm (thesis 4.8.8–9). See the open point below for a further distinction.</p>
+        <p>Every language distinguishes the speaker, the listener and others (the thesis, 4.8.8 Person / Deixis), and most also mark number (4.8.9). So the 3 × 3 grid of meanings is found everywhere, even where the verb itself does not change (Chinese, Japanese state it with a pronoun or leave it to context). Some languages make finer person distinctions; see the open point below.</p>
       </Card>
 
       <Card title="दश लकाराः · Ten tenses and moods">
@@ -266,10 +267,10 @@ const Dhatu: React.FC = () => {
         <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>लकारः</th><th>Pāṇini</th><th>meaning</th><th>{v.w} · हिन्दी</th><th>{v.w} · తెలుగు</th></tr></thead>
           <tbody>{LAKARA_ORDER.map(l => grid[l] && <tr key={l}><th>{LAKARA[l][0]}</th><td className="ln-deva">{LAK_INFO[l][0]}</td><td>{LAK_INFO[l][1]}</td>
             <td>{verbGloss(v, "P", l, 0, 0, "hi", "")}</td><td>{verbGloss(v, "P", l, 0, 0, "te", "")}</td></tr>)}</tbody></table></div>
-        <p>In the Sanskrit paradigm, 3 persons × 3 numbers across 10 lakāras gives <b>90 slots</b> for each pada. The two padas and three voices (प्रयोगाः: कर्तरि active, कर्मणि passive, भावे impersonal) organize further finite forms; individual roots need not use every slot. Hindi उसने पढ़ा has a construction comparable to Sanskrit कर्मणि (मया पठितम्), though the languages’ systems are not identical. Georgian and Basque also show verb agreement with the object in some constructions.</p>
+        <p>3 persons × 3 numbers × 10 lakāras = <b>90 forms</b> for each pada. Add the two padas and the three voices (प्रयोगाः: कर्तरि active, कर्मणि passive, भावे impersonal), and you have <b>every finite use of the root</b>. Hindi उसने पढ़ा continues the Sanskrit कर्मणि pattern (मया पठितम्) historically. Georgian and Basque are unrelated languages that show the same pattern independently: the doer takes a special case and the verb agrees with the object.</p>
       </Card>
 
-      <Card title="तुलना · Comparing one root across languages" tone="ln-key">
+      <Card title="सर्वासु भाषासु · One root, every language" tone="ln-key">
         <div className="ln-demo-bar">
           <label>धातुः <select value={vid} onChange={e => setVid(e.target.value)}>{VERBS.map(x => <option key={x.id} value={x.id}>{x.w} · {verbMeaning(x, "en")}</option>)}</select></label>
           <div className="ks-chips ks-chips-sm">{LAKARA_ORDER.filter(l => grid[l]).map(l => <button key={l} className={lk === l ? "on" : ""} onClick={() => setLk(l)}>{LAKARA[l][0]} <small>{LAKARA[l][1]}</small></button>)}</div>
@@ -324,8 +325,8 @@ const Avyaya: React.FC = () => {
         <div className="ln-tree"><span className="ln-tree-root">प्रातिपदिकम्</span><div className="ln-tree-kids">{["कृदन्तम्", "तद्धितान्तम्", "अव्युत्पन्नम्", "अनुकरणम्", "संज्ञा", "अव्ययम्"].map(k => <span key={k}>{k}</span>)}</div></div>
       </Card>
 
-      <Card title="अव्ययानि · Avyayas across languages" tone="ln-key">
-        <p>Meanings expressed by Sanskrit avyayas may be expressed in other languages with prepositions, conjunctions, adverbs, particles, or different constructions: “and, or, not, where, when, again, only”. Such words can link, ask, deny, or locate. Here are the 85 school avyayas by kind, with the meaning in <b>{LANGS[lang]}</b>:</p>
+      <Card title="सर्वासु भाषासु · Every language has them" tone="ln-key">
+        <p>What Sanskrit says with an avyaya, other languages say with prepositions, conjunctions, adverbs and particles: “and, or, not, where, when, again, only”. Every language needs words that link, ask, deny and place. Here are the 85 school avyayas by kind, with the meaning in <b>{LANGS[lang]}</b>:</p>
         <div className="ln-avy">
           {cats.map(c => (
             <div key={c} className="ln-avy-cat"><h4>{AVYAYA_CATS[c][0]} <small>{AVYAYA_CATS[c][1]}</small></h4>
