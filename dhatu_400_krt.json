@@ -65631,5 +65631,1577 @@
   },
   "restricted_krt": {},
   "source_note": "derived now"
+ },
+ {
+  "dhatu_id": "MDH-401",
+  "lemma": "स्था",
+  "iast": "sthā",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "परस्मैपदी",
+  "dhatupatha": {
+   "code": "01.1077",
+   "aupadeshika": "ष्ठा",
+   "artha": "गतिनिवृत्तौ"
+  },
+  "meaning_en": "to stand",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "स्थित्वा",
+    "meaning_en": "having stood",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संस्थाय",
+    "meaning_en": "having stood (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "स्थातुम्",
+    "meaning_en": "to stand, in order to stand",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "स्थायम्",
+    "meaning_en": "standing again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): स्थायमं स्थायम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": "तिष्ठन्",
+    "meaning_en": "standing (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "शानच्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed for this root"
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "स्थितः",
+    "meaning_en": "stood (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "स्थितवान्",
+    "meaning_en": "one who has stood",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "स्थातव्यः",
+    "meaning_en": "to be stood; ought to be stood",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "स्थानीयः",
+    "meaning_en": "to be stood; worth being stood",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "यत्": {
+    "tier": "core",
+    "form": "स्थेयः",
+    "meaning_en": "to be stood; fit to be stood",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "स्थायकः",
+    "meaning_en": "one who stands (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "स्थाता",
+    "meaning_en": "one who stands (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "स्थानम्",
+    "meaning_en": "the act of standing",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "स्थितिः",
+    "meaning_en": "standing (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "स्थायः",
+    "meaning_en": "standing (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   }
+  },
+  "restricted_krt": {
+   "वरच्": {
+    "form": "स्थावरः",
+    "note": "immovable",
+    "rule": "3.2.175 स्थेशभासपिसकसो वरच्",
+    "source": "rule-checked by Claude (sūtra cited)"
+   },
+   "क": {
+    "form": "समस्थः / विषमस्थः",
+    "note": "3.2.4 सुपि स्थः",
+    "rule": "3.2.3 आतोऽनुपसर्गे कः — ā-ending roots with an object upapada (also 3.2.4–7)",
+    "source": "rule-checked by Claude (sūtra cited)"
+   }
+  },
+  "source_note": "reused from the reviewed 126-root kṛt set"
+ },
+ {
+  "dhatu_id": "MDH-402",
+  "lemma": "हृ",
+  "iast": "hṛ",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "उभयपदी",
+  "dhatupatha": {
+   "code": "01.1046",
+   "aupadeshika": "हृञ्",
+   "artha": "हरणे"
+  },
+  "meaning_en": "to carry",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "हृत्वा",
+    "meaning_en": "having taken away",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संहृत्य",
+    "meaning_en": "having taken away (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "हर्तुम्",
+    "meaning_en": "to take away, in order to take away",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "हारम्",
+    "meaning_en": "taking away again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): हारमं हारम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": "हरन्",
+    "meaning_en": "taking away (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "शानच्": {
+    "tier": "core",
+    "form": "हरमाणः",
+    "meaning_en": "taking away (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "हृतः",
+    "meaning_en": "taken away (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "हृतवान्",
+    "meaning_en": "one who has taken away",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "हर्तव्यः",
+    "meaning_en": "to be taken away; ought to be taken away",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "हरणीयः",
+    "meaning_en": "to be taken away; worth being taken away",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": "हार्यः",
+    "meaning_en": "to be taken away; fit to be taken away",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "हारकः",
+    "meaning_en": "one who takes away (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "हर्ता",
+    "meaning_en": "one who takes away (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "हरणम्",
+    "meaning_en": "the act of taking away",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "हृतिः",
+    "meaning_en": "taking away (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "हारः",
+    "meaning_en": "taking away (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "हरः",
+    "meaning_en": "one who takes away / taking away (noun)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   }
+  },
+  "restricted_krt": {
+   "अण्": {
+    "form": "भारहारः",
+    "note": "upapada भार",
+    "rule": "3.2.1 कर्मण्यण् — needs an object upapada; productive for transitive roots",
+    "source": "rule-checked by Claude (sūtra cited)"
+   }
+  },
+  "source_note": "reused from the reviewed 126-root kṛt set"
+ },
+ {
+  "dhatu_id": "MDH-403",
+  "lemma": "सद्",
+  "iast": "sad",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "परस्मैपदी",
+  "dhatupatha": {
+   "code": "01.0990",
+   "aupadeshika": "षदॢँ",
+   "artha": "विशरणगत्यवसादनेषु"
+  },
+  "meaning_en": "to sit",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "सत्त्वा",
+    "meaning_en": "having sat",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संसद्य",
+    "meaning_en": "having sat (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "सत्तुम्",
+    "meaning_en": "to sit, in order to sit",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "सादम्",
+    "meaning_en": "sitting again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): सादमं सादम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": "सीदन्",
+    "meaning_en": "sitting (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "शानच्": {
+    "tier": "core",
+    "prayoga": "कर्मणि/भावे (the root is परस्मैपदी, so kartari शानच् does not exist; for intransitive roots this is only impersonal)",
+    "meaning_en": "being sat (passive present participle)",
+    "form": null,
+    "status": "not formed for this root"
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "सन्नः",
+    "meaning_en": "sat (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "सन्नवान्",
+    "meaning_en": "one who has sat",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "सत्तव्यः",
+    "meaning_en": "to be sat; ought to be sat",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "सदनीयः",
+    "meaning_en": "to be sat; worth being sat",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": "साद्यः",
+    "meaning_en": "to be sat; fit to be sat",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "सादकः",
+    "meaning_en": "one who sits (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "सत्ता",
+    "meaning_en": "one who sits (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "सदनम्",
+    "meaning_en": "the act of sitting",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "सत्तिः",
+    "meaning_en": "sitting (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "सादः",
+    "meaning_en": "sitting (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "सदः",
+    "meaning_en": "one who sits / sitting (noun)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   }
+  },
+  "restricted_krt": {
+   "क्विप्": {
+    "form": "उपसत् / सभासत्",
+    "note": "3.2.61",
+    "rule": "3.2.61, 3.2.76 क्विप् च, 3.2.87 ff. — needs an upapada (or upasarga for some roots)",
+    "source": "rule-checked by Claude (sūtra cited)"
+   }
+  },
+  "source_note": "reused from the reviewed 126-root kṛt set"
+ },
+ {
+  "dhatu_id": "MDH-404",
+  "lemma": "स्मृ",
+  "iast": "smṛ",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "परस्मैपदी",
+  "dhatupatha": {
+   "code": "01.1082",
+   "aupadeshika": "स्मृ",
+   "artha": "चिन्तायाम्"
+  },
+  "meaning_en": "to remember",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "स्मृत्वा",
+    "meaning_en": "having remembered",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संस्मृत्य",
+    "meaning_en": "having remembered (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "स्मर्तुम्",
+    "meaning_en": "to remember, in order to remember",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "स्मारम्",
+    "meaning_en": "remembering again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): स्मारमं स्मारम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": "स्मरन्",
+    "meaning_en": "remembering (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "शानच्": {
+    "tier": "core",
+    "prayoga": "कर्मणि/भावे (the root is परस्मैपदी, so kartari शानच् does not exist; for intransitive roots this is only impersonal)",
+    "meaning_en": "being remembered (passive present participle)",
+    "form": null,
+    "status": "not formed for this root"
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "स्मृतः",
+    "meaning_en": "remembered (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "स्मृतवान्",
+    "meaning_en": "one who has remembered",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "स्मर्तव्यः",
+    "meaning_en": "to be remembered; ought to be remembered",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "स्मरणीयः",
+    "meaning_en": "to be remembered; worth being remembered",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": "स्मार्यः",
+    "meaning_en": "to be remembered; fit to be remembered",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "स्मारकः",
+    "meaning_en": "one who remembers (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "स्मर्ता",
+    "meaning_en": "one who remembers (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "स्मरणम्",
+    "meaning_en": "the act of remembering",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "स्मृतिः",
+    "meaning_en": "remembering (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "स्मारः",
+    "meaning_en": "remembering (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "स्मरः",
+    "meaning_en": "one who remembers / remembering (noun)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   }
+  },
+  "restricted_krt": {},
+  "source_note": "reused from the reviewed 126-root kṛt set"
+ },
+ {
+  "dhatu_id": "MDH-405",
+  "lemma": "सेव्",
+  "iast": "sev",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "आत्मनेपदी",
+  "dhatupatha": {
+   "code": "01.0574",
+   "aupadeshika": "षेवृँ",
+   "artha": "सेवने"
+  },
+  "meaning_en": "to serve",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "सेवित्वा",
+    "meaning_en": "having served",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संसेव्य",
+    "meaning_en": "having served (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "सेवितुम्",
+    "meaning_en": "to serve, in order to serve",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "सेवम्",
+    "meaning_en": "serving again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): सेवमं सेवम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (आत्मनेपदी root takes शानच्)"
+   },
+   "शानच्": {
+    "tier": "core",
+    "form": "सेवमानः",
+    "meaning_en": "serving (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "सेवितः",
+    "meaning_en": "served (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "सेवितवान्",
+    "meaning_en": "one who has served",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "सेवितव्यः",
+    "meaning_en": "to be served; ought to be served",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "सेवनीयः",
+    "meaning_en": "to be served; worth being served",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": "सेव्यः",
+    "meaning_en": "to be served; fit to be served",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "सेवकः",
+    "meaning_en": "one who serves (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "सेविता",
+    "meaning_en": "one who serves (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "सेवनम्",
+    "meaning_en": "the act of serving",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": null,
+    "status": "क्तिन् blocked: heavy consonant-final root takes अ + टाप् instead (3.3.103 गुरोश्च हलः), as in क्रीडा, ईहा, भाषा, सेवा"
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "सेवः",
+    "meaning_en": "serving (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "सेवः",
+    "meaning_en": "one who serves / serving (noun)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   }
+  },
+  "restricted_krt": {},
+  "source_note": "reused from the reviewed 126-root kṛt set"
+ },
+ {
+  "dhatu_id": "MDH-406",
+  "lemma": "हस्",
+  "iast": "has",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "परस्मैपदी",
+  "dhatupatha": {
+   "code": "01.0822",
+   "aupadeshika": "हसेँ",
+   "artha": "हसने"
+  },
+  "meaning_en": "to laugh",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "हसित्वा",
+    "meaning_en": "having laughed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संहस्य",
+    "meaning_en": "having laughed (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "हसितुम्",
+    "meaning_en": "to laugh, in order to laugh",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "हासम्",
+    "meaning_en": "laughing again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): हासमं हासम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": "हसन्",
+    "meaning_en": "laughing (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "शानच्": {
+    "tier": "core",
+    "prayoga": "कर्मणि/भावे (the root is परस्मैपदी, so kartari शानच् does not exist; for intransitive roots this is only impersonal)",
+    "meaning_en": "being laughed (passive present participle)",
+    "form": null,
+    "status": "not formed for this root"
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "हसितः",
+    "meaning_en": "laughed (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "हसितवान्",
+    "meaning_en": "one who has laughed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "हसितव्यः",
+    "meaning_en": "to be laughed; ought to be laughed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "हसनीयः",
+    "meaning_en": "to be laughed; worth being laughed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": "हास्यः",
+    "meaning_en": "to be laughed; fit to be laughed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "हासकः",
+    "meaning_en": "one who laughs (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "हसिता",
+    "meaning_en": "one who laughs (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "हसनम्",
+    "meaning_en": "the act of laughing",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "हस्तिः",
+    "meaning_en": "laughing (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "हासः",
+    "meaning_en": "laughing (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "हसः",
+    "meaning_en": "one who laughs / laughing (noun)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "हसः",
+    "meaning_en": "laughing (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   }
+  },
+  "restricted_krt": {},
+  "source_note": "reused from the reviewed 126-root kṛt set"
+ },
+ {
+  "dhatu_id": "MDH-407",
+  "lemma": "सृ",
+  "iast": "sṛ",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "परस्मैपदी",
+  "dhatupatha": {
+   "code": "01.1085",
+   "aupadeshika": "सृ",
+   "artha": "गतौ"
+  },
+  "meaning_en": "to flow",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "सृत्वा",
+    "meaning_en": "having flowed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संसृत्य",
+    "meaning_en": "having flowed (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "सर्तुम्",
+    "meaning_en": "to flow, in order to flow",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "सारम्",
+    "meaning_en": "flowing again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): सारमं सारम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": "सरन्",
+    "variants": [
+     "धावन्"
+    ],
+    "meaning_en": "flowing (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "शानच्": {
+    "tier": "core",
+    "prayoga": "कर्मणि/भावे (the root is परस्मैपदी, so kartari शानच् does not exist)",
+    "meaning_en": "being flowed (passive present participle)",
+    "form": "स्रियमाणः",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "सृतः",
+    "meaning_en": "flowed (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "सृतवान्",
+    "meaning_en": "one who has flowed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "सर्तव्यः",
+    "meaning_en": "to be flowed; ought to be flowed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "सरणीयः",
+    "meaning_en": "to be flowed; worth being flowed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": "सार्यः",
+    "meaning_en": "to be flowed; fit to be flowed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "सारकः",
+    "meaning_en": "one who flows (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "सर्ता",
+    "meaning_en": "one who flows (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "सरणम्",
+    "meaning_en": "the act of flowing",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "सृतिः",
+    "meaning_en": "flowing (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "सारः",
+    "meaning_en": "flowing (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "सरः",
+    "meaning_en": "one who flows / flowing (noun)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   }
+  },
+  "restricted_krt": {},
+  "source_note": "derived now"
+ },
+ {
+  "dhatu_id": "MDH-408",
+  "lemma": "शुभ्",
+  "iast": "śubh",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "आत्मनेपदी",
+  "dhatupatha": {
+   "code": "01.0853",
+   "aupadeshika": "शुभँ",
+   "artha": "दीप्तौ"
+  },
+  "meaning_en": "to shine",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "शुभित्वा",
+    "variants": [
+     "शोभित्वा"
+    ],
+    "meaning_en": "having shone",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संशुभ्य",
+    "meaning_en": "having shone (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "शोभितुम्",
+    "meaning_en": "to shine, in order to shine",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "शोभम्",
+    "meaning_en": "shining again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): शोभमं शोभम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (आत्मनेपदी root takes शानच्)"
+   },
+   "शानच्": {
+    "tier": "core",
+    "form": "शोभमानः",
+    "meaning_en": "shining (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "शुभितः",
+    "meaning_en": "shone (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "शुभितवान्",
+    "meaning_en": "one who has shone",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "शोभितव्यः",
+    "meaning_en": "to be shone; ought to be shone",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "शोभनीयः",
+    "meaning_en": "to be shone; worth being shone",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": "शोभ्यः",
+    "meaning_en": "to be shone; fit to be shone",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "शोभकः",
+    "meaning_en": "one who shines (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "शोभिता",
+    "meaning_en": "one who shines (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "शोभनम्",
+    "meaning_en": "the act of shining",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "शुब्धिः",
+    "meaning_en": "shining (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": false
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "शोभः",
+    "meaning_en": "shining (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "attested_in_dictionary": true
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   }
+  },
+  "restricted_krt": {},
+  "source_note": "reused from the reviewed 126-root kṛt set"
+ },
+ {
+  "dhatu_id": "MDH-409",
+  "lemma": "तप्",
+  "iast": "tap",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "परस्मैपदी",
+  "dhatupatha": {
+   "code": "01.1140",
+   "aupadeshika": "तपँ",
+   "artha": "सन्तापे"
+  },
+  "meaning_en": "to heat",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "तप्त्वा",
+    "meaning_en": "having heated",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संतप्य",
+    "variants": [
+     "सन्तप्य"
+    ],
+    "meaning_en": "having heated (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "तप्तुम्",
+    "meaning_en": "to heat, in order to heat",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "तापम्",
+    "meaning_en": "heating again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): तापमं तापम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": "तपन्",
+    "meaning_en": "heating (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "शानच्": {
+    "tier": "core",
+    "prayoga": "कर्मणि/भावे (the root is परस्मैपदी, so kartari शानच् does not exist)",
+    "meaning_en": "being heated (passive present participle)",
+    "form": "तप्यमानः",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "तप्तः",
+    "meaning_en": "heated (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "तप्तवान्",
+    "meaning_en": "one who has heated",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "तप्तव्यः",
+    "meaning_en": "to be heated; ought to be heated",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "तपनीयः",
+    "meaning_en": "to be heated; worth being heated",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "यत्": {
+    "tier": "core",
+    "form": "तप्यः",
+    "meaning_en": "to be heated; fit to be heated",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "तापकः",
+    "meaning_en": "one who heats (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "तप्ता",
+    "meaning_en": "one who heats (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "तपनम्",
+    "meaning_en": "the act of heating",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "तप्तिः",
+    "meaning_en": "heating (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "तापः",
+    "meaning_en": "heating (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "तपः",
+    "meaning_en": "one who heats / heating (noun)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   }
+  },
+  "restricted_krt": {},
+  "source_note": "derived now"
+ },
+ {
+  "dhatu_id": "MDH-410",
+  "lemma": "तॄ",
+  "iast": "tṝ",
+  "gana": "भ्वादिः (1st Class)",
+  "pada": "परस्मैपदी",
+  "dhatupatha": {
+   "code": "01.1124",
+   "aupadeshika": "तॄ",
+   "artha": "प्लवनतरणयोः"
+  },
+  "meaning_en": "to cross",
+  "krt_rupas": {
+   "क्त्वा": {
+    "tier": "core",
+    "form": "तीर्त्वा",
+    "meaning_en": "having crossed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "ल्यप्": {
+    "tier": "core",
+    "form": "संतीर्य",
+    "variants": [
+     "सन्तीर्य"
+    ],
+    "meaning_en": "having crossed (with prefix सम्)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "तुमुन्": {
+    "tier": "core",
+    "form": "तरीतुम्",
+    "variants": [
+     "तरितुम्"
+    ],
+    "meaning_en": "to cross, in order to cross",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "णमुल्": {
+    "tier": "core",
+    "form": "तारम्",
+    "meaning_en": "crossing again and again",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "usage": "used doubled (आभीक्ष्ण्य, 3.4.22): तारमं तारम्"
+   },
+   "शतृ": {
+    "tier": "core",
+    "form": "तरन्",
+    "meaning_en": "crossing (present participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "शानच्": {
+    "tier": "core",
+    "prayoga": "कर्मणि/भावे (the root is परस्मैपदी, so kartari शानच् does not exist)",
+    "meaning_en": "being crossed (passive present participle)",
+    "form": "तीर्यमाणः",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "क्त": {
+    "tier": "core",
+    "form": "तीर्णः",
+    "meaning_en": "crossed (past participle)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "क्तवतु": {
+    "tier": "core",
+    "form": "तीर्णवान्",
+    "meaning_en": "one who has crossed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "तव्यत्": {
+    "tier": "core",
+    "form": "तरीतव्यः",
+    "variants": [
+     "तरितव्यः"
+    ],
+    "meaning_en": "to be crossed; ought to be crossed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "अनीयर्": {
+    "tier": "core",
+    "form": "तरणीयः",
+    "meaning_en": "to be crossed; worth being crossed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "यत्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्यत्": {
+    "tier": "core",
+    "form": "तार्यः",
+    "meaning_en": "to be crossed; fit to be crossed",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "क्यप्": {
+    "tier": "core",
+    "form": null,
+    "status": "not formed (another kṛtya affix applies to this root)"
+   },
+   "ण्वुल्": {
+    "tier": "core",
+    "form": "तारकः",
+    "meaning_en": "one who crosses (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "तृच्": {
+    "tier": "core",
+    "form": "तरीता",
+    "variants": [
+     "तरिता"
+    ],
+    "meaning_en": "one who crosses (agent)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "ल्युट्": {
+    "tier": "core",
+    "form": "तरणम्",
+    "meaning_en": "the act of crossing",
+    "source": "vidyut-prakriya (Pāṇinian derivation)",
+    "checks": {
+     "ashtadhyayi.com": "same"
+    }
+   },
+   "क्तिन्": {
+    "tier": "core, but blocked for some roots (3.3.102–107)",
+    "form": "तीर्णिः",
+    "meaning_en": "crossing (abstract noun, feminine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "घञ्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": null,
+    "status": "not formed for this root"
+   },
+   "अच्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "तरः",
+    "meaning_en": "one who crosses / crossing (noun)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   },
+   "अप्": {
+    "tier": "sense-restricted (derivable by rule; check usage)",
+    "form": "तरः",
+    "meaning_en": "crossing (action noun, masculine)",
+    "source": "vidyut-prakriya (Pāṇinian derivation)"
+   }
+  },
+  "restricted_krt": {},
+  "source_note": "derived now"
  }
 ]

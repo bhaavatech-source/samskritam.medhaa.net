@@ -15,6 +15,7 @@ import padyaJson from "./padya.json";
 import grammarJson from "./grammar.json";
 import dhatu400TinantaUrl from "../../../dhatu_400_tinanta.json?url";
 import dhatu400KrtUrl from "../../../dhatu_400_krt.json?url";
+import upasargaFormsUrl from "./upasarga_forms.json?url";
 
 /** a meaning in one language: [text, how it was sourced] */
 export type Meaning = [string, string];
@@ -94,6 +95,28 @@ export async function loadDhatu400Data(): Promise<{ tinanta: Dhatu400[]; krt: Dh
   const [tinanta, krt] = await Promise.all([tinantaResponse.json(), krtResponse.json()]);
   return { tinanta: tinanta as Dhatu400[], krt: krt as Dhatu400Krt[] };
 }
+// full verb tables of the upasarga + root verbs (data-source/21-upasarga/tools/build_upasarga_forms.py)
+/** mode ("kartari_P" | "kartari_A" | "karmani") → lakāra → 9 cells (prathama eka … uttama bahu) */
+export type UpasargaForms = Record<string, Record<string, Record<string, string[]>>>;
+let upasargaForms: Promise<UpasargaForms> | null = null;
+export function loadUpasargaForms(): Promise<UpasargaForms> {
+  upasargaForms ??= fetch(upasargaFormsUrl).then(r => {
+    if (!r.ok) throw new Error(`Could not load the prefixed verb tables (HTTP ${r.status}).`);
+    return r.json() as Promise<UpasargaForms>;
+  });
+  upasargaForms.catch(() => { upasargaForms = null; });
+  return upasargaForms;
+}
+// विभक्तिसमन्वयः — agreement of case and verb (data-source/22-vibhakti-samanvaya/build_samanvaya.py)
+import samanvayaJson from "./samanvaya.json";
+export type Samanvaya = {
+  definition: string; definition_en: string; principle: string; principle_en: string; circ: string; circ_en: string;
+  persons: { name: string; rule: string; kartari: string[]; karmani: string[] }[]; vacana: string;
+  single: { canonical_mandate: string; english_translation: string; exceptions: { kind: string; example: string }[]; with_ca_va: string };
+  prayoga: { name: string; def: string; rules: string; ok: string; ok_why: string; bad: { text: string; why: string }[] }[];
+  adhyahara: { sa: string; en: string; maxim: string }[];
+};
+export const SAMANVAYA = samanvayaJson as unknown as Samanvaya;
 export const SENTENCES = sentencesJson as unknown as Sentence[];
 export const AVYAYA = (avyayaJson as unknown as { items: Avyaya[] }).items;
 export const ERRORS = errorsJson as unknown as ErrorPair[];
@@ -181,6 +204,12 @@ export type SandhiEx = { a: string; b: string; r: string; scope: "int" | "ext" |
 export type SandhiRule = { id: string; group: "svara" | "vyanjana" | "agama" | "visarga"; name: string; en: string; sutra: string; what: string; ex: SandhiEx[] };
 export type Samasa = { w: string; l: string; a: string; t: string; n: string; m: string };
 export type KrtPratyaya = { p: string; it: string; rem: string; sutra: string; artha: string; kind: string };
+/** one upasarga + root combination (data-source/21-upasarga). cat: b = बाधते, v = विशिनष्टि, a = अनुवर्तते */
+export type UpasargaCombo = { id: string; u: string[]; rows: string[]; d: string; up: string; g: string; w: string; fin: boolean;
+  cat: "b" | "v" | "a"; cg: string; m: Record<"sa" | "en" | "hi" | "te", string>; ex: string; src: string; note: string; att: string };
+/** one taddhita suffix (data-source/04-taddhita). g = group key; ex.chk = how the form was checked (reviewers) */
+export type TaddhitaPratyaya = { id: string; p: string; g: string; lv: string; it: string; rem: string; eff: string; sutra: string; num: string; vidh: string;
+  m: Record<string, string>; rules: string[]; ex: { b: string; w: string; m: Record<string, string>; note: string; chk: string }[] };
 export type Grammar = {
   sandhi: { definition: string; kinds: { name: string; en: string; ex: string }[]; not_sandhi: string; layers: { name: string; en: string; ex: string }[];
     questions: { q: string; en: string }[]; groups: Record<string, [string, string]>; rules: SandhiRule[]; stages: { title: string; steps: [string, string][]; note: string }[] };
@@ -189,8 +218,11 @@ export type Grammar = {
     dominance: { title: string; details: string; types: { name: string; meaning_dominance: string; nature?: string; example_laukika?: string; sub_types?: (string | { name: string; condition: string })[] }[] };
     pos: { title: string; shloka: string; types: { combination: string; example: string }[] }; notes: Record<string, string>; ex: Samasa[] };
   pratyaya: { intro: string[]; list: KrtPratyaya[]; kinds: Record<string, [string, string]> };
-  upasarga: { sloka: string; sloka_en: string; pada: string; cls: string; nature: string; three: [string, string, string][]; hr: [string, string, string][];
-    list: { u: string; en: string; ex: [string, string][] }[] };
+  upasarga: { sloka: string; sloka_en: string; pada: string; cls: string; nature: string; count_note: string; three: [string, string, string][];
+    verse2: string; verse2_en: string; hr: [string, string, string][];
+    list: { u: string; en: string; ex: [string, string][]; sa: string[]; hi: string; te: string; phon: string; use: string }[];
+    combos: UpasargaCombo[] };
+  taddhita: { intro: string[]; groups: Record<string, [string, string]>; list: TaddhitaPratyaya[] };
 };
 export const GRAMMAR = grammarJson as unknown as Grammar;
 

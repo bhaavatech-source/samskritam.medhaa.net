@@ -62,3 +62,15 @@ Each record lists what was changed in `corrections_to_given_data`. Your original
   - Every form has an English gloss.
   - Te/Hi meanings are given for the root only, as in your list. Per-form Te/Hi glosses would have to be written; the old ones were one template copied everywhere.
   - The other 14 languages are not done yet for these roots.
+
+
+## Supplement, 2026-11-15 — ten more roots (MDH-401 … MDH-410)
+
+स्था, हृ, सद्, स्मृ, सेव्, हस्, सृ, शुभ्, तप्, तॄ were added because 35 of the upasarga verbs in
+`data-source/21-upasarga` are built on them. They are not in the teacher-marked list; that file is unchanged.
+Input: `supplement_2026-11-15.json` (same fields as the marked list). Codes: `tools/map.json`; English base verbs: `tools/en_verbs.py`.
+Built with the same pipeline (vidyut-prakriya; checked against SanskritVerb, Samsaadhanii and Heritage) and appended to
+`dhatu_400_tinanta.json` / `dhatu_400_krt.json`; the 398 earlier records are byte-for-byte unchanged.
+Notes: स्था is parasmaipadī; its Ātmanepada table is for the senses of 1.3.22–23 (प्रतिष्ठते, तिष्ठते “stays for/reveals”).
+सृ gives both सरति and धावति (धौ substitute in the sense of running, 7.3.78). Meanings in 17 languages are drafts in
+`18-dhatu-meanings/dhatu_400_meanings.json` (status “draft”), for native review.

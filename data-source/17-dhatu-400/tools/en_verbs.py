@@ -101,3 +101,15 @@ IRR = {  # base: (past, past participle)
  "infer": ("inferred", "inferred"), "prop": ("propped", "propped"), "rot": ("rotted", "rotted"), "worship": ("worshipped", "worshipped"),
  "frolic": ("frolicked", "frolicked"), "dry": ("dried", "dried"), "tire": ("tired", "tired"),
 }
+
+# supplement 2026-11-15
+BASE["01.1077"] = "stand"
+BASE["01.1046"] = "carry"
+BASE["01.0990"] = "sit"
+BASE["01.1082"] = "remember"
+BASE["01.0574"] = "serve"
+BASE["01.0822"] = "laugh"
+BASE["01.1085"] = "flow"
+BASE["01.0853"] = "shine"
+BASE["01.1140"] = "heat"
+BASE["01.1124"] = "cross"

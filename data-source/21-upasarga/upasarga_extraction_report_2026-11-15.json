@@ -1,0 +1,80 @@
+{
+  "project": "Medhā Sanskrit Knowledge Base",
+  "title": "Upasargārtha-candrikā Extraction & Mapping Report",
+  "source_text": "Upasargārthacandrikā by Cārudeva Śāstrī, Part 2 (Bhāratīya Vidyā Prakāśana)",
+  "total_upasargas_defined": 22,
+  "total_verb_combinations_mapped": 155,
+  "distribution_by_semantic_category": {
+    "धात्वर्थबाधनम् (Reversal / shift of meaning)": 42,
+    "धात्वर्थविशिष्टता (Specialization / modification)": 93,
+    "धात्वर्थानुवर्तनम् (Reinforcement / following)": 20
+  },
+  "multilingual_support": [
+    "Sanskrit (संस्कृतम्)",
+    "English",
+    "Hindi (हिन्दी)",
+    "Telugu (తెలుగు)"
+  ],
+  "quality_metrics": {
+    "schema_valid": true,
+    "unique_combination_ids": true,
+    "all_22_upasargas_covered": true,
+    "multi_upasarga_combinations_included": 8,
+    "examples_quoted_from_texts": 9,
+    "examples_constructed": 146,
+    "entries_rare_or_to_verify": 5,
+    "entries_nominal_only": 4,
+    "entries_located_in_book_scan": 31
+  },
+  "version": "1.1.0",
+  "_audit": {
+    "note": "Internal audit record. Not for display to learners.",
+    "corrected_on": "2026-11-15",
+    "reason": "Counts recomputed from the corrected mapping file (the old distribution 41 + 94 + 18 = 153 did not match the 155 entries: two entries spelled धात्वर्थानुवर्तनम् had been missed); category spelling धात्वर्थअनुवर्तनम् → धात्वर्थानुवर्तनम्; book title transliteration corrected; metrics for example sources and attestation added.",
+    "changes": [
+      {
+        "field": "source_text",
+        "old": "Upasarg Artha Chandrika by Charudev Shastri Part 2 (Bharatiya Vidya Prakashan)",
+        "new": "Upasargārthacandrikā by Cārudeva Śāstrī, Part 2 (Bhāratīya Vidyā Prakāśana)"
+      },
+      {
+        "field": "distribution_by_semantic_category",
+        "old": {
+          "धात्वर्थबाधनम् (Reversal / Inversion)": 41,
+          "धात्वर्थविशिष्टता (Specialization / Modification)": 94,
+          "धात्वर्थअनुवर्तनम् (Reinforcement / Following)": 18
+        },
+        "new": {
+          "धात्वर्थबाधनम् (Reversal / shift of meaning)": 42,
+          "धात्वर्थविशिष्टता (Specialization / modification)": 93,
+          "धात्वर्थानुवर्तनम् (Reinforcement / following)": 20
+        }
+      },
+      {
+        "field": "quality_metrics",
+        "old": {
+          "schema_valid": true,
+          "unique_combination_ids": true,
+          "all_22_upasargas_covered": true,
+          "multi_upasarga_combinations_included": 8
+        },
+        "new": {
+          "schema_valid": true,
+          "unique_combination_ids": true,
+          "all_22_upasargas_covered": true,
+          "multi_upasarga_combinations_included": 8,
+          "examples_quoted_from_texts": 9,
+          "examples_constructed": 146,
+          "entries_rare_or_to_verify": 5,
+          "entries_nominal_only": 4,
+          "entries_located_in_book_scan": 31
+        }
+      },
+      {
+        "field": "version",
+        "old": null,
+        "new": "1.1.0"
+      }
+    ]
+  }
+}

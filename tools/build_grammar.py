@@ -8,6 +8,9 @@ Sources (Gold data, never edited in place):
 Corrections (reviewed 2026-11-08, every change has a reason):
   data-source/13-sandhi/rules_2026-11-08.py      rule names, sūtras, fixed examples
   data-source/12-samasa/corrections_2026-11-08.py fixed compounds, vigrahas, types
+  data-source/21-upasarga/corrections_2026-11-15.py  upasarga text, examples, the three ways
+  data-source/21-upasarga/upasarga_dhatu_mappings_2026-11-15.json  155 upasarga + root combinations
+  data-source/04-taddhita/taddhita_pratyaya_2026-11-15.json          55 taddhita suffixes
 
 Run:  python tools/build_grammar.py          (python tools/build_grammar.py --list  prints the sandhi examples with their index)
 """
@@ -165,13 +168,66 @@ UP = {  # sense, examples (word, meaning)
  "परि": ("around, fully", [("परिक्रमति", "walks around"), ("परिहारः", "avoidance")]),
  "उप": ("near, under, sub-", [("उपगच्छति", "approaches"), ("उपकारः", "help")]),
 }
-upasarga = {"sloka": up["definition"]["sanskrit"], "sloka_en": up["definition"]["english"], "pada": up["type of pada"], "cls": up["class"],
-            "nature": up["nature_of_upasargas"], "three": [["बाधते", "reverses the root's sense", "आ + गम् → आगच्छति (comes), from गच्छति (goes)"],
-                                                         ["अनुवर्तते", "follows it, adds nothing", "अधि + इ → अधीते (studies) = इ in अध्ययन sense"],
-                                                         ["विशिनष्टि", "specifies it", "हृ: प्रहारः blow, आहारः food, संहारः destruction, विहारः walk, परिहारः avoidance"]],
+# corrections and the upasarga–dhātu mappings (data-source/21-upasarga, 2026-11-15)
+UC = runpy.run_path(os.path.join(ROOT, "data-source/21-upasarga/corrections_2026-11-15.py"))
+UP.update(UC["UP_FIX"])
+UM = json.load(open(os.path.join(ROOT, "data-source/21-upasarga/upasarga_dhatu_mappings_2026-11-15.json"), encoding="utf-8"))
+UPD = {u["id"]: u for u in UM["upasargas"]}
+CAT = {"धात्वर्थबाधनम्": "b", "धात्वर्थविशिष्टता": "v", "धात्वर्थानुवर्तनम्": "a"}
+SURF = {"आङ्": "आ", "उद्": "उत्/उद्", "निस्": "निस्/निर्", "निर्": "निस्/निर्", "दुस्": "दुस्/दुर्", "दुर्": "दुस्/दुर्"}
+def combo(c):
+    cat = next(v for k, v in CAT.items() if c["semantic_category"].startswith(k))
+    gloss = c["semantic_category"].split("(", 1)[1].rstrip(")") if "(" in c["semantic_category"] else ""
+    return {"id": c["id"], "u": c["upasargas"], "rows": sorted({SURF.get(x, x) for x in c["upasargas"]}),
+            "d": c["dhatu_lemma"], "up": c["dhatu_upadesha"], "g": c["gana"].split("गणः")[0].rstrip("ः"),
+            "w": c["present_3s"] or c["combined_lemma"], "fin": bool(c["present_3s"]), "cat": cat, "cg": gloss,
+            "m": c["meanings"], "ex": c["classical_example"],
+            "src": "" if c["example_source"].startswith("constructed") else c["example_source"],
+            "note": c["notes"] or "", "att": c["attestation"]}
+def row(u):
+    ds = [UPD[i] for i in UC["ROW_IDS"][u]]
+    return {"u": u, "en": UP[u][0], "ex": UP[u][1],
+            "sa": [m for x in ds for m in x["primary_meanings_sa"]][:6],
+            "hi": ds[0]["meanings_hi"], "te": ds[0]["meanings_te"],
+            "phon": " ".join(x["phonological_effects"] for x in ds if x["phonological_effects"]),
+            "use": " ".join(x["usage_note"] for x in ds if x.get("usage_note"))}
+upasarga = {"sloka": up["definition"]["sanskrit"], "sloka_en": up["definition"]["english"],
+            "pada": UC["PADA"], "cls": UC["CLS"], "nature": UC["NATURE"], "count_note": UC["COUNT_NOTE"],
+            "three": UC["THREE"], "verse2": UC["VERSE2"], "verse2_en": UC["VERSE2_EN"],
             "hr": [["प्र", "प्रहारः", "a blow"], ["आ", "आहारः", "food"], ["सम्", "संहारः", "destruction"], ["वि", "विहारः", "a stroll"], ["परि", "परिहारः", "avoidance"], ["उप", "उपहारः", "a gift"], ["अभि", "अभिहारः", "an attack"]],
-            "list": [{"u": u, "en": UP[u][0], "ex": UP[u][1]} for u in up["list_of_upasargas"]]}
+            "list": [row(u) for u in up["list_of_upasargas"]],
+            "combos": [combo(c) for c in UM["upasarga_dhatu_combinations"]]}
+assert all(r in {x["u"] for x in upasarga["list"]} for c in upasarga["combos"] for r in c["rows"])
 
-out = {"sandhi": sandhi, "samasa": samasa, "pratyaya": pratyaya, "upasarga": upasarga}
+# ═════════ तद्धिताः (data-source/04-taddhita, corrected and extended 2026-11-15) ═════════
+TD = json.load(open(os.path.join(ROOT, "data-source/04-taddhita/taddhita_pratyaya_2026-11-15.json"), encoding="utf-8"))["pratyayas"]
+TD_GROUP = {"apatyartha_patronymic": "apatya", "gotraputra_patronymic": "apatya", "sambandharthaka_relational": "sambandha", "kalarthaka": "sambandha",
+            "bhavarthe_abstract": "bhava", "matvarthiya_possessive": "matup", "tulanarthaka_comparative": "tulana", "tulanarthaka_superlative": "tulana",
+            "vikararthe_prachurya": "vishesha", "sadrishyarthaka": "vishesha", "prashamsarthaka": "vishesha", "kutsitarthaka": "vishesha",
+            "alparthaka_diminutive": "vishesha", "bhutapurva": "vishesha", "vibhaktyarthaka_avyaya": "avyaya", "kalarthaka_avyaya": "avyaya",
+            "prakararthaka_avyaya": "avyaya", "sankhyarthaka_multiplicative": "sankhya", "sankhyarthaka_frequency": "sankhya",
+            "puranarthaka_ordinal": "sankhya", "parimanarthaka": "sankhya", "vibhagarthaka_distribution": "sankhya",
+            "abhutatadbhave_transformation": "cvi", "samarpanarthaka": "cvi"}
+taddhita = {
+  "intro": [
+    "A taddhita suffix is added to a noun stem (प्रातिपदिकम्), not to a root: दशरथ + इञ् → दाशरथिः “son of Daśaratha”. A kṛt suffix is added to a root: कृ + तृच् → कर्तृ.",
+    "The meaning can always be said in words as well (समर्थानां प्रथमाद्वा 4.1.82): दशरथस्य अपत्यम् = दाशरथिः. The suffix is optional.",
+    "Letters that drop signal changes: ञ्, ण् and क् make the first vowel strong (vṛddhi, 7.2.117–118): दशरथ → दा-, शिव → शै-, उपगु → औ-.",
+    "Some suffixes are replaced: ठ → इक (7.3.50), ढ → एय, छ → ईय, ख → ईन (7.1.2). A final अ or इ of the stem drops before a vowel (6.4.148).",
+  ],
+  "groups": {"apatya": ["अपत्यार्थकाः", "Son, descendant"], "sambandha": ["सम्बन्धार्थकाः", "Belonging, of a place or time"],
+             "bhava": ["भावार्थकाः", "Abstract nouns (-ness)"], "matup": ["मत्वर्थीयाः", "Having, possessing"],
+             "tulana": ["तारतम्यम्", "More and most"], "vishesha": ["विशेषार्थकाः", "Made of, like, small, praised, former"],
+             "avyaya": ["अव्ययकराः", "Adverbs: where, when, how"], "sankhya": ["संख्यार्थकाः", "Numbers: -th, -fold, times, each"],
+             "cvi": ["च्व्यादयः", "Becoming, turning into"]},
+  "list": [{"id": x["id"], "p": x["sanskrit_name"], "g": TD_GROUP[x["category"]], "lv": x["level"],
+            "it": " ".join(x["anubandha_info"]["it_markers"]), "rem": x["anubandha_info"]["retained_affix_sa"], "eff": x["anubandha_info"]["grammatical_effect"],
+            "sutra": x["panini_sutra"]["sutra"], "num": x["panini_sutra"]["number"], "vidh": x["panini_sutra"].get("vidhayaka_sutra", ""),
+            "m": x["meanings"], "rules": x["morphological_rules"],
+            "ex": [{"b": e["base"], "w": e["derived_form"], "m": {"en": e["meaning_en"], "te": e["meaning_te"], "hi": e["meaning_hi"]},
+                    "note": e.get("note", ""), "chk": e.get("check", "")} for e in x["examples"]]} for x in TD],
+}
+
+out = {"sandhi": sandhi, "samasa": samasa, "pratyaya": pratyaya, "upasarga": upasarga, "taddhita": taddhita}
 json.dump(out, open(os.path.join(ROOT, "app/src/data/grammar.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-print(len(rules), "sandhi rules,", sum(len(r["ex"]) for r in rules), "examples;", len(ex), "compounds;", len(PR), "kṛt pratyayas;", len(upasarga["list"]), "upasargas")
+print(len(rules), "sandhi rules,", sum(len(r["ex"]) for r in rules), "examples;", len(ex), "compounds;", len(PR), "kṛt pratyayas;", len(upasarga["list"]), "upasarga rows;", len(upasarga["combos"]), "upasarga–dhātu combinations;", len(taddhita["list"]), "taddhita suffixes,", sum(len(x["ex"]) for x in taddhita["list"]), "examples")

@@ -54,11 +54,13 @@ D:\SamskritaMedhaa-Game\
 │   │                         dhatu_400_tinanta.json, dhatu_400_krt.json — app\src\data\index.ts loads them from there)
 │   ├─ 18-dhatu-meanings\    meanings of the 400 dhātus in 14 more languages + review sheets
 │   ├─ 19-lakara\            what each lakāra means (sūtra, Sanskrit, English)
-│   └─ 20-raghuvamsha\       रघुवंशम् 1.11–1.70 from the Vāvilla Press edition
+│   ├─ 20-raghuvamsha\       रघुवंशम् 1.11–1.70 from the Vāvilla Press edition
+│   ├─ 21-upasarga\          22 upasargas and 155 upasarga + root verbs (Upasargārthacandrikā)
+│   └─ 22-vibhakti-samanvaya\ विभक्तिसमन्वयः: agreement of case and verb (gold document + corrected copy)
 │
 ├─ tools\                    Python scripts that build app\src\data from data-source
 │   ├─ build_game_data.py    python tools\build_game_data.py
-│   └─ build_grammar.py      python tools\build_grammar.py   (sandhi, samāsa, suffixes)
+│   └─ build_grammar.py      python tools\build_grammar.py   (sandhi, samāsa, suffixes, upasargas)
 │
 └─ docs\
     ├─ HOW-TO-REVIEW.md      playing, flagging errors, sending flags to Claude

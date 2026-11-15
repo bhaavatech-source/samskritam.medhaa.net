@@ -12,6 +12,7 @@ import { useSa } from "../i18n/script";
 import { krtGloss } from "../i18n/forms";
 import { ListDetail, Tabs, Speak, KsTop, RomS } from "./Kosha";
 import { UpasargaTab } from "./Upasarga";
+import { TaddhitaTab } from "./Taddhita";
 import "./kosha.css";
 
 const G = GRAMMAR;
@@ -155,9 +156,9 @@ export const GrammarBook: React.FC = () => {
   const r = G.sandhi.rules;
   return (
     <div className="ks">
-      <KsTop title="व्याकरणम्" en="Grammar" sub={`${r.length} sandhi rules with ${r.reduce((a, x) => a + x.ex.length, 0)} examples, ${G.samasa.ex.length} compounds, ${G.pratyaya.list.length} kṛt suffixes and the 22 upasargas with ${G.upasarga.combos.length} verbs.`} />
-      <Tabs tabs={[["s", "सन्धिः · Sandhi"], ["m", "समासः · Compounds"], ["p", "कृत्प्रत्ययाः · Suffixes"], ["u", "उपसर्गाः · Prefixes"]]} on={tab} set={setTab} />
-      {tab === "s" ? <SandhiTab /> : tab === "m" ? <SamasaTab /> : tab === "p" ? <PratyayaTab /> : <UpasargaTab />}
+      <KsTop title="व्याकरणम्" en="Grammar" sub={`${r.length} sandhi rules with ${r.reduce((a, x) => a + x.ex.length, 0)} examples, ${G.samasa.ex.length} compounds, ${G.pratyaya.list.length} kṛt suffixes, ${G.taddhita.list.length} taddhita suffixes and the 22 upasargas with ${G.upasarga.combos.length} verbs.`} />
+      <Tabs tabs={[["s", "सन्धिः · Sandhi"], ["m", "समासः · Compounds"], ["p", "कृत्प्रत्ययाः · Suffixes"], ["t", "तद्धिताः · Noun suffixes"], ["u", "उपसर्गाः · Prefixes"]]} on={tab} set={setTab} />
+      {tab === "s" ? <SandhiTab /> : tab === "m" ? <SamasaTab /> : tab === "p" ? <PratyayaTab /> : tab === "t" ? <TaddhitaTab /> : <UpasargaTab />}
     </div>
   );
 };

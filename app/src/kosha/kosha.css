@@ -140,3 +140,28 @@
 .ks-intro-arrow{color:#7c3aed;padding:5px 2px!important}
 .ks-intro-why{font-size:.86rem;color:#4b5563;overflow-wrap:anywhere}
 @media (max-width:640px){.ks-intro-ex tr{display:grid;grid-template-columns:auto auto 1fr}.ks-intro-why{grid-column:1/-1;padding-top:0!important}.ks-intro-sa{white-space:normal}}
+
+/* उपसर्गाः (Upasarga.tsx) */
+.up-verse2{font-size:1rem;margin-top:2px}
+.up-filter{margin:6px 0 10px}
+.up-list{display:flex;flex-direction:column;gap:6px}
+.up-row{border:1px solid rgba(0,0,0,.08);border-radius:12px;background:var(--card,#fff)}
+.up-row.on{border-color:#c4b5fd;box-shadow:0 2px 10px rgba(124,58,237,.08)}
+.up-head{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:5.5rem minmax(8rem,12rem) 1fr auto;gap:4px 12px;align-items:baseline;padding:8px 12px;cursor:pointer}
+.up-head:focus-visible{outline:2px solid #7c3aed;border-radius:12px}
+.up-head .ks-l-sa{font-size:1.15rem}
+.up-en{color:#374151}
+.up-n{font-size:.8rem;color:#6d28d9;white-space:nowrap}
+.up-body{padding:4px 12px 12px}
+.up-combos td{vertical-align:top}
+.up-w{white-space:nowrap}
+.up-parts{display:block;font-size:.8rem;color:#6b7280}
+.up-sa{display:block;font-size:.9rem;color:#7c2d12}
+.up-ex{display:block;margin-top:3px;font-size:.95rem}
+.up-src{color:#6b7280}
+.up-note{display:block;margin-top:3px;font-size:.82rem;color:#4b5563;line-height:1.5}
+.up-pill{display:inline-block;margin-top:4px;font-size:.7rem}
+.up-cat{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.78rem;white-space:nowrap;font-family:'Noto Sans Devanagari',serif}
+.up-cat-b{background:#fee2e2;color:#991b1b}.up-cat-v{background:#ede9fe;color:#5b21b6}.up-cat-a{background:#dcfce7;color:#166534}
+@media (max-width:640px){.up-head{grid-template-columns:4rem 1fr auto}.up-exs{grid-column:1/-1}.up-w{white-space:normal}}
+.up-open{margin:10px 0 4px;font-size:.85rem;padding:3px 12px}

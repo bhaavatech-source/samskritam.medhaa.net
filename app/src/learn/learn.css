@@ -111,3 +111,17 @@
 .pk-parts { display: flex; flex-wrap: wrap; gap: 10px; font-family: 'Noto Sans Devanagari', serif; font-size: 1.15rem; }
 .pk-part { display: inline-flex; gap: 4px; }
 @media (max-width: 560px) { .pk-steps li { grid-template-columns: 24px 1fr; } .pk-why { grid-column: 2; } .ln-two { grid-template-columns: 1fr; } .ln-demo-bar label { flex: 1 1 100%; } }
+
+/* विभक्तिसमन्वयः (Samanvaya.tsx) */
+.ln-sa { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; line-height: 1.7; }
+.ln-note { color: #526079; font-size: .88rem; line-height: 1.55; }
+.sv-table tbody th { white-space: normal; min-width: 9rem; }
+.sv-table td { white-space: nowrap; }
+.sv-voice { padding: 8px 0 10px; border-top: 1px solid #f1ecf7; }
+.sv-voice:first-of-type { border-top: none; }
+.sv-voice h4 { margin: 4px 0; color: #6b21a8; }
+.sv-rule { display: block; color: #7c2d12; font-weight: 600; }
+.sv-ok, .sv-bad { margin: 6px 0 2px; }
+.sv-ok span { color: #15803d; font-weight: 700; }
+.sv-bad span { color: #b91c1c; font-weight: 700; }
+.sv-bad b { text-decoration: line-through; text-decoration-color: rgba(185,28,28,.45); }

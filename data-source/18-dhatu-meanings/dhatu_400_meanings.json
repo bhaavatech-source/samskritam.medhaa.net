@@ -40626,5 +40626,795 @@
     ]
    }
   }
+ },
+ "01.1077": {
+  "entries": [
+   "MDH-401"
+  ],
+  "lemma": "स्था",
+  "dhatupatha_artha": "गतिनिवृत्तौ",
+  "sense_en": "to stand, stay",
+  "meanings": {
+   "en": {
+    "text": "to stand, stay",
+    "status": "draft"
+   },
+   "te": {
+    "text": "నిలుచుట, ఉండుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "ठहरना, खड़ा होना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "stehen",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "se tenir debout",
+    "status": "draft"
+   },
+   "es": {
+    "text": "estar de pie",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "стоять",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يقف",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "站",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "立つ",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "서다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "நில்",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ನಿಲ್ಲು",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "നിൽക്കുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "उभे राहणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "দাঁড়ানো",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ଠିଆ ହେବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.1046": {
+  "entries": [
+   "MDH-402"
+  ],
+  "lemma": "हृ",
+  "dhatupatha_artha": "हरणे",
+  "sense_en": "to carry, take away",
+  "meanings": {
+   "en": {
+    "text": "to carry, take away",
+    "status": "draft"
+   },
+   "te": {
+    "text": "తీసుకొనిపోవుట, హరించుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "ले जाना, हरना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "wegtragen",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "emporter",
+    "status": "draft"
+   },
+   "es": {
+    "text": "llevarse",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "уносить",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يحمل بعيدًا",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "带走",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "持ち去る",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "가져가다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "எடுத்துச் செல்",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ಒಯ್ಯು",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "കൊണ്ടുപോകുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "नेणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "নিয়ে যাওয়া",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ନେଇଯିବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.0990": {
+  "entries": [
+   "MDH-403"
+  ],
+  "lemma": "सद्",
+  "dhatupatha_artha": "विशरणगत्यवसादनेषु",
+  "sense_en": "to sit, sink, be weary",
+  "meanings": {
+   "en": {
+    "text": "to sit, sink, be weary",
+    "status": "draft"
+   },
+   "te": {
+    "text": "కూర్చుండుట, కృంగుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "बैठना, शिथिल होना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "sich setzen",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "s'asseoir",
+    "status": "draft"
+   },
+   "es": {
+    "text": "sentarse",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "садиться",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يجلس",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "坐下",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "座る",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "앉다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "அமர்",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ಕುಳಿತುಕೊಳ್ಳು",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "ഇരിക്കുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "बसणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "বসা",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ବସିବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.1082": {
+  "entries": [
+   "MDH-404"
+  ],
+  "lemma": "स्मृ",
+  "dhatupatha_artha": "चिन्तायाम्",
+  "sense_en": "to remember",
+  "meanings": {
+   "en": {
+    "text": "to remember",
+    "status": "draft"
+   },
+   "te": {
+    "text": "జ్ఞాపకము చేసికొనుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "याद करना, स्मरण करना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "sich erinnern",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "se souvenir",
+    "status": "draft"
+   },
+   "es": {
+    "text": "recordar",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "помнить",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يتذكر",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "记得",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "思い出す",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "기억하다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "நினை",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ನೆನಪಿಸಿಕೊಳ್ಳು",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "ഓർമ്മിക്കുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "आठवणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "মনে করা",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ମନେ ପକାଇବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.0574": {
+  "entries": [
+   "MDH-405"
+  ],
+  "lemma": "सेव्",
+  "dhatupatha_artha": "सेवने",
+  "sense_en": "to serve, attend on",
+  "meanings": {
+   "en": {
+    "text": "to serve, attend on",
+    "status": "draft"
+   },
+   "te": {
+    "text": "సేవించుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "सेवा करना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "dienen",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "servir",
+    "status": "draft"
+   },
+   "es": {
+    "text": "servir",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "служить",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يخدم",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "侍奉",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "仕える",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "섬기다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "சேவை செய்",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ಸೇವೆ ಮಾಡು",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "സേവിക്കുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "सेवा करणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "সেবা করা",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ସେବା କରିବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.0822": {
+  "entries": [
+   "MDH-406"
+  ],
+  "lemma": "हस्",
+  "dhatupatha_artha": "हसने",
+  "sense_en": "to laugh",
+  "meanings": {
+   "en": {
+    "text": "to laugh",
+    "status": "draft"
+   },
+   "te": {
+    "text": "నవ్వుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "हँसना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "lachen",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "rire",
+    "status": "draft"
+   },
+   "es": {
+    "text": "reír",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "смеяться",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يضحك",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "笑",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "笑う",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "웃다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "சிரி",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ನಗು",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "ചിരിക്കുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "हसणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "হাসা",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ହସିବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.1085": {
+  "entries": [
+   "MDH-407"
+  ],
+  "lemma": "सृ",
+  "dhatupatha_artha": "गतौ",
+  "sense_en": "to go, flow",
+  "meanings": {
+   "en": {
+    "text": "to go, flow",
+    "status": "draft"
+   },
+   "te": {
+    "text": "పోవుట, ప్రవహించుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "चलना, बहना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "gehen, fließen",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "aller, couler",
+    "status": "draft"
+   },
+   "es": {
+    "text": "ir, fluir",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "идти, течь",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يسير، يجري",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "行走，流动",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "進む、流れる",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "가다, 흐르다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "செல், பாய்",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ಹೋಗು, ಹರಿ",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "പോകുക, ഒഴുകുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "जाणे, वाहणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "চলা, বয়ে যাওয়া",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ଚାଲିବା, ବହିବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.0853": {
+  "entries": [
+   "MDH-408"
+  ],
+  "lemma": "शुभ्",
+  "dhatupatha_artha": "दीप्तौ",
+  "sense_en": "to shine, look beautiful",
+  "meanings": {
+   "en": {
+    "text": "to shine, look beautiful",
+    "status": "draft"
+   },
+   "te": {
+    "text": "ప్రకాశించుట, శోభిల్లుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "चमकना, शोभित होना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "glänzen",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "briller",
+    "status": "draft"
+   },
+   "es": {
+    "text": "brillar",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "сиять",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يتألق",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "闪耀",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "輝く",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "빛나다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "ஒளிர்",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ಹೊಳೆ",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "തിളങ്ങുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "शोभणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "শোভা পাওয়া",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ଶୋଭା ପାଇବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.1140": {
+  "entries": [
+   "MDH-409"
+  ],
+  "lemma": "तप्",
+  "dhatupatha_artha": "सन्तापे",
+  "sense_en": "to heat, burn, practise austerity",
+  "meanings": {
+   "en": {
+    "text": "to heat, burn, practise austerity",
+    "status": "draft"
+   },
+   "te": {
+    "text": "తపించుట, వేడెక్కించుట, తపస్సు చేయుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "तपना, तपाना, तप करना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "erhitzen; Askese üben",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "chauffer ; faire pénitence",
+    "status": "draft"
+   },
+   "es": {
+    "text": "calentar; hacer penitencia",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "нагревать; подвижничать",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يُسخِّن؛ يتقشّف",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "加热；修苦行",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "熱する・苦行する",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "데우다; 고행하다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "சூடாக்கு; தவம் செய்",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ಬಿಸಿ ಮಾಡು; ತಪಸ್ಸು ಮಾಡು",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "ചൂടാക്കുക; തപസ്സു ചെയ്യുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "तापवणे; तप करणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "তাপ দেওয়া; তপস্যা করা",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ଉତ୍ତପ୍ତ କରିବା; ତପସ୍ୟା କରିବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
+ },
+ "01.1124": {
+  "entries": [
+   "MDH-410"
+  ],
+  "lemma": "तॄ",
+  "dhatupatha_artha": "प्लवनतरणयोः",
+  "sense_en": "to cross, swim across",
+  "meanings": {
+   "en": {
+    "text": "to cross, swim across",
+    "status": "draft"
+   },
+   "te": {
+    "text": "దాటుట, ఈదుట",
+    "status": "draft"
+   },
+   "hi": {
+    "text": "पार करना, तैरना",
+    "status": "draft"
+   },
+   "de": {
+    "text": "überqueren",
+    "status": "draft"
+   },
+   "fr": {
+    "text": "traverser",
+    "status": "draft"
+   },
+   "es": {
+    "text": "cruzar",
+    "status": "draft"
+   },
+   "ru": {
+    "text": "переправляться",
+    "status": "draft"
+   },
+   "ar": {
+    "text": "يعبر",
+    "status": "draft"
+   },
+   "zh": {
+    "text": "渡过",
+    "status": "draft"
+   },
+   "ja": {
+    "text": "渡る",
+    "status": "draft"
+   },
+   "ko": {
+    "text": "건너다",
+    "status": "draft"
+   },
+   "ta": {
+    "text": "கட",
+    "status": "draft"
+   },
+   "kn": {
+    "text": "ದಾಟು",
+    "status": "draft"
+   },
+   "ml": {
+    "text": "കടക്കുക",
+    "status": "draft"
+   },
+   "mr": {
+    "text": "पार करणे",
+    "status": "draft"
+   },
+   "bn": {
+    "text": "পার হওয়া",
+    "status": "draft"
+   },
+   "or": {
+    "text": "ପାର ହେବା",
+    "status": "draft"
+   }
+  },
+  "note": "Supplement 2026-11-15 (root of the upasarga verbs, not in the teacher-marked list); all meanings drafted by Claude, for native review."
  }
 }

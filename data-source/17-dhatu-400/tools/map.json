@@ -2388,5 +2388,65 @@
 "nic": true,
 "note": "कूर्दयति: the root is कुर्दँ (1st class, कूर्दते); shown is its causative",
 "how": "hand"
+},
+"MDH-401": {
+"code": "01.1077",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-402": {
+"code": "01.1046",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-403": {
+"code": "01.0990",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-404": {
+"code": "01.1082",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-405": {
+"code": "01.0574",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-406": {
+"code": "01.0822",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-407": {
+"code": "01.1085",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-408": {
+"code": "01.0853",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-409": {
+"code": "01.1140",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
+},
+"MDH-410": {
+"code": "01.1124",
+"nic": false,
+"note": "",
+"how": "supplement 2026-11-15"
 }
 }

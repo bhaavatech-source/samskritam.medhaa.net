@@ -302,6 +302,77 @@ const errorQ = () => (): QuizItem | null => {
   };
 };
 
+
+// ── विभक्तिसमन्वयः: the verb agrees with the word it names (data-source/22-vibhakti-samanvaya);
+//    used in लट्-लकारः (agreeQ) and कर्मणिप्रयोगः (prayogaQ, bhaveQ) ──
+// subjects in प्रथम, मध्यम, उत्तम × एक, द्वि, बहु (the order of the 9 verb cells)
+const SV_SUBJ = [["बालकः", "बालकौ", "बालकाः"], ["त्वम्", "युवाम्", "यूयम्"], ["अहम्", "आवाम्", "वयम्"]];
+const SV_VERB: [string, string[]][] = [   // object, लट् कर्तरि forms (प्रथम… उत्तम, एक… बहु)
+  ["ओदनं", ["पचति", "पचतः", "पचन्ति", "पचसि", "पचथः", "पचथ", "पचामि", "पचावः", "पचामः"]],
+  ["ग्रन्थं", ["पठति", "पठतः", "पठन्ति", "पठसि", "पठथः", "पठथ", "पठामि", "पठावः", "पठामः"]],
+  ["पत्रं", ["लिखति", "लिखतः", "लिखन्ति", "लिखसि", "लिखथः", "लिखथ", "लिखामि", "लिखावः", "लिखामः"]],
+  ["ग्रामं", ["गच्छति", "गच्छतः", "गच्छन्ति", "गच्छसि", "गच्छथः", "गच्छथ", "गच्छामि", "गच्छावः", "गच्छामः"]],
+  ["सत्यं", ["वदति", "वदतः", "वदन्ति", "वदसि", "वदथः", "वदथ", "वदामि", "वदावः", "वदामः"]],
+];
+const SV_PU = ["प्रथमपुरुषः", "मध्यमपुरुषः", "उत्तमपुरुषः"];
+const agreeQ = () => (): QuizItem | null => {
+  const [obj, forms] = pick(SV_VERB);
+  const pu = Math.floor(Math.random() * 3), va = Math.floor(Math.random() * 3);
+  const subj = SV_SUBJ[pu][va], ans = forms[pu * 3 + va];
+  return {
+    prompt: "", sentence: `${subj} ${obj} ___ ।`, tags: ["विभक्तिसमन्वयः", SV_PU[pu], VACANA[va]],
+    clue: `The doer is ${subj}: ${["3rd", "2nd", "1st"][pu]} person, ${VACANA_EN[va]}.`,
+    ask: "क्रियापदं चिनुत · Which verb form agrees with the doer?", options: options(ans, forms.filter(f => f !== ans)), answer: ans,
+    optDeva: true, speak: `${subj} ${obj} ${ans}`, also: "कर्तरि प्रयोगे क्रिया कर्तुः पुरुषं वचनं च अनुसरति।",
+    flag: { kind: "grammar", id: "samanvaya:agree", field: `${subj} ${obj} ${ans}`, value: ans, where: `विभक्तिसमन्वयः — ${subj} ${obj} ${ans}` },
+  };
+};
+// कर्तरि / कर्मणि / भावे: which sentence has the right cases for its verb?
+const SV_PAIRS: [string, string, string, string, string, string][] = [  // doer nom, doer instr, object acc, object nom, active, passive
+  ["रामः", "रामेण", "ग्रन्थं", "ग्रन्थः", "पठति", "पठ्यते"],
+  ["माता", "मात्रा", "ओदनं", "ओदनः", "पचति", "पच्यते"],
+  ["सीता", "सीतया", "श्लोकं", "श्लोकः", "लिखति", "लिख्यते"],
+  ["बालकः", "बालकेन", "ग्रामं", "ग्रामः", "गच्छति", "गम्यते"],
+  ["शिष्यः", "शिष्येण", "गुरुं", "गुरुः", "नमति", "नम्यते"],
+];
+const prayogaQ = () => (): QuizItem | null => {
+  const [dn, di, oa, on, act, pas] = pick(SV_PAIRS);
+  const passive = Math.random() < 0.5;
+  const right = passive ? `${di} ${on} ${pas} ।` : `${dn} ${oa} ${act} ।`;
+  const wrong = passive ? [`${dn} ${on} ${pas} ।`, `${di} ${oa} ${pas} ।`] : [`${di} ${oa} ${act} ।`, `${dn} ${on} ${act} ।`];
+  return {
+    prompt: "", tags: ["विभक्तिसमन्वयः", passive ? "कर्मणि" : "कर्तरि"], clue: passive ? `${pas} is passive: the object is named by the verb.` : `${act} is active: the doer is named by the verb.`,
+    ask: "साधु वाक्यं किम्? · Which sentence is correct?", options: shuffle([right, ...wrong]), answer: right, optDeva: true, speak: right,
+    also: passive ? "कर्मणि: कर्म प्रथमायाम्, कर्ता तृतीयायाम्।" : "कर्तरि: कर्ता प्रथमायाम्, कर्म द्वितीयायाम्।",
+    flag: { kind: "grammar", id: "samanvaya:prayoga", field: right, value: right, where: `विभक्तिसमन्वयः — ${right}` },
+  };
+};
+const bhaveQ = () => (): QuizItem | null => {
+  const [dn, di] = pick([["रामः", "रामेण"], ["सीता", "सीतया"], ["बालकः", "बालकेन"]]);
+  const [act, bh] = pick([["भवति", "भूयते"], ["हसति", "हस्यते"], ["शेते", "शय्यते"]]);
+  const right = `${di} ${bh} ।`;
+  return {
+    prompt: "", tags: ["विभक्तिसमन्वयः", "भावे"], clue: `${bh} is impersonal (भावे): no word is named by the verb.`,
+    ask: "साधु वाक्यं किम्? · Which sentence is correct?", options: shuffle([right, `${dn} ${bh} ।`, `${di} ${act} ।`]), answer: right, optDeva: true, speak: right,
+    also: "भावे: कर्ता तृतीयायाम्, क्रिया प्रथमपुरुषैकवचने।",
+    flag: { kind: "grammar", id: "samanvaya:bhave", field: right, value: right, where: `विभक्तिसमन्वयः — ${right}` },
+  };
+};
+
+
+// ── तद्धिताः: which suffix made this word? (GRAMMAR.taddhita, data-source/04-taddhita) ──
+const TD_PLAIN = GRAMMAR.taddhita.list.filter(x => !x.p.includes(" ") && x.ex.length >= 2);
+const taddhitaQ = () => (): QuizItem | null => {
+  const x = pick(TD_PLAIN); const e = pick(x.ex);
+  const others = TD_PLAIN.filter(y => y.p !== x.p && !y.ex.some(f => f.w === e.w)).map(y => y.p);
+  return {
+    prompt: e.w, tags: ["तद्धितः"], clue: `${e.b} + ? — ${e.m.en}`,
+    ask: "कः तद्धितप्रत्ययः? · Which taddhita suffix made this word?", options: options(x.p, others), answer: x.p, optDeva: true, speak: e.w,
+    also: `${e.b} + ${x.p} → ${e.w} · ${x.sutra} (${x.num})`,
+    flag: { kind: "grammar", id: x.id, field: `example:${e.b}`, value: `${e.b} + ${x.p} → ${e.w}`, where: `${x.p}: ${e.b} → ${e.w}` },
+  };
+};
+
 // ── the journey ────────────────────────────────────────────────
 export const STATIONS: Station[] = [
   // ───────────── बालः ─────────────
@@ -324,8 +395,8 @@ export const STATIONS: Station[] = [
     blurb: "गम्, पठ्, लिख्… pick what each root means.",
     items: lang => repeat(8, rootMeaningQ(lang)) },
   { id: "b7", region: "BAALA", kind: "quiz", title: "लट्-लकारः", en: "Present tense", icon: "🔥", lives: 3, hints: true, rounds: 8,
-    blurb: "भवति, भवतः, भवन्ति… pick the present-tense form for the person and number.",
-    items: lang => repeat(8, verbQ(["lat"], "kartari", lang)) },
+    blurb: "भवति, भवतः, भवन्ति… pick the present-tense form for the person and number — and the form that agrees with the doer (त्वम् … पचसि).",
+    items: lang => mix(8, [verbQ(["lat"], "kartari", lang), verbQ(["lat"], "kartari", lang), agreeQ()]) },
   { id: "b8", region: "BAALA", kind: "memory", title: "अव्ययानि", en: "Little words", icon: "🔗", lives: null, hints: false,
     blurb: "कुत्र, कदा, अत्र… words that never change. Match each with its meaning.",
     pairs: lang => take(AVYAYA, 6).map(a => ({ a: a.sa, b: firstSense(avyayaMeaning(a, lang), 22) })) },
@@ -370,7 +441,8 @@ export const STATIONS: Station[] = [
   { id: "a11", region: "ADHYETA", kind: "quiz", title: "प्रत्ययभेदाः", en: "What does the suffix do?", icon: "🔀", lives: 3, hints: true, rounds: 8,
     blurb: "कृ + तृच् → कर्तृ, दशरथ + इञ् → दाशरथिः, तस्मिन् → तत्र: which of the eleven kinds of suffix is at work? Also the kinds of root and stem.",
     items: () => mix(8, [pkQ(PK.kinds, "कः प्रत्ययप्रकारः? · What does this suffix turn into what?", 3, "प्रत्ययप्रकारः"),
-      pkQ(PK.dhatu_kinds, "कः धातुप्रकारः? · Which kind of root?", 2, "धातुप्रकारः"), pkQ(PK.pratipadika_kinds, "कः प्रातिपदिकप्रकारः? · Which kind of stem?", 2, "प्रातिपदिकप्रकारः")]) },
+      pkQ(PK.dhatu_kinds, "कः धातुप्रकारः? · Which kind of root?", 2, "धातुप्रकारः"), pkQ(PK.pratipadika_kinds, "कः प्रातिपदिकप्रकारः? · Which kind of stem?", 2, "प्रातिपदिकप्रकारः"),
+      taddhitaQ(), taddhitaQ()]) },
   { id: "a7", region: "ADHYETA", kind: "quiz", title: "अध्येतृ-परीक्षा", en: "Adhyetā challenge", icon: "👑", boss: true, lives: 3, hints: true, rounds: 10, timeLimit: 30,
     blurb: "Cases, pronouns, tenses and participles — against the clock.",
     items: lang => mix(10, [formQ(NOUNS, [0, 1, 2, 3, 4, 5, 6, 7], lang), formQ(PRON_NUM, [0, 1, 2, 3, 4, 5, 6], lang), verbQ(["lan", "lot", "lrt"], "kartari", lang), krtQ(BAALA_KRT, lang), avyayaFillQ()]) },
@@ -379,9 +451,9 @@ export const STATIONS: Station[] = [
   { id: "n1", region: "NIPUNA", kind: "quiz", title: "दशलकाराः", en: "All ten lakāras", icon: "🌀", lives: 3, hints: true, rounds: 8,
     blurb: "लिट्, लुङ्, आशीर्लिङ्, लृङ्… every tense and mood.",
     items: lang => repeat(8, verbQ(["vidhilin", "lut", "lit", "lun", "asirlin", "lrn"], "kartari", lang)) },
-  { id: "n2", region: "NIPUNA", kind: "quiz", title: "कर्मणिप्रयोगः", en: "Passive voice", icon: "🔄", lives: 3, hints: true, rounds: 8,
-    blurb: "पठ्यते, लिख्यते, क्रियते — the passive (कर्मणि) forms.",
-    items: lang => repeat(8, verbQ(["lat", "lan", "lot", "vidhilin", "lrt"], "karmani", lang)) },
+  { id: "n2", region: "NIPUNA", kind: "quiz", title: "कर्मणि भावे च", en: "Passive & impersonal", icon: "🔄", lives: 3, hints: true, rounds: 8,
+    blurb: "पठ्यते, लिख्यते, क्रियते — the passive (कर्मणि) and impersonal (भावे) forms, and which case the doer takes: रामेण ग्रन्थः पठ्यते, रामेण भूयते.",
+    items: lang => mix(8, [verbQ(["lat", "lan", "lot", "vidhilin", "lrt"], "karmani", lang), verbQ(["lat", "lan", "lot", "vidhilin", "lrt"], "karmani", lang), prayogaQ(), bhaveQ()]) },
   { id: "n3", region: "NIPUNA", kind: "quiz", title: "सर्वकृदन्तानि", en: "Every kṛdanta", icon: "🧬", lives: 3, hints: true, rounds: 8,
     blurb: "All twenty suffixes: णमुल्, ण्वुल्, तृच्, घञ्, क्तिन्…",
     items: lang => repeat(8, krtQ(null, lang)) },

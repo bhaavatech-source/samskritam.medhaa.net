@@ -13,6 +13,7 @@ import { nounGloss, verbGloss } from "../i18n/forms";
 import { useLang } from "../settings";
 import { speak } from "../speech";
 import { PrakritiPratyaya, Prakriya } from "./Prakriya";
+import { AgreementCard, PrathamaCard, AdhyaharaCard } from "./Samanvaya";
 import "./learn.css";
 
 type Ch = "shabda" | "dhatu" | "avyaya" | "prakriti" | "prakriya";
@@ -173,6 +174,7 @@ const Shabda: React.FC = () => {
         <p><b>विवक्षातः कारकाणि भवन्ति</b>: which role a thing plays depends on what the speaker wants to say. The same pot can be the place (स्थाल्यां पचति, “cooks in the pot”), the instrument (स्थाल्या पचति, “cooks with the pot”) or even the doer (स्थाली पचति, “the pot cooks”). Whatever the intention, the relation always lands in one of these eight.</p>
       </Card>
 
+      <PrathamaCard />
       <Card title="सूक्ष्मार्थाः · Finer meanings inside each vibhakti">
         <p>Each of the eight is a <b>head</b> with several finer meanings under it. Pāṇini lists them in the section 2.3 (and the kāraka rules 1.4.23–55). These finer meanings are where other languages' extra cases and prepositions land:</p>
         <div className="ln-table-wrap"><table className="ln-table ln-sub"><thead><tr><th>विभक्तिः</th><th>meaning</th><th>example</th><th>sūtra</th></tr></thead>
@@ -262,6 +264,7 @@ const Dhatu: React.FC = () => {
         <p>Every language distinguishes the speaker, the listener and others (the thesis, 4.8.8 Person / Deixis), and most also mark number (4.8.9). So the 3 × 3 grid of meanings is found everywhere, even where the verb itself does not change (Chinese, Japanese state it with a pronoun or leave it to context). Some languages make finer person distinctions; see the open point below.</p>
       </Card>
 
+      <AgreementCard />
       <Card title="दश लकाराः · Ten tenses and moods">
         <p>The same nine endings are set in ten <b>lakāras</b> (Classical Sanskrit; the Veda also has an eleventh, लेट्): six describe <b>time</b> and four describe the speaker's <b>attitude</b> (command, wish, blessing, condition). Modern linguistics calls these tense, aspect and mood (thesis 4.8.6.6–8). Pāṇini fixed each by its meaning:</p>
         <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>लकारः</th><th>Pāṇini</th><th>meaning</th><th>{v.w} · हिन्दी</th><th>{v.w} · తెలుగు</th></tr></thead>
@@ -270,6 +273,7 @@ const Dhatu: React.FC = () => {
         <p>3 persons × 3 numbers × 10 lakāras = <b>90 forms</b> for each pada. Add the two padas and the three voices (प्रयोगाः: कर्तरि active, कर्मणि passive, भावे impersonal), and you have <b>every finite use of the root</b>. Hindi उसने पढ़ा continues the Sanskrit कर्मणि pattern (मया पठितम्) historically. Georgian and Basque are unrelated languages that show the same pattern independently: the doer takes a special case and the verb agrees with the object.</p>
       </Card>
 
+      <AdhyaharaCard />
       <Card title="सर्वासु भाषासु · One root, every language" tone="ln-key">
         <div className="ln-demo-bar">
           <label>धातुः <select value={vid} onChange={e => setVid(e.target.value)}>{VERBS.map(x => <option key={x.id} value={x.id}>{x.w} · {verbMeaning(x, "en")}</option>)}</select></label>

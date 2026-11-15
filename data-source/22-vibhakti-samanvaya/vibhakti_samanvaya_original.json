@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "project": "Medhā Sanskrit Knowledge Base",
+    "document_title": "विभक्तिसमन्वयः (Vibhakti-Samanvayaḥ: Syntactic Concord and Case-Verb Agreement)",
+    "source_file": "Gold_Data_for_विभक्तिसमन्वयः.docx",
+    "author": "Dr. B. Rajeswara Rao",
+    "institution": "Bhaavajaalam Research Center, Visakhapatnam",
+    "pāṇinian_grounding": "Aṣṭādhyāyī, Mahābhāṣya, Siddhāntakaumudī, Vākyapadīya",
+    "version": "1.0.0",
+    "description": "Comprehensive structured rulebase and gold training data for Sanskrit sentence validity, syntactic agreement (anvaya/samanvaya) between nominal case markers (Sup) and verbal terminations (Tiṅ), voice assignment (Prayoga), and ellipsis handling (Adhyāhāra)."
+  },
+  "epistemological_foundation": {
+    "definition": "संस्कृतभाषायां वाक्येषु विभक्तिसमन्वयः अत्यन्तमपेक्षितः। यस्य वाक्यस्य विभक्तिसमन्वयः वर्तते तदेव वाक्यं शुद्धम् अथवा संस्कृतं भवति। यस्य समन्वयो नास्ति तद् अशुद्धम् अथवा असंस्कृतं भवति।",
+    "english_translation": "In the Sanskrit language, syntactic concord of inflections (Vibhakti-Samanvaya) is vital in sentences. A sentence that possesses proper inflectional concord is correct (śuddham / saṁskṛtam); that which lacks concord is ungrammatical (aśuddham / asaṁskṛtam).",
+    "fundamental_principle": "सर्वत्र वाक्ये तिङ्-(विभक्ति)प्रत्ययमाश्रित्य प्रथमा विभक्तिः भवति, तां प्रथमाम् आश्रित्य अन्याः द्वितीयादयो विभक्तयः भवन्ति। अतः तिङ्-विभक्तिमाश्रित्यैव सम्पूर्णं वाक्यं तिष्ठति। इदं च सर्वं कर्तुः विवक्षया भवति।",
+    "principle_english": "In every sentence, the Nominative case (Prathamā) is determined relative to the verbal suffix (Tiṅ), and dependent upon that Prathamā, all other oblique cases (Dvitīyā onwards) are governed. Hence, the entire sentence structure pivots upon the Tiṅ-inflection, governed by the speaker's intent (Vivakṣā) in context."
+  },
+  "paninian_definitions_of_vibhakti": [
+    {
+      "sutra": "विभक्तिश्च (1.4.104)",
+      "iast": "vibhaktiśca",
+      "scope": "सुप्तिङ्-प्रत्याहारयोः विभक्तिसञ्ज्ञा",
+      "explanation_sa": "सुप्-प्रत्याहारस्थानामेकविंशतेः प्रत्ययानां तिङ्-प्रत्याहारस्थानामष्टादशानां च प्रत्ययानां विभक्तिरिति सञ्ज्ञा भवति।",
+      "explanation_en": "Assigns the technical designation 'Vibhakti' to both the 21 nominal case endings (Sup) and the 18 verbal terminations (Tiṅ)."
+    },
+    {
+      "sutra": "प्राग्दिशो विभक्तिः (5.3.1)",
+      "iast": "prāgdiśo vibhaktiḥ",
+      "scope": "तद्धित-अव्यय-प्रत्ययेषु विभक्तिसञ्ज्ञा",
+      "explanation_sa": "दिक्शब्देभ्यः प्राक् विहितानां तसिल्-प्रभृतीनां तद्धितप्रत्ययानामपि विभक्तिसञ्ज्ञा विधीयते।",
+      "explanation_en": "Assigns the designation 'Vibhakti' to pronominal adverbial suffixes (such as tasil, tral, etc.) occurring prior to the sūtra 'dikchhabdebhyaḥ'."
+    }
+  ],
+  "sup_pratyaya_system": {
+    "total_pratyayas": 21,
+    "total_trikas": 7,
+    "syntactic_nature": "अप्रधानक्रियेतरबोधकाः (द्रव्याणि, सिद्धावस्थापन्ना क्रिया, विशेषणानि, अव्ययानि वा)",
+    "nature_english": "Expresses non-principal action entities: substances (dravya), completed actions (siddhāvasthāpannā kriyā), adjectives (viśeṣaṇa), or indeclinables (avyaya).",
+    "cases": [
+      {
+        "case_number": 1,
+        "name_sa": "प्रथमा",
+        "name_en": "Nominative",
+        "trika": {
+          "ekavacana": "सु",
+          "dvivacana": "औ",
+          "bahuvacana": "जस्"
+        },
+        "paninian_rule": "प्रातिपदिकार्थ-लिङ्ग-परिमाण-वचनमात्रे प्रथमा (2.3.46)",
+        "semantic_domain": "केवलप्रातिपदिकार्थः (अभिहित-अर्थः)",
+        "assigned_when": "तिङ्/कृत्/तद्धित/समासैः उक्तः (अभिहितः) कर्ता कर्म वा",
+        "english_function": "Nominal stem-meaning, gender, measure, and number alone; marks the primary subject or direct object when already expressed by finite verb (abhihita)."
+      },
+      {
+        "case_number": "1 (सम्बोधनम्)",
+        "name_sa": "सम्बोधन-प्रथमा",
+        "name_en": "Vocative",
+        "trika": {
+          "ekavacana": "सु (हे)",
+          "dvivacana": "औ",
+          "bahuvacana": "जस्"
+        },
+        "paninian_rule": "सम्बोधने च (2.3.47)",
+        "semantic_domain": "सम्बोधनम् (आभिमुख्यकरणम्)",
+        "assigned_when": "सम्बोधनप्रतीतिविवक्षायाम्",
+        "english_function": "Address, calling attention, or direct invocation."
+      },
+      {
+        "case_number": 2,
+        "name_sa": "द्वितीया",
+        "name_en": "Accusative",
+        "trika": {
+          "ekavacana": "अम्",
+          "dvivacana": "औट्",
+          "bahuvacana": "शस्"
+        },
+        "paninian_rule": "कर्मणि द्वितीया (2.3.2)",
+        "semantic_domain": "अनभिहितकर्म",
+        "assigned_when": "यदा कर्म तिङादिभिः नोक्तम् (अनभिहितम्)",
+        "english_function": "Unexpressed direct object (kartur īpsitatamam karma)."
+      },
+      {
+        "case_number": 3,
+        "name_sa": "तृतीया",
+        "name_en": "Instrumental",
+        "trika": {
+          "ekavacana": "टा",
+          "dvivacana": "भ्याम्",
+          "bahuvacana": "भिस्"
+        },
+        "paninian_rule": "कर्तृकरणयोस्तृतीया (2.3.18)",
+        "semantic_domain": "अनभिहितकरणम् अनभिहितकर्ता च",
+        "assigned_when": "यदा करणं कर्ता वा तिङादिभिः नोक्तम् (कर्मणि भावे वा प्रयोगे कर्तरि)",
+        "english_function": "Unexpressed instrument or unexpressed agent (in passive/impersonal constructions)."
+      },
+      {
+        "case_number": 4,
+        "name_sa": "चतुर्थी",
+        "name_en": "Dative",
+        "trika": {
+          "ekavacana": "ङे",
+          "dvivacana": "भ्याम्",
+          "bahuvacana": "भ्यस्"
+        },
+        "paninian_rule": "चतुर्थी सम्प्रदाने (2.3.13)",
+        "semantic_domain": "अनभिहितसम्प्रदानम्",
+        "assigned_when": "कर्मणा यमभिप्रेति स सम्प्रदानम्; दानस्य उद्देश्यार्थे",
+        "english_function": "Unexpressed recipient / purpose (indirect object)."
+      },
+      {
+        "case_number": 5,
+        "name_sa": "पञ्चमी",
+        "name_en": "Ablative",
+        "trika": {
+          "ekavacana": "ङसि",
+          "dvivacana": "भ्याम्",
+          "bahuvacana": "भ्यस्"
+        },
+        "paninian_rule": "अपादाने पञ्चमी (2.3.28)",
+        "semantic_domain": "अनभिहितापादानम्",
+        "assigned_when": "ध्रुवमपायेऽपादानम्; विश्लेष-भय-पराजयादिहेतौ",
+        "english_function": "Unexpressed point of separation, origin, fear, or source."
+      },
+      {
+        "case_number": 6,
+        "name_sa": "षष्ठी",
+        "name_en": "Genitive",
+        "trika": {
+          "ekavacana": "ङस्",
+          "dvivacana": "ओस्",
+          "bahuvacana": "आम्"
+        },
+        "paninian_rule": "षष्ठी शेषे (2.3.50)",
+        "semantic_domain": "क्रियाकारकेतरसम्बन्धः (स्वामिसेवकभाव-जन्यजनकभावादिसम्बन्धः)",
+        "assigned_when": "कर्मकरणादिकारकभिन्ने शेषे सम्बन्धे",
+        "english_function": "Non-kāraka relationships (possession, kinship, part-whole, association)."
+      },
+      {
+        "case_number": 7,
+        "name_sa": "सप्तमी",
+        "name_en": "Locative",
+        "trika": {
+          "ekavacana": "ङि",
+          "dvivacana": "ओस्",
+          "bahuvacana": "सुप्"
+        },
+        "paninian_rule": "सप्तम्यधिकरणे च (2.3.36)",
+        "semantic_domain": "अनभिहिताधिकरणम्",
+        "assigned_when": "कर्तृकर्मद्वारा तन्निष्ठक्रियाया आधारः",
+        "english_function": "Unexpressed locus/substratum of the action (spatial, temporal, or conceptual)."
+      }
+    ],
+    "application_domains": {
+      "karakeshu": [
+        "कर्ता",
+        "कर्म",
+        "करणम्",
+        "सम्प्रदानम्",
+        "अपादानम्",
+        "अधिकरणम्"
+      ],
+      "upapadeshu": [
+        "विना",
+        "नाना",
+        "अन्तरा",
+        "अन्तरेण",
+        "पृथक्",
+        "सह",
+        "साकम्"
+      ],
+      "karmapravacaniyeshu": [
+        "अनु",
+        "प्रति",
+        "परि",
+        "अभि",
+        "अति"
+      ],
+      "hetvadisu": [
+        "हेतौ (तृतीया)",
+        "प्रयोजनम्"
+      ]
+    }
+  },
+  "ting_pratyaya_system": {
+    "total_pratyayas": 18,
+    "total_trikas": 6,
+    "syntactic_nature": "प्रधानक्रियाबोधकाः (साध्यावस्थापन्ना क्रिया)",
+    "nature_english": "Expresses the principal action in its dynamic, unfolding state (sādhyāvasthāpannā kriyā).",
+    "parasmaipada": {
+      "group_name": "प्रथमत्रिकत्रयम् (परस्मैपदम्)",
+      "prathama_purusha": {
+        "ekavacana": "तिप्",
+        "dvivacana": "तस्",
+        "bahuvacana": "झि"
+      },
+      "madhyama_purusha": {
+        "ekavacana": "सिप्",
+        "dvivacana": "थस्",
+        "bahuvacana": "थ"
+      },
+      "uttama_purusha": {
+        "ekavacana": "मिप्",
+        "dvivacana": "वस्",
+        "bahuvacana": "मस्"
+      }
+    },
+    "atmanepada": {
+      "group_name": "द्वितीयत्रिकत्रयम् (आत्मनेपदम्)",
+      "prathama_purusha": {
+        "ekavacana": "त",
+        "dvivacana": "आताम्",
+        "bahuvacana": "झ"
+      },
+      "madhyama_purusha": {
+        "ekavacana": "थास्",
+        "dvivacana": "आथाम्",
+        "bahuvacana": "ध्वम्"
+      },
+      "uttama_purusha": {
+        "ekavacana": "इट्",
+        "dvivacana": "वहिङ्",
+        "bahuvacana": "महिङ्"
+      }
+    },
+    "pada_selection_rules": [
+      {
+        "rule_type": "anudaatta_ngit",
+        "sutra": "अनुदात्तङित आत्मनेपदम् (1.3.12)",
+        "explanation": "येषु धातुषु अनुदात्तत्वं ङित्त्वं वा इत्संज्ञकम्, तेभ्यः नित्यमात्मनेपदप्रत्यया भवन्ति।",
+        "example": "शीङ् स्वप्ने (ङित्) -> शेते।"
+      },
+      {
+        "rule_type": "svarita_njit",
+        "sutra": "स्वरितञितः कर्त्रभिप्राये क्रियाफले (1.3.72)",
+        "explanation": "स्वरितेतो ञितश्च धातोः यदा क्रियाफलं कर्तारं गच्छति तदा आत्मनेपदम्; यदा अन्यं गच्छति तदा परस्मैपदम्।",
+        "examples": [
+          {
+            "dhatu": "डु पचँष् पाके (स्वरितेत्)",
+            "kartr_abhipraya": "छात्रः पचते (यदा फलम् आत्मगामि)",
+            "parasmin": "माता पचति (यदा भोजनं सर्वान् गच्छति)"
+          },
+          {
+            "dhatu": "डु कृञ् करणे (ञित्)",
+            "kartr_abhipraya": "कुरुते (यदा फलम् आत्मगामि)",
+            "parasmin": "करोति (यदा फलं परगामि)"
+          }
+        ]
+      }
+    ]
+  },
+  "samanvaya_governance_rules": {
+    "core_axiom": "सुप्तिङोः परस्परसमन्वयः (Agreement between Noun Cases and Verb Forms)",
+    "purusha_vyavastha": [
+      {
+        "purusha": "मध्यमपुरुषः (Second Person)",
+        "rule": "युष्मद्युपपदे समानाधिकरणे स्थानिन्यपि मध्यमः (1.4.105)",
+        "substance": "यदा तिङ्प्रत्ययस्यार्थः (कर्ता कर्म वा) युष्मदर्थः (त्वम्, युवाम्, यूयम्) विवक्षितः, तदा मध्यमपुरुषः भवति।",
+        "kartari_examples": [
+          {
+            "sanskrit": "त्वम् ओदनं पचसि ।",
+            "structure": "कर्तरि एकवचनम् (त्वम् = 2nd person sg subject)"
+          },
+          {
+            "sanskrit": "युवाम् ओदनं पचथः ।",
+            "structure": "कर्तरि द्विवचनम् (युवाम् = 2nd person du subject)"
+          },
+          {
+            "sanskrit": "यूयम् ओदनं पचथ ।",
+            "structure": "कर्तरि बहुवचनम् (यूयम् = 2nd person pl subject)"
+          }
+        ],
+        "karmani_examples": [
+          {
+            "sanskrit": "तेन त्वं दृश्यसे ।",
+            "structure": "कर्मणि एकवचनम् (त्वम् = 2nd person sg direct object expressed by verb)"
+          },
+          {
+            "sanskrit": "तेन युवां दृश्येथे ।",
+            "structure": "कर्मणि द्विवचनम् (युवाम् = 2nd person du direct object expressed by verb)"
+          },
+          {
+            "sanskrit": "तेन यूयं दृश्यध्वे ।",
+            "structure": "कर्मणि बहुवचनम् (यूयम् = 2nd person pl direct object expressed by verb)"
+          }
+        ]
+      },
+      {
+        "purusha": "उत्तमपुरुषः (First Person)",
+        "rule": "अस्मद्युत्तमः (1.4.107)",
+        "substance": "यदा तिङ्प्रत्ययस्यार्थः (कर्ता कर्म वा) अस्मदर्थः (अहम्, आवाम्, वयम्) विवक्षितः, तदा उत्तमपुरुषः भवति।",
+        "kartari_examples": [
+          {
+            "sanskrit": "अहम् ओदनं पचामि ।",
+            "structure": "कर्तरि एकवचनम् (अहम् = 1st person sg subject)"
+          },
+          {
+            "sanskrit": "आवाम् ओदनं पचावः ।",
+            "structure": "कर्तरि द्विवचनम् (आवाम् = 1st person du subject)"
+          },
+          {
+            "sanskrit": "वयम् ओदनं पचामः ।",
+            "structure": "कर्तरि बहुवचनम् (वयम् = 1st person pl subject)"
+          }
+        ],
+        "karmani_examples": [
+          {
+            "sanskrit": "तेन अहं दृश्ये ।",
+            "structure": "कर्मणि एकवचनम् (अहम् = 1st person sg direct object expressed by verb)"
+          },
+          {
+            "sanskrit": "तेन आवां दृश्यावहे ।",
+            "structure": "कर्मणि द्विवचनम् (आवाम् = 1st person du direct object expressed by verb)"
+          },
+          {
+            "sanskrit": "तेन वयं दृश्यामहे ।",
+            "structure": "कर्मणि बहुवचनम् (वयम् = 1st person pl direct object expressed by verb)"
+          }
+        ]
+      },
+      {
+        "purusha": "प्रथमपुरुषः (Third Person)",
+        "rule": "शेषे प्रथमः (1.4.108)",
+        "substance": "यदा तिङ्प्रत्ययस्यार्थः युष्मदर्थ-अस्मदर्थाभ्यामन्यः यः कश्चन भवति, तदा प्रथमपुरुषप्रत्यया भवन्ति।",
+        "kartari_examples": [
+          {
+            "sanskrit": "माता ओदनं पचति ।",
+            "structure": "कर्तरि एकवचनम् (माता = 3rd person sg subject)"
+          },
+          {
+            "sanskrit": "मातरौ ओदनं पचतः ।",
+            "structure": "कर्तरि द्विवचनम् (मातरौ = 3rd person du subject)"
+          },
+          {
+            "sanskrit": "मातरः ओदनं पचन्ति ।",
+            "structure": "कर्तरि बहुवचनम् (मातरः = 3rd person pl subject)"
+          }
+        ],
+        "karmani_examples": [
+          {
+            "sanskrit": "मात्रा ओदनः पच्यते ।",
+            "structure": "कर्मणि एकवचनम् (ओदनः = 3rd person sg object expressed by verb)"
+          },
+          {
+            "sanskrit": "मातृभ्याम् ओदनौ पच्येते ।",
+            "structure": "कर्मणि द्विवचनम् (ओदनौ = 3rd person du object expressed by verb)"
+          },
+          {
+            "sanskrit": "मातृभिः ओदनाः पच्यन्ते ।",
+            "structure": "कर्मणि बहुवचनम् (ओदनाः = 3rd person pl object expressed by verb)"
+          }
+        ]
+      }
+    ],
+    "vacana_vyavastha": {
+      "principle": "द्व्येकयोर्द्विवचनैकवचने (1.4.22) & बहुषु बहुवचनम् (1.4.21)",
+      "explanation": "यदि विवक्षितेऽर्थे (कर्तरि कर्मणि वा) एकत्वमस्ति तर्हि एकवचनम्, द्वित्वे द्विवचनम्, बहुत्वे बहुवचनप्रत्ययो भवति।"
+    },
+    "single_prathama_constraint": {
+      "canonical_mandate": "एकस्मिन् वाक्ये विशेषणं विहाय पदद्वयं प्रथमाविभक्तौ नैव भवेत्। यदि भवति तदा चकारः वा तत्र भवेत्।",
+      "english_translation": "In a single Sanskrit clause, excluding adjectives (which take congruent case), two distinct non-conjoined nominals can never both be in the Nominative case (Prathamā). If two distinct subjects/objects occur, they must be linked by the conjunction 'ca'."
+    }
+  },
+  "sentence_validity_analysis": {
+    "kartari_prayoga": {
+      "voice_definition": "तिङ्-प्रत्ययेन कर्ता अभिहितः (उक्तः), कर्म अनभिहितम्।",
+      "rules": "कर्ता = प्रथमा; कर्म = द्वितीया; क्रिया = कर्तुरनुगुणं पुरुषवचने।",
+      "valid_sentence": {
+        "text": "रामः वनं जगाम ।",
+        "validity": "साधु (Valid)",
+        "analysis": "जगाम इति कर्तरि लिटि प्रथमपुरुषैकवचने रूपम्। अत्र कर्ता उक्तः इति हेतोः 'राम' इत्यस्मात् केवलप्रातिपदिकार्थे प्रथमा। कर्मणः अनभिहितत्वात् 'वन' इत्यस्मात् द्वितीया। सुप्तिङोः सम्यक् समन्वयः वर्तते।"
+      },
+      "invalid_sentence": {
+        "text": "रामेण वनं जगाम ।",
+        "validity": "असाधु (Ungrammatical / Error)",
+        "violation": "विभक्तीनामसमन्वयः (Inflectional Discord)",
+        "analysis": "जगाम इति कर्तरि प्रत्ययेन कर्तुः अभिहितत्वात् अनभिहितकर्तुरभावेन तृतीयाया असम्भवः। अभिहिते कर्तरि तृतीयाप्रयोगात् वाक्यमसाधु भवति।"
+      }
+    },
+    "karmani_prayoga": {
+      "voice_definition": "तिङ्-प्रत्ययेन कर्म अभिहितम् (उक्तम्), कर्ता अनभिहितः।",
+      "rules": "कर्ता = तृतीया; कर्म = प्रथमा; क्रिया = कर्मणोऽनुगुणं पुरुषवचने।",
+      "valid_sentence": {
+        "text": "रामेण वनं जग्मे ।",
+        "validity": "साधु (Valid)",
+        "analysis": "जग्मे इति कर्मणि लिटि प्रथमपुरुषैकवचने रूपम्। कर्म उक्तम् इति हेतोः 'वन' इत्यस्मात् प्रथमा। कर्तुः अनभिहितत्वात् 'राम' इत्यस्मात् तृतीया। सुप्तिङोः सम्यक् समन्वयः वर्तते।"
+      },
+      "invalid_sentence": {
+        "text": "रामः वनं जग्मे ।",
+        "validity": "असाधु (Ungrammatical / Error)",
+        "violation": "विभक्तीनामसमन्वयः",
+        "analysis": "जग्मे इति कर्मणि रूपम्। अत्र कर्म अभिहितं सत् प्रथमायां वर्तते, अतः अनभिहिते कर्तरि तृतीयाविभक्त्या एव भाव्यम्। कर्तुः प्रथमायां प्रयोगात् वाक्यमसाधु।"
+      }
+    },
+    "bhave_prayoga": {
+      "voice_definition": "अकर्मकेभ्यो धातुभ्यः क्रियामात्रे (भावे) लकारः।",
+      "rules": "कर्ता = तृतीया; क्रिया = नित्यं प्रथमपुरुषैकवचने आत्मनेपदे।",
+      "valid_sentence": {
+        "text": "रामेण भूयते ।",
+        "validity": "साधु (Valid)",
+        "analysis": "भू-धातोः लट् भावार्थे विहितः। क्रियायां कर्तुः अनभिहितत्वात् 'राम' इत्यस्मात् तृतीयाया एव साधुत्वम्।"
+      },
+      "invalid_sentences": [
+        {
+          "text": "रामो भूयते ।",
+          "validity": "असाधु (Ungrammatical / Error)",
+          "analysis": "भूयते इति भावे प्रत्ययः, कर्ता अनभिहितः। अत्र प्रथमा प्रयुक्ता, अनभिहितकर्तरि तृतीयाया अभावात् असाधु।"
+        },
+        {
+          "text": "रामेण भवति ।",
+          "validity": "असाधु (Ungrammatical / Error)",
+          "analysis": "भवति इति कर्तरि प्रयोगः। कर्तरि अभिहिते सति तृतीयाया असम्भवात् रामेण इति प्रयोगोऽसाधुः।"
+        }
+      ]
+    }
+  },
+  "adhyahara_system": {
+    "principle": "अध्याहारव्यवस्था (Ellipsis & Implicit Verbs)",
+    "rules": [
+      {
+        "category": "omitted_finite_verb",
+        "maxim": "अस्तिर्भवन्तीपरोऽप्रयुज्यमानोऽप्यस्ति",
+        "explanation_sa": "बहुत्र वाक्येषु तिङ्-विभक्तिः उच्चारिता न भवति। यत्र यत् किमपि तिङन्तं नोपलभ्यते तत्र अर्थमाश्रित्य 'अस्ति' (विद्यते) इत्यस्य अध्याहारः कर्तव्यो भवति।",
+        "explanation_en": "Where no finite verb is explicitly uttered, the present copula 'asti' (is/exists) is automatically supplied by semantic ellipsis."
+      },
+      {
+        "category": "kridanta_predicates",
+        "explanation_sa": "बहुत्र तव्यत्-तव्यानीयर-ण्यत्-यदादिभिः कृत्यप्रत्ययैः वा क्त-क्तवतुप्रभृतिभिः कृत्प्रत्ययैः वा सिद्धावस्थापन्ना क्रिया उच्यते। तत्रापि वाक्यपूरणाय योग्यक्रियाया अध्याहारः कर्तव्यो भवति।",
+        "explanation_en": "In participial or gerundive predicates (tavyat, anīyar, kta, ktavatu), which express completed action in nominal form, the sentence syntax is completed by supplying the appropriate implicit auxiliary copula."
+      }
+    ]
+  },
+  "pedagogical_engine_integration": {
+    "game_challenge_modes": [
+      {
+        "mode_id": "VIBH-ERR-01",
+        "mode_name": "Syntactic Discord Hunt (विभक्ति-असमन्वय-शोधनम्)",
+        "mechanism": "Present sentences like 'रामेण वनं जगाम' or 'रामः वनं जग्मे' and challenge players to spot the case/voice clash and correct it to valid concord."
+      },
+      {
+        "mode_id": "VIBH-AGR-02",
+        "mode_name": "Subject-Verb Concord Matrix (सुप्तिङ्-समन्वय-मेलनम्)",
+        "mechanism": "Interactive grids where changing the subject pronoun (त्वम् / अहम् / सः / यूयम् / वयम्) dynamically forces the matching finite verb ending (पचसि / पचामि / पचति / पचथ / पचामः)."
+      },
+      {
+        "mode_id": "VIBH-VOI-03",
+        "mode_name": "Voice Transformation Engine (प्रयोगपरिवर्तनम्)",
+        "mechanism": "Systematic transformation between Kartari, Karmaṇi, and Bhāve with automated verification of Prathamā vs Tṛtīyā/Dvitīyā shifts."
+      },
+      {
+        "mode_id": "VIBH-ELL-04",
+        "mode_name": "Ellipsis & Adhyāhāra Detective (अध्याहार-पूरणम्)",
+        "mechanism": "Completing verbless sentences by deducing the correct number and person of implicit 'asti/santi' or participial auxiliaries."
+      }
+    ]
+  }
+}
