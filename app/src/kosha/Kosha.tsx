@@ -31,6 +31,7 @@ import { speak } from "../speech";
 import { useSa } from "../i18n/script";
 import { PadacchedaIntro, PadyaIntro } from "./Intro";
 import { UpasargaForRoot, ComboCard, comboLabel, comboSearch, rootKey, PREFIX_BY_ROOT } from "./Upasarga";
+import { RupaNirmana } from "./RupaNirmana";
 import "./kosha.css";
 
 // ── shared list + detail layout ────────────────────────────────
@@ -197,7 +198,6 @@ const Dhatu400Detail: React.FC<{ v: Dhatu400; krt?: Dhatu400Krt }> = ({ v, krt }
               return <td key={number} className="ks-form">{S(cell.form)}{cell.variants?.length ? <span className="ks-alt"> / {cell.variants.map(S).join(" / ")}</span> : null}
                 <FlagButton t={{ kind: "verb", id: v.id, field: `${selected[0]}:${lakara}:${pi},${ni}`, value: cell.form, where: `${v.lemma} — ${selected[1]} ${LAKARA[lakara][0]} ${person} ${VACANA[ni]}` }} />
                 <span className="ks-gloss" dir="auto">{gloss}{gloss && <RomS t={gloss} l="en" />}</span>
-                {cell.source?.startsWith("corrected") && <span className="ks-cell-note">{S(cell.source.replace(/^corrected:\s*/, "").replace(/\s*\(vidyut-prakriya[^)]*\)/, ""))}</span>}
               </td>;
             })}</tr>;
           })}</tbody>
@@ -262,8 +262,10 @@ export const VerbBook: React.FC = () => {
         ["all", `धातुरूपाणि · All roots (${tinanta.length})`],
         ["krt400", `कृदन्तानि · All roots (${krt.length})`],
         ["upa", `उपसर्गयुक्ताः · With prefixes (${GRAMMAR.upasarga.combos.length})`],
+        ["make", "रूपनिर्माणम् · Make any form"],
       ]} on={tab} set={setTab} />
-      {tab === "upa" ? <ListDetail items={GRAMMAR.upasarga.combos} idOf={c => c.id} kind="grammar" placeholder="Search: अनुभवति, अनु, to experience…"
+      {tab === "make" ? <RupaNirmana />
+        : tab === "upa" ? <ListDetail items={GRAMMAR.upasarga.combos} idOf={c => c.id} kind="grammar" placeholder="Search: अनुभवति, अनु, to experience…"
           search={comboSearch} label={c => comboLabel(c, lang, S)}
           detail={c => { const root = tinanta.find(v => rootKey(v.lemma, v.gana) === rootKey(c.d, c.g));
             return <ComboCard c={c} openRoot={root ? () => { setFocus(root.id); setTab("all"); } : undefined} rootLabel={root ? root.lemma : undefined} />; }} />

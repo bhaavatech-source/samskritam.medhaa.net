@@ -166,5 +166,15 @@
 @media (max-width:640px){.up-head{grid-template-columns:4rem 1fr auto}.up-exs{grid-column:1/-1}.up-w{white-space:normal}}
 .up-open{margin:10px 0 4px;font-size:.85rem;padding:3px 12px}
 
-/* a sūtra note on a form that differs from the usual derivation (rare) */
-.ks-cell-note{display:block;margin-top:3px;font-size:.72rem;line-height:1.35;color:#7c2d12;background:#fff7ed;border-radius:6px;padding:2px 6px}
+
+/* रूपनिर्माणम् (RupaNirmana.tsx) */
+.rn-pick{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end;margin:6px 0 10px}
+.rn-pick label{display:flex;flex-direction:column;gap:3px;font-size:.85rem;color:#5b21b6;font-weight:600}
+.rn-pick select,.rn-pick input{font:inherit;font-weight:400;padding:6px 10px;border-radius:10px;border:1px solid #ddd6fe;background:#fff;min-width:7rem}
+.rn-root{flex:1 1 16rem}.rn-root input{width:100%}
+.rn-roots{max-height:16rem;overflow:auto;display:flex;flex-direction:column;border:1px solid #ede9fe;border-radius:12px;margin-bottom:10px}
+.rn-roots button{all:unset;cursor:pointer;padding:6px 10px;border-bottom:1px solid #f5f3ff;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.rn-roots button:hover,.rn-roots button.on{background:#f5f3ff}
+.rn-roots button:focus-visible{outline:2px solid #7c3aed}
+.rn-code{margin-left:auto;color:#9ca3af}
+.rn-head{margin-top:6px}
