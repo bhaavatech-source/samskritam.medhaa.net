@@ -18,10 +18,10 @@ type NavItem =
 const NAV: NavItem[] = [
   { type: "view", v: "game",      icon: "🗺️", sa: "यात्रा",    en: "Journey" },
   { type: "view", v: "learn",     icon: "💡", sa: "बोधः",      en: "Understand" },
-  { type: "view", v: "words",     icon: "📖", sa: "शब्दकोशः",  en: "Word book" },
+  { type: "view", v: "words",     icon: "📖", sa: "शब्दकोशः",  en: "Noun Book" },
   { type: "view", v: "verbs",     icon: "🌱", sa: "धातुकोशः",  en: "Verb book" },
   { type: "view", v: "sentences", icon: "💬", sa: "वाक्यकोशः", en: "Sentences" },
-  { type: "view", v: "grammar",   icon: "🔗", sa: "व्याकरणम्",  en: "Sandhi · Samāsa" },
+  { type: "view", v: "grammar",   icon: "🔗", sa: "व्याकरणम्",  en: "Grammar" },
   { type: "link", href: "https://medhaa.net/games-static/devanagari-game/index.html", icon: "🪷", sa: "अक्षराभ्यासः", en: "Akṣarābhyāsaḥ" },
 ];
 

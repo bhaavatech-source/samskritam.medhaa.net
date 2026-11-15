@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-//  kosha/Grammar.tsx — व्याकरणकोशः: सन्धिः, समासः, कृत्प्रत्ययाः, उपसर्गाः
+//  kosha/Grammar.tsx — व्याकरणकोशः: सन्धिः, समासः, कृत्प्रत्ययाः, उपसर्गाः (Upasarga.tsx)
 //  Data: app/src/data/grammar.json (tools/build_grammar.py, from the Gold
 //  files with the 2026-11-08 corrections). Explanations are in English with
 //  the Sanskrit terms; every example has a ⚑.
@@ -11,6 +11,7 @@ import { useLang } from "../settings";
 import { useSa } from "../i18n/script";
 import { krtGloss } from "../i18n/forms";
 import { ListDetail, Tabs, Speak, KsTop, RomS } from "./Kosha";
+import { UpasargaTab } from "./Upasarga";
 import "./kosha.css";
 
 const G = GRAMMAR;
@@ -147,34 +148,14 @@ const PratyayaTab: React.FC = () => {
   );
 };
 
-// ── उपसर्गाः ──
-const UpasargaTab: React.FC = () => {
-  const S = useSa();
-  const U = G.upasarga;
-  return (
-    <div className="ks-card">
-      <p className="gr-sloka">{S(U.sloka)}</p>
-      <p>{U.sloka_en}</p>
-      <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{U.three.map(([sa, en, ex]) => <tr key={sa}><td className="ks-l-sa"><b>{S(sa)}</b></td><td>{en}</td><td className="ks-l-sa">{S(ex)}</td></tr>)}</tbody></table></div>
-      <h4>{S("हृ")} + 7 {S("उपसर्गाः")} · one root, seven meanings</h4>
-      <div className="ks-chips">{U.hr.map(([u, w, en]) => <span key={w} className="ks-tag">{S(u)} → <b>{S(w)}</b> · {en}</span>)}</div>
-      <p className="ks-note-plain">{S(U.cls)} {S(U.pada)}</p>
-      <p className="ks-note-plain">{S(U.nature)}</p>
-      <h4>२० {S("उपसर्गाः")}</h4>
-      <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{U.list.map(u => (
-        <tr key={u.u}><td className="ks-l-sa"><b>{S(u.u)}</b></td><td>{u.en}</td>
-          <td>{u.ex.map(([w, m]) => <span key={w} className="gr-upex"><span className="ks-l-sa">{S(w)}</span> <span className="ks-l-en">{m}</span></span>)}</td>
-          <td><FlagButton t={{ kind: "grammar", id: `upasarga:${u.u}`, field: "entry", value: `${u.u}: ${u.en}`, where: `${u.u} — upasarga` }} /></td></tr>))}</tbody></table></div>
-    </div>
-  );
-};
+// ── उपसर्गाः: see Upasarga.tsx ──
 
 export const GrammarBook: React.FC = () => {
   const [tab, setTab] = useState("s");
   const r = G.sandhi.rules;
   return (
     <div className="ks">
-      <KsTop title="व्याकरणकोशः" en="Sandhi, compounds & suffixes" sub={`${r.length} sandhi rules with ${r.reduce((a, x) => a + x.ex.length, 0)} examples, ${G.samasa.ex.length} compounds, ${G.pratyaya.list.length} kṛt suffixes and the 20 upasargas.`} />
+      <KsTop title="व्याकरणम्" en="Grammar" sub={`${r.length} sandhi rules with ${r.reduce((a, x) => a + x.ex.length, 0)} examples, ${G.samasa.ex.length} compounds, ${G.pratyaya.list.length} kṛt suffixes and the 22 upasargas with ${G.upasarga.combos.length} verbs.`} />
       <Tabs tabs={[["s", "सन्धिः · Sandhi"], ["m", "समासः · Compounds"], ["p", "कृत्प्रत्ययाः · Suffixes"], ["u", "उपसर्गाः · Prefixes"]]} on={tab} set={setTab} />
       {tab === "s" ? <SandhiTab /> : tab === "m" ? <SamasaTab /> : tab === "p" ? <PratyayaTab /> : <UpasargaTab />}
     </div>

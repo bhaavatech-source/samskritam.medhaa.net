@@ -6,7 +6,7 @@
 // ═══════════════════════════════════════════════════════════════
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
-  WORDS, loadDhatu400Data, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, padyaMeaning, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO, LINGA,
+  WORDS, GRAMMAR, loadDhatu400Data, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, padyaMeaning, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO, LINGA,
   wordMeaning, avyayaMeaning, sentMeaning, sentRoman, padyaRoman, type Word,
   type Dhatu400, type Dhatu400Conjugation, type Dhatu400Krt, type Dhatu400KrtForm,
 } from "../data";
@@ -30,17 +30,20 @@ import { useLang, useReadings, setReadings } from "../settings";
 import { speak } from "../speech";
 import { useSa } from "../i18n/script";
 import { PadacchedaIntro, PadyaIntro } from "./Intro";
+import { UpasargaForRoot, ComboCard, comboLabel, comboSearch, rootKey, PREFIX_BY_ROOT } from "./Upasarga";
 import "./kosha.css";
 
 // ── shared list + detail layout ────────────────────────────────
-export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeholder }: {
+export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeholder, initial }: {
   items: T[]; idOf: (x: T) => string; kind: FlagKind; label: (x: T) => React.ReactNode;
-  search: (x: T) => string; detail: (x: T) => React.ReactNode; placeholder: string;
+  search: (x: T) => string; detail: (x: T) => React.ReactNode; placeholder: string; initial?: string | null;
 }) {
   const { flags } = useFlags();
   const [q, setQ] = useState("");
   const [only, setOnly] = useState(false);
-  const [sel, setSel] = useState<string | null>(null);
+  const [sel, setSel] = useState<string | null>(initial ?? null);
+  const listRef = useRef<HTMLDivElement>(null);
+  useEffect(() => { if (initial) listRef.current?.querySelector(".on")?.scrollIntoView({ block: "nearest" }); }, [initial]);
   const flaggedIds = useMemo(() => new Set(flags.filter(f => f.kind === kind).map(f => f.id)), [flags, kind]);
   const list = items.filter(x => (!q || search(x).toLowerCase().includes(q.trim().toLowerCase())) && (!only || flaggedIds.has(idOf(x))));
   const cur = items.find(x => idOf(x) === sel) ?? list[0] ?? items[0];
@@ -52,7 +55,7 @@ export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeh
         <span className="ks-count">{list.length} / {items.length}</span>
       </div>
       <div className="ks-body">
-        <div className="ks-list" role="listbox">
+        <div className="ks-list" role="listbox" ref={listRef}>
           {list.map(x => (
             <button key={idOf(x)} role="option" aria-selected={cur === x} className={cur === x ? "on" : ""} onClick={() => setSel(idOf(x))}>
               {label(x)}{flaggedIds.has(idOf(x)) && <span className="ks-flagdot">⚑</span>}
@@ -136,7 +139,7 @@ export const WordBook: React.FC = () => {
   const count = (gg: string, ee: string) => WORDS.filter(w => (gg === "all" || w.g === gg) && (ee === "all" || (ee === "hal") === isHal(w))).length;
   return (
     <div className="ks">
-      <KsTop title="शब्दकोशः" en="Word book" sub={`${WORDS.length} words with all their forms and meanings in ${Object.keys(LANGS).length - 1} languages.`} />
+      <KsTop title="शब्दकोशः" en="Noun Book" sub={`${WORDS.length} words with all their forms and meanings in ${Object.keys(LANGS).length - 1} languages.`} />
       <div className="ks-chips gr-filter">{GENDERS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${g === k ? "on" : ""}`} onClick={() => setG(k)} title={en}>{S(sa)} <small>({count(k, end)})</small></button>)}</div>
       <div className="ks-chips gr-filter">{ENDS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${end === k ? "on" : ""}`} onClick={() => setEnd(k)} title={en}>{S(sa)} <small>({count(g, k)})</small></button>)}</div>
       <ListDetail key={g + end} items={items} idOf={w => w.id} kind="word" placeholder="Search: राम, rāma, boy, బాలుడు…"
@@ -201,6 +204,7 @@ const Dhatu400Detail: React.FC<{ v: Dhatu400; krt?: Dhatu400Krt }> = ({ v, krt }
         </table>
       </div>
       <p className="ks-note">Forms are derived with vidyut-prakriya and cross-checked against independent Sanskrit verb lists. “—” means that no form is supplied for that cell.</p>
+      <UpasargaForRoot lemma={v.lemma} gana={v.gana} />
       {krt && <Dhatu400KrtTable r={krt} />}
       <p className="ks-id">{v.id}</p>
     </div>
@@ -234,6 +238,7 @@ export const VerbBook: React.FC = () => {
   const lang = useLang();
   const S = useSa();
   const [tab, setTab] = useState("all");
+  const [focus, setFocus] = useState<string | null>(null);
   const [data, setData] = useState<{ tinanta: Dhatu400[]; krt: Dhatu400Krt[] } | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   useEffect(() => {
@@ -254,13 +259,18 @@ export const VerbBook: React.FC = () => {
   return (
     <div className="ks">
       <KsTop title="धातुकोशः" en="Verb book" sub={`${tinanta.length} roots with generated tiṅanta forms and ${krt.length} roots with kṛdantas.`} />
-      <p className="ks-note">{tinanta.length} of 400 marked roots currently have generated form records.</p>
+      <p className="ks-note">{tinanta.filter(v => v.id <= "MDH-400").length} of the 400 marked roots have generated form records, plus {tinanta.filter(v => v.id > "MDH-400").length} roots added for the prefixed verbs.</p>
       <Tabs tabs={[
         ["all", `धातुरूपाणि · All roots (${tinanta.length})`],
         ["krt400", `कृदन्तानि · All roots (${krt.length})`],
+        ["upa", `उपसर्गयुक्ताः · With prefixes (${GRAMMAR.upasarga.combos.length})`],
       ]} on={tab} set={setTab} />
-      {tab === "all" ? <ListDetail<Dhatu400> items={tinanta} idOf={v => v.id} kind="verb" placeholder="Search: गम्, gam, to go…"
-          search={v => [v.lemma, v.iast, v.gana, v.dhatupatha.artha, ...Object.values(v.meanings)].join(" ")}
+      {tab === "upa" ? <ListDetail items={GRAMMAR.upasarga.combos} idOf={c => c.id} kind="grammar" placeholder="Search: अनुभवति, अनु, to experience…"
+          search={comboSearch} label={c => comboLabel(c, lang, S)}
+          detail={c => { const root = tinanta.find(v => rootKey(v.lemma, v.gana) === rootKey(c.d, c.g));
+            return <ComboCard c={c} openRoot={root ? () => { setFocus(root.id); setTab("all"); } : undefined} rootLabel={root ? root.lemma : undefined} />; }} />
+        : tab === "all" ? <ListDetail<Dhatu400> key={focus ?? "all"} initial={focus} items={tinanta} idOf={v => v.id} kind="verb" placeholder="Search: गम्, gam, to go, अनुभवति…"
+          search={v => [v.lemma, v.iast, v.gana, v.dhatupatha.artha, ...Object.values(v.meanings), PREFIX_BY_ROOT.get(rootKey(v.lemma, v.gana)) ?? ""].join(" ")}
           label={v => <><span className="ks-l-sa">{S(v.lemma)}</span><span className="ks-l-en">{v.meanings[lang] || v.meanings.en}</span></>}
           detail={v => <Dhatu400Detail key={v.id} v={v} krt={krt.find(r => r.dhatu_id === v.id)} />} />
         : <ListDetail<Dhatu400Krt> items={krt} idOf={r => r.dhatu_id} kind="krt" placeholder="Search a root or a form: गत्वा, to go…"
