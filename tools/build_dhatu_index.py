@@ -3,7 +3,7 @@
 Inputs:  app/public/vidyut/dhatupatha.tsv   (vidyut-prakriya's Dhātupāṭha: code, upadeśa, artha; SLP1)
          tools/dhatu_lemmas_slp1.tsv        (code, upadeśa, root without markers, e.g. 01.1046 hf\\Y hf)
          dhatu_400_tinanta.json             (English meanings of the 408 roots in the verb book)
-Output:  [[code, upadeśa, root, artha, English meaning or ""], …] in Devanāgarī.
+Output:  [[code, upadeśa, root, artha, English meaning or "", 1 if the root is in the verb book else 0], …] in Devanāgarī.
 """
 import json, os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -36,6 +36,6 @@ for i, l in enumerate(open(os.path.join(ROOT, "app/public/vidyut/dhatupatha.tsv"
     if i == 0 or len(f) < 3 or f[1] == "-": continue
     code, up, artha = f[0], f[1], f[2]
     root = lem.get(code) or re.sub(r"[~\\^]", "", up)
-    rows.append([code, deva(up), deva(root), deva(artha), en.get(code, "")])
+    rows.append([code, deva(up), deva(root), deva(artha), en.get(code, ""), 1 if code in en else 0])
 json.dump(rows, open(os.path.join(ROOT, "app/public/vidyut/dhatus.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-print(len(rows), "roots;", sum(1 for r in rows if r[4]), "with English meanings")
+print(len(rows), "roots;", sum(r[5] for r in rows), "in the verb book")

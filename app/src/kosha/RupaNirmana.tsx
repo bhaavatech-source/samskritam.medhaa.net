@@ -41,7 +41,7 @@ function loadEngine(): Promise<Engine> {
   engine.catch(() => { engine = null; });
   return engine;
 }
-type Root = [string, string, string, string, string];   // code, upadeśa, root, artha, English
+type Root = [string, string, string, string, string, number];   // code, upadeśa, root, artha, English, 1 = in the verb book
 let roots: Promise<Root[]> | null = null;
 const loadRoots = () => (roots ??= fetch(url("dhatus.json")).then(r => r.json() as Promise<Root[]>));
 
@@ -75,6 +75,7 @@ export const RupaNirmana: React.FC = () => {
   const [err, setErr] = useState<string | null>(null);
   const [mode, setMode] = useState<string | null>(null);
   const [lk, setLk] = useState("lat");
+  const [all, setAll] = useState(false);   // false: the verb-book roots; true: the whole Dhātupāṭha
 
   useEffect(() => {
     loadRoots().then(setList).catch(() => setErr("The root list could not be loaded."));
@@ -84,9 +85,10 @@ export const RupaNirmana: React.FC = () => {
   const matches = useMemo(() => {
     if (!list) return [];
     const t = q.trim().toLowerCase();
-    const base = t ? list.filter(r => r.some(x => x.toLowerCase().includes(t))) : list;
-    return base.slice(0, 60);
-  }, [list, q]);
+    const pool = all ? list : list.filter(r => r[5]);
+    return t ? pool.filter(r => r.slice(0, 5).some(x => String(x).toLowerCase().includes(t))) : pool;
+  }, [list, q, all]);
+  const inBook = list ? list.filter(r => r[5]).length : 0;
 
   const prefixes = ups.filter(Boolean);
   const prefixKey = prefixes.join(",");
@@ -113,12 +115,12 @@ export const RupaNirmana: React.FC = () => {
 
   return (
     <div className="ks-card rn">
-      <p className="ks-note-plain">Choose up to three upasargas and any root of the Dhātupāṭha. All forms are made at once by Pāṇini's rules.</p>
+      <p className="ks-note-plain">Choose a root, with no upasarga or with up to three. All forms are made at once by Pāṇini's rules.</p>
       <div className="rn-pick">
         {[0, 1, 2].map(i => (
           <label key={i} className="rn-up">{S(["प्रथमः", "द्वितीयः", "तृतीयः"][i])} {S("उपसर्गः")}
             <select value={ups[i]} disabled={i > 0 && !ups[i - 1]} onChange={e => setUp(i, e.target.value)}>
-              <option value="">—</option>
+              <option value="">{i === 0 ? "— none" : "—"}</option>
               {UPASARGAS.map(([v, d]) => <option key={v} value={v}>{S(d)}</option>)}
             </select>
           </label>))}
@@ -126,6 +128,11 @@ export const RupaNirmana: React.FC = () => {
           <input type="search" value={q} onChange={e => setQ(e.target.value)} placeholder="Search: गम्, भू, गतौ, to go, 01.1137…" aria-label="Search a root" />
         </label>
       </div>
+      {list && <div className="ks-chips ks-chips-sm rn-scope">
+        <button className={!all ? "on" : ""} onClick={() => setAll(false)}>{S("धातुकोशस्य धातवः")} <small>verb-book roots ({inBook})</small></button>
+        <button className={all ? "on" : ""} onClick={() => setAll(true)}>{S("सम्पूर्णः धातुपाठः")} <small>whole Dhātupāṭha ({list.length})</small></button>
+        <small className="rn-count">{matches.length} shown</small>
+      </div>}
       {!root || q ? <div className="rn-roots" role="listbox">{matches.map(r => (
         <button key={r[0]} role="option" aria-selected={root?.[0] === r[0]} className={root?.[0] === r[0] ? "on" : ""} onClick={() => { setRoot(r); setQ(""); }}>
           <b className="ks-l-sa">{S(r[2])}</b> <span className="ks-l-sa">{S(r[1])} {S(r[3])}</span> <small>{r[4]}</small> <small className="rn-code">{r[0]}</small>
