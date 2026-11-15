@@ -1,0 +1,1521 @@
+{
+ "project": "Medhā Sanskrit Knowledge Base — Uṇādi Parīkṣā Engine",
+ "version": "1.0.1",
+ "author_institution": "Bhaavajaalam Research Center / National Sanskrit University",
+ "description": "Graded examination questions, interactive challenges, and step-by-step Pāṇinian prakriyā derivations stratified from Simple to Expert levels for the Medhā game engine.",
+ "level_hierarchy": [
+  {
+   "level_id": 1,
+   "level_code": "LEVEL_SIMPLE",
+   "name_sa": "सरलस्तरः (प्राथमिकः)",
+   "name_en": "Simple Level (Foundational Word & Root Recognition)",
+   "target_audience": "Beginner learners, School students (CBSE / State Boards)",
+   "marks_per_question": 2,
+   "pedagogical_focus": "Identifying the verbal root (Dhātu), visible suffix, and primary lexical meaning without requiring sandhi or ablaut dissection."
+  },
+  {
+   "level_id": 2,
+   "level_code": "LEVEL_INTERMEDIATE",
+   "name_sa": "मध्यमस्तरः (माध्यमिकः)",
+   "name_en": "Intermediate Level (Morphological Operations & Affix Mechanics)",
+   "target_audience": "Intermediate students, Shastri 1st/2nd year, B.A. Sanskrit",
+   "marks_per_question": 3,
+   "pedagogical_focus": "Guṇa, Vṛddhi, Kit-marker restrictions (preventing guṇa), simple augments (nuṭ, iṭ), and feminine derivation (ङीष्)."
+  },
+  {
+   "level_id": 3,
+   "level_code": "LEVEL_ADVANCED",
+   "name_sa": "प्रौढस्तरः (उच्च-माध्यमिकः)",
+   "name_en": "Advanced Level (Complex Sound Replacements, Elisions & Indeclinables)",
+   "target_audience": "Advanced Sanskrit students, Acharya students, M.A. Sanskrit",
+   "marks_per_question": 4,
+   "pedagogical_focus": "Samprasāraṇa (vowelization of semivowels), Ti-lopa, root consonant elisions, sanvadbhāva, and indeclinable (Avyaya) derivation."
+  },
+  {
+   "level_id": 4,
+   "level_code": "LEVEL_EXPERT",
+   "name_sa": "विद्वत्स्तरः (शास्त्र-परीक्षा)",
+   "name_en": "Expert Level (Full Pāṇinian Sūtra-Vibhāga & Paribhāṣā Application)",
+   "target_audience": "Vyākaraṇa researchers, NET / JRF / PhD aspirants, Traditional Panditas",
+   "marks_per_question": 5,
+   "pedagogical_focus": "Full step-by-step procedural derivation (Prakriyā-koṣṭhaka), Paribhāṣā rules (षष्ठी स्थाने योगा, अलोऽन्त्यस्य, स्थानेऽन्तरतमः), and textual justification."
+  }
+ ],
+ "questions": [
+  {
+   "question_id": "UNP-L1-001",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "दिवसः",
+   "iast": "divasaḥ",
+   "category": "word_derivation_identification",
+   "marks": 2,
+   "question_sa": "'दिवसः' (दिनम्) इति रूपे कः धातुः, कश्च प्रत्ययः?",
+   "question_en": "In the word 'divasaḥ' (day), what is the verbal root and the Uṇādi suffix?",
+   "question_hi": "'दिवसः' (दिन) रूप में कौन सा धातु और कौन सा उणादि प्रत्यय है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "दिवुँ (क्रीडादौ) + असच्",
+     "text_en": "divu (to shine/play) + asac",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "दिष् + असुन्",
+     "text_en": "diṣ + asun",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "दिव् + घञ्",
+     "text_en": "div + ghañ",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "दी + क",
+     "text_en": "dī + ka",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "दिवः कित् (उणादि ३.१२१)",
+   "explanation_sa": "'दिवुँ क्रीडादौ' इत्यस्मात् धातोः 'दिवः कित्' इति सूत्रेण असच्प्रत्यये सति, कित्त्वान्निषेधे लघूपधगुणाभावे 'दिवसः' इति रूपं सिद्ध्यति।",
+   "explanation_en": "From the root 'divu' (to shine/play), suffix 'asac' is enjoined by 'divaḥ kit'. Kit-marker blocks guṇa, yielding 'divasaḥ'."
+  },
+  {
+   "question_id": "UNP-L1-002",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "इन्दुः",
+   "iast": "induḥ",
+   "category": "word_derivation_identification",
+   "marks": 2,
+   "question_sa": "'इन्दुः' (चन्द्रः) इति पदं कस्मात् धातोः निष्पद्यते?",
+   "question_en": "From which verbal root is the word 'induḥ' (moon) derived?",
+   "question_hi": "'इन्दुः' (चंद्रमा) शब्द किस धातु से व्युत्पन्न होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "इण् (गतौ)",
+     "text_en": "iṇ (to go)",
+     "is_correct": false
+    },
+    {
+     "id": "B",
+     "text_sa": "उन्दीँ (क्लेदने)",
+     "text_en": "undī (to moisten/glisten)",
+     "is_correct": true
+    },
+    {
+     "id": "C",
+     "text_sa": "इन्द् (परमैश्वर्ये)",
+     "text_en": "ind (to possess supreme wealth)",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "इध् (दीप्तौ)",
+     "text_en": "idh (to kindle)",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "उन्देरिच्चादेः (उणादि १.१२ / उणादिसूत्रपरीक्षा-२)",
+   "explanation_sa": "'उन्देरिच्चादेः' इति सूत्रेण 'उन्दीँ क्लेदने' धातोः उप्रत्यये धात्वादेः उकारस्य इकारे च कृते 'इन्दुः' इति रूपं सिद्ध्यति।",
+   "explanation_en": "By 'undericcādeḥ', from root 'undī' with suffix 'u', the initial vowel 'u' is substituted by 'i', yielding 'induḥ'."
+  },
+  {
+   "question_id": "UNP-L1-003",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "कृष्णः",
+   "iast": "kṛṣṇaḥ",
+   "category": "pratyaya_identification",
+   "marks": 2,
+   "question_sa": "'कृषेर्वर्णे' इति सूत्रेण कृष्णवर्णे गम्यमाने कः प्रत्ययो भवति?",
+   "question_en": "By the sūtra 'kṛṣervarṇe', which suffix is prescribed when color is meant?",
+   "question_hi": "'कृषेर्वर्णे' सूत्र द्वारा वर्ण (काले रंग) के अर्थ में कौन सा प्रत्यय लगता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "नक्",
+     "text_en": "nak",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "क्त",
+     "text_en": "kta",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "स्न",
+     "text_en": "sna",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "णिच्",
+     "text_en": "ṇic",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "कृषेर्वर्णे (उणादि ३.४)",
+   "explanation_sa": "'कृषँ विलेखने' धातोः वर्णे वाच्ये 'नक्' प्रत्ययो भवति, कित्त्वाद्गुणाभावे णत्वे च 'कृष्णः' सिद्ध्यति।",
+   "explanation_en": "From 'kṛṣ' (to draw/plough), suffix 'nak' attaches when color is meant. Kit-status prevents guṇa, and ṇatva yields 'kṛṣṇaḥ'."
+  },
+  {
+   "question_id": "UNP-L1-004",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "वेणुः",
+   "iast": "veṇuḥ",
+   "category": "root_substitution_identification",
+   "marks": 2,
+   "question_sa": "'वेणुः' (वंशः) इत्यत्र कस्य धातोः वी-आदेशो भवति?",
+   "question_en": "In 'veṇuḥ' (bamboo), which root is substituted by 'vī'?",
+   "question_hi": "'वेणुः' (बांस) में किस धातु के स्थान पर 'वी' आदेश होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "अज् (गतिक्षेपणयोः)",
+     "text_en": "aj (to drive/go)",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "वा (गतिगन्धनयोः)",
+     "text_en": "vā (to blow)",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "वेञ् (तन्तुसन्ताने)",
+     "text_en": "veñ (to weave)",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "विद् (ज्ञाने)",
+     "text_en": "vid (to know)",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "अजिवृरीभ्यो निच्च (उणादि ३.३८)",
+   "explanation_sa": "'अजिवृरीभ्यो निच्च' इति सूत्रेण णुप्रत्यये, 'अजेर्व्यघञपोः' इति अजधातोः वी-आदेशे गुणे च 'वेणुः' सिद्ध्यति।",
+   "explanation_en": "With suffix 'ṇu' by 3.38, the root 'aj' receives 'vī' substitution via 'ajervyaghañapoḥ', and guṇa produces 'veṇuḥ'."
+  },
+  {
+   "question_id": "UNP-L1-005",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "तृणम्",
+   "iast": "tṛṇam",
+   "category": "word_derivation_identification",
+   "marks": 2,
+   "question_sa": "'तृणम्' (घास) इत्यत्र 'तृहूँ' धातोः कः प्रत्ययः, कस्य च लोपः?",
+   "question_en": "In 'tṛṇam' (grass), from root 'tṛh', what is the suffix and what is deleted?",
+   "question_hi": "'तृणम्' में 'तृहूँ' धातु से कौन सा प्रत्यय लगता है और किसका लोप होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "क्न-प्रत्ययः, हकारस्य लोपः",
+     "text_en": "kna suffix, deletion of 'h'",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "क्त-प्रत्ययः, ऋकारस्य लोपः",
+     "text_en": "kta suffix, deletion of 'ṛ'",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "ण-प्रत्ययः, तकारस्य लोपः",
+     "text_en": "ṇa suffix, deletion of 't'",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "अन्-प्रत्ययः, नकारलोपः",
+     "text_en": "an suffix, deletion of 'n'",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "तृहेः क्नो हलोपश्च (उणादि ५.८)",
+   "explanation_sa": "'तृहेः क्नो हलोपश्च' सूत्रेण क्नप्रत्यये हलोपे च सति णत्वे 'तृणम्' रूपं सिद्ध्यति।",
+   "explanation_en": "The sūtra 'tṛheḥ kno halopaśca' attaches 'kna' and deletes consonant 'h', which becomes 'tṛṇam' after ṇatva."
+  },
+  {
+   "question_id": "UNP-L1-006",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "धान्यम्",
+   "iast": "dhānyam",
+   "category": "augment_identification",
+   "marks": 2,
+   "question_sa": "'दधातेर्यन्नुट् च' इत्यनेन 'डुधाञ्' धातोः कः प्रत्ययः कश्चागमः?",
+   "question_en": "By 'dadhāteryannuṭ ca', from root 'dhā', what suffix and augment are prescribed?",
+   "question_hi": "'दधातेर्यन्नुट् च' सूत्र से 'धा' धातु से कौन सा प्रत्यय और कौन सा आगम होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "यत्-प्रत्ययः, नुडागमः",
+     "text_en": "yat suffix, nuṭ augment",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "ण्यत्-प्रत्ययः, मुडागमः",
+     "text_en": "ṇyat suffix, muṭ augment",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "क्यप्-प्रत्ययः, तुकागमः",
+     "text_en": "kyap suffix, tuk augment",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "अन्-प्रत्ययः, युगागमः",
+     "text_en": "an suffix, yuk augment",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "दधातेर्यन्नुट् च (उणादि ५.४८)",
+   "explanation_sa": "'डुधाञ् धारणपोषणयोः' धातोः यत्-प्रत्यये, नुडागमे (धा + न् + य) 'धान्यम्' इति निष्पद्यते।",
+   "explanation_en": "From root 'dhā' (to hold/nourish), 'yat' suffix attaches with 'nuṭ' augment (dhā + n + ya), producing 'dhānyam'."
+  },
+  {
+   "question_id": "UNP-L1-007",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "सरः",
+   "iast": "saraḥ",
+   "category": "word_derivation_identification",
+   "marks": 2,
+   "question_sa": "'सरः' (सरोवरः) इति रूपं 'सृ गतौ' धातोः केन प्रत्ययेन सिद्ध्यति?",
+   "question_en": "With which suffix is the word 'saraḥ' (lake/water) derived from root 'sṛ'?",
+   "question_hi": "'सरः' (सरोवर/जल) रूप 'सृ गतौ' धातु से किस प्रत्यय द्वारा सिद्ध होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "असुन्-प्रत्ययेन ('सर्वधातुभ्योऽसुन्')",
+     "text_en": "asun suffix ('sarvadhātubhyo'sun')",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "घञ्-प्रत्ययेन",
+     "text_en": "ghañ suffix",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "अच्-प्रत्ययेन",
+     "text_en": "ac suffix",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "क-प्रत्ययेन",
+     "text_en": "ka suffix",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "सर्वधातुभ्योऽसुन् (उणादि ४.१८८)",
+   "explanation_sa": "'सृ गतौ' धातोः असुन्-प्रत्यये सति, 'उरण्रपरः' इति ऋकारस्य अर्-गुणे 'सरस्' इति जाते प्रथमैकवचने 'सरः' सिद्ध्यति।",
+   "explanation_en": "From root 'sṛ', suffix 'asun' is added; guṇa with ra-paratva produces 'saras', which in nom. singular becomes 'saraḥ'."
+  },
+  {
+   "question_id": "UNP-L1-008",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "धेनुः",
+   "iast": "dhenuḥ",
+   "category": "word_derivation_identification",
+   "marks": 2,
+   "question_sa": "'धेट् पाने' धातोः नु-प्रत्यये सति 'धेनुः' (गौः) रूपे किं कार्यं भवति?",
+   "question_en": "In 'dhenuḥ' (cow) from root 'dheṭ' with suffix 'nu', what vowel operation occurs?",
+   "question_hi": "'धेनुः' (गाय) रूप में 'धेट्' धातु से नु प्रत्यय होने पर क्या कार्य होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "इत्वे कृते पश्चाद् गुणे धे-भावः ('धेट इच्च')",
+     "text_en": "Itva followed by guṇa yielding dhe ('dheṭa icca')",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "आत्वे सति धानुरूपम्",
+     "text_en": "Ātva yielding dhānu",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "ऊत्वे सति धूनुरूपम्",
+     "text_en": "Ūtva yielding dhūnu",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "वृद्धौ धैनुरूपम्",
+     "text_en": "Vṛddhi yielding dhainu",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "धेट इच्च (उणादि ३.३४)",
+   "explanation_sa": "'धेट इच्च' इति सूत्रेण धेट् धातोः नुप्रत्यये इत्वे गुणे च 'धेनुः' सिद्ध्यति।",
+   "explanation_en": "By sūtra 3.34, 'dheṭ' receives suffix 'nu' with itva and subsequent guṇa to form 'dhenuḥ'."
+  },
+  {
+   "question_id": "UNP-L1-009",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "अश्वः",
+   "iast": "aśvaḥ",
+   "category": "word_derivation_identification",
+   "marks": 2,
+   "question_sa": "'अश्वः' (घोटकः) इति पदं कस्य प्रत्ययस्य संयोगात् निष्पद्यते?",
+   "question_en": "With which Uṇādi suffix is the word 'aśvaḥ' (horse) formed?",
+   "question_hi": "'अश्वः' (घोड़ा) शब्द किस प्रत्यय के संयोग से बनता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "क्वन्-प्रत्ययेन ('अशूप्रुषिलटि...भ्यः क्वन्')",
+     "text_en": "kvan suffix",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "अच्-प्रत्ययेन",
+     "text_en": "ac suffix",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "क्त-प्रत्ययेन",
+     "text_en": "kta suffix",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "वन्-प्रत्ययेन",
+     "text_en": "van suffix",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "अशूप्रुषिलटिकणिखटिविशिभ्यः क्वन् (उणादि १.१४९)",
+   "explanation_sa": "'अशू व्याप्तौ' धातोः क्वन्-प्रत्यये सति ककारनकारयोः इत्संज्ञायां लोपे च 'अश् + व = अश्वः' सिद्ध्यति।",
+   "explanation_en": "From root 'aś' (to pervade), suffix 'kvan' attaches; deletion of it-markers k and n leaves 'va', producing 'aśvaḥ'."
+  },
+  {
+   "question_id": "UNP-L1-010",
+   "level": "simple",
+   "level_number": 1,
+   "target_word": "सेतुः",
+   "iast": "setuḥ",
+   "category": "word_derivation_identification",
+   "marks": 2,
+   "question_sa": "'सिनोतीति सेतुः' इत्यत्र कः धातुः, कश्च प्रत्ययः?",
+   "question_en": "In 'setuḥ' (bridge), what is the root and suffix?",
+   "question_hi": "'सेतुः' (पुल) में कौन सा धातु और कौन सा प्रत्यय है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "षिञ् (बन्धने) + तुन्",
+     "text_en": "ṣiñ (to bind) + tun",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "सद् + तृच्",
+     "text_en": "sad + tṛc",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "सिध् + क्त",
+     "text_en": "sidh + kta",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "सेव् + उ",
+     "text_en": "sev + u",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "सितनिगमिमसिसच्यविधाञ्क्रुशिभ्यस्तुन् (उणादि १.६९)",
+   "explanation_sa": "'षिञ् बन्धने' धातोः तुन्-प्रत्यये, सत्वे, सार्वधातुकगुणे (इ -> ए), इडभावे च 'सेतुः' इति सिद्ध्यति।",
+   "explanation_en": "From root 'ṣiñ' (to bind), suffix 'tun' attaches; guṇa produces 'se' and with 'tu' forms 'setuḥ'."
+  },
+  {
+   "question_id": "UNP-L2-001",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "शार्ङ्गः",
+   "iast": "śārṅgaḥ",
+   "category": "prakriya_sandhi_viddhi",
+   "marks": 3,
+   "question_sa": "'शॄ हिंसायाम्' धातोः 'गण्' प्रत्यये सति 'शार्ङ्गः' इति रूपे ॠकारस्य किं कार्यं भवति?",
+   "question_en": "From root 'śṝ' with 'gaṇ' suffix, what operation applies to vowel 'ṝ' to yield 'śārṅgaḥ'?",
+   "question_hi": "'शॄ' धातु में 'गण्' प्रत्यय होने पर 'शार्ङ्गः' रूप में ॠकार को क्या कार्य होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "णित्त्वात् 'अचो ञ्णिति' इति वृद्धौ रपरत्वे शार्-भावः",
+     "text_en": "Vṛddhi via 'aco ñṇiti' with ra-paratva due to ṇ-it",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "सार्वधातुकार्धधातुकयोः इति गुणे अर्-भावः",
+     "text_en": "Guṇa via sārvadhātukārdhadhātukayoḥ yielding ar",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "उदोष्ठ्यपूर्वस्य इति उत्वे शूर्-भावः",
+     "text_en": "Utva yielding śūr",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "ह्रस्वत्वे शृ-भावः",
+     "text_en": "Shortening to śṛ",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "गण् शकुनौ (उणादि १.१२४) / अचो ञ्णिति (७.२.११५)",
+   "explanation_sa": "गण्-प्रत्ययस्य णित्त्वात् 'अचो ञ्णिति' इति ॠकारस्य आकारवृद्धौ 'उरण्रपरः' इति रपरत्वे 'शार्' इति जाते नुकि परसवर्णे 'शार्ङ्गः' सिद्ध्यति।",
+   "explanation_en": "Because gaṇ is ṇ-it, Aṣṭādhyāyī 7.2.115 commands Vṛddhi with ra-paratva (śṝ -> śār); subsequent nuṭ and parasavarṇa yield 'śārṅgaḥ'."
+  },
+  {
+   "question_id": "UNP-L2-002",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "हिरण्यम्",
+   "iast": "hiraṇyam",
+   "category": "adesha_and_natva",
+   "marks": 3,
+   "question_sa": "'हर्यतेः कन्यन् हिर च' इत्यत्र हर्य-धातोः कः आदेशः, किञ्च णत्वविधायकं सूत्रम्?",
+   "question_en": "In 'haryateḥ kanyan hira ca', what is the substitution for root 'harya' and what sūtra causes ṇatva?",
+   "question_hi": "'हर्यतेः कन्यन् हिर च' में हर्य धातु को क्या आदेश होता है और णत्व विधायक सूत्र कौन सा है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "हिर्-आदेशः, अट्कुप्वाङ्नुम्व्यवायेऽपि इति णत्वम्",
+     "text_en": "hir substitution, ṇatva by aṭkupvāṅnumvyavāye'pi",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "हरि-आदेशः, रषाभ्यां नो णः इति णत्वम्",
+     "text_en": "hari substitution, ṇatva by raṣābhyām no ṇaḥ",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "ह्य-आदेशः, णत्वनिषेधः",
+     "text_en": "hya substitution, ṇatva prohibition",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "हेम-आदेशः, कुत्वम्",
+     "text_en": "hema substitution, kutva",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "हर्यतेः कन्यन् हिर च (उणादि ५.४४) / अट्कुप्वाङ्नुम्व्यवायेऽपि (८.४.२)",
+   "explanation_sa": "हर्यतेः धातोः सर्वस्य स्थाने 'हिर्' इत्यादेशे, कन्यन्-प्रत्यये (किदित्त्वाद्गुणाभावे) 'अट्कुप्वाङ्नुम्व्यवायेऽपि' इति णत्वे 'हिरण्यम्' सिद्ध्यति।",
+   "explanation_en": "The root 'harya' is replaced by 'hir'; with suffix 'kanyan' (kit blocks guṇa), 'aṭkupvāṅnumvyavāye'pi' effects ṇatva yielding 'hiraṇyam'."
+  },
+  {
+   "question_id": "UNP-L2-003",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "ज्योतिः",
+   "iast": "jyotiḥ",
+   "category": "sound_substitution_and_guna",
+   "marks": 3,
+   "question_sa": "'द्युतेरिसिन्नादेश्च जः' इत्यनेन 'द्युत्' धातोः के के आदेशाः भवन्ति?",
+   "question_en": "By 'dyuterisinnādeśca jaḥ', which transformations take place on root 'dyut'?",
+   "question_hi": "'द्युतेरिसिन्नादेश्च जः' सूत्र से 'द्युत्' धातु में क्या-क्या परिवर्तन होते हैं?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "दकारस्य जकारादेशः, इसिन्-प्रत्ययः, लघूपधगुणश्च (उ -> ओ)",
+     "text_en": "Substitution of d by j, isin suffix, and laghūpadha-guṇa (u -> o)",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "यकारस्य लोपः, असुन्-प्रत्ययः",
+     "text_en": "Deletion of y, asun suffix",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "तकारस्य सत्वम्, इनि-प्रत्ययः",
+     "text_en": "Substitution of t by s, ini suffix",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "द्युत् इत्यस्य वृद्धिः (द्यौ)",
+     "text_en": "Vṛddhi of dyut (dyau)",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "द्युतेरिसिन्नादेश्च जः (उणादि २.११०)",
+   "explanation_sa": "'द्युतँ दीप्तौ' धात्वादेः दकारस्य जकारादेशे (ज्युत्), इसिन्-प्रत्यये, 'पुगन्तलघूपधस्य च' इति उकारस्य ओकारे गुणे 'ज्योतिस्' -> 'ज्योतिः' सिद्ध्यति।",
+   "explanation_en": "Initial 'd' becomes 'j' (jyut); suffix 'isin' induces laghūpadha-guṇa (u -> o) producing 'jyotis', inflected as 'jyotiḥ'."
+  },
+  {
+   "question_id": "UNP-L2-004",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "शर्वरी",
+   "iast": "śarvarī",
+   "category": "feminine_formation",
+   "marks": 3,
+   "question_sa": "'शर्वरी' (रात्रिः) इति रूपे 'ष्वरच्' प्रत्ययस्य षित्त्वात् कः स्त्रीप्रत्ययो भवति?",
+   "question_en": "In 'śarvarī' (night), because suffix 'ṣvarac' is ṣ-it, which feminine affix is attached?",
+   "question_hi": "'शर्वरी' रूप में 'ष्वरच्' प्रत्यय के षित् होने के कारण कौन सा स्त्रीप्रत्यय लगता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "षित्त्वात् 'षिद्गौरादिभ्यश्च' इति ङीष् (ई)",
+     "text_en": "Due to ṣ-it, ṅīṣ (ī) via 'ṣidgaurādibhyaśca'",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "अजाद्यतष्टाप् इति टाप् (आ)",
+     "text_en": "ṭāp (ā) via 'ajādyataṣṭāp'",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "ऋन्नेभ्यो ङीप् इति ङीप् (ई)",
+     "text_en": "ṅīp (ī) via 'ṛnnebhyo ṅīp'",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "शार्ङ्गरवाद्यञो ङीन् इति ङीन्",
+     "text_en": "ṅīn via 'śārṅgaravādyaño ṅīn'",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "कॄगॄशॄवृञ्चतिभ्यः ष्वरच् (उणादि २.१२२) / षिद्गौरादिभ्यश्च (४.१.४१)",
+   "explanation_sa": "ष्वरच्-प्रत्ययस्य षात्त्वात् 'षिद्गौरादिभ्यश्च' (४.१.४१) सूत्रेण शर्वर-शब्दात् ङीष्-प्रत्यये, 'यस्येति च' इत्यलोपे 'शर्वरी' सिद्ध्यति।",
+   "explanation_en": "Because ṣvarac contains indicatory 'ṣ', Aṣṭādhyāyī 4.1.41 enjoins 'ṅīṣ' (ī), forming 'śarvarī' after elision of final short 'a'."
+  },
+  {
+   "question_id": "UNP-L2-005",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "कुमारः",
+   "iast": "kumāraḥ",
+   "category": "vowel_shift_and_kit",
+   "marks": 3,
+   "question_sa": "'कमेः किदुच्चोपधायाः' इत्यनेन 'कम्' धातोः आरन् प्रत्यये उपधायाः किं भवति?",
+   "question_en": "By 'kameḥ kiduccopadhāyāḥ', with suffix 'āran' on root 'kam', what change affects the penultimate vowel?",
+   "question_hi": "'कमेः किदुच्चोपधायाः' सूत्र से 'कम्' धातु में आरन् प्रत्यय लगने पर उपधा को क्या होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "उपधाभूत-अकारस्य उकारादेशः (कुम् + आर)",
+     "text_en": "Penultimate 'a' is replaced by 'u' (kum + āra)",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "उपधायाः आकारवृद्धिः (काम् + आर)",
+     "text_en": "Penultimate 'a' undergoes vṛddhi to 'ā'",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "उपधालोपः (क्म् + आर)",
+     "text_en": "Deletion of penultimate vowel",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "उपधायाः इत्वम् (किम् + आर)",
+     "text_en": "Penultimate 'a' becomes 'i'",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "कमेः किदुच्चोपधायाः (उणादि ३.१३८)",
+   "explanation_sa": "कमुँ कान्तौ धातोः आरन्-प्रत्यये, सूत्रेण उपधा-अकारस्य उत्वे (कुम्), कित्त्वान्न गुणः, तेन 'कुमारः' सिद्ध्यति।",
+   "explanation_en": "Penultimate 'a' is replaced by 'u' (kum); kit status prevents guṇa, resulting in 'kumāraḥ'."
+  },
+  {
+   "question_id": "UNP-L2-006",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "भवन्तिः",
+   "iast": "bhavantiḥ",
+   "category": "pratyaya_antadesha",
+   "marks": 3,
+   "question_sa": "'भुवो झिच्' (उणादि ३.५०) इत्यनेन भू-धातोः झिच् प्रत्यये झकारस्य कः आदेशः?",
+   "question_en": "By 'bhuvo jhic', when suffix 'jhic' is added to 'bhū', what is the substitution for 'jh'?",
+   "question_hi": "'भुवो झिच्' सूत्र से भू धातु में झिच् प्रत्यय होने पर झकार को क्या आदेश होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "'झोऽन्तः' (७.१.३) इति अन्तादेशः (भू + अन्ति)",
+     "text_en": "ant substitution via 'jho'ntaḥ' (7.1.3)",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "अत्-आदेशः",
+     "text_en": "at substitution",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "इन्-आदेशः",
+     "text_en": "in substitution",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "जश्त्वेन ज्-आदेशः",
+     "text_en": "j substitution via jaśtva",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "भुवो झिच् (उणादि ३.५०) / झोऽन्तः (७.१.३)",
+   "explanation_sa": "भू + झिच् इत्यत्र 'झोऽन्तः' इति झकारस्य अन्तादेशे 'भू + अन्तिच्', चकारलोपे, ओकारावादेशयोः 'भवन्तिः' इति सिद्ध्यति।",
+   "explanation_en": "On bhū + jhic, sūtra 7.1.3 substitutes 'jh' with 'ant' -> bhū + antic; guṇa and av-ādeśa produce 'bhavantiḥ'."
+  },
+  {
+   "question_id": "UNP-L2-007",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "चतुरः",
+   "iast": "caturaḥ",
+   "category": "root_elision_urac",
+   "marks": 3,
+   "question_sa": "'चतेँ याचने' धातोः 'उरच्' प्रत्यये सति 'चतुरः' (दक्षः) रूपसिद्धौ कस्य लोपः?",
+   "question_en": "From root 'cate' (to request) with suffix 'urac' in 'caturaḥ', what element is elided?",
+   "question_hi": "'चतेँ याचने' धातु से 'उरच्' प्रत्यय लगने पर 'चतुरः' रूप में किसका लोप होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "अनुनासिक-एकारस्य ('उपदेशेऽजनुनासिक इत्') तथा प्रत्ययचकारस्य",
+     "text_en": "It-markers nasal 'e' and suffix 'c'",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "तकारस्य लोपः",
+     "text_en": "Deletion of consonant t",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "उकारस्य लोपः",
+     "text_en": "Deletion of vowel u",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "उपधाया लोपः",
+     "text_en": "Deletion of upadhā",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "मन्दिवाशिमथिचतिचङ्क्यङ्किभ्य उरच् (उणादि १.३८)",
+   "explanation_sa": "चतेँ इत्यत्र एकारलोपे 'चत् + उर = चतुर', प्रथमैकवचने सुँ-प्रत्यये रुत्वविसर्गयोः 'चतुरः' सिद्ध्यति।",
+   "explanation_en": "After elision of the it-marker nasal 'e' from root 'cate', cat + ur produces 'caturaḥ' in nominative singular."
+  },
+  {
+   "question_id": "UNP-L2-008",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "दर्द्रूः",
+   "iast": "dardrūḥ",
+   "category": "special_elision_yalopa",
+   "marks": 3,
+   "question_sa": "'दरिद्रा दुर्गतौ' धातोः 'ऊ' प्रत्यये 'दर्द्रूः' (कुष्ठरोगः) रूपसिद्धौ सूत्रेण कयोः लोप उच्यते?",
+   "question_en": "From root 'daridrā' with suffix 'ū' in 'dardrūḥ' (skin affliction), which sounds are specifically deleted?",
+   "question_hi": "'दरिद्रा' धातु से 'ऊ' प्रत्यय होने पर 'दर्द्रूः' की सिद्धि में सूत्र द्वारा किन वर्णों का लोप होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "इकार-आकारयोः लोपः ('दरिद्रातेर्यालोपश्च')",
+     "text_en": "Elision of 'i' and 'ā' via 'daridrāteryālopaśca'",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "रेफस्य लोपः",
+     "text_en": "Elision of 'r'",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "दकारस्य लोपः",
+     "text_en": "Elision of 'd'",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "ऊकारस्य लोपः",
+     "text_en": "Elision of 'ū'",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "दरिद्रातेर्यालोपश्च (उणादि १.९०)",
+   "explanation_sa": "दरिद्रा + ऊ इत्यवस्थायां सूत्रेण इकार-आकारयोः (यालोपः) लोपे कृते 'दर् द्र् + ऊ = दर्द्रूः' इति सिद्ध्यति।",
+   "explanation_en": "On daridrā + ū, the sūtra explicitly mandates elision of the internal 'i' and final 'ā', yielding 'dardrūḥ'."
+  },
+  {
+   "question_id": "UNP-L2-009",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "अञ्जलिः",
+   "iast": "añjaliḥ",
+   "category": "affix_classification",
+   "marks": 3,
+   "question_sa": "'अञ्जुँ व्यक्तिम्रक्षणकान्तिगतिषु' धातोः 'अञ्जलिः' इति रूपे कः उणादिप्रत्ययः?",
+   "question_en": "In 'añjaliḥ' (folded hands) from root 'añj', what is the Uṇādi suffix?",
+   "question_hi": "'अञ्जलिः' रूप में 'अञ्ज्' धातु से कौन सा उणादि प्रत्यय होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "अलिच्-प्रत्ययः ('ऋतन्यञ्जि...भ्यः... अलिच्')",
+     "text_en": "alic suffix",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "इन्-प्रत्ययः",
+     "text_en": "in suffix",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "किन्-प्रत्ययः",
+     "text_en": "kin suffix",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "अच्-प्रत्ययः",
+     "text_en": "ac suffix",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "ऋतन्यञ्जिवन्यञ्ज्यर्पिमद्यत्यङ्गिकुयुकृशिभ्यः... (उणादि ४.२)",
+   "explanation_sa": "'अञ्जेरलिच्' इति क्रमनियमात् अञ्ज् धातोः अलिच् प्रत्यये चकारलोपे 'अञ्जलिः' सिद्ध्यति।",
+   "explanation_en": "According to the sequential rule in 4.2, root 'añj' takes 'alic' suffix, yielding 'añjaliḥ'."
+  },
+  {
+   "question_id": "UNP-L2-010",
+   "level": "intermediate",
+   "level_number": 2,
+   "target_word": "मत्स्यः",
+   "iast": "matsyaḥ",
+   "category": "sound_substitution_syap",
+   "marks": 3,
+   "question_sa": "'मदीँ हर्षे' धातोः स्यन्-प्रत्यये 'मत्स्यः' इति रूपे दकारस्य कः आदेशः?",
+   "question_en": "From root 'mad' with suffix 'syan' in 'matsyaḥ' (fish), what change affects 'd'?",
+   "question_hi": "'मदीँ' धातु से स्यन् प्रत्यय होने पर 'मत्स्यः' रूप में दकार को क्या कार्य होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "'खरि च' (८.४.५५) इति चर्त्वेन दकारस्य तकारादेशः",
+     "text_en": "Cartva by 'khari ca' changing 'd' to 't'",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "जश्त्वेन दकारस्य जकारः",
+     "text_en": "Jaśtva changing 'd' to 'j'",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "दकारस्य लोपः",
+     "text_en": "Deletion of 'd'",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "ष्टुत्वेन टकारादेशः",
+     "text_en": "Ṣṭutva changing 'd' to 'ṭ'",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "ऋतन्यञ्जिवन्यञ्ज्यर्पिमद्यत्यङ्गिकुयुकृशिभ्यः कत्निच्यतुजलिजिष्ठुजिष्ठजिसन्स्यनिथिनुल्यसासानुकः (उणादि ४.२ — मदेः स्यन्) / खरि च (८.४.५५)",
+   "explanation_sa": "मद् + स्यन् इत्यवस्थायां सकारपरकत्वात् 'खरि च' सूत्रेण दकारस्य चर्त्वे तकारे 'मत्स्यः' सिद्ध्यति।",
+   "explanation_en": "On mad + syan, before voiceless s, 'khari ca' converts voiced 'd' to unvoiced 't', yielding 'matsyaḥ'."
+  },
+  {
+   "question_id": "UNP-L3-001",
+   "level": "advanced",
+   "level_number": 3,
+   "target_word": "अक्षरम्",
+   "iast": "akṣaram",
+   "category": "phonological_chain_transformation",
+   "marks": 4,
+   "question_sa": "'अशूँ व्याप्तौ' धातोः 'सर' प्रत्यये सति 'अक्षरम्' इत्यत्र ककारषकारयोः (क्ष) निष्पत्तिः कैः सूत्रैः जायते?",
+   "question_en": "From root 'aś' with 'sara' suffix in 'akṣaram', which sūtras govern the change of 'ś + s' into 'k + ṣ'?",
+   "question_hi": "'अशूँ' धातु में 'सर' प्रत्यय होने पर 'अक्षरम्' में 'श् + स्' से 'क् + ष्' (क्ष) किस सूत्र-शृंखला से बनता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "व्रश्चादिना शस्य षत्वे, षढोः कः सि इति कत्वे, आदेशप्रत्यययोः इति सस्य षत्वे (अक् + षर)",
+     "text_en": "ṣatva by vraścādinā, kutva by ṣaḍhoḥ kaḥ si, and retroflexion by ādeśapratyayayoḥ",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "झलां जशोऽन्ते इति जश्त्वे, खरि च इति चर्त्वे",
+     "text_en": "jaśtva by jhalāṁ jaśo'nte, followed by khari ca",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "स्कोः संयोगाद्योः इति सलोपे, चोः कुः इति कुत्वे",
+     "text_en": "salopa by skoḥ saṁyogādyoḥ, followed by coḥ kuḥ",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "स्तोः श्चुना श्चुः इति श्चुत्वे",
+     "text_en": "ścutva by stoḥ ścunā ścuḥ",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "अशेः सरः (उणादि ३.७०) / षढोः कः सि (८.२.४१) / आदेशप्रत्यययोः (८.३.५९)",
+   "explanation_sa": "अश् + सर -> 'व्रश्च...' इति शस्य षत्वे (अष् + सर) -> 'षढोः कः सि' इति षस्य ककारे (अक् + सर) -> 'आदेशप्रत्यययोः' इति सस्य षत्वे (अक् + षर = अक्षरम्)।",
+   "explanation_en": "First, 'ś' becomes 'ṣ' before s (aṣ + sara); then 'ṣaḍhoḥ kaḥ si' converts 'ṣ' to 'k' (ak + sara); finally 'ādeśapratyayayoḥ' retroflexes suffix 's' to 'ṣ' (akṣaram)."
+  },
+  {
+   "question_id": "UNP-L3-002",
+   "level": "advanced",
+   "level_number": 3,
+   "target_word": "स्वसा",
+   "iast": "svasā",
+   "category": "anang_and_subanta_prakriya",
+   "marks": 4,
+   "question_sa": "'सुञ् असँ ऋन्' इत्यवस्थायां 'स्वसा' इति प्रथमैकवचने 'अनङ्' आदेशः केन सूत्रेण विधीयते?",
+   "question_en": "In 'suñ as ṛn', by which sūtra is the 'anaṅ' substitution commanded in nominative singular to form 'svasā'?",
+   "question_hi": "'स्वसा' के प्रथमा एकवचन रूप की सिद्धि में 'अनङ्' आदेश किस सूत्र से होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "ऋदुशनस्पुरुदंसोऽनेहसां च (७.१.९४)",
+     "text_en": "ṛduśanaspurudaṁso'nehasāṁ ca (7.1.94)",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "अनङ्सौ (७.१.९३)",
+     "text_en": "anaṅsau (7.1.93)",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "सर्वनामस्थाने चासम्बुद्धौ (६.४.८)",
+     "text_en": "sarvanāmasthāne cāsambuddhau (6.4.8)",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "अप्तृन्तृच्... (६.४.११)",
+     "text_en": "aptṛntṛc... (6.4.11)",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "सुञ्यसेर्ऋन् (उणादि २.९६) / ऋदुशनस्पुरुदंसोऽनेहसां च (७.१.९४)",
+   "explanation_sa": "स्वसृ + सुँ इत्यत्र 'ऋदुशनस्...' (७.१.९४) सूत्रेण असम्बुद्धौ सु-प्रत्यये परतः ऋकारस्य अनङादेशे (स्वस्-अन्-स्), उपधादीर्घे (स्वसान्-स्), सुलोपे, नलोपे च 'स्वसा' सिद्ध्यति।",
+   "explanation_en": "On svasṛ + su, sūtra 7.1.94 substitutes 'ṛ' with 'anaṅ' (svas-an-s). Upadhā-dīrgha gives svasān-s; elision of 's' and final 'n' yields 'svasā'."
+  },
+  {
+   "question_id": "UNP-L3-003",
+   "level": "advanced",
+   "level_number": 3,
+   "target_word": "आपः",
+   "iast": "āpaḥ",
+   "category": "nitya_bahuvacana_and_dirgha",
+   "marks": 4,
+   "question_sa": "'आपॢँ व्याप्तौ' धातोः क्विप्-प्रत्ययान्तः 'अप्' शब्दः कस्मिन् वचने नित्यं प्रयुज्यते, केन च सूत्रेण उपधादीर्घः?",
+   "question_en": "In what number is the word 'ap' (from root āp + kvip) exclusively inflected, and by which sūtra is penultimate lengthening applied?",
+   "question_hi": "'अप्' (जल) शब्द नित्य किस वचन में प्रयुक्त होता है, और किस सूत्र से उपधा दीर्घ होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "नित्यबहुवचने; 'अप्तृन्तृच्स्वसृनप्तृनेष्टृत्वष्टृक्षत्तृहोतृपोतृप्रशास्तॄणाम्' (६.४.११) इति दीर्घः",
+     "text_en": "Exclusively plural; lengthening by 'aptṛntṛcsvasṛnaptṛ...' (6.4.11)",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "नित्यैकवचने; 'अतो दीर्घो यञि' इति दीर्घः",
+     "text_en": "Exclusively singular; lengthening by 'ato dīrgho yañi'",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "द्विवचने; 'प्रथमयोः पूर्वसवर्णः' इति दीर्घः",
+     "text_en": "Dual; lengthening by 'prathamayoḥ pūrvasavarṇaḥ'",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "त्रिलिङ्गेषु सर्ववचनेषु",
+     "text_en": "In all three genders and numbers",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "आप्नोतेर्ह्रस्वश्च (उणादि २.५९) / अप्तृन्तृच्... (६.४.११)",
+   "explanation_sa": "'अप्' शब्दः स्त्रीलिङ्गे नित्यं बहुवचनान्तः। जस्-प्रत्यये परतः (अप् + अस्) ६.४.११ सूत्रेण अपां सर्वनामस्थाने उपधादीर्घे 'आपः' इति सिद्ध्यति।",
+   "explanation_en": "The feminine noun 'ap' (water) is nitya-bahuvacanānta. Before jas (as), sūtra 6.4.11 specifically lengthens 'ap' to 'āp', yielding 'āpaḥ'."
+  },
+  {
+   "question_id": "UNP-L3-004",
+   "level": "advanced",
+   "level_number": 3,
+   "target_word": "निकषा",
+   "iast": "nikaṣā",
+   "category": "avyaya_and_sulopa",
+   "marks": 4,
+   "question_sa": "'आः समिण्निकषिभ्याम्' इत्यनेन निष्पन्नस्य 'निकषा' इत्यस्य प्रातिपदिकात्परस्य सुप्रत्ययस्य लोपः केन सूत्रेण भवति?",
+   "question_en": "In the derivation of 'nikaṣā', by which sūtra is the nominative singular case ending (su) deleted?",
+   "question_hi": "'निकषा' शब्द की सिद्धि में सुप्रत्यय का लोप किस सूत्र से होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "अव्ययादाप्सुपः (२.४.८२)",
+     "text_en": "avyayādāpsupaḥ (2.4.82)",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "हल्ङ्याब्भ्यो दीर्घात् सुतिस्यपृक्तं हल् (६.१.६८)",
+     "text_en": "halṅyābbhyo dīrghāt sutisyapṛktaṁ hal (6.1.68)",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "नलोपः प्रातिपदिकान्तस्य (८.२.७)",
+     "text_en": "nalopaḥ prātipadikāntasya (8.2.7)",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "सुपो धातुप्रतिपदिकयोः (२.४.७१)",
+     "text_en": "supo dhātuprātipadikayoḥ (2.4.71)",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "आः समिण्निकषिभ्याम् (उणादि ४.१७४) / अव्ययादाप्सुपः (२.४.८२)",
+   "explanation_sa": "स्वरादिगणे पाठात् 'निकषा' इत्यस्य अव्ययसञ्ज्ञा वर्तते। अतः प्रातिपदिकात् उत्पन्नायाः प्रथमाविभक्तेः 'अव्ययादाप्सुपः' (२.४.८२) सूत्रेण सम्पूर्णलोपो भवति।",
+   "explanation_en": "Because 'nikaṣā' is listed in Svarādi-gaṇa, it is an Avyaya. Sūtra 2.4.82 deletes the sup case affix following an indeclinable."
+  },
+  {
+   "question_id": "UNP-L3-005",
+   "level": "advanced",
+   "level_number": 3,
+   "target_word": "परिव्राट्",
+   "iast": "parivrāṭ",
+   "category": "padanta_satva_and_jashtva",
+   "marks": 4,
+   "question_sa": "'परौ व्रजेः षश्च पदान्ते' (उणादि २.६०) इत्यनेन 'परिव्राज्' इत्यस्य पदान्ते जकारस्य स्थाने किं किं भवति?",
+   "question_en": "By 'parau vrajeḥ ṣaśca padānte', at the word boundary (padānta) of 'parivrāj', what sequence of sound changes occurs?",
+   "question_hi": "'परौ व्रजेः षश्च पदान्ते' सूत्र से 'परिव्राज्' के पदान्त जकार को किस क्रम में आदेश होते हैं?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "सूत्रेण षत्वे (परिव्राष्), जश्त्वे डकारः (परिव्राड्), वाऽवसाने इति चर्त्वविकल्पेन टकारः (परिव्राट्)",
+     "text_en": "ṣatva by the sūtra, then jaśtva to ḍ, then optional cartva to ṭ",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "केवलम् कुत्वेन गकारः ककारश्च",
+     "text_en": "Kutva to g and k only",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "जकारस्य लोपः",
+     "text_en": "Elision of j",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "रुत्वविसर्गौ",
+     "text_en": "Rutva and visarga",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "परौ व्रजेः षश्च पदान्ते (उणादि २.६०) / झलां जशोऽन्ते (८.२.३९)",
+   "explanation_sa": "परि-पूर्वात् व्रज्-धातोः क्विपि, दीर्घे 'परिव्राज्' सुलोपे पदान्तत्वात् सूत्रेण षत्वे 'परिव्राष्', जश्त्वे 'परिव्राड्', चर्त्वविकल्पे 'परिव्राट्' इति रूपद्वयं सिद्ध्यति।",
+   "explanation_en": "From pari + vraj + kvip with dīrgha -> parivrāj. Padānta 'j' receives 'ṣ' -> parivrāṣ; jaśtva yields 'parivrāḍ', and optional cartva gives 'parivrāṭ'."
+  },
+  {
+   "question_id": "UNP-L3-006",
+   "level": "advanced",
+   "level_number": 3,
+   "target_word": "गौः",
+   "iast": "gauḥ",
+   "category": "ti_lopa_and_vriddhi",
+   "marks": 4,
+   "question_sa": "'गमेर्डोः' (उणादि २.६८) इत्यनेन गम्-धातोः 'डो' प्रत्यये डित्त्वस्य किं प्रयोजनम्?",
+   "question_en": "In 'gamerḍoḥ' where suffix 'ḍo' attaches to 'gam', what is the technical purpose of the indicatory 'ḍ'?",
+   "question_hi": "'गमेर्डोः' सूत्र में गम् धातु से 'डो' प्रत्यय होने पर डकार की इत्संज्ञा (डित्त्व) का क्या प्रयोजन है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "'डिति' (६.४.१४३) इति धातोः टेः (अम्-भागस्य) लोपः (ग् + ओ = गो)",
+     "text_en": "Ti-lopa of the root's final syllable 'am' via 6.4.143",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "धातोरादिवृद्धिः",
+     "text_en": "Vṛddhi of the initial sound",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "गुणनिषेधः",
+     "text_en": "Prevention of guṇa",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "अन्तादेशः",
+     "text_en": "Final substitution",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "गमेर्डोः (उणादि २.६८) / डिति (६.४.१४३)",
+   "explanation_sa": "गम्-धातोः डो-प्रत्यये डित्त्वात् 'टेः' (६.४.१४३) इति 'अम्' इत्यस्य टिसंज्ञकस्य लोपे 'ग् + ओ = गो' इति प्रातिपदिके सति सुप्रत्यये 'गौः' इति सिद्ध्यति।",
+   "explanation_en": "The indicatory 'ḍ' triggers 'ḍiti' (6.4.143) to elide the ṭi-portion ('am') of the root: g + o = go, which becomes 'gauḥ' in nom. singular."
+  },
+  {
+   "question_id": "UNP-L3-007",
+   "level": "advanced",
+   "level_number": 3,
+   "target_word": "ओम्",
+   "iast": "om",
+   "category": "oot_and_tilopa",
+   "marks": 4,
+   "question_sa": "'अवतेष्टिलोपश्च' (उणादि १.१३९) इत्यनेन 'अव (रक्षणादिषु)' धातोः मन्-प्रत्यये 'ओम्' रूपसिद्धौ कस्य टिलोपो भवति?",
+   "question_en": "In 'avateṣṭilopaśca' yielding 'om' from root 'av' + 'man', whose 'ṭi' portion is elided?",
+   "question_hi": "'अवतेष्टिलोपश्च' सूत्र द्वारा 'अव' धातु से मन् प्रत्यय होने पर 'ओम्' की सिद्धि में किसका टिलोप होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "मन्-प्रत्ययस्यैव 'अन्' इत्यस्य टिलोपः (न तु धातोः)",
+     "text_en": "The 'an' syllable of the suffix 'man' itself (not of the root)",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "अव-धातोः वकारस्य",
+     "text_en": "Of the consonant 'v' of root av",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "सुप्रत्ययस्य",
+     "text_en": "Of the case ending su",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "सम्पूर्णस्य मन्-प्रत्ययस्य",
+     "text_en": "Of the entire suffix man",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "अवतेष्टिलोपश्च (उणादि १.१३९) / ज्वरत्वर... (६.४.२०)",
+   "explanation_sa": "उणादिसूत्रे मन्-प्रत्ययस्यैव अन्-भागस्य टिलोपो भवति (अव + म् -> ऊठि ऊ + म् -> गुणे ओम्)। अन्यथा डिदित्येव ब्रूयात्।",
+   "explanation_en": "The sūtra explicitly states ti-lopa of suffix 'man' (its 'an' portion), leaving 'm'; with ūṭh on root av (ū -> o), it derives 'om'."
+  },
+  {
+   "question_id": "UNP-L3-008",
+   "level": "advanced",
+   "level_number": 3,
+   "target_word": "धीवा",
+   "iast": "dhīvā",
+   "category": "samprasarana_kvanip",
+   "marks": 4,
+   "question_sa": "'ध्याप्योः संप्रसारणं च' (उणादि ४.११४) इत्यनेन 'ध्यै' धातोः क्वनिप्-प्रत्यये 'धीवा' रूपसिद्धौ सम्प्रसारणं कथं सिद्ध्यति?",
+   "question_en": "In 'dhyāpyoḥ saṁprasāraṇaṁ ca' from root 'dhyai' with suffix 'kvanip' to form 'dhīvā' (workman), how is samprasāraṇa effected?",
+   "question_hi": "'ध्याप्योः संप्रसारणं च' सूत्र से 'ध्यै' धातु में क्वनिप् प्रत्यय होने पर 'धीवा' की सिद्धि में सम्प्रसारण कैसे होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "आत्वे सति 'ध्या' इत्यवस्थायां यकारस्य इकारे, पूर्वरूपे च दीर्घे 'धी + वन् = धीवा'",
+     "text_en": "After ātva to dhyā, semivowel y becomes vowel i, followed by pūrvarūpa and dīrgha -> dhīvan -> dhīvā",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "धकारस्य दकारादेशे",
+     "text_en": "Substitution of dh by d",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "वकारस्य उकारे",
+     "text_en": "Semivowel v becomes u",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "नकारस्य लोपे",
+     "text_en": "Simple deletion of n",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "ध्याप्योः संप्रसारणं च (उणादि ४.११४)",
+   "explanation_sa": "ध्यै -> आत्वे 'ध्या वन्' -> सम्प्रसारणे यकारस्य इकारे 'ध् इ आ वन्' -> 'सम्प्रसारणाच्च' इति पूर्वरूपे दीर्घे च 'धीवन्' -> सौ 'धीवा' सिद्ध्यति।",
+   "explanation_en": "Dhyai undergoes ātva to dhyā; sūtra commands samprasāraṇa of 'y' to 'i' (dh-i-ā-van) -> pūrvarūpa and dīrgha give dhīvan, nom. sg. dhīvā."
+  },
+  {
+   "question_id": "UNP-L4-001",
+   "level": "expert",
+   "level_number": 4,
+   "target_word": "तितउः",
+   "iast": "titauḥ",
+   "category": "full_prakriya_and_paribhasha",
+   "marks": 5,
+   "question_sa": "'तन्' धातोः 'डउ' प्रत्यये 'तितउः' (चालनी / sieve) इति रूपसिद्धौ अभ्यास-अकारस्य इत्वं, गुणाभावश्च कथं व्यवस्थाप्यते?",
+   "question_en": "In the derivation of 'titauḥ' (sieve) from root 'tan' + 'ḍau', how are abhyāsa-itva and the absence of guṇa technically justified?",
+   "question_hi": "'तन्' धातु से 'डउ' प्रत्यय होने पर 'तितउः' (चलनी) की रूपसिद्धि में अभ्यास के अकार का इत्व और 'आद्गुणः' का निषेध किस प्रकार व्यवस्थापित होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "सन्वद्भावात् द्वित्वे 'सन्यतः' इति अभ्यासस्य इत्वम्; प्रत्यये अ-उकारयोः स्पष्टोच्चारणसामर्थ्याद् गुणाभावः; डित्त्वाट्टिलोपे तितउः सिद्ध्यति",
+     "text_en": "Sanvadbhāva causes reduplication and 'sanyataḥ' gives itva; distinct pronunciation of 'a-u' prevents guṇa; ḍit-status causes ti-lopa.",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "लिट्-लकारवद्भावाद् द्वित्वम्, एधप्रभृतित्वाद् गुणाभावः",
+     "text_en": "Reduplication like Liṭ, absence of guṇa like edha",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "यङ्लुगन्तत्वाद् द्वित्वम्, अचो यणादेशः",
+     "text_en": "Reduplication as yaṅluk, yaṇ substitution",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "निपातनात् सर्वकार्याभावः",
+     "text_en": "Total absence of operations due to nipātana alone",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "तनोतेर्डउः सन्वच्च (उणादि ५.५२ / उणादिसूत्रपरीक्षा-२) / सन्यतः (७.४.५४)",
+   "explanation_sa": "१. 'तनोतेर्डउः सन्वच्च' इति सूत्रेण सन्वद्भावात् 'सन्यङोः' इति द्वित्वे 'तन् तन् अउ' इति जाते।\n२. 'हलादिः शेषः' इति अभ्यास-नलोपे, 'सन्यतः' (७.४.५४) इति अभ्यास-अकारस्य इत्वे 'ति तन् अउ'।\n३. प्रत्यये अकार-उकारयोः पृथगुच्चारणसामर्थ्यात् 'आद्गुणः' न प्रवर्तते।\n४. 'डित्त्वसामर्थ्यादभस्यापि टेर्लोपः' इति तन्-धातोः अन्त्यभागस्य (अन्) टिलोपे 'ति त् अउ' = 'तितउ' इति प्रातिपदिके सति रुत्वविसर्गयोः 'तितउः' सिद्ध्यति।",
+   "explanation_en": "1. Sūtra commands sanvadbhāva -> reduplication 'tan-tan-au'.\n2. 'Halādiḥ śeṣaḥ' removes 'n', and 'sanyataḥ' (7.4.54) turns abhyāsa 'a' into 'i' -> 'ti-tan-au'.\n3. Guṇa between 'a' and 'u' is blocked by intentional explicit pronunciation in the sūtra.\n4. Sāmarthya of ḍ-it causes ti-lopa on the root -> 'ti-t-au' = titauḥ."
+  },
+  {
+   "question_id": "UNP-L4-002",
+   "level": "expert",
+   "level_number": 4,
+   "target_word": "अञ्च्यञ्जियुजिभृजिभ्यः कुश्च",
+   "iast": "añcyañjiyujibhṛjibhyaḥ kuśca",
+   "category": "sutra_padavibhaga_and_paribhasha",
+   "marks": 5,
+   "question_sa": "'अञ्च्यञ्जियुजिभृजिभ्यः कुश्च' (उणादि ४.२१५) इति सूत्रे 'कुः' इति आदेशः कैः परिभाषानियमैः धातोः अन्त्यस्यैव भवति?",
+   "question_en": "In 'añcyañjiyujibhṛjibhyaḥ kuśca', by which paribhāṣā rules does 'kuḥ' substitute only the final consonant of the roots?",
+   "question_hi": "'अञ्च्यञ्जियुजिभृजिभ्यः कुश्च' सूत्र में 'कुः' (कवर्ग) आदेश किन परिभाषा सूत्रों के सहयोग से धातु के अन्त्य वर्ण को ही होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "आवृत्त्या लब्धे षष्ठीनिर्दिष्टे 'षष्ठी स्थाने योगा', एकाल्त्वात् 'अलोऽन्त्यस्य', सदृशतमत्वार्थं 'स्थानेऽन्तरतमः' इति त्रिभिः नियमैः",
+     "text_en": "By 'ṣaṣṭhī sthāne yogā' via āvṛtti, 'alo'ntyasya' due to single-sound ādeśa, and 'sthāne'ntaratamaḥ'",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "अनेकाल्शित्सर्वस्य इति सम्पूर्णस्य धातोः स्थाने",
+     "text_en": "Entire root substitution via anekālśitsarvasya",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "आदेः परस्य इति आद्यक्षरस्यैव",
+     "text_en": "Initial sound substitution via ādeḥ parasya",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "विप्रतिषेधे परं कार्यम् इत्यनेन",
+     "text_en": "By vipratiṣedhe paraṁ kāryam alone",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "अञ्च्यञ्जियुजिभृजिभ्यः कुश्च (उणादि ४.२१५) / अलोऽन्त्यस्य (१.१.५२) / स्थानेऽन्तरतमः (१.१.५०)",
+   "explanation_sa": "सूत्रे धातूनाम् आवृत्त्या षष्ठी लभ्यते। 'षष्ठी स्थाने योगा' (१.१.४९) इति प्रसङ्गे, कु-आदेशस्य एकवर्णत्वात् 'अलोऽन्त्यस्य' (१.१.५२) इति अन्त्यस्यैव धात्ववयवस्य स्थाने भवति। पुनः कवर्गस्य पञ्चसु वर्णेषु प्रयत्नसाम्यात् 'स्थानेऽन्तरतमः' (१.१.५०) इति सदृशतमः आदेशः प्रवर्तते (उदा. अञ्च् + असुन् -> अङ्कः; युज् + असुन् -> योगः)।",
+   "explanation_en": "Recurrence (āvṛtti) yields genitive case. 'Ṣaṣṭhī sthāne yogā' applies; because 'kuḥ' is a single class indicator, 'alo'ntyasya' restricts substitution to the root's final sound; 'sthāne'ntaratamaḥ' ensures closest phonetic match (yielding aṅkaḥ, yogaḥ, bhargaḥ)."
+  },
+  {
+   "question_id": "UNP-L4-003",
+   "level": "expert",
+   "level_number": 4,
+   "target_word": "रात्रिः",
+   "iast": "rātriḥ",
+   "category": "complete_subanta_prakriya_analysis",
+   "marks": 5,
+   "question_sa": "'राशदिभ्यां त्रिप्' इति सूत्रेण 'रा दाने' धातोः 'रात्रिः' रूपसिद्धौ प्रत्ययस्य कृत्संज्ञा, प्रातिपदिकसंज्ञा च केन क्रमेण भवति?",
+   "question_en": "In 'rātriḥ' from root 'rā' + 'trip' by 'rāśadibhyāṁ trip', by what sequence are kṛt-saṁjñā and prātipadika-saṁjñā established?",
+   "question_hi": "'रा दाने' धातु से 'त्रिप्' प्रत्यय होने पर 'रात्रिः' की सिद्धि में कृत्-संज्ञा और प्रातिपदिक-संज्ञा किस क्रम से सिद्ध होती हैं?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "उणादीनां कृदधिकारे पाठात् 'कृदतिङ्' इति कृत्संज्ञा, ततः 'कृत्तद्धितसमासाश्च' इति प्रातिपदिकसंज्ञा, ततः सुबुत्पत्तिः रुत्वविसर्गौ च",
+     "text_en": "Listed in kṛd-adhikāra -> kṛt-saṁjñā via kṛdatiṅ -> prātipadika-saṁjñā via kṛttaddhitasamāsāśca -> sub-utpatti and rutva-visarga",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "अर्थवदधातुरप्रत्ययः इति प्रातिपदिकत्वम्, तिङ्प्रत्ययत्वात् सुब्लोपः",
+     "text_en": "prātipadika by arthavadadhāturapratyayaḥ, sub-lopa due to tiṅ",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "स्त्रीप्रत्ययान्तत्वात् ङ्याप्प्रातिपदिकात् केवलम्",
+     "text_en": "Solely as strī-pratyaya via ṅyāp-prātipadikāt",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "तद्धितत्वात् प्रातिपदिकसञ्ज्ञा",
+     "text_en": "Prātipadika-saṁjñā due to being a taddhita",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "राशदिभ्यां त्रिप् (उणादि ४.६७) / कृदतिङ् (३.१.९३) / कृत्तद्धितसमासाश्च (१.२.४६)",
+   "explanation_sa": "१. 'रा दाने' धातोः 'राशदिभ्यां त्रिप्' इति त्रिप्-प्रत्यये पकारलोपे 'रा त्रि'।\n२. उणादीनाम् अष्टाध्याय्यां कृदधिकारे (वासरूपोऽस्त्रियाम् इत्यादौ) पाठात् 'कृदतिङ्' (३.१.९३) इति कृत्-संज्ञा।\n३. कृदन्तत्वात् 'कृत्तद्धितसमासाश्च' (१.२.४६) इति प्रातिपदिकसंज्ञायाम्, प्रथमैकवचने सुँ-प्रत्यये, 'ससजुषो रुँः' इति रुत्वे, 'खरवसानयोर्विसर्जनीयः' इति विसर्गे 'रात्रिः' सिद्ध्यति।",
+   "explanation_en": "By inclusion under Pāṇini's kṛd-adhikāra, Uṇādi affixes are kṛt ('kṛdatiṅ' 3.1.93); being kṛdanta, prātipadika-status is conferred by 1.2.46, followed by nominal case suffix 'su' yielding 'rātriḥ'."
+  },
+  {
+   "question_id": "UNP-L4-004",
+   "level": "expert",
+   "level_number": 4,
+   "target_word": "वृक्षः",
+   "iast": "vṛkṣaḥ",
+   "category": "asamprapasaranatva_and_skorlopa",
+   "marks": 5,
+   "question_sa": "'ओव्रश्चू छेदने' धातोः स-प्रत्यये (उणादि ३.६६) 'वृक्षः' रूपसिद्धौ सम्प्रसारणे कृते 'स्कोः संयोगाद्योरन्ते च' (८.२.२९) इति सलोपः कस्य असिद्धत्वाद् भवति?",
+   "question_en": "In deriving 'vṛkṣaḥ' from root 'vraśc' with suffix 'sa' (3.66), why does 'skoḥ saṁyogādyorante ca' (8.2.29) delete 's' despite ścutva having occurred?",
+   "question_hi": "'ओव्रश्चू छेदने' धातु से स-प्रत्यय होने पर 'वृक्षः' रूप में 'स्कोः संयोगाद्योरन्ते च' द्वारा सलोप किस नियम से सम्भव होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "'पूर्वत्रासिद्धम्' (८.२.१) इति श्चुत्वस्य (श्च) असिद्धत्वात् मूल-सकारमादायैव सलोपः प्रवर्तते",
+     "text_en": "Because ścutva is asiddha via 'pūrvatrāsiddham' (8.2.1), the original s is visible and deleted by skoḥ saṁyogādyoḥ",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "वार्तिकवचनात् केवलम्",
+     "text_en": "By vārttika injunction alone",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "निपातनात् सलोपाभावः",
+     "text_en": "Absence of salopa by nipātana",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "झलां जश् झशि इत्यनेन",
+     "text_en": "By jhalāṁ jaś jhaśi",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "स्नुव्रश्चिकृत्यृषिभ्यः कित् (उणादि ३.६६) / पूर्वत्रासिद्धम् (८.२.१)",
+   "explanation_sa": "ओव्रश्चू + स -> कित्त्वात् सम्प्रसारणे 'वृश्च् स'। अत्र 'वृ स् च् स' इति स्थिते, ८.४.४० श्चुत्वस्य 'पूर्वत्रासिद्धम्' (८.२.१) इति असिद्धत्वात् 'स्कोः संयोगाद्योः' (८.२.२९) इति सलोपे 'वृच् स', 'चोः कुः' इति कुत्वे 'वृक् स', षत्वे 'वृक्षः' सिद्ध्यति।",
+   "explanation_en": "In vraśc + sa, kit-status causes samprasāraṇa (vṛśc + sa). Because ścutva (s -> ś) is asiddha to the tripādī rule 8.2.29, the original 's' is seen and deleted, followed by kutva and ṣatva to form 'vṛkṣaḥ'."
+  },
+  {
+   "question_id": "UNP-L4-005",
+   "level": "expert",
+   "level_number": 4,
+   "target_word": "मञ्जूषा",
+   "iast": "mañjūṣā",
+   "category": "mit_num_and_skorlopa",
+   "marks": 5,
+   "question_sa": "'टुमस्जो शुद्धौ' धातोः ऊषन् प्रत्यये 'मञ्जूषा' (पेटिका) रूपसिद्धौ 'मिदचोऽन्त्यात् परः' इति प्राप्तस्य नुमागमस्य बाधः केन वचनेन क्रियते?",
+   "question_en": "In deriving 'mañjūṣā' (box) from root 'masj' + 'ūṣan', what special vārttika overrides 'midaco'ntyāt paraḥ' for the placement of 'num'?",
+   "question_hi": "'टुमस्जो' धातु से ऊषन् प्रत्यय होने पर 'मञ्जूषा' की सिद्धि में नुम् आगम के स्थान के लिए किस विशेष वचन द्वारा व्यवस्था की जाती है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "'मस्जेरन्त्यात्पूर्वो नुम् वाच्यः' इति वचनेन जकारात् पूर्वं नुम्, सलोपे परसवर्णे मञ्जूषा सिद्ध्यति",
+     "text_en": "The vārttika 'masjerantyātpūrvo num vācyaḥ' places num before the final consonant j",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "आद्यन्तौ टकितौ इति आद्यवयवत्वेन",
+     "text_en": "Placed as initial member via ādyantau ṭakitau",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "उपधायाः परत्वेन केवलम्",
+     "text_en": "Immediately after upadhā alone",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "प्रत्ययावयवत्वेन",
+     "text_en": "As an augment to the suffix",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "मस्जेर्नुम् च (उणादि ४.७७) / मस्जेरन्त्यात्पूर्वो नुम् वाच्यः (वार्तिकम्)",
+   "explanation_sa": "मस्ज् + ऊषन् इत्यत्र 'मिदचोऽन्त्यात् परः' इति अकारात् परत्वेन प्राप्ते 'मस्जेरन्त्यात्पूर्वो नुम् वाच्यः' इति जकारात् पूर्वं नुमि कृते (मस्-न्-ज्), 'स्कोः संयोगाद्योः' इति सलोपे, परसवर्णे टापि 'मञ्जूषा' सिद्ध्यति।",
+   "explanation_en": "Instead of following the vowel 'a', the vārttika positions 'num' immediately before the final consonant 'j' (mas-n-j). 'Skoḥ saṁyogādyoḥ' elides 's', and parasavarṇa with ṭāp produces 'mañjūṣā'."
+  },
+  {
+   "question_id": "UNP-L4-006",
+   "level": "expert",
+   "level_number": 4,
+   "target_word": "सव्येष्टा",
+   "iast": "savyeṣṭā",
+   "category": "aluk_samasa_and_chhandasa_prakriya",
+   "marks": 5,
+   "question_sa": "'सव्ये तिष्ठति' इति 'सव्येष्टा' (सारथिः) रूपे 'सुपो धातुप्रातिपदिकयोः' इति प्राप्तस्य सुब्लुकः निषेधः केन सूत्रेण क्रियते?",
+   "question_en": "In 'savyeṣṭā' (charioteer), by which sūtra is the elision of the locative case affix (sup) prevented?",
+   "question_hi": "'सव्ये तिष्ठति' अर्थ में 'सव्येष्टा' की सिद्धि में सप्तमी सुप् के लोप का निषेध (अलुक्) किस सूत्र से होता है?",
+   "options": [
+    {
+     "id": "A",
+     "text_sa": "'तत्पुरुषे कृति बहुलम्' (६.३.१४) इति सुपोऽलुक्, 'सव्ये स्थश्छन्दसि' (उणादि २.१०१) इति ऋ-प्रत्ययः",
+     "text_en": "Aluk of sup via 'tatpuruṣe kṛti bahulam' (6.3.14) and ṛ-pratyaya by 2.101",
+     "is_correct": true
+    },
+    {
+     "id": "B",
+     "text_sa": "हलदन्तात्सप्तम्याः संज्ञायाम् इति",
+     "text_en": "haladantātsaptamyāḥ saṁjñāyām",
+     "is_correct": false
+    },
+    {
+     "id": "C",
+     "text_sa": "अमूर्धमस्तकात्स्वाङ्गादकामे इति",
+     "text_en": "amūrdhamastakātsvāṅgādakāme",
+     "is_correct": false
+    },
+    {
+     "id": "D",
+     "text_sa": "नञ्समासे केवलम्",
+     "text_en": "In nañ-samāsa only",
+     "is_correct": false
+    }
+   ],
+   "panini_sutra": "सव्ये स्थश्छन्दसि (उणादि २.१०१) / तत्पुरुषे कृति बहुलम् (६.३.१४)",
+   "explanation_sa": "सव्य-उपपदे स्था-धातोः 'सव्ये स्थश्छन्दसि' इति ऋ-प्रत्यये उपपदमतिङ् इति समासे 'तत्पुरुषे कृति बहुलम्' इति सप्तम्या अलुकि, डित्त्वाट्टिलोपे, गुणे षत्वष्टुत्वयोः 'सव्येष्टृ' -> 'सव्येष्टा' सिद्ध्यति।",
+   "explanation_en": "In the compound savye + sthā + ṛ, sūtra 6.3.14 preserves the locative ending (aluk). Ḍit-status causes ti-lopa; guṇa and retroflexion give 'savyeṣṭṛ', inflected in nom. sg. as 'savyeṣṭā'."
+  }
+ ],
+ "total_questions": 34,
+ "level_distribution": {
+  "simple": 10,
+  "intermediate": 10,
+  "advanced": 8,
+  "expert": 6
+ },
+ "total_marks": 112,
+ "_audit": {
+  "note": "Internal audit only.",
+  "date": "2026-11-15",
+  "corrections": [
+   {
+    "question": "UNP-L1-002",
+    "change": [
+     "उणादि १.११ → उणादि १.१२"
+    ],
+    "reason": "उन्देरिच्चादेः is 1.12 (book: १२)",
+    "applied": true
+   },
+   {
+    "question": "UNP-L2-001",
+    "change": [
+     "उणादि १.१२२ → उणादि १.१२४",
+     "गण शकुनौ → गण् शकुनौ"
+    ],
+    "reason": "गण् शकुनौ is 1.124",
+    "applied": true
+   },
+   {
+    "question": "UNP-L2-004",
+    "change": [
+     "उणादि ३.१ → उणादि २.१२२"
+    ],
+    "reason": "कॄगॄशॄवृञ्चतिभ्यः ष्वरच् is 2.122; 3.1 is छित्वरछत्वर…",
+    "applied": true
+   },
+   {
+    "question": "UNP-L2-007",
+    "change": [
+     "उणादि १.६० → उणादि १.३८"
+    ],
+    "reason": "मन्दिवाशि… उरच् is 1.38",
+    "applied": true
+   },
+   {
+    "question": "UNP-L2-008",
+    "change": [
+     "उणादि २.२३ → उणादि १.९०"
+    ],
+    "reason": "दरिद्रातेर्यालोपश्च is 1.90",
+    "applied": true
+   },
+   {
+    "question": "UNP-L2-010",
+    "change": [
+     "मदेः स्यन् (उणादि ४.२) → ऋतन्यञ्जिवन्यञ्ज्यर्पिमद्यत्यङ्गिकुयुकृशिभ्यः कत्निच्यतुजलिजिष्ठुजिष्ठजिसन्स्यनिथिनुल्यसासानुकः (उणादि ४.२ — मदेः स्यन्)"
+    ],
+    "reason": "“मदेः स्यन्” is not a separate sūtra; मद् + स्यन् is one pairing within 4.2",
+    "applied": true
+   },
+   {
+    "question": "UNP-L4-001",
+    "change": [
+     "उणादि १.८८ → उणादि ५.५२",
+     "तनेर्डउः सन्वच्च → तनोतेर्डउः सन्वच्च"
+    ],
+    "reason": "तनोतेर्डउः सन्वच्च is 5.52",
+    "applied": true
+   },
+   {
+    "question": "UNP-L4-002",
+    "change": [
+     "उणादि २.२१५ → उणादि ४.२१५"
+    ],
+    "reason": "अञ्च्यञ्जियुजिभृजिभ्यः कुश्च is 4.215",
+    "applied": true
+   }
+  ],
+  "checked": "Every “उणादि N.N” reference was matched to the sūtra text in the pāda-wise numbering and to the target word."
+ }
+}

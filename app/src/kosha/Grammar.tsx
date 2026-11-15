@@ -13,6 +13,7 @@ import { krtGloss } from "../i18n/forms";
 import { ListDetail, Tabs, Speak, KsTop, RomS } from "./Kosha";
 import { UpasargaTab } from "./Upasarga";
 import { TaddhitaTab } from "./Taddhita";
+import { openUnadi } from "./Unadi";
 import "./kosha.css";
 
 const G = GRAMMAR;
@@ -124,6 +125,11 @@ const PratyayaTab: React.FC = () => {
         <summary>कृत्प्रत्ययाः · Suffixes that make words straight from a root</summary>
         <ul>{P.intro.map((x, i) => <li key={i}>{S(x)}</li>)}</ul>
       </details>
+      <div className="un-links">
+        <span><b className="ks-l-sa">{S("उणादयः")}</b> · Uṇādi suffixes: वायुः, इन्दुः, वृक्षः, हृदयम्… — 748 sūtras with their words, meanings and prakriyā, and a four-level quiz.</span>
+        <span className="ks-chips"><button onClick={() => openUnadi("words")}>उणादिसूत्राणि · Open the sūtras</button>
+          <button onClick={() => openUnadi("quiz")}>उणादिपरीक्षा · Take the quiz</button></span>
+      </div>
       <ListDetail<KrtPratyaya> items={P.list} idOf={x => x.p} kind="krt" placeholder="Search a suffix: क्त्वा, तुमुन्…"
         search={x => [x.p, x.rem, x.sutra, x.artha].join(" ")}
         label={x => <><span className="ks-l-sa">{S(x.p)}</span><span className="ks-l-en">→ {S(x.rem)} · {P.kinds[x.kind][1]}</span></>}

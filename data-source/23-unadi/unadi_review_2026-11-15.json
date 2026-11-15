@@ -1,0 +1,2546 @@
+{
+ "title": "Uṇādi data — review list (2026-11-15)",
+ "summary": {
+  "sutras": 748,
+  "rupas": 1350,
+  "records_renumbered": 163,
+  "words_set_aside": 189,
+  "words_kept_unverified": 40,
+  "sutra_text_corrections": 11,
+  "sutras_without_rupas": 36,
+  "sutras_without_slide_prakriya": 45,
+  "forms_needing_meanings": 0
+ },
+ "sutra_text_corrections": [
+  {
+   "sutra": "१.२७",
+   "text": "अर्जिदृशिकम्यमिपंसिबाधामृजिपशितुक्धुक्दीर्घहकाराश्च",
+   "reason": "roots अर्जि, दृशि, कमि, अमि, पंसि, बाधृ; substitutes ऋजि, पशि, तुक्, धुक्, दीर्घ, हकार (ऋजुः, पशुः, कन्तुः, अन्धुः, पांसुः, बाहुः)"
+  },
+  {
+   "sutra": "२.२",
+   "text": "हनिकुषिनीरमिकाशिभ्यः क्थन्",
+   "reason": "नीरमि (नी, रम्) and क्थन्: हथः, कुष्ठम्, नीथः, रथः, काष्ठम्"
+  },
+  {
+   "sutra": "३.१०",
+   "text": "कॄवृजॄसिद्रुपन्यनिस्वपिभ्यो नित्",
+   "reason": "वृ, not वॄ (वर्णः)"
+  },
+  {
+   "sutra": "३.६८",
+   "text": "उन्दिगुधिकुषिभ्यश्च",
+   "reason": "गुधि, not गुथि"
+  },
+  {
+   "sutra": "३.८३",
+   "text": "आणको लूधूशिङ्घिधाञ्भ्यः",
+   "reason": "लू, धू, शिङ्घि (लवाणकः, धवाणकः, शिङ्घाणकः)"
+  },
+  {
+   "sutra": "३.९१",
+   "text": "जेर्मूट् चोदात्तः",
+   "reason": "मूट् (जीमूतः)"
+  },
+  {
+   "sutra": "४.२०",
+   "text": "फर्फरीकादयश्च",
+   "reason": "फर्फरीक (फर्फरीकम्)"
+  },
+  {
+   "sutra": "४.३४",
+   "text": "घसेः किच्च",
+   "reason": "किच्च, not किश्च"
+  },
+  {
+   "sutra": "४.१८३",
+   "text": "दृणातेर्ह्रस्वश्च",
+   "reason": "the vārttika तितुत्रेष्वग्रहादीनामितीट् belongs to the commentary of 4.182, not to this sūtra"
+  },
+  {
+   "sutra": "४.२१५",
+   "text": "अञ्च्यञ्जियुजिभृजिभ्यः कुश्च",
+   "reason": "कुश्च (कुः च), not कुञ्च"
+  },
+  {
+   "sutra": "५.१६",
+   "text": "स्रंसेः शिः कुट् किच्च",
+   "reason": "किच्च, not किश्च"
+  }
+ ],
+ "records_renumbered": [
+  {
+   "record": "UN-P1-0११",
+   "was": "१.११",
+   "sutra_text": "उन्देरिच्चादेः",
+   "now": "१.१२"
+  },
+  {
+   "record": "UN-P1-0५६",
+   "was": "१.५६",
+   "sutra_text": "कुटिलादयश्च",
+   "now": "४.९५"
+  },
+  {
+   "record": "UN-P1-0५९",
+   "was": "१.५९",
+   "sutra_text": "शदेस्त च",
+   "now": "१.६०"
+  },
+  {
+   "record": "UN-P1-0६०",
+   "was": "१.६०",
+   "sutra_text": "मूलेरादयः",
+   "now": "१.६१"
+  },
+  {
+   "record": "UN-P1-0६१",
+   "was": "१.६१",
+   "sutra_text": "कबेरोतच् पश्च",
+   "now": "१.६२"
+  },
+  {
+   "record": "UN-P1-0६२",
+   "was": "१.६२",
+   "sutra_text": "भातेर्डवतुः",
+   "now": "१.६३"
+  },
+  {
+   "record": "UN-P1-0६३",
+   "was": "१.६३",
+   "sutra_text": "कठिचकिभ्यामोरन्",
+   "now": "१.६४"
+  },
+  {
+   "record": "UN-P1-0६४",
+   "was": "१.६४",
+   "sutra_text": "किशोरादयश्च",
+   "now": "१.६५"
+  },
+  {
+   "record": "UN-P1-0६५",
+   "was": "१.६५",
+   "sutra_text": "कपिगडिगण्डिकटिपटिभ्य ओलच्",
+   "now": "१.६६"
+  },
+  {
+   "record": "UN-P1-0६६",
+   "was": "१.६६",
+   "sutra_text": "मीनातेरूरन्",
+   "now": "१.६७"
+  },
+  {
+   "record": "UN-P1-0६७",
+   "was": "१.६७",
+   "sutra_text": "स्यन्देः संप्रसारणं च",
+   "now": "१.६८"
+  },
+  {
+   "record": "UN-P1-0६८",
+   "was": "१.६८",
+   "sutra_text": "सितनिगमिमसिसच्यविधाञ्क्रुशिभ्यस्तुन्",
+   "now": "१.६९"
+  },
+  {
+   "record": "UN-P1-0७०",
+   "was": "१.७०",
+   "sutra_text": "अर्तेश्च तुः",
+   "now": "१.७१"
+  },
+  {
+   "record": "UN-P1-0७१",
+   "was": "१.७१",
+   "sutra_text": "कमिमनिजनिगाभायाहिभ्यश्च",
+   "now": "१.७२"
+  },
+  {
+   "record": "UN-P1-0७३",
+   "was": "१.७३",
+   "sutra_text": "आप्नोतेर्ह्रस्वश्च",
+   "now": "१.७४"
+  },
+  {
+   "record": "UN-P1-0७४",
+   "was": "१.७४",
+   "sutra_text": "वसेस्तुन्",
+   "now": "१.७५"
+  },
+  {
+   "record": "UN-P1-0७५",
+   "was": "१.७५",
+   "sutra_text": "अगारे णिच्च",
+   "now": "१.७६"
+  },
+  {
+   "record": "UN-P1-0७६",
+   "was": "१.७६",
+   "sutra_text": "कृञः कतुः",
+   "now": "१.७७"
+  },
+  {
+   "record": "UN-P1-0७७",
+   "was": "१.७७",
+   "sutra_text": "एधिवह्योश्चतुः",
+   "now": "१.७८"
+  },
+  {
+   "record": "UN-P1-0७८",
+   "was": "१.७८",
+   "sutra_text": "जीवेरातुः",
+   "now": "१.७९"
+  },
+  {
+   "record": "UN-P1-0७९",
+   "was": "१.७९",
+   "sutra_text": "आतृकन् वृद्धिश्च",
+   "now": "१.८०"
+  },
+  {
+   "record": "UN-P1-0८०",
+   "was": "१.८०",
+   "sutra_text": "कृषिचमितनिधनिसर्जिखर्जिभ्य ऊः",
+   "now": "१.८१"
+  },
+  {
+   "record": "UN-P1-0८१",
+   "was": "१.८१",
+   "sutra_text": "मृजेर्गुणश्च",
+   "now": "१.८२"
+  },
+  {
+   "record": "UN-P1-0८२",
+   "was": "१.८२",
+   "sutra_text": "वहो धश्च",
+   "now": "१.८३"
+  },
+  {
+   "record": "UN-P1-0८३",
+   "was": "१.८३",
+   "sutra_text": "कषेश्छश्च",
+   "now": "१.८४"
+  },
+  {
+   "record": "UN-P1-0८४",
+   "was": "१.८४",
+   "sutra_text": "णित्कसिपद्यर्तेः",
+   "now": "१.८५"
+  },
+  {
+   "record": "UN-P1-0८५",
+   "was": "१.८५",
+   "sutra_text": "दरिद्रातेर्यालोपश्च",
+   "now": "१.९०"
+  },
+  {
+   "record": "UN-P1-0८६",
+   "was": "१.८६",
+   "sutra_text": "नृतिशृध्योः कूः",
+   "now": "१.९१"
+  },
+  {
+   "record": "UN-P1-0८७",
+   "was": "१.८७",
+   "sutra_text": "ऋतेरम् च",
+   "now": "१.९२"
+  },
+  {
+   "record": "UN-P1-0८८",
+   "was": "१.८८",
+   "sutra_text": "अन्दूदृम्भूजम्बूकफेलूकर्कन्धूदिधिषूः",
+   "now": "१.९३"
+  },
+  {
+   "record": "UN-P1-0८९",
+   "was": "१.८९",
+   "sutra_text": "मृग्रोरुतिः",
+   "now": "१.९४"
+  },
+  {
+   "record": "UN-P1-0९०",
+   "was": "१.९०",
+   "sutra_text": "ग्रो मुट् च",
+   "now": "१.९५"
+  },
+  {
+   "record": "UN-P1-0९१",
+   "was": "१.९१",
+   "sutra_text": "हृषेरुलच्",
+   "now": "१.९६"
+  },
+  {
+   "record": "UN-P1-0९२",
+   "was": "१.९२",
+   "sutra_text": "हृसृरुहियुषिभ्य इतिः",
+   "now": "१.९७"
+  },
+  {
+   "record": "UN-P1-0९३",
+   "was": "१.९३",
+   "sutra_text": "ताडेर्णिलुक् च",
+   "now": "१.९८"
+  },
+  {
+   "record": "UN-P1-0९४",
+   "was": "१.९४",
+   "sutra_text": "शमेर्ढः",
+   "now": "१.९९"
+  },
+  {
+   "record": "UN-P1-0९५",
+   "was": "१.९५",
+   "sutra_text": "कमेरठः",
+   "now": "१.१००"
+  },
+  {
+   "record": "UN-P1-0९६",
+   "was": "१.९६",
+   "sutra_text": "रमेर्वृद्धिश्च",
+   "now": "१.१०१"
+  },
+  {
+   "record": "UN-P1-0९७",
+   "was": "१.९७",
+   "sutra_text": "शमेः खः",
+   "now": "१.१०२"
+  },
+  {
+   "record": "UN-P1-0९८",
+   "was": "१.९८",
+   "sutra_text": "कणेष्ठः",
+   "now": "१.१०३"
+  },
+  {
+   "record": "UN-P1-0९९",
+   "was": "१.९९",
+   "sutra_text": "कलस्तृपश्च",
+   "now": "१.१०४"
+  },
+  {
+   "record": "UN-P1-१००",
+   "was": "१.१००",
+   "sutra_text": "शपेर्बश्च",
+   "now": "१.१०५"
+  },
+  {
+   "record": "UN-P1-१०१",
+   "was": "१.१०१",
+   "sutra_text": "वृषादिभ्यश्चित्",
+   "now": "१.१०६"
+  },
+  {
+   "record": "UN-P1-१०२",
+   "was": "१.१०२",
+   "sutra_text": "मृजेष्टिलोपश्च",
+   "now": "१.१०७"
+  },
+  {
+   "record": "UN-P1-१०३",
+   "was": "१.१०३",
+   "sutra_text": "चुपेरच्चोपधायाः",
+   "now": "१.१०८"
+  },
+  {
+   "record": "UN-P1-१०४",
+   "was": "१.१०४",
+   "sutra_text": "शकिशम्योर्नित्",
+   "now": "१.१०९"
+  },
+  {
+   "record": "UN-P1-१०५",
+   "was": "१.१०५",
+   "sutra_text": "छो गुक् ह्रस्वश्च",
+   "now": "१.११०"
+  },
+  {
+   "record": "UN-P1-१०६",
+   "was": "१.१०६",
+   "sutra_text": "ञमन्ताड्डः",
+   "now": "१.१११"
+  },
+  {
+   "record": "UN-P1-१०७",
+   "was": "१.१०७",
+   "sutra_text": "क्वादिभ्यः कित्",
+   "now": "१.११२"
+  },
+  {
+   "record": "UN-P1-१०८",
+   "was": "१.१०८",
+   "sutra_text": "स्थाचतिमृजेरालज्वालजालीयचः",
+   "now": "१.११३"
+  },
+  {
+   "record": "UN-P1-१०९",
+   "was": "१.१०९",
+   "sutra_text": "पतिचण्डिभ्यामालञ्",
+   "now": "१.११४"
+  },
+  {
+   "record": "UN-P1-११०",
+   "was": "१.११०",
+   "sutra_text": "तमिविशिबिडिमृणिकुलिकपिपलिपञ्चिभ्यः कालन्",
+   "now": "१.११५"
+  },
+  {
+   "record": "UN-P1-१११",
+   "was": "१.१११",
+   "sutra_text": "पतेरङ्गच् पक्षिणि",
+   "now": "१.११६"
+  },
+  {
+   "record": "UN-P1-११२",
+   "was": "१.११२",
+   "sutra_text": "तरत्यादिभ्यश्च",
+   "now": "१.११७"
+  },
+  {
+   "record": "UN-P1-११३",
+   "was": "१.११३",
+   "sutra_text": "विडादिभ्यः कित्",
+   "now": "१.११८"
+  },
+  {
+   "record": "UN-P1-११४",
+   "was": "१.११४",
+   "sutra_text": "सृवृञोर्वृद्धिश्च",
+   "now": "१.११९"
+  },
+  {
+   "record": "UN-P1-११५",
+   "was": "१.११५",
+   "sutra_text": "गन् गम्यद्योः",
+   "now": "१.१२०"
+  },
+  {
+   "record": "UN-P1-११६",
+   "was": "१.११६",
+   "sutra_text": "छापूखडिभ्यः कित्",
+   "now": "१.१२१"
+  },
+  {
+   "record": "UN-P1-११७",
+   "was": "१.११७",
+   "sutra_text": "भृञः किन्नुट् च",
+   "now": "१.१२२"
+  },
+  {
+   "record": "UN-P1-११८",
+   "was": "१.११८",
+   "sutra_text": "शृणातेर्ह्रस्वश्च",
+   "now": "१.१२३"
+  },
+  {
+   "record": "UN-P1-११९",
+   "was": "१.११९",
+   "sutra_text": "गण् शकुनौ",
+   "now": "१.१२४"
+  },
+  {
+   "record": "UN-P1-१२०",
+   "was": "१.१२०",
+   "sutra_text": "मुदिग्रोर्गग्गौ",
+   "now": "१.१२५"
+  },
+  {
+   "record": "UN-P1-१२१",
+   "was": "१.१२१",
+   "sutra_text": "अण्डन्कृसृभृवृञः",
+   "now": "१.१२६"
+  },
+  {
+   "record": "UN-P1-१२२",
+   "was": "१.१२२",
+   "sutra_text": "शॄदॄभसोऽदिः",
+   "now": "१.१२७"
+  },
+  {
+   "record": "UN-P1-१२३",
+   "was": "१.१२३",
+   "sutra_text": "दृणातेः षुग् ह्रस्वश्च",
+   "now": "१.१२८"
+  },
+  {
+   "record": "UN-P1-१२४",
+   "was": "१.१२४",
+   "sutra_text": "त्यजितनियजिभ्यो डित्",
+   "now": "१.१२९"
+  },
+  {
+   "record": "UN-P1-१२५",
+   "was": "१.१२५",
+   "sutra_text": "एतेस्तुट् च",
+   "now": "१.१३०"
+  },
+  {
+   "record": "UN-P1-१२६",
+   "was": "१.१२६",
+   "sutra_text": "सर्तेरटिः",
+   "now": "१.१३१"
+  },
+  {
+   "record": "UN-P1-१२७",
+   "was": "१.१२७",
+   "sutra_text": "लङ्घेर्नलोपश्च",
+   "now": "१.१३२"
+  },
+  {
+   "record": "UN-P1-१२८",
+   "was": "१.१२८",
+   "sutra_text": "पारयतेरजिः",
+   "now": "१.१३३"
+  },
+  {
+   "record": "UN-P1-१२९",
+   "was": "१.१२९",
+   "sutra_text": "प्रथः कित्संप्रसारणं च",
+   "now": "१.१३४"
+  },
+  {
+   "record": "UN-P1-१३०",
+   "was": "१.१३०",
+   "sutra_text": "भियः षुक् ह्रस्वश्च",
+   "now": "१.१३५"
+  },
+  {
+   "record": "UN-P1-१३१",
+   "was": "१.१३१",
+   "sutra_text": "युष्यसिभ्यां मदिक्",
+   "now": "१.१३६"
+  },
+  {
+   "record": "UN-P1-१३२",
+   "was": "१.१३२",
+   "sutra_text": "अर्तिस्तुसुहुसृधृभिक्षुभायावापदियक्षिनीभ्यो मन्",
+   "now": "१.१३७"
+  },
+  {
+   "record": "UN-P1-१३३",
+   "was": "१.१३३",
+   "sutra_text": "जहातेः सन्वदालोपश्च",
+   "now": "१.१३८"
+  },
+  {
+   "record": "UN-P1-१३४",
+   "was": "१.१३४",
+   "sutra_text": "अवतेष्टिलोपश्च",
+   "now": "१.१३९"
+  },
+  {
+   "record": "UN-P1-१३५",
+   "was": "१.१३५",
+   "sutra_text": "ग्रसेरा च",
+   "now": "१.१४०"
+  },
+  {
+   "record": "UN-P1-१३६",
+   "was": "१.१३६",
+   "sutra_text": "अविसिविसिशुषिभ्यः कित्",
+   "now": "१.१४१"
+  },
+  {
+   "record": "UN-P1-१३७",
+   "was": "१.१३७",
+   "sutra_text": "इषियुधीन्धिदसिश्याधूसूभ्यो मक्",
+   "now": "१.१४२"
+  },
+  {
+   "record": "UN-P1-१३८",
+   "was": "१.१३८",
+   "sutra_text": "युजिरुचितिजां कुश्च",
+   "now": "१.१४३"
+  },
+  {
+   "record": "UN-P1-१३९",
+   "was": "१.१३९",
+   "sutra_text": "हन्तेर्हि च",
+   "now": "१.१४४"
+  },
+  {
+   "record": "UN-P1-१४०",
+   "was": "१.१४०",
+   "sutra_text": "भियः षुग्वा",
+   "now": "१.१४५"
+  },
+  {
+   "record": "UN-P1-१४१",
+   "was": "१.१४१",
+   "sutra_text": "घर्मः",
+   "now": "१.१४६"
+  },
+  {
+   "record": "UN-P1-१४२",
+   "was": "१.१४२",
+   "sutra_text": "ग्रीष्मः",
+   "now": "१.१४७"
+  },
+  {
+   "record": "UN-P1-१४३",
+   "was": "१.१४३",
+   "sutra_text": "प्रथेः षिवन् संप्रसारणं च",
+   "now": "१.१४८"
+  },
+  {
+   "record": "UN-P1-१४४",
+   "was": "१.१४४",
+   "sutra_text": "अशूप्रुषिलटिकणिखटिविशिभ्यः क्वन्",
+   "now": "१.१४९"
+  },
+  {
+   "record": "UN-P1-१४५",
+   "was": "१.१४५",
+   "sutra_text": "इण्शीभ्यां वन्",
+   "now": "१.१५०"
+  },
+  {
+   "record": "UN-P1-१४६",
+   "was": "१.१४६",
+   "sutra_text": "सर्वनीघृष्वरिष्वलष्वशिवपट्वप्रह्वेष्वा अस्वतन्त्रे",
+   "now": "१.१५१"
+  },
+  {
+   "record": "UN-P1-१४७",
+   "was": "१.१४७",
+   "sutra_text": "शेवयह्वजिह्वाग्रीवाप्वामीवाः",
+   "now": "१.१५२"
+  },
+  {
+   "record": "UN-P1-१४८",
+   "was": "१.१४८",
+   "sutra_text": "कॄगॄशॄदॄभ्यो वः",
+   "now": "१.१५३"
+  },
+  {
+   "record": "UN-P1-१४९",
+   "was": "१.१४९",
+   "sutra_text": "कनिन् युवृषितक्षिराजिधन्विद्युप्रतिदिवः",
+   "now": "१.१५४"
+  },
+  {
+   "record": "UN-P1-१५०",
+   "was": "१.१५०",
+   "sutra_text": "सप्यशूभ्यां तुट् च",
+   "now": "१.१५५"
+  },
+  {
+   "record": "UN-P1-१५१",
+   "was": "१.१५१",
+   "sutra_text": "नञि जहातेः",
+   "now": "१.१५६"
+  },
+  {
+   "record": "UN-P1-१५२",
+   "was": "१.१५२",
+   "sutra_text": "श्वन्नुक्षन्पूषन्प्लीहन्क्लेदन्स्नेहन्मूर्धन्मज्जन्नर्यमन्विश्वप्सन्परिज्जन्मातरिश्वन्मघवन्निति",
+   "now": "१.१५७"
+  },
+  {
+   "record": "UN-P2-016",
+   "was": "२.१६",
+   "sutra_text": "क्रुधेश्च",
+   "now": "२.५६"
+  },
+  {
+   "record": "UN-P2-017",
+   "was": "२.१७",
+   "sutra_text": "शुचेश्च",
+   "now": "२.१९"
+  },
+  {
+   "record": "UN-P2-019",
+   "was": "२.१९",
+   "sutra_text": "अशेः किच्च",
+   "now": "३.९५"
+  },
+  {
+   "record": "UN-P2-034",
+   "was": "२.३४",
+   "sutra_text": "गुहेश्च",
+   "now": "२.५६"
+  },
+  {
+   "record": "UN-P2-036",
+   "was": "२.३६",
+   "sutra_text": "दंशेश्च",
+   "now": "५.११"
+  },
+  {
+   "record": "UN-P3-001",
+   "was": "३.१",
+   "sutra_text": "कॄगॄशॄवृञ्चतिभ्यः ष्वरच्",
+   "now": "२.१२२"
+  },
+  {
+   "record": "UN-P3-003",
+   "was": "३.३",
+   "sutra_text": "गमेरिट् च",
+   "now": "४.१६८"
+  },
+  {
+   "record": "UN-P3-007",
+   "was": "३.७",
+   "sutra_text": "गहेर्वलोपश्च",
+   "now": "५.२३"
+  },
+  {
+   "record": "UN-P3-009",
+   "was": "३.९",
+   "sutra_text": "इणः कित्",
+   "now": "३.१५३"
+  },
+  {
+   "record": "UN-P3-014",
+   "was": "३.१४",
+   "sutra_text": "वृतेर्नित्",
+   "now": "५.६"
+  },
+  {
+   "record": "UN-P3-020",
+   "was": "३.२०",
+   "sutra_text": "रमेस्तश्च",
+   "now": "३.१४"
+  },
+  {
+   "record": "UN-P3-024",
+   "was": "३.२४",
+   "sutra_text": "हन्तेर्यश्च",
+   "now": "४.४६"
+  },
+  {
+   "record": "UN-P3-035",
+   "was": "३.३५",
+   "sutra_text": "दीर्घश्च",
+   "now": "५.१३"
+  },
+  {
+   "record": "UN-P3-037",
+   "was": "३.३७",
+   "sutra_text": "धेट इच्च",
+   "now": "३.३४"
+  },
+  {
+   "record": "UN-P3-041",
+   "was": "३.४१",
+   "sutra_text": "दृतेश्च",
+   "now": "२.१०६"
+  },
+  {
+   "record": "UN-P3-048",
+   "was": "३.४८",
+   "sutra_text": "मनेश्च",
+   "now": "१.४३"
+  },
+  {
+   "record": "UN-P3-049",
+   "was": "३.४९",
+   "sutra_text": "कशेः षश्च",
+   "now": "१.५५"
+  },
+  {
+   "record": "UN-P3-050",
+   "was": "३.५०",
+   "sutra_text": "अशेर्वश्च",
+   "now": "२.७६"
+  },
+  {
+   "record": "UN-P3-051",
+   "was": "३.५१",
+   "sutra_text": "व्रश्चेः कित्",
+   "now": "२.७२"
+  },
+  {
+   "record": "UN-P3-052",
+   "was": "३.५२",
+   "sutra_text": "कुषेः किच्च",
+   "now": "२.१०७"
+  },
+  {
+   "record": "UN-P3-069",
+   "was": "३.६९",
+   "sutra_text": "इषेः कुश्च",
+   "now": "१.३२"
+  },
+  {
+   "record": "UN-P3-071",
+   "was": "३.७१",
+   "sutra_text": "अशेः सरः",
+   "now": "३.७०"
+  },
+  {
+   "record": "UN-P3-073",
+   "was": "३.७३",
+   "sutra_text": "गुपेः किच्च",
+   "now": "३.९५"
+  },
+  {
+   "record": "UN-P3-087",
+   "was": "३.८७",
+   "sutra_text": "अन्तेः श्च",
+   "now": "३.६०"
+  },
+  {
+   "record": "UN-P3-090",
+   "was": "३.९०",
+   "sutra_text": "वत्सश्च",
+   "now": "३.७१"
+  },
+  {
+   "record": "UN-P3-094",
+   "was": "३.९४",
+   "sutra_text": "ऋतेश्च",
+   "now": "२.१०६"
+  },
+  {
+   "record": "UN-P3-097",
+   "was": "३.९७",
+   "sutra_text": "सृवृञ्भ्यां चित्",
+   "now": "४.४९"
+  },
+  {
+   "record": "UN-P3-099",
+   "was": "३.९९",
+   "sutra_text": "कमेश्च",
+   "now": "४.२१३"
+  },
+  {
+   "record": "UN-P3-101",
+   "was": "३.१०१",
+   "sutra_text": "जनेष्टश्च",
+   "now": "५.३०"
+  },
+  {
+   "record": "UN-P3-107",
+   "was": "३.१०७",
+   "sutra_text": "वसेस्तुन्",
+   "now": "१.७५"
+  },
+  {
+   "record": "UN-P3-120",
+   "was": "३.१२०",
+   "sutra_text": "वहेश्च",
+   "now": "३.७१"
+  },
+  {
+   "record": "UN-P3-121",
+   "was": "३.१२१",
+   "sutra_text": "कषेः कश्च",
+   "now": "१.८४"
+  },
+  {
+   "record": "UN-P3-124",
+   "was": "३.१२४",
+   "sutra_text": "ऋतेर्ण्श्च",
+   "now": "२.१०६"
+  },
+  {
+   "record": "UN-P3-128",
+   "was": "३.१२८",
+   "sutra_text": "रमेर्नश्च",
+   "now": "४.२१३"
+  },
+  {
+   "record": "UN-P3-132",
+   "was": "३.१३२",
+   "sutra_text": "कपेर्लश्च",
+   "now": "४.५"
+  },
+  {
+   "record": "UN-P3-135",
+   "was": "३.१३५",
+   "sutra_text": "तनेर्डउः सन्वच्च",
+   "now": "५.५२"
+  },
+  {
+   "record": "UN-P3-143",
+   "was": "३.१४३",
+   "sutra_text": "भसेश्च",
+   "now": "३.७१"
+  },
+  {
+   "record": "UN-P3-149",
+   "was": "३.१४९",
+   "sutra_text": "लघेरट् च",
+   "now": "३.७"
+  },
+  {
+   "record": "UN-P4-001",
+   "was": "४.१",
+   "sutra_text": "कुटिशुषिभ्यां कश्च",
+   "now": "४.१८६"
+  },
+  {
+   "record": "UN-P4-002",
+   "was": "४.२",
+   "sutra_text": "शॄणोतेर्ह्रस्वश्च",
+   "now": "१.१२३"
+  },
+  {
+   "record": "UN-P4-003",
+   "was": "४.३",
+   "sutra_text": "स्त्यायतेर्डश्च",
+   "now": "४.१६५"
+  },
+  {
+   "record": "UN-P4-004",
+   "was": "४.४",
+   "sutra_text": "अञ्जेर्लुक्च",
+   "now": "३.५८"
+  },
+  {
+   "record": "UN-P4-005",
+   "was": "४.५",
+   "sutra_text": "हन्तेर्मश्च",
+   "now": "४.६२"
+  },
+  {
+   "record": "UN-P4-009",
+   "was": "४.९",
+   "sutra_text": "इण्शीभ्यां वन्",
+   "now": "१.१५०"
+  },
+  {
+   "record": "UN-P4-014",
+   "was": "४.१४",
+   "sutra_text": "मनेरुच्च",
+   "now": "४.१२२"
+  },
+  {
+   "record": "UN-P4-018",
+   "was": "४.१८",
+   "sutra_text": "पुषः कित्",
+   "now": "४.४"
+  },
+  {
+   "record": "UN-P4-022",
+   "was": "४.२२",
+   "sutra_text": "पातेर्डुम्",
+   "now": "४.१७७"
+  },
+  {
+   "record": "UN-P4-031",
+   "was": "४.३१",
+   "sutra_text": "अग्नेर्लोपश्च",
+   "now": "४.५०"
+  },
+  {
+   "record": "UN-P4-032",
+   "was": "४.३२",
+   "sutra_text": "ऋजेः किच्च",
+   "now": "२.४८"
+  },
+  {
+   "record": "UN-P4-033",
+   "was": "४.३३",
+   "sutra_text": "अमेश्च",
+   "now": "४.२१३"
+  },
+  {
+   "record": "UN-P4-039",
+   "was": "४.३९",
+   "sutra_text": "तसेश्च",
+   "now": "३.७१"
+  },
+  {
+   "record": "UN-P4-041",
+   "was": "४.४१",
+   "sutra_text": "अङ्गेर्नलोपश्च",
+   "now": "४.५०"
+  },
+  {
+   "record": "UN-P4-042",
+   "was": "४.४२",
+   "sutra_text": "कृपेर्वृद्धिश्च",
+   "now": "३.७९"
+  },
+  {
+   "record": "UN-P4-046",
+   "was": "४.४६",
+   "sutra_text": "सर्वधातुभ्य इन्",
+   "now": "४.११७"
+  },
+  {
+   "record": "UN-P4-048",
+   "was": "४.४८",
+   "sutra_text": "मनेरुच्च",
+   "now": "४.१२२"
+  },
+  {
+   "record": "UN-P4-049",
+   "was": "४.४९",
+   "sutra_text": "ऋजेः किच्च",
+   "now": "२.४८"
+  },
+  {
+   "record": "UN-P4-050",
+   "was": "४.५०",
+   "sutra_text": "पिशेः किच्च",
+   "now": "३.९५"
+  },
+  {
+   "record": "UN-P4-051",
+   "was": "४.५१",
+   "sutra_text": "राशदिभ्यां त्रिप्",
+   "now": "४.६७"
+  },
+  {
+   "record": "UN-P4-068",
+   "was": "४.६८",
+   "sutra_text": "वक्षश्च",
+   "now": "३.१२०"
+  },
+  {
+   "record": "UN-P4-069",
+   "was": "४.६९",
+   "sutra_text": "सर्वधातुभ्योऽसुन्",
+   "now": "४.१८८"
+  },
+  {
+   "record": "UN-P4-070",
+   "was": "४.७०",
+   "sutra_text": "हर्यतेः कन्यन् हिरँ च",
+   "now": "५.४४"
+  },
+  {
+   "record": "UN-P4-073",
+   "was": "४.७३",
+   "sutra_text": "तनेर्डउः सन्वच्च",
+   "now": "५.५२"
+  },
+  {
+   "record": "UN-P4-096",
+   "was": "४.९६",
+   "sutra_text": "पचेरलिमच्",
+   "now": "४.३७"
+  },
+  {
+   "record": "UN-P4-119",
+   "was": "४.११९",
+   "sutra_text": "वातप्रमीः",
+   "now": "४.१"
+  },
+  {
+   "record": "UN-P5-015",
+   "was": "५.१५",
+   "sutra_text": "अंशेः शश्च",
+   "now": "१.५५"
+  },
+  {
+   "record": "UN-P5-022",
+   "was": "५.२२",
+   "sutra_text": "कर्षेश्च",
+   "now": "५.७"
+  },
+  {
+   "record": "UN-P5-025",
+   "was": "५.२५",
+   "sutra_text": "रत्तेश्च",
+   "now": "५.७"
+  },
+  {
+   "record": "UN-P5-033",
+   "was": "५.३३",
+   "sutra_text": "वितस्तेश्च",
+   "now": "३.७१"
+  },
+  {
+   "record": "UN-P5-048",
+   "was": "५.४८",
+   "sutra_text": "त्रुटेश्च",
+   "now": "२.५६"
+  }
+ ],
+ "words_kept_unverified": {
+  "note": "Kept under the sūtra your earlier record named, but not found in the slide notes or in the OCR of the book pages; please confirm.",
+  "list": [
+   "१.५४ सलिकल्यनिमहिभडिभण्डिशण्डिपिण्डितुण्डिकुकिभूभ्य इलच् — भडिलः",
+   "१.५४ सलिकल्यनिमहिभडिभण्डिशण्डिपिण्डितुण्डिकुकिभूभ्य इलच् — भण्डिलः",
+   "१.५४ सलिकल्यनिमहिभडिभण्डिशण्डिपिण्डितुण्डिकुकिभूभ्य इलच् — शण्डिलः",
+   "१.५४ सलिकल्यनिमहिभडिभण्डिशण्डिपिण्डितुण्डिकुकिभूभ्य इलच् — पिण्डिलः",
+   "१.५४ सलिकल्यनिमहिभडिभण्डिशण्डिपिण्डितुण्डिकुकिभूभ्य इलच् — तुण्डिलः",
+   "१.५४ सलिकल्यनिमहिभडिभण्डिशण्डिपिण्डितुण्डिकुकिभूभ्य इलच् — भविलः",
+   "१.५८ पतिकठिकुठिगडिगुडिदंशिभ्य एरक् — गडेरः",
+   "१.५८ पतिकठिकुठिगडिगुडिदंशिभ्य एरक् — गुडेरः",
+   "१.५८ पतिकठिकुठिगडिगुडिदंशिभ्य एरक् — दंशेरः",
+   "१.६१ मूलेरादयः — मूलेरः",
+   "१.६१ मूलेरादयः — गुधेरः",
+   "१.६१ मूलेरादयः — गुहेरः",
+   "१.६१ मूलेरादयः — मुहेरः",
+   "१.७५ वसेस्तुन् — शस्तु",
+   "१.१३७ अर्तिस्तुसुहुसृधृभिक्षुभायावापदियक्षिनीभ्यो मन् — यक्ष्मः",
+   "१.१४१ अविसिविसिशुषिभ्यः कित् — स्यूमः",
+   "१.१४२ इषियुधीन्धिदसिश्याधूसूभ्यो मक् — सूमः",
+   "१.१५० इण्शीभ्यां वन् — इवा",
+   "१.१५० इण्शीभ्यां वन् — शेवा",
+   "१.१५३ कॄगॄशॄदॄभ्यो वः — दर्वः",
+   "२.७ पातॄतुदिवचिरिचिसिचिभ्यस्थक् — तुत्थः / तुत्थम्",
+   "२.१३ स्फायितञ्चिवञ्चिशकिक्षिपिक्षुदिसृपितृपिदृपिवन्द्युन्दिश्वितिवृत्यजिनीपदिमदिमुदिखिदिछिदिभिदिमन्दिचन्दिदहिदसिदम्भिवसिवाशिशीङ्हसिसिधिशुभिभ्यो रक् — दृप्रः",
+   "२.१३ स्फायितञ्चिवञ्चिशकिक्षिपिक्षुदिसृपितृपिदृपिवन्द्युन्दिश्वितिवृत्यजिनीपदिमदिमुदिखिदिछिदिभिदिमन्दिचन्दिदहिदसिदम्भिवसिवाशिशीङ्हसिसिधिशुभिभ्यो रक् — उन्द्रः",
+   "२.१३ स्फायितञ्चिवञ्चिशकिक्षिपिक्षुदिसृपितृपिदृपिवन्द्युन्दिश्वितिवृत्यजिनीपदिमदिमुदिखिदिछिदिभिदिमन्दिचन्दिदहिदसिदम्भिवसिवाशिशीङ्हसिसिधिशुभिभ्यो रक् — पद्रः",
+   "२.१३ स्फायितञ्चिवञ्चिशकिक्षिपिक्षुदिसृपितृपिदृपिवन्द्युन्दिश्वितिवृत्यजिनीपदिमदिमुदिखिदिछिदिभिदिमन्दिचन्दिदहिदसिदम्भिवसिवाशिशीङ्हसिसिधिशुभिभ्यो रक् — खिद्रम्",
+   "२.१३ स्फायितञ्चिवञ्चिशकिक्षिपिक्षुदिसृपितृपिदृपिवन्द्युन्दिश्वितिवृत्यजिनीपदिमदिमुदिखिदिछिदिभिदिमन्दिचन्दिदहिदसिदम्भिवसिवाशिशीङ्हसिसिधिशुभिभ्यो रक् — दभ्रम्",
+   "२.१३ स्फायितञ्चिवञ्चिशकिक्षिपिक्षुदिसृपितृपिदृपिवन्द्युन्दिश्वितिवृत्यजिनीपदिमदिमुदिखिदिछिदिभिदिमन्दिचन्दिदहिदसिदम्भिवसिवाशिशीङ्हसिसिधिशुभिभ्यो रक् — वाश्रः",
+   "२.१३ स्फायितञ्चिवञ्चिशकिक्षिपिक्षुदिसृपितृपिदृपिवन्द्युन्दिश्वितिवृत्यजिनीपदिमदिमुदिखिदिछिदिभिदिमन्दिचन्दिदहिदसिदम्भिवसिवाशिशीङ्हसिसिधिशुभिभ्यो रक् — हस्रः",
+   "२.१३ स्फायितञ्चिवञ्चिशकिक्षिपिक्षुदिसृपितृपिदृपिवन्द्युन्दिश्वितिवृत्यजिनीपदिमदिमुदिखिदिछिदिभिदिमन्दिचन्दिदहिदसिदम्भिवसिवाशिशीङ्हसिसिधिशुभिभ्यो रक् — शुभ्रः",
+   "२.२१ कृतेश्छः क्रू च — कृच्छ्रम्",
+   "२.८७ ऋञ्जिवृद्धिमन्दिसहिभ्यः कित् — ऋञ्जसानः",
+   "२.८७ ऋञ्जिवृद्धिमन्दिसहिभ्यः कित् — मन्दसानः",
+   "२.८७ ऋञ्जिवृद्धिमन्दिसहिभ्यः कित् — सहसानः",
+   "३.९५ पिशेः किच्च — पेशी",
+   "४.४ पुषः कित् — पोत्रम्",
+   "४.६७ राशदिभ्यां त्रिप् — शत्रिः",
+   "४.२१३ रमेश्च — अमा",
+   "५.११ दंशेश्च — दंशुकः",
+   "५.५२ तनोतेर्डउः सन्वच्च — पिचण्डुः",
+   "५.५२ तनोतेर्डउः सन्वच्च — कमण्डलुः"
+  ]
+ },
+ "words_removed_after_check": [
+  {
+   "sutra": "१.२०",
+   "word": "अंशः",
+   "reason": "शः कित्सन्वच्च (1.20) इत्यस्य रूपं शिशुः; अंशः इत्यस्य अस्मिन् सूत्रे सिद्धिर्नास्ति।"
+  },
+  {
+   "sutra": "१.९३",
+   "word": "जम्बुः",
+   "reason": "जम्बूः इति दीर्घान्तं रूपम् अस्मिन्नेव सूत्रे; जम्बुः इति ह्रस्वान्तस्य पुनरुक्तिः।"
+  },
+  {
+   "sutra": "१.१३७",
+   "word": "यक्षः",
+   "reason": "यक्षः मन्-प्रत्ययान्तो न (यक्ष् + घञ्/अच्); अस्य सूत्रस्य रूपं यक्ष्मः।"
+  },
+  {
+   "sutra": "१.१५०",
+   "word": "इवा",
+   "reason": "इण्शीभ्यां वन् (1.150) इत्यस्य रूपे एवः, शेवः; इवा इति रूपं न सिद्ध्यति।"
+  },
+  {
+   "sutra": "१.१५१",
+   "word": "शम्भुः",
+   "reason": "शम्भुः इति रूपं विप्रसम्भ्यो ड्वसंज्ञायाम् (3.2.180) इति डु-प्रत्ययेन सिद्ध्यति, न अनेन उणादिसूत्रेण।"
+  },
+  {
+   "sutra": "१.१५३",
+   "word": "कामः",
+   "reason": "कॄगॄशॄदॄभ्यो वः (1.153) इत्यस्य रूपाणि कर्वः, गर्वः, शर्वः, दर्वः; कामः इति रूपं घञन्तम्।"
+  }
+ ],
+ "words_set_aside": [
+  {
+   "record": "UN-P1-00६",
+   "record_number": "१.६",
+   "record_text": "दम्भोलिः",
+   "word": "दम्भोलिः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-00७",
+   "record_number": "१.७",
+   "record_text": "अर्तेरौणादिकः",
+   "word": "आरुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0२१",
+   "record_number": "१.२१",
+   "record_text": "ऋभुः",
+   "word": "ऋभुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0२२",
+   "record_number": "१.२२",
+   "record_text": "विभुः",
+   "word": "विभुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0२३",
+   "record_number": "१.२३",
+   "record_text": "प्रभुः",
+   "word": "प्रभुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0२५",
+   "record_number": "१.२५",
+   "record_text": "अम्बु",
+   "word": "अम्बु",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0२७",
+   "record_number": "१.२७",
+   "record_text": "रम्भुः",
+   "word": "रम्भुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0५१",
+   "record_number": "१.५१",
+   "record_text": "इषिमदिमुदिखिदिच्छिदिभिदिमन्दिचन्दितिमिरुचिरुधिशुषिबन्धिभ्यः किरच्",
+   "word": "इषिरः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0५१",
+   "record_number": "१.५१",
+   "record_text": "इषिमदिमुदिखिदिच्छिदिभिदिमन्दिचन्दितिमिरुचिरुधिशुषिबन्धिभ्यः किरच्",
+   "word": "छिदिरा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0५१",
+   "record_number": "१.५१",
+   "record_text": "इषिमदिमुदिखिदिच्छिदिभिदिमन्दिचन्दितिमिरुचिरुधिशुषिबन्धिभ्यः किरच्",
+   "word": "भिदिरम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P1-0६९",
+   "record_number": "१.६९",
+   "record_text": "पातेस्तुन् किच्च",
+   "word": "पीतुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-009",
+   "record_number": "२.९",
+   "record_text": "उदि ष्टुवः",
+   "word": "उत्थः / उत्थम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-010",
+   "record_number": "२.१०",
+   "record_text": "अशेरुपसङ्ख्यानम्",
+   "word": "अष्ठः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-015",
+   "record_number": "२.१५",
+   "record_text": "मदेर्भश्च",
+   "word": "मद्रः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-016",
+   "record_number": "२.१६",
+   "record_text": "क्रुधेश्च",
+   "word": "क्रुध्रः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-018",
+   "record_number": "२.१८",
+   "record_text": "उचेरौ च",
+   "word": "ओक्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-020",
+   "record_number": "२.२०",
+   "record_text": "उचिवचियजिभ्यः कित्",
+   "word": "उच्रः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-020",
+   "record_number": "२.२०",
+   "record_text": "उचिवचियजिभ्यः कित्",
+   "word": "यज्रः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-029",
+   "record_number": "२.२९",
+   "record_text": "ऋजेर्भ्रंशेश्च",
+   "word": "भ्रंश्रः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-033",
+   "record_number": "२.३३",
+   "record_text": "स्पृहेरुकन्",
+   "word": "स्पृहयुकः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-034",
+   "record_number": "२.३४",
+   "record_text": "गुहेश्च",
+   "word": "गूहुकः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P2-035",
+   "record_number": "२.३५",
+   "record_text": "जाग्रो विच्",
+   "word": "जागरूकः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-002",
+   "record_number": "३.२",
+   "record_text": "छिदिरुधिपिञ्जिव्यथीनां क्वरप्",
+   "word": "रोध्वरः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-002",
+   "record_number": "३.२",
+   "record_text": "छिदिरुधिपिञ्जिव्यथीनां क्वरप्",
+   "word": "पिञ्जरम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-002",
+   "record_number": "३.२",
+   "record_text": "छिदिरुधिपिञ्जिव्यथीनां क्वरप्",
+   "word": "व्यथ्वरः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-003",
+   "record_number": "३.३",
+   "record_text": "गमेरिट् च",
+   "word": "गन्त्वरः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-005",
+   "record_number": "३.५",
+   "record_text": "दृशिधीङोः ष्वरन्",
+   "word": "द्रष्ट्वरः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-010",
+   "record_number": "३.१०",
+   "record_text": "कृषेः कित्",
+   "word": "वृष्णः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-010",
+   "record_number": "३.१०",
+   "record_text": "कृषेः कित्",
+   "word": "तृष्णः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-011",
+   "record_number": "३.११",
+   "record_text": "ऋन्धीभ्यां नश्च",
+   "word": "ऋध्नः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-011",
+   "record_number": "३.११",
+   "record_text": "ऋन्धीभ्यां नश्च",
+   "word": "धीना",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-014",
+   "record_number": "३.१४",
+   "record_text": "वृतेर्नित्",
+   "word": "वर्त्नः / वर्त्नम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-014",
+   "record_number": "३.१४",
+   "record_text": "वृतेर्नित्",
+   "word": "चूर्णः / चूर्णम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-015",
+   "record_number": "३.१५",
+   "record_text": "शॄण्वृकृभ्यः कित्",
+   "word": "शीर्णः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-015",
+   "record_number": "३.१५",
+   "record_text": "शॄण्वृकृभ्यः कित्",
+   "word": "वूर्णः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-015",
+   "record_number": "३.१५",
+   "record_text": "शॄण्वृकृभ्यः कित्",
+   "word": "कीर्णः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-016",
+   "record_number": "३.१६",
+   "record_text": "मन्दीवाशिभ्यां नल्",
+   "word": "वाशनः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-024",
+   "record_number": "३.२४",
+   "record_text": "हन्तेर्यश्च",
+   "word": "हयुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-026",
+   "record_number": "३.२६",
+   "record_text": "पातेर्डित्",
+   "word": "लेपः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-026",
+   "record_number": "३.२६",
+   "record_text": "पातेर्डित्",
+   "word": "चापः / चापम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-030",
+   "record_number": "३.३०",
+   "record_text": "कुङश्च",
+   "word": "शूपः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-034",
+   "record_number": "३.३४",
+   "record_text": "तलति पतत्योश्च",
+   "word": "गल्पः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-034",
+   "record_number": "३.३४",
+   "record_text": "तलति पतत्योश्च",
+   "word": "जल्पः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-036",
+   "record_number": "३.३६",
+   "record_text": "भातेर्णुः",
+   "word": "भानुमान्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-040",
+   "record_number": "३.४०",
+   "record_text": "कृञ्कॄभ्यां कित्",
+   "word": "वरुणा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-045",
+   "record_number": "३.४५",
+   "record_text": "ऋजिभृज्यञ्जिक्षुभ्यः कित्",
+   "word": "भर्जनम् / भर्जुनः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-045",
+   "record_number": "३.४५",
+   "record_text": "ऋजिभृज्यञ्जिक्षुभ्यः कित्",
+   "word": "अञ्जुनः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-045",
+   "record_number": "३.४५",
+   "record_text": "ऋजिभृज्यञ्जिक्षुभ्यः कित्",
+   "word": "क्षुभुनः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-049",
+   "record_number": "३.४९",
+   "record_text": "कशेः षश्च",
+   "word": "कांस्यम् / कांसः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-051",
+   "record_number": "३.५१",
+   "record_text": "व्रश्चेः कित्",
+   "word": "लक्ष्म",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-051",
+   "record_number": "३.५१",
+   "record_text": "व्रश्चेः कित्",
+   "word": "पक्ष्मा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-056",
+   "record_number": "३.५६",
+   "record_text": "दूङ्धाञ्भ्यां क्तन्",
+   "word": "धाता",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-061",
+   "record_number": "३.६१",
+   "record_text": "पृपॄभ्यामर्तच्",
+   "word": "शार्वतः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-062",
+   "record_number": "३.६२",
+   "record_text": "वसेरन्तश्च",
+   "word": "सीमन्तः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-067",
+   "record_number": "३.६७",
+   "record_text": "असेष्ठिः",
+   "word": "दधि",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-072",
+   "record_number": "३.७२",
+   "record_text": "धूसूभ्यां कन्",
+   "word": "सूकः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-073",
+   "record_number": "३.७३",
+   "record_text": "गुपेः किच्च",
+   "word": "गुल्गुः / गुग्गुलुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-074",
+   "record_number": "३.७४",
+   "record_text": "धाय्यादयश्च",
+   "word": "धाय्या",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-075",
+   "record_number": "३.७५",
+   "record_text": "दामनीशस्यूभ्यः कन्",
+   "word": "दामकः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-076",
+   "record_number": "३.७६",
+   "record_text": "अशिशसिभ्यां क्युन्",
+   "word": "अशनम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-076",
+   "record_number": "३.७६",
+   "record_text": "अशिशसिभ्यां क्युन्",
+   "word": "शसनम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-077",
+   "record_number": "३.७७",
+   "record_text": "वदिहसिभ्यां घञ्",
+   "word": "हासः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-078",
+   "record_number": "३.७८",
+   "record_text": "नपुंसके भावे क्तः",
+   "word": "हसितम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-078",
+   "record_number": "३.७८",
+   "record_text": "नपुंसके भावे क्तः",
+   "word": "जल्पितम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-081",
+   "record_number": "३.८१",
+   "record_text": "सदादिभ्यः क्विप्",
+   "word": "सत्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-083",
+   "record_number": "३.८३",
+   "record_text": "पुरोऽग्रतोऽग्रेभ्यः सरतेः",
+   "word": "पुरःसरः / पुरःसरा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-084",
+   "record_number": "३.८४",
+   "record_text": "उणादयो बहुलम्",
+   "word": "ऋभुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-084",
+   "record_number": "३.८४",
+   "record_text": "उणादयो बहुलम्",
+   "word": "प्रभुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-084",
+   "record_number": "३.८४",
+   "record_text": "उणादयो बहुलम्",
+   "word": "विभुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-085",
+   "record_number": "३.८५",
+   "record_text": "कृपूसृजिभ्यः क्सः",
+   "word": "कृक्षः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-085",
+   "record_number": "३.८५",
+   "record_text": "कृपूसृजिभ्यः क्सः",
+   "word": "पुक्षः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-086",
+   "record_number": "३.८६",
+   "record_text": "प्लुषिभ्यां कित्",
+   "word": "प्लुकः / प्लुक्षः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-088",
+   "record_number": "३.८८",
+   "record_text": "भृञः क्सन्",
+   "word": "भर्त्सः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-089",
+   "record_number": "३.८९",
+   "record_text": "कुटेर्निच्च",
+   "word": "कुत्सः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-091",
+   "record_number": "३.९१",
+   "record_text": "घ्नश्च",
+   "word": "घनः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-095",
+   "record_number": "३.९५",
+   "record_text": "कितेः कुश्च",
+   "word": "केतुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-096",
+   "record_number": "३.९६",
+   "record_text": "हुशॄभ्यां चित्",
+   "word": "होतुः / होता",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-097",
+   "record_number": "३.९७",
+   "record_text": "सृवृञ्भ्यां चित्",
+   "word": "सर्तुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-097",
+   "record_number": "३.९७",
+   "record_text": "सृवृञ्भ्यां चित्",
+   "word": "वर्तुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-098",
+   "record_number": "३.९८",
+   "record_text": "पातेः पिशच्च",
+   "word": "पीतुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-104",
+   "record_number": "३.१०४",
+   "record_text": "हिमीभ्यां तश्च",
+   "word": "मेतुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-105",
+   "record_number": "३.१०५",
+   "record_text": "कितेर्डित्",
+   "word": "केतुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-108",
+   "record_number": "३.१०८",
+   "record_text": "वास्तोष्पतिश्च",
+   "word": "वास्तु",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-109",
+   "record_number": "३.१०९",
+   "record_text": "कृञः श्चादेः",
+   "word": "क्रतुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-111",
+   "record_number": "३.१११",
+   "record_text": "वहेरुकश्च",
+   "word": "वहतुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-112",
+   "record_number": "३.११२",
+   "record_text": "जीव्याजीवातुः",
+   "word": "जीवातुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-113",
+   "record_number": "३.११३",
+   "record_text": "जैवातृकश्च",
+   "word": "जैवातृकः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-120",
+   "record_number": "३.१२०",
+   "record_text": "वहेश्च",
+   "word": "वधूः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-123",
+   "record_number": "३.१२३",
+   "record_text": "पदेर्डश्च",
+   "word": "पादूः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-129",
+   "record_number": "३.१२९",
+   "record_text": "अदिप्रथ्योष्टुश्च",
+   "word": "पृथूः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-139",
+   "record_number": "३.१३९",
+   "record_text": "अदिशदिभ्यां क्रकन्",
+   "word": "अक्रकः / अग्रकः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-139",
+   "record_number": "३.१३९",
+   "record_text": "अदिशदिभ्यां क्रकन्",
+   "word": "शक्रकः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-140",
+   "record_number": "३.१४०",
+   "record_text": "ऋधातोरच",
+   "word": "दरः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-145",
+   "record_number": "३.१४५",
+   "record_text": "पादस्याजिह्वोपधायाः",
+   "word": "पद्यम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-146",
+   "record_number": "३.१४६",
+   "record_text": "द्रुहकथ्योरुतच्",
+   "word": "द्रुहुतः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-146",
+   "record_number": "३.१४६",
+   "record_text": "द्रुहकथ्योरुतच्",
+   "word": "कथुतः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-147",
+   "record_number": "३.१४७",
+   "record_text": "वृतेरटिः",
+   "word": "वर्तट् / वरट्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-148",
+   "record_number": "३.१४८",
+   "record_text": "मदिभुजिभ्यां चित्",
+   "word": "मरट्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-148",
+   "record_number": "३.१४८",
+   "record_text": "मदिभुजिभ्यां चित्",
+   "word": "भोरट्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-150",
+   "record_number": "३.१५०",
+   "record_text": "सृगतौ मदिच्",
+   "word": "सरमत् / सरमा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-152",
+   "record_number": "३.१५२",
+   "record_text": "शॄस्तृभ्यां कनिन्",
+   "word": "शर्वा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-152",
+   "record_number": "३.१५२",
+   "record_text": "शॄस्तृभ्यां कनिन्",
+   "word": "स्तर्वा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-153",
+   "record_number": "३.१५३",
+   "record_text": "महिषेष्टलोपश्च",
+   "word": "महिमा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-154",
+   "record_number": "३.१५४",
+   "record_text": "लघेश्च",
+   "word": "लघिमा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-155",
+   "record_number": "३.१५५",
+   "record_text": "गरिम्रादयश्च",
+   "word": "गरिमा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-155",
+   "record_number": "३.१५५",
+   "record_text": "गरिम्रादयश्च",
+   "word": "अणिमा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-156",
+   "record_number": "३.१५६",
+   "record_text": "स्थिरादिभ्यः ष्ठन्",
+   "word": "स्थेष्ठः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-156",
+   "record_number": "३.१५६",
+   "record_text": "स्थिरादिभ्यः ष्ठन्",
+   "word": "प्रेष्ठः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-157",
+   "record_number": "३.१५७",
+   "record_text": "भूयिष्ठादयश्च",
+   "word": "भूयिष्ठम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-158",
+   "record_number": "३.१५८",
+   "record_text": "ज्यायस्-कनीयसश्च",
+   "word": "ज्यायान्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P3-158",
+   "record_number": "३.१५८",
+   "record_text": "ज्यायस्-कनीयसश्च",
+   "word": "कनीयान्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-001",
+   "record_number": "४.१",
+   "record_text": "कुटिशुषिभ्यां कश्च",
+   "word": "कुटी",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-003",
+   "record_number": "४.३",
+   "record_text": "स्त्यायतेर्डश्च",
+   "word": "स्तोकम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-005",
+   "record_number": "४.५",
+   "record_text": "हन्तेर्मश्च",
+   "word": "मत्कुणः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-010",
+   "record_number": "४.१०",
+   "record_text": "हर्यतेर्महिन्",
+   "word": "हर्म्यम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-011",
+   "record_number": "४.११",
+   "record_text": "अग्नेरनिन्",
+   "word": "अङ्गना",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-012",
+   "record_number": "४.१२",
+   "record_text": "रुहेः पत्वं च",
+   "word": "रोपणम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-015",
+   "record_number": "४.१५",
+   "record_text": "शिशीङ्भ्यां ष्ट्रन्",
+   "word": "शास्त्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-016",
+   "record_number": "४.१६",
+   "record_text": "दाम्नीशसयुयुजस्तुतुदसिसेचिकर्षिभ्यः ष्ट्रन्",
+   "word": "योक्त्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-016",
+   "record_number": "४.१६",
+   "record_text": "दाम्नीशसयुयुजस्तुतुदसिसेचिकर्षिभ्यः ष्ट्रन्",
+   "word": "सेक्त्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-019",
+   "record_number": "४.१९",
+   "record_text": "असिवसिवपिभ्यः क्तन्",
+   "word": "अस्तम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-019",
+   "record_number": "४.१९",
+   "record_text": "असिवसिवपिभ्यः क्तन्",
+   "word": "वस्तम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-019",
+   "record_number": "४.१९",
+   "record_text": "असिवसिवपिभ्यः क्तन्",
+   "word": "उप्तम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-020",
+   "record_number": "४.२०",
+   "record_text": "भृञः किच्च",
+   "word": "भृतम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-023",
+   "record_number": "४.२३",
+   "record_text": "हन्तेः किच्च",
+   "word": "हेम",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-026",
+   "record_number": "४.२६",
+   "record_text": "भृमृशीतॄचरित्वरित्वसिखदिभ्यः कित्",
+   "word": "भरित्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-026",
+   "record_number": "४.२६",
+   "record_text": "भृमृशीतॄचरित्वरित्वसिखदिभ्यः कित्",
+   "word": "त्वरित्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-027",
+   "record_number": "४.२७",
+   "record_text": "पवित्रं पूञः",
+   "word": "पवित्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-028",
+   "record_number": "४.२८",
+   "record_text": "वदिहसिभ्यां कश्च",
+   "word": "हसित्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-029",
+   "record_number": "४.२९",
+   "record_text": "हृग्रहोर्भश्छन्दसि",
+   "word": "हर्भित्रम् / गर्भित्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-030",
+   "record_number": "४.३०",
+   "record_text": "अर्चिशुचिवृचिरुचिभ्यश्छत्",
+   "word": "ऋच्छः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-030",
+   "record_number": "४.३०",
+   "record_text": "अर्चिशुचिवृचिरुचिभ्यश्छत्",
+   "word": "शुच्छः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-037",
+   "record_number": "४.३७",
+   "record_text": "दण्डखण्डे मण्डश्च",
+   "word": "मण्डः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-038",
+   "record_number": "४.३८",
+   "record_text": "पातेर्महट्",
+   "word": "प्रमहः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-042",
+   "record_number": "४.४२",
+   "record_text": "कृपेर्वृद्धिश्च",
+   "word": "कृपः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-057",
+   "record_number": "४.५७",
+   "record_text": "शिश्वीन्",
+   "word": "शिखी",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-058",
+   "record_number": "४.५८",
+   "record_text": "स्रग्",
+   "word": "स्रक् / स्रग्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-059",
+   "record_number": "४.५९",
+   "record_text": "दृग्",
+   "word": "दृक् / दृग्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-060",
+   "record_number": "४.६०",
+   "record_text": "दिक्समाख्याता",
+   "word": "दिक् / दिग्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-061",
+   "record_number": "४.६१",
+   "record_text": "पुंसि संज्ञायां घः",
+   "word": "भोगः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-077",
+   "record_number": "४.७७",
+   "record_text": "तण्डुलश्च",
+   "word": "तण्डुलः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P4-128",
+   "record_number": "४.१२८",
+   "record_text": "आशीः",
+   "word": "आशीः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-001",
+   "record_number": "५.१",
+   "record_text": "वृहेर्हिकश्च",
+   "word": "व्रीहिः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-002",
+   "record_number": "५.२",
+   "record_text": "द्रुहृदुहामुण्च",
+   "word": "ह्रोणः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-002",
+   "record_number": "५.२",
+   "record_text": "द्रुहृदुहामुण्च",
+   "word": "दोहः / दोहनी",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-003",
+   "record_number": "५.३",
+   "record_text": "खर्जिश्रिभ्यामीन्",
+   "word": "खारी",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-003",
+   "record_number": "५.३",
+   "record_text": "खर्जिश्रिभ्यामीन्",
+   "word": "शारी",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-006",
+   "record_number": "५.६",
+   "record_text": "कल्यतेः कश्च लश्च",
+   "word": "कला",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-007",
+   "record_number": "५.७",
+   "record_text": "काषेः ष्ठश्च",
+   "word": "काष्ठा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-008",
+   "record_number": "५.८",
+   "record_text": "मुहूर्तेरूर्तः",
+   "word": "मुहूर्तः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-011",
+   "record_number": "५.११",
+   "record_text": "युजेर्गुश्च",
+   "word": "युगम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-012",
+   "record_number": "५.१२",
+   "record_text": "मानेरुरच्",
+   "word": "मनुरः / मानुरः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-013",
+   "record_number": "५.१३",
+   "record_text": "गुणेरिनन्",
+   "word": "गुणिना / गुणिनम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-014",
+   "record_number": "५.१४",
+   "record_text": "भागेर्धञ्",
+   "word": "भागः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-016",
+   "record_number": "५.१६",
+   "record_text": "लवेर्लश्च",
+   "word": "लवः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-017",
+   "record_number": "५.१७",
+   "record_text": "त्रुटेश्ट्रिश्च",
+   "word": "त्रुटिः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-019",
+   "record_number": "५.१९",
+   "record_text": "नाड्या डिच्च",
+   "word": "नाडी / नाडिका",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-020",
+   "record_number": "५.२०",
+   "record_text": "घटेश्च",
+   "word": "घटी / घटिका",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-022",
+   "record_number": "५.२२",
+   "record_text": "कर्षेश्च",
+   "word": "कर्षः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-023",
+   "record_number": "५.२३",
+   "record_text": "माषस्य च",
+   "word": "माषः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-024",
+   "record_number": "५.२४",
+   "record_text": "गुञ्जायाश्च",
+   "word": "गुञ्जा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-025",
+   "record_number": "५.२५",
+   "record_text": "रत्तेश्च",
+   "word": "रक्तिः / रक्तिका",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-028",
+   "record_number": "५.२८",
+   "record_text": "जालस्य च",
+   "word": "जालम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-030",
+   "record_number": "५.३०",
+   "record_text": "त्रसरेणोश्च",
+   "word": "त्रसरेणुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-031",
+   "record_number": "५.३१",
+   "record_text": "परमाणोश्च",
+   "word": "परमाणुः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-037",
+   "record_number": "५.३७",
+   "record_text": "क्रोशेर्मन्",
+   "word": "क्रोशः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-039",
+   "record_number": "५.३९",
+   "record_text": "गव्यूतेश्च",
+   "word": "गव्यूतिः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-040",
+   "record_number": "५.४०",
+   "record_text": "परिघेः",
+   "word": "परिघः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-042",
+   "record_number": "५.४२",
+   "record_text": "मण्डलेर्मन्",
+   "word": "मण्डलम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-044",
+   "record_number": "५.४४",
+   "record_text": "अंशस्य च",
+   "word": "अंशकः / भागशः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-045",
+   "record_number": "५.४५",
+   "record_text": "लिप्तायाश्च",
+   "word": "लिप्ता / कला",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-046",
+   "record_number": "५.४६",
+   "record_text": "विगतायाश्च",
+   "word": "विलिप्ता / विकला",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-047",
+   "record_number": "५.४७",
+   "record_text": "तत्परायाश्च",
+   "word": "तत्परा",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-048",
+   "record_number": "५.४८",
+   "record_text": "त्रुटेश्च",
+   "word": "त्रुटिः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-049",
+   "record_number": "५.४९",
+   "record_text": "प्राणस्य च",
+   "word": "प्राणः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-050",
+   "record_number": "५.५०",
+   "record_text": "पलायाश्च",
+   "word": "विनाडी / पलम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-051",
+   "record_number": "५.५१",
+   "record_text": "घटिकायाश्च",
+   "word": "घटिका / नाडी",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-052",
+   "record_number": "५.५२",
+   "record_text": "अहोरात्रस्य च",
+   "word": "अहोरात्रम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-054",
+   "record_number": "५.५४",
+   "record_text": "मासस्य च",
+   "word": "मासः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-058",
+   "record_number": "५.५८",
+   "record_text": "युगस्य च",
+   "word": "चतुर्युगम् / महायुगम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-059",
+   "record_number": "५.५९",
+   "record_text": "मन्वन्तरस्य च",
+   "word": "मन्वन्तरम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-061",
+   "record_number": "५.६१",
+   "record_text": "ब्रह्मणोऽहः",
+   "word": "ब्राह्ममहः / कल्पाहः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-062",
+   "record_number": "५.६२",
+   "record_text": "महाप्रलयस्य च",
+   "word": "महाप्रलयः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-064",
+   "record_number": "५.६४",
+   "record_text": "परार्धस्य च",
+   "word": "परार्धम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-065",
+   "record_number": "५.६५",
+   "record_text": "सर्वसंख्यायाश्च",
+   "word": "शङ्कु-पद्म-महापद्म-खर्वाः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-067",
+   "record_number": "५.६७",
+   "record_text": "एकादिशतान्तस्य",
+   "word": "दशक-शतक-सहस्राणि",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-068",
+   "record_number": "५.६८",
+   "record_text": "स्थानमानस्य च",
+   "word": "स्थानमानम्",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-069",
+   "record_number": "५.६९",
+   "record_text": "सर्वपरिमाणसिद्धेश्च",
+   "word": "मान-तुला-प्रमाणानि",
+   "reason": "not in the slide notes or the book near this sūtra"
+  },
+  {
+   "record": "UN-P5-070",
+   "record_number": "५.७०",
+   "record_text": "उणादीनां सर्वशास्त्रोपकारकत्वमिति",
+   "word": "उणादिसिद्धयः",
+   "reason": "not in the slide notes or the book near this sūtra"
+  }
+ ],
+ "sutras_without_rupas": [
+  "१.४३ मसेश्च",
+  "१.६५ किशोरादयश्च",
+  "१.६९ सितनिगमिमसिसच्यविधाञ्क्रुशिभ्यस्तुन्",
+  "१.७० पः किच्च",
+  "१.७३ चायः किः",
+  "१.८६ अणो डश्च",
+  "१.८९ त्रो दुट् च",
+  "१.९५ ग्रो मुट् च",
+  "१.१३३ पारयतेरजिः",
+  "२.१० गश्चोदि",
+  "२.१४ चकिरम्योरुच्चोपधायाः",
+  "२.१५ वौ कसेः",
+  "२.१७ निन्देर्नलोपश्च",
+  "२.१८ अर्देर्दीर्घश्च",
+  "२.१९ शुचेर्दश्च",
+  "२.२० दुरीणो लोपश्च",
+  "३.३७ स्थो णुः",
+  "३.४८ ह्रियो रश्च लो वा",
+  "३.६७ ऋषेर्जातौ",
+  "३.७८ सर्तेर्दुक् च",
+  "३.९३ हृश्याभ्यामितन्",
+  "३.९७ दिधिषाय्यः",
+  "३.१०० राजेरन्यः",
+  "३.१०९ कृतेर्नुम् च",
+  "३.११४ भृञश्चित्",
+  "३.१३१ ऋच्छेररः",
+  "३.१३६ शृङ्गारभृङ्गारौ",
+  "३.१४८ इष्यशिभ्यां तकन्",
+  "३.१५३ इणः कित्",
+  "४.९१ कुवश्चट् दीर्घश्च",
+  "४.९४ शमेर्बन्",
+  "४.१२१ क्रमितमिशतिस्तम्भामत इच्च",
+  "४.१३० अज्यतिभ्यां च",
+  "४.२०४ अन्ने च",
+  "४.२२२ मिथुनेऽसिः पूर्ववच्च सर्वम्",
+  "४.२२९ पयसि च"
+ ],
+ "sutras_without_slide_prakriya": {
+  "note": "1.1–1.41 are not in the slide decks; their forms are taken from the book.",
+  "list": [
+   "१.१",
+   "१.२",
+   "१.३",
+   "१.४",
+   "१.५",
+   "१.६",
+   "१.७",
+   "१.८",
+   "१.९",
+   "१.१०",
+   "१.११",
+   "१.१२",
+   "१.१३",
+   "१.१४",
+   "१.१५",
+   "१.१६",
+   "१.१७",
+   "१.१८",
+   "१.१९",
+   "१.२०",
+   "१.२१",
+   "१.२२",
+   "१.२३",
+   "१.२४",
+   "१.२५",
+   "१.२६",
+   "१.२७",
+   "१.२८",
+   "१.२९",
+   "१.३०",
+   "१.३१",
+   "१.३२",
+   "१.३३",
+   "१.३४",
+   "१.३५",
+   "१.३६",
+   "१.३७",
+   "१.३८",
+   "१.३९",
+   "१.४०",
+   "१.४१",
+   "१.५१",
+   "१.८३",
+   "१.८५",
+   "१.१३१"
+  ]
+ },
+ "forms_needing_meanings": [],
+ "meanings_added": {
+  "note": "Meanings (sa/en/hi/te) written for forms new in this edition; native review advised.",
+  "file": "tools/meanings_2026-11-15.tsv"
+ }
+}

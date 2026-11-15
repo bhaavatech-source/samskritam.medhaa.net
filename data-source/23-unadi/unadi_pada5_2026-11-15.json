@@ -1,0 +1,2631 @@
+{
+ "project": "Medhā Sanskrit Knowledge Base",
+ "title": "उणादिसूत्राणि — पञ्चमः पादः · Uṇādi-sūtrāṇi — Pañcamaḥ Pādaḥ",
+ "pada": 5,
+ "total_sutras": 70,
+ "total_rupas": 83,
+ "abbreviations": {
+  "वि.सु.का.कृ.": "तादृशप्रकृतिप्रत्यय-विशिष्टात् सुबादिषु कार्येषु कृतेषु (इन्दुः इत्यादि रूपं सिद्ध्यति)"
+ },
+ "sutras": [
+  {
+   "sutra_id": "UN-5.001",
+   "pada": 5,
+   "sutra_number": "५.१",
+   "sutra_text": "अदि भुवो डुतच्",
+   "sutra_iast": "adi bhuvo ḍutac",
+   "pratyaya": "डुतच् (ḍutac)",
+   "prakriya": "५.१ अदि भुवो डुतच् - अद् भू डुतच्, अद् भू उत, टिलोपे वि सु का कृ अद्भुतम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "अद्भुतम्",
+     "iast": "adbhutam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "आश्चर्यम्",
+      "en": "wonderful",
+      "hi": "अद्भुत",
+      "te": "అద్భుతము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.002",
+   "pada": 5,
+   "sutra_number": "५.२",
+   "sutra_text": "गुधेरूमः",
+   "sutra_iast": "gudherūmaḥ",
+   "pratyaya": "ऊम (ūma)",
+   "prakriya": "५.२ गुधेरूमः - गुध ऊम, गुणे वि सु का कृ गोधूमः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "गोधूमः",
+     "iast": "godhūmaḥ",
+     "dhatu": "गुधँ (परिवेष्टने)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "wheat cereal",
+      "hi": "गेहूँ",
+      "te": "గోధుమలు"
+     },
+     "notes": "ऊमन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.003",
+   "pada": 5,
+   "sutra_number": "५.३",
+   "sutra_text": "मसेरूरन्",
+   "sutra_iast": "maserūran",
+   "pratyaya": "ऊरन् (ūran)",
+   "prakriya": "५.३ मसेरूरन् - मस् ऊरन्, वि सु का कृ मसूरः। प्रथमे पादे असेरुरन्मसेश्चेत्यत्र व्याख्यातः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "मसूरः",
+     "iast": "masūraḥ",
+     "dhatu": "मसीँ (परिमाणे)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "red lentil pulse",
+      "hi": "मसूर दाल",
+      "te": "మైసూర్ పప్పు"
+     },
+     "notes": "ऊरन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.004",
+   "pada": 5,
+   "sutra_number": "५.४",
+   "sutra_text": "स्थः किच्च",
+   "sutra_iast": "sthaḥ kicca",
+   "pratyaya": "ऊरन् (ūran)",
+   "prakriya": "५.४ स्थः किच्च - स्था ऊरन्, स्था ऊर, आलोपे वि सु का कृ स्थूरो मनुष्यः ।",
+   "rupas_count": 2,
+   "rupas": [
+    {
+     "word": "मनुष्यः",
+     "iast": "manuṣyaḥ",
+     "dhatu": "मन् (ज्ञाने)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "man, human being",
+      "hi": "मनुष्य, मानव",
+      "te": "మనిషి, మానవుడు"
+     },
+     "notes": "उत्वे ष्यन्-प्रत्यये"
+    },
+    {
+     "word": "स्थूरः",
+     "iast": "sthūraḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "मनुष्यः",
+      "en": "man",
+      "hi": "मनुष्य",
+      "te": "మనుష్యుడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.005",
+   "pada": 5,
+   "sutra_number": "५.५",
+   "sutra_text": "पातेरतिः",
+   "sutra_iast": "pāteratiḥ",
+   "pratyaya": "अति (ati)",
+   "prakriya": "५.५ पातेरतिः - पा (रक्षणे) अति, दीर्घे वि सु का कृ पातिः स्वामी । संपातिः पक्षिराजः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "पातिः",
+     "iast": "pātiḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "स्वामी",
+      "en": "master",
+      "hi": "स्वामी",
+      "te": "ప్రభువు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.006",
+   "pada": 5,
+   "sutra_number": "५.६",
+   "sutra_text": "वातेर्नित्",
+   "sutra_iast": "vāternit",
+   "pratyaya": "अति (ati)",
+   "prakriya": "५.६ वातेर्नित् - वा अति, दीर्घे वि सु का कृ वातिः। वातिरादित्यसोमयोः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "वातिः",
+     "iast": "vātiḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "आदित्यः, सोमः",
+      "en": "the sun; the moon",
+      "hi": "सूर्य; चन्द्रमा",
+      "te": "సూర్యుడు; చంద్రుడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.007",
+   "pada": 5,
+   "sutra_number": "५.७",
+   "sutra_text": "अर्तेश्च",
+   "sutra_iast": "arteśca",
+   "pratyaya": "अति (ati)",
+   "prakriya": "५.७ अर्तेश्च - ऋ अति, गुणे रपरत्वे वि सु का कृ अरतिः। अरतिरुद्वेगः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "अरतिः",
+     "iast": "aratiḥ",
+     "dhatu": "",
+     "gender": "स्त्रीलिङ्गम्",
+     "meanings": {
+      "sa": "उद्वेगः",
+      "en": "agitation, discontent",
+      "hi": "उद्वेग",
+      "te": "ఉద్వేగము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.008",
+   "pada": 5,
+   "sutra_number": "५.८",
+   "sutra_text": "तृहेः क्नो हलोपश्च",
+   "sutra_iast": "tṛheḥ kno halopaśca",
+   "pratyaya": "क्न (kna)",
+   "prakriya": "५.८ तृहेः क्नो हलोपश्च - तृह (हिंसायाम्) क्न, तृह् न, हलोपे तृ न, ऋवर्णाण्णस्य णत्वं वाच्यमिति णत्वे वि सु का कृ तृणम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "तृणम्",
+     "iast": "tṛṇam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "घासः",
+      "en": "grass",
+      "hi": "घास",
+      "te": "గడ్డి"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.009",
+   "pada": 5,
+   "sutra_number": "५.९",
+   "sutra_text": "वुञ्लुठितनिताडिभ्य उलच् तण्डश्च",
+   "sutra_iast": "vuñluṭhitanitāḍibhya ulac taṇḍaśca",
+   "pratyaya": "",
+   "prakriya": "५.९ वुञ्लुठितनिताडिभ्य उलच् तण्डश्च - व्रियन्ते लुट्यन्ते तन्यन्ते ताड्यन्त इति वा तण्डुलाः ।\nवृञ् (वरणे), लुठ (विलोडने), तनु (विस्तारे) , तड (आघाते) एतेभ्यः चतुर्भ्यः उलचि प्रत्यये कृते चतुर्णां स्थाने तण्डादेशे कृते वि सु का कृ तण्डुलाः इति रूपं सिद्ध्यति।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "तण्डुलाः",
+     "iast": "taṇḍulāḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "अक्षताः",
+      "en": "husked rice grains",
+      "hi": "चावल",
+      "te": "బియ్యము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.010",
+   "pada": 5,
+   "sutra_number": "५.१०",
+   "sutra_text": "दंसेष्टटनौ न आ च",
+   "sutra_iast": "daṃseṣṭaṭanau na ā ca",
+   "pratyaya": "",
+   "prakriya": "५.१० दंसेष्टटनौ न आ च - दसि (सेवने) ट, दस् अ, नुमि दन्स् अ, नकारस्याकारे द आ स् अ, दीर्घे वि सु का कृ दासः। सेवकशूद्रयोः । टनि च प्रक्रिया समाना। स्वरे विशेषः।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "दासः",
+     "iast": "dāsaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "सेवकः",
+      "en": "servant",
+      "hi": "दास",
+      "te": "దాసుడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.011",
+   "pada": 5,
+   "sutra_number": "५.११",
+   "sutra_text": "दंशेश्च",
+   "sutra_iast": "daṃśeśca",
+   "pratyaya": "",
+   "prakriya": "५.११ दंशेश्च - दंश (दशने) ट, दंश् अ, नकारस्याकारादेशे द आ श्, अ, दीर्घे वि सु का कृ दाशः। दाशो धीवरः ।\nनकारजावनुस्वारपञ्चमौ झलि धातुषु सकारजः षकारस्तु षाट्टवर्गः तवर्गजः।",
+   "rupas_count": 3,
+   "rupas": [
+    {
+     "word": "दंशुकः",
+     "iast": "daṁśukaḥ",
+     "dhatu": "दंश (दंशने)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "biting serpent, fly, stinging",
+      "hi": "काटने वाला, विषैला सर्प",
+      "te": "కాటువేయు పాము"
+     },
+     "notes": "प्रत्ययसंयोगे"
+    },
+    {
+     "word": "दंशः",
+     "iast": "daṁśaḥ",
+     "dhatu": "दंश् (दंशने)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "gnat, bite, tooth",
+      "hi": "डंक, मच्छर, दंश",
+      "te": "కాటు, దంశము"
+     },
+     "notes": "घञि"
+    },
+    {
+     "word": "दाशः",
+     "iast": "dāśaḥ",
+     "dhatu": "दाश् (दाने)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "fisherman, boatman",
+      "hi": "मछुवारा, केवट",
+      "te": "జాలరి, పడవవాడు"
+     },
+     "notes": "शप्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.012",
+   "pada": 5,
+   "sutra_number": "५.१२",
+   "sutra_text": "उदि चेर्डैसिः",
+   "sutra_iast": "udi cerḍaisiḥ",
+   "pratyaya": "डैसि (ḍaisi)",
+   "prakriya": "५.१२ उदि चेर्डैसिः -उद् चि डैसि, उद् चि ऐस्, टिलोपे उद् च् ऐस्, चर्त्वे उत्, च् ऐस्, उच् च् ऐस्, वि सु का कृ उच्चैः इति सुद्ध्यति। स्वरादिपाठादव्ययत्वम् । उच्चैः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "उच्चैः",
+     "iast": "uccaiḥ",
+     "dhatu": "उद्-चि (चयने)",
+     "gender": "अव्ययम्",
+     "meanings": {
+      "en": "high, loudly, aloft",
+      "hi": "ऊँचा, जोर से",
+      "te": "పైకి, గట్టిగా"
+     },
+     "notes": "अव्ययत्वे"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.013",
+   "pada": 5,
+   "sutra_number": "५.१३",
+   "sutra_text": "नौ दीर्घश्च",
+   "sutra_iast": "nau dīrghaśca",
+   "pratyaya": "डैसि (ḍaisi)",
+   "prakriya": "५.१३ नौ दीर्घश्च डैसि- नि चि डैस्, नि चि ऐस्, नि च् ऐस्, नेः दीर्घे वि सु का कृ नीचैः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "नीचैः",
+     "iast": "nīcaiḥ",
+     "dhatu": "नि-चि (चयने)",
+     "gender": "अव्ययम्",
+     "meanings": {
+      "en": "low, softly, downward",
+      "hi": "नीचा, धीरे से",
+      "te": "క్రిందికి, మెల్లగా"
+     },
+     "notes": "अव्ययत्वे"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.014",
+   "pada": 5,
+   "sutra_number": "५.१४",
+   "sutra_text": "सौ रमेः क्तो दमे पूर्वपदस्य च दीर्घः",
+   "sutra_iast": "sau rameḥ kto dame pūrvapadasya ca dīrghaḥ",
+   "pratyaya": "क्त (kta)",
+   "prakriya": "५.१४ सौ रमेः क्तो दमे पूर्वपदस्य च दीर्घः - रमेः सुपूर्वाद्दमे वाच्ये क्तः स्यात् । कित्वादनुनासिकलोपः। सु रम् क्त, सु रम् त, अनुदात्तोपदेशेति मलोपे उपसर्गस्य च दीर्घे सू र त, वि सु का कृ सूरतः इति रूपम्। उपशान्तो दयालुश्च ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "सूरतः",
+     "iast": "sūrataḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "उपशान्तः",
+      "en": "calm, compassionate",
+      "hi": "शान्त",
+      "te": "శాంతుడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.015",
+   "pada": 5,
+   "sutra_number": "५.१५",
+   "sutra_text": "पूञो यण् णुक् ह्रस्वश्च",
+   "sutra_iast": "pūño yaṇ ṇuk hrasvaśca",
+   "pratyaya": "यत् (yat)",
+   "prakriya": "५.१५ पूञो यण्णुक् ह्रस्वश्च - यत्प्रत्ययः भवति। पूञ् (पवने) य, पू य, णुगागमे पू ण् य, ह्रस्वे च कृते वि सु का कृ पुण्यम्।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "पुण्यम्",
+     "iast": "puṇyam",
+     "dhatu": "पूञ् (पवने)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "spiritual merit, virtue, holy",
+      "hi": "पुण्य, सत्कर्म",
+      "te": "పుణ్యము, ధర్మము"
+     },
+     "notes": "यत्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.016",
+   "pada": 5,
+   "sutra_number": "५.१६",
+   "sutra_text": "स्रंसेः शिः कुट् किच्च",
+   "sutra_iast": "sraṃseḥ śiḥ kuṭ kicca",
+   "pratyaya": "यत् (yat)",
+   "prakriya": "५.१६ स्रंसेः शिः कुट् किच्च - स्रंसतेः शिरादेशः यत्प्रत्ययः कित्तस्य कुडागमश्च । स्रंसु (अधःपतने) यत्, स्रंस् य, शिभावे शि य, कुडागमे शि क् य, वि सु का कृ शिक्यम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "शिक्यम्",
+     "iast": "śikyam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "रज्जुपाशः",
+      "en": "hanging sling for pots",
+      "hi": "छींका",
+      "te": "ఉట్టి"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.017",
+   "pada": 5,
+   "sutra_number": "५.१७",
+   "sutra_text": "अर्तेः क्युरुच्च",
+   "sutra_iast": "arteḥ kyurucca",
+   "pratyaya": "क्यु (kyu)",
+   "prakriya": "५.१७ अर्तेः क्युरुच्च - ऋ क्यु, ऋ यु, उत्वे रपरत्वे उर् यु, यवोरनाकौ इति अनादेशे णत्वे वि सु का कृ उरणः। मेषः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "उरणः",
+     "iast": "uraṇaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "मेषः",
+      "en": "ram, sheep",
+      "hi": "भेड़ा",
+      "te": "గొర్రెపొట్టేలు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.018",
+   "pada": 5,
+   "sutra_number": "५.१८",
+   "sutra_text": "हिंसेरीरन्नीरचौ",
+   "sutra_iast": "hiṃserīrannīracau",
+   "pratyaya": "ईरन् / ईरच् (īran / īrac)",
+   "prakriya": "५.१८ हिंसेरीरन्नीरचौ - हिसि (हिंसायाम्) ईरन्, हिस् ईर, नुमि हिंस् ईर, वि सु का कृ हिंसीरः। ईरचि च समाना प्रक्रिया। व्याघ्रदुष्टयोः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "हिंसीरः",
+     "iast": "hiṃsīraḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "व्याघ्रः",
+      "en": "tiger",
+      "hi": "बाघ",
+      "te": "పులి"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.019",
+   "pada": 5,
+   "sutra_number": "५.१९",
+   "sutra_text": "उदि दृणातेरजलौ पूर्वपदान्त्यलोपश्च",
+   "sutra_iast": "udi dṛṇāterajalau pūrvapadāntyalopaśca",
+   "pratyaya": "",
+   "prakriya": "५.१९ उदि दृणातेरजलौ पूर्वपदान्त्यलोपश्च - उद् दॄ अच्, उद् दॄ अ, गुणे रपरत्वे उद् दर् अ, अन्त्यलोपे वि सु का कृ उदरम्। अलि च समानं रूपं स्वरे विशेषः।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "उदरम्",
+     "iast": "udaram",
+     "dhatu": "उद्-ऋ (गतौ)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "belly, abdomen, womb",
+      "hi": "पेट, उदर",
+      "te": "కడుపు, ఉదరము"
+     },
+     "notes": "अरन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.020",
+   "pada": 5,
+   "sutra_number": "५.२०",
+   "sutra_text": "डित् खनेर्मुट् स चोदात्तः",
+   "sutra_iast": "ḍit khanermuṭ sa codāttaḥ",
+   "pratyaya": "",
+   "prakriya": "५.२० डित् खनेर्मुट् स चोदात्तः - अच् अल् च डित्स्याद्धातोर्मुट् स चोदात्तः । खनु (अवदारणे) अच्, खन् अ, मुडागमे मुखन् अ, टिलोपे वि सु का कृ मुखम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "मुखम्",
+     "iast": "mukham",
+     "dhatu": "मुच् (मोक्षणे)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "mouth, face, opening",
+      "hi": "मुख, चेहरा",
+      "te": "ముఖము, మోము"
+     },
+     "notes": "खन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.021",
+   "pada": 5,
+   "sutra_number": "५.२१",
+   "sutra_text": "अमेः सन्",
+   "sutra_iast": "ameḥ san",
+   "pratyaya": "सन् (san)",
+   "prakriya": "५.२१ अमेः सन् - अम् सन्, अम् स, अनुस्वारे वि सु का कृ अंसः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "अंसः",
+     "iast": "aṃsaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "स्कन्धः",
+      "en": "shoulder",
+      "hi": "कंधा",
+      "te": "భుజము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.022",
+   "pada": 5,
+   "sutra_number": "५.२२",
+   "sutra_text": "मुहेः खो मूर्च",
+   "sutra_iast": "muheḥ kho mūrca",
+   "pratyaya": "ख (kha)",
+   "prakriya": "५.२२ मुहेः खो मूर्च - मुह (वैचित्ये) ख, मुह् ख, मूर्भावे मूर् ख वि सु का कृ मूर्खः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "मूर्खः",
+     "iast": "mūrkhaḥ",
+     "dhatu": "मुर्छाँ (मोहसमुच्छ्राययोः)",
+     "gender": "विशेषणम् / पुंलिङ्गम्",
+     "meanings": {
+      "en": "fool, ignorant person",
+      "hi": "मूर्ख, अज्ञानी",
+      "te": "మూర్ఖుడు"
+     },
+     "notes": "खन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.023",
+   "pada": 5,
+   "sutra_number": "५.२३",
+   "sutra_text": "नहेर्हलोपश्च",
+   "sutra_iast": "naherhalopaśca",
+   "pratyaya": "ख (kha)",
+   "prakriya": "५.२३ नहेर्हलोपश्च - णह (बन्धने) ख, नत्वे नह् ख, हलोपे वि सु का कृ नखः।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "नखः / नखम्",
+     "iast": "nakhaḥ",
+     "dhatu": "णहँ (बन्धने)",
+     "gender": "पुंलिङ्गम् / नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "fingernail, claw",
+      "hi": "नाखून",
+      "te": "గోరు"
+     },
+     "notes": "खन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.024",
+   "pada": 5,
+   "sutra_number": "५.२४",
+   "sutra_text": "शीङो ह्रस्वश्च",
+   "sutra_iast": "śīṅo hrasvaśca",
+   "pratyaya": "ख (kha)",
+   "prakriya": "५.२४ शीङो ह्रस्वश्च - शीङ् (स्वप्ने) ख, ह्रस्वे वि सु का कृ शिखा ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "शिखा",
+     "iast": "śikhā",
+     "dhatu": "",
+     "gender": "स्त्रीलिङ्गम्",
+     "meanings": {
+      "sa": "चूडा, ज्वाला",
+      "en": "crest, tuft; flame",
+      "hi": "शिखा, चोटी; लौ",
+      "te": "శిఖ, పిలక; జ్వాల"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.025",
+   "pada": 5,
+   "sutra_number": "५.२५",
+   "sutra_text": "माङ ऊखो मय् च",
+   "sutra_iast": "māṅa ūkho may ca",
+   "pratyaya": "ऊख (ūkha)",
+   "prakriya": "५.२५ माङ ऊखो मय् च - माङ् (माने) ऊख, मा ऊख, मय्-भावे मय् ऊख, वि सु का कृ मयूखः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "मयूखः",
+     "iast": "mayūkhaḥ",
+     "dhatu": "मी (हिंसायाम्)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "ray of light, flame",
+      "hi": "किरण, तेज",
+      "te": "కిరణము, మయూఖము"
+     },
+     "notes": "ऊखन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.026",
+   "pada": 5,
+   "sutra_number": "५.२६",
+   "sutra_text": "कलिगलिभ्यां फगस्योच्च",
+   "sutra_iast": "kaligalibhyāṃ phagasyocca",
+   "pratyaya": "फक् (phak)",
+   "prakriya": "५.२६ कलिगलिभ्यां फगस्योच्च - कल (शब्दसङ्ख्यानयोः) फक्, कल् फ, अतो उत्वे कुल् फ, वि सु का कृ कुल्फः। शरीरावयवो रोगश्च । एवं गुल्फः। पादग्रन्थिः ।",
+   "rupas_count": 2,
+   "rupas": [
+    {
+     "word": "यवः",
+     "iast": "yavaḥ",
+     "dhatu": "यु (मिश्रणे)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "barley grain, weight of 6 Mustard seeds",
+      "hi": "जौ, यव (नाप)",
+      "te": "యవలు, బార్లీ"
+     },
+     "notes": "गुणे अवादेशे"
+    },
+    {
+     "word": "कुल्फः",
+     "iast": "kulphaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "गुल्फः",
+      "en": "ankle",
+      "hi": "टखना",
+      "te": "చీలమండ"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.027",
+   "pada": 5,
+   "sutra_number": "५.२७",
+   "sutra_text": "स्पृशेः श्वण्शुनौ पृ च",
+   "sutra_iast": "spṛśeḥ śvaṇśunau pṛ ca",
+   "pratyaya": "श्वण् / शुन् (śvaṇ / śun)",
+   "prakriya": "५.२७ स्पृशेः श्वण्शुनौ पृ च - स्पृशधातोः श्वण्शुनौ प्रत्ययौ भवतः, पृ इत्यादेशः च भवति। स्पृश् श्वण्, स्पृश् श्व, पृभावे पृ श्व वृद्धौ रपरत्वे पार्श्व वि सु का कृ पार्श्वः। अस्त्री कक्षयोरधः । स्पृश् शुन्, स्पृश् शु, पृभावे पृ शु, गुणे रपरत्वे पर् शु वि सु का कृ पर्शुः। आयुधम् ।",
+   "rupas_count": 2,
+   "rupas": [
+    {
+     "word": "पार्श्वम् / पार्श्वः",
+     "iast": "pārśvam",
+     "dhatu": "पृ (पालने)",
+     "gender": "नपुंसकलिङ्गम् / पुंलिङ्गम्",
+     "meanings": {
+      "en": "flank, side, vicinity",
+      "hi": "बगल, पार्श्व",
+      "te": "ప్రక్క, పార్శ్వము"
+     },
+     "notes": "श्वन्-प्रत्यये"
+    },
+    {
+     "word": "पर्शुः",
+     "iast": "parśuḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "आयुधम्; पार्श्वास्थि",
+      "en": "axe; rib",
+      "hi": "परशु; पसली",
+      "te": "గొడ్డలి; పక్కటెముక"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.028",
+   "pada": 5,
+   "sutra_number": "५.२८",
+   "sutra_text": "श्मनि श्रयतेर्डुन्",
+   "sutra_iast": "śmani śrayaterḍun",
+   "pratyaya": "डुन् (ḍun)",
+   "prakriya": "५.२८ श्मनि श्रयतेर्डुन् - श्मन्शब्दो मुखवाची । मुखमाश्रयत इति श्मश्रुः । श्मन् श्रि डुनि, श्मन् श्रि उ, टिलोपे नलोपे श्म श्र् उ वि सु का कृ श्मश्रु।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "श्मश्रु",
+     "iast": "śmaśru",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "मुखरोम",
+      "en": "beard",
+      "hi": "दाढ़ी-मूँछ",
+      "te": "గడ్డము మీసము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.029",
+   "pada": 5,
+   "sutra_number": "५.२९",
+   "sutra_text": "अश्र्वादयश्च",
+   "sutra_iast": "aśrvādayaśca",
+   "pratyaya": "",
+   "prakriya": "५.२९ अश्र्वादयश्च - इमे निपात्यन्ते। अश् रुन्, वि सु का कृ अश्रु नयनजलम् ।",
+   "rupas_count": 2,
+   "rupas": [
+    {
+     "word": "अयनम्",
+     "iast": "ayanam",
+     "dhatu": "इण् (गतौ)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "six-month solar transit (Uttarayana / Dakshinayana)",
+      "hi": "अयन (उत्तरायण / दक्षिणायन - ६ महीने)",
+      "te": "అయనము (ఉత్తరాయణము/దక్షిణాయనము)"
+     },
+     "notes": "गुणे अयादेशे ल्युटि"
+    },
+    {
+     "word": "अश्रु",
+     "iast": "aśru",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "नयनजलम्",
+      "en": "tear",
+      "hi": "आँसू",
+      "te": "కన్నీరు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.030",
+   "pada": 5,
+   "sutra_number": "५.३०",
+   "sutra_text": "जनेष्टन् लोपश्च",
+   "sutra_iast": "janeṣṭan lopaśca",
+   "pratyaya": "टन् (ṭan)",
+   "prakriya": "५.३० जनेष्टन् लोपश्च - जन् टन्, जन् ट, नलोपे वि सु का कृ जटा ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "जटा",
+     "iast": "jaṭā",
+     "dhatu": "",
+     "gender": "स्त्रीलिङ्गम्",
+     "meanings": {
+      "sa": "संहतकेशाः",
+      "en": "matted hair",
+      "hi": "जटा",
+      "te": "జటలు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.031",
+   "pada": 5,
+   "sutra_number": "५.३१",
+   "sutra_text": "अच् तस्य जङ्घ च",
+   "sutra_iast": "ac tasya jaṅgha ca",
+   "pratyaya": "अच् (ac)",
+   "prakriya": "५.३१ अच् तस्य जङ्घ च - तस्य जनेः जङ्घादेशः स्यादच्च । जन् अच्, जङ्घादेशे जङ्घ अ, पररूपे टापि वि सु का कृ जङ्घा ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "जङ्घा",
+     "iast": "jaṅghā",
+     "dhatu": "",
+     "gender": "स्त्रीलिङ्गम्",
+     "meanings": {
+      "sa": "प्रसृता",
+      "en": "shank, lower leg",
+      "hi": "पिंडली",
+      "te": "పిక్క"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.032",
+   "pada": 5,
+   "sutra_number": "५.३२",
+   "sutra_text": "हन्तेः शरीरावयवे द्वे च",
+   "sutra_iast": "hanteḥ śarīrāvayave dve ca",
+   "pratyaya": "अच् (ac)",
+   "prakriya": "५.३२ हन्तेः शरीरावयवे द्वे च - हन् अच्, हन् अ, द्वित्वे अभ्यासकार्येषु ज हन् अ, हो हन्तेरिति ज घन् अ, वि सु का कृ जघनम् । पश्चान्नितम्बः स्त्रीकट्याः क्लीबे तु जघनं पुरः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "जघनम्",
+     "iast": "jaghanam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "नितम्बः",
+      "en": "hips, loins",
+      "hi": "जघन",
+      "te": "పిరుదులు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.033",
+   "pada": 5,
+   "sutra_number": "५.३३",
+   "sutra_text": "क्लिशेरन् लो लोपश्च",
+   "sutra_iast": "kliśeran lo lopaśca",
+   "pratyaya": "अन् (an)",
+   "prakriya": "५.३३ क्लिशेरन् लो लोपश्च - क्लिश् अन्, क्लिश् अ, ललोपे किश् अ, गुणे वि सु का कृ केशः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "केशः",
+     "iast": "keśaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "शिरोरुहः",
+      "en": "hair",
+      "hi": "बाल",
+      "te": "వెంట్రుక"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.034",
+   "pada": 5,
+   "sutra_number": "५.३४",
+   "sutra_text": "फलेरितजादेश्च पः",
+   "sutra_iast": "phaleritajādeśca paḥ",
+   "pratyaya": "इतच् (itac)",
+   "prakriya": "५.३४ फलेरितजादेश्च पः - फल (निष्रत्तौ) इतच्, फल् इत, आदेः फस्य पादेशे वि सु का कृ पलितम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "पलितम्",
+     "iast": "palitam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "जराशौक्ल्यम्",
+      "en": "grey hair",
+      "hi": "सफेद बाल",
+      "te": "నెరసిన జుట్టు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.035",
+   "pada": 5,
+   "sutra_number": "५.३५",
+   "sutra_text": "कृञादिभ्यः संज्ञायाम् वुन्",
+   "sutra_iast": "kṛñādibhyaḥ saṃjñāyām vun",
+   "pratyaya": "",
+   "prakriya": "५.३५ कृञादिभ्यः संज्ञायाम् वुन् - कृञ् वुन्, कृ वु, गुणे रपरत्वे कर् वु, अकादेशे कर् अक, वि सु का कृ करकः । करका । एवं कटकः । नॄ (नये) वुन्, गुणे रपरत्वे अंकादेशे वि सु का कृ नरकम् । नरकः । नरको नारकोऽपि चेति द्विरूपकोशः । एवं सरकं (गगनम्), कोरकः, कोरकम् इति च ।",
+   "rupas_count": 2,
+   "rupas": [
+    {
+     "word": "करकः",
+     "iast": "karakaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "कमण्डलुः, वर्षोपलः",
+      "en": "water-pot; hailstone",
+      "hi": "कमण्डलु; ओला",
+      "te": "కమండలము; వడగల్లు"
+     },
+     "notes": ""
+    },
+    {
+     "word": "नरकम्",
+     "iast": "narakam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "निरयः",
+      "en": "hell",
+      "hi": "नरक",
+      "te": "నరకము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.036",
+   "pada": 5,
+   "sutra_number": "५.३६",
+   "sutra_text": "चीकयतेराद्यन्तविपर्ययश्च",
+   "sutra_iast": "cīkayaterādyantaviparyayaśca",
+   "pratyaya": "वुन् (vun)",
+   "prakriya": "५.३६ चीकयतेराद्यन्तविपर्ययश्च - ण्यन्तात् चीकधातोः वुन् भवति। चीकि वु, णिलोपे चीक् वु, आद्यन्तविपर्यये कीच् वु अकादेशे विसु का कृ  कीचकः इति रूपम्। वंशभेदः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "कीचकः",
+     "iast": "kīcakaḥ",
+     "dhatu": "कि (शब्दे)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "hollow whistling bamboo, general Kichaka",
+      "hi": "बाँस, कीचक",
+      "te": "వెదురు, కీచకుడు"
+     },
+     "notes": "ककन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.037",
+   "pada": 5,
+   "sutra_number": "५.३७",
+   "sutra_text": "पचिमच्योरिच्चोपधायाः",
+   "sutra_iast": "pacimacyoriccopadhāyāḥ",
+   "pratyaya": "वुन् (vun)",
+   "prakriya": "५.३७ पचिमच्योरिच्चोपधायाः - पच् वुन्, पच् वु, उपधाया इत्वे पिच् वु, गुणे अकादेशे पेच् अक, वि सु का कृ पेचकः । एवं मेचकः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "पेचकः",
+     "iast": "pecakaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "उलूकः",
+      "en": "owl",
+      "hi": "उल्लू",
+      "te": "గుడ్లగూబ"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.038",
+   "pada": 5,
+   "sutra_number": "५.३८",
+   "sutra_text": "जनेररष्ठ च",
+   "sutra_iast": "janeraraṣṭha ca",
+   "pratyaya": "अर (ara)",
+   "prakriya": "५.३८ जनेररष्ठ च - जन् अर, ठादेशे, जठ् अर, वि सु का कृ जठरम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "जठरम्",
+     "iast": "jaṭharam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "उदरम्",
+      "en": "belly, stomach",
+      "hi": "पेट",
+      "te": "పొట్ట"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.039",
+   "pada": 5,
+   "sutra_number": "५.३९",
+   "sutra_text": "वचिमनिभ्यां चिच्च",
+   "sutra_iast": "vacimanibhyāṃ cicca",
+   "pratyaya": "अर (ara)",
+   "prakriya": "५.३९ वचिमनिभ्यां चिच्च -  वच् अर, ठादेशे वि सु का कृ वठरः। मूर्खः । एवं मठरो मुनिशौण्डयोः । अनृष्यानन्तर्ये बिदादिभ्योऽञ् बिदादित्वान्माठरः। गर्गादित्वान्माठर्यः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "वठरः",
+     "iast": "vaṭharaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "मूर्खः",
+      "en": "fool",
+      "hi": "मूर्ख",
+      "te": "మూర్ఖుడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.040",
+   "pada": 5,
+   "sutra_number": "५.४०",
+   "sutra_text": "ऊर्जि दृणातेरलचौ पूर्वपदान्तलोपश्च",
+   "sutra_iast": "ūrji dṛṇāteralacau pūrvapadāntalopaśca",
+   "pratyaya": "",
+   "prakriya": "५.४० ऊर्जि दृणातेरलचौ पूर्वपदान्तलोपश्च - ऊर्क् इत्युपपदपूर्वकात् दॄ-धातोः अल्-अचौ भवतः। ऊर्क् दॄ अल्, गुणरपरत्वयोः पूर्वपदान्त्यलोपे वि सु का कृ ऊर्दरः। शूररक्षसोः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "ऊर्दरः",
+     "iast": "ūrdaraḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "शूरः, राक्षसः",
+      "en": "hero; demon",
+      "hi": "वीर; राक्षस",
+      "te": "వీరుడు; రాక్షసుడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.041",
+   "pada": 5,
+   "sutra_number": "५.४१",
+   "sutra_text": "कृदरादयश्च",
+   "sutra_iast": "kṛdarādayaśca",
+   "pratyaya": "",
+   "prakriya": "५.४१ कृदरादयश्च - इमे लजन्ताः निपात्यन्ते। कृ दॄ लच्, गुणे रपरत्वे वि सु का कृ कृदरः, कुसूलः। एवं मृदरं (बिलसत्), सृदरः (सर्पः) इति च।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "कृदरः",
+     "iast": "kṛdaraḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "कुसूलः",
+      "en": "granary",
+      "hi": "कोठार",
+      "te": "ధాన్యపు గాదె"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.042",
+   "pada": 5,
+   "sutra_number": "५.४२",
+   "sutra_text": "हन्तेर्युन्नाद्यन्तयोर्घत्वतत्वे",
+   "sutra_iast": "hanteryunnādyantayorghatvatatve",
+   "pratyaya": "युन् (yun)",
+   "prakriya": "५.४२ हन्तेर्युन्नाद्यन्तयोर्घत्वतत्वे - हन् युन्, हन् यु, घत्वतत्वे अनादेशे घतनः इति रूपम्। मारकः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "घतनः",
+     "iast": "ghatanaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "मारकः",
+      "en": "killer",
+      "hi": "मारने वाला",
+      "te": "చంపువాడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.043",
+   "pada": 5,
+   "sutra_number": "५.४३",
+   "sutra_text": "क्रमिगमिक्षमिभ्यस्तुन् वृद्धिश्च",
+   "sutra_iast": "kramigamikṣamibhyastun vṛddhiśca",
+   "pratyaya": "तुन् (tun)",
+   "prakriya": "५.४३ क्रमिगमिक्षमिभ्यस्तुन् वृद्धिश्च - क्रमु तुन्, वृद्धौ काम् तु, अनुस्वारे परसवर्णे वि सु का कृ क्रान्तुः। पक्षी  एवमन्यानि। गान्तुः पथिकः । क्षान्तुर्मशकः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "क्रान्तुः",
+     "iast": "krāntuḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "पक्षी",
+      "en": "bird",
+      "hi": "पक्षी",
+      "te": "పక్షి"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.044",
+   "pada": 5,
+   "sutra_number": "५.४४",
+   "sutra_text": "हर्यतेः कन्यन् हिर च",
+   "sutra_iast": "haryateḥ kanyan hira ca",
+   "pratyaya": "कन्यन् (kanyan)",
+   "prakriya": "५.४४ हर्यतेः कन्यन् हिर च - हर्य (गतिकान्त्योः) कन्यन्, हर्य् अन्य, हरादेशे हिर् अन्य, णत्वे वि सु का कृ हिरण्यम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "हिरण्यम्",
+     "iast": "hiraṇyam",
+     "dhatu": "हर्य (गतिकान्त्योः)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "gold, imperishable radiance",
+      "hi": "स्वर्ण, सोना",
+      "te": "బంగారము"
+     },
+     "notes": "हिरँ-आदेशे कन्यनि"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.045",
+   "pada": 5,
+   "sutra_number": "५.४५",
+   "sutra_text": "कृञः पासः",
+   "sutra_iast": "kṛñaḥ pāsaḥ",
+   "pratyaya": "पास (pāsa)",
+   "prakriya": "५.४५ कृञः पासः - कृ पास, गुणे रपरत्वे वि सु का कृ कर्पासः । बिल्वादित्वात्कार्पासं वस्त्रम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "कर्पासः / कर्पासी",
+     "iast": "karpāsaḥ",
+     "dhatu": "कृ (करणे)",
+     "gender": "पुंलिङ्गम् / स्त्रीलिङ्गम्",
+     "meanings": {
+      "en": "cotton plant, cotton fibre",
+      "hi": "कपास, रूई",
+      "te": "పత్తి, ప్రత్తి"
+     },
+     "notes": "आसच्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.046",
+   "pada": 5,
+   "sutra_number": "५.४६",
+   "sutra_text": "जनेस्तु रश्च",
+   "sutra_iast": "janestu raśca",
+   "pratyaya": "तु (tu)",
+   "prakriya": "५.४६ जनेस्तु रश्च - जन् तु, रादेशे वि सु का कृ जर्तुर्हस्ती योनिश्च ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "जर्तुः",
+     "iast": "jartuḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "हस्ती, योनिः",
+      "en": "elephant; womb",
+      "hi": "हाथी; योनि",
+      "te": "ఏనుగు; యోని"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.047",
+   "pada": 5,
+   "sutra_number": "५.४७",
+   "sutra_text": "ऊर्णोतेर्डः",
+   "sutra_iast": "ūrṇoterḍaḥ",
+   "pratyaya": "ड (ḍa)",
+   "prakriya": "५.४७ ऊर्णोतेर्डः - ऊर्णुञ् (आच्छादने) ड, ऊर्णु अ, टिलोपे टापि वि सु का कृ ऊर्णा ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "ऊर्णा",
+     "iast": "ūrṇā",
+     "dhatu": "",
+     "gender": "स्त्रीलिङ्गम्",
+     "meanings": {
+      "sa": "मेषलोम",
+      "en": "wool",
+      "hi": "ऊन",
+      "te": "ఉన్ని"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.048",
+   "pada": 5,
+   "sutra_number": "५.४८",
+   "sutra_text": "दधातेर्यत् नुट् च",
+   "sutra_iast": "dadhāteryat nuṭ ca",
+   "pratyaya": "यत् (yat)",
+   "prakriya": "५.४८ दधातेर्यत् नुट् च - धा यत्, धा य, नु़डागमे धा न् य, वि सु का कृ धान्यम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "धान्यम्",
+     "iast": "dhānyam",
+     "dhatu": "धा (धारणे)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "cereal grain, corn, paddy",
+      "hi": "अनाज, धान्य",
+      "te": "ధాన్యము"
+     },
+     "notes": "कन्यन्-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.049",
+   "pada": 5,
+   "sutra_number": "५.४९",
+   "sutra_text": "जीर्यतेः क्रिन् रश्च वः",
+   "sutra_iast": "jīryateḥ krin raśca vaḥ",
+   "pratyaya": "",
+   "prakriya": "५.४९ जीर्यतेः क्रिन् रश्च वः - जॄ (वयोहानौ) क्रिन्, जॄ रि, इत्वे रपरत्वे जिर् रि, रेफस्य वादेशे जिव् रि वि सु का कृ जिव्रिः। जिव्रिः स्यात्कलपक्षिणोः । बहुलकात् ८.२.७७ हलि च इति दीर्घो न ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "जिव्रिः",
+     "iast": "jivriḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "कालः",
+      "en": "time",
+      "hi": "काल",
+      "te": "కాలము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.050",
+   "pada": 5,
+   "sutra_number": "५.५०",
+   "sutra_text": "मव्यतेर्यलोपो मश्चापतुट् चालः",
+   "sutra_iast": "mavyateryalopo maścāpatuṭ cālaḥ",
+   "pratyaya": "आल (āla)",
+   "prakriya": "५.५० मव्यतेर्यलोपो मश्चापतुट् चालः - मव्यतेरालप्रत्ययः स्यात्तस्यापतुडागमो धातोर्यलोपो मकारश्चान्त्यस्य । मव्य (बन्धने) आल, मव्य् आल, आपतुडागमे मव्य् आपत् आल, यलोपे मव् आपत् आल, मादेशे मम् आपताल, वि सु का कृ ममापतालः। विषये ।",
+   "rupas_count": 2,
+   "rupas": [
+    {
+     "word": "अङ्गुलम्",
+     "iast": "aṅgulam",
+     "dhatu": "अग (कुटिलायां गतौ)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "finger's breadth measure (3/4th inch), inch",
+      "hi": "अंगुल (नाप, अंगुल भर)",
+      "te": "అంగుళము"
+     },
+     "notes": "उलचि नुमागमः"
+    },
+    {
+     "word": "ममापतालः",
+     "iast": "mamāpatālaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "विषयः",
+      "en": "object of sense",
+      "hi": "विषय",
+      "te": "విషయము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.051",
+   "pada": 5,
+   "sutra_number": "५.५१",
+   "sutra_text": "ऋजेः कीकन्",
+   "sutra_iast": "ṛjeḥ kīkan",
+   "pratyaya": "कीकन् (kīkan)",
+   "prakriya": "५.५१ ऋजेः कीकन् - ऋज् कीकन्, ऋज् ईक, वि सु का कृ ऋजीकः। इन्द्रो धूमश्च ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "ऋजीकः",
+     "iast": "ṛjīkaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "इन्द्रः, धूमः",
+      "en": "Indra; smoke",
+      "hi": "इन्द्र; धुआँ",
+      "te": "ఇంద్రుడు; పొగ"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.052",
+   "pada": 5,
+   "sutra_number": "५.५२",
+   "sutra_text": "तनोतेर्डउः सन्वच्च",
+   "sutra_iast": "tanoterḍauḥ sanvacca",
+   "pratyaya": "डउ (ḍau)",
+   "prakriya": "५.५२ तनोतेर्डउः सन्वच्च - तनु डउ, तन् अउ, सन्वत्त्वात् द्वित्त्वे अभ्यासकार्येषु ति तन् अउ, टिलोपे ति त् अउ वि सु का कृ तितउः । पुंसि क्लीबे ।",
+   "rupas_count": 3,
+   "rupas": [
+    {
+     "word": "तितउः",
+     "iast": "titauḥ",
+     "dhatu": "तन् (विस्तारे)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "sieve",
+      "hi": "चालनी, छलनी",
+      "te": "జల్లెడ"
+     },
+     "notes": "सन्वद्भावात् द्वित्वे टिलोपे च"
+    },
+    {
+     "word": "पिचण्डुः",
+     "iast": "picaṇḍuḥ",
+     "dhatu": "पिच् (सङ्घाते)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "fat belly, abdomen",
+      "hi": "तोंद, पेट",
+      "te": "బానపొట్ట"
+     },
+     "notes": "अण्डु-प्रत्यये"
+    },
+    {
+     "word": "कमण्डलुः",
+     "iast": "kamaṇḍaluḥ",
+     "dhatu": "कम् (वारिणि)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "ascetic's water pot",
+      "hi": "कमण्डलु",
+      "te": "కమండలము"
+     },
+     "notes": "अलु-प्रत्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.053",
+   "pada": 5,
+   "sutra_number": "५.५३",
+   "sutra_text": "अर्भकपृथुकपाका वयसि",
+   "sutra_iast": "arbhakapṛthukapākā vayasi",
+   "pratyaya": "",
+   "prakriya": "५.५३ अर्भकपृथुकपाका वयसि - ऋधु वृद्धो । अतो वुन् । भकारश्चान्तादेशः । ऋध् (वृद्धौ) वुन्, ऋध् वु, अकादेशे ऋध् अक, गुणे रपरत्वे अर्ध् अक, भादेशे  वि सु का कृ अर्भकः। प्रथेः कुकन्संप्रसारणं च । पिबतेः कन् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "अर्भकः",
+     "iast": "arbhakaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "शिशुः",
+      "en": "child",
+      "hi": "बालक",
+      "te": "బాలుడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.054",
+   "pada": 5,
+   "sutra_number": "५.५४",
+   "sutra_text": "अवद्यावमाधमार्वरेफाः",
+   "sutra_iast": "avadyāvamādhamārvarephāḥ",
+   "pratyaya": "",
+   "prakriya": "५.५४ अवद्यावमाधमार्वरेफाः - एते निपात्यन्ते। कुत्सिते वदेर्नञि यत् । न वद् यत्, नलोपे अवद्य वि सु का कृ अवद्यम् । अवतेरमः । वस्य पक्षे धः । अव अम, वा धादेशे अधमः, तदभावे अवमः । । अर्तेर्वन् । ऋ वन्, गुणे रपरत्वे वि सु का कृ अर्वा । रिफतेस्तौदादिकादेः । रिफ (कन्थनादिषु) अ, रिफ् अ, गुणे वि सु का कृ रेफः ।",
+   "rupas_count": 3,
+   "rupas": [
+    {
+     "word": "अवद्यम्",
+     "iast": "avadyam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "निन्द्यम्",
+      "en": "blameworthy, sin",
+      "hi": "निन्दनीय",
+      "te": "నిందార్హము"
+     },
+     "notes": ""
+    },
+    {
+     "word": "अर्वा",
+     "iast": "arvā",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "अश्वः",
+      "en": "horse",
+      "hi": "घोड़ा",
+      "te": "గుర్రము"
+     },
+     "notes": ""
+    },
+    {
+     "word": "रेफः",
+     "iast": "rephaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "रवर्णः; कुत्सितः",
+      "en": "the letter r; vile",
+      "hi": "र वर्ण; नीच",
+      "te": "రేఫము; నీచము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.055",
+   "pada": 5,
+   "sutra_number": "५.५५",
+   "sutra_text": "लीरीङोर्ह्रस्वः पुट् च तरौ श्लेषणकुत्सनयोः",
+   "sutra_iast": "līrīṅorhrasvaḥ puṭ ca tarau śleṣaṇakutsanayoḥ",
+   "pratyaya": "त / र (ta / ra)",
+   "prakriya": "५.५५ लीरीङोर्ह्रस्वः पुट् च तरौ श्लेषणकुत्सनयोः - तरौ प्रत्ययौ क्रमात् स्तो धातोर्ह्रस्वः प्रत्ययस्य पुट् । ली त, पुडागमे, ली प् त, ह्रस्वे वि सु का कृ लिप्तम्। श्लिष्टम् । एवं रिप्रम्। कुत्सितम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "लिप्तम्",
+     "iast": "liptam",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "श्लिष्टम्",
+      "en": "smeared, attached",
+      "hi": "लिपटा हुआ",
+      "te": "పూయబడినది"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.056",
+   "pada": 5,
+   "sutra_number": "५.५६",
+   "sutra_text": "क्लिशेरीच्चोपधायाः कन् लोपश्च लो नाम् च",
+   "sutra_iast": "kliśerīccopadhāyāḥ kan lopaśca lo nām ca",
+   "pratyaya": "कन् (kan)",
+   "prakriya": "५.५६ क्लिशेरीच्चोपधायाः कन् लोपश्च लो नाम् च- क्लिशेः कन् स्यात् उपाधाया ईत्वं लस्य लोपो नामागमश्च । कीनाशो यमः । कित्वफलं चिन्त्यम् ।\nक्लिश् (विबाधने) कन्, क्लिश् अ, उपधायाः ईत्वे क्लीश् अ, ललोपे कीश् अ, नामागमे की नाश् अ, वि सु का कृ कीनाशः।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "कीनाशः",
+     "iast": "kīnāśaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "यमः, कृषकः",
+      "en": "Yama; peasant",
+      "hi": "यम; किसान",
+      "te": "యముడు; రైతు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.057",
+   "pada": 5,
+   "sutra_number": "५.५७",
+   "sutra_text": "अश्नोतेराशुकर्मणि वरट् च",
+   "sutra_iast": "aśnoterāśukarmaṇi varaṭ ca",
+   "pratyaya": "वरट् (varaṭ)",
+   "prakriya": "५.५७ अश्नोतेराशुकर्मणि वरट् च - चकारादुपधाया ईत्वम् । अश् वरट्, अश् वर, उपधायाः ईत्वे ईश् वर, वि सु का कृ ईश्वरः । स्त्रियाम् ईश्वरी।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "ईश्वरः",
+     "iast": "īśvaraḥ",
+     "dhatu": "ईश् (ऐश्वर्ये)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "God, supreme lord, master",
+      "hi": "भगवान, स्वामी, परमेश्वर",
+      "te": "ఈశ్వరుడు, ప్రభువు"
+     },
+     "notes": "वरटि ईत्वे"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.058",
+   "pada": 5,
+   "sutra_number": "५.५८",
+   "sutra_text": "चतेरुरन्",
+   "sutra_iast": "cateruran",
+   "pratyaya": "उरन् (uran)",
+   "prakriya": "५.५८ चतेरुरन् - चते (याचने) उरन्, चत् उर्, वि सु का कृ चत्वारः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "चत्वारः",
+     "iast": "catvāraḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "चतुःसङ्ख्याः",
+      "en": "four",
+      "hi": "चार",
+      "te": "నాలుగు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.059",
+   "pada": 5,
+   "sutra_number": "५.५९",
+   "sutra_text": "प्राततेररन्",
+   "sutra_iast": "prātateraran",
+   "pratyaya": "अरन् (aran)",
+   "prakriya": "५.५९ प्राततेररन् - प्र अत् अरन्, प्र अत् अर्, दीर्घे प्रात् अर् वि सु का कृ प्रातः ।",
+   "rupas_count": 2,
+   "rupas": [
+    {
+     "word": "योजनम्",
+     "iast": "yojanam",
+     "dhatu": "युज् (योगे)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "Yojana measure (4 Kosas / ~8-9 miles)",
+      "hi": "योजन (४ कोस = ८-९ मील)",
+      "te": "యోజనము (నాలుగు కోసులు)"
+     },
+     "notes": "गुणे युचि"
+    },
+    {
+     "word": "प्रातः",
+     "iast": "prātaḥ",
+     "dhatu": "",
+     "gender": "अव्ययम्",
+     "meanings": {
+      "sa": "प्रभाते",
+      "en": "in the morning",
+      "hi": "प्रातःकाल",
+      "te": "ఉదయమున"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.060",
+   "pada": 5,
+   "sutra_number": "५.६०",
+   "sutra_text": "अमेस्तुट् च",
+   "sutra_iast": "amestuṭ ca",
+   "pratyaya": "अरन् (aran)",
+   "prakriya": "५.६० अमेस्तुट् च - अम (गत्यादिषु) अरन्, अम् अर्, तुडागमे अम् त् अर्, अनुस्वारे परसवर्णे वि सु का कृ अन्तः। मध्यम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "अन्तः",
+     "iast": "antaḥ",
+     "dhatu": "",
+     "gender": "अव्ययम्",
+     "meanings": {
+      "sa": "मध्ये",
+      "en": "inside, within",
+      "hi": "भीतर",
+      "te": "లోపల"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.061",
+   "pada": 5,
+   "sutra_number": "५.६१",
+   "sutra_text": "दहेर्गो लोपो दश्च नः",
+   "sutra_iast": "dahergo lopo daśca naḥ",
+   "pratyaya": "गक् / ग (gak / ga)",
+   "prakriya": "५.६१ दहेर्गो लोपो दश्च नः - गप्रत्ययो धातोरन्तस्य लोपो दकारस्य नकारः । दह (भस्मीकरणे) ग, दह् ग, अन्त्यलोपे, द ग, नादेशे नग वि सु का कृ नगः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "नगः",
+     "iast": "nagaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "पर्वतः, वृक्षः",
+      "en": "mountain; tree",
+      "hi": "पर्वत; वृक्ष",
+      "te": "పర్వతము; చెట్టు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.062",
+   "pada": 5,
+   "sutra_number": "५.६२",
+   "sutra_text": "सिचेः संज्ञायां हनुमौ कश्च",
+   "sutra_iast": "siceḥ saṃjñāyāṃ hanumau kaśca",
+   "pratyaya": "क (ka)",
+   "prakriya": "५.६२ सिचेः संज्ञायां हनुमौ कश्च - सिञ्चतेः कप्रत्ययो हकारादेशो नुम् च स्यात् । सिंहः । षिच (क्षरणे) क, सत्वे सिच् अ, हादेशे सिह् अ, नुमि अनुस्वारे वि सु का कृ सिंहः इति रूपम्।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "सिंहः",
+     "iast": "siṁhaḥ",
+     "dhatu": "हन् (हिंसायाम्)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "lion, king of beasts",
+      "hi": "सिंह, शेर",
+      "te": "సింహము"
+     },
+     "notes": "वर्णविपर्यये"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.063",
+   "pada": 5,
+   "sutra_number": "५.६३",
+   "sutra_text": "व्याङि घ्रातेश्च जातौ",
+   "sutra_iast": "vyāṅi ghrāteśca jātau",
+   "pratyaya": "क (ka)",
+   "prakriya": "५.६३ व्याङि घ्रातेश्च जातौ - वि आ घ्रा (गन्धोपादाने) क, वि आ घ्रा अ, आलोपे वि आ घ्र् अ, यणि, व्याघ्र वि सु का कृ व्याघ्रः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "व्याघ्रः",
+     "iast": "vyāghraḥ",
+     "dhatu": "वि-आ-घ्रा (गन्धोपादाने)",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "en": "tiger, formidable predator",
+      "hi": "बाघ, व्याघ्र",
+      "te": "పులి, వ్యాఘ్రము"
+     },
+     "notes": "घ्रातश्चेति घ्रत्वे"
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.064",
+   "pada": 5,
+   "sutra_number": "५.६४",
+   "sutra_text": "हन्तेरच् घुर च",
+   "sutra_iast": "hanterac ghura ca",
+   "pratyaya": "अच् (ac)",
+   "prakriya": "५.६४ हन्तेरच् घुर च - हन् अच्, हन्त् अ, घुर्-भावे घुर् अ, गुणे वि सु का कृ घोरम् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "घोरम्",
+     "iast": "ghoram",
+     "dhatu": "",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "sa": "भयङ्करम्",
+      "en": "terrible",
+      "hi": "भयंकर",
+      "te": "భయంకరము"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.065",
+   "pada": 5,
+   "sutra_number": "५.६५",
+   "sutra_text": "क्षमेरुपधालोपश्च",
+   "sutra_iast": "kṣamerupadhālopaśca",
+   "pratyaya": "अच् (ac)",
+   "prakriya": "५.६५ क्षमेरुपधालोपश्च - चादच् । क्षम् अच्, उपधालोपे क्ष् म् अ, टापि वि सु का कृ क्ष्मा ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "क्ष्मा",
+     "iast": "kṣmā",
+     "dhatu": "",
+     "gender": "स्त्रीलिङ्गम्",
+     "meanings": {
+      "sa": "पृथिवी",
+      "en": "the earth",
+      "hi": "पृथ्वी",
+      "te": "భూమి"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.066",
+   "pada": 5,
+   "sutra_number": "५.६६",
+   "sutra_text": "तरतेर्ड्रिः",
+   "sutra_iast": "taraterḍriḥ",
+   "pratyaya": "अच् (ac)",
+   "prakriya": "५.६६ तरतेर्ड्रिः - तॄ ड्रि, तॄ रि, टिलोपे त् रि, वि सु का कृ त्रयः । त्रीन् ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "त्रयः",
+     "iast": "trayaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "त्रिसङ्ख्याः",
+      "en": "three",
+      "hi": "तीन",
+      "te": "మూడు"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.067",
+   "pada": 5,
+   "sutra_number": "५.६७",
+   "sutra_text": "ग्रहेरनिः",
+   "sutra_iast": "graheraniḥ",
+   "pratyaya": "अनि (ani)",
+   "prakriya": "५.६७ ग्रहेरनिः - ग्रह् अनि, णत्वे वि सु का कृ ग्रहणिः। स्त्रियां ङीष् । ग्रहणी व्याधिभेदः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "ग्रहणिः",
+     "iast": "grahaṇiḥ",
+     "dhatu": "",
+     "gender": "स्त्रीलिङ्गम्",
+     "meanings": {
+      "sa": "उदरव्याधिः",
+      "en": "dysentery (grahaṇī)",
+      "hi": "ग्रहणी रोग",
+      "te": "గ్రహణి వ్యాధి"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.068",
+   "pada": 5,
+   "sutra_number": "५.६८",
+   "sutra_text": "प्रथेरमच्",
+   "sutra_iast": "pratheramac",
+   "pratyaya": "अमच् (amac)",
+   "prakriya": "५.६८ प्रथेरमच् - प्रथ (प्रख्याने) अमच्, प्रथ् अम, वि सु का कृ प्रथमः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "प्रथमः",
+     "iast": "prathamaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "आद्यः",
+      "en": "first",
+      "hi": "प्रथम",
+      "te": "మొదటి"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.069",
+   "pada": 5,
+   "sutra_number": "५.६९",
+   "sutra_text": "चरेश्च",
+   "sutra_iast": "careśca",
+   "pratyaya": "अमच् (amac)",
+   "prakriya": "५.६९ चरेश्च - चर् अमच्, चर् अम, वि सु का कृ चरमः ।",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "चरमः",
+     "iast": "caramaḥ",
+     "dhatu": "",
+     "gender": "पुंलिङ्गम्",
+     "meanings": {
+      "sa": "अन्तिमः",
+      "en": "last",
+      "hi": "अन्तिम",
+      "te": "చివరి"
+     },
+     "notes": ""
+    }
+   ]
+  },
+  {
+   "sutra_id": "UN-5.070",
+   "pada": 5,
+   "sutra_number": "५.७०",
+   "sutra_text": "मङ्गेरलच्",
+   "sutra_iast": "maṅgeralac",
+   "pratyaya": "अमच् (amac)",
+   "prakriya": "५.७० मङ्गेरलच् - मगि (गतौ) अलच्, नुमि अनुस्वारे परसवर्णे मङ्ग् अल, वि सु का कृ मङ्गलम् ।\n॥ इति पञ्चमः पादः। \n।। समाप्तश्चायं ग्रन्थः ॥",
+   "rupas_count": 1,
+   "rupas": [
+    {
+     "word": "मङ्गलम्",
+     "iast": "maṅgalam",
+     "dhatu": "मदिँ (कल्याणे)",
+     "gender": "नपुंसकलिङ्गम्",
+     "meanings": {
+      "en": "auspiciousness, bliss, prosperity",
+      "hi": "शुभ, कल्याण, मंगल",
+      "te": "మంగళము, శుభము"
+     },
+     "notes": "अलचि मङ्गभावे"
+    }
+   ]
+  }
+ ],
+ "_audit": {
+  "note": "Internal audit only; not for display.",
+  "sources": {
+   "sutra_text_and_numbering": "Pañcapādī Uṇādi-sūtras in the pāda-wise numbering; checked against the Siddhānta Kaumudī Uṇādi section (Bālamanoramā–Tattvabodhinī edition, uploaded PDF, 169 pp.)",
+   "prakriya": "Teacher's slide notes (four .pptx decks)",
+   "meanings": "Earlier JSON where the word was confirmed; other forms await meanings"
+  },
+  "evidence_key": {
+   "slide": "form occurs in the slide notes for this sūtra",
+   "book": "form occurs in the book pages for this sūtra",
+   "slide+book": "both",
+   "record": "only in the earlier JSON record for this sūtra; to confirm"
+  },
+  "per_sutra": [
+   {
+    "sutra": "५.१",
+    "book_pages": [
+     158,
+     159
+    ],
+    "rupa_evidence": {
+     "अद्भुतम्": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.२",
+    "book_pages": [
+     158,
+     159
+    ],
+    "rupa_evidence": {
+     "गोधूमः": "slide"
+    }
+   },
+   {
+    "sutra": "५.३",
+    "book_pages": [
+     158,
+     159
+    ],
+    "rupa_evidence": {
+     "मसूरः": "slide"
+    }
+   },
+   {
+    "sutra": "५.४",
+    "book_pages": [
+     158,
+     159
+    ],
+    "rupa_evidence": {
+     "मनुष्यः": "slide",
+     "स्थूरः": "slide"
+    }
+   },
+   {
+    "sutra": "५.५",
+    "book_pages": [
+     158,
+     160
+    ],
+    "rupa_evidence": {
+     "पातिः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.६",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "वातिः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.७",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "अरतिः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.८",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "तृणम्": "slide"
+    }
+   },
+   {
+    "sutra": "५.९",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "तण्डुलाः": "slide"
+    }
+   },
+   {
+    "sutra": "५.१०",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "दासः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.११",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "दंशुकः": "record",
+     "दंशः": "slide",
+     "दाशः": "slide"
+    }
+   },
+   {
+    "sutra": "५.१२",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "उच्चैः": "slide"
+    }
+   },
+   {
+    "sutra": "५.१३",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "नीचैः": "slide"
+    }
+   },
+   {
+    "sutra": "५.१४",
+    "book_pages": [
+     159,
+     160
+    ],
+    "rupa_evidence": {
+     "सूरतः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.१५",
+    "book_pages": [
+     159,
+     161
+    ],
+    "rupa_evidence": {
+     "पुण्यम्": "slide"
+    }
+   },
+   {
+    "sutra": "५.१६",
+    "book_pages": [
+     160,
+     161
+    ],
+    "rupa_evidence": {
+     "शिक्यम्": "slide+book"
+    },
+    "text_corrected": "किच्च, not किश्च"
+   },
+   {
+    "sutra": "५.१७",
+    "book_pages": [
+     160,
+     161
+    ],
+    "rupa_evidence": {
+     "उरणः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.१८",
+    "book_pages": [
+     160,
+     161
+    ],
+    "rupa_evidence": {
+     "हिंसीरः": "slide"
+    }
+   },
+   {
+    "sutra": "५.१९",
+    "book_pages": [
+     160,
+     161
+    ],
+    "rupa_evidence": {
+     "उदरम्": "slide"
+    }
+   },
+   {
+    "sutra": "५.२०",
+    "book_pages": [
+     160,
+     161
+    ],
+    "rupa_evidence": {
+     "मुखम्": "slide"
+    }
+   },
+   {
+    "sutra": "५.२१",
+    "book_pages": [
+     160,
+     161
+    ],
+    "rupa_evidence": {
+     "अंसः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.२२",
+    "book_pages": [
+     160,
+     161
+    ],
+    "rupa_evidence": {
+     "मूर्खः": "slide"
+    }
+   },
+   {
+    "sutra": "५.२३",
+    "book_pages": [
+     160,
+     162
+    ],
+    "rupa_evidence": {
+     "नखः / नखम्": "slide"
+    }
+   },
+   {
+    "sutra": "५.२४",
+    "book_pages": [
+     161,
+     162
+    ],
+    "rupa_evidence": {
+     "शिखा": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.२५",
+    "book_pages": [
+     161,
+     162
+    ],
+    "rupa_evidence": {
+     "मयूखः": "slide"
+    }
+   },
+   {
+    "sutra": "५.२६",
+    "book_pages": [
+     161,
+     162
+    ],
+    "rupa_evidence": {
+     "यवः": "book",
+     "कुल्फः": "slide"
+    }
+   },
+   {
+    "sutra": "५.२७",
+    "book_pages": [
+     161,
+     162
+    ],
+    "rupa_evidence": {
+     "पार्श्वम् / पार्श्वः": "slide",
+     "पर्शुः": "slide"
+    }
+   },
+   {
+    "sutra": "५.२८",
+    "book_pages": [
+     161,
+     162
+    ],
+    "rupa_evidence": {
+     "श्मश्रु": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.२९",
+    "book_pages": [
+     161,
+     162
+    ],
+    "rupa_evidence": {
+     "अयनम्": "slide",
+     "अश्रु": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.३०",
+    "book_pages": [
+     161,
+     163
+    ],
+    "rupa_evidence": {
+     "जटा": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.३१",
+    "book_pages": [
+     162,
+     163
+    ],
+    "rupa_evidence": {
+     "जङ्घा": "slide"
+    }
+   },
+   {
+    "sutra": "५.३२",
+    "book_pages": [
+     162,
+     163
+    ],
+    "rupa_evidence": {
+     "जघनम्": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.३३",
+    "book_pages": [
+     162,
+     163
+    ],
+    "rupa_evidence": {
+     "केशः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.३४",
+    "book_pages": [
+     162,
+     163
+    ],
+    "rupa_evidence": {
+     "पलितम्": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.३५",
+    "book_pages": [
+     162,
+     164
+    ],
+    "rupa_evidence": {
+     "करकः": "slide+book",
+     "नरकम्": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.३६",
+    "book_pages": [
+     163,
+     164
+    ],
+    "rupa_evidence": {
+     "कीचकः": "slide"
+    }
+   },
+   {
+    "sutra": "५.३७",
+    "book_pages": [
+     163,
+     164
+    ],
+    "rupa_evidence": {
+     "पेचकः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.३८",
+    "book_pages": [
+     163,
+     164
+    ],
+    "rupa_evidence": {
+     "जठरम्": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.३९",
+    "book_pages": [
+     163,
+     164
+    ],
+    "rupa_evidence": {
+     "वठरः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.४०",
+    "book_pages": [
+     163,
+     164
+    ],
+    "rupa_evidence": {
+     "ऊर्दरः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.४१",
+    "book_pages": [
+     163,
+     164
+    ],
+    "rupa_evidence": {
+     "कृदरः": "slide"
+    }
+   },
+   {
+    "sutra": "५.४२",
+    "book_pages": [
+     163,
+     164
+    ],
+    "rupa_evidence": {
+     "घतनः": "slide"
+    }
+   },
+   {
+    "sutra": "५.४३",
+    "book_pages": [
+     163,
+     165
+    ],
+    "rupa_evidence": {
+     "क्रान्तुः": "slide"
+    }
+   },
+   {
+    "sutra": "५.४४",
+    "book_pages": [
+     164,
+     165
+    ],
+    "rupa_evidence": {
+     "हिरण्यम्": "slide"
+    }
+   },
+   {
+    "sutra": "५.४५",
+    "book_pages": [
+     164,
+     165
+    ],
+    "rupa_evidence": {
+     "कर्पासः / कर्पासी": "slide"
+    }
+   },
+   {
+    "sutra": "५.४६",
+    "book_pages": [
+     164,
+     165
+    ],
+    "rupa_evidence": {
+     "जर्तुः": "slide"
+    }
+   },
+   {
+    "sutra": "५.४७",
+    "book_pages": [
+     164,
+     165
+    ],
+    "rupa_evidence": {
+     "ऊर्णा": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.४८",
+    "book_pages": [
+     164,
+     165
+    ],
+    "rupa_evidence": {
+     "धान्यम्": "slide"
+    }
+   },
+   {
+    "sutra": "५.४९",
+    "book_pages": [
+     164,
+     165
+    ],
+    "rupa_evidence": {
+     "जिव्रिः": "slide"
+    }
+   },
+   {
+    "sutra": "५.५०",
+    "book_pages": [
+     164,
+     166
+    ],
+    "rupa_evidence": {
+     "अङ्गुलम्": "book",
+     "ममापतालः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.५१",
+    "book_pages": [
+     165,
+     166
+    ],
+    "rupa_evidence": {
+     "ऋजीकः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.५२",
+    "book_pages": [
+     165,
+     166
+    ],
+    "rupa_evidence": {
+     "तितउः": "slide",
+     "पिचण्डुः": "record",
+     "कमण्डलुः": "record"
+    }
+   },
+   {
+    "sutra": "५.५३",
+    "book_pages": [
+     165,
+     166
+    ],
+    "rupa_evidence": {
+     "अर्भकः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.५४",
+    "book_pages": [
+     165,
+     167
+    ],
+    "rupa_evidence": {
+     "अवद्यम्": "slide+book",
+     "अर्वा": "slide+book",
+     "रेफः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.५५",
+    "book_pages": [
+     166,
+     167
+    ],
+    "rupa_evidence": {
+     "लिप्तम्": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.५६",
+    "book_pages": [
+     166,
+     167
+    ],
+    "rupa_evidence": {
+     "कीनाशः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.५७",
+    "book_pages": [
+     166,
+     167
+    ],
+    "rupa_evidence": {
+     "ईश्वरः": "slide"
+    }
+   },
+   {
+    "sutra": "५.५८",
+    "book_pages": [
+     166,
+     167
+    ],
+    "rupa_evidence": {
+     "चत्वारः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.५९",
+    "book_pages": [
+     166,
+     168
+    ],
+    "rupa_evidence": {
+     "योजनम्": "book",
+     "प्रातः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.६०",
+    "book_pages": [
+     167,
+     168
+    ],
+    "rupa_evidence": {
+     "अन्तः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.६१",
+    "book_pages": [
+     167,
+     168
+    ],
+    "rupa_evidence": {
+     "नगः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.६२",
+    "book_pages": [
+     167,
+     168
+    ],
+    "rupa_evidence": {
+     "सिंहः": "slide"
+    }
+   },
+   {
+    "sutra": "५.६३",
+    "book_pages": [
+     167,
+     168
+    ],
+    "rupa_evidence": {
+     "व्याघ्रः": "slide"
+    }
+   },
+   {
+    "sutra": "५.६४",
+    "book_pages": [
+     167,
+     168
+    ],
+    "rupa_evidence": {
+     "घोरम्": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.६५",
+    "book_pages": [
+     167,
+     168
+    ],
+    "rupa_evidence": {
+     "क्ष्मा": "slide"
+    }
+   },
+   {
+    "sutra": "५.६६",
+    "book_pages": [
+     167,
+     168
+    ],
+    "rupa_evidence": {
+     "त्रयः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.६७",
+    "book_pages": [
+     167,
+     168
+    ],
+    "rupa_evidence": {
+     "ग्रहणिः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.६८",
+    "book_pages": [
+     167,
+     169
+    ],
+    "rupa_evidence": {
+     "प्रथमः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.६९",
+    "book_pages": [
+     168,
+     169
+    ],
+    "rupa_evidence": {
+     "चरमः": "slide+book"
+    }
+   },
+   {
+    "sutra": "५.७०",
+    "book_pages": [
+     168,
+     169
+    ],
+    "rupa_evidence": {
+     "मङ्गलम्": "slide"
+    }
+   }
+  ]
+ }
+}

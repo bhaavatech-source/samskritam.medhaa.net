@@ -31,7 +31,7 @@ import { speak } from "../speech";
 import { useSa } from "../i18n/script";
 import { PadacchedaIntro, PadyaIntro } from "./Intro";
 import { UpasargaForRoot, ComboCard, comboLabel, comboSearch, rootKey, PREFIX_BY_ROOT } from "./Upasarga";
-import { RupaNirmana } from "./RupaNirmana";
+import { RupaHub, takeUnadiRequest } from "./Unadi";
 import "./kosha.css";
 
 // ── shared list + detail layout ────────────────────────────────
@@ -235,7 +235,8 @@ const Dhatu400KrtTable: React.FC<{ r: Dhatu400Krt }> = ({ r }) => {
 export const VerbBook: React.FC = () => {
   const lang = useLang();
   const S = useSa();
-  const [tab, setTab] = useState("all");
+  const [unadiStart] = useState(takeUnadiRequest);   // opened from a link to the Uṇādi words or quiz
+  const [tab, setTab] = useState(unadiStart ? "make" : "all");
   const [focus, setFocus] = useState<string | null>(null);
   const [data, setData] = useState<{ tinanta: Dhatu400[]; krt: Dhatu400Krt[] } | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -264,7 +265,7 @@ export const VerbBook: React.FC = () => {
         ["upa", `उपसर्गयुक्ताः · With prefixes (${GRAMMAR.upasarga.combos.length})`],
         ["make", "रूपनिर्माणम् · Make any form"],
       ]} on={tab} set={setTab} />
-      {tab === "make" ? <RupaNirmana />
+      {tab === "make" ? <RupaHub start={unadiStart ?? "forms"} />
         : tab === "upa" ? <ListDetail items={GRAMMAR.upasarga.combos} idOf={c => c.id} kind="grammar" placeholder="Search: अनुभवति, अनु, to experience…"
           search={comboSearch} label={c => comboLabel(c, lang, S)}
           detail={c => { const root = tinanta.find(v => rootKey(v.lemma, v.gana) === rootKey(c.d, c.g));

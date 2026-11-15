@@ -55,6 +55,13 @@ const App: React.FC = () => {
   const reviewer = useReviewer();
   const setView = (v: View) => { setViewState(v); setNavOpen(false); try { history.replaceState(null, "", "#" + v); } catch { /* sandboxed */ } window.scrollTo(0, 0); };
 
+  // follow links that change the hash (e.g. व्याकरणम् → धातुकोशः · उणादयः)
+  useEffect(() => {
+    const on = () => { setViewState(readHash()); window.scrollTo(0, 0); };
+    window.addEventListener("hashchange", on);
+    return () => window.removeEventListener("hashchange", on);
+  }, []);
+
   useEffect(() => {
     try { (window as unknown as { BhavaSession?: { start: (s: string) => void } }).BhavaSession?.start("samskrita-medhaa"); } catch { /* not embedded */ }
   }, []);

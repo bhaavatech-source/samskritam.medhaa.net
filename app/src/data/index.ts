@@ -16,6 +16,7 @@ import grammarJson from "./grammar.json";
 import dhatu400TinantaUrl from "../../../dhatu_400_tinanta.json?url";
 import dhatu400KrtUrl from "../../../dhatu_400_krt.json?url";
 import upasargaFormsUrl from "./upasarga_forms.json?url";
+import unadiUrl from "./unadi.json?url";
 
 /** a meaning in one language: [text, how it was sourced] */
 export type Meaning = [string, string];
@@ -106,6 +107,31 @@ export function loadUpasargaForms(): Promise<UpasargaForms> {
   });
   upasargaForms.catch(() => { upasargaForms = null; });
   return upasargaForms;
+}
+// उणादयः — the 748 Uṇādi-sūtras (data-source/23-unadi/tools/build_unadi_app.py)
+/** one derivation step: rule ("A:7.2.115", "U:1.1"…), the terms after it in SLP1 ("*" marks a changed term),
+ *  and the rules that only named something (saṃjñā) since the previous change */
+export type UnadiStep = [string, string, string[]];
+export type UnadiDerivation = { root: string; stem: string; s: UnadiStep[]; n: UnadiStep[] };
+/** a rūpa: word, dhātu, gender (पुं/स्त्री/नपुं/अव्य), meanings by language, class-note prakriyā,
+ *  step-by-step derivation (vidyut-prakriya), short outline when neither exists */
+export type UnadiRupa = [string, string, string, Record<string, string>, string, UnadiDerivation | null, string];
+/** a sūtra: number (१.१), text, suffix, prakriyā, rūpas */
+export type UnadiSutra = [string, string, string, string, UnadiRupa[]];
+/** a question of the teacher's Uṇādi exam (level 1–4) */
+export type UnadiExam = { id: string; lv: number; w: string; q: string; qe: string; o: string[]; a: string; s: string; x: string };
+export type Unadi = { intro: string[]; abbr: [string, string, string][]; padas: [string, number][]; s: UnadiSutra[];
+  levels: [number, string, string, string][]; exam: UnadiExam[];
+  /** rule code → [number, text, term key] */ rules: Record<string, [string, string, string]>;
+  /** term key → [Sanskrit, English, sūtras, explanation, example] */ terms: Record<string, [string, string, string, string, string]> };
+let unadi: Promise<Unadi> | null = null;
+export function loadUnadi(): Promise<Unadi> {
+  unadi ??= fetch(unadiUrl).then(r => {
+    if (!r.ok) throw new Error(`Could not load the Uṇādi-sūtras (HTTP ${r.status}).`);
+    return r.json() as Promise<Unadi>;
+  });
+  unadi.catch(() => { unadi = null; });
+  return unadi;
 }
 // विभक्तिसमन्वयः — agreement of case and verb (data-source/22-vibhakti-samanvaya/build_samanvaya.py)
 import samanvayaJson from "./samanvaya.json";
