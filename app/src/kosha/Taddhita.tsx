@@ -48,7 +48,7 @@ export const TaddhitaTab: React.FC = () => {
             <div className="ks-table-wrap"><table className="ks-table ks-krt"><tbody>{x.ex.map(e => (
               <tr key={e.w}><th className="ks-l-sa">{S(e.b)}</th><td>→</td>
                 <td className="ks-form">{S(e.w)} <Say t={e.w} /></td>
-                <td dir="auto">{mean(e.m, lang)}{e.note && <span className="up-note">{S(e.note)}</span>}<span className="up-note rv-only">checked: {e.chk}</span></td>
+                <td dir="auto">{mean(e.m, lang)}{e.note && <span className="up-note">{S(e.note)}</span>}</td>
                 <td><FlagButton t={{ kind: "grammar", id: x.id, field: `example:${e.b}`, value: `${e.b} + ${x.p} → ${e.w}`, where: `${x.p}: ${e.b} → ${e.w}` }} /></td>
               </tr>))}</tbody></table></div>
             {x.rules.length > 0 && <><h4>नियमाः · How the word is formed</h4><ul>{x.rules.map((r, i) => <li key={i}>{S(r)}</li>)}</ul></>}

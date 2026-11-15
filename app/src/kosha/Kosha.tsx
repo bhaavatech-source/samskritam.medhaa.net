@@ -197,13 +197,12 @@ const Dhatu400Detail: React.FC<{ v: Dhatu400; krt?: Dhatu400Krt }> = ({ v, krt }
               return <td key={number} className="ks-form">{S(cell.form)}{cell.variants?.length ? <span className="ks-alt"> / {cell.variants.map(S).join(" / ")}</span> : null}
                 <FlagButton t={{ kind: "verb", id: v.id, field: `${selected[0]}:${lakara}:${pi},${ni}`, value: cell.form, where: `${v.lemma} — ${selected[1]} ${LAKARA[lakara][0]} ${person} ${VACANA[ni]}` }} />
                 <span className="ks-gloss" dir="auto">{gloss}{gloss && <RomS t={gloss} l="en" />}</span>
-                {cell.checks?.attested_in && <span className="ks-pill ks-pill-direct" title="Found in independent form lists">✓ {Array.isArray(cell.checks.attested_in) ? cell.checks.attested_in.join(", ") : cell.checks.attested_in}</span>}
+                {cell.source?.startsWith("corrected") && <span className="ks-cell-note">{S(cell.source.replace(/^corrected:\s*/, "").replace(/\s*\(vidyut-prakriya[^)]*\)/, ""))}</span>}
               </td>;
             })}</tr>;
           })}</tbody>
         </table>
       </div>
-      <p className="ks-note">Forms are derived with vidyut-prakriya and cross-checked against independent Sanskrit verb lists. “—” means that no form is supplied for that cell.</p>
       <UpasargaForRoot lemma={v.lemma} gana={v.gana} />
       {krt && <Dhatu400KrtTable r={krt} />}
       <p className="ks-id">{v.id}</p>
@@ -231,7 +230,6 @@ const Dhatu400KrtTable: React.FC<{ r: Dhatu400Krt }> = ({ r }) => {
         <tbody>{forms(restricted)}</tbody>
       </table></div>
     </>}
-    <p className="ks-note">{r.source_note}</p>
   </>;
 };
 export const VerbBook: React.FC = () => {

@@ -126,7 +126,7 @@ const ComboForms: React.FC<{ c: UpasargaCombo }> = ({ c }) => {
           : <td key={ni} className="ks-empty">—</td>;
       })}</tr>)}</tbody>
     </table></div>
-    <p className="ks-note">Forms derived with vidyut-prakriya with the prefix given to the engine, so the augment, sound changes and pada follow Pāṇini's rules (अन्वभवत्, निषीदति, संगच्छते). Where both padas occur, the one used in the meaning above is shown first.</p>
+    {keys.length > 1 && keys[0].startsWith("kartari") && keys[1].startsWith("kartari") && <p className="ks-note">Both padas are in use; the one used in the meaning above is shown first.</p>}
   </>;
 };
 
