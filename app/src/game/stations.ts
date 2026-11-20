@@ -4,7 +4,7 @@
 //  from the data in src/data, so every play is different.
 // ═══════════════════════════════════════════════════════════════
 import {
-  WORDS, VERBS, KRT, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, GRAMMAR, PRAKRIYA, padyaMeaning, padyaRoman, anvayaTokens, sentMeaning, sentRoman, VIBHAKTI, VIBHAKTI_EN, VACANA, VACANA_EN, PURUSHA, LAKARA, prayogaLabel, LINGA,
+  WORDS, VERBS, KRT, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, GRAMMAR, PRAKRIYA, padyaMeaning, padyaRoman, anvayaTokens, sentMeaning, sentRoman, VIBHAKTI, VIBHAKTI_EN, VACANA, VACANA_EN, PURUSHA, LAKARA, prayogaLabel, wordKind,
   shuffle, pick, take, firstSense, wordMeaning, verbMeaning, avyayaMeaning, headForm, tokens,
   type Word, type Verb, type Sentence, type VerbGrid,
 } from "../data";
@@ -65,7 +65,7 @@ function repeat<T>(n: number, make: () => T | null): T[] {
   while (out.length < n && guard++ < n * 30) { const x = make(); if (x) out.push(x); }
   return out;
 }
-const lingaTag = (w: Word) => LINGA[w.g]?.[0] ?? w.cat;
+const lingaTag = (w: Word) => wordKind(w)[0] || w.cat;   // e.g. अकारान्तः पुंलिङ्गः
 
 // ── question makers ────────────────────────────────────────────
 const meaningQ = (pool: Word[], lang: string) => (): QuizItem | null => {

@@ -167,6 +167,7 @@ verses = [{"id": "RV-1.1", "source": "रघुवंशम् 1.1", "verse": fe
 # the first worked example's word list: वागर्थाविव is वागर्थौ + इव, not an avyaya in prathamā
 for w in verses[0]["words"]:
     if w["word"] == "वागर्थाविव": w["form"] = "वागर्थौ (द्वितीया-द्विवचनम्) + इव (अव्ययम्, उपमायाम्)"
+    w["form"] = w["form"].replace("कारन्त", "कारान्त")          # typo in the Gold: अकारन्त-, ऋकारन्त- (2026-11-20)
 for v in pv[1]["verse_analyses"]:
     verses.append({"id": "RV-" + v["verse_number"], "source": "रघुवंशम् " + v["verse_number"], "verse": v["verse"], "padaccheda": _pc(v["padaccheda"]),
                    "anvaya": v.get("anvaya_krama", ""), "artha_sa": "", "words": [], "karaka": _karaka(v.get("kāraka_analysis")),

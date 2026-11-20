@@ -184,7 +184,31 @@ export const PRAYOGA: Record<"P" | "A" | "K" | "B", [string, string]> = {
 /** label for a verb grid: P holds the root's main kartari forms (ātmanepada for ātmanepadī roots) */
 export const prayogaLabel = (v: Verb, key: "P" | "A" | "K" | "B"): [string, string] =>
   key === "P" && v.pada.startsWith("आत्मने") ? PRAYOGA.A : PRAYOGA[key];
-export const LINGA: Record<string, [string, string]> = { m: ["पुंलिङ्गम्", "masculine"], f: ["स्त्रीलिङ्गम्", "feminine"], n: ["नपुंसकलिङ्गम्", "neuter"] };
+/** the gender of a word, as said of the word itself (… शब्दः): पुंलिङ्गः, स्त्रीलिङ्गः, नपुंसकलिङ्गः;
+ *  "c": अस्मद्, युष्मद् and पञ्चन् … दशन्, which have the same forms in all genders */
+export const LINGA: Record<string, [string, string]> = {
+  m: ["पुंलिङ्गः", "masculine"], f: ["स्त्रीलिङ्गः", "feminine"], n: ["नपुंसकलिङ्गः", "neuter"], c: ["त्रिषु लिङ्गेषु समानः", "same in all genders"] };
+const ANTA_VOWEL: Record<string, [string, string]> = {
+  "": ["अ", "a"], "ा": ["आ", "ā"], "ि": ["इ", "i"], "ी": ["ई", "ī"], "ु": ["उ", "u"], "ू": ["ऊ", "ū"], "ृ": ["ऋ", "ṛ"], "ॄ": ["ॠ", "ṝ"],
+  "े": ["ए", "e"], "ै": ["ऐ", "ai"], "ो": ["ओ", "o"], "ौ": ["औ", "au"] };
+const IAST_C: Record<string, string> = { क: "k", ख: "kh", ग: "g", घ: "gh", ङ: "ṅ", च: "c", छ: "ch", ज: "j", झ: "jh", ञ: "ñ", ट: "ṭ", ठ: "ṭh", ड: "ḍ", ढ: "ḍh",
+  ण: "ṇ", त: "t", थ: "th", द: "d", ध: "dh", न: "n", प: "p", फ: "ph", ब: "b", भ: "bh", म: "m", य: "y", र: "r", ल: "l", व: "v", श: "ś", ष: "ṣ", स: "s", ह: "h" };
+/** the last sound of a stem, as the tradition names it: अकारान्तः, सकारान्तः, रेफान्तः (र्) … → [Sanskrit, English] */
+export function antaOf(stem: string): [string, string] {
+  const s = stem.trim().replace(/[ःं]$/, "");
+  const last = s.slice(-1);
+  if (last === "्") {
+    const c = s.slice(-2, -1);
+    return c === "र" ? ["रेफान्तः", "ends in r"] : [`${c}कारान्तः`, `ends in ${IAST_C[c] ?? c}`];
+  }
+  const v = ANTA_VOWEL[last] ?? (IAST_C[last] !== undefined ? ANTA_VOWEL[""] : undefined);
+  return v ? [`${v[0]}कारान्तः`, `ends in ${v[1]}`] : ["", ""];
+}
+/** "सकारान्तः पुंलिङ्गः" and "ends in s, masculine" */
+export function wordKind(w: { w: string; g: string }): [string, string] {
+  const [a, ae] = antaOf(w.w); const [l, le] = LINGA[w.g] ?? ["", ""];
+  return [[a, l].filter(Boolean).join(" "), [ae, le].filter(Boolean).join(", ")];
+}
 
 export const LANGS: Record<string, string> = {
   te: "తెలుగు", hi: "हिन्दी", en: "English", ta: "தமிழ்", kn: "ಕನ್ನಡ", ml: "മലയാളം", mr: "मराठी", bn: "বাংলা",

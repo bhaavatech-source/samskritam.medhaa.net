@@ -6,7 +6,7 @@
 // ═══════════════════════════════════════════════════════════════
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
-  WORDS, GRAMMAR, loadDhatu400Data, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, padyaMeaning, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO, LINGA,
+  WORDS, GRAMMAR, loadDhatu400Data, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, padyaMeaning, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO, wordKind,
   wordMeaning, avyayaMeaning, sentMeaning, sentRoman, padyaRoman, type Word,
   type Dhatu400, type Dhatu400Conjugation, type Dhatu400Krt, type Dhatu400KrtForm,
 } from "../data";
@@ -87,7 +87,7 @@ const WordDetail: React.FC<{ w: Word }> = ({ w }) => {
     <div className="ks-card">
       <div className="ks-head">
         <h3>{S(w.d[0]?.[0] || w.w)}</h3><Speak t={w.d[0]?.[0] || w.w} />
-        <span className="ks-sub">{S(w.w)} · {w.iast} · {LINGA[w.g]?.[0] ?? ""} {LINGA[w.g] ? `(${LINGA[w.g][1]})` : ""} · {w.cat}</span>
+        <span className="ks-sub">{S(w.w)} · {w.iast} · <b className="ks-kind">{S(wordKind(w)[0])}</b> ({wordKind(w)[1]}) · {w.cat}</span>
         {w.cat !== "participle" && <PlayLink kind="w" id={w.id} />}
       </div>
       <p className="ks-main-meaning" dir="auto">{wordMeaning(w, lang)}</p>
@@ -131,7 +131,7 @@ const WordDetail: React.FC<{ w: Word }> = ({ w }) => {
     </div>
   );
 };
-const GENDERS: [string, string, string][] = [["all", "सर्वे", "all"], ["m", "पुंलिङ्गाः", "masculine"], ["f", "स्त्रीलिङ्गाः", "feminine"], ["n", "नपुंसकलिङ्गाः", "neuter"], ["c", "सर्वलिङ्गाः", "pronouns & numbers"]];
+const GENDERS: [string, string, string][] = [["all", "सर्वे", "all"], ["m", "पुंलिङ्गाः", "masculine"], ["f", "स्त्रीलिङ्गाः", "feminine"], ["n", "नपुंसकलिङ्गाः", "neuter"], ["c", "त्रिषु लिङ्गेषु समानाः", "same in all genders: अस्मद्, युष्मद्, पञ्चन् … दशन्"]];
 const ENDS: [string, string, string][] = [["all", "सर्वे", "all"], ["ac", "अजन्ताः", "vowel-ending"], ["hal", "हलन्ताः", "consonant-ending"]];
 export const WordBook: React.FC = () => {
   const lang = useLang();
@@ -148,7 +148,7 @@ export const WordBook: React.FC = () => {
       <div className="ks-chips gr-filter">{ENDS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${end === k ? "on" : ""}`} onClick={() => setEnd(k)} title={en}>{S(sa)} <small>({count(g, k)})</small></button>)}</div>
       <ListDetail key={g + end} items={items} idOf={w => w.id} kind="word" placeholder="Search: राम, rāma, boy, బాలుడు…"
         search={w => [w.w, w.iast, w.d[0]?.[0], ...Object.values(w.m ?? {}).map(m => m[0])].join(" ")}
-        label={w => <><span className="ks-l-sa">{S(w.d[0]?.[0] || w.w)}</span><span className="ks-l-en">{wordMeaning(w, lang).split(";")[0]}</span>{w.ch > 0 && <span className="ks-l-ch" title="regenerated forms">🔁{w.ch}</span>}</>}
+        label={w => <><span className="ks-l-sa">{S(w.d[0]?.[0] || w.w)}</span><span className="ks-l-en">{wordMeaning(w, lang).split(";")[0]}</span><span className="ks-l-kind">{S(wordKind(w)[0])}</span>{w.ch > 0 && <span className="ks-l-ch" title="regenerated forms">🔁{w.ch}</span>}</>}
         detail={w => <WordDetail w={w} />} />
     </div>
   );

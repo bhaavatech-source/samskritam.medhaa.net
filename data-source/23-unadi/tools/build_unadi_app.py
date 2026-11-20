@@ -8,7 +8,9 @@ ROOT = os.path.dirname(os.path.dirname(SRC)) if len(sys.argv) < 2 else sys.argv[
 OUT = os.path.join(ROOT, "app", "src", "data")
 DATE = "2026-11-15"
 G = {"पुंलिङ्गम्": "पुं", "स्त्रीलिङ्गम्": "स्त्री", "नपुंसकलिङ्गम्": "नपुं", "अव्ययम्": "अव्य"}
+GFIX = json.load(open(os.path.join(SRC, "corrections_2026-11-20.json"), encoding="utf-8"))["gender"]   # corrections 2026-11-20
 def gender(g):
+    g = GFIX.get(g, g)
     return " / ".join(G.get(x.strip(), x.strip()) for x in g.split("/")) if g else ""
 HEAD = re.compile(r"^\s*(?:[०-९0-9]+\s*[.)]\s*)?(?:[१-५1-5]\s*\.\s*)?\.?[०-९0-9]{1,3}\s*[.)]?\s*")
 def prakriya(text, sutra):

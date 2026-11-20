@@ -25,7 +25,7 @@ FIX = {
     "eff": "ठ → इक (ठस्येकः 7.3.50). क् is इत्, and कित्: the first vowel takes vṛddhi (किति च 7.2.118)."},
   "TP-000011": {
     "eff": "च् is इत्. The last vowel of the stem with what follows it (the टि) drops (टेः 6.4.155).",
-    "sa": "भावार्थकः (पुंलिङ्गः)",
+    "sa": "भावार्थकः · इमनिजन्ताः शब्दाः पुंलिङ्गाः",
     "rules": ["पृथ्वादिभ्य इमनिज्वा (5.1.122): after the words of the पृथु list, optionally, for “-ness”; the word is masculine: महिमा, लघिमा.",
               "टेः (6.4.155): the टि drops: महत् → महिमा, लघु → लघिमा.",
               "र ऋतो हलादेर्लघोः (6.4.161): पृथु → प्रथिमा, मृदु → म्रदिमा; गुरु → गर् (प्रियस्थिर… 6.4.157): गरिमा.",

@@ -28,6 +28,9 @@
 .ks-l-sent { font-size: 1rem; white-space: normal; }
 .ks-l-en { font-size: .8rem; color: #526079; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Poppins', sans-serif; }
 .ks-l-ch { font-size: .72rem; color: #b45309; }
+.ks-l-kind { font-size: .72rem; color: #7c3aed; white-space: nowrap; font-family: 'Noto Sans Devanagari', serif; }
+.ks-kind { font-weight: 600; color: #6d28d9; }
+@media (max-width: 760px) { .ks-l-kind { display: none; } }
 .ks-flagdot { color: #e11d48; font-size: .85rem; }
 .ks-none { padding: 14px; color: #64748b; font-size: .9rem; }
 
