@@ -92,9 +92,9 @@ function english(w: Word, x: string, v: number, n: number, countable: boolean) {
   const proper = EN_PROPER.has(w.w);
   const lc = proper || /^[A-Z]{2}/.test(x) ? x : x.charAt(0).toLowerCase() + x.slice(1);
   if (!countable) return fill(EN_CASES[v], lc);
-  const noun = n === 0 ? lc : n === 1 ? `both ${enPlural(lc)}` : `all ${enPlural(lc)}`;
+  const noun = n === 0 ? lc : n === 1 ? `both ${enPlural(lc)}` : `more than two ${enPlural(lc)}`;
   const the = proper || v === 7 || n > 0 ? "" : "the ";
-  if (v === 7) return `O ${n === 0 ? lc : enPlural(lc)}!`;
+  if (v === 7) return `O ${n === 0 ? lc : n === 1 ? `both ${enPlural(lc)}` : `more than two ${enPlural(lc)}`}!`;
   return fill(EN_CASES[v], v === 0 ? noun : the + noun);
 }
 
@@ -158,7 +158,7 @@ const ROLE: Record<string, Case8> = {
 export const caseRole = (lang: string, v: number) => (ROLE[lang] ?? ROLE.en)[v];
 
 // ═══════════ dual and plural: real number words ═══════════
-/** words for people (and gods): Telugu ఇద్దరు / ముగ్గురు, Kannada ಇಬ್ಬರು, Japanese 二人 … ; everything else takes the "thing" words */
+/** Number phrases distinguish people from things where the language requires it. */
 const PEOPLE = new Set(("राम देव बालक नृप छात्र पुरुष हरि कवि मुनि ऋषि पति भूपति सखि गुरु शिशु दातृ पितृ भ्रातृ रमा बाला गौरी वधू मातृ धातृ जन पुत्र रिपु प्रजा " +
   "कन्या नारी लक्ष्मी मित्र राजन् विद्वस् सुहृद् श्रीमत् धीमत् भगवत् गच्छत् दण्डिन् स्वामिन् गुणिन् ज्ञानिन् योगिन् तपस्विन् तेजस्विन् मनस्विन् सुवाच् " +
   "सर्वजित् धर्मवित् सत्यवाद् विश्वपा प्रधी ग्रामणी खलपू सुधी निर्जर पूषन् वृत्रहन् स्वसृ नृ कमला विद्याधर गन्धर्व किन्नर असुर राक्षस सिद्ध सारथि " +
@@ -168,26 +168,28 @@ export const isPerson = (w: Word) => PEOPLE.has(w.w);
 
 // [dual, plural] number words; person / thing where the language distinguishes them
 const NUMW: Record<string, { p: [string, string]; t: [string, string] }> = {
-  hi: { p: ["दोनों", "सभी"], t: ["दोनों", "सभी"] },
-  te: { p: ["ఇద్దరు", "ముగ్గురు"], t: ["రెండు", "మూడు"] },
-  ta: { p: ["இரு", "பல"], t: ["இரண்டு", "பல"] },
-  kn: { p: ["ಇಬ್ಬರು", "ಹಲವರು"], t: ["ಎರಡು", "ಹಲವು"] },
-  ml: { p: ["രണ്ടു", "പല"], t: ["രണ്ട്", "പല"] },
-  mr: { p: ["दोन्ही", "सर्व"], t: ["दोन्ही", "सर्व"] },
-  bn: { p: ["দুজন", "সব"], t: ["দুটি", "সব"] },
-  or: { p: ["ଦୁଇଜଣ", "ସମସ୍ତ"], t: ["ଦୁଇଟି", "ସମସ୍ତ"] },
-  ja: { p: ["二人の", "多くの"], t: ["二つの", "多くの"] },
-  zh: { p: ["两位", "许多"], t: ["两个", "许多"] },
-  ko: { p: ["두", "여러"], t: ["두", "여러"] },
-  fr: { p: ["deux", "plusieurs"], t: ["deux", "plusieurs"] },
-  es: { p: ["dos", "varios"], t: ["dos", "varios"] },
-  de: { p: ["(zwei)", "(mehrere)"], t: ["(zwei)", "(mehrere)"] },
-  ru: { p: ["(двое)", "(многие)"], t: ["(два)", "(много)"] },
-  ar: { p: ["(اثنان)", "(عدة)"], t: ["(اثنان)", "(عدة)"] },
+  hi: { p: ["दोनों", "दो से अधिक"], t: ["दोनों", "दो से अधिक"] },
+  te: { p: ["ఇద్దరు", "ఇద్దరికంటే ఎక్కువ మంది"], t: ["రెండు", "రెండుకంటే ఎక్కువ"] },
+  ta: { p: ["இரு", "இருவருக்கு மேற்பட்ட"], t: ["இரண்டு", "இரண்டுக்கு மேற்பட்ட"] },
+  kn: { p: ["ಇಬ್ಬರು", "ಇಬ್ಬರಿಗಿಂತ ಹೆಚ್ಚು"], t: ["ಎರಡು", "ಎರಡಕ್ಕಿಂತ ಹೆಚ್ಚು"] },
+  ml: { p: ["രണ്ടു", "രണ്ടിലധികം"], t: ["രണ്ട്", "രണ്ടിലധികം"] },
+  mr: { p: ["दोन्ही", "दोघांपेक्षा अधिक"], t: ["दोन्ही", "दोनपेक्षा अधिक"] },
+  bn: { p: ["দুজন", "দুজনের বেশি"], t: ["দুটি", "দুটির বেশি"] },
+  or: { p: ["ଦୁଇଜଣ", "ଦୁଇଜଣଙ୍କଠାରୁ ଅଧିକ"], t: ["ଦୁଇଟି", "ଦୁଇଟିରୁ ଅଧିକ"] },
+  gu: { p: ["બંને", "બે કરતાં વધુ"], t: ["બંને", "બે કરતાં વધુ"] },
+  pa: { p: ["ਦੋਵੇਂ", "ਦੋ ਤੋਂ ਵੱਧ"], t: ["ਦੋਵੇਂ", "ਦੋ ਤੋਂ ਵੱਧ"] },
+  ja: { p: ["二人", "二人より多くの"], t: ["二つ", "二つより多くの"] },
+  zh: { p: ["两位", "超过两位"], t: ["两个", "超过两个"] },
+  ko: { p: ["두 명", "두 명보다 많은"], t: ["두 개", "두 개보다 많은"] },
+  fr: { p: ["deux", "plus de deux"], t: ["deux", "plus de deux"] },
+  es: { p: ["dos", "más de dos"], t: ["dos", "más de dos"] },
+  de: { p: ["(zwei)", "mehr als zwei"], t: ["(zwei)", "mehr als zwei"] },
+  ru: { p: ["(двое)", "больше двух"], t: ["(два)", "больше двух"] },
+  ar: { p: ["(اثنان)", "أكثر من اثنين"], t: ["(اثنان)", "أكثر من اثنين"] },
 };
 const numWord = (lang: string, person: boolean, n: number) => { const e = NUMW[lang]; return e ? (person ? e.p : e.t)[n - 1] : ""; };
 
-// Hindi plurals: direct (सभी लताएँ) and oblique before postpositions (सभी रामों को)
+// Hindi plurals: direct (दो से अधिक लताएँ) and oblique before postpositions
 function hiPlural(x: string, g: string, oblique: boolean) {
   const parts = x.split(" "); const w = parts.pop()!; const pre = parts.length ? parts.join(" ") + " " : "";
   const fem = g === "f"; const last = w.slice(-1);
@@ -210,7 +212,7 @@ function hindiNum(x: string, g: string, v: number, n: number, person: boolean) {
   const nw = numWord("hi", person, n);
   if (v === 0) return `${nw} ${hiPlural(x, g, false)}`;
   const obl = hiPlural(x, g, true);
-  if (v === 7) return `हे ${obl.replace(/ों$/, "ो").replace(/ओं$/, "ओ")}!`;
+  if (v === 7) return `हे ${nw} ${obl.replace(/ों$/, "ो").replace(/ओं$/, "ओ")}!`;
   return fill(CASES.hi[v], `${nw} ${obl}`).replace(new RegExp(` / ${nw} `, "g"), " / ");
 }
 
@@ -238,7 +240,7 @@ function teluguNum(x: string, v: number, n: number, person: boolean) {
     case 4: return `${nw} ${obl} నుండి / ${obl} వలన`;
     case 5: return `${nw} ${obl} యొక్క`;
     case 6: return `${nw} ${obl}లో`;
-    default: return `ఓ ${obl}ారా!`;
+    default: return `ఓ ${nw} ${obl}ారా!`;
   }
 }
 // French / Spanish: a number word and a plural noun (deux fruits, dos frutas)
@@ -263,9 +265,10 @@ export function nounGloss(w: Word, v: number, n: number, lang: string): string {
   let noun = x;
   if (many) {
     if (lang === "fr") noun = `${nw} ${frPlural(x)}`;
-    else if (lang === "es") { const pl = esPlural(x); noun = `${n === 2 && /as$/.test(pl) ? "varias" : nw} ${pl}`; }
+    else if (lang === "es") noun = `${nw} ${esPlural(x)}`;
     else if (lang === "ja") noun = `${nw}${x}`;
-    else if (lang === "zh" || lang === "ko" || /^[^(]/.test(nw)) noun = `${nw} ${x}`;
+    else if (lang === "zh") noun = `${nw}${x}`;
+    else if (lang === "ko" || /^[^(]/.test(nw)) noun = `${nw} ${x}`;
   }
   const suffix = many && nw.startsWith("(") ? ` ${nw}` : "";          // de / ru / ar: "(zwei)"
   if (lang === "ko") return korean(noun, v) + suffix;
