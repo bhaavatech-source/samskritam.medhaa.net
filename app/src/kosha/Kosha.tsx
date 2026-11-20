@@ -32,7 +32,9 @@ import { useSa } from "../i18n/script";
 import { PadacchedaIntro, PadyaIntro } from "./Intro";
 import { UpasargaForRoot, ComboCard, comboLabel, comboSearch, rootKey, PREFIX_BY_ROOT } from "./Upasarga";
 import { RupaHub, takeUnadiRequest } from "./Unadi";
+import { SambhashanamLink } from "../speak/Sambhashanam";
 import "./kosha.css";
+import { PlayLink } from "../play/Play";
 
 // ── shared list + detail layout ────────────────────────────────
 export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeholder, initial }: {
@@ -86,6 +88,7 @@ const WordDetail: React.FC<{ w: Word }> = ({ w }) => {
       <div className="ks-head">
         <h3>{S(w.d[0]?.[0] || w.w)}</h3><Speak t={w.d[0]?.[0] || w.w} />
         <span className="ks-sub">{S(w.w)} · {w.iast} · {LINGA[w.g]?.[0] ?? ""} {LINGA[w.g] ? `(${LINGA[w.g][1]})` : ""} · {w.cat}</span>
+        {w.cat !== "participle" && <PlayLink kind="w" id={w.id} />}
       </div>
       <p className="ks-main-meaning" dir="auto">{wordMeaning(w, lang)}</p>
       <Rom t={romanize(wordMeaning(w, lang), lang)} />
@@ -176,6 +179,7 @@ const Dhatu400Detail: React.FC<{ v: Dhatu400; krt?: Dhatu400Krt }> = ({ v, krt }
       <div className="ks-head">
         <h3>{S(v.lemma)}</h3><Speak t={v.lemma} />
         <span className="ks-sub">{v.iast} · {v.gana} · {v.pada} · {v.transitivity} · {v.dhatupatha.code}</span>
+        <PlayLink kind="d" id={v.id} />
       </div>
       <p className="ks-main-meaning" dir="auto">{meaning} <span className="ks-artha">({v.dhatupatha.artha})</span></p>
       <h4>रूपाणि · Forms</h4>
@@ -292,6 +296,7 @@ export const SentenceBook: React.FC = () => {
     <div className="ks">
       <KsTop title="वाक्यकोशः" en="Sentences, ślokas & little words" sub={`${SENTENCES.length} everyday sentences, ${ERRORS.length} mistakes and their corrections, ${PADACCHEDA.length} Rāmāyaṇa ślokas split into words, ${PADYA.verses.length} verses analysed step by step, and ${AVYAYA.length} अव्ययानि.`} />
       <Tabs tabs={[["s", `वाक्यानि · Sentences (${SENTENCES.length})`], ["e", `अशुद्धिशोधनम् · Mistakes (${ERRORS.length})`], ["p", `पदच्छेदः · Ślokas (${PADACCHEDA.length})`], ["v", `पद्यविश्लेषणम् · Verse analysis (${PADYA.verses.length})`], ["a", `अव्ययानि · Avyayas (${AVYAYA.length})`]]} on={tab} set={setTab} />
+      {tab === "s" && <SambhashanamLink />}
       {tab === "p" && <PadacchedaIntro />}
       {tab === "v" && <PadyaIntro />}
       {tab === "v" && <details className="ks-method"><summary>पद्यविश्लेषणस्य क्रमः · How to analyse a verse ({PADYA.method.length} steps)</summary>

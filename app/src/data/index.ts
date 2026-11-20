@@ -248,7 +248,11 @@ export type Grammar = {
     verse2: string; verse2_en: string; hr: [string, string, string][];
     list: { u: string; en: string; ex: [string, string][]; sa: string[]; hi: string; te: string; phon: string; use: string }[];
     combos: UpasargaCombo[] };
-  taddhita: { intro: string[]; groups: Record<string, [string, string]>; list: TaddhitaPratyaya[] };
+  taddhita: { intro: string[]; groups: Record<string, [string, string]>; list: TaddhitaPratyaya[];
+    /** the adhikāra map: heading sūtra s (number n), section from a to z, its suffixes p, sense en, examples ex */
+    map: { s: string; n: string; a: string; z: string; p: string; en: string; ex: string }[];
+    /** [pāda, first sūtra, last sūtra] from 4.1.76 to 5.4.160 */
+    padas: [string, number, number][] };
 };
 export const GRAMMAR = grammarJson as unknown as Grammar;
 

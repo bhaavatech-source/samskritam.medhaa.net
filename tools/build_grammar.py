@@ -7,10 +7,13 @@ Sources (Gold data, never edited in place):
   data-source/06-gold-data/Kritya_Krit_Pratyayas_G.json, upasarga_gold_data.json
 Corrections (reviewed 2026-11-08, every change has a reason):
   data-source/13-sandhi/rules_2026-11-08.py      rule names, sūtras, fixed examples
+  data-source/13-sandhi/corrections_2026-11-19.py  3 more fixed examples, 3 added, the प्रकृतिभावः rule
   data-source/12-samasa/corrections_2026-11-08.py fixed compounds, vigrahas, types
   data-source/21-upasarga/corrections_2026-11-15.py  upasarga text, examples, the three ways
   data-source/21-upasarga/upasarga_dhatu_mappings_2026-11-15.json  155 upasarga + root combinations
   data-source/04-taddhita/taddhita_pratyaya_2026-11-15.json          55 taddhita suffixes
+  data-source/04-taddhita/additions_2026-11-19.py                    + 16 suffixes, more examples, the adhikāra map
+  data-source/04-taddhita/corrections_2026-11-20.py                  corrected effects, sense labels and rules (TP-000003 … 040)
 
 Run:  python tools/build_grammar.py          (python tools/build_grammar.py --list  prints the sandhi examples with their index)
 """
@@ -19,6 +22,7 @@ import json, os, re, sys, runpy
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 G = lambda f: json.load(open(os.path.join(ROOT, "data-source/06-gold-data", f), encoding="utf-8"))
 SR = runpy.run_path(os.path.join(ROOT, "data-source/13-sandhi/rules_2026-11-08.py"))
+SR2 = runpy.run_path(os.path.join(ROOT, "data-source/13-sandhi/corrections_2026-11-19.py"))
 SC = runpy.run_path(os.path.join(ROOT, "data-source/12-samasa/corrections_2026-11-08.py"))
 
 # ═════════ सन्धिः ═════════
@@ -40,7 +44,8 @@ for part in ["PART_7_SVARA_SANDHI_COMPREHENSIVE", "PART_8_VYANJANA_SANDHI", "PAR
                     if " + " in bf: parts = [p.strip() for p in bf.split(" + ", 1)]
                     a, b = (parts + [""])[:2]
                     r, note = e.get("after") or "", e.get("note") or e.get("explanation") or ""
-                fx = SR["EX_FIX"].get(n)
+                fx = SR2["EX_FIX"].get(n) if isinstance(SR2["EX_FIX"].get(n), str) else (
+                     {**(SR["EX_FIX"].get(n) or {}), **SR2["EX_FIX"][n]} if n in SR2["EX_FIX"] and SR["EX_FIX"].get(n) != "drop" else SR["EX_FIX"].get(n))
                 listing.append(f"{n}\t{rk}\t{a} + {b} = {r}")
                 n += 1
                 if fx == "drop" or not r: continue
@@ -51,8 +56,12 @@ for part in ["PART_7_SVARA_SANDHI_COMPREHENSIVE", "PART_8_VYANJANA_SANDHI", "PAR
                 exs.append(ex)
         if rk == "RULE_1_CHATVA":                                 # the Gold gives one worked example
             exs = [{"a": "तत्", "b": "शिवः", "r": "तच्छिवः / तच्शिवः", "scope": "ext", "note": "त्→द्→ज् (श्चुत्व)→च् (चर्त्व); श्→छ्", "game": 0}]
+        exs += [dict(e) for e in SR2["ADD"].get(rid, [])]                    # added examples (2026-11-19)
         rules.append({"id": rid, "group": group, "name": name, "en": en, "sutra": sutra, "what": what, "ex": exs})
 if "--list" in sys.argv: print("\n".join(listing)); sys.exit()
+for after, rule in SR2["NEW_RULES"]:                                      # new rules (2026-11-19)
+    at = next(i for i, r in enumerate(rules) if r["id"] == after)
+    rules.insert(at + 1, json.loads(json.dumps(rule, ensure_ascii=False)))
 
 p5 = sd["PART_5_INTERNAL_VS_EXTERNAL_SANDHI"]
 sandhi = {
@@ -227,6 +236,32 @@ taddhita = {
             "ex": [{"b": e["base"], "w": e["derived_form"], "m": {"en": e["meaning_en"], "te": e["meaning_te"], "hi": e["meaning_hi"]},
                     "note": e.get("note", ""), "chk": e.get("check", "")} for e in x["examples"]]} for x in TD],
 }
+
+# additions 2026-11-19 (review of taddhita_vritti-v2 / taddhita_game_levels-v2): more examples, 16 suffixes, the adhikāra map
+TA = runpy.run_path(os.path.join(ROOT, "data-source/04-taddhita/additions_2026-11-19.py"))
+_tid = {x["id"]: x for x in taddhita["list"]}
+for _i, _exs in TA["ADD_EX"].items():
+    assert not {e["w"] for e in _exs} & {e["w"] for e in _tid[_i]["ex"]}, _i
+    _tid[_i]["ex"] += _exs
+for _i, _it in TA["FIX_IT"].items(): _tid[_i]["it"] = _it
+assert not {x["id"] for x in TA["NEW"]} & set(_tid)
+taddhita["groups"].update(TA["GROUPS"])
+taddhita["list"] += TA["NEW"]
+assert all(x["g"] in taddhita["groups"] for x in taddhita["list"])
+taddhita["intro"].insert(0, TA["INTRO_ADD"])
+taddhita["map"] = TA["MAP"]; taddhita["padas"] = TA["PADAS"]
+# corrections 2026-11-20 (check of every sūtra citation): effects, sense labels and rules of TP-000003 … TP-000040
+TC = runpy.run_path(os.path.join(ROOT, "data-source/04-taddhita/corrections_2026-11-20.py"))
+_tid = {x["id"]: x for x in taddhita["list"]}
+for _i, _f in TC["FIX"].items():
+    for _k, _v in _f.items():
+        if _k == "sa": _tid[_i]["m"]["sa"] = _v
+        elif _k.startswith("m_"): _tid[_i]["m"][_k[2:]] = _v
+        else: assert _k in _tid[_i], (_i, _k); _tid[_i][_k] = _v
+for (_i, _w), _n in TC["EX_NOTE"].items():
+    _e = [e for e in _tid[_i]["ex"] if e["w"] == _w]; assert len(_e) == 1, (_i, _w); _e[0]["note"] = _n
+_blob = json.dumps(taddhita, ensure_ascii=False)
+assert "Pāṇinian affix operation" not in _blob and "Morphological stem" not in _blob and "किञ्च" not in _blob
 
 out = {"sandhi": sandhi, "samasa": samasa, "pratyaya": pratyaya, "upasarga": upasarga, "taddhita": taddhita}
 json.dump(out, open(os.path.join(ROOT, "app/src/data/grammar.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))

@@ -364,7 +364,9 @@ const bhaveQ = () => (): QuizItem | null => {
 const TD_PLAIN = GRAMMAR.taddhita.list.filter(x => !x.p.includes(" ") && x.ex.length >= 2);
 const taddhitaQ = () => (): QuizItem | null => {
   const x = pick(TD_PLAIN); const e = pick(x.ex);
-  const others = TD_PLAIN.filter(y => y.p !== x.p && !y.ex.some(f => f.w === e.w)).map(y => y.p);
+  // leave out suffixes that leave the same sound (यञ्, ण्य, यक्, यत् all leave य): only one option may look right
+  const rk = (r: string) => r.split(" (")[0].split(" /")[0].trim();
+  const others = TD_PLAIN.filter(y => y.p !== x.p && rk(y.rem) !== rk(x.rem) && !y.ex.some(f => f.w === e.w)).map(y => y.p);
   return {
     prompt: e.w, tags: ["तद्धितः"], clue: `${e.b} + ? — ${e.m.en}`,
     ask: "कः तद्धितप्रत्ययः? · Which taddhita suffix made this word?", options: options(x.p, others), answer: x.p, optDeva: true, speak: e.w,

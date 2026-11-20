@@ -82,3 +82,11 @@ export function useSa(): (t: string | undefined | null) => string {
   const eff = effectiveScript(s, getLang());
   return (t) => sa(t, eff);
 }
+/** like useSa, but "Auto" means Devanāgarī: for learning pages where the Sanskrit itself is being learnt
+ *  (सम्भाषणम्, क्रीडाङ्गणम्). A script the reader picked on purpose is still respected. */
+export function useSaDeva(): (t: string | undefined | null) => string {
+  const s = useScriptSetting();
+  useLang();
+  const eff = s === "auto" ? "deva" : effectiveScript(s, getLang());
+  return (t) => sa(t, eff);
+}

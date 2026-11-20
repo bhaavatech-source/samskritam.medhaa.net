@@ -1,0 +1,99 @@
+/* व्याकरणम्: animated sandhi and samāsa (kosha/grammarAnim.tsx); shares .an-* from learn/learn.css */
+
+/* two words meet */
+.ga-join { display: flex; flex-direction: column; align-items: center; gap: 4px; margin: 6px 0; }
+.ga-row { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.6rem; }
+.ga-join.small .ga-row { font-size: 1.25rem; }
+.ga-word { padding: 6px 14px; border-radius: 14px; background: #fff; box-shadow: 0 6px 14px rgba(30,41,59,.1); }
+.ga-a { animation: ga-in-left .6s cubic-bezier(.2,.8,.2,1) both, ga-close-l .5s ease .7s both; }
+.ga-b { animation: ga-in-right .6s cubic-bezier(.2,.8,.2,1) both, ga-close-r .5s ease .7s both; }
+.ga-plus { color: #94a3b8; animation: ga-fade-out .4s ease .7s both; }
+.ga-meet { display: inline-block; margin: 0 2px; color: #dc2626; background: #fee2e2; border-radius: 6px; padding: 0 5px; animation: ga-pulse .5s ease .6s 2 alternate both; }
+.ga-eq { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.35rem; animation: an-rise .4s ease 1.1s both; }
+.ga-eq-in .ga-snd { color: #dc2626; background: #fee2e2; }
+.ga-eq-out .ga-snd { color: #16a34a; background: #dcfce7; animation: ga-glow 1s ease 1.5s both; }
+.ga-snd { display: inline-block; padding: 1px 8px; border-radius: 8px; }
+.ga-op { color: #94a3b8; margin: 0 4px; font-size: .9em; }
+.ga-eq-arrow { color: #be185d; font-weight: 700; }
+.ga-after { margin-top: 4px; border: none; padding: 6px 18px; border-radius: 16px; background: linear-gradient(135deg, #fff7ed, #fce7f3); box-shadow: 0 8px 20px rgba(236,72,153,.18);
+  cursor: pointer; color: #1e293b; font-family: inherit; animation: an-pop .5s cubic-bezier(.3,1.6,.5,1) 1.9s both; }
+.ga-after small { font-size: .75rem; }
+.ga-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.ga-tabs button { padding: 4px 12px; border-radius: 999px; border: 1px solid rgba(15,23,42,.15); background: #fff; cursor: pointer; font-size: .95rem; }
+.ga-tabs button small { opacity: .65; }
+.ga-tabs button.on { background: #be185d; color: #fff; border-color: #be185d; }
+.ga-row-click { cursor: pointer; }
+.ga-row-click:hover td { background: #fdf2f8; }
+
+/* stage films */
+.ga-film { margin: 10px 0 6px; }
+.ga-film-title { color: #fde68a; font-weight: 700; margin-bottom: 4px; }
+.ga-film-note { color: #e0e7ff; font-size: .85rem; margin-top: 8px; animation: an-rise .4s ease both; }
+
+/* compounds */
+.ga-cstage { min-height: 5.2rem; display: flex; align-items: center; justify-content: center; }
+.ga-phrase { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; font-size: 1.45rem; }
+.ga-pw { padding: 6px 14px; border-radius: 14px; background: #fff; box-shadow: 0 6px 14px rgba(30,41,59,.1); animation: an-drop .45s cubic-bezier(.3,1.5,.5,1) both; }
+.ga-unit { display: inline-flex; align-items: center; gap: 3px; padding: 4px 8px; border-radius: 14px; background: #fff; box-shadow: 0 6px 14px rgba(30,41,59,.1);
+  animation: an-drop .45s cubic-bezier(.3,1.5,.5,1) both; }
+.ga-stem { color: #1e3a8a; }
+.ga-sup { font-size: .8em; padding: 1px 8px; border-radius: 999px; background: #fce7f3; color: #9d174d; animation: an-pop .4s ease .35s both; }
+.ga-sup.gone { animation: an-evaporate .9s ease .3s forwards; }
+
+/* whose meaning leads */
+.ga-dom { display: flex; justify-content: center; align-items: center; gap: 8px; min-height: 4.6rem; font-size: 1.5rem; }
+.ga-dw { padding: 6px 14px; border-radius: 14px; background: #fff; box-shadow: 0 6px 14px rgba(30,41,59,.1); opacity: .55; transition: opacity .4s; animation: an-rise .4s ease both; }
+.ga-dw.lead { opacity: 1; background: #fef3c7; box-shadow: 0 0 0 3px #f59e0b, 0 10px 22px rgba(245,158,11,.3); animation: an-rise .4s ease both, ga-lead 1.4s ease-in-out .5s infinite alternate; }
+.ga-third { font-size: 1.8rem; background: #ede9fe; }
+
+@keyframes ga-in-left { from { opacity: 0; transform: translateX(-70px); } to { opacity: 1; transform: none; } }
+@keyframes ga-in-right { from { opacity: 0; transform: translateX(70px); } to { opacity: 1; transform: none; } }
+@keyframes ga-close-l { to { transform: translateX(14px); } }
+@keyframes ga-close-r { to { transform: translateX(-14px); } }
+@keyframes ga-fade-out { to { opacity: 0; } }
+@keyframes ga-pulse { from { transform: scale(1); } to { transform: scale(1.15); } }
+@keyframes ga-glow { 0% { transform: scale(1.4); box-shadow: 0 0 18px #86efac; } 100% { transform: scale(1); box-shadow: none; } }
+@keyframes ga-lead { from { transform: translateY(0); } to { transform: translateY(-5px); } }
+
+@media (max-width: 560px) {
+  .ga-row, .ga-phrase, .ga-dom { font-size: 1.2rem; }
+  .ga-eq { font-size: 1.1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ga-join *, .ga-cstage *, .ga-dom *, .ga-join, .ga-row { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .an-scene *, .an-film * { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; }
+}
+.ga-pause { color: #64748b; font-style: italic; font-size: .8em; }
+
+/* कृत्प्रत्ययाः (krtAnim.tsx) */
+.kr-suf { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 1.6rem; min-height: 3.4rem; }
+.kr-snd { display: inline-block; padding: 2px 9px; border-radius: 10px; background: #fff; box-shadow: 0 4px 10px rgba(30,41,59,.08); animation: an-drop .4s ease both; }
+.kr-snd.it { color: #dc2626; background: #fee2e2; }
+.kr-snd.it.gone { animation: an-evaporate .9s ease .2s forwards; }
+.kr-snd.keep { color: #1e3a8a; background: #dbeafe; }
+.kr-rem { padding: 3px 12px; border-radius: 12px; background: #dcfce7; color: #166534; }
+.kr-arrow { color: #be185d; font-weight: 700; }
+.kr-eq { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; font-size: 1.4rem; margin-top: 8px; animation: an-rise .4s ease both; }
+.kr-root { padding: 3px 12px; border-radius: 12px; background: #fff; box-shadow: 0 4px 10px rgba(30,41,59,.08); }
+.kr-plus { color: #94a3b8; }
+.kr-gl { flex-basis: 100%; text-align: center; font-size: .9rem; color: #475569; }
+.kr-pada h4 { margin-top: 4px; }
+@media (max-width: 560px) { .kr-suf, .kr-eq { font-size: 1.15rem; } }
+
+/* ═══ तद्धिताः: the adhikāra map ═══ */
+.td-bar { position: relative; display: flex; gap: 2px; height: 46px; margin: 10px 0 12px; }
+.td-pada { flex-basis: 0; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px;
+  background: #e0e7ff; color: #3730a3; font-size: .78rem; line-height: 1.1; animation: an-drop .4s ease both; overflow: hidden; }
+.td-pada small { opacity: .65; font-size: .68rem; }
+.td-hi { position: absolute; top: -5px; bottom: -5px; border-radius: 10px; border: 3px solid #be185d; background: rgba(190,24,93,.12);
+  box-shadow: 0 0 0 4px rgba(190,24,93,.12); transition: left .6s ease, width .6s ease; animation: td-glow 1.2s ease both; pointer-events: none; }
+@keyframes td-glow { from { opacity: 0; transform: scaleY(.6); } to { opacity: 1; transform: none; } }
+.td-card { text-align: center; animation: an-rise .45s ease both; }
+.td-head { font-size: 1.3rem; }
+.td-head span { font-size: .9rem; color: #64748b; }
+.td-range { font-size: .85rem; color: #be185d; font-weight: 600; margin: 2px 0 4px; }
+.td-ex { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+@media (max-width: 560px) { .td-pada { font-size: .62rem; } .td-pada small { display: none; } }
+@media (prefers-reduced-motion: reduce) { .td-hi, .td-pada, .td-card { animation: none; transition: none; } }
+/* Grammar's shared film animation inherits the reference-book no-wrap label style. */
+.ga-film .ks-l-sa { white-space: normal; overflow-wrap: anywhere; }

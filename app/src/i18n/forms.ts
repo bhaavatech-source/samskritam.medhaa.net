@@ -85,7 +85,7 @@ function enPlural(x: string) {
   if (last[0] === last[0]?.toUpperCase() && EN_IRREG[low]) pl = pl[0].toUpperCase() + pl.slice(1);
   return [...parts, pl].join(" ");
 }
-const EN_CASES: Case8 = [X, `${X} (as object)`, `by / with ${X}`, `to / for ${X}`, `from ${X}`, `of ${X}`, `in / on ${X}`, `O ${X}!`];
+const EN_CASES: Case8 = [X, `to ${X}`, `by / with ${X}`, `for ${X}`, `from ${X}`, `of ${X}`, `in / on ${X}`, `O ${X}!`];
 /** names keep their capital and take no "the" */
 const EN_PROPER = new Set(["राम", "हरि", "गङ्गा", "लक्ष्मी", "गौरी", "रमा"]);
 function english(w: Word, x: string, v: number, n: number, countable: boolean) {
@@ -120,7 +120,7 @@ function pronoun(p: PronForms, lang: "en" | "hi" | "te", v: number, two: boolean
   const ask = s.endsWith("?");
   if (lang === "en") {
     const b = two && !ask ? " both" : "";
-    return [s + b, o + b, `by / with ${o}${b}`, `to / for ${o}${b}`, `from ${o}${b}`, two && !ask ? `of ${o} both` : g, `in / on ${o}${b}`, s + b][v];
+    return [s + b, `to ${o}${b}`, `by / with ${o}${b}`, `for ${o}${b}`, `from ${o}${b}`, two && !ask ? `of ${o} both` : g, `in / on ${o}${b}`, s + b][v];
   }
   if (lang === "hi") {
     if (two) return [`${s} दोनों`, `${o} दोनों को`, `${o} दोनों से`, `${o} दोनों के लिए`, `${o} दोनों से`, `${o} दोनों का / की`, `${o} दोनों में`, `${s} दोनों`][v];
@@ -137,7 +137,7 @@ function pronoun(p: PronForms, lang: "en" | "hi" | "te", v: number, two: boolean
 
 // ── what each case does, in each language (used where a pattern cannot be built) ──
 const ROLE: Record<string, Case8> = {
-  en: ["subject", "object", "by / with", "to / for", "from", "of", "in / on", "address"],
+  en: ["subject", "to", "by / with", "for", "from", "of", "in / on", "address"],
   hi: ["कर्ता", "कर्म (को)", "करण (से)", "सम्प्रदान (के लिए)", "अपादान (से)", "सम्बन्ध (का)", "अधिकरण (में)", "सम्बोधन"],
   te: ["కర్త", "కర్మ (ని / ను)", "కరణం (చేత / తో)", "సంప్రదానం (కొరకు)", "అపాదానం (నుండి)", "సంబంధం (యొక్క)", "అధికరణం (లో)", "సంబోధన"],
   ta: ["எழுவாய்", "செயப்படுபொருள் (ஐ)", "கருவி (ஆல்)", "கொடை (கு)", "நீக்கம் (இலிருந்து)", "உடைமை (இன்)", "இடம் (இல்)", "விளி"],

@@ -5,6 +5,8 @@
 | `taddhita_pratyaya_corrected.json` | the earlier reviewed file (40 suffixes, 87 examples), **not edited** |
 | `taddhita_pratyaya_2026-11-15.json` | corrected and extended: 55 suffixes, 213 examples; `_audit` at the end lists every change (internal) |
 | `taddhita_2026-11-15.py` | the script that makes it (all corrections and additions, with reasons) |
+| `additions_2026-11-19.py` | read by `tools/build_grammar.py` after the JSON: 16 more suffixes, 9 more examples, the इत् of यत्, and the adhikāra map (4.1.76 – 5.4.160, 1,115 sūtras) |
+| `corrections_2026-11-20.py` | read after the additions: the effects, sense labels and rules of TP-000003 … TP-000040 (generated filler and wrong sūtra numbers/texts replaced), the इतः note, the meaning of आलुच् |
 | `check_vidyut.py`, `tad2.rs`, `translit.py` | checks every example with vidyut-prakriya (`tad2.rs` is built as a bin in the vidyut-prakriya workspace) |
 
 **Checks of the examples:** 168 derived identically by vidyut-prakriya; the other 45 were checked by the sūtras because the engine does not
@@ -16,6 +18,12 @@ Each example carries `check` with the method.
 क्रमशः removed, अक्षरशः moved to 5.4.43.
 
 **Added suffixes:** ष्यञ्, डट्, तमट्, तीय, डट् + थुक्, कन्, ख, ठञ्, इतच्, चरट्, अण् (शैषिकः), त्यप्, ट्युल्, दानीम्, ह.
+
+**Additions 2026-11-19** (from a review of `taddhita_vritti-v2.json` and `taddhita_game_levels-v2.json`; neither file is used directly —
+both had many wrong forms, suffixes and sūtra numbers). Each form was checked with vidyut-prakriya where the engine derives it, otherwise by its sūtra;
+each sūtra number and text against the sūtrapāṭha.
+New suffixes: ण्य, अञ्, फक्, घ, ढञ्, यक्, अण् (भावे), र्हिल्, अकच्, डाच्, and a new group समासान्ताः (टच्, अ, कप्, षच्, असिच्, अनिच्).
+New examples: मातृष्वसेयः, देवता (5.4.27), ज्यायान्, प्रेयान्, ज्येष्ठः, प्रेष्ठः, अत्र (एतद् + त्रल्), एकशः, पाण्डित्यम्.
 
 **Meanings:** Sanskrit, English, Telugu and Hindi. The other 13 languages are still to be added.
 

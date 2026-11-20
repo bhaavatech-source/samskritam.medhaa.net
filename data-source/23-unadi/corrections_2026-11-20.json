@@ -1,0 +1,7 @@
+{
+  "_about": "Corrections to unadi_pariksha_levels_2026-11-15.json (not edited), applied by tools/build_unadi_app.py. Found in a check of every sūtra citation of the site against the sūtrapāṭha (20-11-2026).",
+  "exam": {
+    "UNP-L4-001": {"replace": [["सन्यतः (७.४.५४)", "सन्यतः (७.४.७९)"], ["'सन्यतः' (७.४.५४)", "'सन्यतः' (७.४.७९)"]],
+                   "why": "सन्यतः is 7.4.79; 7.4.54 is सनि मीमाघुरभलभशकपतपदामच इस्."}
+  }
+}

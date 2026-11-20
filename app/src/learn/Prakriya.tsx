@@ -5,37 +5,46 @@
 //  Content: data-source/15-prakriya/prakriya.py → app/src/data/prakriya.json
 // ═══════════════════════════════════════════════════════════════
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PRAKRIYA } from "../data";
 import { useSa } from "../i18n/script";
 import { speak } from "../speech";
+import { useSteps, Controls, Morph } from "./anim";
 
 const P = PRAKRIYA.prakriti as any, K = PRAKRIYA.prakriya as any;
 const Card: React.FC<{ title: string; tone?: string; children: React.ReactNode }> = ({ title, tone, children }) =>
   <section className={`ln-card ${tone ?? ""}`}><h3>{title}</h3>{children}</section>;
 
-/** a derivation you can step through: one step at a time, or all at once */
+/** a derivation that plays like a film: each step's changed letters light up; play, pause or step by hand */
 export const Stepper: React.FC<{ start?: number }> = ({ start = 0 }) => {
   const S = useSa();
   const D = PRAKRIYA.derivations;
   const [i, setI] = useState(start);
-  const [n, setN] = useState(1);
-  const d = D[i];
   return (
     <div className="pk-stepper">
-      <div className="pk-pick">{D.map((x, k) => <button key={x.w} className={k === i ? "on" : ""} onClick={() => { setI(k); setN(1); }}>{S(x.w)}</button>)}</div>
-      <p className="pk-goal">{S(d.w)} <small>· {d.en}</small></p>
-      <ol className="pk-steps">
-        {d.steps.slice(0, n).map(([f, why], k) => (
-          <li key={k} className={k === n - 1 ? "pk-new" : ""}><span className="pk-form">{S(f)}</span><span className="pk-why">{S(why)}</span></li>))}
-      </ol>
-      <div className="ln-demo-bar">
-        <button className="pk-btn" disabled={n >= d.steps.length} onClick={() => setN(n + 1)}>अग्रे · Next step ▸</button>
-        <button className="pk-btn ghost" onClick={() => setN(d.steps.length)}>सर्वम् · Show all</button>
-        <button className="pk-btn ghost" onClick={() => setN(1)}>पुनः · Again</button>
-        <button className="pk-btn ghost" onClick={() => speak(d.w)}>🔊</button>
-      </div>
+      <div className="pk-pick">{D.map((x, k) => <button key={x.w} className={k === i ? "on" : ""} onClick={() => setI(k)}>{S(x.w)}</button>)}</div>
+      <DerivationFilm key={i} d={D[i]} />
     </div>
+  );
+};
+const DerivationFilm: React.FC<{ d: { w: string; en: string; steps: [string, string][] } }> = ({ d }) => {
+  const S = useSa();
+  const s = useSteps(d.steps.length, 2000);
+  const n = s.i + 1;
+  const [f, why] = d.steps[s.i];
+  return (
+    <>
+      <p className="pk-goal">{S(d.w)} <small>· {d.en}</small> <button className="ln-say" onClick={() => speak(d.w)} aria-label="Listen">🔊</button></p>
+      <div className="an-film">
+        <div className="an-film-form"><Morph prev={s.i ? d.steps[s.i - 1][0] : undefined} cur={f} k={s.i} S={S} /></div>
+        <p className="an-film-why ks-l-sa" key={`w${s.i}`}>{S(why)}</p>
+        <Controls s={s} />
+      </div>
+      <ol className="pk-steps">
+        {d.steps.slice(0, n).map(([f2, w2], k) => (
+          <li key={k} className={k === n - 1 ? "pk-new" : ""}><span className="pk-form">{S(f2)}</span><span className="pk-why">{S(w2)}</span></li>))}
+      </ol>
+    </>
   );
 };
 
@@ -115,6 +124,13 @@ export const Prakriya: React.FC = () => {
   const [lv, setLv] = useState(1);
   const levels = (K.levels as { n: string; en: string; parts: [string, string][] }[]);
   const order = dir === "down" ? levels : [...levels].reverse();
+  const [auto, setAuto] = useState(false);
+  useEffect(() => {                                   // play the levels one after another
+    if (!auto) return;
+    if (lv >= order.length) { setAuto(false); return; }
+    const t = setTimeout(() => setLv(l => l + 1), 1600);
+    return () => clearTimeout(t);
+  }, [auto, lv, order.length]);
   return (
     <div className="ln-body">
       <Card title="प्रक्रिया किम्? · What a derivation is">
@@ -125,16 +141,17 @@ export const Prakriya: React.FC = () => {
       <Card title="स्तराः · The levels of a sentence" tone="ln-key">
         <p className="pk-goal">{S(K.sentence)} <small>· {K.meaning}</small></p>
         <div className="pk-dir">
-          <button className={dir === "down" ? "on" : ""} onClick={() => { setDir("down"); setLv(1); }}>👂 {S("श्रोतृरीत्या")} · as the listener ↓</button>
-          <button className={dir === "up" ? "on" : ""} onClick={() => { setDir("up"); setLv(1); }}>🗣️ {S("वक्तृरीत्या")} · as the speaker ↑</button>
+          <button className={dir === "down" ? "on" : ""} onClick={() => { setDir("down"); setLv(1); setAuto(false); }}>👂 {S("श्रोतृरीत्या")} · as the listener ↓</button>
+          <button className={dir === "up" ? "on" : ""} onClick={() => { setDir("up"); setLv(1); setAuto(false); }}>🗣️ {S("वक्तृरीत्या")} · as the speaker ↑</button>
         </div>
         <div className="pk-levels">{order.slice(0, lv).map((L, k) => (
           <div key={L.n} className={`pk-level ${k === lv - 1 ? "pk-new" : ""}`}>
             <div className="pk-level-h"><b>{S(L.n)}</b><small>{L.en}</small></div>
-            <div className="pk-parts">{L.parts.map(([a, b], j) => <span key={j} className="pk-part"><span className="ln-stem">{S(a)}</span>{b && <span className="ln-suf">{S(b)}</span>}</span>)}</div>
+            <div className="pk-parts">{L.parts.map(([a, b], j) => <span key={j} className="pk-part" style={{ "--j": j } as React.CSSProperties}><span className="ln-stem">{S(a)}</span>{b && <span className="ln-suf">{S(b)}</span>}</span>)}</div>
           </div>))}</div>
         <div className="ln-demo-bar">
-          <button className="pk-btn" disabled={lv >= order.length} onClick={() => setLv(lv + 1)}>{dir === "down" ? "↓ अधः · One level down" : "↑ उपरि · One level up"}</button>
+          <button className="pk-btn" onClick={() => { if (lv >= order.length) setLv(1); setAuto(!auto); }}>{auto ? "⏸ Pause" : "▶ Play all levels"}</button>
+          <button className="pk-btn" disabled={lv >= order.length} onClick={() => { setAuto(false); setLv(lv + 1); }}>{dir === "down" ? "↓ अधः · One level down" : "↑ उपरि · One level up"}</button>
           <button className="pk-btn ghost" onClick={() => setLv(order.length)}>सर्वम् · All levels</button>
         </div>
         <p>{K.speaker_en}</p>

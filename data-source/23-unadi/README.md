@@ -55,3 +55,6 @@ The site is built from these JSON files with `python tools/build_unadi_app.py` a
    - `un dhatupatha.tsv detail < detail_in.tsv > detail_out.tsv`
 2. `python tools/select.py` (uses `tools/match.py`), then `python tools/compact_vidyut.py selected.json unadi_prakriya_vidyut_2026-11-15.json`.
 3. `python tools/build_unadi_app.py` writes `app/src/data/unadi.json`.
+
+**Corrections 2026-11-20** (`corrections_2026-11-20.json`, applied by `tools/build_unadi_app.py`; the source files are not edited):
+exam question UNP-L4-001 cited सन्यतः as ७.४.५४; it is ७.४.७९ (७.४.५४ is सनि मीमाघुरभलभशकपतपदामच इस्).

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Journey from "./game/Journey";
 import Learn from "./learn/Learn";
 import { WordBook, VerbBook, SentenceBook, FlagsPage } from "./kosha/Kosha";
 import { GrammarBook } from "./kosha/Grammar";
+import { Sambhashanam } from "./speak/Sambhashanam";
+import { Play } from "./play/Play";
+import { SearchAnything } from "./SearchAnything";
 import { FlagDialog } from "./FlagUI";
 import { OK, useFlags } from "./flags";
 import { setReviewer, useReviewer } from "./settings";
@@ -10,23 +12,30 @@ import { setReviewer, useReviewer } from "./settings";
 // ── the game's name, in one place ──
 export const APP_NAME = { sa: "संस्कृतम्", en: "Saṃskṛtam", tagline: "Learn Saṃskṛtam by playing — words, forms and sentences" };
 
-type View = "game" | "learn" | "words" | "verbs" | "sentences" | "grammar" | "flags";
+type View = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar" | "search" | "flags";
 type NavItem =
   | { type: "view"; v: View; icon: string; sa: string; en: string }
   | { type: "link"; href: string; icon: string; sa: string; en: string };
 
 const NAV: NavItem[] = [
-  { type: "view", v: "game",      icon: "🗺️", sa: "यात्रा",    en: "Journey" },
   { type: "view", v: "learn",     icon: "💡", sa: "बोधः",      en: "Understand" },
+  { type: "view", v: "play",      icon: "🎮", sa: "क्रीडाङ्गणम्", en: "Play" },
+  { type: "view", v: "speak",     icon: "🗣️", sa: "सम्भाषणम्", en: "Speak" },
   { type: "view", v: "words",     icon: "📖", sa: "शब्दकोशः",  en: "Noun Book" },
   { type: "view", v: "verbs",     icon: "🌱", sa: "धातुकोशः",  en: "Verb book" },
   { type: "view", v: "sentences", icon: "💬", sa: "वाक्यकोशः", en: "Sentences" },
   { type: "view", v: "grammar",   icon: "🔗", sa: "व्याकरणम्",  en: "Grammar" },
   { type: "link", href: "https://medhaa.net/games-static/devanagari-game/index.html", icon: "🪷", sa: "अक्षराभ्यासः", en: "Akṣarābhyāsaḥ" },
+  { type: "view", v: "search", icon: "🔎", sa: "अन्वेषणम्", en: "Search Anything" },
 ];
 
 // faint floating letters behind everything (decorative)
-const BG_LETTERS = ["राम", "गम्", "वनम्", "पठ्", "जलम्", "अस्ति", "कुत्र", "बालः", "फलम्", "लता", "सः", "अहम्", "नदी", "गुरुः", "भू", "च"];
+const BG_LETTERS = [
+  "जयतु संस्कृतम्, जयतु भारतम्", "भारतस्य प्रतिष्ठे द्वे संस्कृतं संस्कृतिस्तथा",
+  "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्", "सत्यमेव जयते", "वसुधैव कुटुम्बकम्", "आ नो भद्राः क्रतवो यन्तु विश्वतः",
+  "सा विद्या या विमुक्तये", "संगच्छध्वं संवदध्वम्", "न हि ज्ञानेन सदृशं पवित्रम्",
+  "विद्यया अमृतमश्नुते", "सर्वे भवन्तु सुखिनः", "मातृदेवो भव", "पितृदेवो भव", "कृण्वन्तो विश्वमार्यम्",
+];
 const BG_COLORS = ["#f97316", "#ec4899", "#8b5cf6", "#06b6d4", "#10b981", "#eab308"];
 const Backdrop: React.FC = () => (
   <>
@@ -35,7 +44,8 @@ const Backdrop: React.FC = () => (
       {BG_LETTERS.map((l, i) => (
         <span key={i} style={{
           left: `${(i * 37 + 7) % 88}%`, top: `${(i * 53 + 11) % 88}%`,
-          fontSize: `${2.6 + ((i * 7) % 5) * 0.6}rem`,
+          fontSize: `${Math.max(1, Math.min(2.6, 32 / l.length))}rem`,
+          whiteSpace: "nowrap",
           "--c": BG_COLORS[i % BG_COLORS.length], "--d": `${9 + (i % 5) * 2}s`, "--delay": `${-i * 1.3}s`,
         } as React.CSSProperties}>{l}</span>
       ))}
@@ -44,8 +54,9 @@ const Backdrop: React.FC = () => (
 );
 
 const readHash = (): View => {
-  const h = location.hash.slice(1);
-  return (["game", "learn", "words", "verbs", "sentences", "grammar", "flags"] as View[]).includes(h as View) ? (h as View) : "game";
+  const h = location.hash.slice(1).split("/")[0];   // "#speak/2-03" → speak
+  // "#game" was the old यात्रा, now part of क्रीडाङ्गणम्
+  return (["learn", "play", "speak", "words", "verbs", "sentences", "grammar", "search", "flags"] as View[]).includes(h as View) ? (h as View) : "play";
 };
 
 const App: React.FC = () => {
@@ -97,17 +108,19 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {view === "game" ? <Journey />
-        : view === "learn" ? <Learn />
+      {view === "learn" ? <Learn />
+        : view === "play" ? <Play key={location.hash} />
+        : view === "speak" ? <Sambhashanam />
         : view === "words" ? <WordBook />
         : view === "verbs" ? <VerbBook />
         : view === "sentences" ? <SentenceBook />
         : view === "grammar" ? <GrammarBook />
-        : reviewer ? <FlagsPage /> : <Journey />}
+        : view === "search" ? <SearchAnything onNavigate={setView} />
+        : reviewer ? <FlagsPage /> : <Play />}
 
       <footer className="app-footer">
         <span>🧑‍🏫 शिक्षकेभ्यः · For teachers &amp; reviewers:</span>
-        <label className="rv-toggle"><input type="checkbox" checked={reviewer} onChange={e => { setReviewer(e.target.checked); if (!e.target.checked && view === "flags") setView("game"); }} /> समीक्षकः · Reviewer mode</label>
+        <label className="rv-toggle"><input type="checkbox" checked={reviewer} onChange={e => { setReviewer(e.target.checked); if (!e.target.checked && view === "flags") setView("play"); }} /> समीक्षकः · Reviewer mode</label>
         {reviewer && <button onClick={() => setView("flags")}>⚑ दोषसूचनाः · Review list ({flags.filter(f => f.issue !== OK).length} ⚑ · {flags.filter(f => f.issue === OK).length} ✓)</button>}
       </footer>
       <div className="app-site-footer">

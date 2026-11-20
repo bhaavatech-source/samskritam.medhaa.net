@@ -1,0 +1,29 @@
+.sa-page { --rc: #8b5cf6; max-width: 900px; margin: 0 auto; text-align: left; }
+.sa-heading { margin-bottom: 16px; }
+.sa-heading h2 { color: #9a3412; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; font-size: 1.65rem; }
+.sa-heading h2 span { color: #526079; font-size: .95rem; font-weight: 500; }
+.sa-heading p, .sa-hint { color: #526079; font-size: .9rem; }
+.sa-input-wrap { display: flex; align-items: center; gap: 10px; padding: 0 16px; min-height: 54px; border: 1px solid rgba(15,23,42,.18); border-radius: 18px; background: rgba(255,255,255,.92); box-shadow: var(--shadow-soft); }
+.sa-input-wrap span { color: #7c3aed; font-size: 1.6rem; }
+.sa-input-wrap input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: #1e2638; font: 1rem 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Poppins', sans-serif; }
+.sa-input-wrap input:focus-visible { outline: 0; }
+.sa-hint { margin: 8px 4px 18px; }
+.sa-status, .sa-count { color: #526079; font-size: .9rem; margin: 12px 4px; }
+.sa-results { display: grid; gap: 10px; }
+.sa-hit { min-width: 0; padding: 14px 16px; border: 1px solid rgba(15,23,42,.1); border-radius: 16px; background: rgba(255,255,255,.88); box-shadow: var(--shadow-soft); }
+.sa-hit-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.sa-category { color: #6d28d9; font-size: .78rem; font-weight: 600; }
+.sa-hit-top button, .sa-more { min-height: 40px; padding: 7px 12px; border: 1px solid #ddd6fe; border-radius: 999px; background: #faf5ff; color: #5b21b6; cursor: pointer; font-size: .82rem; font-weight: 600; }
+.sa-hit h3 { margin-top: 6px; color: #1e2638; font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Poppins', sans-serif; font-size: 1.1rem; overflow-wrap: anywhere; }
+.sa-path { margin-top: 3px; color: #64748b; font-size: .75rem; overflow-wrap: anywhere; }
+.sa-text { margin-top: 7px; color: #303c5a; font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Poppins', sans-serif; font-size: .9rem; line-height: 1.55; overflow-wrap: anywhere; }
+.sa-more { display: block; margin: 14px auto; }
+.sa-empty { padding: 22px 4px; color: #64748b; text-align: center; }
+.sa-error { padding: 12px 14px; border-radius: 12px; background: #fff1f2; color: #9f1239; overflow-wrap: anywhere; }
+@media (max-width: 560px) {
+  .sa-heading h2 { font-size: 1.35rem; }
+  .sa-heading h2 span { display: block; font-size: .85rem; }
+  .sa-input-wrap { min-height: 50px; border-radius: 14px; }
+  .sa-hit { padding: 12px; }
+  .sa-hit-top { align-items: flex-start; }
+}

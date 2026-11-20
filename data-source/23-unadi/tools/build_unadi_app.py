@@ -99,6 +99,14 @@ app = {
   "s": sutras,
 }
 q = json.load(open(os.path.join(SRC, f"unadi_pariksha_levels_{DATE}.json"), encoding="utf-8"))
+# corrections 2026-11-20: wrong sūtra numbers in exam questions (the source file is not edited)
+QFIX = json.load(open(os.path.join(SRC, "corrections_2026-11-20.json"), encoding="utf-8"))["exam"]
+for x in q["questions"]:
+    for a, b in QFIX.get(x["question_id"], {}).get("replace", []):
+        hit = False
+        for k in ("panini_sutra", "explanation_sa"):
+            if a in x[k]: x[k] = x[k].replace(a, b); hit = True
+        assert hit, (x["question_id"], a)
 app["rules"] = {r: rule_text(r) + [RULE_TERM.get(r, "unadi" if r.startswith("U:") else "")] for r in sorted(used)}
 app["terms"] = {k: list(v) for k, v in TERMS.items()}
 app["levels"] = [[l["level_id"], l["name_sa"], l["name_en"].split(" (")[0], l["name_en"].split(" (", 1)[1].rstrip(")") if " (" in l["name_en"] else ""] for l in q["level_hierarchy"]]

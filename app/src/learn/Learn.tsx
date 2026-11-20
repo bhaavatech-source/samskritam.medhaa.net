@@ -4,7 +4,7 @@
 //  and why the same grid holds every language (from the author's PhD thesis,
 //  ch. 4.7 सुबन्तदिशा, 4.8.6 तिङन्तदिशा, tables 4.7.2.2.1 & 4.8.11).
 // ═══════════════════════════════════════════════════════════════
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   WORDS, VERBS, AVYAYA, AVYAYA_CATS, LANGS, MEANING_LANGS, VIBHAKTI, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO,
   headForm, wordMeaning, verbMeaning, avyayaMeaning, type Word,
@@ -14,6 +14,7 @@ import { useLang } from "../settings";
 import { speak } from "../speech";
 import { PrakritiPratyaya, Prakriya } from "./Prakriya";
 import { AgreementCard, PrathamaCard, AdhyaharaCard } from "./Samanvaya";
+import { ShabdaScene, KarakaScene, PotScene, WorldScene, PersonScene, LakaraScene, AvyayaScene } from "./anim";
 import "./learn.css";
 
 type Ch = "shabda" | "dhatu" | "avyaya" | "prakriti" | "prakriya";
@@ -27,8 +28,16 @@ const CHAPTERS: [Ch, string, string][] = [
 
 const Learn: React.FC = () => {
   const [ch, setCh] = useState<Ch>("shabda");
+  const box = useRef<HTMLDivElement>(null);
+  useEffect(() => {                                   // cards rise into view as you scroll
+    const cards = box.current?.querySelectorAll(".ln-card") ?? [];
+    if (!("IntersectionObserver" in window)) return;
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("ln-in"); io.unobserve(e.target); } }), { threshold: 0.08 });
+    cards.forEach(c => { c.classList.add("ln-wait"); io.observe(c); });
+    return () => io.disconnect();
+  }, [ch]);
   return (
-    <div className="ln">
+    <div className="ln" ref={box}>
       <div className="jy-top">
         <div>
           <h2 className="jy-title">बोधः <span>· How Sanskrit words work</span></h2>
@@ -40,7 +49,7 @@ const Learn: React.FC = () => {
           <button key={k} className={ch === k ? "on" : ""} onClick={() => setCh(k)}><b>{sa}</b><small>{en}</small></button>
         ))}
       </div>
-      {ch === "shabda" ? <Shabda /> : ch === "dhatu" ? <Dhatu /> : ch === "avyaya" ? <Avyaya /> : ch === "prakriti" ? <PrakritiPratyaya /> : <Prakriya />}
+      <div key={ch} className="ln-chapter-in">{ch === "shabda" ? <Shabda /> : ch === "dhatu" ? <Dhatu /> : ch === "avyaya" ? <Avyaya /> : ch === "prakriti" ? <PrakritiPratyaya /> : <Prakriya />}</div>
     </div>
   );
 };
@@ -68,8 +77,8 @@ const LangChips: React.FC<{ langs: string[]; toggle: (l: string) => void }> = ({
 
 // ═══════════ 1. शब्दरूपाणि ═══════════
 const KARAKA: [string, string, string, string, string][] = [
-  ["प्रथमा", "कर्ता", "स्वतन्त्रः कर्ता", "1.4.54", "who does it?"],
-  ["द्वितीया", "कर्म", "कर्तुरीप्सिततमं कर्म", "1.4.49", "what / whom is it done to?"],
+  ["प्रथमा", "कर्ता", "स्वतन्त्रः कर्ता", "1.4.54", "who does it? (प्रथमा when the verb names the doer: अभिहिते कर्तरि प्रथमा)"],
+  ["द्वितीया", "कर्म", "कर्तुरीप्सिततमं कर्म", "1.4.49", "what / whom is it done to? (द्वितीया when the verb does not name it: अनभिहिते कर्मणि द्वितीया)"],
   ["तृतीया", "करणम्", "साधकतमं करणम्", "1.4.42", "with what / by whom?"],
   ["चतुर्थी", "सम्प्रदानम्", "कर्मणा यमभिप्रैति स सम्प्रदानम्", "1.4.32", "for whom / to whom?"],
   ["पञ्चमी", "अपादानम्", "ध्रुवमपायेऽपादानम्", "1.4.24", "from where / from whom?"],
@@ -92,11 +101,11 @@ const SUBTYPES: [string, string, string, string][] = [
   ["तृतीया", "cause", "विद्यया यशः", "हेतौ 2.3.23"],
   ["तृतीया", "time in which a task is completed", "मासेन अनुवाकः अधीतः", "अपवर्गे तृतीया 2.3.6"],
   ["चतुर्थी", "recipient (सम्प्रदान)", "विप्राय गां ददाति", "चतुर्थी सम्प्रदाने 2.3.13"],
-  ["चतुर्थी", "the one pleased", "हरये रोचते भक्तिः", "रुच्यर्थानां प्रीयमाणः 1.4.33"],
+  ["चतुर्थी", "the one pleased", "हरये रोचते भक्तिः", "रुच्यर्थानां प्रीयमाणः 1.4.33 → चतुर्थी सम्प्रदाने 2.3.13"],
   ["चतुर्थी", "purpose", "मुक्तये हरिं भजति", "तादर्थ्ये चतुर्थी (वार्त्तिकम्)"],
   ["चतुर्थी", "with नमः, स्वस्ति, स्वाहा, अलम् …", "गणेशाय नमः", "नमःस्वस्तिस्वाहा… 2.3.16"],
   ["पञ्चमी", "source, separation (अपादान)", "वृक्षात् पत्रं पतति", "अपादाने पञ्चमी 2.3.28"],
-  ["पञ्चमी", "what one fears or is protected from", "चोरात् बिभेति", "भीत्रार्थानां भयहेतुः 1.4.25"],
+  ["पञ्चमी", "what one fears or is protected from", "चोरात् बिभेति", "भीत्रार्थानां भयहेतुः 1.4.25 → अपादाने पञ्चमी 2.3.28"],
   ["पञ्चमी", "comparison: than", "रामात् श्यामः पटुतरः", "पञ्चमी विभक्ते 2.3.42"],
   ["पञ्चमी", "with ऋते, अन्य, इतर, directions (without, other than, east of)", "ऋते ज्ञानात् न मुक्तिः", "अन्यारादितरर्ते… 2.3.29"],
   ["पञ्चमी", "cause (a quality)", "जाड्यात् बद्धः", "विभाषा गुणेऽस्त्रियाम् 2.3.25"],
@@ -107,7 +116,7 @@ const SUBTYPES: [string, string, string, string][] = [
   ["षष्ठी / सप्तमी", "the group a choice is made from", "नृणां / नृषु द्विजः श्रेष्ठः", "यतश्च निर्धारणम् 2.3.41"],
   ["सप्तमी", "place, time (अधिकरण)", "गृहे वसति · प्रभाते गच्छति", "सप्तम्यधिकरणे च 2.3.36"],
   ["सप्तमी", "when / while (absolute)", "गोषु दुह्यमानासु गतः", "यस्य च भावेन भावलक्षणम् 2.3.37"],
-  ["सप्तमी", "topic: about, in the matter of", "मोक्षे इच्छा अस्ति", "आधारोऽधिकरणम् 1.4.45 (वैषयिकः)"],
+  ["सप्तमी", "topic: about, in the matter of", "मोक्षे इच्छा अस्ति", "सप्तम्यधिकरणे च 2.3.36 (वैषयिक आधार, 1.4.45)"],
   ["सम्बोधनम्", "calling, addressing", "हे राम", "सम्बोधने च 2.3.47"],
 ];
 // avyayas made from nouns, defined by Pāṇini through vibhakti meanings
@@ -130,7 +139,7 @@ const WORLD: [string, string, string][] = [
   ["Russian, Polish", "6–7 cases", "именительный … предложный; Polish adds the vocative"],
   ["German", "4 cases + prepositions", "Nominativ, Akkusativ, Dativ, Genitiv"],
   ["Modern Greek", "4 cases (one is the vocative) + prepositions", "nominative, genitive, accusative, vocative"],
-  ["English, French, Spanish", "word order + prepositions", "by / with, to / for, from, of, in"],
+  ["English, French, Spanish", "word order + prepositions", "to, by / with, for, from, of, in"],
   ["Arabic", "3 cases + prepositions + attached pronouns", "بِـ ، لِـ ، مِن ، في"],
   ["Hebrew", "no case endings: prepositions, the object marker את, word order", "בְּ ، לְ ، מִן ، שֶׁל"],
   ["Hungarian, Finnish", "15–27 cases (the count depends on the definition)", "fused postpositions: in / into / out of, on / onto / off, at / to / from, with, without, as, becoming"],
@@ -150,6 +159,7 @@ const Shabda: React.FC = () => {
       <Card title="एकः शब्दः, चतुर्विंशतिः रूपाणि · One word, 24 forms">
         <p>A Sanskrit noun is a <b>stem</b> (प्रातिपदिकम्) plus an <b>ending</b> (सुप्-प्रत्ययः). Pāṇini gives exactly <b>21 endings</b> in one sūtra, seven groups of three:</p>
         <p className="ln-center"><Sutra t="स्वौजसमौट्छष्टाभ्याम्भिस्ङेभ्याम्भ्यस्ङसिभ्याम्भ्यस्ङसोसाम्ङ्योस्सुप्" n="4.1.2" /></p>
+        <ShabdaScene />
         <div className="ln-eq"><span className="ln-stem">राम</span> + <span className="ln-suf">टा</span> = <span className="ln-word">रामेण</span><small>stem + 3rd-case singular ending = “by Rāma”</small></div>
         <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>विभक्तिः</th>{VACANA.map(v => <th key={v}>{v}</th>)}</tr></thead>
           <tbody>{SUP.map((r, i) => <tr key={i}><th>{VIBHAKTI[i]}</th>{r.map((x, j) => <td key={j} className="ln-deva">{x}</td>)}</tr>)}
@@ -160,6 +170,7 @@ const Shabda: React.FC = () => {
       <Card title="कारकाणि · The eight relations a noun can have">
         <p>The eight cases are not arbitrary endings. Each one names a <b>role in an action</b> (कारकम्, “that which makes the action happen”), plus one relation between nouns and one form for calling:</p>
         <p className="ln-center ln-verse">कर्ता कर्म च करणं सम्प्रदानं तथैव च ।<br />अपादानाधिकरणमित्याहुः कारकाणि षट् ॥</p>
+        <KarakaScene />
         <div className="ln-karakas">
           {KARAKA.map(([v, k, s, n, q], i) => (
             <div key={v} className="ln-karaka">
@@ -171,7 +182,9 @@ const Shabda: React.FC = () => {
             </div>
           ))}
         </div>
+        <p>The sūtras on the cards define the roles (कारकसंज्ञा, 1.4.23–55). The case endings are given in 2.3, and only to a role the verb does not already name (<Sutra t="अनभिहिते" n="2.3.1" />): <Sutra t="कर्मणि द्वितीया" n="2.3.2" />, <Sutra t="कर्तृकरणयोस्तृतीया" n="2.3.18" />, <Sutra t="चतुर्थी सम्प्रदाने" n="2.3.13" />, <Sutra t="अपादाने पञ्चमी" n="2.3.28" />, <Sutra t="सप्तम्यधिकरणे च" n="2.3.36" />. The role the verb ending names is in प्रथमा (<Sutra t="प्रातिपदिकार्थलिङ्गपरिमाणवचनमात्रे प्रथमा" n="2.3.46" />): in रामः ग्रन्थं पठति the doer, in रामेण ग्रन्थः पठ्यते the object. This is the rule of thumb अभिहिते कर्तरि (कर्मणि) प्रथमा.</p>
         <p><b>विवक्षातः कारकाणि भवन्ति</b>: which role a thing plays depends on what the speaker wants to say. The same pot can be the place (स्थाल्यां पचति, “cooks in the pot”), the instrument (स्थाल्या पचति, “cooks with the pot”) or even the doer (स्थाली पचति, “the pot cooks”). Whatever the intention, the relation always lands in one of these eight.</p>
+        <PotScene />
       </Card>
 
       <PrathamaCard />
@@ -193,6 +206,7 @@ const Shabda: React.FC = () => {
         <p>The thesis sets the case systems of about twenty languages side by side with the Sanskrit table, stem by stem and ending by ending. Its conclusion: <i>“यदि संस्कृतोक्तकारकविभागः परिशील्यते तर्हि अयं विभागः सर्वासु भाषासु अन्तर्भवति”</i>, the kāraka division is found inside every language. Languages differ only in <b>how</b> they mark the relation: an ending, a separate word before or after, or word order. They do not differ in <b>which</b> relations exist.</p>
         <div className="ln-table-wrap"><table className="ln-table ln-world"><thead><tr><th>Language</th><th>How it marks the 8 relations</th><th>Markers</th></tr></thead>
           <tbody>{WORLD.map(([l, h, m]) => <tr key={l}><th>{l}</th><td>{h}</td><td>{m}</td></tr>)}</tbody></table></div>
+        <WorldScene />
         <div className="ln-claim">
           <b>The claim, stated precisely.</b> Every use of a noun stem is one of three things:
           <ol>
@@ -255,6 +269,7 @@ const Dhatu: React.FC = () => {
     <div className="ln-body">
       <Card title="धातुः + तिङ् · A verb is a root plus one of 18 endings">
         <p>Every verb form is a <b>root</b> (धातुः) plus an <b>ending</b> (तिङ्). Pāṇini lists 18 endings: 9 for परस्मैपदम् and 9 for आत्मनेपदम् (<Sutra t="तिप्तस्झिसिप्थस्थमिब्वस्मस्तातांझथासाथांध्वमिड्वहिमहिङ्" n="3.4.78" />). The nine are the meeting of <b>who acts</b> (पुरुषः) and <b>how many</b> (वचनम्):</p>
+        <PersonScene />
         <div className="ln-two">
           <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>परस्मैपदम्</th>{VACANA.map(x => <th key={x}>{x}</th>)}</tr></thead>
             <tbody>{TIN.map((r, i) => <tr key={i}><th>{PURUSHA[i]}</th>{r.map(x => <td key={x} className="ln-deva">{x}</td>)}</tr>)}</tbody></table></div>
@@ -267,6 +282,7 @@ const Dhatu: React.FC = () => {
       <AgreementCard />
       <Card title="दश लकाराः · Ten tenses and moods">
         <p>The same nine endings are set in ten <b>lakāras</b> (Classical Sanskrit; the Veda also has an eleventh, लेट्): six describe <b>time</b> and four describe the speaker's <b>attitude</b> (command, wish, blessing, condition). Modern linguistics calls these tense, aspect and mood (thesis 4.8.6.6–8). Pāṇini fixed each by its meaning:</p>
+        <LakaraScene />
         <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>लकारः</th><th>Pāṇini</th><th>meaning</th><th>{v.w} · हिन्दी</th><th>{v.w} · తెలుగు</th></tr></thead>
           <tbody>{LAKARA_ORDER.map(l => grid[l] && <tr key={l}><th>{LAKARA[l][0]}</th><td className="ln-deva">{LAK_INFO[l][0]}</td><td>{LAK_INFO[l][1]}</td>
             <td>{verbGloss(v, "P", l, 0, 0, "hi", "")}</td><td>{verbGloss(v, "P", l, 0, 0, "te", "")}</td></tr>)}</tbody></table></div>
@@ -315,7 +331,7 @@ const Avyaya: React.FC = () => {
       <Card title="यन्न व्येति तदव्ययम् · The word that does not change">
         <p className="ln-center ln-verse">सदृशं त्रिषु लिङ्गेषु सर्वासु च विभक्तिषु ।<br />वचनेषु च सर्वेषु यन्न व्येति तदव्ययम् ॥</p>
         <p>“The same in all three genders, all cases and all numbers: what does not change is an avyaya.” Technically an avyaya is also a stem that receives the case endings, but they are dropped (<Sutra t="अव्ययादाप्सुपः" n="2.4.82" />). So an avyaya <b>fills all 24 places with one single form</b>. The grid is still there; it is just invisible.</p>
-        <div className="ln-eq"><span className="ln-stem">यदा</span> + <span className="ln-suf">सु / अम् / टा …</span> = <span className="ln-word">यदा</span><small>the ending is added, then removed (लुक्)</small></div>
+        <AvyayaScene />
       </Card>
 
       <Card title="अव्ययानां प्रकाराः · Where avyayas come from">
