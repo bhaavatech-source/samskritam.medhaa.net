@@ -36,7 +36,13 @@ const SandhiTab: React.FC = () => {
         <p className="ks-note-plain">{S(G.sandhi.not_sandhi)}</p>
         <h4>Two places where sandhi happens</h4>
         <ExampleScene title="द्वे स्थाने · Inside a word, between words" items={G.sandhi.layers} />
-        <div className="ks-table-wrap"><table className="ks-karaka"><tbody>{G.sandhi.layers.map(k => <tr key={k.name}><td className="ks-l-sa">{S(k.name)}</td><td>{k.en}</td><td className="ks-l-sa">{S(k.ex)}</td></tr>)}</tbody></table></div>
+        <div className="gr-layer-grid">{G.sandhi.layers.map(k => (
+          <article key={k.name} className="gr-layer-card">
+            <h5 className="ks-l-sa">{S(k.name)}</h5>
+            <p>{k.en}</p>
+            <span className="gr-layer-example ks-l-sa">{S(k.ex)}</span>
+          </article>
+        ))}</div>
         <h4>Three questions that unlock every sandhi</h4>
         <ol>{G.sandhi.questions.map(q => <li key={q.q}><b>{S(q.q)}</b> — {q.en}</li>)}</ol>
         <h4>Step by step: why the rules do not undo each other</h4>

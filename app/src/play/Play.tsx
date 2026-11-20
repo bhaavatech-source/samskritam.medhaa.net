@@ -221,7 +221,7 @@ const FreePlay: React.FC<{ setBusy: (b: boolean) => void }> = ({ setBusy }) => {
 
 /** "play with this word / root" button for the Noun Book and Verb Book */
 export const PlayLink: React.FC<{ kind: Area; id: string }> = ({ kind, id }) => (
-  <a className="pk-playlink" href={`#play/${kind}/${encodeURIComponent(id)}`}>🎮 क्रीडा · Play</a>
+  <a className="pk-playlink" href={`#play/${kind}/${encodeURIComponent(id)}`}>🎮 क्रीड · Play</a>
 );
 
 // ═══ shared: one game of the new kind, with its result screen ═══

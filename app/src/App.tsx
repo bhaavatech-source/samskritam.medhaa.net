@@ -119,15 +119,28 @@ const App: React.FC = () => {
       <footer className="app-footer">
         <button type="button" onClick={openFeedback}>Feedback</button>
       </footer>
-      <div className="app-site-footer">
+      <footer className="app-site-footer">
         <div className="app-site-footer-inner">
+          <section className="app-contact" aria-labelledby="app-contact-title">
+            <p className="app-contact-eyebrow">Get in touch</p>
+            <h2 id="app-contact-title">Contact us</h2>
+            <p className="app-contact-copy">Questions about games, accounts or getting started? We reply within 24 hours.</p>
+            <nav className="app-contact-links" aria-label="Contact Bhāva Tech">
+              <a href="mailto:support@medhaa.net">Email support@medhaa.net</a>
+              <a href="tel:+919573057516">Call 95730 57516</a>
+              <a href="https://wa.me/919573057516" target="_blank" rel="noopener noreferrer">WhatsApp us</a>
+            </nav>
+            <a className="app-contact-map" href="https://www.google.com/maps?ll=17.728345,83.31&z=16&t=h&hl=en&gl=IN&mapclient=embed&cid=15149532357699645430" target="_blank" rel="noopener noreferrer">
+              Find us on Google Maps
+            </a>
+          </section>
           <span className="app-credit">A product by Bhāva Tech</span>
           <nav className="app-footer-links" aria-label="Bhāva Tech websites">
             <a href="https://medhaa.net/" target="_blank" rel="noopener noreferrer">Medhaa.net</a>
             <a href="https://naada.medhaa.net/" target="_blank" rel="noopener noreferrer">naada.medhaa.net</a>
           </nav>
         </div>
-      </div>
+      </footer>
       <FlagDialog />
     </div>
   );
