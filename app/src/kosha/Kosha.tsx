@@ -115,7 +115,7 @@ const WordDetail: React.FC<{ w: Word }> = ({ w }) => {
           </tbody>
         </table>
       </div>
-      <p className="ks-note">🌐 The line under each form is its meaning in <b>{LANGS[lang]}</b>{lang === "en" ? "" : ", built from that language's case pattern"}. ✓ = correct, ⚑ = wrong. If a pattern is wrong, it is wrong for every word, so one ⚑ with the right wording is enough.</p>
+      <p className="ks-note">🌐 The line under each form is its meaning in <b>{LANGS[lang]}</b>{lang === "en" ? "" : ", built from that language's case pattern"}.</p>
       {w.ch > 0 && <p className="ks-note">🔁 {w.ch} forms in this table were regenerated with the Pāṇinian engine and differ from the old table — please check them first.</p>}
       <h4>सर्वभाषासु अर्थाः · Meaning in every language <small className="rv-only">(label = source; <b>draft</b> needs the most checking)</small></h4>
       <div className="ks-meanings">
@@ -336,7 +336,7 @@ export const SentenceBook: React.FC = () => {
             detail={e => (
               <div className="ks-card">
                 <div className="ks-err"><span className="ks-err-x">✗</span><span className="ks-sent-big ks-wrong">{S(e.wrong)}</span></div>
-                <div className="ks-err"><span className="ks-err-ok">✓</span><span className="ks-sent-big">{S(e.right)}</span><Speak t={e.right} />
+                <div className="ks-err"><span className="ks-sent-big">{S(e.right)}</span><Speak t={e.right} />
                   <FlagButton t={{ kind: "sentence", id: e.id, field: "error-pair", value: `${e.wrong} → ${e.right}`, where: `${e.id} — error correction` }} /></div>
                 {e.note && <p className="ks-note">Reviewed: {e.note}</p>}
                 <p className="ks-id">{e.id}</p>

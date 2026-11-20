@@ -12,7 +12,7 @@ import { LangPicker } from "../FlagUI";
 import "./game.css";
 
 const KIND_INFO: Record<Station["kind"], { name: string; how: string }> = {
-  quiz:   { name: "प्रश्नोत्तरम् · Quiz",      how: "Read the question and tap the right answer. 💡 removes two wrong answers. See a mistake in the data? Tap ⚑." },
+  quiz:   { name: "प्रश्नोत्तरम् · Quiz",      how: "Read the question and tap the right answer. 💡 removes two wrong answers." },
   memory: { name: "स्मृतिक्रीडा · Memory",   how: "All cards show for a moment — remember them! Then flip two at a time to find pairs." },
   build:  { name: "वाक्यरचना · Sentence builder", how: "Read the meaning, then tap the words in order. Tap a placed word to take it back." },
 };

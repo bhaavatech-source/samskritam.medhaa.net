@@ -196,7 +196,7 @@ export const Build: React.FC<{ E: Engine; min: number; max: number; onAgain: () 
   const nextRound = () => { setRound(r => r + 1); setItem(makeBuild(E, min, max)); setPlaced([]); setVerdict(null); setTries(0); };
   return (
     <div className="vk-stage">
-      <div className="pk-meta"><span>{round + 1} / {ROUNDS}</span><span>✓ {score}</span></div>
+      <div className="pk-meta"><span>{round + 1} / {ROUNDS}</span><span>Score: {score}</span></div>
       <Meaning en={item.en} />
       <div className="vk-sent vk-answer">{placed.length ? placed.map((i, k) => (
         <button key={k} className="vk-w ks-l-sa" onClick={() => { if (!verdict?.ok) { setPlaced(p => p.filter((_, j) => j !== k)); setVerdict(null); } }}>{S_(item.tiles[i])}</button>))
@@ -253,7 +253,7 @@ export const Fix: React.FC<{ E: Engine; min: number; max: number; onAgain: () =>
   const nextRound = () => { setRound(r => r + 1); setItem(makeFix(E, min, max)); setFound(null); setMiss(null); setChosen(null); };
   return (
     <div className="vk-stage">
-      <div className="pk-meta"><span>{round + 1} / {ROUNDS}</span><span>✓ {score}</span></div>
+      <div className="pk-meta"><span>{round + 1} / {ROUNDS}</span><span>Score: {score}</span></div>
       <Meaning en={item.en} />
       <p className="vk-ask">{found === null ? "Tap the word with the wrong form." : "Choose the right form."}</p>
       <div className="vk-sent">{item.shown.map((w, i) => (

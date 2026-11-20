@@ -1,4 +1,4 @@
-// FlagUI.tsx — the ⚑ button, the report dialog and the meaning-language picker
+// FlagUI.tsx — review controls, feedback dialog and meaning-language picker
 import React, { useEffect, useRef, useState } from "react";
 import { addFlag, flagKey, ISSUES, OK, openFlag, registerFlagDialog, removeFlag, useFlags, type FlagTarget } from "./flags";
 import { LANGS, MEANING_LANGS } from "./data";
@@ -41,7 +41,7 @@ export const FlagDialog: React.FC = () => {
   useEffect(() => {
     registerFlagDialog(target => {
       setT(target); setFix(""); setNote("");
-      setIssue(/meaning|^en$|gloss/.test(target.field) ? "wrong-meaning" : target.kind === "sentence" ? "spelling" : "wrong-form");
+      setIssue(target.id === "general-feedback" ? "other" : /meaning|^en$|gloss/.test(target.field) ? "wrong-meaning" : target.kind === "sentence" ? "spelling" : "wrong-form");
       setTimeout(() => first.current?.focus(), 30);
     });
     return () => registerFlagDialog(null);
@@ -55,33 +55,39 @@ export const FlagDialog: React.FC = () => {
   const save = async () => {
     if (!t) return;
     const where = await addFlag({ ...t, issue, fix: fix.trim(), note: note.trim() });
+    const isFeedback = t.id === "general-feedback";
     setT(null);
-    setToast(where === "online" ? "⚑ Saved — Claude can see it" : "⚑ Saved in this browser");
+    setToast(isFeedback ? where === "online" ? "Feedback sent" : "Feedback saved in this browser" : where === "online" ? "Saved — Claude can see it" : "Saved in this browser");
     setTimeout(() => setToast(""), 2200);
   };
 
+  const isFeedback = t?.id === "general-feedback";
   return (
     <>
       {t && (
         <div className="fl-bg" onClick={() => setT(null)}>
           <div className="fl-box" role="dialog" aria-modal="true" aria-labelledby="fl-title" onClick={e => e.stopPropagation()}>
-            <h3 id="fl-title">⚑ दोषसूचना · Report a mistake</h3>
+            <h3 id="fl-title">{isFeedback ? "Feedback" : "दोषसूचना · Report a mistake"}</h3>
             <p className="fl-where">{t.where}</p>
             {t.value && <p className="fl-value">{t.value}</p>}
-            <label>What is wrong?
+            <label>{isFeedback ? "Feedback type" : "What is wrong?"}
               <select ref={first} value={issue} onChange={e => setIssue(e.target.value)}>
                 {ISSUES.filter(([k]) => k !== OK).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
               </select>
             </label>
-            <label>Correct form or meaning <small>(optional)</small>
-              <input value={fix} onChange={e => setFix(e.target.value)} placeholder="e.g. रामेण" />
-            </label>
-            <label>Note <small>(optional)</small>
-              <textarea rows={3} value={note} onChange={e => setNote(e.target.value)} />
-            </label>
+            {isFeedback
+              ? <label>Your feedback<textarea rows={4} value={note} onChange={e => setNote(e.target.value)} /></label>
+              : <>
+                  <label>Correct form or meaning <small>(optional)</small>
+                    <input value={fix} onChange={e => setFix(e.target.value)} placeholder="e.g. रामेण" />
+                  </label>
+                  <label>Note <small>(optional)</small>
+                    <textarea rows={3} value={note} onChange={e => setNote(e.target.value)} />
+                  </label>
+                </>}
             <div className="fl-btns">
               <button onClick={() => setT(null)}>Cancel</button>
-              <button className="gs-primary" onClick={save}>Save ⚑</button>
+              <button className="gs-primary" onClick={save}>{isFeedback ? "Save feedback" : "Save"}</button>
             </div>
           </div>
         </div>

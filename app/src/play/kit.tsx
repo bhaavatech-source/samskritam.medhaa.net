@@ -100,7 +100,7 @@ export const FlipCards: React.FC<GameProps> = ({ pairs, onEnd }) => {
   if (!p) return null;
   return (
     <div className="pk-flipgame">
-      <div className="pk-meta"><span>{known} / {pairs.length} ✓</span><span>{queue.length} left</span></div>
+      <div className="pk-meta"><span>{known} / {pairs.length} known</span><span>{queue.length} left</span></div>
       <div className={`pk-card ${flipped ? "flipped" : ""}`} key={`${cur}-${queue.length}`} onClick={() => setFlipped(f => !f)}
         role="button" tabIndex={0} onKeyDown={e => { if (e.key === " " || e.key === "Enter") { e.preventDefault(); setFlipped(f => !f); } }}
         aria-label={flipped ? "Card turned: answer showing" : "Tap to turn the card"}>
@@ -111,7 +111,7 @@ export const FlipCards: React.FC<GameProps> = ({ pairs, onEnd }) => {
       </div>
       <div className="pk-row">
         {flipped
-          ? <><button className="pk-btn ghost" onClick={() => done(false)}>↺ पुनः · Again</button><button className="pk-btn" onClick={() => done(true)}>✓ जानामि · I knew it</button></>
+          ? <><button className="pk-btn ghost" onClick={() => done(false)}>↺ पुनः · Again</button><button className="pk-btn" onClick={() => done(true)}>जानामि · I knew it</button></>
           : <button className="pk-btn" onClick={() => setFlipped(true)}>↻ उत्तरम् · Turn</button>}
       </div>
     </div>
@@ -211,7 +211,7 @@ export const QuickChoice: React.FC<GameProps> = ({ pairs: all, onEnd }) => {
   };
   return (
     <div className="pk-quick">
-      <div className="pk-meta"><span>⏱ {Math.max(left, 0)}s</span><span>✓ {good}</span><span>★ {score}</span></div>
+      <div className="pk-meta"><span>⏱ {Math.max(left, 0)}s</span><span>Correct: {good}</span><span>★ {score}</span></div>
       <div className="pk-timer"><span style={{ width: `${100 * Math.max(left, 0) / SECS}%` }} className={left <= 10 ? "low" : ""} /></div>
       <div className="pk-ask" key={`${cur}-${tries}`}><T t={p.q} sa={p.qSa} className="pk-big" />{sayOf(p, "q") && <SayBtn t={sayOf(p, "q")} />}<Sub p={p} /><Pop text={pop.t} n={pop.n} /></div>
       <div className="pk-opts">
@@ -253,7 +253,7 @@ export const FallingWords: React.FC<GameProps> = ({ pairs, onEnd }) => {
   if (!p) return null;
   return (
     <div className="pk-fall">
-      <div className="pk-meta"><span>{r + 1} / {rounds.length}</span><span>✓ {good}</span><span aria-label={`${hearts} hearts`}>{"❤️".repeat(Math.max(hearts, 0))}{"🤍".repeat(3 - Math.max(hearts, 0))}</span></div>
+      <div className="pk-meta"><span>{r + 1} / {rounds.length}</span><span>Correct: {good}</span><span aria-label={`${hearts} hearts`}>{"❤️".repeat(Math.max(hearts, 0))}{"🤍".repeat(3 - Math.max(hearts, 0))}</span></div>
       <div className="pk-ask"><T t={p.q} sa={p.qSa} className="pk-big" />{sayOf(p, "q") && <SayBtn t={sayOf(p, "q")} />}<Sub p={p} /></div>
       <div className={`pk-sky ${state}`}>
         {opts.map((o, k) => {
@@ -308,7 +308,7 @@ export const BuildWord: React.FC<GameProps> = ({ pairs, onEnd }) => {
   };
   return (
     <div className="pk-build">
-      <div className="pk-meta"><span>{r + 1} / {rounds.length}</span><span>✓ {good}</span></div>
+      <div className="pk-meta"><span>{r + 1} / {rounds.length}</span><span>Correct: {good}</span></div>
       <div className="pk-ask"><T t={p.q} sa={p.qSa} className="pk-big" />{sayOf(p, "q") && <SayBtn t={sayOf(p, "q")} />}<Sub p={p} /></div>
       <div className={`pk-slots ${verdict} ${p.tiles ? "words" : ""}`}>
         {Array.from({ length: need }, (_, i) => <span key={i} className={`pk-slot ${built[i] !== undefined ? "full" : ""}`}><span className="ks-l-sa">{built[i] !== undefined ? S(tiles[built[i]]) : ""}</span></span>)}

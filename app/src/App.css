@@ -33,7 +33,6 @@ button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-
 
 /* ── footer ── */
 .app-footer { margin-top: 40px; padding: 18px 0 6px; border-top: 1px solid rgba(15,23,42,0.12); display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
-.app-footer span { font-size: .85rem; color: #4b5d8b; align-self: center; }
 .app-site-footer { position: fixed; z-index: 40; inset-inline: 0; bottom: 0; padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); border-top: 1px solid rgba(15,23,42,.14); background: rgba(255,255,255,.97); box-shadow: 0 -4px 18px rgba(30,41,59,.1); }
 .app-site-footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .app-site-footer .app-credit { color: #334155; font-size: .82rem; font-weight: 600; line-height: 1.25; }
@@ -156,18 +155,16 @@ button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-
 }
 .gs-stage > .qz, .gs-stage > .sb, .gs-stage > .mm { box-shadow: none !important; backdrop-filter: none !important; }
 
-/* ✓ correct */
+/* Reviewer controls are kept out of the learner interface. */
 .rv-pair { display: inline-flex; gap: 0; vertical-align: middle; }
 .ok-btn { background: none; border: none; cursor: pointer; color: #a8b0c0; font-size: .9rem; padding: 2px 4px; margin-left: 4px; border-radius: 8px; line-height: 1; font-weight: 700; }
 .ok-btn:hover { color: #15803d; background: rgba(21,128,61,.08); }
 .ok-on { color: #15803d; background: rgba(34,197,94,.14); }
 .rv-pair .fl-btn { margin-left: 0; }
 
-/* ── learner view: content only. Reviewer mode shows sources, ✓ / ⚑, IDs and notes ── */
+/* ── learner view: content only ── */
 .is-learner .fl-btn, .is-learner .ok-btn, .is-learner .rv-pair, .is-learner .ks-pill, .is-learner .ks-note, .is-learner .ks-id,
 .is-learner .ks-l-ch, .is-learner .ks-flagdot, .is-learner .ks-only, .is-learner .rv-only { display: none !important; }
-.rv-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: .85rem; color: #42527b; cursor: pointer; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
-  background: rgba(255,255,255,.7); border: 1px solid rgba(15,23,42,0.16); border-radius: 50px; padding: 6px 14px; }
 
 /* Sanskrit can be shown in any Brahmic script: give every Devanāgarī font stack the other scripts too */
 .qz-prompt, .qz-sentence, .qz-deva, .sb-tile, .ks-form, .ks-l-sa, .ks-head h3, .mm-deva, .ln-deva { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Noto Sans Kannada', 'Noto Sans Malayalam', 'Noto Sans Bengali', 'Noto Sans Oriya', 'Noto Sans Gujarati', 'Poppins', serif; }

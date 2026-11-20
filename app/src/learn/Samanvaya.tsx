@@ -52,7 +52,7 @@ export const AgreementCard: React.FC = () => {
       </table></div>
       <div className="sv-voice">
         <p className="ln-sa"><b>{S(p.name)}</b> — {S(p.rules)}</p>
-        <p className="sv-ok"><span aria-label="correct">✓</span> <b className="ln-deva">{S(p.ok)}</b> <Say t={p.ok} /></p>
+        <p className="sv-ok"><b className="ln-deva">{S(p.ok)}</b> <Say t={p.ok} /></p>
         <p className="ln-note ln-sa">{S(p.ok_why)}</p>
         {p.bad.map(b => <React.Fragment key={b.text}>
           <p className="sv-bad"><span aria-label="wrong">✗</span> <b className="ln-deva">{S(b.text)}</b></p>

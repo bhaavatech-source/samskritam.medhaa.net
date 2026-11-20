@@ -262,7 +262,7 @@ export const TaddhitaQuiz: React.FC<{ onClose: () => void }> = ({ onClose }) => 
   const answer = (o: string) => { if (chosen !== null) return; setChosen(o); if (o === q.answer) setScore(n => n + 1); };
   return (
     <div className="ks-card un-quiz">
-      <div className="un-top"><span className="ks-sub ks-l-sa">{level}. {S(lv.sa)}</span><span>{i + 1} / {qs.length} · ✓ {score}</span>
+      <div className="un-top"><span className="ks-sub ks-l-sa">{level}. {S(lv.sa)}</span><span>{i + 1} / {qs.length} · Score: {score}</span>
         <button className="un-link" onClick={() => restart(null)}>स्तराः · Levels</button></div>
       <div className="ks-head"><h3 className="ks-l-sa">{S(q.prompt)}</h3></div>
       <p className="un-ask ks-l-sa">{S(q.ask)}</p>

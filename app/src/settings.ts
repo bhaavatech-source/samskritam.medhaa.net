@@ -19,19 +19,6 @@ export function useLang(): string {
   return useSyncExternalStore(f => { subs.add(f); return () => { subs.delete(f); }; }, () => lang);
 }
 
-// reviewer mode: shows sources, ✓ / ⚑ buttons, IDs and notes. Off for learners.
-const RKEY = "samskrita-medhaa-reviewer";
-let reviewer = (() => { try { return localStorage.getItem(RKEY) === "1"; } catch { return false; } })();
-const rsubs = new Set<() => void>();
-export function setReviewer(on: boolean) {
-  reviewer = on;
-  try { localStorage.setItem(RKEY, on ? "1" : "0"); } catch { /* ignore */ }
-  rsubs.forEach(f => f());
-}
-export function useReviewer(): boolean {
-  return useSyncExternalStore(f => { rsubs.add(f); return () => { rsubs.delete(f); }; }, () => reviewer);
-}
-
 // readings (meanings in Latin letters): hidden until the learner asks for them — keeps small screens clean
 const RDKEY = "samskrita-medhaa-readings";
 let readings = (() => { try { return localStorage.getItem(RDKEY) === "1"; } catch { return false; } })();

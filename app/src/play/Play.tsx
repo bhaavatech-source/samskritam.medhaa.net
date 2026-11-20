@@ -264,7 +264,7 @@ const GameRun: React.FC<{ G: (typeof GAMES)[number]; what: string; pairs: Pair[]
 
 const Stars: React.FC<{ n: number }> = ({ n }) => <span className="pk-tstars" aria-label={`${n} of 3 stars`}>{[1, 2, 3].map(i => <span key={i} className={i <= n ? "on" : ""}>★</span>)}</span>;
 const KIND: Record<string, { name: string; how: string }> = {
-  quiz:   { name: "प्रश्नोत्तरम् · Quiz", how: "Read the question and tap the right answer. 💡 removes two wrong answers. See a mistake in the data? Tap ⚑." },
+  quiz:   { name: "प्रश्नोत्तरम् · Quiz", how: "Read the question and tap the right answer. 💡 removes two wrong answers." },
   memory: { name: "स्मृतिक्रीडा · Memory", how: "All cards show for a moment — remember them! Then flip two at a time to find pairs." },
   build:  { name: "रचना · Build", how: "Read the meaning, then tap the words in order. Tap a placed word to take it back." },
 };

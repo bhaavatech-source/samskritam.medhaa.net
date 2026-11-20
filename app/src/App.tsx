@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Learn from "./learn/Learn";
-import { WordBook, VerbBook, SentenceBook, FlagsPage } from "./kosha/Kosha";
+import { WordBook, VerbBook, SentenceBook } from "./kosha/Kosha";
 import { GrammarBook } from "./kosha/Grammar";
 import { Sambhashanam } from "./speak/Sambhashanam";
 import { Play } from "./play/Play";
 import { SearchAnything } from "./SearchAnything";
 import { FlagDialog } from "./FlagUI";
-import { OK, useFlags } from "./flags";
-import { setReviewer, useReviewer } from "./settings";
+import { openFlag } from "./flags";
 
 // ── the game's name, in one place ──
 export const APP_NAME = { sa: "संस्कृतम्", en: "Saṃskṛtam", tagline: "Learn Saṃskṛtam by playing — words, forms and sentences" };
 
-type View = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar" | "search" | "flags";
+type View = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar" | "search";
 type NavItem =
   | { type: "view"; v: View; icon: string; sa: string; en: string }
   | { type: "link"; href: string; icon: string; sa: string; en: string };
@@ -56,15 +55,14 @@ const Backdrop: React.FC = () => (
 const readHash = (): View => {
   const h = location.hash.slice(1).split("/")[0];   // "#speak/2-03" → speak
   // "#game" was the old यात्रा, now part of क्रीडाङ्गणम्
-  return (["learn", "play", "speak", "words", "verbs", "sentences", "grammar", "search", "flags"] as View[]).includes(h as View) ? (h as View) : "play";
+  return (["learn", "play", "speak", "words", "verbs", "sentences", "grammar", "search"] as View[]).includes(h as View) ? (h as View) : "play";
 };
 
 const App: React.FC = () => {
   const [view, setViewState] = useState<View>(readHash);
   const [navOpen, setNavOpen] = useState(false);
-  const { flags } = useFlags();
-  const reviewer = useReviewer();
   const setView = (v: View) => { setViewState(v); setNavOpen(false); try { history.replaceState(null, "", "#" + v); } catch { /* sandboxed */ } window.scrollTo(0, 0); };
+  const openFeedback = () => openFlag({ kind: "grammar", id: "general-feedback", field: "feedback", value: "", where: `General feedback — ${view}` });
 
   // follow links that change the hash (e.g. व्याकरणम् → धातुकोशः · उणादयः)
   useEffect(() => {
@@ -78,7 +76,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className={`app-root ${reviewer ? "is-reviewer" : "is-learner"}`}>
+    <div className="app-root is-learner">
       <Backdrop />
       <header className="app-header">
         <div className="app-header-bar">
@@ -116,12 +114,10 @@ const App: React.FC = () => {
         : view === "sentences" ? <SentenceBook />
         : view === "grammar" ? <GrammarBook />
         : view === "search" ? <SearchAnything onNavigate={setView} />
-        : reviewer ? <FlagsPage /> : <Play />}
+        : <Play />}
 
       <footer className="app-footer">
-        <span>🧑‍🏫 शिक्षकेभ्यः · For teachers &amp; reviewers:</span>
-        <label className="rv-toggle"><input type="checkbox" checked={reviewer} onChange={e => { setReviewer(e.target.checked); if (!e.target.checked && view === "flags") setView("play"); }} /> समीक्षकः · Reviewer mode</label>
-        {reviewer && <button onClick={() => setView("flags")}>⚑ दोषसूचनाः · Review list ({flags.filter(f => f.issue !== OK).length} ⚑ · {flags.filter(f => f.issue === OK).length} ✓)</button>}
+        <button type="button" onClick={openFeedback}>Feedback</button>
       </footer>
       <div className="app-site-footer">
         <div className="app-site-footer-inner">

@@ -93,7 +93,7 @@ const Quiz: React.FC<{ station: QuizStation; api: GameApi }> = ({ station, api }
           station.hints ? <button className="qz-hint" onClick={hint} disabled={hidden.size > 0}>💡 50 : 50 <small>(−5)</small></button> : <span />
         ) : (
           <div className={`qz-feedback ${right ? "ok" : "no"}`} aria-live="polite">
-            {right ? "✓ साधु!" : chosen === "⏱" ? `⏱ समयः समाप्तः — ${q.optDeva ? S(q.answer) : q.answer}` : `✗ सम्यक् उत्तरम्: ${q.optDeva ? S(q.answer) : q.answer}`}
+            {right ? "साधु!" : chosen === "⏱" ? `⏱ समयः समाप्तः — ${q.optDeva ? S(q.answer) : q.answer}` : `✗ सम्यक् उत्तरम्: ${q.optDeva ? S(q.answer) : q.answer}`}
             {q.also && <small>{q.also}</small>}
           </div>
         )}

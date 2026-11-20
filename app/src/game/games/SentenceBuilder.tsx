@@ -97,7 +97,7 @@ const SentenceBuilder: React.FC<{ station: BuildStation; api: GameApi }> = ({ st
           station.hints ? <button className="qz-hint" onClick={hint}>💡 next word <small>(−5)</small></button> : <span />
         ) : (
           <div className={`qz-feedback ${state === "right" ? "ok" : "no"}`} aria-live="polite">
-            {state === "right" ? "✓ साधु!" : <>✗ सम्यक्: <b className="sb-answer">{S(it.answer)}</b></>}
+            {state === "right" ? "साधु!" : <>✗ सम्यक्: <b className="sb-answer">{S(it.answer)}</b></>}
           </div>
         )}
         <div className="qz-foot-r">

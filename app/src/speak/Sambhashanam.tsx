@@ -130,7 +130,7 @@ const CourseView: React.FC<{ data: Course; progress: Record<string, number>; nex
                 return (
                   <li key={l.id}>
                     <button className={`sp-lesson ${st} ${isNext ? "next" : ""}`} onClick={() => go(l.id)}>
-                      <span className="sp-mark" aria-label={st === "done" ? "completed" : st === "started" ? "started" : "not started"}>{st === "done" ? "✓" : st === "started" ? "◐" : l.id.split("-")[1]}</span>
+                      <span className="sp-mark" aria-label={`${st === "done" ? "completed" : st === "started" ? "started" : "not started"} lesson ${l.id.split("-")[1]}`}>{l.id.split("-")[1]}</span>
                       <span className="sp-ltitle"><b className="ks-l-sa">{S(l.sa)}</b><span>{l.en}</span></span>
                       <span className="sp-score">{isNext ? "next →" : b === undefined ? "" : `${b}%`}</span>
                     </button>
@@ -155,7 +155,7 @@ const LessonView: React.FC<{ l: Lesson; prev?: Lesson; next?: Lesson; go: (id: s
     <div className="ks sp-page sp-lessonview">
       <div className="sp-crumbs">
         <button className="un-link" onClick={() => go(null)}>← सम्भाषणम् · all lessons</button>
-        <span>{best !== undefined ? `best: ${best}%${best >= PASS ? " ✓" : ""}` : ""}</span>
+        <span>{best !== undefined ? `Best: ${best}%` : ""}</span>
       </div>
       <div className="ks-card">
         <div className="sp-lhead">
@@ -283,7 +283,7 @@ const Practice: React.FC<{ l: Lesson; onDone: (score: number) => void; next?: Le
   const advance = () => { setI(i + 1); setChosen(null); setBuilt([]); };
   return (
     <div className="sp-practice">
-      <div className="sp-ptop"><span>{i + 1} / {qs.length}</span><span className="sp-bar" aria-hidden="true"><span style={{ width: `${100 * i / qs.length}%` }} /></span><span>✓ {score}</span></div>
+      <div className="sp-ptop"><span>{i + 1} / {qs.length}</span><span className="sp-bar" aria-hidden="true"><span style={{ width: `${100 * i / qs.length}%` }} /></span><span>Score: {score}</span></div>
       <p className="un-ask">{S(q.ask)}</p>
       {q.kind === "arrange"
         ? <>
