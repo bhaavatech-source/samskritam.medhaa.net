@@ -9,10 +9,14 @@
 .ks-tabs button.on { background: linear-gradient(135deg, #c2410c, #be185d 55%, #6d28d9); color: #fff; border-color: transparent; }
 .ks-tools { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
 .ks-tools input[type=search] { flex: 1; min-width: 220px; font-size: 1rem; padding: 10px 16px; border-radius: 50px; border: 1px solid rgba(15,23,42,0.18); background: rgba(255,255,255,.9); font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', 'Poppins', sans-serif; }
+.ks-list-toggle { flex: none; padding: 9px 14px; border: 1px solid rgba(15,23,42,.16); border-radius: 50px; background: rgba(255,255,255,.85); color: #303c5a; font-size: .85rem; font-weight: 600; cursor: pointer; }
+.ks-list-toggle:hover { border-color: #818cf8; color: #1e2638; }
 .ks-only { font-size: .85rem; color: #42527b; display: flex; gap: 6px; align-items: center; cursor: pointer; }
 .ks-count { font-size: .8rem; color: #64748b; }
 
 .ks-body { display: grid; grid-template-columns: minmax(220px, 300px) 1fr; gap: 16px; align-items: start; }
+.ks-body-list-hidden { grid-template-columns: minmax(0, 1fr); }
+.ks-body-list-hidden > .ks-list { display: none; }
 @media (max-width: 760px) { .ks-body { grid-template-columns: 1fr; } .ks-list { max-height: 260px !important; } }
 .ks-list {
   max-height: 72vh; overflow: auto; border-radius: 18px; background: rgba(255,255,255,.8); border: 1px solid rgba(15,23,42,0.1);

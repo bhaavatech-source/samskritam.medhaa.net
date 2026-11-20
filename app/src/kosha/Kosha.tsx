@@ -4,7 +4,7 @@
 //  वाक्यकोशः (sentences + avyayas), दोषसूचनाः (all flags).
 //  Every form and meaning has a ⚑ to report a mistake.
 // ═══════════════════════════════════════════════════════════════
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
   WORDS, GRAMMAR, loadDhatu400Data, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, padyaMeaning, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO, wordKind,
   wordMeaning, avyayaMeaning, sentMeaning, sentRoman, padyaRoman, type Word,
@@ -37,15 +37,20 @@ import "./kosha.css";
 import { PlayLink } from "../play/Play";
 
 // ── shared list + detail layout ────────────────────────────────
-export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeholder, initial }: {
+export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeholder, initial, listHidden, toggleList, listLabel = "list" }: {
   items: T[]; idOf: (x: T) => string; kind: FlagKind; label: (x: T) => React.ReactNode;
   search: (x: T) => string; detail: (x: T) => React.ReactNode; placeholder: string; initial?: string | null;
+  listHidden?: boolean; toggleList?: () => void; listLabel?: string;
 }) {
   const { flags } = useFlags();
+  const generatedListId = useId();
+  const [localListHidden, setLocalListHidden] = useState(false);
   const [q, setQ] = useState("");
   const [only, setOnly] = useState(false);
   const [sel, setSel] = useState<string | null>(initial ?? null);
   const listRef = useRef<HTMLDivElement>(null);
+  const isListHidden = listHidden ?? localListHidden;
+  const onToggleList = toggleList ?? (() => setLocalListHidden(hidden => !hidden));
   useEffect(() => { if (initial) listRef.current?.querySelector(".on")?.scrollIntoView({ block: "nearest" }); }, [initial]);
   const flaggedIds = useMemo(() => new Set(flags.filter(f => f.kind === kind).map(f => f.id)), [flags, kind]);
   const list = items.filter(x => (!q || search(x).toLowerCase().includes(q.trim().toLowerCase())) && (!only || flaggedIds.has(idOf(x))));
@@ -56,9 +61,12 @@ export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeh
         <input type="search" value={q} onChange={e => setQ(e.target.value)} placeholder={placeholder} aria-label="Search" />
         <label className="ks-only"><input type="checkbox" checked={only} onChange={e => setOnly(e.target.checked)} /> ⚑ only flagged</label>
         <span className="ks-count">{list.length} / {items.length}</span>
+        <button type="button" className="ks-list-toggle" aria-expanded={!isListHidden} aria-controls={generatedListId} onClick={onToggleList}>
+          {isListHidden ? `Show ${listLabel}` : `Hide ${listLabel}`}
+        </button>
       </div>
-      <div className="ks-body">
-        <div className="ks-list" role="listbox" ref={listRef}>
+      <div className={`ks-body${isListHidden ? " ks-body-list-hidden" : ""}`}>
+        <div className="ks-list" id={generatedListId} role="listbox" ref={listRef}>
           {list.map(x => (
             <button key={idOf(x)} role="option" aria-selected={cur === x} className={cur === x ? "on" : ""} onClick={() => setSel(idOf(x))}>
               {label(x)}{flaggedIds.has(idOf(x)) && <span className="ks-flagdot">⚑</span>}
@@ -138,6 +146,7 @@ export const WordBook: React.FC = () => {
   const S = useSa();
   const [g, setG] = useState("all");
   const [end, setEnd] = useState("all");
+  const [listHidden, setListHidden] = useState(false);
   const isHal = (w: Word) => w.w.endsWith("्");
   const items = WORDS.filter(w => (g === "all" || w.g === g) && (end === "all" || (end === "hal") === isHal(w)));
   const count = (gg: string, ee: string) => WORDS.filter(w => (gg === "all" || w.g === gg) && (ee === "all" || (ee === "hal") === isHal(w))).length;
@@ -147,6 +156,7 @@ export const WordBook: React.FC = () => {
       <div className="ks-chips gr-filter">{GENDERS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${g === k ? "on" : ""}`} onClick={() => setG(k)} title={en}>{S(sa)} <small>({count(k, end)})</small></button>)}</div>
       <div className="ks-chips gr-filter">{ENDS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${end === k ? "on" : ""}`} onClick={() => setEnd(k)} title={en}>{S(sa)} <small>({count(g, k)})</small></button>)}</div>
       <ListDetail key={g + end} items={items} idOf={w => w.id} kind="word" placeholder="Search: राम, rāma, boy, బాలుడు…"
+        listHidden={listHidden} toggleList={() => setListHidden(hidden => !hidden)} listLabel="shabda list"
         search={w => [w.w, w.iast, w.d[0]?.[0], ...Object.values(w.m ?? {}).map(m => m[0])].join(" ")}
         label={w => <><span className="ks-l-sa">{S(w.d[0]?.[0] || w.w)}</span><span className="ks-l-en">{wordMeaning(w, lang).split(";")[0]}</span><span className="ks-l-kind">{S(wordKind(w)[0])}</span>{w.ch > 0 && <span className="ks-l-ch" title="regenerated forms">🔁{w.ch}</span>}</>}
         detail={w => <WordDetail w={w} />} />
