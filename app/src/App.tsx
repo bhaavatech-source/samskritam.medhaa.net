@@ -5,13 +5,14 @@ import { GrammarBook } from "./kosha/Grammar";
 import { Sambhashanam } from "./speak/Sambhashanam";
 import { Play } from "./play/Play";
 import { SearchAnything } from "./SearchAnything";
+import { SamskritaVak } from "./vak/SamskritaVak";
 import { FlagDialog } from "./FlagUI";
 import { openFlag } from "./flags";
 
 // ── the game's name, in one place ──
 export const APP_NAME = { sa: "संस्कृतम्", en: "Saṃskṛtam", tagline: "Learn Saṃskṛtam by playing — words, forms and sentences" };
 
-type View = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar" | "search";
+type View = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar" | "vak" | "search";
 type NavItem =
   | { type: "view"; v: View; icon: string; sa: string; en: string }
   | { type: "link"; href: string; icon: string; sa: string; en: string };
@@ -25,6 +26,7 @@ const NAV: NavItem[] = [
   { type: "view", v: "sentences", icon: "💬", sa: "वाक्यकोशः", en: "Sentences" },
   { type: "view", v: "grammar",   icon: "🔗", sa: "व्याकरणम्",  en: "Grammar" },
   { type: "link", href: "https://medhaa.net/games-static/devanagari-game/index.html", icon: "🪷", sa: "अक्षराभ्यासः", en: "Akṣarābhyāsaḥ" },
+  { type: "view", v: "vak", icon: "🔊", sa: "संस्कृतवाक्", en: "Samskrita-vāk" },
   { type: "view", v: "search", icon: "🔎", sa: "अन्वेषणम्", en: "Search Anything" },
 ];
 
@@ -55,7 +57,7 @@ const Backdrop: React.FC = () => (
 const readHash = (): View => {
   const h = location.hash.slice(1).split("/")[0];   // "#speak/2-03" → speak
   // "#game" was the old यात्रा, now part of क्रीडाङ्गणम्
-  return (["learn", "play", "speak", "words", "verbs", "sentences", "grammar", "search"] as View[]).includes(h as View) ? (h as View) : "play";
+  return (["learn", "play", "speak", "words", "verbs", "sentences", "grammar", "vak", "search"] as View[]).includes(h as View) ? (h as View) : "play";
 };
 
 const App: React.FC = () => {
@@ -113,6 +115,7 @@ const App: React.FC = () => {
         : view === "verbs" ? <VerbBook />
         : view === "sentences" ? <SentenceBook />
         : view === "grammar" ? <GrammarBook />
+        : view === "vak" ? <SamskritaVak />
         : view === "search" ? <SearchAnything onNavigate={setView} />
         : <Play />}
 
