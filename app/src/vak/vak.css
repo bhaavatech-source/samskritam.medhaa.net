@@ -1,0 +1,305 @@
+﻿.vak-page {
+  width: 100%;
+  max-width: 850px;
+  margin: 24px auto 40px;
+  padding: 0 12px;
+  color: #1e2638;
+  font-family: "Poppins", "Noto Sans Devanagari", sans-serif;
+}
+
+.vak-hero {
+  text-align: center;
+  padding: 24px 12px 28px;
+}
+
+.vak-icon {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.vak-eyebrow {
+  color: #7c3aed;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+}
+
+.vak-hero h2 {
+  margin: 8px 0 0;
+  color: #9a3412;
+  font-family: "Noto Sans Devanagari", sans-serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+}
+
+.vak-subtitle {
+  color: #6d28d9;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.vak-tagline {
+  margin-top: 10px;
+  color: #526079;
+  font-size: 1rem;
+}
+
+.vak-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 17px;
+  padding: 7px 13px;
+  border-radius: 30px;
+  background: rgba(255,255,255,.75);
+  color: #526079;
+  font-size: .78rem;
+  border: 1px solid rgba(15,23,42,.1);
+}
+
+.vak-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #94a3b8;
+}
+
+.vak-status.is-online .vak-status-dot {
+  background: #16a34a;
+}
+
+.vak-status.is-offline .vak-status-dot {
+  background: #dc2626;
+}
+
+.vak-card,
+.vak-result {
+  padding: clamp(18px, 4vw, 30px);
+  border: 1px solid rgba(99,102,241,.17);
+  border-radius: 22px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 12px 35px rgba(59,46,110,.07);
+}
+
+.vak-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.vak-card-heading h3,
+.vak-result h3 {
+  color: #3730a3;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.vak-card-heading p,
+.vak-result-heading p {
+  margin-top: 4px;
+  color: #64748b;
+  font-size: .85rem;
+}
+
+.vak-voice {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 13px;
+  border-radius: 30px;
+  background: #f3e8ff;
+  color: #6b21a8;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.vak-label {
+  display: block;
+  margin-bottom: 9px;
+  color: #42527b;
+  font-size: .88rem;
+  font-weight: 600;
+}
+
+.vak-textarea {
+  display: block;
+  width: 100%;
+  min-height: 170px;
+  resize: vertical;
+  padding: 18px;
+  border: 1.5px solid #c7d2fe;
+  border-radius: 15px;
+  background: #fff;
+  color: #1e2638;
+  font-family: "Noto Sans Devanagari", "Noto Sans Telugu", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.9;
+  outline: none;
+}
+
+.vak-textarea:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139,92,246,.12);
+}
+
+.vak-textarea::placeholder {
+  color: #a1a1aa;
+}
+
+.vak-input-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 9px;
+  color: #94a3b8;
+  font-size: .75rem;
+}
+
+.vak-example {
+  padding: 5px 0;
+  border: 0;
+  background: transparent;
+  color: #6d28d9;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.vak-example:hover {
+  text-decoration: underline;
+}
+
+.vak-generate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  margin-top: 23px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 50px;
+  background: linear-gradient(110deg, #7c3aed, #c026d3, #ec4899);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(124,58,237,.2);
+  transition: transform .15s, opacity .15s;
+}
+
+.vak-generate:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.vak-generate:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.vak-spinner {
+  width: 17px;
+  height: 17px;
+  border: 2px solid rgba(255,255,255,.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: vakSpin .7s linear infinite;
+}
+
+@keyframes vakSpin {
+  to { transform: rotate(360deg); }
+}
+
+.vak-error {
+  margin-top: 16px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-size: .88rem;
+  line-height: 1.5;
+}
+
+.vak-result {
+  margin-top: 20px;
+  border-color: rgba(22,163,74,.25);
+}
+
+.vak-result-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 20px;
+}
+
+.vak-result-icon {
+  font-size: 1.8rem;
+}
+
+.vak-audio {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.vak-audio-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  color: #64748b;
+  font-size: .78rem;
+  margin-top: 12px;
+}
+
+.vak-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background: #166534;
+  color: white;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.vak-download:hover {
+  background: #14532d;
+}
+
+.vak-footer {
+  padding: 28px 10px 10px;
+  text-align: center;
+  color: #64748b;
+  font-size: .78rem;
+}
+
+@media (max-width: 520px) {
+  .vak-page {
+    margin-top: 12px;
+  }
+
+  .vak-card-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .vak-textarea {
+    font-size: 1.1rem;
+    padding: 13px;
+  }
+
+  .vak-result-heading {
+    align-items: flex-start;
+  }
+}
