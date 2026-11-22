@@ -1,0 +1,1510 @@
+{
+  "project": "Saṁskṛtamedhā (संस्कृतमेधा)",
+  "target_audience": "School Children (Classes 6–12 / CBSE / ICSE / State Boards / Samskrita Bharati)",
+  "curriculum_version": "2.0-Production",
+  "title": "बालसंस्कृतम् · School Sanskrit Curriculum & Interactive Quest Engine",
+  "description": "Comprehensive pedagogical foundation for school students covering Kāraka & Upapada Vibhakti, 5 Core Lakāras, Sanskrit Numerals 1–100, Time-telling (Ghaṭikā), Daily Avyayas, Basic Voice Transformation, and Story/Sentence Builders.",
+  "modules": [
+    {
+      "module_id": "SCH-MOD-01",
+      "name_sa": "कारकम् एवं उपपद-विभक्तयः",
+      "name_en": "Kāraka & Upapada Vibhakti (Case Governance)",
+      "description_en": "Master the 7 cases and special governing words (सह, नमः, विना, प्रति, भीत्रार्थ, अलम्, रुच, etc.)",
+      "grammar_rules_summary": [
+        {
+          "vibhakti": "द्वितीया (Accusative)",
+          "karaka": "कर्म कारक (Direct Object)",
+          "key_upapadas": [
+            "प्रति (towards)",
+            "विना (without)",
+            "उभयतः (both sides)",
+            "परितः / सर्वतः (around / on all sides)",
+            "धिक् (woe to)",
+            "अनु (behind/after)",
+            "अन्तरेण (without)"
+          ],
+          "examples": [
+            "छात्रः विद्यालयं प्रति गच्छति।",
+            "ग्रामम् उभयतः वृक्षाः सन्ति।",
+            "श्रमं विना विद्या न भवति।",
+            "धिक् मूर्खम्।"
+          ]
+        },
+        {
+          "vibhakti": "तृतीया (Instrumental)",
+          "karaka": "करण कारक (Instrument) / अनुक्त कर्ता",
+          "key_upapadas": [
+            "सह / साकम् / सार्धम् (along with)",
+            "विना (without)",
+            "अलम् (निषेधार्थक - stop / enough)",
+            "येनाङ्गविकारः (defective limb)",
+            "प्रकृत्यादिभ्य उपसङ्ख्यानम् (by nature)"
+          ],
+          "examples": [
+            "रामः मित्रेण सह क्रीडति।",
+            "अलम् विवादेन।",
+            "सः पादेन खञ्जः अस्ति।",
+            "बालकः कलमेन लिखति।",
+            "सः प्रकृत्या सरलः अस्ति।"
+          ]
+        },
+        {
+          "vibhakti": "चतुर्थी (Dative)",
+          "karaka": "सम्प्रदान कारक (Recipient / Beneficiary)",
+          "key_upapadas": [
+            "नमः (salutations)",
+            "स्वस्ति (well-being)",
+            "अलम् (पर्याप्तार्थक - sufficient)",
+            "रुच्यर्थानां प्रीयमाणः (like / pleasing)",
+            "क्रुध् / द्रुह् (angry at)"
+          ],
+          "examples": [
+            "श्रीगणेशाय नमः।",
+            "प्रजाभ्यः स्वस्ति।",
+            "बालकाय मोदकं रोचते।",
+            "पिता पुत्राय क्रुध्यति।",
+            "मल्लः मल्लाय अलम्।"
+          ]
+        },
+        {
+          "vibhakti": "पञ्चमी (Ablative)",
+          "karaka": "अपादान कारक (Source / Separation)",
+          "key_upapadas": [
+            "विना / ऋते (without)",
+            "बहिः (outside)",
+            "पूर्वम् (before)",
+            "अनन्तरम् (after)",
+            "भीत्रार्थानां भयहेतुः (fear / protection)",
+            "प्रमाद / जुगुप्सा (abstain / err)"
+          ],
+          "examples": [
+            "वृक्षात् पत्रं पतति।",
+            "बालकः सिंहात् बिभेति।",
+            "ग्रामात् बहिः उपवनम् अस्ति।",
+            "ज्ञानात् ऋते मुक्तिः नास्ति।",
+            "सः पापात् जुगुप्सते।"
+          ]
+        },
+        {
+          "vibhakti": "षष्ठी (Genitive)",
+          "karaka": "सम्बन्ध (Relation)",
+          "key_upapadas": [
+            "उपरि (above)",
+            "अधः (below)",
+            "पुरतः (in front)",
+            "पृष्ठतः (behind)",
+            "वामतः (left)",
+            "दक्षिणतः (right)",
+            "निर्धारणे (among)"
+          ],
+          "examples": [
+            "वृक्षस्य उपरि खगाः सन्ति।",
+            "विद्यालयस्य पुरतः क्रीडाङ्गणम् अस्ति।",
+            "रामस्य अनुजः लक्ष्मणः।",
+            "कवीनां कालिदासः श्रेष्ठः।"
+          ]
+        },
+        {
+          "vibhakti": "सप्तमी (Locative)",
+          "karaka": "अधिकरण कारक (Location / Locus)",
+          "key_upapadas": [
+            "कुशलः / निपुणः / प्रवीणः (skilled in)",
+            "विश्वस् (trust)",
+            "स्निह् (affection)"
+          ],
+          "examples": [
+            "सः संस्कृते कुशलः अस्ति।",
+            "माता पुत्रे स्नेह्यति।",
+            "वने सिंहाः वसन्ति।",
+            "सज्जनः सर्वस्मिन् विश्वसिति।"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "id": "SCH-KV-001",
+          "prompt_sa": "उचित-विभक्त्या रिक्तस्थानं पूरयत: 'जनकः ______ सह आपणं गच्छति।' (पुत्र)",
+          "prompt_en": "Fill in the blank with the correct case: 'The father goes to the market with his son.'",
+          "options": [
+            {
+              "text": "पुत्रेण",
+              "is_correct": true
+            },
+            {
+              "text": "पुत्रम्",
+              "is_correct": false
+            },
+            {
+              "text": "पुत्राय",
+              "is_correct": false
+            },
+            {
+              "text": "पुत्रात्",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "सहार्थे तृतीया (तृतीया विभक्तिः 'सह' शब्दयोगे भवति)",
+          "explanation_en": "The preposition 'saha' (with) mandates the instrumental case (tṛtīyā): 'putreṇa'.",
+          "explanation_hi": "'सह' शब्द के योग में तृतीया विभक्ति का प्रयोग होता है, अतः 'पुत्रेण' शुद्ध है।",
+          "explanation_te": "'సహ' అను ఉపపదముతో తృతీయా విభక్తి వచ్చును (పుత్రేణ).",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-002",
+          "prompt_sa": "'______ नमः।' (सरस्वती-शब्दस्य उचितं रूपं चिनुत)",
+          "prompt_en": "Select the correct form: 'Salutations to Goddess Sarasvati.'",
+          "options": [
+            {
+              "text": "सरस्वत्यै",
+              "is_correct": true
+            },
+            {
+              "text": "सरस्वतीम्",
+              "is_correct": false
+            },
+            {
+              "text": "सरस्वत्याः",
+              "is_correct": false
+            },
+            {
+              "text": "सरस्वत्या",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "नमःस्वस्तिस्वाहा... सूत्रेण 'नमः' योगे चतुर्थी",
+          "explanation_en": "The word 'namaḥ' governs the dative case (caturthī): 'sarasvatyai'.",
+          "explanation_hi": "'नमः' के योग में चतुर्थी विभक्ति होती है: सरस्वत्यै नमः।",
+          "explanation_te": "'నమః' అను శబ్దమునకు చతుర్థీ విభక్తి వచ్చును: సరస్వత్యై నమః.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-003",
+          "prompt_sa": "'बालकः ______ बिभेति।' (कुकुर-शब्दस्य उचितं रूपं किम्?)",
+          "prompt_en": "What is the correct form: 'The boy is afraid of the dog'?",
+          "options": [
+            {
+              "text": "कुकुरात्",
+              "is_correct": true
+            },
+            {
+              "text": "कुकुरम्",
+              "is_correct": false
+            },
+            {
+              "text": "कुकुरेण",
+              "is_correct": false
+            },
+            {
+              "text": "कुकुराय",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "भीत्रार्थानां भयहेतुः (पञ्चमी)",
+          "explanation_en": "Verbs of fear (√bhī) govern the ablative case (pañcamī) for the source of fear: 'kukurāt'.",
+          "explanation_hi": "भय के कारण में पञ्चमी विभक्ति होती है (भीत्रार्थानां भयहेतुः): कुकुरात्।",
+          "explanation_te": "భయమును కలిగించు వస్తువునకు పంచమీ విభక్తి వచ్చును: కుకురాత్.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-004",
+          "prompt_sa": "'अलम् ______।' (विवाद-शब्दस्य उचितं रूपं किम्? - निषेधार्थे)",
+          "prompt_en": "Fill in the blank to mean 'Stop arguing!' (Alam in the sense of prohibition)",
+          "options": [
+            {
+              "text": "विवादेन",
+              "is_correct": true
+            },
+            {
+              "text": "विवादम्",
+              "is_correct": false
+            },
+            {
+              "text": "विवादाय",
+              "is_correct": false
+            },
+            {
+              "text": "विवादात्",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "निषेधार्थे 'अलम्' योगे तृतीया",
+          "explanation_en": "When 'alam' denotes prohibition ('stop / no more'), it takes the instrumental: 'vivādena'.",
+          "explanation_hi": "निषेध या रोकने के अर्थ में 'अलम्' के साथ तृतीया होती है: अलम् विवादेन।",
+          "explanation_te": "నివారణార్థములో 'అలమ్' శబ్దముతో తృతీయ వచ్చును: వివాదేన.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-005",
+          "prompt_sa": "'रोचते' क्रियायोगे कस्य कारकस्य प्रयोगः भवति? 'बालकाय दुग्धं रोचते।'",
+          "prompt_en": "Which case is used with the verb 'rocate' (to please/like)?",
+          "options": [
+            {
+              "text": "चतुर्थी (सम्प्रदानम्)",
+              "is_correct": true
+            },
+            {
+              "text": "द्वितीया (कर्म)",
+              "is_correct": false
+            },
+            {
+              "text": "तृतीया (करणम्)",
+              "is_correct": false
+            },
+            {
+              "text": "पञ्चमी (अपादानम्)",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "रुच्यर्थानां प्रीयमाणः (१.४.३३)",
+          "explanation_en": "The person who is pleased by something takes the dative case (caturthī): 'bālakāya'.",
+          "explanation_hi": "रुचि अर्थ वाली धातुओं में जिसे अच्छा लगे उसमें चतुर्थी होती है: बालकाय।",
+          "explanation_te": "రుచ్యర్థక ధాతువులలో సంతోషించువానికి చతుర్థీ విభక్తి వచ్చును: బాలకాయ.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-006",
+          "prompt_sa": "'सः ______ खञ्जः अस्ति।' (पाद-शब्दस्य रूपं चिनुत)",
+          "prompt_en": "Fill in: 'He is lame in one leg.'",
+          "options": [
+            {
+              "text": "पादेन",
+              "is_correct": true
+            },
+            {
+              "text": "पादम्",
+              "is_correct": false
+            },
+            {
+              "text": "पादाय",
+              "is_correct": false
+            },
+            {
+              "text": "पादात्",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "येनाङ्गविकारः (२.३.२० - तृतीया)",
+          "explanation_en": "Defective body parts take the instrumental case by 'yenāṅgavikāraḥ': 'pādena'.",
+          "explanation_hi": "जिस अङ्ग में विकार हो, उसमें तृतीया विभक्ति होती है: पादेन खञ्जः।",
+          "explanation_te": "లోపమున్న అంగమును సూచించుటకు తృతీయా విభక్తి వచ్చును: పాదేన.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-007",
+          "prompt_sa": "'नदीं ______ वृक्षाः सन्ति।' (उभयतः योगे उचितं रूपम्)",
+          "prompt_en": "'There are trees on both sides of the river.' (Select case governed by 'ubhBorder: उभयतः')",
+          "options": [
+            {
+              "text": "द्वितीया (नदीम्)",
+              "is_correct": true
+            },
+            {
+              "text": "तृतीया (नद्या)",
+              "is_correct": false
+            },
+            {
+              "text": "चतुर्थी (नद्यै)",
+              "is_correct": false
+            },
+            {
+              "text": "षष्ठी (नद्याः)",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "उभयतस्परितःसमयानिकषाहाप्रतियोगेऽपि (द्वितीया)",
+          "explanation_en": "The words 'ubhayataḥ' (both sides) and 'paritaḥ' govern the accusative case: 'nadīm'.",
+          "explanation_hi": "'उभयतः' और 'परितः' के योग में द्वितीया विभक्ति होती है: नदीम् उभयतः।",
+          "explanation_te": "'ఉభయతః' అను శబ్దముతో ద్వితీయా విభక్తి వచ్చును: నదీమ్.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-008",
+          "prompt_sa": "'वृक्षात् ______ पतति।' (अपादानकारके उचितं पदम्)",
+          "prompt_en": "'A fruit falls from the tree.' (Identify the source of separation)",
+          "options": [
+            {
+              "text": "फलम् (प्रथमा - कर्ता)",
+              "is_correct": true
+            },
+            {
+              "text": "फलेन",
+              "is_correct": false
+            },
+            {
+              "text": "फलाय",
+              "is_correct": false
+            },
+            {
+              "text": "फले",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "ध्रुवमपायेऽपादानम् - अपादाने पञ्चमी (वृक्षात्)",
+          "explanation_en": "The tree from which separation occurs is in the ablative ('vṛkṣāt'); the falling fruit is the subject ('phalam').",
+          "explanation_hi": "वृक्ष से अलग होने के कारण 'वृक्षात्' में पञ्चमी है और गिरने वाला 'फलम्' कर्ता है।",
+          "explanation_te": "చెట్టునుండి వేరుపడుటచే 'వృక్షాత్' పంచమి, పడునది 'ఫలమ్' ప్రథమ.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-009",
+          "prompt_sa": "'सः पठने ______ अस्ति।' (सप्तमीयोगे उचितं विशेषणम्)",
+          "prompt_en": "'He is skilled in studying.' (Select suitable adjective)",
+          "options": [
+            {
+              "text": "कुशलः / निपुणः",
+              "is_correct": true
+            },
+            {
+              "text": "भीतवान्",
+              "is_correct": false
+            },
+            {
+              "text": "क्रुद्धः",
+              "is_correct": false
+            },
+            {
+              "text": "प्रति",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "युक्तप्रधानाभ्यां सप्तमी (कुशल/निपुण योगे सप्तमी)",
+          "explanation_en": "Adjectives signifying skill or proficiency (kuśala, nipuṇa, pravīṇa) govern the locative case: 'paṭhane'.",
+          "explanation_hi": "'कुशल' अथवा 'निपुण' शब्दों के योग में सप्तमी विभक्ति होती है।",
+          "explanation_te": "'కుశల / నిపుణ' పదములతో సప్తమీ విభక్తి వచ్చును: పఠనే కుశలః.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-010",
+          "prompt_sa": "'गृहस्य ______ उपवनम् अस्ति।' (षष्ठीविभक्तिं सूचयति यत् पदम्)",
+          "prompt_en": "'There is a garden in front of the house.'",
+          "options": [
+            {
+              "text": "पुरतः / पृष्ठतः",
+              "is_correct": true
+            },
+            {
+              "text": "सह",
+              "is_correct": false
+            },
+            {
+              "text": "प्रति",
+              "is_correct": false
+            },
+            {
+              "text": "नमः",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "दिक्शब्देभ्यः षष्ठी (पुरतः, पृष्ठतः, उपरि, अधः योगे षष्ठी)",
+          "explanation_en": "Locational spatial prepositions like 'purataḥ' (in front) and 'pṛṣṭhataḥ' govern the genitive case: 'gṛhasya'.",
+          "explanation_hi": "पुरतः, पृष्ठतः, उपरि, अधः आदि के योग में षष्ठी विभक्ति होती है: गृहस्य पुरतः।",
+          "explanation_te": "పురతః, పృష్ఠతః మొదలగు పదములతో షష్ఠీ విభక్తి వచ్చును: గృహస్య.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-011",
+          "prompt_sa": "'विद्यां ______ जीवनं व्यर्थम्।' (विना-शब्दयोगे का का विभक्तिः भवितुमर्हति?)",
+          "prompt_en": "Which three cases can be optionally governed by the word 'vinā' (without)?",
+          "options": [
+            {
+              "text": "द्वितीया, तृतीया, पञ्चमी च",
+              "is_correct": true
+            },
+            {
+              "text": "प्रथमा, द्वितीया, तृतीया",
+              "is_correct": false
+            },
+            {
+              "text": "चतुर्थी, पञ्चमी, षष्ठी",
+              "is_correct": false
+            },
+            {
+              "text": "केवलं द्वितीया",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "पृथग्विनानानाभिस्तृतीयाऽन्यतरस्याम् (२.३.३२ - द्वितीया, तृतीया, पञ्चमी)",
+          "explanation_en": "The word 'vinā' optionally takes the 2nd (vidyām vinā), 3rd (vidyayā vinā), or 5th (vidyāyāḥ vinā) case.",
+          "explanation_hi": "'विना' के योग में द्वितीया, तृतीया और पञ्चमी तीनों विभक्तियाँ होती हैं।",
+          "explanation_te": "'వినా' శబ్దముతో ద్వితీయా, తృతీయా, పంచమీ విభక్తులు వచ్చును.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-012",
+          "prompt_sa": "'क्रोध' क्रियायोगे यं प्रति कोपः तस्मिन् का विभक्तिः? 'स्वामी ______ क्रुध्यति।' (सेवक)",
+          "prompt_en": "When anger (√krudh) is directed towards someone, what case is applied to that person?",
+          "options": [
+            {
+              "text": "चतुर्थी (सेवकाय)",
+              "is_correct": true
+            },
+            {
+              "text": "द्वितीया (सेवकम्)",
+              "is_correct": false
+            },
+            {
+              "text": "तृतीया (सेवकेन)",
+              "is_correct": false
+            },
+            {
+              "text": "षष्ठी (सेवकस्य)",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "क्रुधद्रुहेर्ष्यासूयार्थानां यं प्रति कोपः (१.४.३७)",
+          "explanation_en": "The person against whom anger is directed takes the dative case (caturthī): 'sevakāya'.",
+          "explanation_hi": "क्रोध, द्रोह, ईर्ष्या जिसके प्रति की जाए, उसमें चतुर्थी होती है: सेवकाय।",
+          "explanation_te": "కోపము ఎవరిపై చూపబడునో వారికి చతుర్థీ విభక్తి వచ్చును: సేవకాయ.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-013",
+          "prompt_sa": "'धिक् ______!' (धिक्-शब्दयोगे द्वितीयाविभक्तेः रूपं चिनुत)",
+          "prompt_en": "'Woe to the wicked!' (Select the accusative form governed by 'dhik')",
+          "options": [
+            {
+              "text": "दुर्जनम्",
+              "is_correct": true
+            },
+            {
+              "text": "दुर्जनाय",
+              "is_correct": false
+            },
+            {
+              "text": "दुर्जनस्य",
+              "is_correct": false
+            },
+            {
+              "text": "दुर्जनः",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "उभयतस्परितःसमयानिकषाहाप्रतियोगेषु धिक्-योगे द्वितीया",
+          "explanation_en": "The interjection 'dhik' (woe/shame upon) governs the accusative case (dvitīyā): 'durjanam'.",
+          "explanation_hi": "'धिक्' शब्द के योग में द्वितीया विभक्ति होती है: धिक् दुर्जनम्।",
+          "explanation_te": "'ధిక్' శబ్దముతో ద్వితీయా విభక్తి వచ్చును: దుర్జనమ్.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-014",
+          "prompt_sa": "'ज्ञानात् ______ मुक्तिः न भवति।' (पञ्चमीविभक्ति-सूचकम् अव्ययम्)",
+          "prompt_en": "'There is no liberation without knowledge.' (Select word governing ablative)",
+          "options": [
+            {
+              "text": "ऋते / विना",
+              "is_correct": true
+            },
+            {
+              "text": "प्रति",
+              "is_correct": false
+            },
+            {
+              "text": "सह",
+              "is_correct": false
+            },
+            {
+              "text": "नमः",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "अन्यारादितरर्तेदिक्शब्दाञ्चूत्तरपदाजाहियुक्ते (२.३.२९ - पञ्चमी)",
+          "explanation_en": "The word 'ṛte' (without/except) strictly governs the ablative case: 'jñānāt ṛte'.",
+          "explanation_hi": "'ऋते' (बिना) शब्द के योग में पञ्चमी विभक्ति होती है: ज्ञानात् ऋते।",
+          "explanation_te": "'ఋతే' (లేకుండా) శబ్దముతో పంచమీ విభక్తి వచ్చును: జ్ఞానాత్ ఋతే.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-015",
+          "prompt_sa": "'सज्जनः सर्वस्मिन् ______।' (सप्तमीयोगे उचितं क्रियापदम्)",
+          "prompt_en": "'The noble person trusts everyone.' (Select verb governing locative)",
+          "options": [
+            {
+              "text": "विश्वसिति",
+              "is_correct": true
+            },
+            {
+              "text": "बिभेति",
+              "is_correct": false
+            },
+            {
+              "text": "क्रुध्यति",
+              "is_correct": false
+            },
+            {
+              "text": "रोचते",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "विश्वस्-धातुयोगे सप्तमी",
+          "explanation_en": "The verb 'viśvasiti' (trusts) governs the locative case on the entity trusted: 'sarvasmin'.",
+          "explanation_hi": "विश्वास करने के अर्थ में सप्तमी विभक्ति होती है: सर्वस्मिन् विश्वसिति।",
+          "explanation_te": "విశ్వాసార్థములో సప్తమీ విభక్తి వచ్చును: సర్వస్మిన్ విశ్వసితి.",
+          "points": 10
+        },
+        {
+          "id": "SCH-KV-016",
+          "prompt_sa": "'कवीनां कालिदासः श्रेष्ठः' - अत्र कस्य सूत्रस्य प्रयोगः अस्ति?",
+          "prompt_en": "'Kalidasa is the foremost among poets.' - Which sūtra governs this genitive/locative of selection?",
+          "options": [
+            {
+              "text": "यतश्च निर्धारणम् (२.३.४१)",
+              "is_correct": true
+            },
+            {
+              "text": "षष्ठी शेषे (२.३.५०)",
+              "is_correct": false
+            },
+            {
+              "text": "आधारोऽधिकरणम् (१.४.४५)",
+              "is_correct": false
+            },
+            {
+              "text": "सहार्थे तृतीया (२.३.१९)",
+              "is_correct": false
+            }
+          ],
+          "rule_applied": "यतश्च निर्धारणम् (षष्ठी / सप्तमी निर्धारणे)",
+          "explanation_en": "When an individual is selected as supreme from a group by jāti, guṇa, or kriyā, the group takes genitive or locative: 'kavīnām / kaviṣu'.",
+          "explanation_hi": "समुदाय में से किसी एक की विशेषता बताने पर षष्ठी अथवा सप्तमी होती है (यतश्च निर्धारणम्)।",
+          "explanation_te": "సమూహమునుండి ఒకనిని విశిష్టముగా ఎన్నుకొనునపుడు షష్ఠి లేదా సప్తమి వచ్చును.",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "module_id": "SCH-MOD-02",
+      "name_sa": "संस्कृत-सङ्ख्याः एवं समय-बोधनम् (घटिका)",
+      "name_en": "Sanskrit Numerals & Time-Telling (Clock Reading)",
+      "description_en": "Master Sanskrit numbers 1 to 100, gender declensions for 1 to 4, and analog clock reading (सपाद, सार्ध, पादोन).",
+      "grammar_rules_summary": [
+        {
+          "concept": "सङ्ख्या-लिङ्ग-व्यवस्था (Numbers 1-4 Gender Agreement)",
+          "details": [
+            {
+              "number": 1,
+              "masculine": "एकः",
+              "feminine": "एका",
+              "neuter": "एकम्"
+            },
+            {
+              "number": 2,
+              "masculine": "द्वौ",
+              "feminine": "द्वे",
+              "neuter": "द्वे"
+            },
+            {
+              "number": 3,
+              "masculine": "त्रयः",
+              "feminine": "तिस्रः",
+              "neuter": "त्रीणि"
+            },
+            {
+              "number": 4,
+              "masculine": "चत्वारः",
+              "feminine": "चतस्रः",
+              "neuter": "चत्वारि"
+            }
+          ],
+          "note": "From 5 (पञ्च) onwards, numerals have identical forms across all three genders."
+        },
+        {
+          "concept": "घटिका-समय-बोधनम् (Time-Telling)",
+          "terms": [
+            {
+              "term": "वादनम्",
+              "meaning_en": "o'clock (nominative)",
+              "example": "पञ्चवादनम् (5:00)"
+            },
+            {
+              "term": "वादने",
+              "meaning_en": "at ... o'clock (locative)",
+              "example": "पञ्चवादने (at 5:00)"
+            },
+            {
+              "term": "सपाद",
+              "meaning_en": "quarter past (+15 mins)",
+              "example": "सपाद-पञ्चवादनम् (5:15)"
+            },
+            {
+              "term": "सार्ध",
+              "meaning_en": "half past (+30 mins)",
+              "example": "सार्ध-पञ्चवादनम् (5:30)"
+            },
+            {
+              "term": "पादोन",
+              "meaning_en": "quarter to (-15 mins)",
+              "example": "पादोन-षड्वादनम् (5:45)"
+            }
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "id": "SCH-NUM-001",
+          "prompt_sa": "'त्रयः' इति सङ्ख्या कस्मिन् लिङ्गे प्रयुज्यते? (यथा: त्रयः बालकाः)",
+          "prompt_en": "In which gender is the numeral 'trayaḥ' (three) used?",
+          "options": [
+            {
+              "text": "पुंलिङ्गे",
+              "is_correct": true
+            },
+            {
+              "text": "स्त्रीलिङ्गे (तिस्रः)",
+              "is_correct": false
+            },
+            {
+              "text": "नपुंसकलिङ्गे (त्रीणि)",
+              "is_correct": false
+            },
+            {
+              "text": "सर्वलिङ्गेषु",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "The numeral 3 has gender variants: trayaḥ (M), tisraḥ (F), trīṇi (N).",
+          "explanation_hi": "'३' सङ्ख्या पुंलिङ्ग में 'त्रयः', स्त्रीलिङ्ग में 'तिस्रः' तथा नपुंसकलिङ्ग में 'त्रीणि' होती है।",
+          "explanation_te": "'3' సంఖ్య పుంలింగములో 'త్రయః', స్త్రీలింగములో 'తిస్రః', నపుంసకములో 'త్రీణి'.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-002",
+          "prompt_sa": "उचित-सङ्ख्यापदं चिनुत: 'वाटिकायां ______ बालिके क्रीडतः।' (२)",
+          "prompt_en": "Select the correct form for '2 girls are playing':",
+          "options": [
+            {
+              "text": "द्वे",
+              "is_correct": true
+            },
+            {
+              "text": "द्वौ",
+              "is_correct": false
+            },
+            {
+              "text": "द्वाभ्याम्",
+              "is_correct": false
+            },
+            {
+              "text": "द्वयोः",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Dual feminine of 'dvi' is 'dve', agreeing with 'bālike'.",
+          "explanation_hi": "स्त्रीलिङ्ग द्विवचन में 'द्वे' रूप होता है: द्वे बालिके।",
+          "explanation_te": "స్త్రీలింగ ద్వివచనములో 'ద్వే' వచ్చును: ద్వే బాలికే.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-003",
+          "prompt_sa": "'7:15' इत्यस्य समयस्य कृते संस्कृते किं पदम्?",
+          "prompt_en": "What is the correct Sanskrit expression for '7:15'?",
+          "options": [
+            {
+              "text": "सपाद-सप्तवादनम्",
+              "is_correct": true
+            },
+            {
+              "text": "सार्ध-सप्तवादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "पादोन-अष्टवादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "सप्तवादनम्",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Sapāda' indicates 15 minutes past: Sapāda-saptavādanam.",
+          "explanation_hi": "सपाद = सवा (+१५ मिनट): सपाद-सप्तवादनम्।",
+          "explanation_te": "సపాద = +15 నిమిషములు: సపాద-సప్తవాదనమ్.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-004",
+          "prompt_sa": "'4:30' इत्यस्य समयस्य कृते संस्कृते किं पदम्?",
+          "prompt_en": "What is the correct Sanskrit expression for '4:30'?",
+          "options": [
+            {
+              "text": "सार्ध-चतुर्वादनम्",
+              "is_correct": true
+            },
+            {
+              "text": "सपाद-चतुर्वादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "पादोन-पञ्चवादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "चतुर्वादनम्",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Sārdha' indicates 30 minutes past: Sārdha-caturvādanam.",
+          "explanation_hi": "सार्ध = साढ़े (+३० मिनट): सार्ध-चतुर्वादनम्।",
+          "explanation_te": "సార్ధ = +30 నిమిషములు: సార్ధ-చతుర్వాదనమ్.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-005",
+          "prompt_sa": "'9:45' इत्यस्य समयस्य कृते संस्कृते किं पदम्?",
+          "prompt_en": "What is the correct Sanskrit expression for '9:45'?",
+          "options": [
+            {
+              "text": "पादोन-दशवादनम्",
+              "is_correct": true
+            },
+            {
+              "text": "सपाद-नववादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "सार्ध-नववादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "पादोन-नववादनम्",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Pādona' indicates quarter to (next hour): Pādona-daśavādanam (quarter to 10).",
+          "explanation_hi": "पादोन = पौने (-१५ मिनट अगली घंटी): पादोन-दशवादनम्।",
+          "explanation_te": "పాదోన = -15 నిమిషములు (తరువాతి గంటకు): పాదోన-దశవాదనమ్.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-006",
+          "prompt_sa": "'अहं प्रातः ६:०० ______ उत्तिष्ठामि।' (रिक्तस्थाने समयवाचकं रूपम्)",
+          "prompt_en": "'I wake up in the morning at 6:00.' (Fill in with the locative time expression)",
+          "options": [
+            {
+              "text": "षड्वादने",
+              "is_correct": true
+            },
+            {
+              "text": "षड्वादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "षड्वादनात्",
+              "is_correct": false
+            },
+            {
+              "text": "षड्वादनेन",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "When denoting 'at what time', the locative form 'vādane' is used: 'ṣaḍvādane'.",
+          "explanation_hi": "'कितने बजे' क्रिया के समय में सप्तमी 'वादने' का प्रयोग होता है: षड्वादने।",
+          "explanation_te": "సమయమునందు అనుటకు సప్తమి 'వాదనే' వచ్చును: షడ్వాదనే.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-007",
+          "prompt_sa": "वृक्षे ______ फलानि सन्ति। (४ - नपुंसकलिङ्गे रूपम्)",
+          "prompt_en": "'There are 4 fruits on the tree.' (Select neuter form of 4)",
+          "options": [
+            {
+              "text": "चत्वारि",
+              "is_correct": true
+            },
+            {
+              "text": "चत्वारः",
+              "is_correct": false
+            },
+            {
+              "text": "चतस्रः",
+              "is_correct": false
+            },
+            {
+              "text": "चतुर्षु",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Neuter plural of 'catur' is 'catvāri', agreeing with 'phalāni'.",
+          "explanation_hi": "नपुंसकलिङ्ग में '४' का रूप 'चत्वारि' होता है: चत्वारि फलानि।",
+          "explanation_te": "నపుంసకలింగములో '4' కు 'చత్వారి' రూపము వచ్చును: చత్వారి ఫలాని.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-008",
+          "prompt_sa": "'पञ्चाशत्' इत्यस्य कः अर्थः?",
+          "prompt_en": "What is the numerical value of 'pañcāśat'?",
+          "options": [
+            {
+              "text": "५० (Fifty)",
+              "is_correct": true
+            },
+            {
+              "text": "१५ (Fifteen)",
+              "is_correct": false
+            },
+            {
+              "text": "५ (Five)",
+              "is_correct": false
+            },
+            {
+              "text": "५०० (Five hundred)",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Pañcāśat = 50. (15 = Pañcadaśa).",
+          "explanation_hi": "पञ्चाशत् = ५० (पञ्चदश = १५).",
+          "explanation_te": "పంచాశత్ = 50 (పంచదశ = 15).",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-009",
+          "prompt_sa": "कक्षायां ______ बालिका उपविशति। (१ - स्त्रीलिङ्गे रूपम्)",
+          "prompt_en": "'One girl is sitting in the classroom.' (Select feminine form of 1)",
+          "options": [
+            {
+              "text": "एका",
+              "is_correct": true
+            },
+            {
+              "text": "एकः",
+              "is_correct": false
+            },
+            {
+              "text": "एकम्",
+              "is_correct": false
+            },
+            {
+              "text": "एकेन",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Feminine singular of numeral 1 is 'ekā', agreeing with 'bālikā'.",
+          "explanation_hi": "स्त्रीलिङ्ग एकवचन में '१' का रूप 'एका' होता है: एका बालिका।",
+          "explanation_te": "స్త్రీలింగములో '1' కు 'ఏకా' వచ్చును: ఏకా బాలికా.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-010",
+          "prompt_sa": "उद्याने ______ पुष्पाणि विकसन्ति। (३ - नपुंसकलिङ्गे रूपम्)",
+          "prompt_en": "'Three flowers are blooming in the garden.' (Select neuter form of 3)",
+          "options": [
+            {
+              "text": "त्रीणि",
+              "is_correct": true
+            },
+            {
+              "text": "त्रयः",
+              "is_correct": false
+            },
+            {
+              "text": "तिस्रः",
+              "is_correct": false
+            },
+            {
+              "text": "त्रिभिः",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Neuter plural of numeral 3 is 'trīṇi', agreeing with 'puṣpāṇi'.",
+          "explanation_hi": "नपुंसकलिङ्ग में '३' का रूप 'त्रीणि' होता है: त्रीणि पुष्पाणि।",
+          "explanation_te": "నపుంసకలింగములో '3' కు 'త్రీణి' వచ్చును: త్రీణి పుష్పాణి.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-011",
+          "prompt_sa": "मार्गे ______ महिलाः गच्छन्ति। (४ - स्त्रीलिङ्गे रूपम्)",
+          "prompt_en": "'Four women are walking on the road.' (Select feminine form of 4)",
+          "options": [
+            {
+              "text": "चतस्रः",
+              "is_correct": true
+            },
+            {
+              "text": "चत्वारः",
+              "is_correct": false
+            },
+            {
+              "text": "चत्वारि",
+              "is_correct": false
+            },
+            {
+              "text": "चतुर्षु",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Feminine plural of numeral 4 is 'catasraḥ', agreeing with 'mahilāḥ'.",
+          "explanation_hi": "स्त्रीलिङ्ग में '४' का रूप 'चतस्रः' होता है: चतस्रः महिलाः।",
+          "explanation_te": "స్త్రీలింగములో '4' కు 'చతస్రః' వచ్చును: చతస్రః మహిళాః.",
+          "points": 10
+        },
+        {
+          "id": "SCH-NUM-012",
+          "prompt_sa": "'1:45' इत्यस्य समयस्य कृते संस्कृते किं पदम्?",
+          "prompt_en": "What is the correct Sanskrit expression for '1:45'?",
+          "options": [
+            {
+              "text": "पादोन-द्विवादनम्",
+              "is_correct": true
+            },
+            {
+              "text": "सपाद-एकवादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "सार्ध-एकवादनम्",
+              "is_correct": false
+            },
+            {
+              "text": "पादोन-एकवादनम्",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "1:45 is quarter to 2 (next hour): Pādona-dvivādanam.",
+          "explanation_hi": "१:४५ = पौने दो (अगले घण्टे से १५ मिनट कम): पादोन-द्विवादनम्।",
+          "explanation_te": "1:45 = పాదోన-ద్వివాదనమ్.",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "module_id": "SCH-MOD-03",
+      "name_sa": "पञ्चलकाराः (The 5 School Lakāras)",
+      "name_en": "The 5 Core School Lakāras (Tenses & Moods)",
+      "description_en": "Conjugate and identify verbs across the 5 standard school tenses: Laṭ (Present), Lṛṭ (Future), Loṭ (Imperative), Laṅ (Past), and Vidhiliṅ (Optative).",
+      "lakara_definitions": [
+        {
+          "lakara": "लट् (Present Tense)",
+          "meaning": "वर्तमानकाले (action happening now)",
+          "sample": "पठति, पठतः, पठन्ति"
+        },
+        {
+          "lakara": "लृट् (Simple Future)",
+          "meaning": "भविष्यत्काले (action that will happen)",
+          "sample": "पठिष्यति, पठिष्यतः, पठिष्यन्ति"
+        },
+        {
+          "lakara": "लोट् (Imperative Mood)",
+          "meaning": "आज्ञायां / प्रार्थनायाम् (commands, requests)",
+          "sample": "पठतु, पठताम्, पठन्तु"
+        },
+        {
+          "lakara": "लङ् (Imperfect Past)",
+          "meaning": "अनद्यतन-भूतकाले (past action)",
+          "sample": "अपठत्, अपठताम्, अपठन्"
+        },
+        {
+          "lakara": "विधिलिङ् (Optative / Potential)",
+          "meaning": "विधि / प्रेरणे / सम्भावने (should, ought to, may)",
+          "sample": "पठेत्, पठेताम्, पठेयुः"
+        }
+      ],
+      "challenges": [
+        {
+          "id": "SCH-LAK-001",
+          "prompt_sa": "'सः श्वः विद्यालयं ______।' (गम्-धातोः लृट्-लकारे रूपं चिनुत)",
+          "prompt_en": "Fill in with the future tense (Lṛṭ) of √gam: 'He will go to school tomorrow.'",
+          "options": [
+            {
+              "text": "गमिष्यति",
+              "is_correct": true
+            },
+            {
+              "text": "गच्छति",
+              "is_correct": false
+            },
+            {
+              "text": "अगच्छत्",
+              "is_correct": false
+            },
+            {
+              "text": "गच्छतु",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Future tense (Lṛṭ) of √gam in 3rd person singular is 'gamiṣyati'.",
+          "explanation_hi": "'श्वः' (कल) के साथ लृट् लकार (भविष्यत्काल) का प्रयोग होता है: गमिष्यति।",
+          "explanation_te": "'శ్వః' (రేపు) భవిష్యత్ కాలము కావున లృట్ లకారములో 'గమిష్యతి' వచ్చును.",
+          "points": 10
+        },
+        {
+          "id": "SCH-LAK-002",
+          "prompt_sa": "'छात्राः ह्यः पाठम् ______।' (पठ्-धातोः लङ्-लकारे प्रथमपुरुष-बहुवचने रूपम्)",
+          "prompt_en": "Fill in past tense (Laṅ) plural: 'The students studied the lesson yesterday.'",
+          "options": [
+            {
+              "text": "अपठन्",
+              "is_correct": true
+            },
+            {
+              "text": "अपठत्",
+              "is_correct": false
+            },
+            {
+              "text": "पठन्ति",
+              "is_correct": false
+            },
+            {
+              "text": "पठेयुः",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Past tense (Laṅ) 3rd person plural of √paṭh is 'apaṭhan'.",
+          "explanation_hi": "लङ् लकार प्रथम पुरुष बहुवचन में 'अपठन्' रूप होता है।",
+          "explanation_te": "లంగ్ లకార ప్రథమ పురుష బహువచనములో 'అపఠన్' వచ్చును.",
+          "points": 10
+        },
+        {
+          "id": "SCH-LAK-003",
+          "prompt_sa": "'त्वं सत्यं ______।' (वद्-धातोः लोट्-लकारे मध्यमपुरुष-एकवचने रूपम्)",
+          "prompt_en": "'Speak the truth!' (Imperative / Loṭ 2nd person singular of √vad)",
+          "options": [
+            {
+              "text": "वद",
+              "is_correct": true
+            },
+            {
+              "text": "वदतु",
+              "is_correct": false
+            },
+            {
+              "text": "वदसि",
+              "is_correct": false
+            },
+            {
+              "text": "वदेः",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Imperative (Loṭ) 2nd person singular with 'tvam' is 'vada'.",
+          "explanation_hi": "लोट् लकार मध्यम पुरुष एकवचन में 'वद' होता है: त्वं सत्यं वद।",
+          "explanation_te": "లోట్ లకార మధ్యమ పురుష ఏకవచనములో 'వద' వచ్చును: త్వం సత్యం వద.",
+          "points": 10
+        },
+        {
+          "id": "SCH-LAK-004",
+          "prompt_sa": "'सर्वे सुखिनः ______।' (भू-धातोः लोट्-लकारे रूपम्)",
+          "prompt_en": "'May all be happy!' (Loṭ lakāra plural of √bhū)",
+          "options": [
+            {
+              "text": "भवन्तु",
+              "is_correct": true
+            },
+            {
+              "text": "भवति",
+              "is_correct": false
+            },
+            {
+              "text": "अभवन",
+              "is_correct": false
+            },
+            {
+              "text": "भविष्यन्ति",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Benedictive/Imperative 3rd person plural: 'Sarve bhavantu sukhinaḥ'.",
+          "explanation_hi": "लोट् लकार प्रथम पुरुष बहुवचन में 'भवन्तु' रूप होता है।",
+          "explanation_te": "లోట్ లకార ప్రథమ పురుష బహువచనములో 'భవన్తు' వచ్చును.",
+          "points": 10
+        },
+        {
+          "id": "SCH-LAK-005",
+          "prompt_sa": "'बालकेन प्रतिदिनं विद्यालये ______।' (पठ्-धातोः विधिलिङ्-लकारे रूपम्)",
+          "prompt_en": "'The boy should study every day in school.' (Optative / Vidhiliṅ)",
+          "options": [
+            {
+              "text": "पठेत्",
+              "is_correct": true
+            },
+            {
+              "text": "पठति",
+              "is_correct": false
+            },
+            {
+              "text": "अपठत्",
+              "is_correct": false
+            },
+            {
+              "text": "पठिष्यति",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Vidhiliṅ 3rd person singular expressing duty/advice: 'paṭhet'.",
+          "explanation_hi": "विधिलिङ् लकार प्रथम पुरुष एकवचन में 'पठेत्' रूप होता है।",
+          "explanation_te": "విధిలింగ్ లకార ప్రథమ పురుష ఏకవచనములో 'పఠేత్' వచ్చును.",
+          "points": 10
+        },
+        {
+          "id": "SCH-LAK-006",
+          "prompt_sa": "'वयम् ईश्वरं ______।' (भज्-धातोः लट्-लकारे उत्तमपुरुष-बहुवचने रूपम्)",
+          "prompt_en": "'We worship God.' (Present tense / Laṭ 1st person plural with 'vayam')",
+          "options": [
+            {
+              "text": "भजामः",
+              "is_correct": true
+            },
+            {
+              "text": "भजसि",
+              "is_correct": false
+            },
+            {
+              "text": "भजति",
+              "is_correct": false
+            },
+            {
+              "text": "भजामि",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "First person plural (uttamapuruṣa bahuvacana) with 'vayam' takes ending -āmaḥ: 'bhajāmaḥ'.",
+          "explanation_hi": "उत्तम पुरुष बहुवचन 'वयम्' के साथ 'भजामः' रूप होता है।",
+          "explanation_te": "ఉత్తమ పురుష బహువచనములో 'భజామః' వచ్చును: వయమ్ భజామః.",
+          "points": 10
+        },
+        {
+          "id": "SCH-LAK-007",
+          "prompt_sa": "'सः तत्र चिरं ______।' (स्था-धातोः लट्-लकारे रूपम्)",
+          "prompt_en": "'He stands / stays there for a long time.' (Select present tense form of √sthā)",
+          "options": [
+            {
+              "text": "तिष्ठति",
+              "is_correct": true
+            },
+            {
+              "text": "स्थास्यति",
+              "is_correct": false
+            },
+            {
+              "text": "स्थाति",
+              "is_correct": false
+            },
+            {
+              "text": "तिष्ठाति",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Root √sthā changes to 'tiṣṭha' in the non-future tenses: 'tiṣṭhati'.",
+          "explanation_hi": "स्था धातु का लट् लकार में 'तिष्ठति' रूप बनता है (पाघ्राध्मास्था... सूत्र से तिष्ठादेश)।",
+          "explanation_te": "స్థా ధాతువునకు లట్ లకారములో 'తిష్ఠతి' అగును.",
+          "points": 10
+        },
+        {
+          "id": "SCH-LAK-008",
+          "prompt_sa": "'दृश्' धातोः लृट्-लकारे (भविष्यत्काले) किं रूपं भवति?",
+          "prompt_en": "What is the future tense (Lṛṭ) stem form of root √dṛś (to see)?",
+          "options": [
+            {
+              "text": "द्रक्ष्यति",
+              "is_correct": true
+            },
+            {
+              "text": "पश्यिष्यति",
+              "is_correct": false
+            },
+            {
+              "text": "दर्शिष्यति",
+              "is_correct": false
+            },
+            {
+              "text": "दृशिष्यति",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "In future tense (Lṛṭ), √dṛś does NOT take 'paśya'; it conjugates as 'drakṣyati'.",
+          "explanation_hi": "लृट् लकार में 'दृश्' का रूप 'द्रक्ष्यति' होता है (पश्यिष्यति अशुद्ध है)।",
+          "explanation_te": "లృట్ లకారములో దృశ్ ధాతువునకు 'ద్రక్ష్యతి' వచ్చును.",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "module_id": "SCH-MOD-04",
+      "name_sa": "अव्यय-प्रयोगाः (Everyday Indeclinables)",
+      "name_en": "Everyday Sanskrit Indeclinables & Dialogue Connectors",
+      "description_en": "Master primary communicative indeclinables used in school texts and dialogic storytelling.",
+      "challenges": [
+        {
+          "id": "SCH-AVY-001",
+          "prompt_sa": "'______ रविवासरः अस्ति, अतः श्वः सोमवासरः भविष्यति।' (उचितम् अव्ययं चिनुत)",
+          "prompt_en": "Fill in: 'Today is Sunday, so tomorrow will be Monday.'",
+          "options": [
+            {
+              "text": "अद्य (Today)",
+              "is_correct": true
+            },
+            {
+              "text": "ह्यः (Yesterday)",
+              "is_correct": false
+            },
+            {
+              "text": "श्वः (Tomorrow)",
+              "is_correct": false
+            },
+            {
+              "text": "कदा (When)",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Adya' means today; 'śvaḥ' means tomorrow; 'hyaḥ' means yesterday.",
+          "explanation_hi": "अद्य = आज, श्वः = आने वाला कल, ह्यः = बीता हुआ कल।",
+          "explanation_te": "అద్య = నేడు, శ్వః = రేపు, హ్యః = నిన్న.",
+          "points": 10
+        },
+        {
+          "id": "SCH-AVY-002",
+          "prompt_sa": "'यत्र धर्मः अस्ति, ______ विजयः भवति।' (अव्यय-युग्मं पूरयत)",
+          "prompt_en": "'Where there is righteousness, there is victory.' (Complete correlative pair: yatra...)",
+          "options": [
+            {
+              "text": "तत्र (There)",
+              "is_correct": true
+            },
+            {
+              "text": "कुत्र (Where?)",
+              "is_correct": false
+            },
+            {
+              "text": "सर्वत्र (Everywhere)",
+              "is_correct": false
+            },
+            {
+              "text": "एकत्र (At one place)",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "The correlative of 'yatra' (where) is 'tatra' (there).",
+          "explanation_hi": "'यत्र' (जहाँ) का नित्य-सम्बन्धी अव्यय 'तत्र' (वहाँ) होता है।",
+          "explanation_te": "'యత్ర' (ఎక్కడైతే) కు జంటగా 'తత్ర' (అక్కడ) వచ్చును.",
+          "points": 10
+        },
+        {
+          "id": "SCH-AVY-003",
+          "prompt_sa": "'कूर्मः ______ चलति।' (गतिवाचकम् अव्ययं चिनुत)",
+          "prompt_en": "'The tortoise moves slowly.' (Select speed indeclinable)",
+          "options": [
+            {
+              "text": "शनैः शनैः",
+              "is_correct": true
+            },
+            {
+              "text": "उच्चैः",
+              "is_correct": false
+            },
+            {
+              "text": "सहसा",
+              "is_correct": false
+            },
+            {
+              "text": "वृथा",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Śanaiḥ śanaiḥ' means slowly; 'uccaiḥ' means loudly; 'sahasā' means suddenly.",
+          "explanation_hi": "शनैः = धीरे-धीरे, उच्चैः = ज़ोर से, सहसा = अचानक।",
+          "explanation_te": "శనైః = నెమ్మదిగా, ఉచ్ఛైః = బిగ్గరగా, సహసా = అకస్మాత్తుగా.",
+          "points": 10
+        },
+        {
+          "id": "SCH-AVY-004",
+          "prompt_sa": "'______ विदधीत न क्रियाम्।' (सूक्ति-पूरकं प्रसिद्धम् अव्ययम्)",
+          "prompt_en": "'One should not act rashly/suddenly.' (Complete the famous Kirātārjunīya subhāṣita)",
+          "options": [
+            {
+              "text": "सहसा (Suddenly / Rashly)",
+              "is_correct": true
+            },
+            {
+              "text": "सर्वदा",
+              "is_correct": false
+            },
+            {
+              "text": "उच्चैः",
+              "is_correct": false
+            },
+            {
+              "text": "कदापि",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Sahasā vidadhīta na kriyām' is the celebrated maxim advising against rash action.",
+          "explanation_hi": "'सहसा विदधीत न क्रियाम्' - अचानक बिना विचारे कोई कार्य नहीं करना चाहिए।",
+          "explanation_te": "'సహసా విదధీత న క్రియామ్' - ఆలోచించకుండా అకస్మాత్తుగా ఏ పని చేయరాదు.",
+          "points": 10
+        },
+        {
+          "id": "SCH-AVY-005",
+          "prompt_sa": "'वृथा कलहं ______ कुरु।' (निषेधार्थकम् अव्ययम्)",
+          "prompt_en": "'Do not quarrel in vain!' (Select prohibitive particle used with imperative)",
+          "options": [
+            {
+              "text": "मा (Do not)",
+              "is_correct": true
+            },
+            {
+              "text": "न",
+              "is_correct": false
+            },
+            {
+              "text": "एव",
+              "is_correct": false
+            },
+            {
+              "text": "अपि",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Mā' is used with imperative/injunctive for direct prohibition: 'mā kuru'.",
+          "explanation_hi": "आज्ञा अथवा प्रार्थना में 'मत करो' के लिए 'मा' अव्यय का प्रयोग होता है: मा कुरु।",
+          "explanation_te": "నిషేధార్థములో 'మా' అవ్యయము వచ్చును: మా కురు.",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "module_id": "SCH-MOD-05",
+      "name_sa": "सरल-वाच्य-परिवर्तनम् (Active to Passive Transformation)",
+      "name_en": "Foundational Voice Transformation (Kartari ⇄ Karmani)",
+      "description_en": "Transform everyday active sentences into passive sentences by modifying agent cases and verb conjugations.",
+      "rules": [
+        "Active (कर्तरि): Subject in 1st case (प्रथमा), Object in 2nd case (द्वितीया), Verb agrees with Subject.",
+        "Passive (कर्मणि): Subject in 3rd case (तृतीया), Object in 1st case (प्रथमा), Verb takes -ya- augment + Ātmanepada endings agreeing with Object."
+      ],
+      "challenges": [
+        {
+          "id": "SCH-VOI-001",
+          "prompt_sa": "'बालकः पुस्तकं पठति।' अस्य कर्मणि-प्रयोगे किं रूपं भवति?",
+          "prompt_en": "Transform into passive: 'The boy reads the book.'",
+          "options": [
+            {
+              "text": "बालकेन पुस्तकं पठ्यते।",
+              "is_correct": true
+            },
+            {
+              "text": "बालकेन पुस्तकः पठति।",
+              "is_correct": false
+            },
+            {
+              "text": "बालकः पुस्तकेन पठ्यते।",
+              "is_correct": false
+            },
+            {
+              "text": "बालकाय पुस्तकं रोचते।",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Agent 'bālakaḥ' -> 'bālakena' (3rd case); object 'pustakam' -> 'pustakam' (1st case neuter); verb 'paṭhati' -> 'paṭhyate'.",
+          "explanation_hi": "कर्ता में तृतीया (बालकेन), कर्म में प्रथमा (पुस्तकम्) तथा क्रिया कर्म के अनुसार आत्मनेपद (पठ्यते)।",
+          "explanation_te": "కర్త తృతీయ (బాలకేన), కర్మ ప్రథమ (పుస్తకమ్), క్రియ ఆత్మనేపదము (పఠ్యతే).",
+          "points": 15
+        },
+        {
+          "id": "SCH-VOI-002",
+          "prompt_sa": "'अहं फलं खादामि।' अस्य कर्मणि-प्रयोगे किं रूपम्?",
+          "prompt_en": "Transform into passive: 'I eat the fruit.'",
+          "options": [
+            {
+              "text": "मया फलं खाद्यते।",
+              "is_correct": true
+            },
+            {
+              "text": "माम् फलं खाद्यते।",
+              "is_correct": false
+            },
+            {
+              "text": "मया फलं खादामि।",
+              "is_correct": false
+            },
+            {
+              "text": "मम फलं भवति।",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Aham' becomes 'mayā' (instrumental of asmad); 'khādati' becomes 'khādyate'.",
+          "explanation_hi": "अहम् -> मया (तृतीया), फलम् (प्रथमा), खाद्यते।",
+          "explanation_te": "అహమ్ -> మయా (తృతీయ), ఫలమ్ (ప్రథమ), ఖాద్యతే.",
+          "points": 15
+        },
+        {
+          "id": "SCH-VOI-003",
+          "prompt_sa": "'छात्राः श्लोकान् लिखन्ति।' अस्य कर्मणि-प्रयोगे किं रूपम्?",
+          "prompt_en": "Transform into passive: 'Students write the verses.' (Notice plural object!)",
+          "options": [
+            {
+              "text": "छात्रैः श्लोकाः लिख्यन्ते।",
+              "is_correct": true
+            },
+            {
+              "text": "छात्रैः श्लोकः लिख्यते।",
+              "is_correct": false
+            },
+            {
+              "text": "छात्राः श्लोकैः लिख्यन्ते।",
+              "is_correct": false
+            },
+            {
+              "text": "छात्रेण श्लोकाः लिखति।",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "Agent plural 'chātraiḥ', object becomes nominative plural 'ślokāḥ', so verb must be plural: 'likhyante'!",
+          "explanation_hi": "छात्रैः (तृतीया बहुवचन), श्लोकाः (प्रथमा बहुवचन), क्रिया कर्म के अनुसार बहुवचन 'लिख्यन्ते' होगी।",
+          "explanation_te": "కర్త తృతీయా బహువచనము (ఛాత్రైః), కర్మ ప్రథమా బహువచనము (శ్లోకాః), క్రియ కర్మననుసరించి 'లిఖ్యన్తే' అగును.",
+          "points": 15
+        },
+        {
+          "id": "SCH-VOI-004",
+          "prompt_sa": "'त्वं किं करोषि?' अस्य कर्मणि प्रयोगे किं रूपम्?",
+          "prompt_en": "Transform 'What are you doing?' into passive:",
+          "options": [
+            {
+              "text": "त्वया किं क्रियते?",
+              "is_correct": true
+            },
+            {
+              "text": "त्वया किं करोति?",
+              "is_correct": false
+            },
+            {
+              "text": "त्वाम् किं क्रियते?",
+              "is_correct": false
+            },
+            {
+              "text": "त्वं किं क्रियते?",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Tvam' (nominative) becomes 'tvayā' (instrumental of yuṣmad); 'kṛ' becomes 'kriyate'.",
+          "explanation_hi": "त्वम् -> त्वया (तृतीया), करोषि -> क्रियते।",
+          "explanation_te": "త్వమ్ -> త్వయా (తృతీయ), కరోషి -> క్రియతే.",
+          "points": 15
+        },
+        {
+          "id": "SCH-VOI-005",
+          "prompt_sa": "'बालिका चित्रं पश्यति।' अस्य कर्मणि प्रयोगे किं रूपम्?",
+          "prompt_en": "Transform 'The girl watches the picture' into passive:",
+          "options": [
+            {
+              "text": "बालिकया चित्रं दृश्यते।",
+              "is_correct": true
+            },
+            {
+              "text": "बालिकया चित्रं पश्यते।",
+              "is_correct": false
+            },
+            {
+              "text": "बालिका चित्रेण दृश्यते।",
+              "is_correct": false
+            },
+            {
+              "text": "बालिका चित्रं दृश्यते।",
+              "is_correct": false
+            }
+          ],
+          "explanation_en": "'Bālikā' -> 'bālikayā'; in passive, root dṛś takes 'dṛśyate' (not paśyate!).",
+          "explanation_hi": "कर्मवाच्य में 'पश्यति' के स्थान पर मूल धातु से 'दृश्यते' बनता है (पश्यते अशुद्ध है)।",
+          "explanation_te": "కర్మవాచ్యములో 'దృశ్యతే' వచ్చును (పశ్యతే కాదు): బాలికయా చిత్రం దృశ్యతే.",
+          "points": 15
+        }
+      ]
+    }
+  ]
+}

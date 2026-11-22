@@ -20,6 +20,40 @@ button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-
 .app-menu-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 8px 14px; border: 1px solid rgba(15,23,42,.16); border-radius: 50px; background: rgba(255,255,255,.82); color: #303c5a; font-size: .9rem; font-weight: 600; cursor: pointer; }
 .app-menu-toggle span { font-size: 1.1rem; line-height: 1; }
 .app-menu-toggle:hover { border-color: #818cf8; color: #1e2638; }
+.app-language-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0 4px;
+  padding: 7px 0;
+  border-top: 1px solid rgba(15,23,42,.08);
+  border-bottom: 1px solid rgba(15,23,42,.08);
+}
+.app-language-bar .lang-picks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+.app-language-bar .lang-pick {
+  gap: 6px;
+  font-size: .78rem;
+  color: #526079;
+}
+.app-language-bar .lang-pick span {
+  white-space: nowrap;
+}
+.app-language-bar .lang-pick select {
+  min-height: 36px;
+  max-width: 190px;
+  padding: 6px 30px 6px 10px;
+  border: 1px solid rgba(15,23,42,.18);
+  border-radius: 8px;
+  background: rgba(255,255,255,.92);
+  font-size: .82rem;
+  cursor: pointer;
+}
 .app-header-panel { padding-top: 10px; text-align: center; }
 .app-header p { color: #42527b; font-size: 1rem; }
 .view-switch { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 14px; }
@@ -153,7 +187,17 @@ button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-
 @media (max-width: 640px) {
   .app-root { padding: 24px 12px; }
   .app-header h1 { font-size: 1.45rem; }
-  .view-btn { min-height: 44px; padding: 7px 12px; font-size: .88rem; }
+  .app-language-bar { justify-content: stretch; margin-top: 8px; }
+  .app-language-bar .lang-picks { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-items: end; }
+  .app-language-bar .lang-pick { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+  .app-language-bar .lang-pick span { font-size: .72rem; white-space: normal; }
+  .app-language-bar .lang-pick select { width: 100%; max-width: none; min-height: 44px; }
+  .app-header-bar { align-items: center; }
+  .app-header-panel { text-align: left; }
+  .app-header-panel > p { margin-bottom: 4px; line-height: 1.5; }
+  .view-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .view-btn { min-height: 48px; width: 100%; border-radius: 14px; padding: 8px 7px; font-size: .82rem; }
+  .view-btn small { font-size: .66rem; line-height: 1.25; }
   .qz-prompt { font-size: 2.6rem; }
   .qz-sentence { font-size: 1.5rem; }
   .qz-opts { grid-template-columns: 1fr; gap: 9px; }

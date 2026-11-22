@@ -1,0 +1,50 @@
+/* sahitya/sahitya.css — साहित्यम् section */
+.sh-verse { white-space: pre-line; font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; font-size: 1.15rem; line-height: 1.75; margin: 6px 0; }
+.sh-src { font-size: .82rem; color: #64748b; margin: 2px 0 8px; }
+.sh-sym { font-family: 'Noto Sans Devanagari', serif; letter-spacing: .08em; }
+.sh-metre { margin: 4px 0 8px; font-size: .9rem; }
+.sh-link { border: 0; background: none; padding: 0 2px; color: #7c2d12; font-weight: 700; text-decoration: underline; cursor: pointer; font: inherit; }
+.sh-scan { margin: 8px 0 12px; padding: 8px 10px; border-radius: 12px; background: #fffbeb; border: 1px solid #fde68a; overflow-x: auto; }
+.sh-syls { display: flex; flex-wrap: wrap; gap: 3px; }
+.sh-syls span { display: inline-flex; flex-direction: column; align-items: center; min-width: 1.9em; padding: 2px 3px; border-radius: 8px; }
+.sh-syls span b { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; font-weight: 500; font-size: 1.05rem; }
+.sh-syls span i { font-style: normal; font-size: .95rem; line-height: 1; }
+.sh-syls span.g { background: #fed7aa; }
+.sh-syls span.g i { color: #9a3412; }
+.sh-syls span.l { background: #e0f2fe; }
+.sh-syls span.l i { color: #0369a1; }
+.sh-ganas { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px; font-family: 'Noto Sans Devanagari', serif; }
+.sh-ganas span { padding: 1px 8px; border-radius: 999px; background: #ede9fe; font-weight: 600; }
+.sh-ganas em { font-style: normal; font-size: .8rem; color: #64748b; margin-left: 4px; }
+.sh-input { width: 100%; box-sizing: border-box; font-family: 'Noto Sans Devanagari', serif; font-size: 1.05rem; padding: 10px; border-radius: 12px; border: 1px solid #cbd5e1; margin: 6px 0; }
+.sh-reader { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.sh-reader li { padding: 14px 16px; border-radius: 16px; background: rgba(255,255,255,.88); border: 1px solid rgba(15,23,42,.08); box-shadow: var(--shadow-soft); }
+.sh-r-verse { white-space: pre-line; font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; font-size: 1.15rem; line-height: 1.7; margin: 0 0 6px; }
+.sh-r-mean { margin: 0 0 6px; line-height: 1.6; }
+.sh-r-foot { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; margin: 0; font-size: .85rem; }
+.sh-r-foot .sh-metre { margin: 0; }
+.sh-more { border-left: 3px solid #fed7aa; padding-left: 10px; margin: 8px 0; }
+.sh-fix { margin-top: 14px; font-size: .85rem; color: #475569; }
+.sh-fix summary { cursor: pointer; }
+.sh-fix li { margin: 4px 0; }
+.sh-sub .ks-tabs { margin-top: 4px; }
+.sh-sub .ks-tabs button { font-size: .85rem; }
+.sh-vr { margin: 6px 0 10px; padding: 8px 12px; border-left: 3px solid #a5b4fc; background: #eef2ff; border-radius: 10px; }
+.sh-vr p { margin: 2px 0; }
+.sh-facts td:first-child { white-space: nowrap; font-family: 'Noto Sans Devanagari', serif; }
+.sh-vlist { display: grid; gap: 10px; }
+.sh-vitem { padding: 10px 12px; border-radius: 12px; background: #fffbeb; border: 1px solid #fde68a; }
+.sh-vitem p { margin: 3px 0; }
+.sh-vname { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.sh-vname b { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; font-size: 1.1rem; }
+.sh-vline { font-family: 'Noto Sans Devanagari', 'Noto Sans Telugu', serif; }
+.sh-gchips { display: inline-flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.sh-gchips b { padding: 0 8px; border-radius: 999px; background: #ede9fe; font-family: 'Noto Sans Devanagari', serif; }
+.sh-gchips i { font-style: normal; margin-left: 6px; letter-spacing: .06em; color: #9a3412; }
+.sh-ctable td { vertical-align: top; }
+.sh-ctable tr.g-pre td:first-child { border-left: 4px solid #cbd5e1; }
+.sh-ctable tr.g-prime td:first-child { border-left: 4px solid #f97316; }
+.sh-ctable tr.g-ati td:first-child { border-left: 4px solid #8b5cf6; }
+.sh-ctable tr.g-krti td:first-child { border-left: 4px solid #06b6d4; }
+.sh-vc td, .sh-vc th { text-align: center; }
+.sh-vc tr.on td { background: #ffedd5; font-weight: 600; }

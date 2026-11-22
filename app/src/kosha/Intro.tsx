@@ -1,6 +1,6 @@
 // ═══════════════════════════════════════════════════════════════
 //  kosha/Intro.tsx — short introductions shown at the top of the
-//  पदच्छेदः and पद्यविश्लेषणम् tabs of वाक्यकोशः.
+//  पदच्छेदः and पद्यविश्लेषणम् tabs of साहित्यम्.
 //  Every example is taken from the verses in these two tabs.
 // ═══════════════════════════════════════════════════════════════
 import React from "react";

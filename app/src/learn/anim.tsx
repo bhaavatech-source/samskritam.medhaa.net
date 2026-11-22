@@ -72,7 +72,7 @@ export const Morph: React.FC<{ prev?: string; cur: string; k: string | number; S
 const SUP = [["सु", "औ", "जस्"], ["अम्", "औट्", "शस्"], ["टा", "भ्याम्", "भिस्"], ["ङे", "भ्याम्", "भ्यस्"], ["ङसि", "भ्याम्", "भ्यस्"], ["ङस्", "ओस्", "आम्"], ["ङि", "ओस्", "सुप्"], ["सु", "औ", "जस्"]];
 const DEMO_WORDS = ["SH-000001", "SH-000025", "SH-000035", "SH-000011", "SH-000029", "SH-000018"];
 export const ShabdaScene: React.FC = () => {
-  const S = useSaDeva(); const lang = useLang();
+  const S = useSaDeva();
   const words = DEMO_WORDS.map(id => WORDS.find(w => w.id === id)).filter(Boolean) as Word[];
   const [wid, setWid] = useState(words[0].id);
   const w = words.find(x => x.id === wid)!;
@@ -89,7 +89,6 @@ export const ShabdaScene: React.FC = () => {
         <span className="an-arrow">→</span>
         <button className="an-result ks-l-sa" onClick={() => speak(form)}>{S(form)} <small>🔊</small></button>
       </div>
-      <p className="an-cap" key={`c${wid}-${s.i}`}><b className="ks-l-sa">{S(VIBHAKTI[v])} · {S(VACANA[n])}</b> — “{nounGloss(w, v, n, lang)}”</p>
       <div className="an-grid24" role="grid" aria-label="the 24 places">
         <span />{VACANA.map(x => <span key={x} className="an-gh ks-l-sa">{S(x)}</span>)}
         {VIBHAKTI.map((vb, r) => <React.Fragment key={vb}>
@@ -185,7 +184,7 @@ export const WorldScene: React.FC = () => {
 const WHO = ["🧍", "🧑", "🙋"];                            // प्रथमः (he/she), मध्यमः (you), उत्तमः (I)
 const P_VERBS = () => VERBS.filter(v => v.P?.lat);
 export const PersonScene: React.FC = () => {
-  const S = useSaDeva(); const lang = useLang();
+  const S = useSaDeva();
   const verbs = P_VERBS();
   const [vid, setVid] = useState(verbs.find(v => v.w === "पठ्")?.id ?? verbs[0].id);
   const verb = verbs.find(v => v.id === vid)!;
@@ -198,7 +197,6 @@ export const PersonScene: React.FC = () => {
       <div className="an-stage" key={`${vid}-${s.i}`}>
         <div className="an-people" aria-hidden="true">{Array.from({ length: n + 1 }, (_, k) => <span key={k} style={{ animationDelay: `${k * .12}s` }}>{WHO[p]}</span>)}</div>
         {cell && <button className="an-bubble ks-l-sa" onClick={() => speak(cell[0])}>{S(cell[0])} <small>🔊</small></button>}
-        <p className="an-cap"><b className="ks-l-sa">{S(PURUSHA[p])} · {S(VACANA[n])}</b>{cell ? ` — “${verbGloss(verb, "P", "lat", p, n, lang, cell[2])}”` : ""}</p>
       </div>
       <div className="an-grid9">
         <span />{VACANA.map(x => <span key={x} className="an-gh ks-l-sa">{S(x)}</span>)}

@@ -1,0 +1,2086 @@
+{
+  "project": "Medhā Sanskrit Knowledge Base",
+  "dataset": "alankaras_complete.json",
+  "title": "सम्पूणाऽलङ्कारमाला (Comprehensive Multilingual Sanskrit Alaṅkāra Database)",
+  "description": "Exhaustive collection of Classical Sanskrit Figures of Speech (Śabdālaṅkāras & Arthālaṅkāras) harmonized across Candrāloka of Jayadeva, Kāvyaprakāśa of Mammaṭa, and Sāhityadarpaṇa of Viśvanātha, complete with authentic lakṣaṇas, sub-types, Sanskrit verses, padaccheda, anvaya, and simple multilingual expositions in English, Telugu, Hindi, and Sanskrit.",
+  "sources_consulted": [
+    "2015.390011.Chandralokamu.pdf.pdf (Akkiraju Umakantam, Vavilla Press, 1938)",
+    "alankaaras_1.pdf (IGNOU Sāhityālocana & Alaṅkāra Studies)",
+    "Chandra Loka Jayadeva Sanskrit Hindi Vyakhya Ed. Subodh Chandra Panth MLBD.pdf"
+  ],
+  "total_alankaras": 50,
+  "alankaras": [
+    {
+      "id": "ALK-001",
+      "name": {
+        "sa": "अनुप्रासः",
+        "iast": "Anuprāsaḥ",
+        "te": "అనుప్రాసాలంకారము",
+        "hi": "अनुप्रास अलंकार",
+        "en": "Alliteration"
+      },
+      "category": "शब्दालङ्कारः (Figure of Sound)",
+      "source_text": "साहित्यदर्पणः (१०.२) / काव्यप्रकाशः (९.७९) / चन्द्रालोकः (२.३) | उदाहरणम्: काव्यप्रकाशः (९.८०, उदाहरणम्) / साहित्यदर्पणः",
+      "lakshana": {
+        "sloka_sa": "अनुप्रासः शब्दसाम्यं वैषम्येऽपि स्वरस्य यत् ।\nछेको वृत्तिस्तथा लाटो विप्रकीर्णः स पञ्चधा ॥",
+        "sloka_te": "అనుప్రాసః శబ్దసామ్యం వైషమ్యేఽపి స్వరస్య యత్ ।\nఛేకో వృత్తిస్తథా లాటో విప్రకీర్ణః స పఞ్చధా ॥",
+        "meaning_sa": "रसाद्यनुगतः प्रकृष्टो न्यासः अनुप्रासः। यत्र स्वरवैसादृश्ये सत्यपि व्यञ्जनानां पौनःपुन्येन साम्यं भवति तत्र अनुप्रासालङ्कारः।",
+        "meaning_en": "Anuprāsa (Alliteration) is the pleasing recurrence of similar consonant sounds in close proximity, even if the accompanying vowels differ.",
+        "meaning_te": "స్వరములు వేఱైనను వ్యంజనములు (హల్లులు) మాటిమాటికి ఆవృత్తియై చమత్కారమును పుట్టించినచో నది అనుప్రాసాలంకారమగును.",
+        "meaning_hi": "जहाँ स्वरों की विषमता होने पर भी व्यंजनों की बार-बार समानता या आवृत्ति होती है, वहाँ अनुप्रास अलंकार होता है।",
+        "source_reference": "साहित्यदर्पणः (१०.२) / काव्यप्रकाशः (९.७९) / चन्द्रालोकः (२.३)"
+      },
+      "types": [
+        {
+          "type_name_sa": "छेकानुप्रासः",
+          "type_name_en": "Chēkānuprāsa (Single repeat of multiple consonant clusters)",
+          "description_en": "When a group of consonants is repeated only once in the same sequence.",
+          "description_te": "అనేక వ్యంజనముల సముదాయము ఒక్కమారే క్రమము తప్పక ఆవృత్తమగుట.",
+          "description_hi": "जहाँ अनेक व्यंजनों की एक ही बार उसी क्रम में आवृत्ति हो।"
+        },
+        {
+          "type_name_sa": "वृत्त्यनुप्रासः",
+          "type_name_en": "Vṛttyānuprāsa (Multiple repeats of one or more consonants)",
+          "description_en": "When one or more consonants are repeated multiple times across phrases.",
+          "description_te": "ఒక్క హల్లు గాని అనేక హల్లులు గాని అనేక పర్యాయములు ఆవృత్తమగుట.",
+          "description_hi": "जहाँ एक या अनेक व्यंजनों की अनेक बार आवृत्ति हो।"
+        },
+        {
+          "type_name_sa": "लाटानुप्रासः",
+          "type_name_en": "Lāṭānuprāsa (Word repetition with shift in purport/Tātparya)",
+          "description_en": "Repetition of identical words where lexical meaning is the same but the overall syntactic purport (tātparya) differs.",
+          "description_te": "తాత్పర్యభేదము మాత్రమే కలిగియుండి పదములు మరల ప్రయోగింపబడుట.",
+          "description_hi": "जहाँ शब्द और अर्थ वही रहें, परन्तु केवल तात्पर्य का भेद हो।"
+        },
+        {
+          "type_name_sa": "श्रुत्यनुप्रासः",
+          "type_name_en": "Śrutyānuprāsa (Syllabic harmony by same place of articulation)",
+          "description_en": "Letters produced from the same vocal organ (sthāna) repeated to create acoustic resonance.",
+          "description_te": "ఒకే ఉచ్చారణ స్థానమునకు చెందిన వర్ణములు మాటిమాటికి వినబడుట.",
+          "description_hi": "एक ही उच्चारण स्थान से उच्चरित होने वाले वर्णों की आवृत्ति।"
+        },
+        {
+          "type_name_sa": "अन्त्यानुप्रासः",
+          "type_name_en": "Antyānuprāsa (End-rhyme)",
+          "description_en": "Rhyme at the end of verses or hemistichs.",
+          "description_te": "పాదముల చివర సమాన వర్ణములు నిలచుట (యతి-ప్రాస నియమము).",
+          "description_hi": "छंद के चरणों के अन्त में समान स्वर और व्यंजन की स्थिति।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "ततोऽरुणपरिस्पन्दमन्दीकृतवपुः शशी ।\nदधे कामपरिक्षामकामिनीगण्डपाण्डुताम् ॥",
+        "sloka_te": "తతోఽరుణపరిస్పన్దమన్దీకృతవపుః శశీ ।\nదధే కామపరిక్షామకామినీగణ్డపాణ్డుతామ్ ॥",
+        "anvaya": "ततः अरुणपरिस्पन्द-मन्दीकृतवपुः शशी, कामपरिक्षाम-कामिनी-गण्डपाण्डुतां दधे ।",
+        "bhaava_sa": "अरुणस्य उदयात् मन्दप्रकाशः चन्द्रः विरहिण्याः कामिन्याः कपोलस्य पाण्डुरतां धारयति।",
+        "bhaava_en": "Then the moon, its radiance dimmed by the rising dawn, took on the pale pallor of a lovelorn maiden's cheek.",
+        "bhaava_te": "ఉదయకాలపు సూర్యకాంతిచే మసకబారిన శరీరము గల చంద్రుడు, విరహముచే కృశించిన కామిని యొక్క చెక్కిళ్ళ తెల్లదనమును వహించెను.",
+        "bhaava_hi": "प्रातःकाल अरुण के संचार से मलीन शरीर वाला चंद्रमा विरह से दुर्बल कामिनी के कपोल की पांडुरता (सफेदी) को धारण करने लगा।",
+        "source_reference": "काव्यप्रकाशः (९.८०, उदाहरणम्) / साहित्यदर्पणः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र पूर्वार्धे 'न्द' (मन्दी), उत्तरार्धे च 'ण्ड' (गण्ड-पाण्डुताम्) तथा 'कामिनी-परिक्षाम' इत्यत्र व्यञ्जनसमुदायस्य सकृदावृत्त्या छेकानुप्रासः।",
+        "en": "In the first half, the cluster 'nd' and in the second half 'ṇḍ' and 'k-m' occur in a single harmonious repetition, exemplifying Chēkānuprāsa.",
+        "te": "ఇచ్చట 'మందీ' లోని 'ంద', 'గండ-పాండు' అనుచోట్ల 'ండ' వర్ణములు ఒక్కమారే ఆవృత్తమగుటచే ఛేకానుప్రాస సమన్వయము సిద్ధించినది.",
+        "hi": "यहाँ पूर्वार्ध में 'न्द' और उत्तरार्ध में 'ण्ड' का दो बार एक ही क्रम में प्रयोग होने से छेकानुप्रास का परिपुष्ट समन्वय है।"
+      }
+    },
+    {
+      "id": "ALK-002",
+      "name": {
+        "sa": "यमकम्",
+        "iast": "Yamakam",
+        "te": "యమకాలంకారము",
+        "hi": "यमक अलंकार",
+        "en": "Chime / Verbal Pun on Homophonic Duplicates"
+      },
+      "category": "शब्दालङ्कारः (Figure of Sound)",
+      "source_text": "काव्यप्रकाशः (९.८२) / साहित्यदर्पणः (१०.८) / चन्द्रालोकः (२.४) | उदाहरणम्: माघकृत-शिशुपालवधम् (६.२) / काव्यप्रकाशः (९.८३)",
+      "lakshana": {
+        "sloka_sa": "सत्यर्थे पृथगर्थायाः स्वरव्यञ्जनसंहतेः ।\nक्रमेण तेनैवावृत्तिर्यमकं विनिगद्यते ॥",
+        "sloka_te": "సత్యర్థే పృథగర్థాయాః స్వరవ్యఞ్జనసంహతేః ।\nక్రమేణ తేనైవావృత్తిర్యమకం వినిగద్యతే ॥",
+        "meaning_sa": "यत्र सार्थकत्वे सति भिन्नार्थानाम्, निरर्थकत्वे वा वर्णसमूहानां पूर्वक्रमेणैव पुनः श्रुतिः (आवृत्तिः) भवति, तत् यमकम्।",
+        "meaning_en": "Yamaka is the repetition of a sequence of syllables in the exact same phonetic order, where the repeated units have different meanings (or one is meaningful and the other an arbitrary phoneme sequence).",
+        "meaning_te": "అర్థభేదము గల సమానమైన అక్షర సముదాయము మరల మరల ప్రయోగింపబడినచో యమకాలంకారమగును.",
+        "meaning_hi": "जहाँ भिन्न-भिन्न अर्थ वाले समान वर्ण-समुदाय की उसी क्रम में पुनः आवृत्ति हो, वहाँ यमक अलंकार होता है।",
+        "source_reference": "काव्यप्रकाशः (९.८२) / साहित्यदर्पणः (१०.८) / चन्द्रालोकः (२.४)"
+      },
+      "types": [
+        {
+          "type_name_sa": "पादादियमकम्",
+          "type_name_en": "Initial Verse Yamaka",
+          "description_en": "Repetition at the beginning of poetic quarters.",
+          "description_te": "పాదముల ఆదియందు వచ్చు యమకము.",
+          "description_hi": "चरण के आरंभ में प्रयुक्त यमक।"
+        },
+        {
+          "type_name_sa": "पादान्त्ययमकम्",
+          "type_name_en": "Final Verse Yamaka",
+          "description_en": "Repetition at the terminus of lines.",
+          "description_te": "పాదముల చివర వచ్చు యమకము.",
+          "description_hi": "चरण के अंत में प्रयुक्त यमक।"
+        },
+        {
+          "type_name_sa": "काञ्चीयमकम् / महायमकम्",
+          "type_name_en": "Complex / Complete Verse Yamaka",
+          "description_en": "Where an entire verse is constituted of echoing, distinct-meaning quarters.",
+          "description_te": "సర్వపాదములు సమాన వర్ణములతో విభిన్నార్థముల నిచ్చు యమకము.",
+          "description_hi": "सम्पूर्ण श्लोक में चरणों का आवृत्ति-वैचित्र्य।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "नवपलाशपलाशवनं पुरः स्फुटपरागपरागपङ्कजम् ।\nमृदुलतान्तलतान्तमलोकयत् स सुरभिं सुरभिं सुमनोभरैः ॥",
+        "sloka_te": "నవపలాశపలాశవనం పురః స్ఫుటపరాగపరాగపఙ్కజమ్ ।\nమృదులతాన్తలతాన్తమలోకయత్ స సురభిం సురభిం సుమనోభరైః ॥",
+        "anvaya": "सः पुरः नवपलाश-पलाशवनं, स्फुटपराग-पराग-अपगत-पङ्कजं, सुमनोभरैः सुरभिं सुरभिं मृदुलतान्त-लतान्तम् अलोकयत् ।",
+        "bhaava_sa": "श्रीकृष्णः सम्मुखे नूतनपत्रयुक्तं किंशुकवनं, परागव्याप्तकमलानि, कुसुमभारैः सुगन्धितं वसन्तकालम् अपश्यत्।",
+        "bhaava_en": "Krishna beheld the spring season fragrant with blossoms, where Palāśa trees bore fresh foliage, lotus blossoms were coated in pollen, and delicate creepers bent under clusters of flowers.",
+        "bhaava_te": "శ్రీకృష్ణుడు నూతన పత్రములు గల మోదుగ వనమును, పరాగముచే నిండిన పద్మములను, పూలభారముచే సువాసనలీను వసంతఋతువును దర్శించెను.",
+        "bhaava_hi": "श्रीकृष्ण ने अपने सम्मुख नवीन पलाश (पत्तों) से युक्त पलाश (ढाक) के वन को, खिले हुए पराग से आवृत कमलों को, और पुष्पों के भार से सुरभित (सुगन्धित) सुरभि (वसन्त) को देखा।",
+        "source_reference": "माघकृत-शिशुपालवधम् (६.२) / काव्यप्रकाशः (९.८३)"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र 'पलाश-पलाश' (प्रथमं पत्रम्, द्वितीयं ढाकवृक्षः), 'पराग-पराग' (पुष्परजः, परगतम्), 'लतान्त-लतान्त' (लतायाः अन्तः, कुसुमानि), 'सुरभिं-सुरभिम्' (वसन्तम्, सुगन्धितम्) इति भिन्नार्थकानां शब्दानां क्रमिकप्रयोगेण यमकम्।",
+        "en": "The pairs 'palāśa-palāśa' (leaf vs tree), 'parāga-parāgata' (pollen vs arrived), 'latānta-latānta' (end of creeper vs flower), and 'surabhiṁ-surabhim' (spring vs fragrant) repeat the exact phonemes with distinct meanings.",
+        "te": "ఇచ్చట పలాశ-పలాశ, పరాగ-పరాగత, లతాంత-లతాంత, సురభిం-సురభిం అను సమాన శబ్దములు విభిన్నార్థములతో ప్రయోగింపబడుటచే యమకాలంకారము శోభిల్లుచున్నది.",
+        "hi": "यहाँ 'पलाश-पलाश' (पत्ता और ढाक), 'पराग-पराग' (धूलि और व्याप्त), 'लतान्त-लतान्त' (लता का अंत और पुष्प) तथा 'सुरभि-सुरभि' (सुगन्ध और वसन्त) में भिन्नार्थक वर्णसमूह की आवृत्ति से यमक अलंकार सिद्ध होता है।"
+      }
+    },
+    {
+      "id": "ALK-003",
+      "name": {
+        "sa": "श्लेषः",
+        "iast": "Śleṣaḥ",
+        "te": "శ్లేషాలంకారము",
+        "hi": "श्लेष अलंकार",
+        "en": "Paronomasia / Double Entendre"
+      },
+      "category": "उभयालङ्कारः / शब्दार्थश्लेषः",
+      "source_text": "चन्द्रालोकः (५.२६ / ५.५९) / काव्यप्रकाशः (९.८४) | उदाहरणम्: चन्द्रालोकः (५.५९, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "नानाऽर्थसंश्रयः श्लेषो वर्ण्यावर्ण्यादिसंश्रितः ।\nस पदैर्विविधैरर्थैरेकार्थेन समाश्रितः ॥",
+        "sloka_te": "నానాఽర్థసంశ్రయః శ్లేషో వర్ణ్యావర్ణ్యాదిసంశ్రితః ।\nస పదైర్వివిధైరర్థైరేకార్థేన సమాశ్రితః ॥",
+        "meaning_sa": "एकस्मिन्नेव वाक्ये एकस्य शब्दस्य अनेकार्थप्रतिपादकत्वं श्लेषः।",
+        "meaning_en": "Śleṣa is the poetic device wherein single words or phrases coalesce multiple distinct meanings through homonymy or semantic duality.",
+        "meaning_te": "ఒకే శబ్దము అనేక అర్థముల నిచ్చునట్లు ప్రయోగింపబడినచో శ్లేషాలంకారమగును. (ప్రకృతము, అప్రకృతము, ఉభయశ్లేష అని త్రివిధము).",
+        "meaning_hi": "जहाँ एक ही शब्द से एक से अधिक अर्थों का बोध हो, वहाँ श्लेष अलंकार होता है।",
+        "source_reference": "चन्द्रालोकः (५.२६ / ५.५९) / काव्यप्रकाशः (९.८४)"
+      },
+      "types": [
+        {
+          "type_name_sa": "अभङ्गश्लेषः",
+          "type_name_en": "Unbroken Punning (Abhaṅga)",
+          "description_en": "Words yielding two meanings without splitting their root-affix structure (e.g. हरिः, माधवः).",
+          "description_te": "పదమును విరువకుండానే నానార్థములు సిద్ధించుట.",
+          "description_hi": "शब्द को तोड़े बिना अनेक अर्थ निकालना।"
+        },
+        {
+          "type_name_sa": "सभङ्गश्लेषः",
+          "type_name_en": "Split Punning (Sabhaṅga)",
+          "description_en": "Words yielding dual meanings by segmenting the phonemes differently.",
+          "description_te": "పదములను వేర్వేరు విధములుగా విడదీసి నానార్థములను సాధించుట.",
+          "description_hi": "शब्द के वर्णों को तोड़-मरोड़ कर अलग-अलग अर्थ निकालना।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "सर्वदो माधवः पायात् स योऽगं गां च धारयन् ।\nउमाधवः स पातु त्वां यो गङ्गां शिरसावहत् ॥",
+        "sloka_te": "సర్వదో మాధవః పాయాత్ స యోఽగం గాం చ ధారయన్ ।\nఉమాధవః స పాతు త్వాం యో గఙ్గాం శిరసావహత్ ॥",
+        "anvaya": "सः माधवः सर्वदः पायात् यः अगं गां च अधारयत् । सः उमाधवः सर्वदा त्वां पातु यः गङ्गां शिरसा अवहत् ।",
+        "bhaava_sa": "१. विष्णुपक्षे: सर्वदा अभीष्टप्रदः, गोवर्धनं पृथिवीं च धारयन् भगवान् विष्णुः (माधवः) युष्मान् रक्षतु।\n२. शिवपक्षे: सर्वदः (सर्वप्रदः), कैलासं गङ्गां च धारयन् उमायाः पतिः (उमा-धवः) युष्मान् पातु।",
+        "bhaava_en": "1. In praise of Viṣṇu: May Mādhava, the all-bestowing Lord who lifted Mount Govardhana and protected the Earth, preserve you.\n2. In praise of Śiva: May Umādhava (Lord of Umā), who supports Mount Kailāsa and holds the sacred Gaṅgā, protect you.",
+        "bhaava_te": "౧. విష్ణుపరముగ: ఎల్లప్పుడు వరముల నిచ్చువాడు, గోవర్ధన పర్వతమును భూమిని ధరించిన శ్రీకృష్ణుడు (మాధవుడు) మిమ్ములను రక్షించుగాక!\n౨. శివపరముగ: కైలాస పర్వతమును గంగను తలపై మోయు ఉమాపతియైన ఈశ్వరుడు (ఉమాధవుడు) మిమ్ములను కాపాడుగాక!",
+        "bhaava_hi": "१. विष्णुपक्ष में: सर्वदा अभीष्ट देने वाले, गोवर्धन पर्वत और पृथ्वी को धारण करने वाले श्रीकृष्ण आपकी रक्षा करें।\n२. शिवपक्ष में: सबको सब कुछ देने वाले, कैलाश और गंगा को धारण करने वाले उमापति शिव आपकी रक्षा करें।",
+        "source_reference": "चन्द्रालोकः (५.५९, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "'माधवः' इत्यत्र सभङ्गश्लेषेण 'माधवः' (लक्ष्मीपतिः) तथा 'सः+उमाधवः' (शिवः) इत्यर्थद्वयप्रतीतिः, 'अगम्' (गोवर्धनः/कैलासः), 'गाम्' (पृथ्वीम्/गङ्गाम्) इत्यत्र च अभङ्गश्लेषः।",
+        "en": "Through 'Mādhava' (Mā-dhava for Viṣṇu vs Sa Umā-dhava for Śiva) and 'aga' (mountain) / 'gā' (earth/river), a single sentence simultaneously extols both Viṣṇu and Śiva.",
+        "te": "ఇచ్చట 'మాధవః' అను పదము విష్ణువును (లక్ష్మీపతి), శివుని (ఉమాధవుడు) ఇరువురిని ఏకకాలమున వర్ణించుచు శ్లేష చమత్కారమును చూపుచున్నది.",
+        "hi": "यहाँ 'माधवः' शब्द से विष्णु तथा 'उमाधवः' से शिव का अर्थ निष्पन्न होने से सभङ्ग-श्लेष तथा 'अगम्' और 'गाम्' से पर्वत तथा पृथ्वी/गंगा का अर्थ निकलने से अभङ्ग-श्लेष है।"
+      }
+    },
+    {
+      "id": "ALK-004",
+      "name": {
+        "sa": "उपमा",
+        "iast": "Upamā",
+        "te": "ఉపమాలంకారము",
+        "hi": "उपमा अलंकार",
+        "en": "Simile"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४) / काव्यप्रकाशः (१०.१) / साहित्यदर्पणः (१०.१४) | उदाहरणम्: कालिदासकृत-रघुवंशम् (१.१) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "उपमा यत्र सादृश्यलक्ष्मीरुल्लसति द्वयोः ।\nसाधर्म्यमुपमा भेदे सप्रपञ्चा निगद्यते ॥",
+        "sloka_te": "ఉపమా యత్ర సాదృశ్యలక్ష్మీరుల్లసతి ద్వయోః ।\nసాధర్మ్యముపమా భేదే సప్రపఞ్చా నిగద్యతే ॥",
+        "meaning_sa": "यत्र भिन्नयोः उपमानोपमेययोः मध्ये चमत्कारपूर्णं रमणीयं सादृश्यं प्रस्फुटं भवति, सा उपमा।",
+        "meaning_en": "A Simile is the charming, explicit comparison based on common attributes between two distinct entities: the subject under description (Upameya) and the standard of comparison (Upamāna).",
+        "meaning_te": "ఉపమానమునకును ఉపమేయమునకును మనోహరమైన సాదృశ్యము (పోలిక) స్పష్టముగా చెప్పబడినచో ఉపమాలంకారమగును.",
+        "meaning_hi": "जहाँ दो भिन्न पदार्थों (उपमेय और उपमान) में किसी समान धर्म के आधार पर रमणीय सादृश्य दिखाया जाए, वहाँ उपमा अलंकार होता है।",
+        "source_reference": "चन्द्रालोकः (५.४) / काव्यप्रकाशः (१०.१) / साहित्यदर्पणः (१०.१४)"
+      },
+      "elements": [
+        {
+          "element_sa": "उपमेयम्",
+          "element_en": "Subject under comparison (Upameya)",
+          "element_te": "ఉపమేయము (వర్ణనీయ వస్తువు)",
+          "element_hi": "जिसकी उपमा दी जाए"
+        },
+        {
+          "element_sa": "उपमानम्",
+          "element_en": "Standard of comparison (Upamāna)",
+          "element_te": "ఉపమానము (పోల్చబడు ప్రసిద్ధ వస్తువు)",
+          "element_hi": "जिससे तुलना की जाए"
+        },
+        {
+          "element_sa": "साधारणधर्मः",
+          "element_en": "Common attribute/property",
+          "element_te": "సాధారణ ధర్మము (సమాన గుణము/క్రియ)",
+          "element_hi": "समान गुण या क्रिया"
+        },
+        {
+          "element_sa": "उपमावाचकः",
+          "element_en": "Simile connector word (iva, yathā, vat)",
+          "element_te": "ఉపమావాచక శబ్దము (వలె, రీతి, ఇవ, యథా)",
+          "element_hi": "वाचक शब्द (इव, यथा, सा, सी)"
+        }
+      ],
+      "types": [
+        {
+          "type_name_sa": "पूर्णोपमा",
+          "type_name_en": "Pūrṇopamā (Complete Simile)",
+          "description_en": "Where all four constituent elements (Upameya, Upamāna, Dharma, Vācaka) are explicitly mentioned.",
+          "description_te": "నాల్గు అంగములు (ఉపమేయ, ఉపమాన, సాధారణ ధర్మ, వాచకములు) స్పష్టముగా ఉండునది.",
+          "description_hi": "जहाँ उपमा के चारों अंग विद्यमान हों।"
+        },
+        {
+          "type_name_sa": "लुप्तोपमा",
+          "type_name_en": "Luptopamā (Elliptical Simile)",
+          "description_en": "Where one, two, or three of the constituent elements are suppressed or implied.",
+          "description_te": "నాల్గింటిలో ఒకటి గాని, రెండు గాని, మూడు గాని లోపించినది.",
+          "description_hi": "जहाँ उपमा के चारों अंगों में से किसी एक या अधिक का लोप हो।"
+        },
+        {
+          "type_name_sa": "मालोपमा",
+          "type_name_en": "Mālopamā (Garland Simile)",
+          "description_en": "Where a single Upameya is compared to multiple Upamānas like a garland.",
+          "description_te": "ఒక్క ఉపమేయమునకు అనేక ఉపమానములు దండవలె కూర్చబడుట.",
+          "description_hi": "जहाँ एक ही उपमेय के अनेक उपमान हों।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "उपमा यत्र सादृश्यलक्ष्मीरुल्लसति द्वयोः ।\nहंसीव कृष्ण ते कीर्तिः स्वर्गङ्गामवगाहते ॥",
+        "sloka_te": "ఉపమా యత్ర సాదృశ్యలక్ష్మీరుల్లసతి ద్వయోః ।\nహంసీవ కృష్ణ తే కీర్తిః స్వర్గఙ్గామవగాహతే ॥",
+        "anvaya": "हे कृष्ण! ते कीर्तिः हंसी इव स्वर्गङ्गाम् अवगाहते । (अत्र प्रथमार्धं लक्षणं द्वितीयार्धम् उदाहरणम्)",
+        "bhaava_sa": "हे श्रीकृष्ण! भवतः धवला कीर्तिः हंसी इव आकाशगङ्गायां मज्जति (सर्वत्र प्रसरति)।",
+        "bhaava_en": "O Krishna! Your spotless fame, like a graceful white swan, plunges into and bathes in the celestial river of heaven (Mandākinī).",
+        "bhaava_te": "ఓ శ్రీకృష్ణా! నీ పవిత్రమైన కీర్తి హంసవలె ఆకాశగంగ యందు మునుగుచున్నది (అనగా విశ్వమంతట వ్యాపించుచున్నది).",
+        "bhaava_hi": "हे कृष्ण! आपकी धवल कीर्ति राजहंसी के समान आकाशगंगा में डुबकी लगाती है (सर्वत्र व्याप्त होती है)।",
+        "source_reference": "चन्द्रालोकः (५.४) [लक्षण-लक्ष्य-सहितः सम्पूर्ण-श्लोकः]"
+      },
+      "alankara_samanvaya": {
+        "sa": "१. उपमेयम् = कीर्तिः, २. उपमानम् = हंसी, ३. साधारणधर्मः = स्वर्गङ्गावगाहनम् (शुभ्रतया सर्वव्याप्तिः), ४. वाचकशब्दः = इव। अत्र चतुर्णामपि उपादानात् पूर्णोपमा।",
+        "en": "Upameya = fame (kīrti), Upamāna = swan (haṁsī), Sādhāraṇa Dharma = bathing in the celestial Ganges (avagāhana), Vācaka = like (iva). Since all four elements are present, it is a Pūrṇopamā.",
+        "te": "ఉపమేయము = కీర్తి; ఉపమానము = హంస; సాధారణ ధర్మము = స్వర్గంగావగాహనము; ఉపమావాచకము = 'ఇవ' (వలె). నాల్గు అంగములుండుటచే నిది పూర్ణోపమ.",
+        "hi": "यहाँ उपमेय = कीर्ति, उपमान = हंस, साधारण धर्म = स्वर्गंगा में अवगाहन (स्नान), वाचक शब्द = 'इव' (समान)। चारों अंगों की उपस्थिति से यह पूर्णोपमा का आदर्श उदाहरण है।"
+      }
+    },
+    {
+      "id": "ALK-005",
+      "name": {
+        "sa": "अनन्वयः",
+        "iast": "Ananvayaḥ",
+        "te": "అనన్వయాలంకారము",
+        "hi": "अनन्वय अलंकार",
+        "en": "Self-Comparison / Incomparability"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.५) / काव्यप्रकाशः (१०.२) / साहित्यदर्पणः (१०.१५) | उदाहरणम्: वाल्मीकि-रामायणम्, युद्धकाण्डम् (१०७.५४) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "यत्रोपमानोपमेयभाव एकस्य वस्तुनः ।\nअनन्वयोऽसौ विज्ञेय एक एवेह यत्समः ॥",
+        "sloka_te": "యత్రోపమానోపమేయభావ ఏకస్య వస్తునః ।\nఅనన్వయోఽసౌ విజ్ఞేయ ఏక ఏవేహ యత్సమః ॥",
+        "meaning_sa": "यत्र जगत्यसदृशत्वात् एकस्यैव वस्तुनः उपमेयत्वम् उपमानत्वं च वर्ण्यते, तत्र अनन्वयालङ्कारः।",
+        "meaning_en": "Ananvaya occurs when an object is compared only to itself because nothing else in the universe equals its excellence or magnitude.",
+        "meaning_te": "ఒకే వస్తువునకు మరియొక సాటియైన వస్తువు లోకమున లేనందున, ఆ వస్తువునకే ఉపమానత్వమును ఉపమేయత్వమును కల్పించి చెప్పుట అనన్వయము.",
+        "meaning_hi": "जहाँ उपमेय की बराबरी करने वाला कोई दूसरा पदार्थ न होने के कारण उसी को उसका उपमान बना दिया जाए।",
+        "source_reference": "चन्द्रालोकः (५.५) / काव्यप्रकाशः (१०.२) / साहित्यदर्पणः (१०.१५)"
+      },
+      "primary_example": {
+        "sloka_sa": "गगनं गगनाकारं सागरः सागरोपमः ।\nरामरावणयोर्युद्धं रामरावणयोरिव ॥",
+        "sloka_te": "గగనం గగనాకారం సాగరః సాగరోపమః ।\nరామరావణయోర్యుద్ధం రామరావణయోరివ ॥",
+        "anvaya": "गगनं गगनाकारं, सागरः सागरोपमः, रामरावणयोः युद्धं रामरावणयोः इव (अस्ति) ।",
+        "bhaava_sa": "आकाशस्य तुलना आकाशेनैव, सागरस्य तुलना सागरेणैव, रामरावणयोः युद्धस्य तुलना च रामरावणयोः युद्धेनैव कर्तुं शक्यते, नान्येन केनापि।",
+        "bhaava_en": "The sky is like the sky alone; the ocean is comparable only to the ocean; and the fierce war between Rāma and Rāvaṇa could only be likened to the war between Rāma and Rāvaṇa itself.",
+        "bhaava_te": "ఆకాశము ఆకాశముతోడనే సమానము; సముద్రము సముద్రముతోడనే పోల్చదగినది; అట్లే రామరావణుల యుద్ధము రామరావణుల యుద్ధము వంటిదే!",
+        "bhaava_hi": "आकाश के समान केवल आकाश है, सागर की उपमा केवल सागर ही है, तथा राम और रावण का युद्ध केवल राम और रावण के युद्ध जैसा ही था।",
+        "source_reference": "वाल्मीकि-रामायणम्, युद्धकाण्डम् (१०७.५४) / काव्यप्रकाश-उदाहरणम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र आकाश-सागर-युद्धेषु अन्योपमानाभावात् तेषामेव उपमेयत्वम् उपमानत्वं च विवक्षितमिति अनन्वयः।",
+        "en": "Because no peer exists for the sky, ocean, or battle, each entity serves as its own Upamāna and Upameya.",
+        "te": "ఇచ్చట ఆకాశము, సాగరము, రాక్షస సంహార యుద్ధములకు సాటియైన మరియొక వస్తువు లేక తమతోడనే పోల్చబడుటచే అనన్వయము సిద్ధించినది.",
+        "hi": "यहाँ गगन, सागर और राम-रावण युद्ध के लिए कोई दूसरा उपमान न मिलने से वे स्वयं अपने उपमान हैं, अतः अनन्वय अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-006",
+      "name": {
+        "sa": "उपमेयोपमा",
+        "iast": "Upameyopamā",
+        "te": "ఉపమేయోపమాలంకారము",
+        "hi": "उपमेयोपमा अलंकार",
+        "en": "Reciprocal / Mutual Comparison"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.६) / काव्यप्रकाशः (१०.३) / साहित्यदर्पणः (१०.१६) | उदाहरणम्: चन्द्रालोकः (५.६) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "पर्यायेण द्वयोश्चेत् स्यादुपमेयोपमा मता ।\nतृतीयस्य व्यवच्छेदादेषा द्विविधसंश्रया ॥",
+        "sloka_te": "పర్యాయేణ ద్వయోశ్చేత్ స్యాదుపమేయోపమా మతా ।\nతృతీయస్య వ్యవచ్ఛేదాదేషా ద్వివిధసంశ్రయా ॥",
+        "meaning_sa": "यत्र तृतीयाभावं सूचयितुं द्वयोरेव वस्तुनोः पर्यायेण (क्रमेण) परस्परम् उपमानोपमेयभावः वर्ण्यते, सा उपमेयोपमा।",
+        "meaning_en": "Upameyopamā is reciprocal simile where two objects take turns being the Upamāna and Upameya to signify that no third entity exists that matches either of them.",
+        "meaning_te": "మూడవ వస్తువు వీరికి సమానముగా లేదని తెలుపుటకై, రెండు వస్తువులను మార్చి మార్చి ఒకదానితో నొకటి పోల్చినచో నుపమేయోపమ యగును.",
+        "meaning_hi": "जहाँ किसी तीसरे उपमान का अभाव दिखाने के लिए दो वस्तुओं को परस्पर एक-दूसरे का उपमेय और उपमान बना दिया जाए।",
+        "source_reference": "चन्द्रालोकः (५.६) / काव्यप्रकाशः (१०.३) / साहित्यदर्पणः (१०.१६)"
+      },
+      "primary_example": {
+        "sloka_sa": "धर्मोऽर्थ इव पूर्णश्रीरर्थो धर्म इव त्वयि ।\nपरस्परं समन्वेति जगतां हितकाम्यया ॥",
+        "sloka_te": "ధర్మోఽర్థ ఇవ పూర్ణశ్రీరర్థో ధర్మ ఇవ త్వయి ।\nపరస్పరం సమన్వేతి జగతాం హితకామ్యయా ॥",
+        "anvaya": "त्वयि पूर्णश्रीः धर्मः अर्थः इव, अर्थः धर्मः इव जगतां हितकाम्यया परस्परं समन्वेति ।",
+        "bhaava_sa": "हे राजन्! भवति धर्मः अर्थ इव विराजते, अर्थश्च धर्म इव शोभते। एतयोः सदृशः तृतीयः कोऽपि नास्ति।",
+        "bhaava_en": "O King! In you, endowed with complete glory, righteousness thrives like wealth, and wealth flourishes like righteousness. Neither finds an equal in any third entity.",
+        "bhaava_te": "ఓ రాజా! పరిపూర్ణ సంపద గల నీయందు ధర్మము అర్థము వలెను, అర్థము ధర్మము వలెను శోభిల్లుచున్నవి (ఈ రెంటికే పరస్పర సాదృశ్యము తప్ప మూడవది లేదు).",
+        "bhaava_hi": "हे राजन्! आपमें धर्म अर्थ के समान समृद्ध है और अर्थ धर्म के समान प्रतिष्ठित है। इन दोनों के अतिरिक्त कोई तीसरा इनके तुल्य नहीं है।",
+        "source_reference": "चन्द्रालोकः (५.६) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "प्रथमवाक्ये धर्मः उपमेयः, अर्थः उपमानम्। द्वितीयवाक्ये अर्थः उपमेयः, धर्मः उपमानम्। एवं परस्परसादृश्यात् उपमेयोपमा।",
+        "en": "In the first half, Dharma is Upameya and Artha is Upamāna; in the second, the roles are reversed. This mutual pairing excludes any third comparison.",
+        "te": "మొదటి వాక్యములో ధర్మము ఉపమేయము, అర్థము ఉపమానము. రెండవ పర్యాయమున అర్థము ఉపమేయము, ధర్మము ఉపమానము. కావున నిది ఉపమేయోపమాలంకారము.",
+        "hi": "यहाँ पहले धर्म को अर्थ के समान और फिर अर्थ को धर्म के समान कहकर दोनों की परस्पर उपमा दी गई है।"
+      }
+    },
+    {
+      "id": "ALK-007",
+      "name": {
+        "sa": "प्रतीपम्",
+        "iast": "Pratīpam",
+        "te": "ప్రతీపాలంకారము",
+        "hi": "प्रतीप अलंकार",
+        "en": "Inverted Simile / Converse Comparison"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.७) / काव्यप्रकाशः (१०.१६) / साहित्यदर्पणः (१०.१७) | उदाहरणम्: चन्द्रालोकः (५.७) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "प्रतीपमुपमानस्योपमेयत्वप्रकल्पनम् ।\nउपमेयस्य वाधिक्ये तन्निराकरणादपि ॥",
+        "sloka_te": "ప్రతీపముపమానస్యోపమేయత్వప్రకల్పనమ్ ।\nఉపమేయస్య వాధిక్యే తన్నిరాకరణాదపి ॥",
+        "meaning_sa": "यत्र उपमेयस्योत्कर्षं प्रतिपादयितुं प्रसिद्धस्य उपमानस्य उपमेयत्वेन कल्पनं तिरस्कारो वा क्रियते, तत् प्रतीपम्।",
+        "meaning_en": "Pratīpa (Converse Simile) inverts the classical hierarchy: the standard Upamāna (like the moon or lotus) is subordinated and cast as the Upameya, or deemed superfluous, to exalt the real subject's supreme beauty.",
+        "meaning_te": "ఉపమేయము యొక్క ఔన్నత్యమును చూపుటకై ప్రసిద్ధోపమానమును ఉపమేయముగా దిగజార్చి చెప్పినను, తిరస్కరించినను ప్రతీపాలంకారమగును.",
+        "meaning_hi": "जहाँ उपमेय की श्रेष्ठता दिखाने के लिए प्रसिद्ध उपमान को ही उपमेय बना दिया जाए अथवा उसे व्यर्थ सिद्ध किया जाए।",
+        "source_reference": "चन्द्रालोकः (५.७) / काव्यप्रकाशः (१०.१६) / साहित्यदर्पणः (१०.१७)"
+      },
+      "primary_example": {
+        "sloka_sa": "त्वल्लोचनसमं पद्मं त्वद्वक्त्रसदृशो विधुः ।\nइत्युपमानमुपमेयतां प्राप्य लज्जितम् ॥",
+        "sloka_te": "త్వల్లోచనసమం పద్మం త్వద్వక్త్రసదృశో విధుః ।\nఇత్యుపమానముపమేయతాం ప్రాప్య లజ్జితమ్ ॥",
+        "anvaya": "पद्मं त्वल्लोचनसमं (भवति), विधुः त्वद्वक्त्रसदृशः (भवति), इति उपमानम् उपमेयतां प्राप्य लज्जितम् ।",
+        "bhaava_sa": "कमलं भवतीनेत्रतुल्यं वर्तते, चन्द्रश्च भवतीमुखसदृशः अस्ति। (लोके नेत्रं कमलमिव, मुखं चन्द्रमिव वर्ण्यते, अत्र तु वैपरीत्यम्)।",
+        "bhaava_en": "The lotus merely resembles your eyes, and the moon is barely equal to your face! (Instead of comparing the face to the moon, the moon is humbled by being likened to the face).",
+        "bhaava_te": "పద్మము నీ కన్నుల వంటిది; చంద్రుడు నీ ముఖమును పోలియున్నాడు! (సాధారణముగా ముఖము చంద్రుని వంటిది అందురు, కాని ఇచ్చట చంద్రుడే నీ ముఖము వంటివాడని తిరగవేసి చెప్పుట).",
+        "bhaava_hi": "कमल तुम्हारे नेत्रों के समान है और चन्द्रमा तुम्हारे मुख के जैसा है। (कमल और चन्द्र जैसे श्रेष्ठ उपमानों को गौण कर दिया गया)।",
+        "source_reference": "चन्द्रालोकः (५.७) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "प्रसिद्धोपमानयोः पद्मचन्द्रयोः उपमेयत्वकल्पनात् प्रतीपालङ्कारः।",
+        "en": "The universal standards of beauty (lotus and moon) are demoted to match the lady's superior eyes and face.",
+        "te": "లోకప్రసిద్ధములైన పద్మ చంద్రులను ఉపమాన స్థానము నుండి ఉపమేయముగా వర్ణించుటచే ప్రతీపాలంకారము.",
+        "hi": "यहाँ प्रसिद्ध उपमान (पद्म और चन्द्र) को उपमेय (नेत्र और मुख) के समान कहकर उल्टा वर्णन किया गया है, अतः प्रतीप अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-008",
+      "name": {
+        "sa": "रूपकम्",
+        "iast": "Rūpakam",
+        "te": "రూపకాలంకారము",
+        "hi": "रूपक अलंकार",
+        "en": "Metaphor"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.८) / काव्यप्रकाशः (१०.४) / साहित्यदर्पणः (१०.२८) | उदाहरणम्: चन्द्रालोकः (५.१३) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "उपमानोपमेयस्य सादृश्यादतिदुर्लभात् ।\nतद्रूपकमभेदो य उपमानोपमेययोः ॥",
+        "sloka_te": "ఉపమానోపమేయస్య సాదృశ్యాదతిదుర్లభాత్ ।\nతద్రూపకమభేదో య ఉపమానోపమేయయోః ॥",
+        "meaning_sa": "अतिसाम्यात् उपमानोपमेययोः भेदं तिरोधाय यत्र अभेदः प्रतिपाद्यते, तद्रूपकम्।",
+        "meaning_en": "Rūpaka (Metaphor) is the poetic identification where the distinction between the Upameya and Upamāna is eliminated, superimposing the identity of the standard onto the subject.",
+        "meaning_te": "ఉపమేయమునందు ఉపమాన ధర్మములను ఆరోపించి, రెంటికిని భేదము లేనట్లు (అభేదముగా) వర్ణించినచో రూపకాలంకారమగును.",
+        "meaning_hi": "जहाँ उपमेय और उपमान में अत्यधिक सादृश्य के कारण दोनों में अभेद (एकता) स्थापित कर दिया जाए।",
+        "source_reference": "चन्द्रालोकः (५.८) / काव्यप्रकाशः (१०.४) / साहित्यदर्पणः (१०.२८)"
+      },
+      "types": [
+        {
+          "type_name_sa": "साङ्गरूपकम्",
+          "type_name_en": "Composite / Organ-bearing Metaphor",
+          "description_en": "Where primary attributes as well as supporting limbs/accessories of the Upamāna are superimposed.",
+          "description_te": "ప్రధాన వస్తువుతో పాటు దాని అంగములను కూడా రూపకము చేయుట.",
+          "description_hi": "जहाँ मुख्य उपमेय के साथ उसके अंगों पर भी उपमान के अंगों का आरोप हो।"
+        },
+        {
+          "type_name_sa": "निरङ्गरूपकम्",
+          "type_name_en": "Simple / Non-composite Metaphor",
+          "description_en": "Direct metaphor on the main subject without extending to accessories.",
+          "description_te": "అంగారోపణము లేక కేవలము ప్రధాన వస్తువుపై మాత్రమే ఆరోపణ చేయుట.",
+          "description_hi": "जहाँ अंगों के बिना केवल मुख्य उपमेय पर उपमान का आरोप हो।"
+        },
+        {
+          "type_name_sa": "परम्परितरूपकम्",
+          "type_name_en": "Consequential / Chained Metaphor",
+          "description_en": "Where one metaphor causes or serves as the foundation for another metaphor.",
+          "description_te": "ఒక రూపకము మరియొక రూపకమునకు కారణమగుచు పరంపరగా సాగునది.",
+          "description_hi": "जहाँ एक रूपक दूसरे रूपक का कारण बनकर पुष्ट होता है।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "अयं हि धूर्जटिः साक्षाद् येन दग्धाः पुराः क्षणात् ।\nअयमास्ते विना शम्भुस्तृतीयाक्षं विलोचनम् ॥",
+        "sloka_te": "అయం హి ధూర్జటిః సాక్షాద్ యేన దగ్ధాః పురాః క్షణాత్ ।\nఅయమాస్తే వినా శమ్భుస్తృతీయాక్షం విలోచనమ్ ॥",
+        "anvaya": "अयं साक्षात् धूर्जटिः येन पुराः क्षणात् दग्धाः; अयं शम्भुः तृतीयाक्षं विलोचनं विना आस्ते ।",
+        "bhaava_sa": "अयं राजा साक्षात् शिव एव, येन क्षणेनैव शत्रुनगराणि दग्धानि। केवलं तृतीयनेत्रं विना अयं शम्भुरिव विराजते इति राजा शम्भुश्चेत्यनयोरभेदः।",
+        "bhaava_en": "This king is verily Lord Shiva in person, who reduced enemy cities to ashes in an instant. He is Lord Shambhu reigning without his third eye.",
+        "bhaava_te": "ఈ రాజు సాక్షాత్తు శివుడే, శత్రునగరములను క్షణములో భస్మము చేసెను. మూడవ కన్ను మాత్రమే లేని శంభునివలె నున్నాడు. ఇచ్చట రాజునందు శివత్వము అభేదముగా ఆరోపింపబడినది.",
+        "bhaava_hi": "यह राजा साक्षात् भगवान् शिव हैं, जिन्होंने क्षण भर में शत्रु-नगरों को जला दिया। केवल तीसरे नेत्र के बिना ये शम्भु ही हैं।",
+        "source_reference": "चन्द्रालोकः (५.१३) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र उपमेये राज्ञि उपमानस्य शम्भोः (धूर्जटेः) पूर्णः अभेदः आरोपितः। तस्माद् अयं रूपकालङ्कारः।",
+        "en": "Here, Lord Shiva (the Upamāna) is superimposed onto the king (Upameya) as identical (abheda). Hence it is Rūpaka.",
+        "te": "ఇచ్చట ఉపమేయమైన రాజునందు ఉపమానమైన శివుని సంపూర్ణ అభేదము ఆరోపింపబడినది కావున రూపకాలంకారము.",
+        "hi": "यहाँ उपमेय राजा पर उपमान भगवान शिव का पूर्ण अभेद आरोप है, अतः यह रूपक अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-009",
+      "name": {
+        "sa": "उल्लेखः",
+        "iast": "Ullekhaḥ",
+        "te": "ఉల్లేఖాలంకారము",
+        "hi": "उल्लेख अलंकार",
+        "en": "Multi-Perspective Perception"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.९) / साहित्यदर्पणः (१०.३५) | उदाहरणम्: चन्द्रालोकः (५.९) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "बहुधा भासते यत्र वस्तु गृहीतृभेदतः ।\nउल्लेखः स समाख्यातो नानाधर्मप्रभेदतः ॥",
+        "sloka_te": "బహుధా భాసతే యత్ర వస్తు గృహీతృభేదతః ।\nఉల్లేఖః స సమాఖ్యాతో నానాధర్మప్రభేదతః ॥",
+        "meaning_sa": "रुचिभेदात् संस्कारभेदाद्वा एकस्यैव वस्तुनः अनेकैः जनैः अनेकप्रकारेण यत् ग्रहणं वर्णनं वा, स उल्लेखः।",
+        "meaning_en": "Ullekha occurs when a single entity is perceived and described in multiple diverse ways by different observers according to their individual desires, attitudes, or relationships.",
+        "meaning_te": "ఒకే వస్తువును వివిధ వ్యక్తులు తమ తమ భావనలను బట్టి వేర్వేరు విధములుగా గ్రహించి వర్ణించినచో ఉల్లేఖాలంకారమగును.",
+        "meaning_hi": "जहाँ एक ही वस्तु का अनेक व्यक्तियों द्वारा अपनी-अपनी रुचि और भावना के अनुसार अनेक प्रकार से उल्लेख (वर्णन) किया जाए।",
+        "source_reference": "चन्द्रालोकः (५.९) / साहित्यदर्पणः (१०.३५)"
+      },
+      "primary_example": {
+        "sloka_sa": "गुरुर्वचसि कीर्तौ तु पार्थः शूरत्वसाधने ।\nभीष्मः शरधरे राजा दृश्यते जनलोचनैः ॥",
+        "sloka_te": "గురుర్వచసి కీర్తౌ తు పార్థః శూరత్వసాధనే ।\nభీష్మః శరధరే రాజా దృశ్యతే జనలోచనైః ॥",
+        "anvaya": "राजा वचसि गुरुः, कीर्तौ पार्थः, शूरत्वसाधने शरधरे भीष्मः जनलोचनैः दृश्यते ।",
+        "bhaava_sa": "स एव राजा वक्तृत्वे बृहस्पतिरिव, कीर्तौ अर्जुन इव, धनुर्विद्यायां शरधारे च भीष्म इव विभिन्नगुणैर्जनैर्विलोकिते बहुधा उल्लिख्यते।",
+        "bhaava_en": "The very same king is perceived as Brihaspati in speech, as Arjuna in fame, and as Bhishma in archery by observers.",
+        "bhaava_te": [
+          "ఆ ఒక్క రాజే వాక్కులందు బృహస్పతిగాను, కీర్తియందు అర్జునునిగాను, ధనుర్విద్యయందు భీష్మునిగాను విభిన్న వ్యక్తులచే వర్ణింపబడెను."
+        ],
+        "bhaava_hi": "वही एक राजा वाणी में बृहस्पति, कीर्ति में अर्जुन और धनुर्विद्या में भीष्म के रूप में विविध रूपों में देखा जाता है।",
+        "source_reference": "चन्द्रालोकः (५.९) / काव्यप्रकाश-उदाहरणम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "एकस्यैव राज्ञः बहुभिः ग्रहीतृभिः काम-कल्पतरु-काल-हरिरूपेण बहुधोल्लेखात् उल्लेखालङ्कारः।",
+        "en": "A single subject (the king) is perceived under four diverse roles based on the viewers' perspectives.",
+        "te": "ఒక్క రాజే స్త్రీలకు కాముడుగా, యాచకులకు కల్పతరువుగా, శత్రువులకు కాలుడుగా వేర్వేరు విధముల వర్ణింపబడుటచే ఉల్లేఖము.",
+        "hi": "यहाँ एक ही राजा का स्त्रियों, याचकों, शत्रुओं और बान्धवों द्वारा भिन्न-भिन्न रूपों में उल्लेख होने से उल्लेख अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-010",
+      "name": {
+        "sa": "सन्देहः",
+        "iast": "Sandehaḥ",
+        "te": "సందేహాలంకారము",
+        "hi": "संदेह अलंकार",
+        "en": "Poetic Doubt"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१०) / काव्यप्रकाशः (१०.६) / साहित्यदर्पणः (१०.३६) | उदाहरणम्: काव्यप्रकाशः (१०.४२२, उदाहरणम्)",
+      "lakshana": {
+        "sloka_sa": "सन्देहः प्रकृतेऽन्यस्य संशये सति जायते ।\nशुद्धो निश्चयगर्भो वा निश्चयान्त इति त्रिधा ॥",
+        "sloka_te": "సన్దేహః ప్రకృతేఽన్యస్య సంశయే సతి జాయతే ।\nశుద్ధో నిశ్చయగర్భో వా నిశ్చయాన్త ఇతి త్రిధా ॥",
+        "meaning_sa": "उपमानोपमेययोः सादृश्यजन्योऽनिश्चयरूपः संशयः यत्र चमत्कारजनकत्वेन वर्ण्यते, स सन्देहालङ्कारः।",
+        "meaning_en": "Sandeha (Poetic Doubt) is an aesthetically sustained oscillation of uncertainty, wondering whether the subject is the Upameya or the Upamāna, driven by astonishing similitude.",
+        "meaning_te": "ఉపమేయమును చూచి ఉపమానమో కాదో యను నిశ్చయము లేని సంశయమును చమత్కారముగా వర్ణించినచో సందేహాలంకారమగును.",
+        "meaning_hi": "जहाँ सादृश्य के कारण उपमेय में उपमान का काव्यात्मक संशय या अनिश्चय प्रकट किया जाए।",
+        "source_reference": "चन्द्रालोकः (५.१०) / काव्यप्रकाशः (१०.६) / साहित्यदर्पणः (१०.३६)"
+      },
+      "primary_example": {
+        "sloka_sa": "अयं मार्तण्डः किं स खलु तुरगैः सप्तभिरितः\nकृशानुः किं सर्वाः प्रसरति दिशो नैष नियतम् ।\nकृतान्तः किं साक्षान्महिषवहनोऽसाविति चिरं\nसमालोक्याजौ त्वां विदधति विकल्पान् प्रतिभटाः ॥",
+        "sloka_te": "అయం మార్తణ్డః కిం స ఖలు తురగైః సప్తభిరితః\nకృశానుః కిం సర్వాః ప్రసరతి దిశో నైష నియతమ్ ।\nకృతాన్తః కిం సాక్షాన్మహిషవహనోఽసావితి చిరం\nసమాలోక్యాజౌ త్వాం విదధతి వికల్పాన్ ప్రతిభటాః ॥",
+        "anvaya": "प्रतिभटाः आजौ त्वां समालोक्य—अयं मार्तण्डः किं? सः खलु सप्तभिः तुरगैः इतः । कृशानुः किं? एषः नियतं सर्वाः दिशः न प्रसरति । कृतान्तः किं? असौ साक्षात् महिषवहनः इति चिरं विकल्पान् विदधति ।",
+        "bhaava_sa": "युद्धे भवतः तेजः दृष्ट्वा शत्रवः सन्दिह्यन्ते- किं सूर्यः? नहि, अस्य सप्त अश्वा न सन्ति। किम् अग्निः? नहि, अयं सर्वदिक्षु न ज्वलति। किं यमः? नहि, अस्य महिषो नास्ति इति।",
+        "bhaava_en": "Seeing you in battle, enemy warriors wonder in awe: Is this the Sun? But he lacks seven horses! Is this Fire? But it doesn't consume all directions! Is this Yama? But where is his buffalo vehicle? Thus they oscillate in endless doubt.",
+        "bhaava_te": "రణరంగమున నిన్ను చూచి శత్రువులు సంశయించుచున్నారు: ఇతడు సూర్యుడా? కాదే, సప్తాశ్వములు లేవు! అగ్నియా? కాదే, నలుదిక్కులా వ్యాపించుట లేదు! యముడా? కాదే, మహిషవాహనము లేదు! ఇట్లు నిశ్చయము తేలక సందిగ్ధములో పడుచున్నారు.",
+        "bhaava_hi": "युद्ध में आपके प्रचंड तेज को देखकर शत्रु संशय में पड़ जाते हैं—क्या यह सूर्य है? पर इसके सात घोड़े नहीं हैं। क्या यह अग्नि है? पर यह सब दिशाओं में नहीं फैल रही। क्या साक्षात् यमराज हैं? पर इनका वाहन भैंसा नहीं है।",
+        "source_reference": "काव्यप्रकाशः (१०.४२२, उदाहरणम्)"
+      },
+      "alankara_samanvaya": {
+        "sa": "राज्ञि मार्तण्ड-वह्नि-यमराजत्वेन संशयोत्पादनात् निश्चयगर्भः सन्देहालङ्कारः।",
+        "en": "The warriors' hesitation among Sun, Fire, and Yama creates an artistic, unresolved doubt.",
+        "te": "రాజునందు సూర్యుడా, అగ్నియా, యముడా అను సంశయము వికల్పములతో పోషింపబడుటచే సందేహాలంకారము.",
+        "hi": "यहाँ राजा में सूर्य, अग्नि और यमराज का सुंदर संशय प्रकट होकर चमत्कार उत्पन्न करता है।"
+      }
+    },
+    {
+      "id": "ALK-011",
+      "name": {
+        "sa": "भ्रान्तिमान्",
+        "iast": "Bhrāntimān",
+        "te": "భ్రాంతిమదలంకారము",
+        "hi": "भ्रान्तिमान अलंकार",
+        "en": "Poetic Illusion / False Perception"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.११) / काव्यप्रकाशः (१०.७) / साहित्यदर्पणः (१०.३७) | उदाहरणम्: काव्यप्रकाशः (१०.४२४, उदाहरणम्)",
+      "lakshana": {
+        "sloka_sa": "साम्यादतस्मिंस्तद्बुद्धिर्भ्रान्तिमान् प्रतिभाप्रभा ।\nकविसम्मतसादृश्याद् भ्रान्तिरुत्पद्यते यदि ॥",
+        "sloka_te": "సామ్యాదతస్మింస్తద్బుద్ధిర్భ్రాన్తిమాన్ ప్రతిభాప్రభా ।\nకవిసమ్మతసాదృశ్యాద్ భ్రాన్తిరుత్పద్యతే యది ॥",
+        "meaning_sa": "सादृश्यात् प्रकृते (उपमेये) अप्रकृतस्य (उपमानस्य) यदा निश्चयरूपः भ्रमः उत्पद्यते, तदनुकूला चेष्टा च भवति, तदा भ्रान्तिमान्।",
+        "meaning_en": "Bhrāntimān occurs when extreme resemblance causes a positive, definite false perception (mistaking A for B) leading to an act based on that illusion.",
+        "meaning_te": "సాదృశ్యము వలన ఒక వస్తువును చూచి మరియొక వస్తువని భ్రమపడి, ఆ భ్రమతో పనులను సాగించినచో భ్రాంతిమదలంకారమగును.",
+        "meaning_hi": "जहाँ सादृश्य के कारण उपमेय में उपमान का पक्का भ्रम हो जाए और उस भ्रम के अनुसार क्रिया भी होने लगे।",
+        "source_reference": "चन्द्रालोकः (५.११) / काव्यप्रकाशः (१०.७) / साहित्यदर्पणः (१०.३७)"
+      },
+      "primary_example": {
+        "sloka_sa": "कपाले मार्जारः पय इति कराँल्लेढि शशिनस्\nतरुच्छिद्रप्रोतान् बिसमिति करी सङ्कलयति ।\nरतान्ते तल्पस्थान् हरति वनिताऽप्यंशुकमिति\nप्रभामत्तश्चन्द्रो जगदिदमहो विप्लवयति ॥",
+        "sloka_te": "కపాలే మార్జారః పయ ఇతి కరాఁల్లేఢి శశినస్\nతరుచ్ఛిద్రప్రోతాన్ బిసమితి కరీ సఙ్కలయతి ।\nరతాన్తే తల్పస్థాన్ హరతి వనితాఽప్యంశుకమితి\nప్రభామత్తశ్చన్ద్రో జగదిదమహో విప్లవయతి ॥",
+        "anvaya": "मार्जारः कपाले शशिनः करान् पयः इति लेढि; करी तरुच्छिद्रप्रोतान् (करान्) बिसम् इति सङ्कलयति; वनिता अपि रतान्ते तल्पस्थान् (करान्) अंशुकम् इति हरति; अहो! प्रभामत्तः चन्द्रः इदं जगत् विप्लवयति ।",
+        "bhaava_sa": "चन्द्रिकाम् दुग्धं मत्वा मार्जारः चाटति, कमलनालं मत्वा गजः शुण्डादण्डेन गृह्णाति, वस्त्रं मत्वा कान्ता शय्यायाः आकृष्य संवृणोति। एवं चन्द्रिका भ्रान्तिं जनयति।",
+        "bhaava_en": "A cat licks the moonbeams inside an empty bowl mistaking them for milk; an elephant snatches beams filtering through tree foliage mistaking them for lotus stalks; and a maiden gathers moonbeams on her bed mistaking them for a silk sheet! Ah, the radiant moon floods the world in sweet illusion!",
+        "bhaava_te": "గిన్నెలోని వెన్నెలను చూచి పాలు అనుకొని పిల్లి నాకుచున్నది; చెట్లసందులనుండి పడు వెన్నెలను తామరతూడులని ఏనుగు లాగుచున్నది; పడకపై పడిన వెన్నెలను తెల్లని చీరయని కామిని సవరించుకొనుచున్నది! వెన్నెల లోకమును భ్రమలో ముంచుచున్నది.",
+        "bhaava_hi": "कटोरे में फैली चाँदनी को दूध समझकर बिल्ली चाट रही है; वृक्षों के छिद्रों से छनकर आती चाँदनी को कमल-नाल समझकर हाथी सूंड से पकड़ रहा है; और सेज पर फैली चाँदनी को रेशमी चादर समझकर युवती समेट रही है।",
+        "source_reference": "काव्यप्रकाशः (१०.४२४, उदाहरणम्)"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र चन्द्रिकायां (उपमेये) दुग्ध-कमलनाल-वस्त्राणां (उपमानानां) सादृश्यात् दृढनिश्चयरूपभ्रमो जात इति भ्रान्तिमान्।",
+        "en": "Moonlight is actually acted upon as milk, lotus stalk, and silk sheet respectively, fulfilling the criteria of poetic illusion.",
+        "te": "వెన్నెల యందు పాలు, తామరతూడు, వస్త్రముల భ్రమ కలిగి తదనుగుణమైన వ్యాపారములు జరిగినందున భ్రాంతిమదలంకారము.",
+        "hi": "यहाँ चाँदनी में दूध, कमलनाल तथा वस्त्र का पक्का भ्रम होकर तदनुरूप क्रियाएँ की जा रही हैं, अतः भ्रान्तिमान अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-012",
+      "name": {
+        "sa": "अपह्नुतिः",
+        "iast": "Apahnutiḥ",
+        "te": "అపహ్నుత్యలంకారము",
+        "hi": "अपह्नुति अलंकार",
+        "en": "Concealment / Denial of True Identity"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१२) / काव्यप्रकाशः (१०.५) / साहित्यदर्पणः (१०.३८) | उदाहरणम्: काव्यप्रकाशः (१०.४३१, उदाहरणम्)",
+      "lakshana": {
+        "sloka_sa": "प्रकृतं यन्निषिध्यान्यत्साध्यते सा त्वपह्नुतिः ।\nगोपयित्वा स्वरूपं तु यदन्यथा प्रदर्श्यते ॥",
+        "sloka_te": "ప్రకృతం యన్నిషిధ్యాన్యత్సాధ్యతే సా త్వపహ్నుతిః ।\nగోపయిత్వా స్వరూపం తు యదన్యథా ప్రదర్శ్యతే ॥",
+        "meaning_sa": "यत्र प्रकृतस्य (उपमेयस्य) सत्यस्वरूपं निषिध्य (गोपयित्वा) तत्र अप्रकृतस्य (उपमानस्य) सत्यत्वेन स्थापनं क्रियते, सापह्नुतिः।",
+        "meaning_en": "Apahnuti (Concealment) is the figure wherein the authentic subject (Upameya) is explicitly denied and replaced by the standard (Upamāna) as the absolute reality.",
+        "meaning_te": "ఉపమేయము యొక్క నిజస్వరూపమును దాచి లేదా కాదని తిరస్కరించి, దాని స్థానమున ఉపమానమునే నిరూపించి చెప్పినచో అపహ్నుత్యలంకారమగును.",
+        "meaning_hi": "जहाँ उपमेय (प्रकृत) का निषेध करके उसके स्थान पर उपमान (अप्रकृत) की स्थापना की जाए।",
+        "source_reference": "चन्द्रालोकः (५.१२) / काव्यप्रकाशः (१०.५) / साहित्यदर्पणः (१०.३८)"
+      },
+      "primary_example": {
+        "sloka_sa": "अवाप्तः प्रागल्भ्यं परिणतरुचः शैलतनये\nकलङ्को नैवायं विलसति शशाङ्कस्य वपुषि ।\nअमुष्येयं मन्ये विगलदमृतस्यन्दशिशिरे\nरतिश्रान्ता शेते रजनिरमणी गाढमुरसि ॥",
+        "sloka_te": "అవాప్తః ప్రాగల్భ్యం పరిణతరుచః శైలతనయే\nకలఙ్కో నైవాయం విలసతి శశాఙ్కస్య వపుషి ।\nఅముష్యేయం మన్యే విగలదమృతస్యన్దశిశిరే\nరతిశ్రాన్తా శేతే రజనిరమణీ గాఢమురసి ॥",
+        "anvaya": "हे शैलतनये! परिणतरुचः शशाङ्कस्य वपुषि प्रागल्भ्यम् अवाप्तः अयं कलङ्कः न एव विलसति; अमुष्य विगलदमृतस्यन्दशिशिरे उरसि रतिश्रान्ता इयं रजनिरमणी गाढं शेते इति मन्ये ।",
+        "bhaava_sa": "एतत् आकाशमण्डलं नहि अपितु महासागरः। अयं चन्द्रो नहि अपितु शेषनागः। एताः तारा नहि अपितु फेनबिन्दवः। सन्ध्या नहि अपितु सागरस्य तरङ्गमाला अस्ति।",
+        "bhaava_en": "This is no sky—it is an ocean! This is no moon—it is the coiled Shesha serpent! These are no stars—they are flecks of sea foam! This is no dusk—it is the tidal surge of the vast deep!",
+        "bhaava_te": "ఇది ఆకాశము కాదు సముద్రము! చంద్రుడు కాడు ఆదిశేషుడు! నక్షత్రములు కావు నురుగు తుంపరలు! సంధ్యాకాలము కాదు సముద్రపు పొంగుచున్న అలల వరుస!",
+        "bhaava_hi": "यह आकाश नहीं बल्कि महासागर है; यह चन्द्रमा नहीं, फन फैलाए शेषनाग है; ये तारे नहीं, समुद्र के झाग हैं; और यह सन्ध्या नहीं, लहरों की उत्ताल तरंगें हैं।",
+        "source_reference": "काव्यप्रकाशः (१०.४३१, उदाहरणम्)"
+      },
+      "alankara_samanvaya": {
+        "sa": "आकाश-चन्द्र-तारा-सन्ध्यानां (उपमेयानाम्) 'न' इति शब्देन साक्षात् निषेधं कृत्वा समुद्र-शेषनाग-फेन-कल्लोलानाम् (उपमानानाम्) स्थापनात् शुद्धापह्नुतिः।",
+        "en": "Sky, moon, and stars are denied ('na') and identified as the sea, the divine serpent, and oceanic foam.",
+        "te": "ఆకాశము, చంద్రుడు, నక్షత్రములు అను ఉపమేయములను నిషేధించి సముద్రము, శేషుడు, నురుగు అను ఉపమానములను స్థాపించుటచే శుద్ధాపహ్నుతి.",
+        "hi": "यहाँ आकाश, चन्द्रमा और तारों का स्पष्ट निषेध करके सागर, शेषनाग और फेन की स्थापना की गई है, अतः अपह्नुति अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-013",
+      "name": {
+        "sa": "उत्प्रेक्षा",
+        "iast": "Utprekṣā",
+        "te": "ఉత్ప్రేక్షాలంకారము",
+        "hi": "उत्प्रेक्षा अलंकार",
+        "en": "Poetic Supposition / Fancy"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१३) / काव्यप्रकाशः (१०.९) / साहित्यदर्पणः (१०.४०) | उदाहरणम्: शूद्रककृत-मृच्छकटिकम् (१.३४) / काव्यप्रकाशः (१०.४३४) / चन्द्रालोकः (५.२८)",
+      "lakshana": {
+        "sloka_sa": "सम्भावनमथोत्प्रेक्षा प्रकृतस्य परेण यत् ।\nमन्ये शङ्के ध्रुवं प्रायो नूनमित्येवमादिभिः ॥",
+        "sloka_te": "సమ్భావనమథోత్ప్రేక్షా ప్రకృతస్య పరేణ యత్ ।\nమన్యే శఙ్కే ధ్రువం ప్రాయో నూనమిత్యేవమాదిభిః ॥",
+        "meaning_sa": "यत्र प्रकृतस्य (उपमेयस्य) उपमानेन सह सादृश्यवशात् तर्कणा (सम्भावना) क्रियते, सोत्प्रेक्षा।",
+        "meaning_en": "Utprekṣā (Poetic Fancy) is the imaginative supposition of the Upameya as identical with an imagined Upamāna, signaled by terms like 'manye' (I fancy), 'śaṅke' (I suspect), 'dhruvam' (surely), 'prāyaḥ' (likely), 'nūnam' (verily).",
+        "meaning_te": "ఉపమేయమును మరొక వస్తువుగా ఊహించి (సంభావన చేసి) చెప్పినచో ఉత్ప్రేక్షాలంకారమగును.",
+        "meaning_hi": "जहाँ उपमेय में उपमान की बलवती संभावना या कल्पना की जाए, वहाँ उत्प्रेक्षा अलंकार होता है।",
+        "source_reference": "चन्द्रालोकः (५.१३) / काव्यप्रकाशः (१०.९) / साहित्यदर्पणः (१०.४०)"
+      },
+      "types": [
+        {
+          "type_name_sa": "वाच्योत्प्रेक्षा",
+          "type_name_en": "Expressed Utprekṣā",
+          "description_en": "Indicated explicitly by vācaka words such as ivā, manye, nūnam.",
+          "description_te": "ఇవ, మన్యే, నూనం మొదలగు శబ్దములచే స్పష్టముగా ఊహించుట.",
+          "description_hi": "जहाँ 'मानो', 'जानो', 'मन्ये', 'नूनम्' जैसे वाचक शब्द प्रयुक्त हों।"
+        },
+        {
+          "type_name_sa": "प्रतीयमानोत्प्रेक्षा",
+          "type_name_en": "Implied Utprekṣā",
+          "description_en": "Where the supposition is understood without overt connector particles.",
+          "description_te": "వాచక శబ్దములు లేకున్నను ఊహ వ్యంగ్యముగా తోచునది.",
+          "description_hi": "जहाँ वाचक शब्दों के बिना केवल अर्थसामर्थ्य से सम्भावना प्रतीत हो।"
+        },
+        {
+          "type_name_sa": "हेतूत्प्रेक्षा & फलोत्प्रेक्षा",
+          "type_name_en": "Causal & Purposive Fancy",
+          "description_en": "Fanciful imagination of a non-cause as the poetic cause, or a non-motive as the goal.",
+          "description_te": "హేతువు కానిదానిని హేతువుగాను, ఫలము కానిదానిని ఫలముగాను ఊహించుట.",
+          "description_hi": "अ-कारण में कारण की अथवा अ-फल में फल की कल्पना करना।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "लिम्पतीव तमोऽङ्गानि वर्षतीवाञ्जनं नभः ।\nअसत्पुरुषसेवेव दृष्टिर्निष्फलतां गता ॥",
+        "sloka_te": "లిమ్పతీవ తమోఽఙ్గాని వర్షతీవాఞ్జనం నభః ।\nఅసత్పురుషసేవేవ దృష్టిర్నిష్ఫలతాం గతా ॥",
+        "anvaya": "तमः अङ्गानि लिम्पति इव, नभः अञ्जनं वर्षति इव, दृष्टिः असत्पुरुषसेवा इव निष्फलतां गता ।",
+        "bhaava_sa": "गाढान्धकारः शरीरे अङ्गलेपनमिव करोति, आकाशं कज्जलं वर्षतीव प्रतिभाति, दुर्जनसेवेव दृष्टिः निष्फला जाता।",
+        "bhaava_en": "The thick darkness seems to smear the bodily limbs; the heavens seem to shower collyrium (black eye-ointment); and eyesight has become as futile as serving a wicked master.",
+        "bhaava_te": "చీకటి శరీరమున కంటిపూతవలె పూయుచున్నదా యనునట్లున్నది; ఆకాశము కాటుకను వర్షించుచున్నదా యనునట్లున్నది; దుర్జనునికి చేసిన సేవవలె కంటిచూపు వ్యర్థమైపోయినది.",
+        "bhaava_hi": "गाढ़ा अन्धकार मानो अंगों पर लेप कर रहा है, आकाश मानो काजल की वर्षा कर रहा है, और दृष्टि दुर्जन की सेवा के समान निष्फल हो गई है।",
+        "source_reference": "शूद्रककृत-मृच्छकटिकम् (१.३४) / काव्यप्रकाशः (१०.४३४) / चन्द्रालोकः (५.२८)"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र तमःप्रसरणे 'लेपनस्य', मेघान्धकारे 'अञ्जनवृष्टेः' च 'इव' शब्देन सम्भावनात् वाच्योत्प्रेक्षालङ्कारः।",
+        "en": "The natural darkness of the night is imaginatively conceived as active anointing and collyrium rain through the particle 'iva'.",
+        "te": "చీకటి వ్యాపించుటను లేపనముగాను, కాటుక వర్షముగాను 'ఇవ' శబ్దముతో సంభావించుటచే వాచ్యోత్ప్రేక్ష.",
+        "hi": "यहाँ अन्धकार के फैलाव को 'लेप करना' तथा आकाश को 'काजल बरसाना' मानकर 'इव' द्वारा सम्भावना की गई है, अतः वाच्योत्प्रेक्षा है।"
+      }
+    },
+    {
+      "id": "ALK-014",
+      "name": {
+        "sa": "अतिशयोक्तिः",
+        "iast": "Atiśayoktiḥ",
+        "te": "అతిశయోక్త్యలంకారము",
+        "hi": "अतिशयोक्ति अलंकार",
+        "en": "Hyperbole / Sublime Exaggeration"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१४) / काव्यप्रकाशः (१०.१२) / साहित्यदर्पणः (१०.४६) | उदाहरणम्: चन्द्रालोकः (५.३१) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "रूपकातिशयोक्तिः स्यान्निगीर्याध्यवसानतः ।\nलोकातिक्रान्तगोचरता यत्र सातिशयोच्यते ॥",
+        "sloka_te": "రూపకాతిశయోక్తిః స్యాన్నిగీర్యాధ్యవసానతః ।\nలోకాతిక్రాన్తగోచరతా యత్ర సాతిశయోచ్యతే ॥",
+        "meaning_sa": "यत्र उपमेयस्य उपमानेन सर्वथा निगरणम् (अन्तर्भावः) कृत्वा उपमानमात्रेणैव उपमेयस्य प्रतीतिः क्रियते, सा रूपाकातिशयोक्तिः।",
+        "meaning_en": "Atiśayokti is hyperbole achieved when the Upamāna completely swallows (nigīrya) the Upameya, such that the subject is referenced solely by the metaphorical vehicle.",
+        "meaning_te": "ఉపమేయమును చెప్పకయే ఉపమానమునందే దానిని అంతర్భవింపజేసి (మ్రింగివేసి) ఉపమానముచేతనే వర్ణించినచో రూపాకాతిశయోక్తి యగును.",
+        "meaning_hi": "जहाँ उपमेय को पूरी तरह निगलकर केवल उपमान के रूप में ही उसका वर्णन किया जाए।",
+        "source_reference": "चन्द्रालोकः (५.१४) / काव्यप्रकाशः (१०.१२) / साहित्यदर्पणः (१०.४६)"
+      },
+      "primary_example": {
+        "sloka_sa": "पश्य नीलोत्पलद्वन्द्वात् निसरन्ति शिताः शराः ।\nअद्भुतं यन्महेष्वासाः कम्पन्ते तद्विलोकनात् ॥",
+        "sloka_te": "పశ్య నీలోత్పలద్వన్ద్వాత్ నిసరన్తి శితాః శరాః ।\nఅద్భుతం యన్మహేష్వాసాః కమ్పన్తే తద్విలోకనాత్ ॥",
+        "anvaya": "पश्य, नीलोत्पलद्वन्द्वात् शिताः शराः निसरन्ति; यत् तद्विलोकनात् महेष्वासाः कम्पन्ते तत् अद्भुतम् ।",
+        "bhaava_sa": "पश्य, अस्याः कान्तायाः नयनद्वयात् (नीलोत्पलाभ्याम्) तीक्ष्णाः कटाक्षाः (शराः) निर्गच्छन्ति।",
+        "bhaava_en": "Behold! From that pair of blue lotuses, sharp arrows are flying forth! (The eyes are concealed as lotuses, and the sidelong glances as piercing arrows).",
+        "bhaava_te": "చూడుము! రెండు నల్లకలువల జంట నుండి వాడియైన బాణములు వెలువడుచున్నవి! (నల్లకలువలు = కన్నులు; బాణములు = చూపులు).",
+        "bhaava_hi": "देखो! नीले कमलों के जोड़े में से तीक्ष्ण बाण निकल रहे हैं! (कमल = नेत्र, बाण = कटाक्ष दृष्टि)।",
+        "source_reference": "चन्द्रालोकः (५.३१) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "नेत्रयोः 'नीलोत्पल' शब्देन, कटाक्षाणां च 'शर' शब्देन निगरणात् रूपाकातिशयोक्तिः।",
+        "en": "Eyes and glances are completely swallowed by the terms 'blue lotuses' and 'arrows', realizing Rūpakātiśayokti.",
+        "te": "కన్నులనెడి ఉపమేయమును నల్లకలువలను ఉపమానము మ్రింగివేసి చెప్పినందున రూపాకాతిశయోక్తి.",
+        "hi": "यहाँ नेत्र और कटाक्ष रूपी उपमेयों को नीलकमल और बाण रूपी उपमानों ने पूर्णतया निगल लिया है।"
+      }
+    },
+    {
+      "id": "ALK-015",
+      "name": {
+        "sa": "तुल्ययोगिता",
+        "iast": "Tulyayogitā",
+        "te": "తుల్యయోగితాలంకారము",
+        "hi": "तुल्ययोगिता अलंकार",
+        "en": "Equal Association"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१५) / काव्यप्रकाशः (१०.१३) / साहित्यदर्पणः (१०.४८) | उदाहरणम्: चन्द्रालोकः (५.४०) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "नियम्यैकक्रियायोगः प्रकृतानामथापरेषाम् ।\nतुल्ययोगिता मता सैव गुणक्रियादिभिस्तथा ॥",
+        "sloka_te": "నియమ్యైకక్రియాయోగః ప్రకృతానామథాపరేషామ్ ।\nతుల్యయోగితా మతా సైవ గుణక్రియాదిభిస్తథా ॥",
+        "meaning_sa": "केवलानां प्रकृतानाम् (वर्ण्यानाम्) एव अथवा केवलानाम् अप्रकृतानाम् (अवर्ण्यानाम्) एव यत्र एकधर्माभिसम्बन्धः भवति, सा तुल्ययोगिता।",
+        "meaning_en": "Tulyayogitā is the association of multiple exclusively relevant (Prakṛta) or exclusively non-relevant (Aprakṛta) items with a single common action, state, or attribute.",
+        "meaning_te": "ప్రకృతములైన (వర్ణనీయములైన) వస్తువులకు మాత్రమే గాని, లేదా అప్రకృతములైన వస్తువులకు మాత్రమే గాని ఒకే ధర్మముతో అన్వయము చెప్పినచో తుల్యయోగిత యగును.",
+        "meaning_hi": "जहाँ केवल प्रस्तुत (वर्ण्य) पदार्थों का अथवा केवल अप्रस्तुत पदार्थों का एक ही धर्म (क्रिया या गुण) से सम्बन्ध दिखाया जाए।",
+        "source_reference": "चन्द्रालोकः (५.१५) / काव्यप्रकाशः (१०.१३) / साहित्यदर्पणः (१०.४८)"
+      },
+      "primary_example": {
+        "sloka_sa": "त्वदङ्गमार्दवे दृष्टे कस्य चित्ते न भासते ।\nमालती-शशभृल्लेखा-कदलीनां कठोरता ॥",
+        "sloka_te": "త్వదఙ్గమార్దవే దృష్టే కస్య చిత్తే న భాసతే ।\nమాలతీ-శశభృల్లేఖా-కదలీనాం కఠోరతా ॥",
+        "anvaya": "त्वदङ्गमार्दवे दृष्टे (सति) कस्य चित्ते मालती-शशभृल्लेखा-कदलीनां कठोरता न भासते? (सर्वस्यापि भासते एव) ।",
+        "bhaava_sa": "हे राजन्! भवतः प्रतापोदये सति कुमुदानि संकुचन्ति, सूर्यः मन्दते, तव शत्रवश्च विनश्यन्ति।",
+        "bhaava_en": "O King! At your glorious ascension, water-lilies fade, the sun grows faint, and all your adversaries perish together.",
+        "bhaava_te": "ఓ రాజా! నీవు ఉదయించగానే కలువలు ముకుళించుచున్నవి, సూర్యుడు తేజస్సు కోల్పోవుచున్నాడు, నీ శత్రువులు నాశనమగుచున్నారు.",
+        "bhaava_hi": "हे राजन्! आपके अभ्युदय होने पर कुमुद मलिन हो जाते हैं, सूर्य मंद पड़ जाता है और आपके शत्रु नष्ट हो जाते हैं।",
+        "source_reference": "चन्द्रालोकः (५.४०) / काव्यप्रकाश-उदाहरणम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र सर्वेषां प्रकृतानामेव म्लान-मन्द-नाशरूपेण एकापकर्षधर्माभिसम्बन्धात् प्रकृतगोचरा तुल्ययोगिता।",
+        "en": "All subjects share a unified declining outcome upon the king's rise.",
+        "te": "వర్ణనీయములైన శత్రువులు, సూర్యుడు మొదలగు వారలకేకకాలమున అపకర్షధర్మాన్వయము జరిగినది కావున తుల్యయోగిత.",
+        "hi": "यहाँ प्रस्तुत पदार्थों का एक ही अवनति रूप धर्म से समन्वय होने के कारण तुल्ययोगिता अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-016",
+      "name": {
+        "sa": "दीपकम्",
+        "iast": "Dīpakam",
+        "te": "దీపకాలంకారము",
+        "hi": "दीपक अलंकार",
+        "en": "Illuminator / Single Predicate Coordination"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१६) / काव्यप्रकाशः (१०.१४) / साहित्यदर्पणः (१०.४९) | उदाहरणम्: चन्द्रालोकः (५.४३) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "वदन्ति वर्ण्यावर्ण्यानां धर्मैक्यं दीपकं बुधाः ।\nएकेनैव पदेनापि बहवोऽर्थाः प्रकाशिताः ॥",
+        "sloka_te": "వదన్తి వర్ణ్యావర్ణ్యానాం ధర్మైక్యం దీపకం బుధాః ।\nఏకేనైవ పదేనాపి బహవోఽర్థాః ప్రకాశితాః ॥",
+        "meaning_sa": "यथा एकस्थः दीपः सर्वं गृहं प्रकाशयति, तथा एकस्मिन्नेव वाक्ये प्रकृतानाम् (वर्ण्यानाम्) अप्रकृतानां (अवर्ण्यानाम्) च एकत्र क्रिया-गुणसम्बन्धः दीपकम्।",
+        "meaning_en": "Just as a single lamp placed in one spot illuminates the entire room, Dīpaka joins both relevant (Prakṛta) and non-relevant (Aprakṛta) subjects to a single common predicate or attribute.",
+        "meaning_te": "ఒకే దీపము గది యంతటిని ప్రకాశింపజేయునట్లు, వర్ణనీయము (ప్రకృతము) మరియు అవర్ణనీయము (అప్రకృతము) అను రెండింటికిని ఒకే ధర్మముతో అన్వయము చెప్పినచో దీపకాలంకారమగును.",
+        "meaning_hi": "जहाँ प्रस्तुत और अप्रस्तुत दोनों का एक ही धर्म (क्रिया या गुण) के साथ अन्वय हो, जैसे एक ही दीपक सम्पूर्ण भवन को प्रकाशित करता है।",
+        "source_reference": "चन्द्रालोकः (५.१६) / काव्यप्रकाशः (१०.१४) / साहित्यदर्पणः (१०.४९)"
+      },
+      "primary_example": {
+        "sloka_sa": "मदेन भाति कलभः प्रतापेन महीपतिः ।\nशरेण भाति कोदण्डः शौर्येण च रणाङ्गणम् ॥",
+        "sloka_te": "మదేన భాతి కలభః ప్రతాపేన మహీపతిః ।\nశరేణ భాతి కోదణ్డః శౌర్యేణ చ రణాఙ్గణమ్ ॥",
+        "anvaya": "कलभः मदेन भाति, महीपतिः प्रतापेन (भाति), कोदण्डः शरेण भाति, रणाङ्गणं च शौर्येण (भाति) ।",
+        "bhaava_sa": "हस्तिशिशुः मदजलेन शोभते, राजा च स्वकीयतेजसा शोभते। 'भाति' इति एका क्रिया द्वयोः प्रकाशिका।",
+        "bhaava_en": "The young elephant shines with rutting ichor; the sovereign monarch shines with imperial valor. The single verb 'shines' (bhāti) illuminates both.",
+        "bhaava_te": "ఏనుగుపిల్ల మదజలముచేత ప్రకాశించుచున్నది; ప్రభువు తన ప్రతాపముచేత ప్రకాశించుచున్నాడు. (ఒకే 'భాతి' అను క్రియ ఇరువురికి అన్వయించును).",
+        "bhaava_hi": "हाथी का बच्चा मद से शोभा पाता है और राजा अपने पराक्रम से शोभा पाता है। 'शोभा पाता है' यह एक ही क्रिया दोनों को प्रकाशित करती है।",
+        "source_reference": "चन्द्रालोकः (५.४३) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "प्रकृतस्य राज्ञः अप्रकृतस्य कलभस्य च 'भाति' इति एकक्रियया अन्वयात् दीपकम्।",
+        "en": "The sovereign (Prakṛta) and the elephant (Aprakṛta) are governed by the single verb 'bhāti'.",
+        "te": "ప్రకృతుడైన రాజునకు అప్రకృతమైన కలభమునకు 'భాతి' అను ఒకే క్రియతో సంబంధము కూర్చబడుటచే దీపకము.",
+        "hi": "यहाँ प्रस्तुत राजा और अप्रस्तुत हाथी के बच्चे का 'भाति' (शोभा पाता है) क्रिया से एक साथ अन्वय होने से दीपक अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-017",
+      "name": {
+        "sa": "प्रतिवस्तूपमा",
+        "iast": "Prativastūpamā",
+        "te": "ప్రతివస్తూపమాలంకారము",
+        "hi": "प्रतिवस्तूपमा अलंकार",
+        "en": "Parallel Simile / Typical Statement Comparison"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१७) / काव्यप्रकाशः (१०.१५) / साहित्यदर्पणः (१०.५०) | उदाहरणम्: चन्द्रालोकः (५.२०) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "प्रतिवस्तूपमा सा स्याद्वाक्ययोस्तुल्यधर्मयोः ।\nएकेनैवाभिधानेन भिन्नवाच्येन वर्णिते ॥",
+        "sloka_te": "ప్రతివస్తూపమా సా స్యాద్వాక్యయోస్తుల్యధర్మయోః ।\nఏకేనైవాభిధానేన భిన్నవాచ్యేన వర్ణితే ॥",
+        "meaning_sa": "यत्र उपमानवाक्ये उपमेयवाक्ये च एक एव साधारणधर्मः पुनरुक्तिदोषपरिहाराय भिन्नशब्दाभ्यां प्रतिपाद्यते, सा प्रतिवस्तूपमा।",
+        "meaning_en": "Prativastūpamā is formed when the same identical common attribute is expressed in two parallel sentences (the subject clause and the standard clause) using different synonyms to avoid tautological repetition.",
+        "meaning_te": "రెండు వాక్యములలోను ఒకే సమాన ధర్మమును పునరుక్తి దోషము రాకుండ వేర్వేరు శబ్దములతో ప్రతిబింబింపజేసినచో ప్రతివస్తూపమ యగును.",
+        "meaning_hi": "जहाँ उपमेय-वाक्य और उपमान-वाक्य दोनों में एक ही साधारण धर्म भिन्न-भिन्न शब्दों द्वारा कहा जाए।",
+        "source_reference": "चन्द्रालोकः (५.१७) / काव्यप्रकाशः (१०.१५) / साहित्यदर्पणः (१०.५०)"
+      },
+      "primary_example": {
+        "sloka_sa": "तापेन भ्राजते सूर्यः शूरश्चापेन राजते ।\nविभाति कीर्तिः सुकृतैः सत्त्वेन च युधिष्ठिरः ॥",
+        "sloka_te": "తాపేన భ్రాజతే సూర్యః శూరశ్చాపేన రాజతే ।\nవిభాతి కీర్తిః సుకృతైః సత్త్వేన చ యుధిష్ఠిరః ॥",
+        "anvaya": "सूर्यः तापेन भ्राजते, शूरः चापेन राजते, कीर्तिः सुकृतैः विभाति, युधिष्ठिरः च सत्त्वेन (विभाति) ।",
+        "bhaava_sa": "सूर्यः स्वकीयतेजसा दीव्यते, योद्धा च धनुषा शोभते। 'भ्राजते' 'राजते' इति शब्दद्वयेन एक एव शोभाधर्मः उक्तः।",
+        "bhaava_en": "The sun shines with intense heat; the valiant warrior radiates with his bow. The concept of 'splendid radiance' is stated through two distinct verbs ('bhrājate' and 'rājate').",
+        "bhaava_te": "సూర్యుడు ప్రచండమైన ఎండచేత ప్రకాశించుచున్నాడు; వీరుడు తన ధనుస్సుచేత శోభిల్లుచున్నాడు. ('ప్రకాశించుట' అను ధర్మమే భ్రాజతే, రాజతే అని వేర్వేరు పదములతో చెప్పబడినది).",
+        "bhaava_hi": "सूर्य अपने ताप से चमकता है और शूरवीर अपने धनुष से सुशोभित होता है। 'चमकना' और 'सुशोभित होना' एक ही अर्थ के दो शब्द हैं।",
+        "source_reference": "चन्द्रालोकः (५.२०) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "सूर्यवाक्ये 'भ्राजते' शूरवाक्ये च 'राजते' इति भिन्नपदाभ्यां शोभायाः कथनात् प्रतिवस्तूपमा।",
+        "en": "The single attribute of brilliance is represented by 'bhrājate' in the first clause and 'rājate' in the second.",
+        "te": "సూర్యుని వాక్యమున 'భ్రాజతే' అనియు, శూరుని వాక్యమున 'రాజతే' అనియు ఒకే భావము వేర్వేరు పదములచే ప్రతిబింబితమైనందున ప్రతివస్తూపమ.",
+        "hi": "यहाँ दोनों वाक्यों में एक ही धर्म को 'भ्राजते' और 'राजते' इन दो भिन्न शब्दों से कहा गया है।"
+      }
+    },
+    {
+      "id": "ALK-018",
+      "name": {
+        "sa": "दृष्टान्तः",
+        "iast": "Dṛṣṭāntaḥ",
+        "te": "దృష్టాంతాలంకారము",
+        "hi": "दृष्टान्त अलंकार",
+        "en": "Exemplification / Bimbi-Pratibimba Reflection"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१८) / काव्यप्रकाशः (१०.१६) / साहित्यदर्पणः (१०.५१) | उदाहरणम्: चन्द्रालोकः (५.२१) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "दृष्टान्तस्तु सधर्मस्य वस्तुनः प्रतिबिम्बनम् ।\nचेद्बिम्बप्रतिबिम्बत्वं धर्मयोर्वाक्ययोर्द्वयोः ॥",
+        "sloka_te": "దృష్టాన్తస్తు సధర్మస్య వస్తునః ప్రతిబిమ్బనమ్ ।\nచేద్బిమ్బప్రతిబిమ్బత్వం ధర్మయోర్వాక్యయోర్ద్వయోః ॥",
+        "meaning_sa": "यत्र उपमेयवाक्यस्य उपमानवाक्यस्य च भिन्नधर्माणां परस्परं बिम्बप्रतिबिम्बभावेन वर्णनं भवति, स दृष्टान्तः।",
+        "meaning_en": "Dṛṣṭānta is exemplification wherein the attributes and items of the Upameya clause and Upamāna clause stand in an elegant mutual reflection (Bimba-Pratibimba relationship) like an image in a mirror.",
+        "meaning_te": "ఉపమేయ వాక్యమునకును ఉపమాన వాక్యమునకును గల ధర్మములు అద్దములో ప్రతిబింబము వలె చక్కగా సరిపోలినచో దృష్టాంతాలంకారమగును.",
+        "meaning_hi": "जहाँ उपमेय-वाक्य और उपमान-वाक्य के भिन्न धर्मों का बिम्ब-प्रतिबिम्ब भाव से चित्रण हो।",
+        "source_reference": "चन्द्रालोकः (५.१८) / काव्यप्रकाशः (१०.१६) / साहित्यदर्पणः (१०.५१)"
+      },
+      "primary_example": {
+        "sloka_sa": "त्वमेव कीर्तिमान् राजन् विधुरेव हि कान्तिमान् ।\nतव प्रतापवन्तोऽरीन् दहन्ति भुवि तेजसा ॥",
+        "sloka_te": "త్వమేవ కీర్తిమాన్ రాజన్ విధురేవ హి కాన్తిమాన్ ।\nతవ ప్రతాపవన్తోఽరీన్ దహన్తి భువి తేజసా ॥",
+        "anvaya": "हे राजन्! त्वम् एव कीर्तिमान्, विधुः एव हि कान्तिमान्; तव (भटाः) प्रतापवन्तः तेजसा भुवि अरीन् दहन्ति ।",
+        "bhaava_sa": "हे राजन्! जगति भवानेव अद्वितीययशस्वी, नभसि चन्द्र एव अद्वितीयतेजस्वी। अत्र कीर्ति-कान्त्योः बिम्बप्रतिबिम्बभावः।",
+        "bhaava_en": "You alone are endowed with matchless glory, O King, just as the moon alone is possessed of peerless luminescence! (Glory and radiance reflect each other).",
+        "bhaava_te": "ఓ రాజా! ఈ లోకమున నీవే కీర్తిమంతుడవు, ఆకసమున చంద్రుడే కాంతిమంతుడు! (రాజ-చంద్రులకు, కీర్తి-కాంతులకు బింబ-ప్రతిబింబ భావము).",
+        "bhaava_hi": "हे राजन्! संसार में आप ही कीर्तिमान हैं, जैसे आकाश में केवल चन्द्रमा ही कान्तिमान है। (कीर्ति और कान्ति में बिम्ब-प्रतिबिम्ब भाव है)।",
+        "source_reference": "चन्द्रालोकः (५.२१) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "राज्ञः चन्द्रमसा सह, कीर्तेश्च कान्त्या सह बिम्बप्रतिबिम्बितत्वात् दृष्टान्तालङ्कारः।",
+        "en": "The king reflects the moon, while royal fame reflects lunar luminescence.",
+        "te": "రాజు చంద్రునితోడను, కీర్తి కాంతితోడను బింబప్రతిబింబరూపమున సమన్వయము పొందుటచే దృష్టాంతము.",
+        "hi": "यहाँ राजा का चन्द्रमा के साथ और कीर्ति का कान्ति के साथ बिम्ब-प्रतिबिम्ब भाव से कथन होने से दृष्टान्त अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-019",
+      "name": {
+        "sa": "निदर्शना",
+        "iast": "Nidarśanā",
+        "te": "నిదర్శనాలంకారము",
+        "hi": "निदर्शना अलंकार",
+        "en": "Illustration / Figurative Analogy"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.१९) / काव्यप्रकाशः (१०.१७) / साहित्यदर्पणः (१०.५२) | उदाहरणम्: कालिदासकृत-रघुवंशम् (१.२) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "क्रियायाः क्रियया योगे सादृश्यार्थनिदर्शना ।\nअसम्भवद्वस्तुयोगाद् यत्र सादृश्यदीपनम् ॥",
+        "sloka_te": "క్రియాయాః క్రియయా యోగే సాదృశ్యార్థనిదర్శనా ।\nఅసమ్భవద్వస్తుయోగాద్ యత్ర సాదృశ్యదీపనమ్ ॥",
+        "meaning_sa": "यत्र परस्परसदृशयोः वाक्यार्थयोः पदार्थानां वा असम्भवत्सम्बन्धात् सादृश्यमूलकः अभेदारोपः क्रियते, सा निदर्शना।",
+        "meaning_en": "Nidarśanā (Illustration) occurs when two parallel actions or sentential meanings, whose literal literal connection is impossible, imply an identification to illuminate an underlying truth or moral lesson.",
+        "meaning_te": "రెండు విభిన్న వాక్యార్థములకు లేదా పదార్థములకు గల సంబంధము అసంభవమైనను, సాదృశ్యము వలన ఐక్యతను ఆరోపించి చెప్పినచో నిదర్శనాలంకారమగును.",
+        "meaning_hi": "जहाँ दो वाक्यों के अर्थों में असम्भव सम्बन्ध होने पर भी सादृश्य के कारण एकता का आरोप किया जाए।",
+        "source_reference": "चन्द्रालोकः (५.१९) / काव्यप्रकाशः (१०.१७) / साहित्यदर्पणः (१०.५२)"
+      },
+      "primary_example": {
+        "sloka_sa": "क्व सूर्यप्रभवो वंशः क्व चाल्पविषया मतिः ।\nतितीर्षुर्दुस्तरं मोहादुडुपेनास्मि सागरम् ॥",
+        "sloka_te": "క్వ సూర్యప్రభవో వంశః క్వ చాల్పవిషయా మతిః ।\nతితీర్షుర్దుస్తరం మోహాదుడుపేనాస్మి సాగరమ్ ॥",
+        "anvaya": "क्व सूर्यप्रभवः वंशः, क्व च अल्पविषया मतिः? मोहात् उडुपेन दुस्तरं सागरं तितीर्षुः अस्मि ।",
+        "bhaava_sa": "कुत्र सूर्यवंशस्य अपारमहिमा, कुत्र च मम अल्पा बुद्धिः! तथापि अज्ञानात् क्षुद्रनौकया महासागरं तर्तुम् इच्छामि।",
+        "bhaava_en": "Where is the colossal solar dynasty born of the Sun, and where is my frail, finite intellect? In my delusion, I am attempting to cross the unfathomable ocean in a tiny raft!",
+        "bhaava_te": "సూర్యవంశపు ఘనచరిత్ర ఎక్కడ? నా అల్పబుద్ధి ఎక్కడ? చిన్న తెప్పతో అగాధ సముద్రమును దాటజూచుచున్నట్లు నా ప్రయత్నమున్నది!",
+        "bhaava_hi": "कहाँ सूर्य से उत्पन्न वह महान् वंश और कहाँ मेरी मन्द बुद्धि! मैं अज्ञानवश छोटी सी नाव से दुर्गम समुद्र को पार करना चाहता हूँ।",
+        "source_reference": "कालिदासकृत-रघुवंशम् (१.२) / काव्यप्रकाश-उदाहरणम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "अल्पबुद्ध्या सूर्यवंशवर्णनस्य क्षुद्रनौकया सागरतरणेन सह एक्यारोपात् निदर्शनालङ्कारः।",
+        "en": "Describing an epic dynasty with limited intellect is identified with crossing the ocean on a tiny raft.",
+        "te": "అల్పబుద్ధితో రఘువంశమును కీర్తించుటను, తెప్పతో సముద్రమును దాటుటతో ఏకత్వారోపణ చేయుటచే నిదర్శనము.",
+        "hi": "यहाँ तुच्छ बुद्धि से सूर्यवंश का वर्णन करना और छोटी नाव से सागर पार करने का अभेद आरोप होने से निदर्शना अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-020",
+      "name": {
+        "sa": "व्यतिरेकः",
+        "iast": "Vyatirekaḥ",
+        "te": "వ్యతిరేకాలంకారము",
+        "hi": "व्यतिरेक अलंकार",
+        "en": "Excellence / Superiority of Subject"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.२०) / काव्यप्रकाशः (१०.१८) / साहित्यदर्पणः (१०.५३) | उदाहरणम्: चन्द्रालोकः (५.२२) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "व्यतिरेको विशेषश्चेदुपमानादुपमेयके ।\nगुणातिरेकेण यदा ततो ह्यप्यतिरिच्यते ॥",
+        "sloka_te": "వ్యతిరేకో విశేషశ్చేదుపమానాదుపమేయకే ।\nగుణాతిరేకేణ యదా తతో హ్యప్యతిరిచ్యతే ॥",
+        "meaning_sa": "यत्र उपमानापेक्षया उपमेयस्य आधिक्यं (गुणोत्कर्षः) अथवा न्यूनत्वं सहेतुकं वर्ण्यते, स व्यतिरेकः।",
+        "meaning_en": "Vyatireka occurs when the Upameya is shown to excel the Upamāna in some distinct virtue or property, establishing reasoned superiority over the standard.",
+        "meaning_te": "ఉపమానమునకంటె ఉపమేయమునందు విశేషమైన గుణము కలదని హేతుపూర్వకముగా హెచ్చించి చెప్పినచో వ్యతిరేకాలంకారమగును.",
+        "meaning_hi": "जहाँ उपमान की अपेक्षा उपमेय के किसी विशेष गुण का आधिक्य (उत्कर्ष) कारण सहित दिखाया जाए।",
+        "source_reference": "चन्द्रालोकः (५.२०) / काव्यप्रकाशः (१०.१८) / साहित्यदर्पणः (१०.५३)"
+      },
+      "primary_example": {
+        "sloka_sa": "शैला इवोन्नताः सन्तः किन्तु प्रकृतिकोमलाः ।\nकठिनत्वं गिरेरेव साधोः काठिन्यवर्जनम् ॥",
+        "sloka_te": "శైలా ఇవోన్నతాః సన్తః కిన్తు ప్రకృతికోమలాః ।\nకఠినత్వం గిరేరేవ సాధోః కాఠిన్యవర్జనమ్ ॥",
+        "anvaya": "सन्तः शैलाः इव उन्नताः, किन्तु प्रकृतिकोमलाः (सन्ति); कठिनत्वं गिरेः एव, साधोः तु काठिन्यवर्जनम् (भवति) ।",
+        "bhaava_sa": "सज्जनाः पर्वता इव उच्चचरित्राः उन्नताश्च भवन्ति, किन्तु पर्वताः कठिनाः, सज्जनास्तु स्वभावेन अतीव कोमलाः।",
+        "bhaava_en": "Noble saints are towering and elevated like mountains; yet, while mountains are rigid stone, saints are intrinsically tender and compassionate at heart.",
+        "bhaava_te": "సత్పురుషులు పర్వతములవలె ఉన్నతులు; కాని పర్వతములు కఠినమైనవి, సజ్జనులో స్వభావముచే అతి కోమలమైన హృదయము కలవారు!",
+        "bhaava_hi": "सज्जन पर्वतों के समान उन्नत (महान्) हैं, किन्तु पर्वत कठोर होते हैं जबकि सज्जन स्वभाव से अत्यन्त कोमल होते हैं।",
+        "source_reference": "चन्द्रालोकः (५.२२) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र उपमेयानां सतां शैलेभ्यः 'प्रकृतिकोमलत्व' विशेषगुणेन आधिक्यकथनात् व्यतिरेकालङ्कारः।",
+        "en": "Saints (Upameya) share height with mountains (Upamāna), but excel them due to their gentle compassion (prakṛti-komalatva).",
+        "te": "ఉన్నతి యను ధర్మము పర్వత సత్పురుషులకు సమానమైనను, 'కోమలత్వము' అను గుణముచేత సజ్జనుల ఔన్నత్యము నిరూపింపబడుటచే వ్యతిరేకము.",
+        "hi": "यहाँ उपमेय (सज्जन) को उपमान (पर्वत) से 'कोमलता' रूपी गुण के कारण श्रेष्ठ दिखाया गया है।"
+      }
+    },
+    {
+      "id": "ALK-021",
+      "name": {
+        "sa": "अप्रस्तुतप्रशंसा",
+        "iast": "Aprastutapraśaṁsā",
+        "te": "అప్రస్తుతప్రశంసాలంకారము",
+        "hi": "अप्रस्तुतप्रशंसा अलंकार",
+        "en": "Indirect Description / Allegory"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.२१ / ५.२३) / काव्यप्रकाशः (१०.२३) / साहित्यदर्पणः (१०.५८) | उदाहरणम्: चन्द्रालोकः (५.६२) / भर्तृहरिकृत-नीतिशतकम्",
+      "lakshana": {
+        "sloka_sa": "अप्रस्तुतात्प्रशंसा स्यात्प्रस्तुतस्यावगम्यते ।\nकार्यात् कारणतो वापि सामान्याद्वा विशेषतः ॥",
+        "sloka_te": "అప్రస్తుతాత్ప్రశంసా స్యాత్ప్రస్తుతస్యావగమ్యతే ।\nకార్యాత్ కారణతో వాపి సామాన్యాద్వా విశేషతః ॥",
+        "meaning_sa": "यत्र अप्रस्तुतस्य (अवर्ण्यस्य) वर्णनेन प्रस्तुतस्य (वर्ण्यविषयस्य) व्यङ्ग्यरूपेण प्रतीतिः भवति, साप्स्रस्तुतप्रशंसा।",
+        "meaning_en": "Aprastutapraśaṁsā is allegory or indirect praise, wherein the description of a non-relevant matter (Aprastuta) allusively conveys the actual contextual subject (Prastuta).",
+        "meaning_te": "అప్రస్తుతమైన (ప్రస్తుతము కానట్టి) వస్తువును వర్ణించుట ద్వారా ప్రస్తుత విషయమును వ్యంగ్యముగా స్ఫురింపజేసినచో అప్రస్తుతప్రశంస యగును.",
+        "meaning_hi": "जहाँ अप्रस्तुत (अप्रासंगिक) वृत्तान्त के वर्णन द्वारा प्रस्तुत (प्रासंगिक) अर्थ की प्रतीति कराई जाए।",
+        "source_reference": "चन्द्रालोकः (५.२१ / ५.२३) / काव्यप्रकाशः (१०.२३) / साहित्यदर्पणः (१०.५८)"
+      },
+      "primary_example": {
+        "sloka_sa": "किं भृङ्ग सत्यां मालत्यां केतक्या कण्टकेद्धया ।\nविद्धस्त्वं म्रियसे मूढ गन्धलोभेन केवलम् ॥",
+        "sloka_te": "కిం భృఙ్గ సత్యాం మాలత్యాం కేతక్యా కణ్టకేద్ధయా ।\nవిద్ధస్త్వం మ్రియసే మూఢ గన్ధలోభేన కేవలమ్ ॥",
+        "anvaya": "हे मूढ भृङ्ग! मालत्यां सत्यां कण्टकेद्धया केतक्या किं (प्रयोजनम्)? यत् त्वं केवलं गन्धलोभेन विद्धः म्रियसे ।",
+        "bhaava_sa": "हे भ्रमर! सुगन्धमयी मालती विद्यमाना अस्ति, तत् त्यक्त्वा कण्टकपूर्णायाः केतक्यः सेवनेन तव किं प्रयोजनम्?",
+        "bhaava_en": "O bee! When the fragrant, gentle Jasmine is flourishing, why do you pursue the thorn-infested screw-pine (Ketakī)? (Addressed to a person abandoning a virtuous wife for a deceitful consort).",
+        "bhaava_te": "ఓ తుమ్మెదా! సుందరమైన మల్లెపూవు ఉండగా, ముండ్లతో కూడిన మొగలిపువ్వుతో నీకేమి పని? (సద్గుణవతియైన భార్యను వదలి దుష్టురాలైన స్త్రీని వలచిన వానికి చెప్పు నీతి).",
+        "bhaava_hi": "हे भ्रमर! सुगन्धित मालती के होते हुए कांटों से भरी केतकी के पीछे क्यों पड़े हो? (गुणवान् को छोड़कर दुर्जन का आश्रय लेने वाले व्यक्ति के प्रति व्यंग्य)।",
+        "source_reference": "चन्द्रालोकः (५.६२) / भर्तृहरिकृत-नीतिशतकम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र अप्रस्तुतस्य भ्रमर-मालती-केतकीवृत्तान्तस्य वर्णनेन प्रस्तुतस्य गुणवद्-गुणहीनस्त्रीसेविनः जनस्य व्यञ्जनात् अप्रस्तुतप्रशंसा।",
+        "en": "The bee and flower allegory (Aprastuta) conveys the human dilemma of choosing between virtue and danger (Prastuta).",
+        "te": "తుమ్మెద-పూవుల వృత్తాంతమను అప్రస్తుత విషయముచే మానవ ప్రవర్తనమను ప్రస్తుతార్థము స్ఫురించుటచే అప్రస్తుతప్రశంస.",
+        "hi": "यहाँ अप्रस्तुत भ्रमर और पुष्प के वर्णन से प्रस्तुत विषय (गुणवान और दुर्जन के चयन) की प्रतीति होती है।"
+      }
+    },
+    {
+      "id": "ALK-022",
+      "name": {
+        "sa": "व्याजस्तुतिः",
+        "iast": "Vyājastutiḥ",
+        "te": "వ్యాజస్తుత్యలంకారము",
+        "hi": "व्याजस्तुति अलंकार",
+        "en": "Artful Praise / Irony"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.३०) / काव्यप्रकाशः (१०.२८) / साहित्यदर्पणः (१०.६२) | उदाहरणम्: पण्डितराज-जगन्नाथकृत-गङ्गालहरी / चन्द्रालोकः (५.६४)",
+      "lakshana": {
+        "sloka_sa": "निन्दायास्तुतिपर्यन्ता स्तुतेर्निन्दावसानिका ।\nव्याजस्तुतिरियं ज्ञेया कविभिर्वाग्विशारदैः ॥",
+        "sloka_te": "నిన్దాయాస్తుతిపర్యన్తా స్తుతేర్నిన్దావసానికా ।\nవ్యాజస్తుతిరియం జ్ఞేయా కవిభిర్వాగ్విశారదైః ॥",
+        "meaning_sa": "यत्र बाह्यदृष्ट्या निन्दारूपेण वचनेन वस्तुतः परमप्रशंसा व्यज्यते, अथवा स्तुतिमुखेन निन्दा प्रतीयते, सा व्याजस्तुतिः।",
+        "meaning_en": "Vyājastuti is rhetorical irony wherein apparent blame conceals heartfelt praise, or superficial praise effectively conveys devastating censure.",
+        "meaning_te": "పైకి నిందించుచున్నట్లుండి లోపల స్తుతి స్ఫురించినను, లేదా పైకి పొగడుచున్నట్లుండి లోపల నింద ప్రతీయమానమైనను వ్యాజస్తుత్యలంకారమగును.",
+        "meaning_hi": "जहाँ देखने में निन्दा लगे किन्तु वास्तव में प्रशंसा हो, अथवा देखने में प्रशंसा लगे किन्तु वास्तव में निन्दा हो।",
+        "source_reference": "चन्द्रालोकः (५.३०) / काव्यप्रकाशः (१०.२८) / साहित्यदर्पणः (१०.६२)"
+      },
+      "types": [
+        {
+          "type_name_sa": "निन्दामुखेन स्तुतिः",
+          "type_name_en": "Praise disguised as Blame",
+          "description_en": "Superficial censure terminating in profound veneration.",
+          "description_te": "పైకి నిందయు, తాత్పర్యమున ప్రశంసయు నుండుట.",
+          "description_hi": "निन्दा के बहाने प्रशंसा।"
+        },
+        {
+          "type_name_sa": "स्तुतिमुखेन निन्दा",
+          "type_name_en": "Censure disguised as Praise",
+          "description_en": "Superficial flattery terminating in scathing ridicule.",
+          "description_te": "పైకి స్తుతియు, తాత్పర్యమున నిందయు నుండుట.",
+          "description_hi": "प्रशंसा के बहाने निन्दा।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "कः स्वर्धुनि विवेकस्ते पापानामपि मुक्तिदे ।\nयस्त्वयि स्नाति मूढोऽपि सोऽपि स्वर्गं नियच्छति ॥",
+        "sloka_te": "కః స్వర్ధుని వివేకస్తే పాపానామపి ముక్తిదే ।\nయస్త్వయి స్నాతి మూఢోఽపి సోఽపి స్వర్గం నియచ్ఛతి ॥",
+        "anvaya": "हे स्वर्धुनि पापानाम् अपि मुक्तिदे! ते कः विवेकः? यः मूढः अपि त्वयि स्नाति, सः अपि स्वर्गं नियच्छति (प्राप्नोति) ।",
+        "bhaava_sa": "हे गङ्गे! त्वं मूढा असीति प्रतीयते, यतः पुण्यापुण्यविचारं विना महापापिभ्योऽपि साक्षात् मोक्षं ददासि! (निन्दाच्छलेन गङ्गायाः परमपावनत्वस्य स्तुतिः)।",
+        "bhaava_en": "O Mother Gaṅgā! How indiscreet you are—you bestow liberation and Lord Śiva's divine realm even upon the vilest sinners without evaluating their merits! (Apparent censure of partiality actually exalts Her infinite purifying grace).",
+        "bhaava_te": "ఓ గంగాభవాని! నీకు ఏమాత్రము వివేకము లేదు; మంచిచెడ్డల విచారణ చేయక ఘోర పాపులకు కూడ మోక్షమును ఇచ్చుచున్నావు! (పైకి అవివేకివని నిందించినను గంగ యొక్క పరమపావనత్వమును స్తుతించుటయే భావము).",
+        "bhaava_hi": "हे गंगा! तुम बिल्कुल अविवेकी हो, जो पापियों के भी गुण-दोष का विचार किए बिना उन्हें साक्षात् मोक्ष दे देती हो! (निंदा के बहाने गंगा की मुक्तिदायिनी शक्ति की परम स्तुति है)।",
+        "source_reference": "पण्डितराज-जगन्नाथकृत-गङ्गालहरी / चन्द्रालोकः (५.६४)"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र 'अविवेकज्ञा' इति निन्दावाक्येन गङ्गायाः सर्वपापप्रणाशकत्वरूपपरममहिम्नः स्तुतिः व्यज्यते इति व्याजस्तुतिः।",
+        "en": "Calling Mother Gaṅgā 'indiscreet' superficially berates Her, but magnifies Her unconditional salvation of all beings.",
+        "te": "'అవివేకజ్ఞా' అను నింద ద్వారా గంగ యొక్క సర్వపాపహరణ శక్తీ స్తుతింపబడుటచే నిందాముఖేన స్తుతిరూప వ్యాజస్తుతి.",
+        "hi": "यहाँ 'अविवेक' कहकर निन्दा की गई है, किन्तु पर्यवसान परम पापनाशिनी महिमा की स्तुति में होता है, अतः व्याजस्तुति है।"
+      }
+    },
+    {
+      "id": "ALK-023",
+      "name": {
+        "sa": "विभावना",
+        "iast": "Vibhāvanā",
+        "te": "విభావనాలంకారము",
+        "hi": "विभावना अलंकार",
+        "en": "Effect Without Natural Cause"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.३३) / काव्यप्रकाशः (१०.३०) / साहित्यदर्पणः (१०.६४) | उदाहरणम्: चन्द्रालोकः (५.७० / ५.७३) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "विभावना विना हेतोः कार्योत्पत्तिर्यदोच्यते ।\nस्वाभाविकी प्रसिद्धा च कारणस्य विनापि सा ॥",
+        "sloka_te": "విభావనా వినా హేతోః కార్యోత్పత్తిర్యదోచ్యతే ।\nస్వాభావికీ ప్రసిద్ధా చ కారణస్య వినాపి సా ॥",
+        "meaning_sa": "यत्र लोकप्रसिद्धस्य कारणस्य अभावेऽपि कार्यस्य उत्पत्तिः वर्ण्यते, सा विभावना।",
+        "meaning_en": "Vibhāvanā is the poetic occurrence where an effect arises despite the explicit absence of its well-known conventional cause.",
+        "meaning_te": "ప్రసిద్ధమైన కారణము లేకున్నను కార్యము పుట్టినట్లు వర్ణించినచో విభావనాలంకారమగును.",
+        "meaning_hi": "जहाँ प्रसिद्ध कारण के न होने पर भी कार्य की उत्पत्ति का वर्णन किया जाए।",
+        "source_reference": "चन्द्रालोकः (५.३३) / काव्यप्रकाशः (१०.३०) / साहित्यदर्पणः (१०.६४)"
+      },
+      "primary_example": {
+        "sloka_sa": "अप्यलाक्तरसारक्तावभातः पादपल्लवौ ।\nअस्त्राणि मन्मथस्यापि विना तीक्ष्णं जयन्ति हि ॥",
+        "sloka_te": "అప్యలాక్తరసారక్తావభాతః పాదపల్లవౌ ।\nఅస్త్రాణి మన్మథస్యాపి వినా తీక్ష్ణం జయన్తి హి ॥",
+        "anvaya": "पादपल्लवौ अलाक्तरसारक्तौ अपि आभातः; मन्मथस्य अस्त्राणि अपि तीक्ष्णं विना जयन्ति हि ।",
+        "bhaava_sa": "कामदेवस्य शराणां प्रहाराभावेऽपि मम अङ्गानि तापमनुभवन्ति, जलप्रपातमन्तरेणापि हृदयं मज्जतीव प्रतिभाति।",
+        "bhaava_en": "Even without the strike of Cupid's flower-arrows, my limbs are in torment; and without any deluge of waters, my heart seems to drown!",
+        "bhaava_te": "మన్మథబాణములు తగులకయే నా అవయవములు వ్యాకులమగుచున్నవి; నీరు లేకుండగనే నా హృదయము మునుగుచున్నది!",
+        "bhaava_hi": "कामदेव के बाणों के न लगने पर भी मेरे अंग व्याकुल हैं और बिना जल के भी हृदय डूबा जा रहा है।",
+        "source_reference": "चन्द्रालोकः (५.७० / ५.७३) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र शरप्रहाररूपकारणाभावेऽपि व्याकुलतारूपकार्यस्योत्पत्तिवर्णनात् विभावनालङ्कारः।",
+        "en": "The effect (bodily torment) occurs without its physical cause (arrows), satisfying Vibhāvanā.",
+        "te": "బాణములు లేకుండగనే వ్యాకులతయను కార్యము పుట్టినట్లు వర్ణించుటచే విభావన.",
+        "hi": "यहाँ बाण रूपी कारण के बिना ही व्याकुलता रूपी कार्य का जन्म दिखाया गया है।"
+      }
+    },
+    {
+      "id": "ALK-024",
+      "name": {
+        "sa": "विशेषोक्तिः",
+        "iast": "Viśeṣoktiḥ",
+        "te": "విశేషోక్త్యలంకారము",
+        "hi": "विशेषोक्ति अलंकार",
+        "en": "Absence of Effect Despite Full Cause"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.३४) / काव्यप्रकाशः (१०.३१) / साहित्यदर्पणः (१०.६५) | उदाहरणम्: चन्द्रालोकः (५.७८) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "विशेषोक्तिरखण्डेषु कारणेषु फलावतः ।\nकारणे सत्यपि यत्र फलाभावो विभाव्यते ॥",
+        "sloka_te": "విశేషోక్తిరఖణ్డేషు కారణేషు ఫలావతః ।\nకారణే సత్యపి యత్ర ఫలాభావో విభావ్యతే ॥",
+        "meaning_sa": "यत्र सर्वात्मना कारणसामग्र्यां सत्यामपि कार्यस्य अनुत्पत्तिः वर्ण्यते, सा विशेषोक्तिः।",
+        "meaning_en": "Viśeṣokti is the exact reciprocal of Vibhāvanā: despite the full, unhindered presence of all necessary causes, the expected effect fails to manifest.",
+        "meaning_te": "సమస్త కారణములు సమగ్రముగా నున్నను కార్యము పుట్టలేదని చెప్పినచో విశేషోక్త్యలంకారమగును.",
+        "meaning_hi": "जहाँ समस्त कारणों के विद्यमान रहते हुए भी कार्य की उत्पत्ति न हो।",
+        "source_reference": "चन्द्रालोकः (५.३४) / काव्यप्रकाशः (१०.३१) / साहित्यदर्पणः (१०.६५)"
+      },
+      "primary_example": {
+        "sloka_sa": "जाग्रत्यपि प्रदीपेऽस्मिन् स्नेहो नैव विनश्यति ।\nसम्पत्सु महतीष्वेष न गर्वमधिगच्छति ॥",
+        "sloka_te": "జాగ్రత్యపి ప్రదీపేఽస్మిన్ స్నేహో నైవ వినశ్యతి ।\nసమ్పత్సు మహతీష్వేష న గర్వమధిగచ్ఛతి ॥",
+        "anvaya": "अस्मिन् प्रदीपे जाग्रति अपि स्नेहः न एव विनश्यति; महतीषु सम्पत्सु (सतीष्वपि) एषः गर्वं न अधिगच्छति ।",
+        "bhaava_sa": "स्वप्नस्य निवृत्तौ सत्यामपि हृदयकम्पः न शान्तः, अश्रुभिः सिक्ते सत्यपि कपोले सन्तापः न निर्वाप्यते।",
+        "bhaava_en": "Even though awakening from sleep removed the frightening dream, her heart's trembling did not cease; and though tears drenched her cheeks, the burning fever of separation was not quenched.",
+        "bhaava_te": "నిద్ర మేల్కొనినను గుండెదడ తగ్గలేదు; కన్నీటితో తడిసినను విరహతాపము చల్లారలేదు! (కారణములున్నను కార్యము కలుగలేదు).",
+        "bhaava_hi": "नींद टूटने पर भी हृदय का कांपना बन्द नहीं हुआ, और आंसुओं से कपोल भीग जाने पर भी विरह की तपन शांत नहीं हुई।",
+        "source_reference": "चन्द्रालोकः (५.७८) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र जलसेकरूपकारणे सत्यपि दाहशान्तिरूपकार्यस्य अनुत्पत्तिवर्णनात् विशेषोक्तिः।",
+        "en": "Cooling tears (cause) are present, yet quenching the heat (effect) does not take place.",
+        "te": "కన్నీటి తడియను శీతల కారణమున్నను తాపశమనమను కార్యము పుట్టనందున విశేషోక్తి.",
+        "hi": "यहाँ आंसुओं के सींचन रूपी कारण के होने पर भी संताप-शांति रूपी कार्य नहीं हुआ, अतः विशेषोक्ति है।"
+      }
+    },
+    {
+      "id": "ALK-025",
+      "name": {
+        "sa": "अर्थान्तरन्यासः",
+        "iast": "Arthāntaranyāsaḥ",
+        "te": "అర్థాంతరన్యాసాలంకారము",
+        "hi": "अर्थान्तरन्यास अलंकार",
+        "en": "Corroboration by Generalization / Particularization"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४०) / काव्यप्रकाशः (१०.२६) / साहित्यदर्पणः (१०.६१) | उदाहरणम्: चन्द्रालोकः (५.४०) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "सामान्यं वा विशेषो वा तदन्येन समर्थ्यते ।\nयत्र सोऽर्थान्तरन्यासः साधर्म्येणेतरेण वा ॥",
+        "sloka_te": "సామాన్యం వా విశేషో వా తదన్యేన సమర్థ్యతే ।\nయత్ర సోఽర్థాన్తరన్యాసః సాధర్మ్యేణేతరేణ వా ॥",
+        "meaning_sa": "यत्र सामान्यस्य विशेषेण, विशेषस्य वा सामान्येन समर्थनीयतया उपन्यासः क्रियते, स अर्थान्तरन्यासः।",
+        "meaning_en": "Arthāntaranyāsa (Corroboration) occurs when a particular proposition (Viśeṣa) is substantiated by a universal truth (Sāmānya), or a universal maxim is reinforced through a specific instance, via similarity or contrast.",
+        "meaning_te": "సామాన్య విషయమును విశేషముచేత గాని, విశేష విషయమును సామాన్యముచేత గాని సమర్థించి చెప్పినచో అర్థాంతరన్యాసాలంకారమగును.",
+        "meaning_hi": "जहाँ सामान्य का विशेष से अथवा विशेष का सामान्य से साधर्म्य या वैधर्म्य द्वारा समर्थन किया जाए।",
+        "source_reference": "चन्द्रालोकः (५.४०) / काव्यप्रकाशः (१०.२६) / साहित्यदर्पणः (१०.६१)"
+      },
+      "types": [
+        {
+          "type_name_sa": "विशेषस्य सामान्येन समर्थनम्",
+          "type_name_en": "Particular substantiated by General Maxim",
+          "description_en": "A specific historic/mythic event confirmed by a universal worldly law.",
+          "description_te": "ఒక ప్రత్యేక సంఘటనను లోకసామాన్య సత్యముతో సమర్థించుట.",
+          "description_hi": "विशेष बात का सामान्य नियम द्वारा समर्थन।"
+        },
+        {
+          "type_name_sa": "सामान्यस्य विशेषेण समर्थनम्",
+          "type_name_en": "General Maxim substantiated by Particular Instance",
+          "description_en": "A universal truth demonstrated through a notable example.",
+          "description_te": "సామాన్య ధర్మమును ప్రత్యేక ఉదాహరణతో సమర్థించుట.",
+          "description_hi": "सामान्य बात का विशेष उदाहरण द्वारा समर्थन।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "ज्ञेयः सोऽर्थान्तरन्यासो वस्तु यत्नेन साध्यते ।\nहनूमानब्धिमतरद् दुष्करं किं महात्मनाम् ॥",
+        "sloka_te": "జ్ఞేయః సోఽర్థాన్తరన్యాసో వస్తు యత్నేన సాధ్యతే ।\nహనూమానబ్ధిమతరద్ దుష్కరం కిం మహాత్మనామ్ ॥",
+        "anvaya": "सः अर्थान्तरन्यासः ज्ञेयः यत्र वस्तु यत्नेन साध्यते; हनूमान् अब्र्धिम् अतरत्, महात्मनां किं दुष्करम्? (न किमपि) ।",
+        "bhaava_sa": "हनूमान् महासागरम् उल्लङ्घितवान्। सत्यमेतत्, यतः महतां पुरुषाणां कृते जगति किमपि कार्यम् असाध्यं न भवति!",
+        "bhaava_en": "Lord Hanumān leaped across the vast, fathomless ocean. Indeed, what task is impossible for exalted souls?",
+        "bhaava_te": "హనుమంతుడు మహాసముద్రమును దాటెను. మహాత్ములకు లోకమున అసాధ్యమైనదేమున్నది? (హనుమంతుడు దాటుట విశేషము; మహాత్ములకు అసాధ్యము లేదనుట సామాన్యము).",
+        "bhaava_hi": "हनुमान् जी ने समुद्र को पार कर लिया। सच ही है, महापुरुषों के लिए संसार में क्या कठिन है?",
+        "source_reference": "चन्द्रालोकः (५.४०) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "'हनूमान् अब्धिम् अतरत्' इति विशेषवाक्यस्य 'दुष्करं किं महात्मनाम्' इति विश्वप्रसिद्धसामान्यवाक्येन समर्थनात् अर्थान्तरन्यासः।",
+        "en": "Hanumān's specific crossing of the sea (Viśeṣa) is corroborated by the universal maxim that nothing is impossible for the great (Sāmānya).",
+        "te": "హనుమంతుడు సముద్రమును లంఘించెనను విశేష విషయమును 'మహాత్ములకు అసాధ్యము లేదు' అను సామాన్య ధర్మముచే సమర్థించుటచే అర్థాంతరన్యాసము.",
+        "hi": "यहाँ हनुमान् द्वारा समुद्र लांघने की विशेष बात का 'महापुरुषों के लिए क्या कठिन है' इस सामान्य सूक्ति से समर्थन किया गया है।"
+      }
+    },
+    {
+      "id": "ALK-026",
+      "name": {
+        "sa": "विरोधाभासः",
+        "iast": "Virodhābhāsaḥ",
+        "te": "విరోధాభాసాలంకారము",
+        "hi": "विरोधाभास अलंकार",
+        "en": "Poetic Paradox / Apparent Contradiction"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.३५) / काव्यप्रकाशः (१०.३२) / साहित्यदर्पणः (१०.६७) | उदाहरणम्: चन्द्रालोकः (५.८२) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "आभासत्वे विरोधस्य विरोधाभास उच्यते ।\nजात्यादिभिर्यदा यत्र विरोधः प्रतिपादितः ॥",
+        "sloka_te": "ఆభాసత్వే విరోధస్య విరోధాభాస ఉచ్యతే ।\nజాత్యాదిభిర్యదా యత్ర విరోధః ప్రతిపాదితః ॥",
+        "meaning_sa": "यत्र आपाततः विरोधः प्रतीयते, परन्तु अर्थविचारणे सति विरोधस्य शमनं चमत्कारश्च जायते, स विरोधाभासः।",
+        "meaning_en": "Virodhābhāsa (Apparent Paradox) is a statement that appears logically contradictory on the surface, but whose tension resolves into profound aesthetic coherence upon deeper consideration.",
+        "meaning_te": "పైకి విరోధము ఉన్నట్లు తోచినను, అంతరార్థమును విచారించినప్పుడు ఆ విరోధము తొలగి చమత్కారము శోభించునది విరోధాభాసాలంకారము.",
+        "meaning_hi": "जहाँ देखने में विरोध प्रतीत हो, किन्तु वास्तविक अर्थ विचारने पर विरोध शांत हो जाए और चमत्कार उत्पन्न हो।",
+        "source_reference": "चन्द्रालोकः (५.३५) / काव्यप्रकाशः (१०.३२) / साहित्यदर्पणः (१०.६७)"
+      },
+      "primary_example": {
+        "sloka_sa": "आभासत्वे विरोधस्य विरोधाभास उच्यते ।\nअजडः शीतलोऽप्यग्निः सुहृत्कण्ठे विराजते ॥",
+        "sloka_te": "ఆభాసత్వే విరోధస్య విరోధాభాస ఉచ్యతే ।\nఅజడః శీతలోఽప్యగ్నిః సుహృత్కణ్ఠే విరాజతే ॥",
+        "anvaya": "अजडः शीतलः अपि अग्निः सुहृत्कण्ठे विराजते, विरोधस्य आभासत्वे विरोधाभासः उच्यते ।",
+        "bhaava_sa": "अग्निः शीतलः कथं भवितुमर्हति? अत्र तु मित्रकण्ठस्थः प्रेमवह्निः शान्तिं शैत्यं च ददातीति तात्पर्यात् विरोधशमनम्।",
+        "bhaava_en": "Fire, though brilliant and alive, burns cool inside a friend's embrace! (Fire and cool are contradictory, but the fire of love brings soothing joy rather than scorch).",
+        "bhaava_te": "అగ్ని చల్లగా ఉన్నదని చెప్పుట విరోధము. కాని మిత్రుని హృదయమునందలి స్నేహాగ్ని చల్లదనమును శాంతిని ఇచ్చును కనుక అంతరార్థమున విరోధము శమించును.",
+        "bhaava_hi": "अग्नि शीतल कैसे हो सकती है? यह प्रत्यक्ष विरोध है, किन्तु यहाँ मित्र के प्रेम-ताप का तात्पर्य होने से यह विरोध शांत हो जाता है।",
+        "source_reference": "चन्द्रालोकः (५.८२) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अग्नेः शैत्यकथनम् आपाततः विरुद्धम्, प्रेमाग्नौ तु सुखदायित्वस्य विवक्षितत्वात् आभासमात्रे पर्यवसानम्।",
+        "en": "Calling fire 'cool' is outwardly paradoxical, but resolves through the figurative fire of affectionate union.",
+        "te": "అగ్ని మరియు శీతలత్వములకు గల బాహ్యవిరోధము అంతరార్థమున రమ్యముగా తొలగిపోవుటచే విరోధాభాసము.",
+        "hi": "यहाँ अग्नि और शीतलता का बाह्य विरोध है, जो प्रेम-प्रसंग के अर्थ से शांत होकर चमत्कार उत्पन्न करता है।"
+      }
+    },
+    {
+      "id": "ALK-027",
+      "name": {
+        "sa": "स्वभावोक्तिः",
+        "iast": "Svabhāvoktiḥ",
+        "te": "స్వభావోక్త్యలంకారము",
+        "hi": "स्वभावोक्ति अलंकार",
+        "en": "Naturalistic Portraiture / Vivid Realism"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४२) / काव्यप्रकाशः (१०.३६) / साहित्यदर्पणः (१०.९२) | उदाहरणम्: कालिदासकृत-अभिज्ञानशाकुन्तलम् (१.७) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "स्वभावोक्तिरसो चारु यथावद्वस्तुवर्णनम् ।\nडिम्भादेः स्वक्रियारूपैर्वर्णनं यत्र चारु तत् ॥",
+        "sloka_te": "స్వభావోక్తిరసో చారు యథావద్వస్తువర్ణనమ్ ।\nడిమ్భాదేః స్వక్రియారూపైర్వర్ణనం యత్ర చారు తత్ ॥",
+        "meaning_sa": "शिशूनां पशूनां वा जन्तोः स्वभावसिद्धानां चेष्टानां सूक्ष्माणां यथार्थं मनोहारि च वर्णनं स्वभावोक्तिः।",
+        "meaning_en": "Svabhāvokti is vivid realism: the natural, picturesque depiction of the innate, unfeigned actions, expressions, and posture of infants, animals, or nature without artificial exaggeration.",
+        "meaning_te": "బాలురు, పక్షులు, జంతువులు మొదలైన వాటి యొక్క సహజసిద్ధములైన చేష్టలను యథాతథముగా మనోహరముగా వర్ణించినచో స్వభావోక్త్యలంకారమగును.",
+        "meaning_hi": "जहाँ बालकों, पशु-पक्षियों आदि की स्वाभाविक चेष्टाओं और रूप का यथार्थ एवं मनोहारी चित्रण हो।",
+        "source_reference": "चन्द्रालोकः (५.४२) / काव्यप्रकाशः (१०.३६) / साहित्यदर्पणः (१०.९२)"
+      },
+      "primary_example": {
+        "sloka_sa": "ग्रीवाभङ्गाभिरामं मुहुरनुपतति स्यन्दने दत्तदृष्टिः\nपश्चार्धेन प्रविष्टः शरपतनभयाद् भूयसा पूर्वकायम् ।\nशष्पैरर्धावलीढैः श्रमविवृतमुखभ्रंशिभिः कीर्णवर्त्मा\nपश्योदग्रप्लुतत्वाद्वियति बहुतरं स्तोकमुर्व्यां प्रयाति ॥",
+        "sloka_te": "గ్రీవాభఙ్గాభిరామం ముహురనుపతతి స్యన్దనే దత్తదృష్టిః\nపశ్చార్ధేన ప్రవిష్టః శరపతనభయాద్ భూయసా పూర్వకాయమ్ ।\nశష్పైరర్ధావలీఢైః శ్రమవివృతముఖభ్రంశిభిః కీర్ణవర్త్మా\nపశ్యోదగ్రప్లుతత్వాద్వియతి బహుతరం స్తోకముర్వ్యాం ప్రయాతి ॥",
+        "anvaya": "ग्रीवाभङ्गाभिरामं मुहुः अनुपतति स्यन्दने दत्तदृष्टिः, शरपतनभयात् भूयसा पश्चार्धेन पूर्वकायं प्रविष्टः, श्रमविवृतमुखभ्रंशिभिः अर्धावलीढैः शष्पैः कीर्णवर्त्मा, पश्य, उदग्रप्लुतत्वात् वियति बहुतरं, उर्व्यां स्तोकं प्रयाति ।",
+        "bhaava_sa": "भयभीतस्य मृगस्य धावनक्रियायाः, पृष्ठतः रथं प्रति दृष्टिपातस्य, मुखाद् गलिततृणानां, गगने उत्पतनस्य च स्वाभाविकं चित्रम्।",
+        "bhaava_en": "Look at the fleeing blackbuck! Ever casting its glance back at the pursuing chariot with graceful turn of its neck; drawing its hindquarters into its chest for fear of the arrow; strewing its trail with half-chewed grass dropping from its panting mouth; bounding so high it seems to course more through the sky than on the earth!",
+        "bhaava_te": "వెన్నాడుచున్న రథముపై మెడను వంచి చూచుచు, బాణభయముచే వెనుకటి భాగమును ముందునకు ముడుచుచు, రొప్పుచు నోటినుండి సగము నమిలిన గడ్డి పరకలను రాల్చుచు, ఎగిరి దూకుచు నేలకంటె ఆకసమునందే ఎక్కువ పరుగులిడుచున్న జింక పరుగు ఎంత స్వాభావికముగా నున్నదో చూడుము!",
+        "bhaava_hi": "पीछे आते हुए रथ पर बार-बार गर्दन मोड़कर देखता हुआ, बाण के डर से पिछले धड़ को अगले धड़ में सिकोड़ता हुआ, हाँफने से मुँह से आधी चबाई घास गिराता हुआ मृग आकाश में अधिक और धरती पर कम दौड़ता दिखाई दे रहा है।",
+        "source_reference": "कालिदासकृत-अभिज्ञानशाकुन्तलम् (१.७) / काव्यप्रकाश-उदाहरणम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र भयभीतस्य हरिणस्य धावन-ग्रीवामोडन-तृणत्यागादिसहजचेष्टानां साक्षाच्चमत्कारिचित्रणात् स्वभावोक्तिः।",
+        "en": "Kālidāsa captures the naturalistic terror and biomechanics of the deer in flight without artificial tropes.",
+        "te": "భయముతో పరుగులిడుచున్న లేడి యొక్క సహజ చేష్టలను కన్నులకట్టినట్లు యథార్థముగా వర్ణించుటచే స్వభావోక్తి.",
+        "hi": "यहाँ भयभीत मृग की स्वाभाविक चेष्टाओं का यथार्थ एवं सजीव चित्रण होने से स्वभावोक्ति अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-028",
+      "name": {
+        "sa": "काव्यलिङ्गम्",
+        "iast": "Kāvyaliṅgam",
+        "te": "కావ్యలింగాలంకారము",
+        "hi": "काव्यलिंग अलंकार",
+        "en": "Poetic Cause / Expressed Justification"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४१) / काव्यप्रकाशः (१०.३३) / साहित्यदर्पणः (१०.६८) | उदाहरणम्: चन्द्रालोकः (५.११४) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "हेतोर्वाक्यपदार्थत्वे काव्यलिङ्गमुदाहृतम् ।\nसमर्थनीयस्यार्थस्य हेतुता यत्र कथ्यते ॥",
+        "sloka_te": "హేతోర్వాక్యపదార్థత్వే కావ్యలిఙ్గముదాహృతమ్ ।\nసమర్థనీయస్యార్థస్య హేతుతా యత్ర కథ్యతే ॥",
+        "meaning_sa": "यत्र कस्यचित् अर्थस्य समर्थनाय युक्तिरूपः हेतुः वाक्यरूपेण पदरूपेण वा प्रयुज्यते, तत् काव्यलिङ्गम्।",
+        "meaning_en": "Kāvyaliṅga is the citation of a poetic reason or justification, embedded either as a single word or as an entire explanatory clause, to substantiate a claim.",
+        "meaning_te": "ఒక విషయమును సమర్థించుటకై హేతువును (కారణమును) వాక్యరూపమున గాని పదరూపమున గాని అందముగా పొదిగి చెప్పినచో కావ్యలింగాలంకారమగును.",
+        "meaning_hi": "जहाँ किसी बात के समर्थन के लिए कोई युक्ति या कारण (हेतु) वाक्य अथवा पद के रूप में दिया जाए।",
+        "source_reference": "चन्द्रालोकः (५.४१) / काव्यप्रकाशः (१०.३३) / साहित्यदर्पणः (१०.६८)"
+      },
+      "primary_example": {
+        "sloka_sa": "हेतोर्वाक्यपदार्थत्वे काव्यलिङ्गमुदाहृतम् ।\nजितोऽसि मन्दकन्दर्प मयि जीवति शङ्करे ॥",
+        "sloka_te": "హేతోర్వాక్యపదార్థత్వే కావ్యలిఙ్గముదాహృతమ్ ।\nజితోఽసి మన్దకన్దర్ప మయి జీవతి శఙ్కరే ॥",
+        "anvaya": "हे मन्दकन्दर्प! मयि शङ्करे जीवति (सति) त्वं जितः असि; हेतोः वाक्यपदार्थत्वे काव्यलिङ्गम् उदाहृतम् ।",
+        "bhaava_sa": "हे मन्दबुद्धे कामदेव! कामदहने मयि शङ्करे जीवति सति त्वं सर्वथा पराजितः असि। अत्र 'मयि जीवति शङ्करे' इति वाक्यं पराजयस्य हेतुः।",
+        "bhaava_en": "O foolish Cupid! You are already vanquished, for I, Lord Śaṅkara, the destroyer of Kama, am alive! (The living presence of Śaṅkara is the expressed reason for Cupid's conquest).",
+        "bhaava_te": "ఓరి అవివేకివైన మన్మథా! నిన్ను భస్మము చేసిన నేనే (శంకరుడను) జీవించియుండగా నీవు పరాజితుడవే! ('శివుడు జీవించియుండుట' అనునది మన్మథుని పరాజయమునకు కావ్యహేతువు).",
+        "bhaava_hi": "अरे मन्दबुद्धि कामदेव! मेरे (शिव के) जीवित रहते तू पराजित ही है। यहाँ शिव का जीवित रहना कामदेव की पराजय का हेतु है।",
+        "source_reference": "चन्द्रालोकः (५.११४) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "कन्दर्पपराजयस्य समर्थनाय 'मयि शङ्करे जीवति' इति वाक्यरूपहेतुकथनात् काव्यलिङ्गालङ्कारः।",
+        "en": "The clause 'while I, Śaṅkara, live' functions as the poetic justification for Kamadeva's defeat.",
+        "te": "మన్మథ పరాజయమును సమర్థించుటకు 'మయి జీవతి శంకరే' అను వాక్యము హేతువుగా సమర్పింపబడినందున కావ్యలింగము.",
+        "hi": "यहाँ कामदेव की पराजय के समर्थन में 'शंकर के जीवित रहने' को काव्यमय हेतु के रूप में प्रस्तुत किया गया है।"
+      }
+    },
+    {
+      "id": "ALK-029",
+      "name": {
+        "sa": "विषमम्",
+        "iast": "Viṣamam",
+        "te": "విషమాలంకారము",
+        "hi": "विषम अलंकार",
+        "en": "Incongruity / Mismatch of Association"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.३८) / काव्यप्रकाशः (१०.३४) / साहित्यदर्पणः (१०.७०) | उदाहरणम्: चन्द्रालोकः (५.८३) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "विषमं वर्ण्यते यत्र घटनाऽननुरूपयोः ।\nअनिष्टस्यापि सम्प्राप्तिर्यत्नादिच्छात एव वा ॥",
+        "sloka_te": "విషమం వర్ణ్యతే యత్ర ఘటనాఽననురూపయోః ।\nఅనిష్టస్యాపి సమ్ప్రాప్తిర్యత్నాదిచ్ఛాత ఏవ వా ॥",
+        "meaning_sa": "यत्र अत्यन्तम् अननुरूपयोः (असदृशयोः) वस्तुनोः सम्बन्धः, अथवा कारणात् विरुद्धकार्यस्योत्पत्तिः, अनिष्टावाप्तिर्वा वर्ण्यते, तद्विषमम्।",
+        "meaning_en": "Viṣama (Incongruity) depicts an incompatible association between two mismatched entities, or the emergence of an effect contrary to its cause, or striving for a benefit but reaping a calamity.",
+        "meaning_te": "పరస్పరము సరిపోలని (అననురూపమైన) వస్తువుల కలయికను గాని, కారణమునకు విరుద్ధమైన కార్యమును గాని, ఇష్టసిద్ధికై యత్నించి అనిష్టము పొందుటను గాని వర్ణించినచో విషమాలంకారమగును.",
+        "meaning_hi": "जहाँ दो सर्वथा बेमेल (अननुरूप) वस्तुओं का सम्बन्ध दिखाया जाए, अथवा कारण के विरुद्ध कार्य हो, या लाभ के बदले हानि हो जाए।",
+        "source_reference": "चन्द्रालोकः (५.३८) / काव्यप्रकाशः (१०.३४) / साहित्यदर्पणः (१०.७०)"
+      },
+      "primary_example": {
+        "sloka_sa": "विषमं वर्ण्यते यत्र घटनाऽननुरूपयोः ।\nक्वेयं शिरीषमृद्वङ्गी क्व तादृग्मदनज्वरः ॥",
+        "sloka_te": "విషమం వర్ణ్యతే యత్ర ఘటనాఽననురూపయోః ।\nక్వేయం శిరీషమృద్వఙ్గీ క్వ తాదృగ్మదనజ్వరః ॥",
+        "anvaya": "क्व इयं शिरीषमृद्वङ्गी, क्व तादृक् मदनज्वरः! यत्र अननुरूपयोः घटना वर्ण्यते तत् विषमम् ।",
+        "bhaava_sa": "कुत्र शिरीषपुष्पवत् अतीव कोमलशरीरा मुग्धा नायिका, कुत्र च असह्यः प्रचण्डः विरहज्वरः! उभयोः महान् अननुरूपसम्बन्धः।",
+        "bhaava_en": "Where is this tender maiden, soft as a delicate Śirīṣa blossom, and where is that ferocious, scorching fever of love? The two are completely mismatched!",
+        "bhaava_te": "దిరిసెనపువ్వు వంటి సుకుమారమైన మేనిగల యీ కోమలి యెక్కడ? భరింపరాని ఆ మన్మథుని విరహతాపమెక్కడ? రెంటికిని పొంతనయే లేదు!",
+        "bhaava_hi": "कहाँ शिरीष के फूल जैसी कोमल अंगों वाली यह सुकुमारी और कहाँ यह असह्य मदन की ज्वाला! दोनों में कोई मेल नहीं है।",
+        "source_reference": "चन्द्रालोकः (५.८३) / काव्यप्रकाश-उदाहरणम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "कोमलांग्याः नायिकायाः दारुणेन मदनज्वरेण सह अननुरूपघटनायाः कथनात् प्रथमो विषमभेदः।",
+        "en": "The association of extreme tenderness and savage passion produces an agonizing, incongruous union.",
+        "te": "సుకుమారమైన నాయికా శరీరమునకు తీవ్రమైన కామతాపమునకు పొసగని సంఘటన వర్ణింపబడుటచే విషమము.",
+        "hi": "यहाँ कोमल सुन्दरी और भयंकर विरह-ज्वर का बेमेल सम्बन्ध दिखाया गया है, अतः विषम अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-030",
+      "name": {
+        "sa": "समम्",
+        "iast": "Samam",
+        "te": "సమాలంకారము",
+        "hi": "सम अलंकार",
+        "en": "Congruity / Harmonic Accord"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.३९ / ५.८६) / साहित्यदर्पणः (१०.७१) | उदाहरणम्: चन्द्रालोकः (५.८६, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "समं स्याद्वर्णनं यत्र द्वयोरप्यनुरूपयोः ।\nयोग्येन योगः सदृशः सम इत्यभिधीयते ॥",
+        "sloka_te": "సమం స్యాద్వర్ణనం యత్ర ద్వయోరప్యనురూపయోః ।\nయోగ్యేన యోగః సదృశః సమ ఇత్యభిధీయతే ॥",
+        "meaning_sa": "विषमस्य विपरीतः अयम् अलङ्कारः। यत्र द्वयोः सर्वथा अनुरूपयोः (सुयोग्ययोः) परस्परं सम्बन्धः वर्ण्यते, तत् समम्।",
+        "meaning_en": "Sama is the reciprocal counterpart to Viṣama: it celebrates the perfect harmony, suitability, and mutual perfection between two ideally paired entities.",
+        "meaning_te": "విషమాలంకారమునకు వ్యతిరేకముగా, పరస్పరము మిక్కిలి అనుకూలమైన (తగిన) రెండు వస్తువుల రమణీయ సంబంధమును వర్ణించినచో సమాలంకారమగును.",
+        "meaning_hi": "विषम अलंकार के विपरीत, जहाँ दो सर्वथा अनुरूप (योग्य और अनुकूल) वस्तुओं के सुन्दर योग का वर्णन हो।",
+        "source_reference": "चन्द्रालोकः (५.३९ / ५.८६) / साहित्यदर्पणः (१०.७१)"
+      },
+      "primary_example": {
+        "sloka_sa": "समं स्याद्वर्णनं यत्र द्वयोरप्यनुरूपयोः ।\nस्वानुरूपं कृतं सद्म हारेण कुचमण्डलम् ॥",
+        "sloka_te": "సమం స్యాద్వర్ణనం యత్ర ద్వయోరప్యనురూపయోః ।\nస్వానురూపం కృతం సద్మ హారేణ కుచమణ్డలమ్ ॥",
+        "anvaya": "हारेण कुचमण्डलं स्वानुरूपं सद्म कृतम्; यत्र द्वयोः अनुरूपयोः अपि वर्णनं स्यात् तत् समम् ।",
+        "bhaava_sa": "मुक्ताहारेण स्वस्य योग्यमेव सुन्दरं कुचमण्डलं निवासस्थानं कृतम्। उभौ परस्परं परमशोभावन्तौ।",
+        "bhaava_en": "The radiant pearl necklace found its perfectly suited dwelling upon her lovely bosom—each glorifies the other in flawless harmony.",
+        "bhaava_te": "ముత్యాలహారము తనకు తగినట్లుండెడి స్తనమండలమును చక్కని నివాసముగా చేసికొన్నది (ముత్యాలహారము-వక్షఃస్థలములు రెండును సమాన శోభతో సరితూగినవి).",
+        "bhaava_hi": "मोतियों के सुंदर हार ने अपने ही योग्य वक्षःस्थल को अपना उपयुक्त निवास-स्थान बनाया है।",
+        "source_reference": "चन्द्रालोकः (५.८६, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र मुक्ताहारस्य तत्स्थानभूतकुचमण्डलस्य च परस्परम् अनुरूपसम्बन्धस्य वर्णनात् समालङ्कारः।",
+        "en": "The flawless mutual suitability of the pearl necklace and the bosom exemplifies Sama.",
+        "te": "హారమునకు దాని నివాస స్థానమునకు గల చక్కని పొందికను వర్ణించుటచే సమాలంకారము.",
+        "hi": "यहाँ मुक्ताहार और वक्षःस्थल की पारस्परिक अनुकूलता का मनोहर योग दिखाया गया है।"
+      }
+    },
+    {
+      "id": "ALK-031",
+      "name": {
+        "sa": "वक्रोक्तिः",
+        "iast": "Vakroktiḥ",
+        "te": "వక్రోక్త్యలంకారము",
+        "hi": "वक्रोक्ति अलंकार",
+        "en": "Oblique Speech / Artful Ambiguity"
+      },
+      "category": "शब्दालङ्कारः (Figure of Sound)",
+      "source_text": "काव्यप्रकाशः (९.७८) / चन्द्रालोकः (२.५) / साहित्यदर्पणः (१०.९) | उदाहरणम्: काव्यप्रकाशः (९.७८, उदाहरणम्)",
+      "lakshana": {
+        "sloka_sa": "यदुक्तमन्यथा वाक्यमन्यथैवान्यथा भवेत् ।\nश्लेषेण काक्वा वा ज्ञेया वक्रोक्तिर्द्विविधा बुधैः ॥",
+        "sloka_te": "యదుక్తమన్యథా వాక్యమన్యథైవాన్యథా భవేత్ ।\nశ్లేషేణ కాక్వా వా జ్ఞేయా వక్రోక్తిర్ద్వివిధా బుధైః ॥",
+        "meaning_sa": "वक्त्रा एकस्मिन् अर्थे प्रयुक्तं वाक्यं श्रोत्रा श्लेषेण स्वरभेदेन (काक्वा) वा यत्र अन्यस्मिन् अर्थे कल्प्यते, सा वक्रोक्तिः।",
+        "meaning_en": "Vakrokti is the clever twist of speech where a listener deliberately misinterprets a speaker's intended meaning, twisting it into another sense through punning (Śleṣa) or phonetic intonation (Kāku).",
+        "meaning_te": "ఒకరు ఒక అర్థముతో చెప్పిన వాక్యమును, వినువారు శ్లేషచేత గాని కంఠస్వర మార్పుచేత (కాకువుచేత) గాని మరియొక అర్థముతో అన్వయించి సమాధానమిచ్చినచో వక్రోక్త్యలంకారమగును.",
+        "meaning_hi": "जहाँ वक्ता द्वारा एक अर्थ में कहे गए वाक्य का श्रोता श्लेष या काकु (कण्ठ-स्वर के विकार) से दूसरा ही अर्थ निकाल ले।",
+        "source_reference": "काव्यप्रकाशः (९.७८) / चन्द्रालोकः (२.५) / साहित्यदर्पणः (१०.९)"
+      },
+      "types": [
+        {
+          "type_name_sa": "श्लेषवक्रोक्तिः",
+          "type_name_en": "Pun-based Vakrokti",
+          "description_en": "Twisting the word's meaning through its dual lexical senses.",
+          "description_te": "నానార్థములు గల శబ్దమును అన్యార్థమున తిప్పుట.",
+          "description_hi": "श्लेष के बल पर दूसरा अर्थ निकालना।"
+        },
+        {
+          "type_name_sa": "काकुवक्रोक्तिः",
+          "type_name_en": "Intonation-based Vakrokti",
+          "description_en": "Reversing an assertion into an ironic negation via sarcastic pitch/voice inflection.",
+          "description_te": "కంఠధ్వని యొక్క భేదముచే అవునను దానిని కాదనునట్లు అర్థము మార్చుట.",
+          "description_hi": "कंठ-स्वर के उतार-चढ़ाव से वाक्य का अर्थ बदल देना।"
+        }
+      ],
+      "primary_example": {
+        "sloka_sa": "के यूयं स्थल एव सम्प्रति वयं के स्तः कुतोऽत्रागताः\nकिं वः सङ्कटमस्ति तिष्ठत मुहुर्मा गात सन्तापिनः ।\nएवं वागधिपेन संवदति सा मत्वा विमुक्ताशया\nवक्रोक्त्यैव पराजिता च वनिता कौतूहलादावृता ॥",
+        "sloka_te": "కే యూయం స్థల ఏవ సమ్ప్రతి వయం కే స్తః కుతోఽత్రాగతాః\nకిం వః సఙ్కటమస్తి తిష్ఠత ముహుర్మా గాత సన్తాపినః ।\nఏవం వాగధిపేన సంవదతి సా మత్వా విముక్తాశయా\nవక్రోక్త్యైవ పరాజితా చ వనితా కౌతూహలాదావృతా ॥",
+        "anvaya": "के यूयं? वयं सम्प्रति स्थले एव स्मः; कुतः अत्र आगताः? वः किं सङ्कटम् अस्ति? मुहुः तिष्ठत, सन्तापिनः मा गात; एवं वागधिपेन संवदति सा वनिता वक्रोक्त्या एव पराजिता ।",
+        "bhaava_sa": "द्वारस्थः राजा पृच्छति 'के यूयम्?' गृहपतिः 'के (जले)' इति मत्वा 'वयं स्थले स्मः' इत्याह। राजा पुनराह 'कः अस्ति?' गृहपतिः 'कः' (मेषः) इति मत्वा वक्रोक्तिं करोति।",
+        "bhaava_en": "King: 'Who are you?' (Ke yūyam; lit. also 'Are you in the water?'). Householder: 'Right now we are on dry land!' King: 'Who is there?' (Kaḥ; lit. 'a ram'). Householder: 'Ah, so you are a ram? No wonder you look like that!' Thus every sentence is humorously deflected.",
+        "bhaava_te": "రాజు: 'మీరు ఎవరు?' (కే యూయం = నీటిలో ఉన్నారా అని శ్లేష). గృహస్థు: 'మేము నేలమీదనే ఉన్నాము!' రాజు: 'కః?' (ఎవరు? / పొట్టేలా?). గృహస్థు: 'ఓహో! మీరు పొట్టేలా?' ఇట్లు ఒకరి మాటను మరొకరు వక్రముగా మార్చి చెప్పుట.",
+        "bhaava_hi": "वक्ता के सीधे प्रश्न का श्रोता द्वारा जान-बूझकर शब्दों को तोड़कर या अन्य अर्थ निकालकर उत्तर देना, जिससे हास्य और चमत्कार उत्पन्न होता है।",
+        "source_reference": "काव्यप्रकाशः (९.७८, उदाहरणम्)"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र 'के' (प्रथमाबहुवचनम् / जलवाचकसप्तमी), 'कः' (किम्-शब्दः / मेषवाचकः) इति श्लेषेण शब्दार्थपरिवर्तनात् श्लेषवक्रोक्तिः।",
+        "en": "The speaker's interrogatives are systematically twisted into homophonic locatives and animal names.",
+        "te": "'కే' అను ప్రథమా విభక్తి బహువచనమును 'జలమందు' అనియు, 'కః' అనుదానిని 'మేషము' అనియు శ్లేషచే మార్చుట వలన శ్లేషవక్రోక్తి.",
+        "hi": "यहाँ 'के' और 'कः' शब्दों का श्लेष द्वारा दूसरा अर्थ लगाकर उत्तर देने से श्लेषवक्रोक्ति अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-032",
+      "name": {
+        "sa": "परिणामः",
+        "iast": "Pariṇāmaḥ",
+        "te": "పరిణామాలంకారము",
+        "hi": "परिणाम अलंकार",
+        "en": "Commutation / Instrumental Identification"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.८) / काव्यप्रकाशः (१०.५) / साहित्यदर्पणः (१०.३४) | उदाहरणम्: चन्द्रालोकः (५.८) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "परिणामः क्रियार्थश्चेद् विषयी विषयात्मना ।\nउपयुज्येत यत्रैव कार्यसिद्धौ प्रवर्त्यते ॥",
+        "sloka_te": "పరిణామః క్రియార్థశ్చేద్ విషయీ విషయాత్మనా ।\nఉపయుజ్యేత యత్రైవ కార్యసిద్ధౌ ప్రవర్త్యతే ॥",
+        "meaning_sa": "यत्र आरोपितः विषयी (उपमानम्) प्रकृतकार्योपयोगितया उपमेयरूपेणैव परिणमते (उपयुज्यते), स परिणामः।",
+        "meaning_en": "Pariṇāma is the figure wherein the superimposed Upamāna does not remain aloof, but transforms and adapts itself as the Upameya in order to accomplish a designated poetic action.",
+        "meaning_te": "ఆరోపింపబడిన ఉపమానము ఉపమేయము యొక్క స్వరూపమును పొంది, వర్ణిత కార్యమును నెరవేర్చుటకు తోడ్పడినచో పరిణామాలంకారమగును. (రూపకమునందు అభేదము మాత్రమే యుండును; ఇచ్చట కార్యార్థమై పరిణామము చెందును).",
+        "meaning_hi": "जहाँ आरोपित उपमान प्रस्तुत कार्य की सिद्धि के लिए उपमेय के रूप में ही परिणत (उपयुक्त) हो जाए।",
+        "source_reference": "चन्द्रालोकः (५.८) / काव्यप्रकाशः (१०.५) / साहित्यदर्पणः (१०.३४)"
+      },
+      "primary_example": {
+        "sloka_sa": "नयनेनाम्बुजेनेयं वीक्षते मदनातुरा ।\nस्मितेन चन्द्रपादेन तापं हरति कामिनः ॥",
+        "sloka_te": "నయనేనామ్బుజేనేయం వీక్షతే మదనాతురా ।\nస్మితేన చన్ద్రపాదేన తాపం హరతి కామినః ॥",
+        "anvaya": "इयं मदनातुरा अम्बुजेन नयनेन वीक्षते; चन्द्रपादेन स्मितेन कामिनः तापं हरति ।",
+        "bhaava_sa": "अत्र कमलत्वेन आरोपितं नेत्रं दर्शनक्रियायाम् उपयुज्यते। कमलस्य दर्शनक्रिया असम्भवा, किन्तु नयनात्मना परिणम्य तत् सम्पादयति।",
+        "bhaava_en": "This lovelorn maiden gazes with her lotus-eye! (A physical lotus cannot perform the act of looking, but having transformed into her eye, it accomplishes the vision).",
+        "bhaava_te": "ఈ విరహిణి పద్మమనెడి నేత్రముతో చూచుచున్నది. (తామరపువ్వు చూడజాలదు; కాని నేత్రముగా పరిణమించి చూచు కార్యమును సాధించుచున్నది).",
+        "bhaava_hi": "यह कामपीडिता अपने कमलरूपी नेत्र से देखती है। (कमल देख नहीं सकता, किन्तु नेत्र रूप में परिणत होकर देखने की क्रिया सम्पन्न कर रहा है)।",
+        "source_reference": "चन्द्रालोकः (५.८) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अम्बुजस्य (उपमानस्य) दर्शनक्रियार्थं नयनात्मना (उपमेयात्मना) परिणामात् परिणामोलङ्कारः।",
+        "en": "The lotus adapts the functional identity of the eye to perform the gaze.",
+        "te": "దర్శనక్రియను నెరవేర్చుటకై కమలము నేత్రముగా పరిణమించినందున పరిణామాలంకారము.",
+        "hi": "यहाँ देखने की क्रिया को सिद्ध करने के लिए कमल का नेत्र रूप में परिणमन हुआ है, अतः परिणाम अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-033",
+      "name": {
+        "sa": "अधिकम्",
+        "iast": "Adhikam",
+        "te": "అధికాలంకారము",
+        "hi": "अधिक अलंकार",
+        "en": "Exceeding Container or Contained"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४१ / ५.९०) / साहित्यदर्पणः (१०.६६) | उदाहरणम्: चन्द्रालोकः (५.९०, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "अधिकं पृथुलाधारादाधेयाधिक्यवर्णनम् ।\nआधेयादधिके धारे तदप्यधिकमुच्यते ॥",
+        "sloka_te": "అధికం పృథులాధారాదాధేయాధిక్యవర్ణనమ్ ।\nఆధేయాదధికే ధారే తదప్యధికముచ్యతే ॥",
+        "meaning_sa": "यत्र आधारस्य (पात्रस्य) अपेक्षया आधेयस्य (तद्गतवस्तुनः) आधिक्यं वर्ण्यते, अथवा आधेयापेक्षया आधारस्य अत्यधिकं महत्त्वं वर्ण्यते, तदधिकम्।",
+        "meaning_en": "Adhikam depicts an astonishing spatial disproportion: either the contained (Ādheya) is so immense that it cannot fit within a colossal container (Ādhāra), or the container is so vast that the contained seems infinitesimally tiny.",
+        "meaning_te": "విశాలమైన ఆధారమునందు కూడ ఇముడజాలనంతగా ఆధేయము (ఉండు వస్తువు) ఎక్కువని వర్ణించినను, లేదా ఆధేయముకంటె ఆధారము అతి విస్తృతమని వర్ణించినను అధికాలంకారమగును.",
+        "meaning_hi": "जहाँ बहुत बड़े आधार (पात्र) की तुलना में भी आधेय (उसमें रहने वाली वस्तु) को अधिक बड़ा दिखाया जाए, अथवा आधेय की अपेक्षा आधार को बहुत विशाल बताया जाए।",
+        "source_reference": "चन्द्रालोकः (५.४१ / ५.९०) / साहित्यदर्पणः (१०.६६)"
+      },
+      "primary_example": {
+        "sloka_sa": "अधिकं पृथुलाधारादाधेयाधिक्यवर्णनम् ।\nब्रह्माण्डानि जले यत्र तत्र मान्ति न ते गुणाः ॥",
+        "sloka_te": "అధికం పృథులాధారాదాధేయాధిక్యవర్ణనమ్ ।\nబ్రహ్మాణ్డాని జలే యత్ర తత్ర మాన్తి న తే గుణాః ॥",
+        "anvaya": "यत्र जले ब्रह्माण्डानि (मान्ति), तत्र ते गुणाः न मान्ति; पृथुलाधारात् आधेयाधिक्यवर्णनम् अधिकम् ।",
+        "bhaava_sa": "हे भगवन्! यस्मिन् प्रलयपयोधिजले समस्तानि ब्रह्माण्डानि बुद्बुदा इव लीयन्ते, तस्मिन् अपारे जलेऽपि भवतः अनन्ताः गुणाः समातुं न शक्नुवन्ति!",
+        "bhaava_en": "O Lord! In those cosmic waters where countless universes float like tiny bubbles, even that boundless ocean cannot contain Your infinite virtues!",
+        "bhaava_te": "ఓ దేవా! ఏ ప్రళయసముద్ర జలములందు సమస్త బ్రహ్మాండములు నీటిబుడగలవలె ఇమిడియుండునో, అట్టి మహాసముద్రమునందు కూడ నీ కల్యాణగుణములు ఇముడజాలకుండునంత అనంతములు!",
+        "bhaava_hi": "हे प्रभु! जिस प्रलय के जल में सम्पूर्ण ब्रह्माण्ड समा जाते हैं, उस अपार जल में भी आपके गुण समा नहीं पाते हैं।",
+        "source_reference": "चन्द्रालोकः (५.९०, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अत्र जलरूपविपुलाधारादपि भगवद्गुणानाम् आधेयानां महत्त्ववर्णनात् प्रथमोऽधिकभेदः।",
+        "en": "The virtues of the Divine (Ādheya) exceed the universal deluge (Ādhāra).",
+        "te": "సమస్త బ్రహ్మాండములను మోయు ప్రళయజలమను ఆధారమునకంటె భగవద్గుణములనెడి ఆధేయము మిక్కిలి అధికముగా వర్ణింపబడుటచే అధికాలంకారము.",
+        "hi": "यहाँ प्रलय-जल रूपी विशाल आधार से भी भगवान् के गुण रूपी आधेय का आधिक्य दिखाया गया है।"
+      }
+    },
+    {
+      "id": "ALK-034",
+      "name": {
+        "sa": "अल्पम्",
+        "iast": "Alpam",
+        "te": "అల్పాలంకారము",
+        "hi": "अल्प अलंकार",
+        "en": "Substratum Diminution / Micro-containment"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४२ / ५.९२) / साहित्यदर्पणः | उदाहरणम्: चन्द्रालोकः (५.९२, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "अल्पं तु सूक्ष्मादाधेयाद्यदाधारस्य सूक्ष्मता ।\nअत्यन्ताल्पतयाधारो वर्ण्यते यत्र चारु तत् ॥",
+        "sloka_te": "అల్పం తు సూక్ష్మాదాధేయాద్యదాధారస్య సూక్ష్మతా ।\nఅత్యన్తాల్పతయాధారో వర్ణ్యతే యత్ర చారు తత్ ॥",
+        "meaning_sa": "यत्र पूर्वमेव सूक्ष्मात् आधेयादपि आधारस्य अत्यधिकं सौक्ष्म्यं वर्ण्यते, तदल्पम्।",
+        "meaning_en": "Alpam depicts intense emaciation or delicacy: a tiny object (Ādheya) looks overwhelmingly large because the supporting container (Ādhāra) has become so infinitesimally slender.",
+        "meaning_te": "మిక్కిలి సూక్ష్మమైన ఆధేయముకంటెను దానిని ధరించు ఆధారము మఱింత సూక్ష్మముగా కృశించినట్లు వర్ణించినచో అల్పాలంకారమగును.",
+        "meaning_hi": "जहाँ सूक्ष्म आधेय की अपेक्षा भी आधार को अत्यधिक सूक्ष्म या क्षीण दिखाया जाए।",
+        "source_reference": "चन्द्रालोकः (५.४२ / ५.९२) / साहित्यदर्पणः"
+      },
+      "primary_example": {
+        "sloka_sa": "अल्पं तु सूक्ष्मादाधेयाद्यदाधारस्य सूक्ष्मता ।\nमणिमूलोर्मिका तेऽद्य करे जपवटीयते ॥",
+        "sloka_te": "అల్పం తు సూక్ష్మాదాధేయాద్యదాధారస్య సూక్ష్మతా ।\nమణిమూలోర్మికా తేఽద్య కరే జపవటీయతే ॥",
+        "anvaya": "अद्य तव करे मणिमूलोर्मिका जपवटीयते; सूक्ष्मात् आधेयात् यत् आधारस्य सूक्ष्मता तत् अल्पम् ।",
+        "bhaava_sa": "विरहेण सा सुन्दरी एतावती कृशा जाता यत् तस्याः अङ्गुलीयकमेव हस्तस्य कङ्कणमिव (जपमालेव) प्रलम्बते!",
+        "bhaava_en": "In the anguish of separation, that slender maiden has grown so terribly thin that her finger-ring hangs loose around her wrist like a rosary prayer necklace!",
+        "bhaava_te": "విరహముచే ఆ సుకుమారి ఎంతగానో చిక్కిపోయినది! ఆమె చిటికినవేలి రత్నాల ఉంగరమే చేతికి జపమాలవలె (గాజువలె) వదులుగా వేలాడుచున్నది!",
+        "bhaava_hi": "विरह के कारण वह कृशांगी इतनी दुर्बल हो गई है कि उसकी उंगली की छोटी सी अंगूठी भी कलाई में जपमाला की तरह लटक रही है।",
+        "source_reference": "चन्द्रालोकः (५.९२, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अङ्गुलीयकस्य (सूक्ष्माधेयस्य) अपेक्षया अपि विरहिण्याः हस्तस्य (आधारस्य) अत्यधिकं कार्श्यं सूचितमिति अल्पालङ्कारः।",
+        "en": "The finger ring (a tiny object) loose upon the wrist illustrates the extreme diminution of the arm.",
+        "te": "ఉంగరమను సూక్ష్మ వస్తువుకంటెను ఆమె చేయి మఱింత సూక్ష్మముగా మారినట్లు వర్ణించుటచే అల్పము.",
+        "hi": "यहाँ अंगूठी जैसे सूक्ष्म आधेय की तुलना में हाथ रूपी आधार की अत्यधिक सूक्ष्मता (कृशता) दिखाई गई है।"
+      }
+    },
+    {
+      "id": "ALK-035",
+      "name": {
+        "sa": "अन्योन्यम्",
+        "iast": "Anyonyam",
+        "te": "అన్యోన్యాలంకారము",
+        "hi": "अन्योन्य अलंकार",
+        "en": "Mutual Reciprocity"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४३ / ५.९३) / साहित्यदर्पणः (१०.६९) | उदाहरणम्: चन्द्रालोकः (५.९३, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "क्रियेत परस्परं यत्र वस्तुनोर्गुणवर्धनम् ।\nअन्योन्यमुच्यते तज्ज्ञैः परस्परमुपस्कृते ॥",
+        "sloka_te": "క్రియేత పరస్పరం యత్ర వస్తునోర్గుణవర్ధనమ్ ।\nఅన్యోన్యముచ్యతే తజ్జ్ఞైః పరస్పరముపస్కృతే ॥",
+        "meaning_sa": "यत्र द्वयोः वस्तुनोः परस्परं क्रियाजन्यो शोभाजन्यो वा उपकारः वर्ण्यते, तदन्योन्यम्।",
+        "meaning_en": "Anyonyam is mutual glorification: two entities reciprocally bestow radiance, charm, or assistance upon one another through a circular benefit.",
+        "meaning_te": "రెండు వస్తువులు పరస్పరము ఒకదాని కొకటి ఉపకారము చేసికొనుచు శోభను పెంపొందించుకొన్నట్లు వర్ణించినచో అన్యోన్యాలంకారమగును.",
+        "meaning_hi": "जहाँ दो वस्तुएं परस्पर एक-दूसरे का उपकार करती हुई एक-दूसरे की शोभा बढ़ाती हैं।",
+        "source_reference": "चन्द्रालोकः (५.४३ / ५.९३) / साहित्यदर्पणः (१०.६९)"
+      },
+      "primary_example": {
+        "sloka_sa": "क्रियेत परस्परं यत्र वस्तुनोर्गुणवर्धनम् ।\nत्रियामा शशिना भाति शशी भाति त्रियामया ॥",
+        "sloka_te": "క్రియేత పరస్పరం యత్ర వస్తునోర్గుణవర్ధనమ్ ।\nత్రియామా శశినా భాతి శశీ భాతి త్రియామయా ॥",
+        "anvaya": "त्रियामा शशिना भाति, शशी त्रियामया भाति; यत्र वस्तुनोः परस्परं गुणवर्धनं क्रियेत (तद् अन्योन्यम्) ।",
+        "bhaava_sa": "चन्द्रमसा रात्रिः शोभते, रात्र्या च चन्द्रमाः शोभते। उभौ परस्परस्य शोभां वर्धयतः।",
+        "bhaava_en": "The night is glorified by the radiant moon, and the moon is glorified by the dark velvety night. Each enhances the brilliance of the other.",
+        "bhaava_te": "చంద్రునిచేత రాత్రి ప్రకాశించుచున్నది; రాత్రిచేత చంద్రుడు శోభిల్లుచున్నాడు. ఇరువురును పరస్పరము శోభను పెంచుకొనుచున్నారు.",
+        "bhaava_hi": "चन्द्रमा से रात्रि शोभा पाती है और रात्रि से चन्द्रमा सुशोभित होता है। दोनों एक-दूसरे की शोभा बढ़ाते हैं।",
+        "source_reference": "चन्द्रालोकः (५.९३, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "निशया चन्द्रस्य, शशाङ्केन च निशायाः परस्परमुपकारकत्वात् अन्योन्यालङ्कारः।",
+        "en": "Night embellishes moon; moon embellishes night.",
+        "te": "రాత్రి-చంద్రులు పరస్పర శోభాకారులుగా వర్ణింపబడుటచే అన్యోన్యాలంకారము.",
+        "hi": "यहाँ रात्रि और चन्द्रमा परस्पर एक-दूसरे की शोभा का उपकार कर रहे हैं।"
+      }
+    },
+    {
+      "id": "ALK-036",
+      "name": {
+        "sa": "विशेषः",
+        "iast": "Viśeṣaḥ",
+        "te": "విశేషాలంకారము",
+        "hi": "विशेष अलंकार",
+        "en": "Distinctive Presence / Hyper-Pervasion"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४४ / ५.९५) / काव्यप्रकाशः (१०.३८) | उदाहरणम्: चन्द्रालोकः (५.९५, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "विनाधारं स्थितावेकस्यानेकत्राप्यसंभवे ।\nकिञ्चित् प्रारभ्यमाणं वा विशेषोऽयमुदाहृतः ॥",
+        "sloka_te": "వినాధారం స్థితావేకస్యానేకత్రాప్యసంభవే ।\nకిఞ్చిత్ ప్రారభ్యమాణం వా విశేషోఽయముదాహృతః ॥",
+        "meaning_sa": "१. प्रसिद्धम् आधारं विनापि आधेयस्य स्थितिः, २. युगपद् अनेकत्र एकस्य वस्तुनः उपस्थितिः, ३. किञ्चित् कार्यं कर्तुं प्रवृत्तस्य अशक्यस्यान्यस्य कार्यस्य निष्पत्तिर्वा यत्र वर्ण्यते, स विशेषः।",
+        "meaning_en": "Viśeṣa depicts extraordinary manifestation: (1) an attribute or entity enduring without its natural container, (2) a single subject present in multiple disparate locations simultaneously, or (3) setting out for a task and effortlessly achieving an improbable wonder.",
+        "meaning_te": "ప్రసిద్ధమైన ఆధారము లేకుండగనే వస్తువు నిలచియుండుట గాని, ఒకే వస్తువు ఏకకాలమున నలుదిక్కుల వ్యాపించియుండుట గాని విశేషాలంకారమగును.",
+        "meaning_hi": "जहाँ प्रसिद्ध आधार के बिना भी आधेय की स्थिति दिखाई जाए, अथवा एक ही वस्तु का एक साथ अनेक स्थानों पर होना वर्णित हो।",
+        "source_reference": "चन्द्रालोकः (५.४४ / ५.९५) / काव्यप्रकाशः (१०.३८)"
+      },
+      "primary_example": {
+        "sloka_sa": "विनाधारं स्थितावेकस्यानेकत्राप्यसंभवे ।\nगतेऽपि सूर्ये दीपेन्दौ भात्येव तव सत्कृपा ॥",
+        "sloka_te": "వినాధారం స్థితావేకస్యానేకత్రాప్యసంభవే ।\nగతేఽపి సూర్యే దీపేన్దౌ భాత్యేవ తవ సత్కృపా ॥",
+        "anvaya": "सूर्ये दीपेन्दौ गते अपि तव सत्कृपा भाति एव; विना आधारं स्थितौ वा अनेकत्र असंभवे विशेषः ।",
+        "bhaava_sa": "सूर्येऽस्तङ्गते, दीपे निर्वापितेऽपि भवतः करुणाप्रकाशः निरन्तरं प्रकाशत एव।",
+        "bhaava_en": "Even when the sun sets and lamps are extinguished, the divine luster of Your boundless grace continues to shine bright without an earthly vessel!",
+        "bhaava_te": "సూర్యుడు అస్తమించినను, దీపములు ఆరిపోయినను, నీ దివ్యకృప యను ప్రకాశము ఏ ఆధారము లేకయే సర్వదా ప్రకాశించుచున్నది!",
+        "bhaava_hi": "सूर्य के अस्त होने और दीपक बुझ जाने पर भी आपकी कृपा का प्रकाश बिना किसी भौतिक आधार के निरंतर चमकता रहता है।",
+        "source_reference": "चन्द्रालोकः (५.९५, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "सूर्यादिप्रसिद्धाधारं विनापि तेजसः कृपाप्रकाशरूपेण स्थितेः वर्णनात् विशेषाङ्कारः।",
+        "en": "Luminescence persists independently of the solar or fiery substratum.",
+        "te": "సూర్యుడు లేకున్నను కాంతి ప్రసరించుట అను ఆధారాభాస నిరూపణచే విశేషము.",
+        "hi": "यहाँ सूर्य आदि प्रसिद्ध आधार के बिना भी कृपा रूपी प्रकाश का रहना वर्णित है।"
+      }
+    },
+    {
+      "id": "ALK-037",
+      "name": {
+        "sa": "व्याघातः",
+        "iast": "Vyāghātaḥ",
+        "te": "వ్యాఘాతాలంకారము",
+        "hi": "व्याघात अलंकार",
+        "en": "Frustration / Counteractive Reversal"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४६ / ५.९९) / काव्यप्रकाशः (१०.३९) | उदाहरणम्: चन्द्रालोकः (५.९९, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "सौकर्येण निबद्धापि क्रिया कार्यविरोधिनी ।\nयेनैव यत्कृतं वस्तु तेनैवान्यथा क्रियते ॥",
+        "sloka_te": "సౌకర్యేణ నిబద్ధాపి క్రియా కార్యవిరోధినీ ।\nయేనైవ యత్కృతం వస్తు తేనైవాన్యథా క్రియతే ॥",
+        "meaning_sa": "येनोपायेन केनचित् यत् कार्यं निष्पादितम्, तेनैव उपायेन अन्येन तद्विरोधिकृत्यस्य साधनं व्याघातः।",
+        "meaning_en": "Vyāghāta (Frustration) occurs when the very same instrument, method, or cause utilized by someone to accomplish an effect is turned by a rival to execute its precise opposite.",
+        "meaning_te": "ఒకడు దేనిచేత ఏ కార్యమును సాధించెనో, మరియొకడు అదే సాధనముతో దానికి పూర్తిగా విరుద్ధమైన కార్యమును సాధించినట్లు వర్ణించినచో వ్యాఘాతాలంకారమగును.",
+        "meaning_hi": "जिस उपाय से किसी ने कोई कार्य सिद्ध किया हो, उसी उपाय से कोई दूसरा व्यक्ति उसके सर्वथा विपरीत कार्य को सिद्ध कर दे।",
+        "source_reference": "चन्द्रालोकः (५.४६ / ५.९९) / काव्यप्रकाशः (१०.३९)"
+      },
+      "primary_example": {
+        "sloka_sa": "दृशा दग्धः पुरा शम्भुर्मन्मथो येन संयुतः ।\nइदानीं कामिनीदृष्ट्या जीवत्येष पुनः क्षणम् ॥",
+        "sloka_te": "దృశా దగ్ధః పురా శమ్భుర్మన్మథో యేన సంయుతః ।\nఇదానీం కామినీదృష్ట్యా జీవత్యేష పునః క్షణమ్ ॥",
+        "anvaya": "पुरा येन दृशा मन्मथः दग्धः, इदानीं कामिनीदृष्ट्या एषः पुनः क्षणं जीवति ।",
+        "bhaava_sa": "भगवान् शिवः स्वनेत्राग्निना कामदेवं भस्मीचकार, किन्तु एताः सुन्दर्यः स्वनेत्रकटाक्षैरेव तं कामं पुनरुज्जीवयन्ति! ताः कामिनीः वन्दे।",
+        "bhaava_en": "I praise those lovely-eyed maidens who conquer even Lord Śiva: for the very God of Love whom Śiva incinerated with His third eye, these damsels resurrect back to life with their own eyes!",
+        "bhaava_te": "శివుడు తన మూడవకంటి చూపుతో మన్మథుని భస్మము చేసెను; కాని ఈ సుందరీమణులు తమ కంటిచూపులతోనే ఆ మన్మథుని మరల బ్రతికించుచున్నారు! అట్టి శివుని గెలిచిన కామినులను స్తుతింతును.",
+        "bhaava_hi": "भगवान् शिव ने जिस कामदेव को अपनी आँख की ज्वाला से भस्म कर दिया था, सुन्दरियाँ उसे अपनी आँखों (कटाक्षों) से ही जीवित कर देती हैं!",
+        "source_reference": "चन्द्रालोकः (५.९९, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "येनैव नेत्रेण मन्मथदाहः कृतः, तेनैव नेत्रेण तस्य सञ्जीवनस्य वर्णनात् व्याघातालङ्कारः।",
+        "en": "Eyes were the weapon of destruction; eyes become the instrument of resurrection.",
+        "te": "కంటిచూపుతో మన్మథదహనము జరుగగా, మరల కంటిచూపుతోనే జీవింపజేయుట అను విరుద్ధకార్య సాధనచే వ్యాఘాతము.",
+        "hi": "यहाँ जिस 'नेत्र' से कामदेव का नाश हुआ, उसी 'नेत्र' से उसका पुनर्जीवन दिखाया गया है, अतः व्याघात अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-038",
+      "name": {
+        "sa": "एकावली",
+        "iast": "Ekāvalī",
+        "te": "ఏకావళ్యలంకారము",
+        "hi": "एकावली अलंकार",
+        "en": "Chain of Linked Attributes"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४७ / ५.१०३) / साहित्यदर्पणः (१०.७४) | उदाहरणम्: चन्द्रालोकः (५.१०३, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "गृहीतममुक्तरीत्या यत् पूर्वं परविशेषणम् ।\nएकावलीयमुदिता स्थाप्यते व्यज्यतेऽथवा ॥",
+        "sloka_te": "గృహీతమముక్తరీత్యా యత్ పూర్వం పరవిశేషణమ్ ।\nఏకావలీయముదితా స్థాప్యతే వ్యజ్యతేఽథవా ॥",
+        "meaning_sa": "यत्र पूर्वपूर्वस्य उत्तरोत्तरं प्रति, उत्तरोत्तरस्य वा पूर्वपूर्वं प्रति विशेषणत्वेन गृहीतमुक्तरीत्या शृङ्खलाबन्धनं भवति, सा एकावली।",
+        "meaning_en": "Ekāvalī is a necklace-like chain of propositions where each subsequent word qualifies the preceding one (or is qualified by it), catching and releasing each bead in turn.",
+        "meaning_te": "ముందు పలికిన వస్తువునకు తరువాతి వస్తువు విశేషణమగుచు, పూలదండవలె శృంఖలా రూపమున గుప్పబడినచో ఏకావళ్యలంకారమగును.",
+        "meaning_hi": "जहाँ माला के दानों की तरह एक के बाद एक शब्द पहले-पहले पद का विशेषण बनता चला जाए।",
+        "source_reference": "चन्द्रालोकः (५.४७ / ५.१०३) / साहित्यदर्पणः (१०.७४)"
+      },
+      "primary_example": {
+        "sloka_sa": "दोःस्तम्भा जानुपर्यन्तप्रलम्बनललितोत्कटाः ।\nजानुनी रत्नमुकुराकारे तस्य महीपतेः ॥",
+        "sloka_te": "దోఃస్తమ్భా జానుపర్యన్తప్రలమ్బనలలితోత్కటాః ।\nజానునీ రత్నముకురాకారే తస్య మహీపతేః ॥",
+        "anvaya": "तस्य महीपतेः दोःस्तम्भाः जानुपर्यन्त-प्रलम्बन-ललितोत्कटाः, जानुनी रत्नमुकुराकारे (स्तः) ।",
+        "bhaava_sa": "नेत्रे कर्णपर्यन्तं विशाले, बाहू जानुपर्यन्तं लम्बौ, जानुनी च पद्मवत् शोभेते।",
+        "bhaava_en": "His eyes extend to his ears; his arms hang to his knees; his knees are majestic as lotus blooms—each feature linked in continuous adornment.",
+        "bhaava_te": "ఆ రాజు కన్నులు చెవుల వరకు సాగినవి; చేతులు మోకాళ్ళవరకు వ్రేలాడుచున్నవి; మోకాళ్ళు తామరపువ్వులవలె సుందరముగా నున్నవి.",
+        "bhaava_hi": "उस राजा के नेत्र कानों तक फैले हैं, भुजाएं घुटनों तक लम्बी हैं और घुटने कमल के समान सुंदर हैं।",
+        "source_reference": "चन्द्रालोकः (५.१०३, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "नेत्रयोः कर्णौ, कर्णयोः बाहू, बाह्वोः जानुनी इति पूर्वपूर्वस्य उत्तरोत्तरेण शृङ्खलाग्रथनात् एकावली।",
+        "en": "Eyes link to ears, arms link to knees in a continuous sequence of qualification.",
+        "te": "కన్నులు-చెవులు, చేతులు-మోకాళ్ళు అనునవి గొలుసుకట్టువలె వర్ణింపబడుటచే ఏకావళి.",
+        "hi": "यहाँ पदों का पूर्व-पूर्व के प्रति उत्तरोत्तर विशेषण भाव होने से एकावली अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-039",
+      "name": {
+        "sa": "सारः",
+        "iast": "Sāraḥ",
+        "te": "సారాలంకారము",
+        "hi": "सार अलंकार",
+        "en": "Climax / Ascending Quintessence"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.४९ / ५.१०५) / काव्यप्रकाशः (१०.४०) | उदाहरणम्: चन्द्रालोकः (५.१०५, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "उत्तरोत्तरमुत्कर्षः सार इत्यभिधीयते ।\nपूर्वं पूर्वं परित्यज्य परस्योत्कर्षवर्णने ॥",
+        "sloka_te": "ఉత్తరోత్తరముత్కర్షః సార ఇత్యభిధీయతే ।\nపూర్వం పూర్వం పరిత్యజ్య పరస్యోత్కర్షవర్ణనే ॥",
+        "meaning_sa": "यत्र पूर्वपूर्वापेक्षया उत्तरोत्तरस्य वस्तुनः उत्कृष्टतमत्वं वर्ण्यते, स सारालङ्कारः।",
+        "meaning_en": "Sāra (Climax) is the ascending gradation of excellence, where each successive item is celebrated as superior and sweeter than the one before, culminating in the supreme quintessence.",
+        "meaning_te": "మునుపటి వస్తువుకంటె తరువాతి వస్తువు మిక్కిలి శ్రేష్ఠమైనదని ఉత్కర్ష క్రమమున వర్ణించినచో సారాలంకారమగును.",
+        "meaning_hi": "जहाँ पहले-पहले पदार्थ की अपेक्षा बाद-बाद के पदार्थ की उत्तरोत्तर श्रेष्ठता (उत्कर्ष) दिखाई जाए।",
+        "source_reference": "चन्द्रालोकः (५.४९ / ५.१०५) / काव्यप्रकाशः (१०.४०)"
+      },
+      "primary_example": {
+        "sloka_sa": "उत्तरोत्तरमुत्कर्षः सार इत्यभिधीयते ।\nमधुरं मधु पीयूषं तस्मात्तस्मात्कवेर्वचः ॥",
+        "sloka_te": "ఉత్తరోత్తరముత్కర్షః సార ఇత్యభిధీయతే ।\nమధురం మధు పీయూషం తస్మాత్తస్మాత్కవేర్వచః ॥",
+        "anvaya": "मधु मधुरं, तस्मात् पीयूषं (मधुरम्), तस्मात् कवेः वचः (मधुरतरम्); उत्तरोत्तरम् उत्कर्षः सारः इत्यभिधीयते ।",
+        "bhaava_sa": "पुष्परसः (मधु) मधुरः, तदपेक्षया अमृतं मधुरतरम्, अमृतस्याप्यपेक्षया सत्कवेः काव्यवाणी सर्वोत्कृष्टमधुरा अस्ति।",
+        "bhaava_en": "Honey is sweet; celestial ambrosia is sweeter than honey; but sweeter by far than ambrosia is the poetic utterance of a true poet!",
+        "bhaava_te": "తేనె మధురమైనది; దానికంటె అమృతము మధురమైనది; ఆ అమృతముకంటెను రసజ్ఞుడైన మహాకవి వాక్కు పరమ మధురమైనది!",
+        "bhaava_hi": "शहद मीठा है, अमृत उससे भी अधिक मीठा है, और सत्कवि की वाणी तो अमृत से भी बढ़कर मधुरतम है।",
+        "source_reference": "चन्द्रालोकः (५.१०५, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "मधुनः अमृतस्य, अमृताच्च कविवचनस्य उत्तरोत्तरमुत्कर्षप्रतिपादनात् सारालङ्कारः।",
+        "en": "Honey \\(\\rightarrow\\) Ambrosia \\(\\rightarrow\\) Poetic Verse: a rising ladder of sweetness.",
+        "te": "తేనెకంటె అమృతము, అమృతముకంటె కవివాక్కు ఉత్తరోత్తరోత్కర్షము పొందుటచే సారాలంకారము.",
+        "hi": "यहाँ मधु से अमृत और अमृत से कविवचन की उत्तरोत्तर श्रेष्ठता दिखाई गई है, अतः सार अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-040",
+      "name": {
+        "sa": "यथासङ्ख्यम्",
+        "iast": "Yathāsaṅkhyam",
+        "te": "యథాసంఖ్యాలంకారము",
+        "hi": "यथासंख्य अलंकार",
+        "en": "Symmetrical Order / Relative Coordination"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.५० / ५.१०६) / काव्यप्रकाशः (१०.४१) | उदाहरणम्: चन्द्रालोकः (५.१०६, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "यथासंख्यं क्रमेणैव क्रमिकाणां समन्वयः ।\nउद्दिष्टानां पदार्थानामनुद्देश्यक्रमेण यत् ॥",
+        "sloka_te": "యథాసంఖ్యం క్రమేణైవ క్రమికాణాం సమన్వయః ।\nఉద్దిష్టానాం పదార్థానామనుద్దేశ్యక్రమేణ యత్ ॥",
+        "meaning_sa": "यत्र पूर्वोद्दिष्टानां पदार्थानां पश्चादुद्दिष्टैः सह यथाक्रमं प्रथमस्य प्रथमेन द्वितीयस्य द्वितीयेन समन्वयः क्रियते, तद्यथासङ्ख्यम्।",
+        "meaning_en": "Yathāsaṅkhyam (Relative Order) matches an initial list of items to a subsequent list of predicates in exact one-to-one numerical symmetry: 1 to 1, 2 to 2, 3 to 3.",
+        "meaning_te": "ముందు పేర్కొనిన పదములకు తరువాత పేర్కొను పదములతో క్రమము తప్పక ఒకటికి ఒకటిగా అన్వయము చేసినచో యథాసంఖ్యాలంకారమగును.",
+        "meaning_hi": "जहाँ पहले गिनाए गए पदार्थों का बाद में कहे गए पदार्थों के साथ उसी क्रम से अन्वय (सम्बन्ध) हो।",
+        "source_reference": "चन्द्रालोकः (५.५० / ५.१०६) / काव्यप्रकाशः (१०.४१)"
+      },
+      "primary_example": {
+        "sloka_sa": "यथासंख्यं क्रमेणैव क्रमिकाणां समन्वयः ।\nशत्रुं मित्रं विपत्तिं च जय रञ्जय भञ्जय ॥",
+        "sloka_te": "యథాసంఖ్యం క్రమేణైవ క్రమికాణాం సమన్వయః ।\nశత్రుం మిత్రం విపత్తిం చ జయ రఞ్జయ భఞ్జయ ॥",
+        "anvaya": "शत्रुं जय, मित्रं रञ्जय, विपत्तिं च भञ्जय; क्रमिकाणां क्रमेण एव समन्वयः यथासंख्यम् ।",
+        "bhaava_sa": "१. शत्रुं जय (विजयेन), २. मित्रं रञ्जय (स्नेहेन), ३. विपत्तिं भञ्जय (धैर्येण)।",
+        "bhaava_en": "Conquer your enemies, delight your friends, and shatter your misfortunes! (Item 1 matches Verb 1; Item 2 matches Verb 2; Item 3 matches Verb 3).",
+        "bhaava_te": "శత్రువును జయించుము, మిత్రుని సంతోషపెట్టుము, ఆపదలను ఛేదించుము! (క్రమముగా ౧-౧, ౨-౨, ౩-౩ ల సమన్వయము).",
+        "bhaava_hi": "शत्रु को जीतो, मित्र को प्रसन्न रखो और विपत्ति का नाश करो। (क्रम से पहला पहले के साथ, दूसरा दूसरे के साथ सम्बद्ध है)।",
+        "source_reference": "चन्द्रालोकः (५.१०६, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "शत्रु-मित्र-विपत्तीनां क्रमेण जय-रञ्जन-भञ्जनक्रियैः सह यथासङ्ख्यमन्वयात् यथासङ्ख्यालङ्कारः।",
+        "en": "Three nouns match three imperatives in flawless numerical parity.",
+        "te": "శత్రు, మిత్ర, విపత్తులు వరుసగా జయ, రంజన, భంజన క్రియలతో సరిపోయినందున యథాసంఖ్యము.",
+        "hi": "यहाँ तीन कर्मों का तीन क्रियाओं के साथ क्रमानुसार सम्बन्ध होने से यथासंख्य अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-041",
+      "name": {
+        "sa": "परिसङ्ख्या",
+        "iast": "Parisaṅkhyā",
+        "te": "పరిసంఖ్యాలంకారము",
+        "hi": "परिसंख्या अलंकार",
+        "en": "Exclusive Specification"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.५३ / ५.११०) / काव्यप्रकाशः (१०.४३) | उदाहरणम्: चन्द्रालोकः (५.११०, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "एकस्मिन् यत्र विहिते सति चान्यत्र वार्यते ।\nसा परिसंख्योदिता तज्ज्ञैर्ज्ञेया प्रश्नयुता विना ॥",
+        "sloka_te": "ఏకస్మిన్ యత్ర విహితే సతి చాన్యత్ర వార్యతే ।\nసా పరిసంఖ్యోదితా తజ్జ్ఞైర్జ్ఞేయా ప్రశ్నయుతా వినా ॥",
+        "meaning_sa": "यत्र सामान्यतः सर्वत्र सम्भावितस्य धर्मस्य अन्यत्र निषेधं कृत्वा एकस्मिन्नेव स्थाने नियमनं क्रियते, सा परिसङ्ख्या।",
+        "meaning_en": "Parisaṅkhyā isolates an attribute, confining it strictly to an inanimate or external object while declaring its total absence from the noble characters in the realm.",
+        "meaning_te": "ఒక ధర్మము మరియొక చోట లేదని నిషేధించి, కేవలము ఒకానొక చోటనే ఉన్నదని నియమించి చెప్పినచో పరిసంఖ్యాలంకారమగును.",
+        "meaning_hi": "जहाँ किसी वस्तु या गुण को अन्यत्र से हटाकर केवल एक ही स्थान पर सीमित (नियत) कर दिया जाए।",
+        "source_reference": "चन्द्रालोकः (५.५३ / ५.११०) / काव्यप्रकाशः (१०.४३)"
+      },
+      "primary_example": {
+        "sloka_sa": "परिसंख्या निषिध्यैकमेकस्मिन् वस्तुयन्त्रणम् ।\nस्नेहक्षयः प्रदीपेसु न स्वान्तेषु सतां भृशम् ॥",
+        "sloka_te": "పరిసంఖ్యా నిషిధ్యైకమేకస్మిన్ వస్తుయన్త్రణమ్ ।\nస్నేహక్షయః ప్రదీపేసు న స్వాన్తేషు సతాం భృశమ్ ॥",
+        "anvaya": "स्नेहक्षयः प्रदीपेसु (अस्ति), सतां स्वान्तेषु भृशं न (अस्ति); एकस्मिन् वस्तुयन्त्रणं निषिध्य सा परिसंख्या ।",
+        "bhaava_sa": "तस्मिन् धर्मराज्ञे शासति दण्डः (काष्ठदण्डः) केवलं सैन्यशस्त्रेषु आसीत् न तु दण्डनीतिरूपी प्रजासु; कुटिलता केवलं स्त्रीणां केशकलापे आसीत्, न तु जनानां हृदयेषु!",
+        "bhaava_en": "In that virtuous king's golden reign, 'punishment' (daṇḍa) existed only as wooden handles on weapons, not on citizens; and 'crookedness' (kuṭilatā) dwelt only in maidens' curly tresses, never in the minds of men!",
+        "bhaava_te": "ఆ ధర్మరాజు రాజ్యమున 'దండము' కేవలము ఆయుధముల పిడులలోనే యుండెను గాని ప్రజల శిక్షలలో లేదు; 'కుటిలత్వము' స్త్రీల ముంగురుల వంకరలందే యుండెను గాని ప్రజల హృదయములలో లేదు!",
+        "bhaava_hi": "उस राजा के राज्य में 'दण्ड' केवल अस्त्रों में था प्रजा पर नहीं; और 'कुटिलता' केवल स्त्रियों के घुंघराले बालों में थी, लोगों के मन में नहीं।",
+        "source_reference": "चन्द्रालोकः (५.११०, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "दण्ड-कौटिल्यादिधर्माणां प्रजासु निषेधं कृत्वा अस्त्र-कुन्तलेषु यन्त्रणात् परिसङ्ख्यालङ्कारः।",
+        "en": "Negative attributes are metaphorically banished from society and confined only to physical objects like hair curls and bowstaves.",
+        "te": "దండన కుటిలత్వములను ప్రజాహృదయములనుండి నిషేధించి కేవలము ఆయుధ కేశములందే పరిమితము చేయుటచే పరిసంఖ్య.",
+        "hi": "यहाँ दण्ड और कुटिलता को प्रजा से हटाकर केवल अस्त्र और केशों में सीमित कर दिया गया है।"
+      }
+    },
+    {
+      "id": "ALK-042",
+      "name": {
+        "sa": "समाधिः",
+        "iast": "Samādhiḥ",
+        "te": "సమాధ్యలంకారము",
+        "hi": "समाधि अलंकार",
+        "en": "Fortuitous Facilitation"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.५७ / ५.११५) / काव्यप्रकाशः (१०.४५) | उदाहरणम्: चन्द्रालोकः (५.११५, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "समाधिः कार्यसौकर्यं कारणान्तरसन्निधेः ।\nयत्नेनासाधिते कार्ये दैवयोगात् सुसिद्धति ॥",
+        "sloka_te": "సమాధిః కార్యసౌకర్యం కారణాన్తరసన్నిధేః ।\nయత్నేనాసాధితే కార్యే దైవయోగాత్ సుసిద్ధతి ॥",
+        "meaning_sa": "यत्र एकेन कारणेन प्रारब्धस्य कार्यस्य दैवात् अन्यस्य अनुकूलकारणस्य उपस्थित्या अनायासेन सिद्धिर्भवति, स समाधिः।",
+        "meaning_en": "Samādhi occurs when an intended endeavor is rendered effortlessly successful due to the sudden, fortuitous arrival of a coincidental supporting circumstance (Kākatālīya-nyāya).",
+        "meaning_te": "ఒక కారణముచేత ప్రారంభమైన కార్యమునకు మరియొక అనుకూల కారణము ఆకస్మికముగా తోడై ఆ పని సులభముగా నెరవేరినచో సమాధ్యలంకారమగును.",
+        "meaning_hi": "जहाँ किसी एक कारण से प्रारम्भ हुए कार्य में अचानक किसी दूसरे अनुकूल कारण के आ जाने से वह कार्य बड़ी सुगमता से सिद्ध हो जाए।",
+        "source_reference": "चन्द्रालोकः (५.५७ / ५.११५) / काव्यप्रकाशः (१०.४५)"
+      },
+      "primary_example": {
+        "sloka_sa": "समाधिः कार्यसौकर्यं कारणान्तरसन्निधेः ।\nउत्कण्ठिता च कुलटा जगामास्तं च भानुमान् ॥",
+        "sloka_te": "సమాధిః కార్యసౌకర్యం కారణాన్తరసన్నిధేః ।\nఉత్కణ్ఠితా చ కులటా జగామాస్తం చ భానుమాన్ ॥",
+        "anvaya": "कुलटा उत्कण्ठिता (अभूत्), भानुमान् च अस्तं जगाम; कारणान्तरसन्निधेः कार्यसौकर्यं समाधिः ।",
+        "bhaava_sa": "अभिसर्तुं प्रवृत्ता कामिनी यदैव उत्कण्ठिता अभवत्, तदैव दैववशात् अन्धकारदानाय सूर्योऽपि अस्तं गतः।",
+        "bhaava_en": "Just as the eager maiden yearned to step forth in secret to meet her beloved, the sun fortuitously plunged below the horizon, cloaking her path in protective darkness!",
+        "bhaava_te": "రహస్యముగా ప్రియుని చెంతకు పోదలచిన స్త్రీ కోరికతో ఉవ్విళ్లూరుచుండగానే, ఆమె అదృష్టవశాత్తు సూర్యుడు అస్తమించి చీకటిని కలిగించెను!",
+        "bhaava_hi": "इधर वह अभिसारिका अपने प्रिय से मिलने को उत्कंठित हुई और उधर दैवयोग से सूर्य भी अस्त हो गया (जिससे अंधेरा होने से उसका कार्य सुगम हो गया)।",
+        "source_reference": "चन्द्रालोकः (५.११५, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "अभिसरणकार्याय उत्कण्ठायाः कारणत्वे सति सूर्यास्तमनरूपद्वितीयकारणस्य योगात् कार्यसौकर्यमिति समाधिः।",
+        "en": "Sunset arrives coincidently to assist her secret expedition, making her journey effortless.",
+        "te": "ప్రియాభిసరణమునకు నాయిక కోరికతో పాటు సూర్యాస్తమయమను రెండవ కారణము తోడై కార్యము సుకరమైనందున సమాధి.",
+        "hi": "यहाँ अभिसार के कार्य में उत्कंठा के साथ सूर्यास्त रूपी आकस्मिक कारण के योग से कार्य सुकर हो गया।"
+      }
+    },
+    {
+      "id": "ALK-043",
+      "name": {
+        "sa": "तद्गुणः",
+        "iast": "Tadguṇaḥ",
+        "te": "తద్గుణాలంకారము",
+        "hi": "तद्गुण अलंकार",
+        "en": "Adoption of Superior Quality"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.७५ / ५.१३९) / काव्यप्रकाशः (१०.४६) | उदाहरणम्: चन्द्रालोकः (५.१३९, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "तद्गुणः स्वगुणत्यागादन्यदीयगुणग्रहः ।\nसन्निकृष्टस्य वस्त्वन्तरेण रूपानुहारिणः ॥",
+        "sloka_te": "తద్గుణః స్వగుణత్యాగాదన్యదీయగుణగ్రహః ।\nసన్నికృష్టస్య వస్త్వన్తరేణ రూపానుహారిణః ॥",
+        "meaning_sa": "यत्र वस्तु स्वकीयं स्वाभाविकं गुणं परित्यज्य समीपवर्तिनः अन्यस्य उत्कृष्टगुणिनः गुणं गृह्णाति, स तद्गुणः।",
+        "meaning_en": "Tadguṇa occurs when an object surrenders its own natural attribute and gladly assumes the dominant, radiant color or quality of an adjacent superior object.",
+        "meaning_te": "ఒక వస్తువు తన స్వంత గుణమును వదలిపెట్టి, సమీపముననున్న మరియొక వస్తువు యొక్క శ్రేష్ఠ గుణమును స్వీకరించినట్లు వర్ణించినచో తద్గుణాలంకారమగును.",
+        "meaning_hi": "जहाँ कोई वस्तु अपने स्वाभाविक गुण को छोड़कर अपने पास की दूसरी वस्तु के उत्कृष्ट गुण को अपना ले।",
+        "source_reference": "चन्द्रालोकः (५.७५ / ५.१३९) / काव्यप्रकाशः (१०.४६)"
+      },
+      "primary_example": {
+        "sloka_sa": "तद्गुणः स्वगुणत्यागादन्यदीयगुणग्रहः ।\nपद्मरागायते नासामौक्तिकं तेऽधरत्विषा ॥",
+        "sloka_te": "తద్గుణః స్వగుణత్యాగాదన్యదీయగుణగ్రహః ।\nపద్మరాగాయతే నాసామౌక్తికం తేఽధరత్విషా ॥",
+        "anvaya": "ते नासामौक्तिकम् अधरत्विषा पद्मरागायते; स्वगुणत्यागात् अन्यदीयगुणग्रहः तद्गुणः ।",
+        "bhaava_sa": "हे कान्ते! तव नासिकायाः श्वेतं मुक्ताफलं रक्तवर्णस्य अधरस्य कान्त्या पद्मरागमणिरिव रक्तं भासते!",
+        "bhaava_en": "O lovely lady! The white pearl adorning your nose has relinquished its pure whiteness and glows like a red ruby, dyed by the crimson brilliance of your lips!",
+        "bhaava_te": "ఓ సుందరీ! నీ ముక్కునందలి తెల్లని ముత్యము, నీ క్రింది పెదవి యొక్క ఎఱ్ఱని కాంతి సోకి కెంపువలె (పద్మరాగమణివలె) ఎఱ్ఱగా ప్రకాశించుచున్నది!",
+        "bhaava_hi": "हे प्रिये! तुम्हारी नासिका का श्वेत मोती तुम्हारे लाल अधरों की कान्ति से मिलकर माणिक्य (लाल रत्न) की तरह चमकने लगा है।",
+        "source_reference": "चन्द्रालोकः (५.१३९, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "मौक्तिकेन (उपमेयेन) स्वकीयश्वेतगुणत्यागेन अधरस्य रक्तगुणस्वीकारात् तद्गुणोलङ्कारः।",
+        "en": "The pearl sheds its white hue to absorb the ruby radiance of the lip.",
+        "te": "ముత్యము తన తెల్లదనమును వదలి పెదవి యొక్క ఎఱ్ఱదనమును స్వీకరించుటచే తద్గుణాలంకారము.",
+        "hi": "यहाँ मोती ने अपना श्वेत गुण छोड़कर अधर के लाल गुण को ग्रहण कर लिया है, अतः तद्गुण अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-044",
+      "name": {
+        "sa": "अतद्गुणः",
+        "iast": "Atadguṇaḥ",
+        "te": "అతద్గుణాలంకారము",
+        "hi": "अतद्गुण अलंकार",
+        "en": "Immunity to Extraneous Quality"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.७७ / ५.१४१) / काव्यप्रकाशः (१०.४७) | उदाहरणम्: चन्द्रालोकः (५.१४१, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "सन्निकृष्टगुणेनापि स्वात्मनोऽननुहारिता ।\nअतद्गुणः समाख्यातस्तद्विरुद्धगुणग्रहात् ॥",
+        "sloka_te": "సన్నికృష్టగుణేనాపి స్వాత్మనోఽననుహారితా ।\nఅతద్గుణః సమాఖ్యాతస్తద్విరుద్ధగుణగ్రహాత్ ॥",
+        "meaning_sa": "तद्गुणस्य विपरीतः अयम्। यत्र समीपस्थे प्रबलकारणे सत्यपि वस्तु अन्यस्य गुणं न गृह्णाति, स अतद्गुणः।",
+        "meaning_en": "Atadguṇa is the refusal to adopt an adjacent trait: despite intimate proximity to a profoundly dominant quality, an object remains impervious and steadfastly retains its own nature.",
+        "meaning_te": "తద్గుణమునకు వ్యతిరేకముగా, పక్కన బలమైన గుణము గల వస్తువు ఉన్నను దాని గుణమును ఎంతమాత్రము స్వీకరింపక తన స్వభావమునందే నిలచినచో అతద్గుణాలంకారమగును.",
+        "meaning_hi": "तद्गुण के विपरीत, जहाँ पास में प्रबल गुण वाली वस्तु होने पर भी कोई वस्तु उसका गुण ग्रहण न करे।",
+        "source_reference": "चन्द्रालोकः (५.७७ / ५.१४१) / काव्यप्रकाशः (१०.४७)"
+      },
+      "primary_example": {
+        "sloka_sa": "अतद्गुणोऽन्यदीयेन गुणेनास्वीकृता स्थितिः ।\nधवलानि यशोभिस्ते न भवन्ति मनांस्यरीन् ॥",
+        "sloka_te": "అతద్గుణోఽన్యదీయేన గుణేనాస్వీకృతా స్థితిః ।\nధవలాని యశోభిస్తే న భవన్తి మనాంస్యరీన్ ॥",
+        "anvaya": "ते यशोभिः अरीणां मनांसि धवलानि न भवन्ति; अन्यदीयेन गुणेन अस्वीकृता स्थितिः अतद्गुणः ।",
+        "bhaava_sa": "हे राजन्! भवतः शुभ्रकीर्त्या समग्रे जगति धवलीकृते सत्यपि, शत्रूणां मनांसि मालिन्यं त्यक्त्वा धवलानि न जातानि!",
+        "bhaava_en": "O King! While the dazzling white luster of your renown has turned the entire universe pristine white, the dark, envious hearts of your foes refuse to be whitened!",
+        "bhaava_te": "ఓ రాజా! నీ తెల్లని కీర్తి కాంతులు జగమంతటిని తెల్లగా మార్చినను, శత్రువుల హృదయములు మాత్రము తమ నలుపును (ఈర్ష్యను) వదలి తెల్లబడలేదు!",
+        "bhaava_hi": "हे राजन्! आपके धवल यश से सारा संसार श्वेत हो गया, किन्तु आपके शत्रुओं के मलिन मन फिर भी श्वेत (पवित्र) नहीं हुए।",
+        "source_reference": "चन्द्रालोकः (५.१४१, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "सर्वव्यापके कीर्तिधवलत्वे सत्यपि शत्रुचित्तेन तद्गुणस्य अस्त्रीकारात् अतद्गुणः।",
+        "en": "The enemies' minds remain immune to the universal whiteness of royal fame.",
+        "te": "కీర్తి యొక్క శుభ్రగుణము సర్వవ్యాప్తమైనను శత్రుహృదయము దానిని గ్రహింపనందున అతద్గుణము.",
+        "hi": "यहाँ सर्वत्र फैले यश के श्वेत गुण को शत्रुओं के मनों ने ग्रहण नहीं किया, अतः अतद्गुण अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-045",
+      "name": {
+        "sa": "मीलितम्",
+        "iast": "Mīlitam",
+        "te": "మీలితాలంకారము",
+        "hi": "मीलित अलंकार",
+        "en": "Lost Identity by Concealment in Similitude"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.७९ / ५.१४५) / काव्यप्रकाशः (१०.४८) | उदाहरणम्: चन्द्रालोकः (५.१४५, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "मीलितं लक्ष्मणा यत्र सादृश्यान्नोपलक्ष्यते ।\nकेनचित् सहजागन्तुगुणसाम्येन संवृतम् ॥",
+        "sloka_te": "మీలితం లక్ష్మణా యత్ర సాదృశ్యాన్నోపలక్ష్యతే ।\nకేనచిత్ సహజాగన్తుగుణసామ్యేన సంవృతమ్ ॥",
+        "meaning_sa": "यत्र सहजेन आगन्तुकेन वा समानेन गुणेन एकस्य वस्तुनः अन्येन वस्तुना सह सर्वथा तिरोधानं (अदर्शनं) भवति, तन्मीलितम्।",
+        "meaning_en": "Mīlitam occurs when an object becomes completely undetectable and invisible because it is enveloped by another object sharing the exact same color, property, or texture.",
+        "meaning_te": "సహజము గాని కృత్రిమము గాని యగు సమాన గుణము వలన ఒక వస్తువు మరియొక వస్తువునందు కలిసిపోయి కానరాకుండ దాగిపోయినచో మీలితాలంకారమగును.",
+        "meaning_hi": "जहाँ स्वाभाविक अथवा आगन्तुक समान गुण के कारण एक वस्तु दूसरी वस्तु में छिपकर अदृश्य हो जाए।",
+        "source_reference": "चन्द्रालोकः (५.७९ / ५.१४५) / काव्यप्रकाशः (१०.४८)"
+      },
+      "primary_example": {
+        "sloka_sa": "मल्लीदामलसत्केशाः सिताम्बरधराः स्त्रियः ।\nहिमवत्यो न लक्ष्यन्ते ज्योत्स्नायामभिसारिकाः ॥",
+        "sloka_te": "మల్లీదామలసత్కేశాః సితామ్బరధరాః స్త్రియః ।\nహిమవత్యో న లక్ష్యన్తే జ్యోత్స్నాయామభిసారికాః ॥",
+        "anvaya": "मल्लीदामलसत्केशाः सिताम्बरधराः हिमवत्यः अभिसारिकाः स्त्रियः ज्योत्स्नायां न लक्ष्यन्ते ।",
+        "bhaava_sa": "मल्लिकापुष्पैः कृतहाराः, चन्दनलेपिताः, श्वेतवस्त्रधराः अभिसारिकाः चन्द्रिकायां सादृश्यात् पृथक् न दृश्यन्ते।",
+        "bhaava_en": "Adorned with white jasmine garlands, anointed head to foot in cool white sandalwood, and draped in pale silk, the maidens walking in the moonlight are completely invisible!",
+        "bhaava_te": "మల్లెపూలదండలు ధరించి, ఒడలంతయు తెల్లచందనము పూసికొని, తెల్లని పట్టువస్త్రములు ధరించిన కామినులు వెన్నెలలో కలసిపోయి కంటికి కానవచ్చుట లేదు!",
+        "bhaava_hi": "मोगरे के फूलों की माला पहने, श्वेत चन्दन का लेप लगाए और श्वेत रेशमी वस्त्र पहने अभिसारिकाएं चाँदनी में ऐसी घुल-मिल गईं कि दिखाई ही नहीं देतीं।",
+        "source_reference": "चन्द्रालोकः (५.१४५, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "नायिकानां श्वेतवेशस्य चन्द्रिकायाश्च धवलगुणसाम्यात् परस्परं भेदानुपलब्ध्या मीलितम्।",
+        "en": "The white garb of the maidens perfectly camouflages within the moonlit glow.",
+        "te": "తెల్లని వేషము గల కామినులు తెల్లని వెన్నెలయందు కలసిపోయి భేదము కానరానందున మీలితము.",
+        "hi": "यहाँ अभिसारिकाओं की श्वेत वेशभूषा चाँदनी के श्वेत गुण में विलीन होकर छिप गई है।"
+      }
+    },
+    {
+      "id": "ALK-046",
+      "name": {
+        "sa": "सङ्करः",
+        "iast": "Saṅkaraḥ",
+        "te": "సంకరాలంకారము",
+        "hi": "संकर अलंकार",
+        "en": "Commixture / Inseparable Fusion of Figures"
+      },
+      "category": "उभयालङ्कारः / मिश्रालङ्कारः",
+      "source_text": "चन्द्रालोकः (५.१००) / साहित्यदर्पणः (१०.९८) / काव्यप्रकाशः (१०.५०) | उदाहरणम्: काव्यप्रकाशः (१०.५०, उदाहरणम्) / साहित्यदर्पण-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "अविभागेन साङ्कर्यादेकत्र द्वयोर्निबन्धनम् ।\nक्षीरनीरवदाश्लेषात् सङ्करः परिकीर्तितः ॥",
+        "sloka_te": "అవిభాగేన సాఙ్కర్యాదేకత్ర ద్వయోర్నిబన్ధనమ్ ।\nక్షీరనీరవదాశ్లేషాత్ సఙ్కరః పరికీర్తితః ॥",
+        "meaning_sa": "क्षीरनीरवत् यत्र अनेके अलङ्काराः परस्परं विविक्ताः (पृथक्) कर्तुं न शक्यन्ते, स सङ्करः।",
+        "meaning_en": "Saṅkara is the chemical compound of figures: multiple Alaṅkāras fuse together in an inseparable blend (like milk and water), whether in an organ-principal relationship (Aṅgāṅgi-bhāva) or mutual doubt.",
+        "meaning_te": "పాలయందు నీరు కలసినట్లుగా, రెండు లేదా అంతకంటె ఎక్కువ అలంకారములు వేరుచేయరాని విధముగా పరస్పరము పెనవేసికొని యుండినచో సంకరాలంకారమగును.",
+        "meaning_hi": "जहाँ दूध और पानी की तरह अनेक अलंकार इस प्रकार मिल जाएं कि उन्हें अलग-अलग न किया जा सके।",
+        "source_reference": "चन्द्रालोकः (५.१००) / साहित्यदर्पणः (१०.९८) / काव्यप्रकाशः (१०.५०)"
+      },
+      "primary_example": {
+        "sloka_sa": "राजनारायणं लक्ष्म्या धार्यमाणं विलोक्य तम् ।\nप्रहर्षमतुलं लेभे जगत्सर्वं सचेतनम् ॥",
+        "sloka_te": "రాజనారాయణం లక్ష్మ్యా ధార్యమాణం విలోక్య తమ్ ।\nప్రహర్షమతులం లేభే జగత్సర్వం సచేతనమ్ ॥",
+        "anvaya": "लक्ष्म्या धार्यमाणं तं राजनारायणं विलोक्य, सचेतनं सर्वं जगत् अतुलं प्रहर्षं लेभे ।",
+        "bhaava_sa": "अत्र मुखे अम्बुजस्य (रूपकम्), स्मिते चन्द्रिकायाः (रूपकम्), तयोश्च परस्परं सङ्करः।",
+        "bhaava_en": "Metaphor (Rūpaka) and poetic fancy (Utprekṣā) blend inseparably across the descriptions of the face and smile.",
+        "bhaava_te": "ముఖపద్మము, చిరునవ్వు వెన్నెల అను రూపకములును ఉత్ప్రేక్షలును పాలు-నీళ్లవలె కలిసిపోయి ఉండుటచే సంకరము.",
+        "hi": "यहाँ रूपक और उत्प्रेक्षा अलंकार परस्पर क्षीर-नीर की तरह संयुक्त हैं।",
+        "bhaava_hi": "यहाँ मुख पर कमल का और मुस्कान पर चाँदनी का आरोप है, जहाँ रूपक और उत्प्रेक्षा अलंकार परस्पर क्षीर-नीर की तरह संयुक्त हैं।",
+        "source_reference": "काव्यप्रकाशः (१०.५०, उदाहरणम्) / साहित्यदर्पण-उदाहरणम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "रूपकोत्प्रेक्षाद्यनेकालङ्काराणां परस्परमविभाज्यसंमिश्रणात् सङ्करालङ्कारः।",
+        "en": "Multiple figures commingle without independent autonomy.",
+        "te": "అనేక అలంకారములు పాలు-నీళ్ళవలె ఐక్యమైనందున సంకరాలంకారము.",
+        "hi": "यहाँ अनेक अलंकार परस्पर अविभाज्य रूप से मिले हुए हैं।"
+      }
+    },
+    {
+      "id": "ALK-047",
+      "name": {
+        "sa": "संसृष्टिः",
+        "iast": "Saṁsṛṣṭiḥ",
+        "te": "సంసృష్ట్యలంకారము",
+        "hi": "संसृष्टि अलंकार",
+        "en": "Mechanical Collocation / Mosaic of Figures"
+      },
+      "category": "उभयालङ्कारः / मिश्रालङ्कारः",
+      "source_text": "चन्द्रालोकः (५.१००) / साहित्यदर्पणः (१०.९७) / काव्यप्रकाशः (१०.४९) | उदाहरणम्: शूद्रककृत-मृच्छकटिकम् (१.३४) / काव्यप्रकाश-उदाहरणम्",
+      "lakshana": {
+        "sloka_sa": "मिथोऽनपेक्षिणैतेषां स्थितिः संसृष्टिरुच्यते ।\nतिलतण्डुलवद्यत्र मेलनं स्यादलङ्कृतौ ॥",
+        "sloka_te": "మిథోఽనపేక్షిణైతేషాం స్థితిః సంసృష్టిరుచ్యతే ।\nతిలతణ్డులవద్యత్ర మేలనం స్యాదలఙ్కృతౌ ॥",
+        "meaning_sa": "तिलतण्डुलवत् यत्र अनेके शब्दालङ्काराः अर्थालङ्कारा वा एकत्र स्थिता अपि परस्परं स्वतन्त्राः पृथक् कर्तुं शक्याश्च भवन्ति, सा संसृष्टिः।",
+        "meaning_en": "Saṁsṛṣṭi is the physical mixture of figures: like sesame seeds and rice grains mixed in a bowl (Tila-taṇḍula-nyāya), multiple figures coexist in a single verse while remaining easily separable and autonomous.",
+        "meaning_te": "నువ్వులు-బియ్యము కలసినట్లుగా, అనేక అలంకారములు ఒకే పద్యమునందున్నను వేటికవి స్వతంత్రముగా నిలచి సులభముగా వేరుచేయుటకు వీలైనచో సంసృష్ట్యలంకారమగును.",
+        "meaning_hi": "तिल और चावल के मिश्रण की तरह, जहाँ अनेक अलंकार एक ही श्लोक में रहकर भी परस्पर स्वतंत्र हों और उन्हें सरलता से अलग-अलग पहचाना जा सके।",
+        "source_reference": "चन्द्रालोकः (५.१००) / साहित्यदर्पणः (१०.९७) / काव्यप्रकाशः (१०.४९)"
+      },
+      "primary_example": {
+        "sloka_sa": "लिम्पतीव तमोऽङ्गानि वर्षतीवाञ्जनं नभः ।\nअसत्पुरुषसेवेव दृष्टिर्निष्फलतां गता ॥",
+        "sloka_te": "లిమ్పతీవ తమోఽఙ్గాని వర్షతీవాఞ్జనం నభః ।\nఅసత్పురుషసేవేవ దృష్టిర్నిష్ఫలతాం గతా ॥",
+        "anvaya": "तमः अङ्गानि लिम्पति इव, नभः अञ्जनं वर्षति इव, दृष्टिः असत्पुरुषसेवा इव निष्फलतां गता ।",
+        "bhaava_sa": "पूर्वार्धे वाच्योत्प्रेक्षालङ्कारः, उत्तरार्धे च उपमालङ्कारः। उभौ परस्परं तिलतण्डुलवत् स्वतन्त्रौ स्तः।",
+        "bhaava_en": "In the first half, Utprekṣā ('darkness seems to smear') reigns; in the second half, Upamā ('sight failed like serving the wicked') shines. Both are independent and easily discerned.",
+        "bhaava_te": "పూర్వార్ధమున ఉత్ప్రేక్షాలంకారము, ఉత్తరార్ధమున ఉపమాలంకారము కలవు. ఇవి నువ్వులు-బియ్యమువలె వేర్వేరుగా స్పష్టముగా కానవచ్చుచున్నవి.",
+        "bhaava_hi": "यहाँ पूर्वार्ध में उत्प्रेक्षा अलंकार है और उत्तरार्ध में उपमा अलंकार है। दोनों तिल-चावल की तरह अलग-अलग स्पष्ट हैं।",
+        "source_reference": "शूद्रककृत-मृच्छकटिकम् (१.३४) / काव्यप्रकाश-उदाहरणम्"
+      },
+      "alankara_samanvaya": {
+        "sa": "उत्प्रेक्षोपमयोः तिलतण्डुलन्यायेन पृथक्-पृथक् स्थितत्वात् संसृष्ट्यलङ्कारः।",
+        "en": "Utprekṣā and Upamā stand side by side without mutual dependence.",
+        "te": "ఉత్ప్రేక్ష మరియు ఉపమలు తిలతండులన్యాయమున స్వాతంత్ర్యము కలిగియుండుటచే సంసృష్టి.",
+        "hi": "यहाँ उत्प्रेक्षा और उपमा दोनों अलंकार एक साथ होकर भी स्वतंत्र हैं, अतः संसृष्टि अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-048",
+      "name": {
+        "sa": "असङ्गतिः",
+        "iast": "Asaṅgatiḥ",
+        "te": "అసంగత్యలంకారము",
+        "hi": "असंगति अलंकार",
+        "en": "Disconnection / Spatial Severance of Cause & Effect"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.३७ / ५.८०) / काव्यप्रकाशः (१०.३६) / साहित्यदर्पणः | उदाहरणम्: चन्द्रालोकः (५.८०, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "विरुद्धं भिन्नदेशत्वं कार्यहेत्वोरसङ्गतिः ।\nएकत्र जायते हेतुरन्यत्र फलोद्भवः ॥",
+        "sloka_te": "విరుద్ధం భిన్నదేశత్వం కార్యహేత్వోరసఙ్గతిః ।\nఏకత్ర జాయతే హేతురన్యత్ర ఫలోద్భవః ॥",
+        "meaning_sa": "यत्र लोकप्रसिद्ध्या एकदेशस्थयोः अपि कार्यकारणयोः वैयधिकरण्येन (भिन्नदेशस्थत्वेन) वर्णनं भवति, सा असङ्गतिः।",
+        "meaning_en": "Asaṅgati (Disconnection) occurs when cause and effect, which naturally reside in the exact same locus, are depicted as occurring in two completely separate, distant locations.",
+        "meaning_te": "కారణము ఒకచోటను, దాని కార్యము మరియొక చోటను ఉండునట్లు విచిత్రముగా వర్ణించినచో అసంగత్యలంకారమగును.",
+        "meaning_hi": "जहाँ कारण और कार्य का एक ही स्थान पर होना स्वाभाविक होने पर भी दोनों का अलग-अलग स्थानों में होना दिखाया जाए।",
+        "source_reference": "चन्द्रालोकः (५.३७ / ५.८०) / काव्यप्रकाशः (१०.३६) / साहित्यदर्पणः"
+      },
+      "primary_example": {
+        "sloka_sa": "विरुद्धं भिन्नदेशत्वं कार्यहेत्वोरसङ्गतिः ।\nविषं जलधरैः पीतं मूर्च्छिताः पथिकाङ्गनाः ॥",
+        "sloka_te": "విరుద్ధం భిన్నదేశత్వం కార్యహేత్వోరసఙ్గతిః ।\nవిషం జలధరైః పీతం మూర్చ్ఛితాః పథికాఙ్గనాః ॥",
+        "anvaya": "जलधरैः विषं पीतं, पथिकाङ्गनाः मूर्च्छिताः; कार्यहेत्वोः भिन्नदेशत्वं विरुद्धम् असङ्गतिः ।",
+        "bhaava_sa": "कोपेन तव नेत्रयोः रक्तिमा जायते, किन्तु रक्तपातस्तु शत्रूणां हृदयेषु प्रभवति। कारणं नेत्रे, कार्यं तु शत्रुहृदये इति भिन्नदेशत्वम्।",
+        "bhaava_en": "Wrath reddens your eyes, but it is the hearts of your adversaries that bleed red with terror! The cause is in the sovereign's eyes; the effect is in the enemies' breasts.",
+        "bhaava_te": "నీ కన్నులు ఎఱ్ఱబారినవి (కారణము); కాని శత్రువుల గుండెలు రక్తసిక్తమైనవి (కార్యము)! కారణము ఒకచోట, కార్యము వేరొకచోట ఉన్నందున అసంగతి.",
+        "bhaava_hi": "क्रोध से आपके नेत्र लाल होते हैं (कारण), किन्तु रक्त शत्रुओं के हृदयों से बहने लगता है (कार्य)। कारण नेत्र में और कार्य शत्रु के हृदय में है।",
+        "source_reference": "चन्द्रालोकः (५.८०, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "नेत्रगतरागस्य (कारणस्य) शत्रुहृदयगतरागस्य (कार्यस्य) च भिन्नदेशस्थत्वात् असङ्गत्यलङ्कारः।",
+        "en": "The cause resides in the king's gaze, while the resulting effect erupts inside the adversary's heart.",
+        "te": "కారణమైన రాజు యొక్క కోపారుణిత నేత్రములు ఒకచోటను, కార్యమైన శత్రుహృదయ రక్తపాతము వేరొకచోటను ఉండుటచే అసంగతి.",
+        "hi": "यहाँ कारण (नेत्रों की लालिमा) एक स्थान पर और कार्य (शत्रुओं के हृदय का रक्तमय होना) अन्यत्र होने से असंगति अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-049",
+      "name": {
+        "sa": "परिवृत्तिः",
+        "iast": "Parivṛttiḥ",
+        "te": "పరివృత్త్యలంకారము",
+        "hi": "परिवृत्ति अलंकार",
+        "en": "Poetic Barter / Exchange"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.५१ / ५.१०९) / काव्यप्रकाशः (१०.४२) | उदाहरणम्: चन्द्रालोकः (५.१०९, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "परिवृत्तिर्विनिमयो न्यूनाभ्यधिकयोर्मिथः ।\nसमयोर्वा भवेत् क्वापि सा परिवृत्तिरुच्यते ॥",
+        "sloka_te": "పరివృత్తిర్వినిమయో న్యూనాభ్యధికయోర్మిథః ।\nసమయోర్వా భవేత్ క్వాపి సా పరివృత్తిరుచ్యతే ॥",
+        "meaning_sa": "यत्र समानेन न्यूनस्य, न्यूनेन वा अधिकस्य, समानेन वा समानस्य वस्तुनः विनिमयः (आदान-प्रदानम्) वर्ण्यते, सा परिवृत्तिः।",
+        "meaning_en": "Parivṛtti (Barter) is the artistic exchange or trade between two items of equal, inferior, or superior aesthetic value.",
+        "meaning_te": "సమానమైన గాని, హెచ్చుతగ్గులు గలవి గాని యగు వస్తువుల పరస్పర ఇచ్చిపుచ్చుకొనుటలను (క్రయవిక్రయములను) వర్ణించినచో పరివృత్త్యలంకారమగును.",
+        "meaning_hi": "जहाँ समान, न्यून अथवा अधिक मूल्य की वस्तुओं की परस्पर अदला-बदली (विनिमय) का वर्णन हो।",
+        "source_reference": "चन्द्रालोकः (५.५१ / ५.१०९) / काव्यप्रकाशः (१०.४२)"
+      },
+      "primary_example": {
+        "sloka_sa": "परिवृत्तिर्विनिमयो न्यूनाभ्यधिकयोर्मिथः ।\nजग्राहैकं शरं मुक्त्वा कटाक्षांस्त्रिपुरश्रियः ॥",
+        "sloka_te": "పరివృత్తిర్వినిమయో న్యూనాభ్యధికయోర్మిథః ।\nజగ్రాహైకం శరం ముక్త్వా కటాక్షాంస్త్రిపురశ్రియః ॥",
+        "anvaya": "एकं शरं मुक्त्वा त्रिपुरश्रियः कटाक्षान् जग्राह; न्यूनाभ्यधिकयोः मिथः विनिमयः परिवृत्तिः ।",
+        "bhaava_sa": "तया सुन्दर्या मह्यम् एकः क्षणिकः कटाक्षः दत्तः, तत्परिवर्ते च मम सम्पूर्णं हृदयं गृहीतम्! अहो विचित्रः विनिमयः।",
+        "bhaava_en": "Bestowing upon me merely a single fleeting sidelong glance, she seized in return my entire heart and soul! Ah, what an unequal trade!",
+        "bhaava_te": "ఆ సుందరి నాకు ఒక్క ఓరచూపును మాత్రమే ఇచ్చి, ప్రతిగా నా సర్వస్వమైన హృదయమునే దోచుకొన్నది!",
+        "bhaava_hi": "उस सुन्दरी ने मुझे केवल एक क्षणिक कटाक्ष देकर बदले में मेरा सम्पूर्ण हृदय ही ले लिया!",
+        "source_reference": "चन्द्रालोकः (५.१०९, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "एककटाक्षरूपन्यूनवस्तुनः दानेन अमूल्यहृदयरूपाधिकवस्तुनः ग्रहणात् परिवृत्त्यलङ्कारः।",
+        "en": "A single glance (small item) is traded to capture an entire heart (large prize).",
+        "te": "ఒక్క కటాక్షమను అల్ప వస్తువునిచ్చి సమస్త హృదయమను అమూల్య వస్తువును గ్రహించుటచే పరివృత్తి.",
+        "hi": "यहाँ एक कटाक्ष देकर हृदय लेने का विनिमय दिखाया गया है, अतः परिवृत्ति अलंकार है।"
+      }
+    },
+    {
+      "id": "ALK-050",
+      "name": {
+        "sa": "पर्यायः",
+        "iast": "Paryāyaḥ",
+        "te": "పర్యాయాలంకారము",
+        "hi": "पर्याय अलंकार",
+        "en": "Alternation / Sequential Inhabitation"
+      },
+      "category": "अर्थालङ्कारः (Figure of Meaning)",
+      "source_text": "चन्द्रालोकः (५.५२ / ५.१०८) / काव्यप्रकाशः (१०.४३) | उदाहरणम्: चन्द्रालोकः (५.१०८, उदाहरणम्) / कुवलयानन्दः",
+      "lakshana": {
+        "sloka_sa": "एकं क्रमेणानेकार्थं यदा पर्याय उच्यते ।\nअनेकमपि वा यत्रैकस्मिन् क्रमेण वर्तते ॥",
+        "sloka_te": "ఏకం క్రమేణానేకార్థం యదా పర్యాయ ఉచ్యతే ।\nఅనేకమపి వా యత్రైకస్మిన్ క్రమేణ వర్తతే ॥",
+        "meaning_sa": "यत्र एकं वस्तु क्रमेण अनेकस्मिन् आधारे निवसति, अथवा अनेकं वस्तु क्रमेण एकस्मिन्नेव आधारे वर्तते, स पर्यायः।",
+        "meaning_en": "Paryāya (Alternation) depicts sequential inhabitation: either a single entity abides successively in multiple distinct loci, or multiple entities consecutively reside within a single locus over time.",
+        "meaning_te": "ఒకే వస్తువు క్రమముగా అనేక ప్రదేశములలో ఉండుట గాని, లేదా అనేక వస్తువులు ఒకదాని తరువాత నొకటిగా ఒకే ప్రదేశములో ఉండుట గాని వర్ణించినచో పర్యాయాలంకారమగును.",
+        "meaning_hi": "जहाँ एक वस्तु क्रमशः अनेक आधारों में रहे, अथवा अनेक वस्तुएं क्रमशः एक ही आधार में रहें।",
+        "source_reference": "चन्द्रालोकः (५.५२ / ५.१०८) / काव्यप्रकाशः (१०.४३)"
+      },
+      "primary_example": {
+        "sloka_sa": "एकं क्रमेणानेकार्थं यदा पर्याय उच्यते ।\nपूर्वं यत्राभवत् पङ्कस्तत्राभूत् कनकस्थलम् ॥",
+        "sloka_te": "ఏకం క్రమేణానేకార్థం యదా పర్యాయ ఉచ్యతే ।\nపూర్వం యత్రాభవత్ పఙ్కస్తత్రాభూత్ కనకస్థలమ్ ॥",
+        "anvaya": "पूर्वं यत्र पङ्कः अभवत्, तत्र कनकस्थलं अभूत्; एकं क्रमेण अनेकार्थं यदा तदा पर्यायः उच्यते ।",
+        "bhaava_sa": "वसन्ते भ्रमराः कुसुमेषु विहरन्ति, तदनन्तरं शरदि ते एव नद्यास्तीरेषु भ्रमन्ति।",
+        "bhaava_en": "In spring the honeybees frolic inside fragrant forest flowers; then in autumn, they roam along the limpid waters of sacred lakes.",
+        "bhaava_te": "వసంతకాలమున తుమ్మెదలు పూవులందు విహరించినవి; శరత్కాలము రాగానే అవే తుమ్మెదలు నిర్మల సరస్సులందు సంచరించినవి.",
+        "bhaava_hi": "वसन्त में भँवरे पुष्पों में रमण करते हैं और शरद् ऋतु आने पर वे ही सरोवरों में चले जाते हैं।",
+        "source_reference": "चन्द्रालोकः (५.१०८, उदाहरणम्) / कुवलयानन्दः"
+      },
+      "alankara_samanvaya": {
+        "sa": "एकस्यैव भ्रमरसमूहस्य कालभेदेन कुसुमेषु सरःसु च क्रमिकवासात् पर्यायालङ्कारः।",
+        "en": "The single subject consecutively inhabits distinct environments across seasons.",
+        "te": "ఒకే భ్రమర సమూహము కాలక్రమమున వేర్వేరు తావులలో విహరించుటచే పర్యాయము.",
+        "hi": "यहाँ एक ही भ्रमर समूह का समय-भेद से विभिन्न आधारों में क्रमशः निवास वर्णित है।"
+      }
+    }
+  ]
+}

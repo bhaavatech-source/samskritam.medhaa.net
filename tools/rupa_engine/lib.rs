@@ -5,6 +5,8 @@
 //!   tinantas(): every lakāra in कर्तरि (परस्मैपदम् / आत्मनेपदम्), कर्मणि and भावे
 //!   krdantas(): the common kṛt forms (क्त्वा/ल्यप्, तुमुन्, क्त, क्तवतु, शतृ, शानच्, तव्यत् …)
 //! Forms are in SLP1; the page converts them to the reader's script.
+//! The `*_with` variants take a sanādi suffix as well: "Ric" (णिच्, causative), "san" (सन्, desiderative),
+//! "yaN" (यङ्, intensive) or "" for the plain root.
 //! Built for the web by .github/workflows/rupa-wasm.yml (wasm-pack, target web).
 
 #[cfg(target_arch = "wasm32")]
@@ -28,8 +30,15 @@ fn join(mut v: Vec<String>) -> String { v.sort(); v.dedup(); esc(&v.join("|")) }
 pub struct Engine { dp: Dhatupatha, v: Vyakarana }
 
 impl Engine {
-    fn dhatu(&self, code: &str, prefixes: &str) -> Option<Dhatu> {
-        let d = self.dp.get(code)?.clone();
+    fn dhatu(&self, code: &str, prefixes: &str, sanadi: &str) -> Option<Dhatu> {
+        let mut d = self.dp.get(code)?.clone();
+        match sanadi {
+            "" => {}
+            "Ric" => d = d.with_sanadi(&[Sanadi::Ric]),
+            "san" => d = d.with_sanadi(&[Sanadi::san]),
+            "yaN" => d = d.with_sanadi(&[Sanadi::yaN]),
+            _ => return None,
+        }
         let p: Vec<&str> = prefixes.split(',').map(|x| x.trim()).filter(|x| !x.is_empty()).collect();
         Some(if p.is_empty() { d } else { d.with_prefixes(&p) })
     }
@@ -45,8 +54,10 @@ impl Engine {
 
     /// JSON: {"kartari_P": {"lat": ["a|b", … 9 cells], …}, "kartari_A": …, "karmani": …, "bhave": …}
     /// Cells run प्रथम एक, द्वि, बहु, मध्यम …, उत्तम …; empty string = no form. Modes without forms are left out.
-    pub fn tinantas(&self, code: &str, prefixes: &str) -> String {
-        let d = match self.dhatu(code, prefixes) { Some(d) => d, None => return "{}".into() };
+    pub fn tinantas(&self, code: &str, prefixes: &str) -> String { self.tinantas_with(code, prefixes, "") }
+    /// as `tinantas`, for the root with a sanādi suffix
+    pub fn tinantas_with(&self, code: &str, prefixes: &str, sanadi: &str) -> String {
+        let d = match self.dhatu(code, prefixes, sanadi) { Some(d) => d, None => return "{}".into() };
         let modes = [("kartari_P", Prayoga::Kartari, DhatuPada::Parasmaipada), ("kartari_A", Prayoga::Kartari, DhatuPada::Atmanepada),
                      ("karmani", Prayoga::Karmani, DhatuPada::Atmanepada), ("bhave", Prayoga::Bhave, DhatuPada::Atmanepada)];
         let mut out = Vec::new();
@@ -73,8 +84,10 @@ impl Engine {
     }
 
     /// JSON: {"ktvA": "forms|…", "tumun": …, …}; suffixes without a form are left out.
-    pub fn krdantas(&self, code: &str, prefixes: &str) -> String {
-        let d = match self.dhatu(code, prefixes) { Some(d) => d, None => return "{}".into() };
+    pub fn krdantas(&self, code: &str, prefixes: &str) -> String { self.krdantas_with(code, prefixes, "") }
+    /// as `krdantas`, for the root with a sanādi suffix
+    pub fn krdantas_with(&self, code: &str, prefixes: &str, sanadi: &str) -> String {
+        let d = match self.dhatu(code, prefixes, sanadi) { Some(d) => d, None => return "{}".into() };
         let mut out = Vec::new();
         for (name, mode) in KRTS {
             let krt = match BaseKrt::iter().find(|k| format!("{:?}", k) == name) { Some(k) => k, None => continue };

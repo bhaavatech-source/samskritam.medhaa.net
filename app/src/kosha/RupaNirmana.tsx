@@ -27,15 +27,15 @@ export function deva(s: string): string {
 }
 
 // ── prepared tables (tools/build_rupa_tables.py): app/public/rupa/<code>.json and index.json ──
-type Entry = { t: Record<string, Record<string, string[]>>; k: Record<string, string> };
-type Table = Record<string, Entry>;                         // "" | "pra" | "sam,AN" … → forms
+export type RupaEntry = { t: Record<string, Record<string, string[]>>; k: Record<string, string> };
+export type RupaTable = Record<string, RupaEntry>;         // "" | "pra" | "sam,AN" … → forms
 type Root = [string, string, string, string, string, string[]];   // code, upadeśa, root, artha, English, multi-upasarga keys
 const url = (f: string) => new URL(`rupa/${f}`, document.baseURI).href;
 let index: Promise<Root[]> | null = null;
 const loadIndex = () => (index ??= fetch(url("index.json")).then(r => { if (!r.ok) throw new Error(); return r.json() as Promise<Root[]>; }));
-const tables = new Map<string, Promise<Table>>();
-const loadTable = (code: string) => {
-  if (!tables.has(code)) tables.set(code, fetch(url(`${code}.json`)).then(r => { if (!r.ok) throw new Error(); return r.json() as Promise<Table>; }));
+const tables = new Map<string, Promise<RupaTable>>();
+export const loadRupaTable = (code: string) => {
+  if (!tables.has(code)) tables.set(code, fetch(url(`${code}.json`)).then(r => { if (!r.ok) throw new Error(); return r.json() as Promise<RupaTable>; }));
   return tables.get(code)!;
 };
 
@@ -45,7 +45,7 @@ const UPASARGAS: [string, string][] = [["pra", "प्र"], ["parA", "परा
   ["ati", "अति"], ["su", "सु"], ["ud", "उद्"], ["aBi", "अभि"], ["prati", "प्रति"], ["pari", "परि"], ["upa", "उप"]];
 const UP_DEVA = Object.fromEntries(UPASARGAS);
 const MODE: Record<string, string> = { kartari_P: "कर्तरि · परस्मैपदम्", kartari_A: "कर्तरि · आत्मनेपदम्", karmani: "कर्मणि · Passive", bhave: "भावे · Impersonal" };
-const KRT: [string, string, string][] = [
+export const KRT_SUFFIXES: [string, string, string][] = [
   ["ktvA", "क्त्वा / ल्यप्", "having done"], ["tumun", "तुमुन्", "to do"], ["Ramul", "णमुल्", "doing repeatedly"],
   ["kta", "क्त", "done (past participle)"], ["ktavatu", "क्तवतु", "one who has done"], ["Satf", "शतृ", "doing (present participle)"],
   ["SAnac", "शानच्", "doing (present participle, ātmanepada)"], ["tavyat", "तव्यत्", "to be done"], ["anIyar", "अनीयर्", "to be done, worth doing"],
@@ -54,7 +54,7 @@ const KRT: [string, string, string][] = [
   ["ac", "अच्", "doer / act"], ["ap", "अप्", "the act of"]];
 
 /** split "a|b" into Devanāgarī forms, the usual written form first (तु before तात्, त् before the pausal द्) */
-const forms = (x: string) => x.split("|").filter(Boolean).map(deva).sort((a, b) => rank(a) - rank(b));
+export const slpForms = (x: string) => x.split("|").filter(Boolean).map(deva).sort((a, b) => rank(a) - rank(b));
 const rank = (f: string) => (f.endsWith("द्") ? 2 : f.endsWith("तात्") ? 1 : 0);
 
 const Say: React.FC<{ t: string }> = ({ t }) => <button className="ks-speak" onClick={() => speak(t)} aria-label={`Listen: ${t}`}>🔊</button>;
@@ -64,7 +64,7 @@ export const RupaNirmana: React.FC = () => {
   const [list, setList] = useState<Root[] | null>(null);
   const [q, setQ] = useState("");
   const [root, setRoot] = useState<Root | null>(null);
-  const [table, setTable] = useState<Table | null>(null);
+  const [table, setTable] = useState<RupaTable | null>(null);
   const [ups, setUps] = useState<string[]>(["", "", ""]);
   const [err, setErr] = useState<string | null>(null);
   const [mode, setMode] = useState<string | null>(null);
@@ -74,7 +74,7 @@ export const RupaNirmana: React.FC = () => {
   useEffect(() => {
     if (!root) return;
     let on = true; setTable(null);
-    loadTable(root[0]).then(t => on && setTable(t)).catch(() => on && setErr("The forms of this root could not be loaded."));
+    loadRupaTable(root[0]).then(t => on && setTable(t)).catch(() => on && setErr("The forms of this root could not be loaded."));
     return () => { on = false; };
   }, [root]);
 
@@ -108,7 +108,7 @@ export const RupaNirmana: React.FC = () => {
   const lakaras = grid ? LAKARA_ORDER.filter(x => grid[x]) : [];
   const lakara = grid?.[lk] ? lk : lakaras[0];
   const cells = grid && lakara ? grid[lakara] : [];
-  const head = result ? forms(result.tin.kartari_P?.lat?.[0] || result.tin.kartari_A?.lat?.[0] || "")[0] ?? "" : "";
+  const head = result ? slpForms(result.tin.kartari_P?.lat?.[0] || result.tin.kartari_A?.lat?.[0] || "")[0] ?? "" : "";
 
   return (
     <div className="ks-card rn">
@@ -152,7 +152,7 @@ export const RupaNirmana: React.FC = () => {
           <div className="ks-table-wrap"><table className="ks-table">
             <thead><tr><th>{S("पुरुषः")}</th>{VACANA.map(n => <th key={n}>{S(n)}</th>)}</tr></thead>
             <tbody>{PURUSHA.map((p, pi) => <tr key={p}><th>{S(p)}</th>{[0, 1, 2].map(ni => {
-              const f = forms(cells[pi * 3 + ni] || "");
+              const f = slpForms(cells[pi * 3 + ni] || "");
               return f.length ? <td key={ni} className="ks-form">{S(f[0])}{f.length > 1 && <span className="ks-alt"> / {f.slice(1).map(x => S(x)).join(" / ")}</span>}</td>
                 : <td key={ni} className="ks-empty">—</td>;
             })}</tr>)}</tbody>
@@ -161,8 +161,8 @@ export const RupaNirmana: React.FC = () => {
 
         {Object.keys(result.krt).length > 0 && <>
           <h4>कृदन्तरूपाणि · Participles and verbal nouns</h4>
-          <div className="ks-table-wrap"><table className="ks-table ks-krt"><tbody>{KRT.filter(([k]) => result.krt[k]).map(([k, name, en]) => {
-            const f = forms(result.krt[k]);
+          <div className="ks-table-wrap"><table className="ks-table ks-krt"><tbody>{KRT_SUFFIXES.filter(([k]) => result.krt[k]).map(([k, name, en]) => {
+            const f = slpForms(result.krt[k]);
             return <tr key={k}><th className="ks-l-sa">{S(name)}</th><td className="ks-form">{S(f[0])}{f.length > 1 && <span className="ks-alt"> / {f.slice(1).map(x => S(x)).join(" / ")}</span>}</td><td>{en}</td></tr>;
           })}</tbody></table></div>
         </>}

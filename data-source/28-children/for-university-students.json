@@ -1,0 +1,730 @@
+{
+  "project": "Saṁskṛtamedhā (samskritam.medhaa.net)",
+  "target_audience": "University & Research Students (BA Hons / MA / PhD / Śāstrī / Ācārya / UGC-NET / Civil Services Sanskrit Optional)",
+  "curriculum_version": "v2.0-unique-university-tier",
+  "title": "विद्वत्संस्कृतम् · University Sanskrit Curriculum & Research Engine",
+  "description": "A comprehensive university-level curriculum covering Literary Criticism (Rasa & Dhvani), History of Classical Literature, Advanced Translation & Stylistics, Classical Indian Philosophy (Ṣaḍdarśana), and Historical Linguistics & Semantics.",
+  "modules": [
+    {
+      "module_id": "COL-MOD-01",
+      "name_sa": "साहित्यशास्त्रम्, रस-ध्वनि-सिद्धान्तः एवं नाट्यकला",
+      "name_en": "Literary Criticism, Rasa & Dhvani Theories, and Classical Dramaturgy",
+      "description_en": "Advanced poetics: Bharata's Rasa-sūtra, the 9 Rasas, 3 Powers of Words (Abhidhā, Lakṣaṇā, Vyañjanā), Guṇas, Rītis, and Nāṭyaśāstra dramaturgy conventions.",
+      "theoretical_foundation": {
+        "rasa_sutra": "विभावानुभावव्यभिचारिसंयोगाद्रसनिष्पत्तिः (नाट्यशास्त्रम् ६.३१)",
+        "rasa_components": {
+          "sthayi_bhava": "Durable emotional states (Rati, Hāsa, Śoka, Krodha, Utsāha, Bhaya, Jugupsā, Vismaya, Śama)",
+          "vibhava": "Causes / Triggers: Ālambana (primary focus/character) and Uddīpana (ambient stimulus/setting)",
+          "anubhava": "Physical manifestations and involuntary somatic responses (Sāttvika-bhāvas)",
+          "vyabhicari_bhava": "33 transitory mental waves (Nirveda, Glāni, Śaṅkā, etc.) that intensify the dominant Sthāyī"
+        },
+        "shabda_shakti_trayam": {
+          "abhidha": "Primary literal denotation yielding Vācyārtha",
+          "lakshana": "Secondary metaphorical indication operating when literal sense hits an impasse (Mukhya-bhāge sati)",
+          "vyanjana": "Suggestive / aesthetic resonance yielding Vyaṅgyārtha (the heart of Dhvani poetics)"
+        },
+        "kavya_gunas_and_ritis": {
+          "gunas": "Mādhurya (Sweetness/Elegance), Ojas (Vigor/Brilliance), Prasāda (Clarity/Instant Lucidity)",
+          "ritis": "Vaidarbhī (Graceful, uncompounded), Gauḍī (Bombastic, heavily compounded, alliterative), Pāñcālī (Intermediate harmony)"
+        },
+        "dramaturgy_elements": {
+          "nandi": "Auspicious opening benediction invoking deities",
+          "prastavana": "Prologue dialogue between Sūtradhāra and Naṭī/Pāripārśvika introducing the poet and context",
+          "vidushaka": "Comic companion speaking Prākrit, counterbalancing the noble hero (Nāyaka)",
+          "pancasandhi": "Mukha (Origin), Pratimukha (Development), Garbha (Complication), Vimarśa (Crisis/Reflection), Nirvahaṇa (Resolution)"
+        }
+      },
+      "challenges": [
+        {
+          "challenge_id": "COL-SAH-001",
+          "topic": "Rasa-sūtra Component Analysis",
+          "prompt_sa": "भरतमुनेः 'विभावानुभावव्यभिचारिसंयोगाद्रसनिष्पत्तिः' इति सूत्रे आलम्बन-उद्दीपन-भेदेन कः द्विविधः भवति?",
+          "prompt_en": "In Bharata Muni's seminal Rasa-sūtra, which component is subdivided into Ālambana (foundational subject) and Uddīpana (excitant environment)?",
+          "options": [
+            {
+              "text": "विभावः (Vibhāva)",
+              "is_correct": true
+            },
+            {
+              "text": "अनुभावः (Anubhāva)",
+              "is_correct": false
+            },
+            {
+              "text": "व्यभिचारी भावः (Vyabhicārī Bhāva)",
+              "is_correct": false
+            },
+            {
+              "text": "स्थायी भावः (Sthāyī Bhāva)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "विभावः द्विविधः- १. आलम्बनविभावः (यम् आलम्ब्य रसः उत्पद्यते, यथा शकुन्तला दुष्यन्तश्च), २. उद्दीपनविभावः (यः रसं दीपयति, यथा वसन्तोद्यानं भ्रमरगुञ्जनं च)।",
+          "explanation_en": "Vibhāva (the causal stimulus of aesthetic relish) is bipartite: Ālambana (the personal focus/characters) and Uddīpana (the environmental catalysts like moonlight or spring breeze).",
+          "explanation_hi": "विभाव दो प्रकार का होता है—आलम्बन (जिस पात्र पर भाव आश्रित हो) तथा उद्दीपन (परिस्थिति या वातावरण जो भाव को तीव्र करे)।",
+          "explanation_te": "విభావము రెండు విధములు: ఆలంబన విభావము (పాత్రలు) మరియు ఉద్దీపన విభావము (వాతావరణం, వసంతం మొదలగునవి).",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-SAH-002",
+          "topic": "Śabda-śakti (Powers of Words)",
+          "prompt_sa": "'गङ्गायां घोषः' (गङ्गाप्रवाहे आभीरपल्ली) इत्यत्र गङ्गा-शब्देन 'तीरम्' इति अर्थबोधः कस्याः शब्दशक्तेः व्यापारेण भवति?",
+          "prompt_en": "In the classical adage 'Gaṅgāyāṁ ghoṣaḥ' (a hamlet on the Ganges), how is the meaning 'the bank of the Ganges' conveyed?",
+          "options": [
+            {
+              "text": "लक्षणा-शक्त्या (Lakṣaṇā - Metaphorical Indication)",
+              "is_correct": true
+            },
+            {
+              "text": "अभिधा-शक्त्या (Abhidhā - Literal Denotation)",
+              "is_correct": false
+            },
+            {
+              "text": "व्यञ्जना-शक्त्या (Vyañjanā - Suggestive Poetic Resonance)",
+              "is_correct": false
+            },
+            {
+              "text": "तात्पर्याख्य-शक्त्या (Tātparya - Clausal Synthesizer)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "गङ्गायाः मुख्यार्थः 'जलप्रवाहः'। जलप्रवाहे घोषस्य (ग्रामस्य) असम्भवात् मुख्यार्थबाधे सति सामीप्यसम्बन्धेन 'तीरम्' इत्यर्थः लक्षणा-व्यापारेण सिद्ध्यति। (तथा च शीतत्व-पावनत्वादिकं तु व्यञ्जनया बोध्यते)।",
+          "explanation_en": "Because a village cannot physically sit on flowing water (Mukhya-artha-bādha), the proximate sense of 'riverbank' is yielded via Lakṣaṇā. The sanctity and coolness are subsequently conveyed via Vyañjanā.",
+          "explanation_hi": "जलप्रवाह में गाँव नहीं बस सकता, अतः मुख्यार्थ के बाधित होने पर सामीप्य सम्बन्ध से 'तट' का बोध लक्षणा शक्ति कराती है।",
+          "explanation_te": "గంగా ప్రవాహంలో గ్రామం ఉండటం అసంభవం కాబట్టి ముఖ్యాభిధేయార్థం బాధితమై 'తీరము' అను అర్థము లక్షణా శక్తి ద్వారా కలుగును.",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-SAH-003",
+          "topic": "Kāvya-rīti & Guṇa Coordination",
+          "prompt_sa": "समासरहिता, कोमलवर्णाढ्या, माधुर्यव्यञ्जिका रीतिः का उच्यते?",
+          "prompt_en": "Which poetic diction (Rīti) is characterized by an absence of long compounds, sweet mellifluous phonemes, and the manifestation of Mādhurya-guṇa?",
+          "options": [
+            {
+              "text": "वैदर्भी रीतिः (Vaidarbhī Rīti)",
+              "is_correct": true
+            },
+            {
+              "text": "गौडी रीतिः (Gauḍī Rīti)",
+              "is_correct": false
+            },
+            {
+              "text": "पाञ्चाली रीतिः (Pāñcālī Rīti)",
+              "is_correct": false
+            },
+            {
+              "text": "लाटी रीतिः (Lāṭī Rīti)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "'माधुर्यव्यञ्जकैर्वर्णै रचना ललितात्मिका । अवृत्तिरल्पवृत्तिर्वा वैदर्भी रीतिरिष्यते ॥' कालिदासस्य शैली वैदर्भी वर्तते।",
+          "explanation_en": "Vaidarbhī Rīti (immortalized by Kālidāsa) avoids harsh conjuncts and sprawling compounds, fostering effortless aesthetic charm and sweet resonance (Mādhurya).",
+          "explanation_hi": "कठोर वर्णों और लंबे समासों से रहित, मधुर और ललित वर्णों वाली शैली को 'वैदर्भी रीति' कहते हैं (जैसे कालिदास की शैली)।",
+          "explanation_te": "కఠిన సమాసాలు లేక, లలితపదములతో శ్రవణసుభగముగా సాగే రీతిని 'వైదర్భీ రీతి' అంటారు (కాళిదాసుని శైలి).",
+          "points": 20
+        },
+        {
+          "challenge_id": "COL-SAH-004",
+          "topic": "Classical Dramaturgy (Nāṭyaśāstra)",
+          "prompt_sa": "संस्कृतनाटकेषु प्राकृतभाषाभाषी, हास्योत्पादकः, नायकस्य विश्वासारहः मित्रं कः भवति?",
+          "prompt_en": "In classical Sanskrit dramaturgy, who is the Prākrit-speaking comic companion and trusted confidant of the high-born hero (Nāyaka)?",
+          "options": [
+            {
+              "text": "विदूषकः (Vidūṣakaḥ)",
+              "is_correct": true
+            },
+            {
+              "text": "सूत्रधारः (Sūtradhāraḥ)",
+              "is_correct": false
+            },
+            {
+              "text": "कञ्चुकी (Kañcukī)",
+              "is_correct": false
+            },
+            {
+              "text": "प्रतिनायकः (Pratināyakaḥ)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "विदूषकः हास्यरसप्रधानः पात्रः भवति, यः राज्ञः सखा, भोजनप्रियः, सामान्यतः प्राकृतभाषायाम् एव संवदति (यथा शाकुन्तले माढव्यः)।",
+          "explanation_en": "The Vidūṣaka (such as Mādhavya in Śākuntalam or Maitreya in Mṛcchakaṭikam) provides comic relief, speaks colloquial Prākrit despite being a Brahmin, and acts as the hero's confidant in romantic intrigues.",
+          "explanation_hi": "विदूषक संस्कृत नाटकों में हास्य पात्र होता है जो राजा का अभिन्न मित्र होता है तथा प्राकृत बोलता है (जैसे शाकुन्तल में माढव्य)।",
+          "explanation_te": "సంస్కృత నాటకములలో నాయకుని ప్రియమిత్రుడు, హాస్యరసమును పుట్టించువాడు మరియు ప్రాకృతము మాట్లాడు పాత్ర 'విదూషకుడు'.",
+          "points": 20
+        },
+        {
+          "challenge_id": "COL-SAH-005",
+          "topic": "The Supreme Hierarchy of Dhvani (Rasa-dhvani)",
+          "prompt_sa": "आनन्दवर्धनाचार्यस्य 'ध्वन्यालोके' वस्तु-अलङ्कार-रस-ध्वनिषु कः ध्वनिः 'काव्यस्यात्मा' इति सर्वोत्कृष्टतया मन्यते?",
+          "prompt_en": "In Ānandavardhana's Dhvanyāloka, among the three varieties of suggestion (Vastu-dhvani, Alaṅkāra-dhvani, and Rasa-dhvani), which is revered as the supreme 'soul of poetry'?",
+          "options": [
+            {
+              "text": "रसध्वनिः (Rasa-dhvani - Suggestion of Aesthetic Relish)",
+              "is_correct": true
+            },
+            {
+              "text": "वस्तुध्वनिः (Vastu-dhvani - Suggestion of a Fact)",
+              "is_correct": false
+            },
+            {
+              "text": "अलङ्कारध्वनिः (Alaṅkāra-dhvani - Suggestion of a Figure)",
+              "is_correct": false
+            },
+            {
+              "text": "चित्रकाव्यम् (Citrakāvya - Verbal Fireworks)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "ध्वन्यालोके तृतीयोद्योते स्पष्टमुक्तम् यत् वस्तु-अलङ्कारादि-ध्वनयः पर्यवसाने रसं प्रति एव धावन्ति, अतः 'रसध्वनिरेव' काव्यस्य मुख्यः आत्मा वर्तते।",
+          "explanation_en": "In Dhvani poetics, while Vastu and Alaṅkāra can be suggested, they ultimately subserve the unhindered awakening of emotional resonance; hence Rasa-dhvani is the true soul of poetry.",
+          "explanation_hi": "ध्वन्यालोक के अनुसार वस्तु और अलंकार ध्वनि अंततः रस में ही पर्यवसित होते हैं, अतः 'रसध्वनि' ही काव्य की सर्वोत्तम आत्मा है।",
+          "explanation_te": "ధ్వన్యాలోకం ప్రకారం రసధ్వనియే కావ్యమునకు పరమాత్మ వంటి సర్వోత్కృష్టమైన ధ్వని.",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "module_id": "COL-MOD-02",
+      "name_sa": "संस्कृत-साहित्य-इतिहासः (काव्य-नाटक-गद्य-परम्परा)",
+      "name_en": "History of Classical Sanskrit Literature & Literary Traditions",
+      "description_en": "Chronology, works, and stylistic hallmarks of Mahākāvyas (Bṛhattrayī & Laghutrayī), master dramatists (Kālidāsa, Bhāsa, Bhavabhūti, Śūdraka), and celebrated prose romances.",
+      "theoretical_foundation": {
+        "laghutrayi": "The three delicate lyrical Mahākāvyas of Kālidāsa: Raghuvaṁśam, Kumārasambhavam, Meghadūtam.",
+        "brhattrayi": "The three grand, ornate, intellectually formidable Mahākāvyas: Kirātārjunīyam (Bhāravi), Śiśupālavadham (Māgha), Naiṣadhīyacaritam (Śrīharṣa).",
+        "celebrated_aphorisms": [
+          "उपमा कालिदासस्य भारवेरर्थगौरवम् । दण्डिनः पदलालित्यं माघे सन्ति त्रयो गुणाः ॥",
+          "नैषधे पदलालित्यं कविराजविराजिते ।",
+          "उत्तरे रामचरिते भवभूतिर्विशिष्यते । कारुण्यं भवभूतिरेव तनुते ॥"
+        ],
+        "prose_romances": "Subandhu's Vāsavadattā (famed for unbroken Śleṣa punning on every syllable), Bāṇabhaṭṭa's Kādambarī & Harṣacarita (hyper-periodic, panoramic prose), Daṇḍin's Daśakumāracarita (picaresque, realistic adventures of 10 princes)."
+      },
+      "challenges": [
+        {
+          "challenge_id": "COL-LIT-001",
+          "topic": "The Great Epics (Bṛhattrayī vs. Laghutrayī)",
+          "prompt_sa": "संस्कृतसाहित्ये 'बृहत्त्रयी' इति संज्ञया अभिहितेषु महाकाव्येषु कस्य महाकाव्यस्य गणना न भवति?",
+          "prompt_en": "Which of the following celebrated Mahākāvyas does NOT belong to the monumental triad known as the 'Bṛhattrayī'?",
+          "options": [
+            {
+              "text": "रघुवंशम् (Raghuvaṁśam)",
+              "is_correct": true
+            },
+            {
+              "text": "किरातार्जुनीयम् (Kirātārjunīyam)",
+              "is_correct": false
+            },
+            {
+              "text": "शिशुपालवधम् (Śiśupālavadham)",
+              "is_correct": false
+            },
+            {
+              "text": "नैषधीयचरितम् (Naiṣadhīyacaritam)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "'बृहत्त्रयी' इत्यत्र किरातार्जुनीयम् (भारविः), शिशुपालवधम् (माघः), नैषधीयचरितम् (श्रीहर्षः) इति त्रयं समाविशति। रघुवंशं तु 'लघुत्रय्याम्' अन्तर्भवति।",
+          "explanation_en": "Bṛhattrayī comprises Kirātārjunīyam, Śiśupālavadham, and Naiṣadhīyacaritam. Raghuvaṁśam belongs to the 'Laghutrayī' (along with Kumārasambhavam and Meghadūtam).",
+          "explanation_hi": "'बृहत्त्रयी' में भारवि का किरातार्जुनीयम्, माघ का शिशुपालवधम् तथा श्रीहर्ष का नैषधीयचरितम् आता है। रघुवंश 'लघुत्रयी' का महाकाव्य है।",
+          "explanation_te": "'బృహత్త్రయి'లో కిరాతార్జునీయము, శిశుపాలవధము, నైషధీయచరితము కలవు. రఘువంశము 'లఘుత్రయి'లోనిది.",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-LIT-002",
+          "topic": "Dramatic Traditions & Chronology",
+          "prompt_sa": "'भासनाटकचक्रम्' (स्वप्नवासवदत्तम्, प्रतिमानाटकम् इत्यादयः १३ नाटकाः) कस्य विदुषः अन्वेषणेन आधुनिककाले प्रकाशितानि जातानि?",
+          "prompt_en": "Through the pioneering palm-leaf manuscript discovery of which scholar were the 13 forgotten plays of Bhāsa (including Svapnavāsavadattam) resurrected in the 20th century?",
+          "options": [
+            {
+              "text": "महामहोपाध्याय-टी. गणपतिशास्त्री (T. Gaṇapati Śāstrī)",
+              "is_correct": true
+            },
+            {
+              "text": "प्रो. म्याक्स मुलर (Max Müller)",
+              "is_correct": false
+            },
+            {
+              "text": "राधाकान्तदेवः (Rādhākāntadeva)",
+              "is_correct": false
+            },
+            {
+              "text": "आर्थर कीथ (A.B. Keith)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "१९१२ तमे वर्षे केरले मणलिक्कर-मठात् तालपत्रेषु मलयललिप्याम लिखितानि १३ नाटकाणि प्राप्य टी. गणपतिशास्त्रि-महोदयेन भासनाटकचक्रं प्रकाशितम्।",
+          "explanation_en": "In 1912, Mahāmahopādhyāya T. Gaṇapati Śāstrī discovered the Malayalam-script palm-leaf manuscripts of Bhāsa's 13 plays in Kerala, revolutionizing Sanskrit dramatic history.",
+          "explanation_hi": "१९१२ में टी. गणपति शास्त्री ने केरल में ताड़पत्रों पर लिखे भास के १३ नाटकों की खोज कर उन्हें प्रकाशित कराया था।",
+          "explanation_te": "1912 లో కేరళలో తాళపత్రాల ద్వారా భాసుని 13 నాటకములను కనుగొని వెలుగులోకి తెచ్చిన పండితుడు టి. గణపతిశాస్త్రి గారు.",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-LIT-003",
+          "topic": "Classical Sanskrit Prose Stylistics",
+          "prompt_sa": "'प्रत्यक्षरश्लेषमयप्रपञ्च-विन्यासवैदग्ध्यनिधिर्निबन्धः' इति कस्य गद्यकाव्यस्य वैशिष्ट्यं यत्र प्रतिपदं श्लेषालङ्कारः वर्तते?",
+          "prompt_en": "Which classical prose romance is celebrated for featuring a continuous, unbroken pun (Śleṣa) on virtually every single word throughout the entire narrative?",
+          "options": [
+            {
+              "text": "सुबन्धुकृता वासवदत्ता (Vāsavadattā by Subandhu)",
+              "is_correct": true
+            },
+            {
+              "text": "बाणभट्टकृता कादम्बरी (Kādambarī by Bāṇa)",
+              "is_correct": false
+            },
+            {
+              "text": "दण्डिकृतं दशकुमारचरितम् (Daśakumāracaritam by Daṇḍin)",
+              "is_correct": false
+            },
+            {
+              "text": "हर्षचरितम् (Harṣacaritam by Bāṇa)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "सुबन्धुः स्वयमेव प्रतिजानीते- 'प्रत्यक्षरश्लेषमयप्रपञ्चविन्यासवैदग्ध्यनिधिं प्रबन्धम्' इति। वासवदत्ता-गद्यकाव्ये प्रतिशब्दं श्लेषचमत्कारः दृश्यते।",
+          "explanation_en": "Subandhu explicitly boasts that his romance Vāsavadattā is a masterwork woven with puns in every syllable ('praty-akṣara-śleṣa-maya'), challenging readers with relentless double meanings.",
+          "explanation_hi": "सुबन्धु की 'वासवदत्ता' में प्रत्येक अक्षर/शब्द में श्लेष अलंकार का चमत्कार देखने को मिलता है।",
+          "explanation_te": "సుబంధుని 'వాసవదత్తా' గద్యకావ్యము ప్రతి అక్షరమునందును శ్లేషాలంకార చమత్కారముతో రచించబడినది.",
+          "points": 20
+        },
+        {
+          "challenge_id": "COL-LIT-004",
+          "topic": "Master of Ornate Prose (Bāṇabhaṭṭa)",
+          "prompt_sa": "'बाणोच्छिष्टं जगत्सर्वम्' इति प्रशंसा कस्य गद्यकारस्य वर्णनापाण्डित्यं लक्षयति, यस्य आश्रयदाता राजा हर्षवर्द्धनः आसीत्?",
+          "prompt_en": "The panegyric 'Bāṇocchiṣṭaṁ jagat sarvam' (all world themes are mere leftovers of Bāṇa) praises the encyclopedic description of which court poet of Emperor Harṣavardhana?",
+          "options": [
+            {
+              "text": "बाणभट्टः (Bāṇabhaṭṭa - Author of Kādambarī)",
+              "is_correct": true
+            },
+            {
+              "text": "दण्डी (Daṇḍin - Author of Daśakumāracarita)",
+              "is_correct": false
+            },
+            {
+              "text": "सुबन्धुः (Subandhu - Author of Vāsavadattā)",
+              "is_correct": false
+            },
+            {
+              "text": "अम्बिकादत्तव्यासः (Ambikādatta Vyāsa)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "बाणभट्टः ७ शताब्द्यां कान्यकुब्जेश्वरस्य श्रीहर्षस्य सभापण्डितः आसीत्। तेन हर्षचरितम् (आख्यायिका) तथा कादम्बरी (कथा) इति अप्रतिमे गद्यकाव्ये विरचिते।",
+          "explanation_en": "Bāṇabhaṭṭa (7th century CE), court poet of King Harṣavardhana of Kannauj, is renowned for Kādambarī and Harṣacarita, inspiring the proverb that all later descriptions are merely Bāṇa's leftovers.",
+          "explanation_hi": "सम्राट हर्ष के दरबारी कवि बाणभट्ट की विशद वर्णन-शैली और शब्द-सम्पदा के कारण कहा जाता है कि 'बाणोच्छिष्टं जगत्सर्वम्'।",
+          "explanation_te": "క్రీ.శ. 7వ శతాబ్దపు హర్షవర్ధన చక్రవర్తి ఆస్థానకవి బాణభట్టుని వర్ణనా చాతుర్యాన్ని 'బాణోచ్ఛిష్టం జగత్సర్వమ్' అని కొనియాడెదరు.",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "module_id": "COL-MOD-03",
+      "name_sa": "अनुवाद-कला, व्यावहारिक-रचना एवं वाक्य-विन्यासः",
+      "name_en": "Translation Craft, Composition & Advanced Syntactic Idioms",
+      "description_en": "Techniques for translating complex paragraphs into elegant Sanskrit: absolute constructions (Sati Saptamī), discourse markers, indirect speech with 'iti', and stylistic paragraph formation.",
+      "theoretical_foundation": {
+        "absolute_locative": "यस्य च भावेन भावलक्षणम् (२.३.३७): The action of one entity marks the time of another (e.g. 'सूर्ये उदिते कमलं विकसति' - The sun having risen, the lotus blooms).",
+        "anadare_shashthi_saptami": "षष्ठी चानादरे (२.३.३८): Disregard or contempt expressed in genitive or locative absolute (e.g. 'रुदतः पुत्रस्य / रुदति पुत्रे पिता प्राव्राजीत्' - Despite the weeping son, the father renounced).",
+        "direct_indirect_discourse": "The ubiquitous role of 'इति' (iti) to close thoughts, intentions, hearsay, and direct citations, preserving direct speech where modern languages force indirect reporting.",
+        "idiomatic_connectors": "चेत् (if), यद्यपि... तथापि (although... yet), न केवलम्... अपितु (not only... but also), यतः... ततः (because... therefore), यावत्... तावत् (as long as... so long)."
+      },
+      "challenges": [
+        {
+          "challenge_id": "COL-TRN-001",
+          "topic": "Absolute Locative (Sati Saptamī) in Composition",
+          "prompt_sa": "'The king having arrived, all the citizens stood up.' अस्य वाक्यस्य शुद्धः संस्कृत-अनुवादः कः?",
+          "prompt_en": "What is the elegant, idiomatic Sanskrit translation for 'The king having arrived, all the citizens stood up' using the absolute locative (Sati Saptamī)?",
+          "options": [
+            {
+              "text": "नृपे आगते सति, सर्वे नागरिकाः उदतिष्ठन्।",
+              "is_correct": true
+            },
+            {
+              "text": "नृपः आगच्छत् तस्मात् नागरिकाः उत्तिष्ठन्ति।",
+              "is_correct": false
+            },
+            {
+              "text": "नृपस्य आगमनेन सर्वे नागरिकाः उत्थिताः अभवन्।",
+              "is_correct": false
+            },
+            {
+              "text": "नृपं प्राप्य नागरिकाः अतिष्ठन्।",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "'यस्य च भावेन भावलक्षणम्' (२.३.३७) इति सूत्रेण एकस्याः क्रियायाः अनन्तरं यदा अपरा क्रिया भवति, तदा पूर्वक्रियायां तत्कर्तरि च सप्तमी भवति ('नृपे आगते सति')।",
+          "explanation_en": "By Pāṇini 2.3.37, when one action indicates the timeframe of a subsequent action, the earlier agent and its participle take the locative case: 'nṛpe āgate sati' (absolute locative / ablative absolute equivalent).",
+          "explanation_hi": "'यस्य च भावेन भावलक्षणम्' नियम से एक क्रिया के पूर्ण होने पर दूसरी क्रिया होने पर कर्ता और कृदन्त में सप्तमी होती है—'नृपे आगते सति'।",
+          "explanation_te": "ఒక పని పూర్తయిన పిమ్మట మరొక పని జరుగునపుడు 'సతి సప్తమి' నియమముచే 'నృపే ఆగతే సతి' అను రూపము వచ్చును.",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-TRN-002",
+          "topic": "The 'Iti' Quotation Marker in Translation",
+          "prompt_sa": "'He decided that he would go to the forest tomorrow.' अस्य वाक्यस्य संस्कृत-स्वभावानुकूलः अनुवादः कः?",
+          "prompt_en": "How is 'He decided that he would go to the forest tomorrow' idiomatically expressed in Sanskrit preserving direct cognitive discourse?",
+          "options": [
+            {
+              "text": "'अहं श्वः वनं गमिष्यामि' इति सः सङ्कल्पम् अकरोत्।",
+              "is_correct": true
+            },
+            {
+              "text": "सः अचिन्तयत् यत् सः श्वः वनं गमिष्यति।",
+              "is_correct": false
+            },
+            {
+              "text": "तस्य गमनं वने श्वः भविष्यति इति सः ज्ञायते।",
+              "is_correct": false
+            },
+            {
+              "text": "सः वने गमिष्यति इति तस्य निर्णयः अस्ति।",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "संस्कृते 'यत्... तत्' इत्यस्य स्थाने अन्तःकरणस्य सङ्कल्पः प्रत्यक्षवचनेन (Direct Speech) प्रयुज्य 'इति' शब्देन उपसंह्रियते—'अहं श्वः वनं गमिष्यामि इति सः निश्चयमकरोत्'।",
+          "explanation_en": "Sanskrit avoids cumbersome European-style indirect subordinate clauses ('that he would go') by expressing the thought as direct inner monologue followed by 'iti': 'Ahaṁ śvaḥ vanaṁ gamiṣyāmi' iti...",
+          "explanation_hi": "संस्कृत में परोक्ष कथन (indirect speech) की अपेक्षा विचार को प्रत्यक्ष रूप में रखकर 'इति' का प्रयोग करना ही स्वाभाविक शैली है।",
+          "explanation_te": "సంస్కృత భాషా స్వభావము ప్రకారం పరోక్ష వాక్యములకు బదులుగా అంతర్గత ఆలోచనను ప్రత్యక్షంగా పలికి 'ఇతి' చేర్చవలెను.",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-TRN-003",
+          "topic": "Contempt / Disregard Construction (Anādare Ṣaṣṭhī)",
+          "prompt_sa": "'रुदति पुत्रे (रुदतः पुत्रस्य वा) पिता संन्यस्तवान्' इत्यत्र कस्य सूत्रस्य प्रयोगः जातः?",
+          "prompt_en": "In the classical sentence 'rudati putre (or rudataḥ putrasya) pitā saṁnyastavān' (Despite his son weeping, the father renounced the world), which rule governs the optional genitive/locative?",
+          "options": [
+            {
+              "text": "षष्ठी चानादरे (२.३.३८)",
+              "is_correct": true
+            },
+            {
+              "text": "यस्य च भावेन भावलक्षणम् (२.३.३७)",
+              "is_correct": false
+            },
+            {
+              "text": "अनादरे तृतीया (२.३.१९)",
+              "is_correct": false
+            },
+            {
+              "text": "अपादाने पञ्चमी (२.३.२८)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "अनादराधिक्ये सति 'षष्ठी चानादरे' इति सूत्रेण पुत्रादिशब्दानां षष्ठी अथवा सप्तमी विभक्तिः भवति। अत्र रोदनकर्तुः पुत्रस्य अनादरः द्योत्यते।",
+          "explanation_en": "Under Pāṇini 2.3.38 (Ṣaṣṭhī cānādare), when an action is undertaken in open disregard/contempt of someone's distress or presence, that noun takes either the genitive or locative case.",
+          "explanation_hi": "'षष्ठी चानादरे' सूत्र से अनादर प्रकट करने पर षष्ठी या सप्तमी विभक्ति होती है (रोते हुए पुत्र की उपेक्षा करके पिता संन्यासी हो गया)।",
+          "explanation_te": "ఒకరిని అనాదరించి లేదా లెక్కచేయక పని చేసినపుడు 'షష్ఠీ చానాదరే' అను సూత్రముచే షష్ఠి గాని సప్తమి గాని వచ్చును.",
+          "points": 20
+        },
+        {
+          "challenge_id": "COL-TRN-004",
+          "topic": "Hypothetical / Conditional Syntax (Yadi-Tarhi / Cet)",
+          "prompt_sa": "'यदि त्वं परिश्रमेण पठिष्यसि तर्हि उत्तीर्णः भविष्यसि।' अस्य वाक्यस्य 'चेत्' अव्ययेन शुद्धं रूपान्तरं किम्?",
+          "prompt_en": "Transform 'yadi tvaṁ pariśrameṇa paṭhiṣyasi tarhi uttīrṇaḥ bhaviṣyasi' using the elegant enclitic conditional particle 'cet'.",
+          "options": [
+            {
+              "text": "त्वं परिश्रमेण पठेः चेत् उत्तीर्णः भवेः।",
+              "is_correct": true
+            },
+            {
+              "text": "चेत् त्वं पठसि तदा उत्तीर्णः अस्ति।",
+              "is_correct": false
+            },
+            {
+              "text": "त्वं चेत् परिश्रमेण पठितुं उत्तीर्णः भविष्यति।",
+              "is_correct": false
+            },
+            {
+              "text": "परिश्रमेण चेत् त्वं उत्तीर्णः भवति।",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "'चेत्' इति अव्ययं वाक्यस्य आदिभागे न प्रयुज्यते, अपि तु पदस्य अनन्तरं प्रयुज्यते। विधिलिङ्-लकारेण सह अस्य सौन्दर्यं वर्धते—'त्वं परिश्रमेण पठेः चेत् उत्तीर्णः भवेः'।",
+          "explanation_en": "Unlike 'yadi', the conditional particle 'cet' is enclitic and never placed first in a sentence. It elegantly coordinates with potential/optative verbs: 'tvaṁ pariśrameṇa paṭheḥ cet uttīrṇaḥ bhaveḥ'.",
+          "explanation_hi": "'चेत्' का प्रयोग वाक्य के आरम्भ में नहीं, बल्कि पद के पश्चात होता है और यह प्रायः सम्भावना/शर्त (विधिलिङ्) के साथ सुन्दर अनुवाद बनाता है।",
+          "explanation_te": "'చేత్' అను అవ్యయమును వాక్యారంభంలో కాక పదం తర్వాత వాడవలెను, విధిలిఙ్-లకారంతో ఇది ఎంతో సహజంగా అమరును.",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "module_id": "COL-MOD-04",
+      "name_sa": "भारतीय-दर्शन-परिचयः (षड्दर्शनानि एवं वादपद्धतिः)",
+      "name_en": "Foundations of Indian Philosophy (Ṣaḍdarśana & Epistemology)",
+      "description_en": "Core tenets of the 6 Orthodox Darśanas (Nyāya, Vaiśeṣika, Sāṅkhya, Yoga, Mīmāṁsā, Vedānta), epistemology, debate classifications (Vāda, Jalpa, Vitaṇḍā), and causal theories.",
+      "theoretical_foundation": {
+        "six_darshanas": {
+          "nyaya": "Gautama: Epistemology and logic. 4 Pramāṇas: Pratyakṣa (Perception), Anumāna (Inference), Upamāna (Analogy), Śabda (Verbal Testimony).",
+          "vaisheshika": "Kaṇāda: Metaphysics and atomism (Paramāṇuvāda). 7 Padārthas: Dravya, Guṇa, Karma, Sāmānya, Viśeṣa, Samavāya, Abhāva.",
+          "sankhya": "Kapila / Īśvarakṛṣṇa: Dualism of Puruṣa (Consciousness) and Prakṛti (Material Matrix). Satkāryavāda (effect pre-exists in cause) & Pariṇāmavāda.",
+          "yoga": "Patañjali: Aṣṭāṅga Yoga (Yama, Niyama, Āsana, Prāṇāyāma, Pratyāhāra, Dhāraṇā, Dhyāna, Samādhi). Citta-vṛtti-nirodha.",
+          "mimamsa": "Jaimini / Śabarasvāmin: Ritual hermeneutics, Veda-apauruṣeyatva (eternity of the Vedas), and Dharma-jijñāsā.",
+          "vedanta": "Bādarāyaṇa / Śaṅkara / Rāmānuja: Ultimate Reality (Brahman), World (Māyā/Prapañca), and Individual Soul (Jīva). Vivartavāda vs. Pariṇāmavāda."
+        },
+        "katha_trayam": {
+          "vada": "Truth-seeking, honest debate between preceptor and pupil or fair scholars seeking reality without personal ego.",
+          "jalpa": "Aggressive, sophistical disputation where both opponents argue solely to secure victory using rhetorical tricks.",
+          "vitanda": "Purely destructive, nihilistic refutation where the debater destroys the opponent's thesis without defending any counter-thesis of their own."
+        }
+      },
+      "challenges": [
+        {
+          "challenge_id": "COL-DAR-001",
+          "topic": "Causal Theories (Satkāryavāda vs. Asatkāryavāda)",
+          "prompt_sa": "'कार्यं कारणात् प्रागपि कारणे विद्यते' (तिलेषु तैलवत्) इति साङ्ख्यदर्शनस्य कः सिद्धान्तः?",
+          "prompt_en": "Which foundational theory of causality in Sāṅkhya philosophy asserts that the effect pre-exists inherently within the material cause prior to its manifestation (like oil in sesame seeds)?",
+          "options": [
+            {
+              "text": "सत्कार्यवादः / परिणामवादः (Satkāryavāda / Pariṇāmavāda)",
+              "is_correct": true
+            },
+            {
+              "text": "असत्कार्यवादः / आरम्भवादः (Asatkāryavāda / Ārambhavāda)",
+              "is_correct": false
+            },
+            {
+              "text": "विवर्तवादः (Vivartavāda)",
+              "is_correct": false
+            },
+            {
+              "text": "क्षणभङ्गवादः (Kṣaṇabhaṅgavāda)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "साङ्ख्यकारिकायां वदति—'असदकरणादुपादानग्रहणात्... सत्त्वं कार्यस्य कारणे सत्कार्यवादः।' न्यायमते तु कार्यम् उत्पत्तेः पूर्वम् असत् भवति (असत्कार्यवादः)।",
+          "explanation_en": "Satkāryavāda holds that the effect is an actual transformation (Pariṇāma) of what already exists latently in the cause. In contrast, Nyāya upholds Asatkāryavāda (the effect is a brand-new creation previously non-existent).",
+          "explanation_hi": "सांख्य दर्शन के अनुसार कार्य अपने कारण में पहले से ही अव्यक्त रूप में विद्यमान रहता है, इसे 'सत्कार्यवाद' कहते हैं।",
+          "explanation_te": "కార్యము పుట్టకముందే కారణమునందు లీనమై ఉండును అను సాంఖ్య సిద్ధాంతమును 'సత్కార్యవాదము' అంటారు.",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-DAR-002",
+          "topic": "Debate Typology (Vāda, Jalpa, Vitaṇḍā)",
+          "prompt_sa": "न्यायदर्शने स्वपक्षस्थापनारहितः, केवलं परपक्षस्य खण्डनमात्रपरः वादप्रकारः कः उच्यते?",
+          "prompt_en": "In Nyāya epistemology, what is the term for a disputation where an opponent sets up no thesis of their own and engages purely in dismantling the other's arguments?",
+          "options": [
+            {
+              "text": "वितण्डा (Vitaṇḍā - Cavil / Destructive Refutation)",
+              "is_correct": true
+            },
+            {
+              "text": "वादः (Vāda - Truth-seeking Colloquy)",
+              "is_correct": false
+            },
+            {
+              "text": "जल्पः (Jalpa - Disputation for Victory)",
+              "is_correct": false
+            },
+            {
+              "text": "हेत्वाभासः (Hetvābhāsa - Fallacy)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "'स प्रतिपक्षस्थापनाहीनो वितण्डा' (न्यायसूत्रम् १.२.३)। यत्र वादी स्वकीयं मतं न स्थापयति, केवलं परस्य मतं दूषयति, सा वितण्डा।",
+          "explanation_en": "Nyāyasūtra 1.2.3 defines Vitaṇḍā as that disputation which lacks the establishment of a counter-thesis, aiming solely to pick holes in the opponent's assertions.",
+          "explanation_hi": "न्याय दर्शन में अपने पक्ष की स्थापना न करके केवल दूसरे के मत का खंडन करने को 'वितण्डा' कहा जाता है।",
+          "explanation_te": "తన పక్షమును నిరూపించకుండా కేవలము ఎదుటివారి వాదనను మాత్రమే ఖండించు పద్ధతిని 'వితండ' అంటారు.",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-DAR-003",
+          "topic": "Vaiśeṣika Ontology (7 Categories)",
+          "prompt_sa": "कणादप्रणीते वैशेषिकदर्शने कति पदार्थाः स्वीक्रियन्ते, तथा च अन्तिमः पदार्थः कः?",
+          "prompt_en": "How many ontic categories (Padārthas) are recognized in the Vaiśeṣika system of Kaṇāda, and which is the final negative category added by the tradition?",
+          "options": [
+            {
+              "text": "सप्त पदार्थाः; अन्तिमः 'अभावः' (7 Categories; final is Abhāva)",
+              "is_correct": true
+            },
+            {
+              "text": "षट् पदार्थाः; अन्तिमः 'समवायः' (6 Categories; final is Samavāya)",
+              "is_correct": false
+            },
+            {
+              "text": "पञ्चविंशतिः तत्त्वानि (25 Tattvas)",
+              "is_correct": false
+            },
+            {
+              "text": "षोडश पदार्थाः (16 Categories)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "वैशेषिके सप्त पदार्थाः सन्ति—द्रव्य, गुण, कर्म, सामान्य, विशेष, समवाय, अभाव इति। अभावः चतुर्विधः—प्रागभावः, प्रध्वंसाभावः, अत्यन्ताभावः, अन्योन्याभावः।",
+          "explanation_en": "Vaiśeṣika classifies reality into 7 categories: Substance (Dravya), Quality (Guṇa), Action (Karma), Universality (Sāmānya), Particularity (Viśeṣa), Inherence (Samavāya), and Non-existence (Abhāva).",
+          "explanation_hi": "वैशेषिक में ७ पदार्थ स्वीकार किए गए हैं: द्रव्य, गुण, कर्म, सामान्य, विशेष, समवाय और अभाव।",
+          "explanation_te": "వైశేషిక దర్శనమునందు 7 పదార్థములు కలవు: ద్రవ్య, గుణ, కర్మ, సామాన్య, విశేష, సమవాయ, అభావములు.",
+          "points": 20
+        },
+        {
+          "challenge_id": "COL-DAR-004",
+          "topic": "Advaita Vedānta & The Theory of Apparent Illusion (Vivartavāda)",
+          "prompt_sa": "अद्वैतवेदान्ते रज्जौ सर्पभ्रमवत् 'ब्रह्मणः विवर्तरूपम् इदं जगत्' इति कस्य आचार्यस्य मुख्यः सिद्धान्तः?",
+          "prompt_en": "In Advaita Vedānta, the doctrine of Vivartavāda (apparent, unreal transformation, like mistaking a rope for a snake) is the cornerstone philosophy of which seminal Ācārya?",
+          "options": [
+            {
+              "text": "आदिशङ्कराचार्यः (Ādi Śaṅkarācārya)",
+              "is_correct": true
+            },
+            {
+              "text": "रामानुजाचार्यः (Rāmānujācārya - Pariṇāmavāda)",
+              "is_correct": false
+            },
+            {
+              "text": "मध्वाचार्यः (Madhvācārya - Dvaitavāda)",
+              "is_correct": false
+            },
+            {
+              "text": "वल्लभाचार्यः (Vallabhācārya - Śuddhādvaita)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "आदिशङ्कराचार्यस्य मते ब्रह्म सत्यं जगन्मिथ्या। कारणस्य तात्त्विकः परिणामः न भवति, अपि तु रज्जुसर्पवत् अविद्यावशात् केवलं विवर्तः (प्रतीतिः) भवति इति विवर्तवादः।",
+          "explanation_en": "Ādi Śaṅkarācārya propounded Vivartavāda: Brahman does not undergo a real physical change to become the world (which would compromise its immutability); rather, the empirical universe is an apparent superimposition (Adhyāsa) due to Māyā.",
+          "explanation_hi": "आदिशंकराचार्य के अद्वैत दर्शन में ब्रह्म में संसार का केवल विवर्त (रस्सी में साँप की तरह आभास) माना गया है, वास्तविक परिणाम नहीं।",
+          "explanation_te": "ఆదిశంకరాచార్యుల అద్వైత వేదాంతం ప్రకారం జగత్తు బ్రహ్మము యొక్క వివర్తము (తాడును చూసి పాము అనుకొనుట వంటి భ్రాంతి).",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "module_id": "COL-MOD-05",
+      "name_sa": "भाषाविज्ञानम् एवं संस्कृत-अर्थविकासः",
+      "name_en": "Sanskrit Historical Linguistics & Semantic Evolution",
+      "description_en": "Comparative Indo-European philology (Centum vs. Satem), phonetic sound laws (Grimm, Grassmann), and semantic shift mechanisms (Artha-saṅkoca, Artha-vistāra, Arthotkarṣa, Artha-apakarṣa).",
+      "theoretical_foundation": {
+        "indo_european_branches": {
+          "satem_group": "Sanskrit (Indo-Iranian), Avestan, Baltic, Slavic, Armenian. Fricative /s/ sound for IE *k̂mtom (e.g. Sanskrit 'Śatam').",
+          "centum_group": "Greek (Hekaton), Latin (Centum), Celtic, Germanic (Hund/Hundred). Velar stop /k/ retained."
+        },
+        "sound_laws": {
+          "grassmanns_law": "Dissimilation of aspirates: if an aspirate is followed by another aspirate in the same root, the first loses its aspiration (e.g. *dha-dhā-ti -> dadhāti; *bha-bhū-va -> babhūva).",
+          "grimms_law": "Systematic consonant shifts separating Germanic stops from Proto-Indo-European / Sanskrit cognates (e.g. Sanskrit 'Pitṛ' -> English 'Father'; Sanskrit 'Bhrātṛ' -> English 'Brother')."
+        },
+        "semantic_evolution": {
+          "artha_sankocha": "Semantic Narrowing / Contraction: 'Mṛga' originally meant any wild forest animal; now restricted solely to 'deer'. 'Paṅkaja' (mud-born) restricted to 'lotus'.",
+          "artha_vistara": "Semantic Widening / Expansion: 'Kuśala' originally meant one skilled at plucking sharp kuśa grass; now means 'clever/skilled in general'. 'Taila' meant sesame oil (Tila); now means any oil (mustard oil, petrol).",
+          "artha_apakarsa": "Pejoration / Degradation: 'Asura' originally denoted a powerful divine sovereign (Vedic epithet of Varuṇa); subsequently degraded to mean 'demon/titan'.",
+          "arthotkarsa": "Amelioration / Elevation: 'Mānya' or 'Devānāmpriya' shifting nuances in classical literature."
+        }
+      },
+      "challenges": [
+        {
+          "challenge_id": "COL-LIN-001",
+          "topic": "Semantic Narrowing (Artha-saṅkoca)",
+          "prompt_sa": "संस्कृतभाषायां 'मृग' शब्दस्य मूलार्थः 'वनपशुमात्रम्' आसीत्, अधुना केवलं 'हरिण' इत्यर्थे प्रयुज्यते। अयं परिवर्तनप्रकारः कः उच्यते?",
+          "prompt_en": "In Vedic Sanskrit, the word 'Mṛga' denoted any wild beast of the forest, whereas in modern usage it is restricted solely to 'deer'. What type of semantic change does this exemplify?",
+          "options": [
+            {
+              "text": "अर्थसङ्कोचः (Artha-saṅkoca - Semantic Narrowing)",
+              "is_correct": true
+            },
+            {
+              "text": "अर्थविस्तारः (Artha-vistāra - Semantic Widening)",
+              "is_correct": false
+            },
+            {
+              "text": "अर्थापकर्षः (Artha-apakarṣa - Pejoration)",
+              "is_correct": false
+            },
+            {
+              "text": "अर्थादेशः (Arthādeśa - Complete Transference)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "यदा शब्दस्य व्यापकः अर्थः संकुचितः भूत्वा एकस्मिन् एव वस्तुनि सीमितः भवति, सः 'अर्थसङ्कोचः' उच्यते। (यथा- मृगः = हरिणः, पङ्कजम् = केवलं कमलम्)।",
+          "explanation_en": "Artha-saṅkoca (semantic narrowing or specialization) occurs when a word's original broad domain shrinks to a specific single referent (e.g., mṛga from 'wild quadruped' -> 'deer').",
+          "explanation_hi": "जब किसी शब्द का विस्तृत अर्थ सिकुड़ कर किसी एक विशेष अर्थ तक सीमित हो जाता है, तो उसे 'अर्थसंकोच' कहते हैं (जैसे मृग = केवल हिरण)।",
+          "explanation_te": "విశాలమైన అర్థము కలిగిన పదము క్రమముగా ఒకే ఒక వస్తువునకు పరిమితమగుటను 'అర్థసంకోచము' అంటారు (ఉదా: మృగ = కేవలం జింక).",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-LIN-002",
+          "topic": "Semantic Widening (Artha-vistāra)",
+          "prompt_sa": "'कुशं लाति (आहरति) इति कुशलः'। आदौ कुशच्छेदने निपुणः कुशलः आसीत्, अधुना तु 'सर्वकार्येषु प्रवीणः' कुशलः उच्यते। अयं कस्य उदाहरणम्?",
+          "prompt_en": "The etymology of 'Kuśala' originally designated an expert at carefully gathering sacred, sharp-edged Kuśa grass. Today it denotes someone 'skilled or clever in any field'. What semantic phenomenon is this?",
+          "options": [
+            {
+              "text": "अर्थविस्तारः (Artha-vistāra - Semantic Widening / Generalization)",
+              "is_correct": true
+            },
+            {
+              "text": "अर्थसङ्कोचः (Artha-saṅkoca - Semantic Specialization)",
+              "is_correct": false
+            },
+            {
+              "text": "ध्वनिसङ्कोचः (Phonetic Reduction)",
+              "is_correct": false
+            },
+            {
+              "text": "अर्थापकर्षः (Pejoration)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "सीमितार्थात् यदा शब्दः व्यापकार्थं लभते, तदा 'अर्थविस्तारः' भवति। यथा 'तैलम्' (तिलभवम्) अधुना सर्षपतैल-खनिजतैलादिषु प्रयुज्यते, तथैव 'कुशलः' च।",
+          "explanation_en": "Artha-vistāra (semantic widening or generalization) occurs when a term tied to a specific narrow context broadens to encompass universal proficiency or any fluid product (e.g. taila, kuśala).",
+          "explanation_hi": "जब सीमित अर्थ वाला शब्द व्यापक अर्थ में प्रयुक्त होने लगे तो उसे 'अर्थविस्तार' कहते हैं (जैसे केवल कुश काटने में चतुर से अब किसी भी कार्य में निपुण 'कुशल' कहलाता है)।",
+          "explanation_te": "సంకుచితమైన అర్థము నుండి విస్తృతమైన అర్థములోనికి మారుటను 'అర్థవిస్తారము' అంటారు (ఉదా: కుశల, తైల).",
+          "points": 25
+        },
+        {
+          "challenge_id": "COL-LIN-003",
+          "topic": "Comparative Philology & Indo-European Sound Laws",
+          "prompt_sa": "भारोपीय-भाषापरिवारस्य शतम्-वर्ग (Satem) तथा केन्तुम्-वर्ग (Centum) विभागे संस्कृतभाषा कस्य वर्गस्य अन्तर्भवति?",
+          "prompt_en": "In the foundational division of the Indo-European language family into Satem and Centum groups based on the word for 'hundred', to which group does Sanskrit belong?",
+          "options": [
+            {
+              "text": "शतम्-वर्गे (Satem Group)",
+              "is_correct": true
+            },
+            {
+              "text": "केन्तुम्-वर्गे (Centum Group)",
+              "is_correct": false
+            },
+            {
+              "text": "उभयवर्गे (Both)",
+              "is_correct": false
+            },
+            {
+              "text": "न कस्मिंश्चित् (Neither)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "भारोपीयभाषासु 'शतम्' (१००) इति शब्दस्य आधारेण द्वौ वर्गौ कल्पितौ। संस्कृते तालव्य-ऊष्म-ध्वनिना 'शतम्' (Satem) इति उच्यते। ग्रीक-लैटिन-आदिषु तु कण्ठ्य-ध्वनिना 'Centum' (केन्तुम्) इति भवति।",
+          "explanation_en": "Sanskrit belongs to the Satem branch of Indo-European, where original palato-velar stops shifted into sibilants/fricatives (Sanskrit 'śatam', Avestan 'satem') vs. Centum languages which retained velar stops (Latin 'centum' pronounced kentum, Greek 'he-katon').",
+          "explanation_hi": "संस्कृत भारोपीय परिवार की 'शतम्' (Satem) शाखा की भाषा है जहाँ तालव्य ध्वनियों का विकास हुआ, जबकि ग्रीक-लैटिन 'केन्तुम्' (Centum) वर्ग में आती हैं।",
+          "explanation_te": "ఇండో-యూరోపియన్ భాషలలో సంస్కృతం 'శతమ్' (Satem) వర్గానికి చెందినది. లాటిన్, గ్రీకు భాషలు 'కెంటుమ్' (Centum) వర్గానికి చెందినవి.",
+          "points": 20
+        },
+        {
+          "challenge_id": "COL-LIN-004",
+          "topic": "Historical Phonetics (Grassmann's Law of De-aspiration)",
+          "prompt_sa": "संस्कृतभाषायां द्वयोः महाप्राणध्वन्योः सम्मुखीनत्वे प्रथमस्य अल्पप्राणीभवनं भवति (यथा- *धा-धा-ति -> दधाति, *भू-भू-व -> बभूव)। अयं नियमः भाषाविज्ञाने कः कथ्यते?",
+          "prompt_en": "In Indo-European and Sanskrit phonetics, the dissimilation rule whereby the first of two consecutive aspirates in a root loses its aspiration (e.g. *dhā-dhā-ti -> dadhāti, *bhū-bhū-va -> babhūva) is celebrated as whose law?",
+          "options": [
+            {
+              "text": "ग्रासमैन-नियमः (Grassmann's Law of De-aspiration)",
+              "is_correct": true
+            },
+            {
+              "text": "ग्रिम-नियमः (Grimm's Consonant Shift Law)",
+              "is_correct": false
+            },
+            {
+              "text": "वार्नर-नियमः (Verner's Accentual Law)",
+              "is_correct": false
+            },
+            {
+              "text": "फोर्टुनातोव-नियमः (Fortunatov's Law)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "जर्मनविदुषा हर्मन ग्रासमैन-महोदयेन (१८६३) प्रतिपादितं यत् संस्कृते ग्रीकभाषायां च द्वयोः महाप्राणयोः समागमे पूर्वध्वनिः अल्पप्राणतां गच्छति ('अभ्यासे चर्च' ८.४.५४ इत्यनेन पाणिनीयेऽपि इदमेव उक्तम्)।",
+          "explanation_en": "Hermann Grassmann (1863) formulated the law of de-aspiration in Sanskrit and Greek, mirroring Pāṇini's rule 'Abhyāse car ca' (8.4.54) where reduplicated aspirate stops become unaspirated.",
+          "explanation_hi": "ग्रासमैन नियम (Grassmann's Law) के अनुसार यदि किसी पद में दो महाप्राण ध्वनियाँ पास आएं तो पहली अल्पप्राण हो जाती है (जैसे धा-धा-ति से दधाति)।",
+          "explanation_te": "రెండు మహాప్రాణ ధ్వనులు ఎదురైనప్పుడు మొదటిది అల్పప్రాణముగా మారుటను భాషాశాస్త్రంలో 'గ్రాస్‌మన్ నియమము' (Grassmann's Law) అంటారు.",
+          "points": 25
+        }
+      ]
+    }
+  ],
+  "curriculum_level": "Level 3: विश्वविद्यालयस्तरः / अनुसन्धानस्तरः (University / Research)"
+}

@@ -6,11 +6,11 @@
 // ═══════════════════════════════════════════════════════════════
 import React, { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
-  WORDS, GRAMMAR, loadDhatu400Data, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, PADACCHEDA, PADYA, padyaMeaning, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO, wordKind,
-  wordMeaning, avyayaMeaning, sentMeaning, sentRoman, padyaRoman, type Word,
-  type Dhatu400, type Dhatu400Conjugation, type Dhatu400Krt, type Dhatu400KrtForm,
+  WORDS, GRAMMAR, loadDhatu400Data, SENTENCES, AVYAYA, AVYAYA_CATS, ERRORS, LANGS, VIBHAKTI, VIBHAKTI_EN, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO, wordKind,
+  wordMeaning, avyayaMeaning, sentMeaning, sentRoman, type Word,
+  type Dhatu400, type Dhatu400Conjugation, type Dhatu400Krt, type Dhatu400KrtForm, type UpasargaCombo,
 } from "../data";
-import { FlagButton, LangPicker, Review } from "../FlagUI";
+import { FlagButton, Review } from "../FlagUI";
 import { romanize } from "../i18n/roman";
 
 /** the meaning read aloud in Latin letters, under a meaning in a non-Latin script */
@@ -29,18 +29,24 @@ import { flagsCSV, importFlags, ISSUES, OK, removeFlag, saveFile, useFlags, type
 import { useLang, useReadings, setReadings } from "../settings";
 import { speak } from "../speech";
 import { useSa } from "../i18n/script";
-import { PadacchedaIntro, PadyaIntro } from "./Intro";
 import { UpasargaForRoot, ComboCard, comboLabel, comboSearch, rootKey, PREFIX_BY_ROOT } from "./Upasarga";
 import { RupaHub, takeUnadiRequest } from "./Unadi";
+import { loadRupaTable, slpForms, KRT_SUFFIXES, type RupaTable } from "./RupaNirmana";
 import { SambhashanamLink } from "../speak/Sambhashanam";
 import "./kosha.css";
 import { PlayLink } from "../play/Play";
+import { FormFinder } from "../search/FormFinder";
+
+/** the id after the view in the address (#verbs/MDH-272 → MDH-272), as left by a search result */
+const hashId = (): string | null => { try { return decodeURIComponent(location.hash.slice(1).split("/")[1] ?? "") || null; } catch { return null; } };
 
 // ── shared list + detail layout ────────────────────────────────
-export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeholder, initial, listHidden, toggleList, listLabel = "list" }: {
+export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeholder, initial, listHidden, toggleList, listLabel = "list", above }: {
   items: T[]; idOf: (x: T) => string; kind: FlagKind; label: (x: T) => React.ReactNode;
   search: (x: T) => string; detail: (x: T) => React.ReactNode; placeholder: string; initial?: string | null;
   listHidden?: boolean; toggleList?: () => void; listLabel?: string;
+  /** shown above the list for the current query; it may report the ids it found (they join the list) and select one */
+  above?: (q: string, found: (ids: string[]) => void, select: (id: string) => void) => React.ReactNode;
 }) {
   const { flags } = useFlags();
   const generatedListId = useId();
@@ -48,12 +54,14 @@ export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeh
   const [q, setQ] = useState("");
   const [only, setOnly] = useState(false);
   const [sel, setSel] = useState<string | null>(initial ?? null);
+  const [found, setFound] = useState<string[]>([]);
   const listRef = useRef<HTMLDivElement>(null);
   const isListHidden = listHidden ?? localListHidden;
   const onToggleList = toggleList ?? (() => setLocalListHidden(hidden => !hidden));
   useEffect(() => { if (initial) listRef.current?.querySelector(".on")?.scrollIntoView({ block: "nearest" }); }, [initial]);
   const flaggedIds = useMemo(() => new Set(flags.filter(f => f.kind === kind).map(f => f.id)), [flags, kind]);
-  const list = items.filter(x => (!q || search(x).toLowerCase().includes(q.trim().toLowerCase())) && (!only || flaggedIds.has(idOf(x))));
+  const foundSet = useMemo(() => new Set(found), [found]);
+  const list = items.filter(x => (!q || foundSet.has(idOf(x)) || search(x).toLowerCase().includes(q.trim().toLowerCase())) && (!only || flaggedIds.has(idOf(x))));
   const cur = items.find(x => idOf(x) === sel) ?? list[0] ?? items[0];
   return (
     <>
@@ -65,6 +73,7 @@ export function ListDetail<T>({ items, idOf, kind, label, search, detail, placeh
           {isListHidden ? `Show ${listLabel}` : `Hide ${listLabel}`}
         </button>
       </div>
+      {above?.(q, setFound, setSel)}
       <div className={`ks-body${isListHidden ? " ks-body-list-hidden" : ""}`}>
         <div className="ks-list" id={generatedListId} role="listbox" ref={listRef}>
           {list.map(x => (
@@ -147,6 +156,7 @@ export const WordBook: React.FC = () => {
   const [g, setG] = useState("all");
   const [end, setEnd] = useState("all");
   const [listHidden, setListHidden] = useState(false);
+  const [start] = useState(() => hashId());   // #words/<id> opens that word
   const isHal = (w: Word) => w.w.endsWith("्");
   const items = WORDS.filter(w => (g === "all" || w.g === g) && (end === "all" || (end === "hal") === isHal(w)));
   const count = (gg: string, ee: string) => WORDS.filter(w => (gg === "all" || w.g === gg) && (ee === "all" || (ee === "hal") === isHal(w))).length;
@@ -155,8 +165,9 @@ export const WordBook: React.FC = () => {
       <KsTop title="शब्दकोशः" en="Noun Book" sub={`${WORDS.length} words with all their forms and meanings in ${Object.keys(LANGS).length - 1} languages.`} />
       <div className="ks-chips gr-filter">{GENDERS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${g === k ? "on" : ""}`} onClick={() => setG(k)} title={en}>{S(sa)} <small>({count(k, end)})</small></button>)}</div>
       <div className="ks-chips gr-filter">{ENDS.map(([k, sa, en]) => <button key={k} className={`ks-tag ${end === k ? "on" : ""}`} onClick={() => setEnd(k)} title={en}>{S(sa)} <small>({count(g, k)})</small></button>)}</div>
-      <ListDetail key={g + end} items={items} idOf={w => w.id} kind="word" placeholder="Search: राम, rāma, boy, బాలుడు…"
+      <ListDetail key={g + end} initial={start} items={items} idOf={w => w.id} kind="word" placeholder="Search a word or any form: राम, rāma, boy, रामेण…"
         listHidden={listHidden} toggleList={() => setListHidden(hidden => !hidden)} listLabel="shabda list"
+        above={(q, found, select) => <FormFinder q={q} verbs={false} onIds={found} onWord={select} />}
         search={w => [w.w, w.iast, w.d[0]?.[0], ...Object.values(w.m ?? {}).map(m => m[0])].join(" ")}
         label={w => <><span className="ks-l-sa">{S(w.d[0]?.[0] || w.w)}</span><span className="ks-l-en">{wordMeaning(w, lang).split(";")[0]}</span><span className="ks-l-kind">{S(wordKind(w)[0])}</span>{w.ch > 0 && <span className="ks-l-ch" title="regenerated forms">🔁{w.ch}</span>}</>}
         detail={w => <WordDetail w={w} />} />
@@ -166,6 +177,50 @@ export const WordBook: React.FC = () => {
 
 // ── धातुकोशः ───────────────────────────────────────────────────
 type Dhatu400Mode = "kartari" | "atmanepada" | "karmani" | "bhave";
+const UPASARGA_SLP: Record<string, string> = {
+  "प्र": "pra", "परा": "parA", "अप": "apa", "सम्": "sam", "अनु": "anu", "अव": "ava",
+  "निस्": "nis", "निर्": "nir", "दुस्": "dus", "दुर्": "dur", "वि": "vi", "आङ्": "AN",
+  "नि": "ni", "अधि": "aDi", "अपि": "api", "अति": "ati", "सु": "su", "उद्": "ud",
+  "अभि": "aBi", "प्रति": "prati", "परि": "pari", "उप": "upa",
+};
+const PrefixedKrtTable: React.FC<{ items: UpasargaCombo[]; root: Dhatu400 }> = ({ items, root }) => {
+  const S = useSa();
+  const [table, setTable] = useState<RupaTable | null>(null);
+  const [error, setError] = useState(false);
+  useEffect(() => {
+    let active = true;
+    setError(false);
+    loadRupaTable(root.dhatupatha.code).then(t => active && setTable(t)).catch(() => active && setError(true));
+    return () => { active = false; };
+  }, [root.dhatupatha.code]);
+  if (!items.length) return null;
+  if (error) return <p className="ks-note" role="alert">Prefixed कृत् forms could not be loaded.</p>;
+  if (!table) return <p className="ks-note" role="status">Loading prefixed कृत् रूपाणि…</p>;
+  const rows = items.map(c => {
+    const key = c.u.map(u => UPASARGA_SLP[u] ?? u).join(",");
+    const krt = table[key]?.k;
+    if (!krt) return null;
+    return <tbody key={c.id}>
+      <tr><th colSpan={3} className="ks-l-sa">{S(c.w)} · {S([...c.u, c.d].join(" + "))}</th></tr>
+      {KRT_SUFFIXES.filter(([suffix]) => krt[suffix]).map(([suffix, name, meaning]) => {
+        const forms = slpForms(krt[suffix]);
+        return <tr key={suffix}><th>{S(name)}</th><td className="ks-form">{forms.length ? S(forms[0]) : "—"}{forms.length > 1 && <span className="ks-alt"> / {forms.slice(1).map(S).join(" / ")}</span>}</td><td>{meaning}</td></tr>;
+      })}
+    </tbody>;
+  }).filter(Boolean);
+  if (!rows.length) return null;
+  return <>
+    <h4>उपसर्गयुक्तकृदन्तानि · Prefixed participles &amp; verbal nouns</h4>
+    <div className="ks-table-wrap"><table className="ks-table ks-krt">
+      <thead><tr><th>प्रत्ययः</th><th>रूपम्</th><th>अर्थः · English</th></tr></thead>
+      {rows}
+    </table></div>
+  </>;
+};
+const PrefixedKrtForRoot: React.FC<{ root: Dhatu400 }> = ({ root }) => {
+  const items = GRAMMAR.upasarga.combos.filter(c => rootKey(c.d, c.g) === rootKey(root.lemma, root.gana));
+  return <PrefixedKrtTable items={items} root={root} />;
+};
 const Dhatu400Detail: React.FC<{ v: Dhatu400; krt?: Dhatu400Krt }> = ({ v, krt }) => {
   const lang = useLang();
   const S = useSa();
@@ -218,6 +273,7 @@ const Dhatu400Detail: React.FC<{ v: Dhatu400; krt?: Dhatu400Krt }> = ({ v, krt }
         </table>
       </div>
       <UpasargaForRoot lemma={v.lemma} gana={v.gana} />
+      <PrefixedKrtForRoot root={v} />
       {krt && <Dhatu400KrtTable r={krt} />}
       <p className="ks-id">{v.id}</p>
     </div>
@@ -251,7 +307,7 @@ export const VerbBook: React.FC = () => {
   const S = useSa();
   const [unadiStart] = useState(takeUnadiRequest);   // opened from a link to the Uṇādi words or quiz
   const [tab, setTab] = useState(unadiStart ? "make" : "all");
-  const [focus, setFocus] = useState<string | null>(null);
+  const [focus, setFocus] = useState<string | null>(() => hashId());   // #verbs/MDH-272 opens that root
   const [data, setData] = useState<{ tinanta: Dhatu400[]; krt: Dhatu400Krt[] } | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   useEffect(() => {
@@ -269,30 +325,62 @@ export const VerbBook: React.FC = () => {
   if (!data) return <div className="ks"><KsTop title="धातुकोशः" en="Verb book" sub="Loading the expanded dhātu data…" />
     <p className="ks-note" role="status">Loading 400-root verb and participle data…</p></div>;
   const { tinanta, krt } = data;
+  type VerbBookItem = { kind: "root"; v: Dhatu400 } | { kind: "combo"; c: (typeof GRAMMAR.upasarga.combos)[number] };
+  const verbItems: VerbBookItem[] = [
+    ...tinanta.map(v => ({ kind: "root" as const, v })),
+    ...GRAMMAR.upasarga.combos.map(c => ({ kind: "combo" as const, c })),
+  ];
+  type KrtBookItem = { kind: "root"; r: Dhatu400Krt } | { kind: "combo"; c: (typeof GRAMMAR.upasarga.combos)[number] };
+  const krtItems: KrtBookItem[] = [
+    ...krt.map(r => ({ kind: "root" as const, r })),
+    ...GRAMMAR.upasarga.combos.map(c => ({ kind: "combo" as const, c })),
+  ];
   return (
     <div className="ks">
-      <KsTop title="धातुकोशः" en="Verb book" sub={`${tinanta.length} roots with generated tiṅanta forms and ${krt.length} roots with kṛdantas.`} />
-      <p className="ks-note">{tinanta.filter(v => v.id <= "MDH-400").length} of the 400 marked roots have generated form records, plus {tinanta.filter(v => v.id > "MDH-400").length} roots added for the prefixed verbs.</p>
+      <KsTop title="धातुकोशः" en="Verb book" sub={`${verbItems.length} verb entries (${tinanta.length} roots + ${GRAMMAR.upasarga.combos.length} upasarga-dhātu combinations) and ${krtItems.length} kṛdanta entries (${krt.length} roots + ${GRAMMAR.upasarga.combos.length} combinations).`} />
+      <p className="ks-note">धातुरूपाणि includes {tinanta.length} root entries and {GRAMMAR.upasarga.combos.length} prefixed (upasarga-dhātu) entries ({verbItems.length} total). कृदन्तानि includes {krtItems.length} entries.</p>
       <Tabs tabs={[
-        ["all", `धातुरूपाणि · All roots (${tinanta.length})`],
-        ["krt400", `कृदन्तानि · All roots (${krt.length})`],
-        ["upa", `उपसर्गयुक्ताः · With prefixes (${GRAMMAR.upasarga.combos.length})`],
+        ["all", `धातुरूपाणि · All entries (${verbItems.length})`],
+        ["krt400", `कृदन्तानि · All entries (${krtItems.length})`],
         ["make", "रूपनिर्माणम् · Make any form"],
       ]} on={tab} set={setTab} />
       {tab === "make" ? <RupaHub start={unadiStart ?? "forms"} />
-        : tab === "upa" ? <ListDetail items={GRAMMAR.upasarga.combos} idOf={c => c.id} kind="grammar" placeholder="Search: अनुभवति, अनु, to experience…"
-          search={comboSearch} label={c => comboLabel(c, lang, S)}
-          detail={c => { const root = tinanta.find(v => rootKey(v.lemma, v.gana) === rootKey(c.d, c.g));
-            return <ComboCard c={c} openRoot={root ? () => { setFocus(root.id); setTab("all"); } : undefined} rootLabel={root ? root.lemma : undefined} />; }} />
-        : tab === "all" ? <ListDetail<Dhatu400> key={focus ?? "all"} initial={focus} items={tinanta} idOf={v => v.id} kind="verb" placeholder="Search: गम्, gam, to go, अनुभवति…"
-          search={v => [v.lemma, v.iast, v.gana, v.dhatupatha.artha, ...Object.values(v.meanings), PREFIX_BY_ROOT.get(rootKey(v.lemma, v.gana)) ?? ""].join(" ")}
-          label={v => <><span className="ks-l-sa">{S(v.lemma)}</span><span className="ks-l-en">{v.meanings[lang] || v.meanings.en}</span></>}
-          detail={v => <Dhatu400Detail key={v.id} v={v} krt={krt.find(r => r.dhatu_id === v.id)} />} />
-        : <ListDetail<Dhatu400Krt> items={krt} idOf={r => r.dhatu_id} kind="krt" placeholder="Search a root or a form: गत्वा, to go…"
-          search={r => [r.lemma, r.meaning_en, ...Object.values(r.krt_rupas).map(f => f.form || "")].join(" ")}
-          label={r => <><span className="ks-l-sa">{S(r.lemma)}</span><span className="ks-l-en">{r.meaning_en}</span></>}
-          detail={r => <div className="ks-card"><div className="ks-head"><h3>{S(r.lemma)}</h3><Speak t={r.lemma} /><span className="ks-sub">{r.gana} · {r.pada}</span></div>
-            <p className="ks-main-meaning" dir="auto">{r.meaning_en}</p><Dhatu400KrtTable r={r} /><p className="ks-id">{r.dhatu_id}</p></div>} />}
+        : tab === "all" ? <ListDetail<VerbBookItem> key={focus ?? "all"} initial={focus} items={verbItems} idOf={x => x.kind === "root" ? x.v.id : x.c.id} kind="verb" placeholder="Search a root or prefixed verb: गम्, gam, to go, अनुभवति, अनु, авाप…"
+          above={(q, found, select) => <FormFinder q={q} nouns={false} onIds={found} onRoot={select} />}
+          search={x => x.kind === "root"
+            ? [x.v.lemma, x.v.iast, x.v.gana, x.v.dhatupatha.artha, ...Object.values(x.v.meanings), PREFIX_BY_ROOT.get(rootKey(x.v.lemma, x.v.gana)) ?? ""].join(" ")
+            : comboSearch(x.c)}
+          label={x => x.kind === "root"
+            ? <><span className="ks-l-sa">{S(x.v.lemma)}</span><span className="ks-l-en">{x.v.meanings[lang] || x.v.meanings.en}</span></>
+            : comboLabel(x.c, lang, S)}
+          detail={x => x.kind === "root"
+            ? <Dhatu400Detail key={x.v.id} v={x.v} krt={krt.find(r => r.dhatu_id === x.v.id)} />
+            : <ComboCard c={x.c} openRoot={() => {
+                const root = tinanta.find(v => rootKey(v.lemma, v.gana) === rootKey(x.c.d, x.c.g));
+                if (root) setFocus(root.id);
+              }} rootLabel={tinanta.find(v => rootKey(v.lemma, v.gana) === rootKey(x.c.d, x.c.g))?.lemma} />} />
+        : <ListDetail<KrtBookItem> items={krtItems} idOf={x => x.kind === "root" ? x.r.dhatu_id : x.c.id} kind="krt" placeholder="Search a root or prefixed कृदन्त: गत्वा, प्रहरति, अनुभूय…"
+          search={x => x.kind === "root"
+            ? [x.r.lemma, x.r.meaning_en, ...Object.values(x.r.krt_rupas).map(f => f.form || "")].join(" ")
+            : comboSearch(x.c)}
+          label={x => x.kind === "root"
+            ? <><span className="ks-l-sa">{S(x.r.lemma)}</span><span className="ks-l-en">{x.r.meaning_en}</span></>
+            : comboLabel(x.c, lang, S)}
+          detail={x => x.kind === "root"
+            ? <div className="ks-card"><div className="ks-head"><h3>{S(x.r.lemma)}</h3><Speak t={x.r.lemma} /><span className="ks-sub">{x.r.gana} · {x.r.pada}</span></div>
+              <p className="ks-main-meaning" dir="auto">{x.r.meaning_en}</p><Dhatu400KrtTable r={x.r} /><p className="ks-id">{x.r.dhatu_id}</p></div>
+            : (() => {
+                const root = tinanta.find(v => rootKey(v.lemma, v.gana) === rootKey(x.c.d, x.c.g));
+                const meaning = (x.c.m as Record<string, string>);
+                return <div className="ks-card">
+                  <div className="ks-head"><h3>{S(x.c.w)}</h3>{x.c.fin && <Speak t={x.c.w} />}<span className="ks-sub">{S([...x.c.u, x.c.d].join(" + "))}</span></div>
+                  <p className="ks-main-meaning" dir="auto">{meaning[lang] || x.c.m.en}</p>
+                  {root
+                    ? <PrefixedKrtTable items={[x.c]} root={root} />
+                    : <p className="ks-note">The matching root is not available for generated कृत् रूपाणि.</p>}
+                  <p className="ks-id">{x.c.id}</p>
+                </div>;
+              })()} />}
     </div>
   );
 };
@@ -304,42 +392,11 @@ export const SentenceBook: React.FC = () => {
   const [tab, setTab] = useState("s");
   return (
     <div className="ks">
-      <KsTop title="वाक्यकोशः" en="Sentences, ślokas & little words" sub={`${SENTENCES.length} everyday sentences, ${ERRORS.length} mistakes and their corrections, ${PADACCHEDA.length} Rāmāyaṇa ślokas split into words, ${PADYA.verses.length} verses analysed step by step, and ${AVYAYA.length} अव्ययानि.`} />
-      <Tabs tabs={[["s", `वाक्यानि · Sentences (${SENTENCES.length})`], ["e", `अशुद्धिशोधनम् · Mistakes (${ERRORS.length})`], ["p", `पदच्छेदः · Ślokas (${PADACCHEDA.length})`], ["v", `पद्यविश्लेषणम् · Verse analysis (${PADYA.verses.length})`], ["a", `अव्ययानि · Avyayas (${AVYAYA.length})`]]} on={tab} set={setTab} />
+      <KsTop title="वाक्यकोशः" en="Sentences & little words" sub={`${SENTENCES.length} everyday sentences, ${ERRORS.length} mistakes and their corrections, and ${AVYAYA.length} अव्ययानि. Ślokas (पदच्छेदः, पद्यविश्लेषणम्) are now in साहित्यम्.`} />
+      <Tabs tabs={[["s", `वाक्यानि · Sentences (${SENTENCES.length})`], ["e", `अशुद्धिशोधनम् · Mistakes (${ERRORS.length})`], ["a", `अव्ययानि · Avyayas (${AVYAYA.length})`]]} on={tab} set={setTab} />
       {tab === "s" && <SambhashanamLink />}
-      {tab === "p" && <PadacchedaIntro />}
-      {tab === "v" && <PadyaIntro />}
-      {tab === "v" && <details className="ks-method"><summary>पद्यविश्लेषणस्य क्रमः · How to analyse a verse ({PADYA.method.length} steps)</summary>
-        <ol>{PADYA.method.map(m => <li key={m.n}><b>{S(m.title.replace(/\s*\(.*\)$/, ""))}</b> <span className="ks-l-en">{m.title.match(/\((.*)\)/)?.[1]}</span><p>{S(m.details)}</p></li>)}</ol></details>}
-      {tab === "v"
-        ? <ListDetail items={PADYA.verses} idOf={v => v.id} kind="sentence" placeholder="Search a verse or a word…"
-            search={v => [v.verse, v.anvaya, v.source, padyaMeaning(v, lang), ...v.padaccheda].join(" ")}
-            label={v => <><span className="ks-l-sa ks-l-sent">{S(v.verse.split(/[।|]/)[0])}</span><span className="ks-l-en">{S(v.source)}</span></>}
-            detail={v => (
-              <div className="ks-card">
-                <div className="ks-head"><h3 className="ks-sent ks-verse">{S(v.verse.replace(/([।|]+)\s*/, "$1\n"))}</h3><Speak t={v.verse} /></div>
-                <p className="ks-sub">{S(v.source)}</p>
-                <h4>१ · पदच्छेदः · The words</h4>
-                <div className="ks-padas">{v.padaccheda.map((w, k) => <span key={k}>{S(w)}</span>)}</div>
-                {v.anvaya && <><h4>२ · अन्वयः · Prose order</h4>
-                  <p className="ks-anvaya">{S(v.anvaya)} <Speak t={v.anvaya} />
-                    <FlagButton t={{ kind: "sentence", id: v.id, field: "anvaya", value: v.anvaya, where: `${v.id} — anvaya` }} /></p></>}
-                <h4>३ · अर्थः · Meaning</h4>
-                <p className="ks-main-meaning" dir="auto">{padyaMeaning(v, lang)} <FlagButton t={{ kind: "sentence", id: v.id, field: "meaning:" + lang, value: padyaMeaning(v, lang), where: `${v.id} — verse meaning (${LANGS[lang]})` }} /></p>
-                <Rom t={padyaRoman(v, lang)} />
-                {lang !== "en" && <p className="ks-note-plain">English: {v.m.en}</p>}
-                {v.artha_sa && <p className="ks-note-plain">{S(v.artha_sa)}</p>}
-                {v.karaka.length > 0 && <><h4>४ · कारकाणि · Who does what</h4>
-                  <table className="ks-karaka"><tbody>{v.karaka.map((k, i) => (
-                    <tr key={i}><td className="ks-l-sa">{S(k.word)}</td><td>{S(k.role)}{k.of ? <span className="ks-l-en"> → {S(k.of)}</span> : null}</td>
-                      <td className="ks-l-en">{k.note ? S(k.note) : ""}</td>
-                      <td><FlagButton t={{ kind: "sentence", id: v.id, field: "karaka", value: `${k.word} = ${k.role}`, where: `${v.id} — kāraka` }} /></td></tr>))}</tbody></table></>}
-                {v.words.length > 0 && <><h4>५ · पदपरिचयः · Each word's form</h4>
-                  <table className="ks-karaka"><tbody>{v.words.map((w, i) => <tr key={i}><td className="ks-l-sa">{S(w.word)}</td><td>{S(w.form)}</td></tr>)}</tbody></table></>}
-                {v.notes.filter(Boolean).map((n, i) => <p key={i} className="ks-note-plain">{S(n)}</p>)}
-                <p className="ks-id">{v.id}</p>
-              </div>)} />
-        : tab === "e"
+      <p className="ks-note-plain">📜 पदच्छेदः, पद्यविश्लेषणम्, रघुवंशम्, अलङ्काराः, छन्दांसि → <a href="#sahitya">साहित्यम् · Literature</a></p>
+      {tab === "e"
         ? <ListDetail items={ERRORS} idOf={e => e.id} kind="sentence" placeholder="Search a sentence…"
             search={e => [e.wrong, e.right, e.id].join(" ")}
             label={e => <><span className="ks-l-sa ks-l-sent">{S(e.right)}</span></>}
@@ -350,18 +407,6 @@ export const SentenceBook: React.FC = () => {
                   <FlagButton t={{ kind: "sentence", id: e.id, field: "error-pair", value: `${e.wrong} → ${e.right}`, where: `${e.id} — error correction` }} /></div>
                 {e.note && <p className="ks-note">Reviewed: {e.note}</p>}
                 <p className="ks-id">{e.id}</p>
-              </div>)} />
-        : tab === "p"
-        ? <ListDetail items={PADACCHEDA} idOf={p => p.id} kind="sentence" placeholder="Search a śloka or a word…"
-            search={p => [p.sloka, ...p.padas, p.id].join(" ")}
-            label={p => <><span className="ks-l-sa ks-l-sent">{S(p.sloka.split(/[।|]/)[0])}</span></>}
-            detail={p => (
-              <div className="ks-card">
-                <div className="ks-head"><h3 className="ks-sent">{S(p.sloka)}</h3><Speak t={p.sloka} /></div>
-                <h4>पदच्छेदः · The words</h4>
-                <div className="ks-padas">{p.padas.map((w, k) => <span key={k}>{S(w)}</span>)}</div>
-                <FlagButton t={{ kind: "sentence", id: p.id, field: "padaccheda", value: p.padas.join(", "), where: `${p.id} — padaccheda` }} label="Report" />
-                <p className="ks-id">{p.id} · Vālmīki Rāmāyaṇa (Gold data)</p>
               </div>)} />
         : tab === "s"
         ? <ListDetail items={SENTENCES} idOf={s => s.id} kind="sentence" placeholder="Search Sanskrit or English…"
@@ -446,6 +491,5 @@ export const FlagsPage: React.FC = () => {
 export const KsTop: React.FC<{ title: string; en: string; sub: string }> = ({ title, en, sub }) => (
   <div className="jy-top">
     <div><h2 className="jy-title">{title} <span>· {en}</span></h2><p className="jy-sub">{sub}</p></div>
-    <div className="jy-top-right"><LangPicker /></div>
   </div>
 );

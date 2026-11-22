@@ -1,0 +1,2268 @@
+{
+  "project": "Saṁskṛtamedhā (संस्कृतमेधा)",
+  "dataset": "छन्दोवृत्त-मञ्जरी (Chandas & Vṛttas Master Database)",
+  "title": "सम्पूर्णा छन्दोवृत्त-पारिजात-मञ्जरी (Comprehensive Sanskrit Metrics & Prosody Database)",
+  "description": "Complete encyclopedia of Classical Sanskrit Metrics (Chandas & Vṛttas), synthesizing Piṅgala-Chandaḥśāstra, Gaṅgādāsa's Chandomañjarī, Kedārabhaṭṭa's Vṛttaratnākara, and modern pedagogical commentaries with quadrilingual explanations (Sanskrit, Hindi, English, Telugu), complete metrical lakṣaṇas, full classical examples, scansion, and prastāra analysis.",
+  "sources_consulted": [
+    "छन्दोमञ्जरी - पण्डित-गङ्गादास-विरचिता (Chandomañjarī of Gaṅgādāsa)",
+    "वृत्तरत्नाकरः - केदारभट्ट-विरचितः नारायणभट्टकृत-टीकासहितः (Vṛttaratnākara with Nārāyaṇa Bhaṭṭa commentary)",
+    "छन्दःशास्त्रम् - पिङ्गलाचार्य-प्रणीतम् (Piṅgala Chandaḥsūtra)",
+    "Chandas as Vedāṅga - Dr. Madhavi R. Narsalay (University of Mumbai)",
+    "आन्ध्र-छन्दोविकासमु - ఆక్కీరాజు ఉమాకాంతం గారు (Andhra Chandolamkaramu / Telugu Prosody treatises)"
+  ],
+  "theoretical_framework": {
+    "etymology_and_definition": {
+      "sa": "छन्दांसि छादनात् (निरुक्तम् ७.१२)। यदक्षरपरिमाणं तच्छन्दः (कात्यायनः)। मात्राक्षरसङ्ख्यानियतवाक् छन्दः (पिङ्गलः)।",
+      "en": "Chandas is derived from √chad (to cover/protect) or √chand (to gladden). Kātyāyana defines it as 'that which is measured by syllables'. Piṅgala defines it as 'speech regulated by definite numbers of syllables or morae'.",
+      "hi": "छन्द शब्द 'छद्' (ढकना, रक्षा करना) अथवा 'छन्द्' (प्रसन्न करना) धातु से निष्पन्न है। कात्यायन के अनुसार 'अक्षरों की नियत संख्या वाली रचना छन्द है'। पिङ्गल के अनुसार 'मात्रा अथवा अक्षरों की नियत संख्या से युक्त वाक्य छन्द कहलाता है'।",
+      "te": "ఛందస్సు అనునది 'ఛద్' (రక్షించుట/కప్పుట) లేదా 'ఛంద్' (ఆనందింపజేయుట) అను ధాతువు నుండి పుట్టినది. కాత్యాయనుని నిర్వచనము ప్రకారం 'అక్షరముల నియమిత పరిమాణము గలది ఛందస్సు'. పింగళాచార్యుల మతం ప్రకారం 'మాత్రల చేతగాని అక్షరముల చేతగాని నియమింపబడిన వాక్యమే ఛందస్సు'."
+    },
+    "laghu_guru_system": {
+      "definition_rule": {
+        "sloka_sa": "सानुस्वारश्च दीर्घश्च विसर्गश्च गुरुर्भवेत् ।\nवर्णः संयोगपूर्वश्च तथा पादान्तगोऽपि वा ॥",
+        "sloka_te": "సానుస్వారశ్చ దీర్ఘశ్చ విసర్గశ్చ గురుర్భవేత్ ।\nవర్ణః సంయోగపూర్వశ్చ తథా పాదాంతగోఽపి వా ॥"
+      },
+      "laghu": {
+        "symbol": "।",
+        "matra": 1,
+        "description_sa": "ह्रस्वाः स्वराः (अ, इ, उ, ऋ, ऌ) व्यञ्जनसंयुक्ता वा असंयुक्ताः, येषां पश्चात् संयोग-अनुस्वार-विसर्गा न सन्ति, ते लघवः स्युः।",
+        "description_en": "Short vowels (a, i, u, ṛ, ḷ) with or without single consonants, lacking following conjuncts, anusvāra, or visarga, are Light (Laghu = 1 mātrā).",
+        "description_hi": "ह्रस्व स्वर (अ, इ, उ, ऋ, ऌ) तथा उनसे युक्त व्यञ्जन जिनके आगे संयुक्त वर्ण, अनुस्वार या विसर्ग न हो, लघु (१ मात्रा) कहलाते हैं।",
+        "description_te": "హ్రస్వ స్వరములు (అ, ఇ, ఉ, ఋ, ఌ) మరియు వాటితో కూడిన హల్లులు, వాటి తర్వాత సంయుక్తాక్షరము, అనుస్వారము లేదా విసర్గ లేనప్పుడు లఘువు (౧ మాత్ర) అగును."
+      },
+      "guru": {
+        "symbol": "ऽ",
+        "matra": 2,
+        "conditions": [
+          {
+            "condition_sa": "दीर्घः स्वरः (आ, ई, ऊ, ॠ, ए, ऐ, ओ, औ)",
+            "condition_en": "Long vowels and diphthongs",
+            "condition_hi": "दीर्घ स्वर",
+            "condition_te": "దీర్ఘ స్వరములు"
+          },
+          {
+            "condition_sa": "सानुस्वारः (अं)",
+            "condition_en": "Syllable with Anusvāra",
+            "condition_hi": "अनुस्वारयुक्त वर्ण",
+            "condition_te": "అనుస్వారముతో కూడిన అక్షరము"
+          },
+          {
+            "condition_sa": "सविसर्गः (अः)",
+            "condition_en": "Syllable with Visarga",
+            "condition_hi": "विसर्गयुक्त वर्ण",
+            "condition_te": "విసర్గతో కూడిన అక్షరము"
+          },
+          {
+            "condition_sa": "संयोगपूर्वः (ह्रस्वोऽपि)",
+            "condition_en": "Short vowel preceding a conjunct consonant",
+            "condition_hi": "संयुक्त वर्ण से पूर्व का ह्रस्व वर्ण",
+            "condition_te": "సంయుక్తాక్షరమునకు ముందున్న హ్రస్వాక్షరము"
+          },
+          {
+            "condition_sa": "पादान्तस्थः विकल्पेन",
+            "condition_en": "Final syllable of a metrical quarter (optionally heavy)",
+            "condition_hi": "चरण (पाद) का अन्तिम वर्ण विकल्प से",
+            "condition_te": "పాదము చివరి అక్షరము వికల్పముగా"
+          }
+        ]
+      }
+    },
+    "ashta_ganas": [
+      {
+        "id": "GANA-01",
+        "name": {
+          "sa": "म-गणः",
+          "iast": "Ma-gaṇa",
+          "te": "మ-గణము",
+          "hi": "म-गण",
+          "en": "Molossus (Ma-gaṇa)"
+        },
+        "symbol": "ऽ ऽ ऽ",
+        "pattern": "सर्वगुरुः (Guru-Guru-Guru)",
+        "mnemonic": "मा-ता-रा",
+        "presiding_deity": {
+          "sa": "भूमिः (पृथ्वी)",
+          "en": "Earth",
+          "hi": "पृथ्वी",
+          "te": "భూమి"
+        },
+        "result": {
+          "sa": "शुभम् / श्रीप्रदम्",
+          "en": "Auspiciousness, Wealth & Prosperity",
+          "hi": "धन एवं ऐश्वर्य",
+          "te": "సంపద మరియు శుభము"
+        }
+      },
+      {
+        "id": "GANA-02",
+        "name": {
+          "sa": "न-गणः",
+          "iast": "Na-gaṇa",
+          "te": "న-గణము",
+          "hi": "न-गण",
+          "en": "Tribrach (Na-gaṇa)"
+        },
+        "symbol": "। । ।",
+        "pattern": "सर्वलघुः (Laghu-Laghu-Laghu)",
+        "mnemonic": "न-स-ल",
+        "presiding_deity": {
+          "sa": "स्वर्गः (द्यौः)",
+          "en": "Heaven / Sky",
+          "hi": "स्वर्ग",
+          "te": "స్వర్గము"
+        },
+        "result": {
+          "sa": "आयुःप्रदम्",
+          "en": "Longevity & Vitality",
+          "hi": "दीर्घायुष्य",
+          "te": "ఆయుర్వృద్ధి"
+        }
+      },
+      {
+        "id": "GANA-03",
+        "name": {
+          "sa": "भ-गणः",
+          "iast": "Bha-gaṇa",
+          "te": "భ-గణము",
+          "hi": "भ-गण",
+          "en": "Dactyl (Bha-gaṇa)"
+        },
+        "symbol": "ऽ । ।",
+        "pattern": "आदिगुरुः (Guru-Laghu-Laghu)",
+        "mnemonic": "भा-न-स",
+        "presiding_deity": {
+          "sa": "चन्द्रः",
+          "en": "Moon",
+          "hi": "चन्द्रमा",
+          "te": "చంద్రుడు"
+        },
+        "result": {
+          "sa": "सुयशः / कीर्तिः",
+          "en": "Fame, Glory & Radiance",
+          "hi": "यश एवं कीर्ति",
+          "te": "కీర్తి మరియు ప్రసిద్ధి"
+        }
+      },
+      {
+        "id": "GANA-04",
+        "name": {
+          "sa": "य-गणः",
+          "iast": "Ya-gaṇa",
+          "te": "య-గణము",
+          "hi": "य-गण",
+          "en": "Bacchius (Ya-gaṇa)"
+        },
+        "symbol": "। ऽ ऽ",
+        "pattern": "आदिलघुः (Laghu-Guru-Guru)",
+        "mnemonic": "य-मा-ता",
+        "presiding_deity": {
+          "sa": "जलम् (वरुणः)",
+          "en": "Water (Varuṇa)",
+          "hi": "जल",
+          "te": "జలము (వరుణుడు)"
+        },
+        "result": {
+          "sa": "वृद्धिः / लाभः",
+          "en": "Growth, Increase & Prosperity",
+          "hi": "वृद्धि और उन्नति",
+          "te": "వృద్ధి మరియు లాభము"
+        }
+      },
+      {
+        "id": "GANA-05",
+        "name": {
+          "sa": "ज-गणः",
+          "iast": "Ja-gaṇa",
+          "te": "జ-గణము",
+          "hi": "ज-गण",
+          "en": "Amphibrach (Ja-gaṇa)"
+        },
+        "symbol": "। ऽ ।",
+        "pattern": "मध्यगुरुः (Laghu-Guru-Laghu)",
+        "mnemonic": "ज-भा-न",
+        "presiding_deity": {
+          "sa": "सूर्यः",
+          "en": "Sun",
+          "hi": "सूर्य",
+          "te": "సూర్యుడు"
+        },
+        "result": {
+          "sa": "रोगप्रदम् (अशुभम्)",
+          "en": "Illness, Heat & Discord (Inauspicious initial)",
+          "hi": "रोग एवं क्लेश",
+          "te": "రోగము మరియు కష్టము"
+        }
+      },
+      {
+        "id": "GANA-06",
+        "name": {
+          "sa": "र-गणः",
+          "iast": "Ra-gaṇa",
+          "te": "ర-గణము",
+          "hi": "र-गण",
+          "en": "Cretic / Amphimacer (Ra-gaṇa)"
+        },
+        "symbol": "ऽ । ऽ",
+        "pattern": "मध्यलघुः (Guru-Laghu-Guru)",
+        "mnemonic": "रा-ज-भा",
+        "presiding_deity": {
+          "sa": "अग्निः",
+          "en": "Fire (Agni)",
+          "hi": "अग्नि",
+          "te": "అగ్నిదేవుడు"
+        },
+        "result": {
+          "sa": "विनाशप्रदम् (अशुभम्)",
+          "en": "Destruction, Loss & Burning",
+          "hi": "विनाश एवं भय",
+          "te": "వినాశనము మరియు నష్టము"
+        }
+      },
+      {
+        "id": "GANA-07",
+        "name": {
+          "sa": "स-गणः",
+          "iast": "Sa-gaṇa",
+          "te": "స-గణము",
+          "hi": "स-गण",
+          "en": "Anapaest (Sa-gaṇa)"
+        },
+        "symbol": "। । ऽ",
+        "pattern": "अन्तगुरुः (Laghu-Laghu-Guru)",
+        "mnemonic": "स-ल-गा",
+        "presiding_deity": {
+          "sa": "वायुः",
+          "en": "Wind (Vāyu)",
+          "hi": "वायु",
+          "te": "వాయువు"
+        },
+        "result": {
+          "sa": "भ्रमणम् / गमनम्",
+          "en": "Travel, Restlessness & Movement",
+          "hi": "भ्रमण और यात्रा",
+          "te": "దేశాటనము మరియు ప్రయాణము"
+        }
+      },
+      {
+        "id": "GANA-08",
+        "name": {
+          "sa": "त-गणः",
+          "iast": "Ta-gaṇa",
+          "te": "త-గణము",
+          "hi": "त-गण",
+          "en": "Antibacchius (Ta-gaṇa)"
+        },
+        "symbol": "ऽ ऽ ।",
+        "pattern": "अन्तलघुः (Guru-Guru-Laghu)",
+        "mnemonic": "ता-रा-ज",
+        "presiding_deity": {
+          "sa": "आकाशः",
+          "en": "Ether / Sky",
+          "hi": "आकाश",
+          "te": "ఆకాశము"
+        },
+        "result": {
+          "sa": "रिक्तता / धननाशः",
+          "en": "Emptiness, Loss of Wealth",
+          "hi": "शून्यता और धनहानि",
+          "te": "శూన్యత మరియు ధనవ్యయము"
+        }
+      }
+    ],
+    "vritta_classification": {
+      "sama_vritta": {
+        "name_sa": "समवृत्तम्",
+        "name_en": "Isometric Metre (Sama-vṛtta)",
+        "name_te": "సమవృత్తము",
+        "name_hi": "समवृत्त",
+        "definition_sa": "यस्य सर्वे चत्वारः पादाः समानाक्षर-समानगणयुक्ता भवन्ति।",
+        "definition_en": "Where all four quarters (pādas) possess an identical number of syllables and follow the exact same gaṇa sequence (e.g. Indravajrā, Vasantatilakā, Mandākrāntā).",
+        "definition_hi": "जिसके चारों चरणों में अक्षरों तथा गणों का क्रम पूर्णतः समान होता है।",
+        "definition_te": "నాల్గు పాదములలోను అక్షరముల సంఖ్య మరియు గణముల క్రమము సమానముగా నుండునది."
+      },
+      "ardhasama_vritta": {
+        "name_sa": "अर्धसमवृत्तम्",
+        "name_en": "Semi-Isometric Metre (Ardhasama-vṛtta)",
+        "name_te": "అర్థసమవృత్తము",
+        "name_hi": "अर्धसमवृत्त",
+        "definition_sa": "यस्य प्रथमतृतीयौ पादौ समौ, द्वितीयचतुर्थौ च समौ भवतः।",
+        "definition_en": "Where the 1st and 3rd quarters share one identical structure, while the 2nd and 4th quarters share another distinct structure (e.g. Viyoginī, Puṣpitāgrā).",
+        "definition_hi": "जिसके प्रथम एवं तृतीय चरण समान हों तथा द्वितीय एवं चतुर्थ चरण भिन्न किन्तु परस्पर समान हों।",
+        "definition_te": "ఒకటి, మూడు పాదములు ఒక విధముగాను, రెండు, నాలుగు పాదములు వేరొక విధముగాను సమానముగా నుండునది."
+      },
+      "vishama_vritta": {
+        "name_sa": "विषमवृत्तम्",
+        "name_en": "Heterogeneous Metre (Viṣama-vṛtta)",
+        "name_te": "విషమవృత్తము",
+        "name_hi": "विषमवृत्त",
+        "definition_sa": "यस्य चतुर्ष्वपि पादेषु लक्षणं भिन्नं भवति।",
+        "definition_en": "Where all four quarters possess distinct syllable counts and divergent gaṇa distributions (e.g. Udgatā).",
+        "definition_hi": "जिसके चारों चरणों में अक्षरों और गणों की व्यवस्था भिन्न-भिन्न होती है।",
+        "definition_te": "నాల్గు పాదములలోను వేర్వేరు అక్షరములు మరియు గణములుండునది."
+      },
+      "jati_matra_vritta": {
+        "name_sa": "जातिः / मात्रावृत्तम्",
+        "name_en": "Moraic Metres (Jāti / Mātrā-vṛtta)",
+        "name_te": "మాత్రాఛందస్సు (జాతులు)",
+        "name_hi": "मात्रावृत्त (जाति)",
+        "definition_sa": "यत्र वर्णसङ्ख्या अनियता, केवलं मात्राणां गणना भवति (यथा आर्या, गीतिः, वैतालीयं च)।",
+        "definition_en": "Where metrical rhythm is regulated solely by moraic counts (mātrās) rather than fixed syllable sequences (e.g. Āryā, Gīti, Vaitālīya).",
+        "definition_hi": "जहाँ अक्षरों की संख्या नियत न होकर केवल मात्राओं (१ अथवा २) की गणना की जाती है।",
+        "definition_te": "అక్షరముల నియమము లేక కేవలము మాత్రల లెక్కపై ఆధారపడి నడచు ఛందస్సు (ఉదా: ఆర్యావృత్తము, గీతి)."
+      }
+    },
+    "twenty_six_akshara_chandas_classes": [
+      {
+        "tier": 1,
+        "name_sa": "उक्था",
+        "syllables_per_pada": 1,
+        "total_syllables": 4,
+        "example_vrittas": "श्रीः"
+      },
+      {
+        "tier": 2,
+        "name_sa": "अत्युक्था",
+        "syllables_per_pada": 2,
+        "total_syllables": 8,
+        "example_vrittas": "स्त्री, का"
+      },
+      {
+        "tier": 3,
+        "name_sa": "मध्या",
+        "syllables_per_pada": 3,
+        "total_syllables": 12,
+        "example_vrittas": "नारी, मृगी"
+      },
+      {
+        "tier": 4,
+        "name_sa": "प्रतिष्ठा",
+        "syllables_per_pada": 4,
+        "total_syllables": 16,
+        "example_vrittas": "कन्या"
+      },
+      {
+        "tier": 5,
+        "name_sa": "सुप्रतिष्ठा",
+        "syllables_per_pada": 5,
+        "total_syllables": 20,
+        "example_vrittas": "पङ्क्तिः, प्रिया"
+      },
+      {
+        "tier": 6,
+        "name_sa": "गायत्री",
+        "syllables_per_pada": 6,
+        "total_syllables": 24,
+        "example_vrittas": "तनुमध्या, विद्युन्माला"
+      },
+      {
+        "tier": 7,
+        "name_sa": "उष्णिह्",
+        "syllables_per_pada": 7,
+        "total_syllables": 28,
+        "example_vrittas": "मधुमती, कुमारललिता"
+      },
+      {
+        "tier": 8,
+        "name_sa": "अनुष्टुप्",
+        "syllables_per_pada": 8,
+        "total_syllables": 32,
+        "example_vrittas": "श्लोक (पथ्यावक्त्र), प्रमाणिका, समानिका, चित्रपदा"
+      },
+      {
+        "tier": 9,
+        "name_sa": "बृहती",
+        "syllables_per_pada": 9,
+        "total_syllables": 36,
+        "example_vrittas": "भुजगशिशुभृता, हालमुखी"
+      },
+      {
+        "tier": 10,
+        "name_sa": "पङ्क्तिः",
+        "syllables_per_pada": 10,
+        "total_syllables": 40,
+        "example_vrittas": "शुद्धविराट्, पणवः, रुक्मवती, मयूरसारिणी"
+      },
+      {
+        "tier": 11,
+        "name_sa": "त्रिष्टुप्",
+        "syllables_per_pada": 11,
+        "total_syllables": 44,
+        "example_vrittas": "इन्द्रवज्रा, उपेन्द्रवज्रा, उपजातिः, शालिनी, वातोर्मिः, रथोद्धता, स्वागता, दोधकम्"
+      },
+      {
+        "tier": 12,
+        "name_sa": "जगती",
+        "syllables_per_pada": 12,
+        "total_syllables": 48,
+        "example_vrittas": "वंशस्थम्, इन्द्रवंशा, तोटकम्, द्रुतविलम्बितम्, भुजङ्गप्रयातम्, स्रग्विणी, प्रमिताक्षरा"
+      },
+      {
+        "tier": 13,
+        "name_sa": "अतिजगती",
+        "syllables_per_pada": 13,
+        "total_syllables": 52,
+        "example_vrittas": "प्रहर्षिणी, रुचिरा, मञ्जुभाषिणी, मत्तमयूरम्"
+      },
+      {
+        "tier": 14,
+        "name_sa": "शक्वरी",
+        "syllables_per_pada": 14,
+        "total_syllables": 56,
+        "example_vrittas": "वसन्ततिलका, अपराजिता, प्रहरणकलिका"
+      },
+      {
+        "tier": 15,
+        "name_sa": "अतिशक्वरी",
+        "syllables_per_pada": 15,
+        "total_syllables": 60,
+        "example_vrittas": "मालिनी, चामरम्, तूणकम्"
+      },
+      {
+        "tier": 16,
+        "name_sa": "अष्टिः",
+        "syllables_per_pada": 16,
+        "total_syllables": 64,
+        "example_vrittas": "पञ्चचामरम्, वाणिनी, ऋषभगजविलसितम्"
+      },
+      {
+        "tier": 17,
+        "name_sa": "अत्यष्टिः",
+        "syllables_per_pada": 17,
+        "total_syllables": 68,
+        "example_vrittas": "शिखरिणी, मन्दाक्रान्ता, हरिणी, पृथ्वी, नर्कुटकम्"
+      },
+      {
+        "tier": 18,
+        "name_sa": "धृतिः",
+        "syllables_per_pada": 18,
+        "total_syllables": 72,
+        "example_vrittas": "शार्दूलललितम्, कुसुमविचित्रा, हरिनर्तकम्"
+      },
+      {
+        "tier": 19,
+        "name_sa": "अतिधृतिः",
+        "syllables_per_pada": 19,
+        "total_syllables": 76,
+        "example_vrittas": "शार्दूलविक्रीडितम्, मेघविस्फूर्जिता"
+      },
+      {
+        "tier": 20,
+        "name_sa": "कृतिः",
+        "syllables_per_pada": 20,
+        "total_syllables": 80,
+        "example_vrittas": "सुवदना, शोभावती, वृत्तम्"
+      },
+      {
+        "tier": 21,
+        "name_sa": "प्रकृतिः",
+        "syllables_per_pada": 21,
+        "total_syllables": 84,
+        "example_vrittas": "स्रग्धरा"
+      },
+      {
+        "tier": 22,
+        "name_sa": "आकृतिः",
+        "syllables_per_pada": 22,
+        "total_syllables": 88,
+        "example_vrittas": "भद्रकम्, मदिरा"
+      },
+      {
+        "tier": 23,
+        "name_sa": "विकृतिः",
+        "syllables_per_pada": 23,
+        "total_syllables": 92,
+        "example_vrittas": "मत्तक्रीडा"
+      },
+      {
+        "tier": 24,
+        "name_sa": "संस्कृतिः",
+        "syllables_per_pada": 24,
+        "total_syllables": 96,
+        "example_vrittas": "तन्वी, किरीटम्"
+      },
+      {
+        "tier": 25,
+        "name_sa": "अभिकृतिः",
+        "syllables_per_pada": 25,
+        "total_syllables": 100,
+        "example_vrittas": "क्रौञ्चपदा"
+      },
+      {
+        "tier": 26,
+        "name_sa": "उत्कृतिः",
+        "syllables_per_pada": 26,
+        "total_syllables": 104,
+        "example_vrittas": "भुजङ्गविजृम्भितम्, अपवाहः"
+      }
+    ]
+  },
+  "total_vrittas_cataloged": 30,
+  "vrittas": [
+    {
+      "id": "VRIT-001",
+      "name": {
+        "sa": "अनुष्टुप् (श्लोकः / पथ्यावक्त्रम्)",
+        "iast": "Anuṣṭup (Ślokaḥ / Pathyāvaktram)",
+        "te": "అనుష్టుప్ (శ్లోకము)",
+        "hi": "अनुष्टुप् (श्लोक)",
+        "en": "Anuṣṭubh / Classic Śloka"
+      },
+      "chandas_class": {
+        "tier": 8,
+        "name_sa": "अनुष्टुप्",
+        "syllables_per_pada": 8,
+        "total_syllables": 32,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta / Vaktra)"
+      },
+      "gana_structure": {
+        "description_sa": "पञ्चमं सर्वत्र लघु, षष्ठं सर्वत्र गुरु, द्वितीय-चतुर्थयोः सप्तमं ह्रस्वं (लघु), प्रथम-तृतीययोः सप्तमं गुरु।",
+        "symbols_pada_1_3": "x x x x । ऽ ऽ x",
+        "symbols_pada_2_4": "x x x x । ऽ । x",
+        "syllables_per_pada": 8
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (प्रति ८ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (8 syllables)",
+        "yati_te": "ప్రతి పాదాంతమున (8 అక్షరములకు)",
+        "yati_hi": "प्रत्येक पाद के अन्त में (८ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "श्लोके षष्ठं गुरु ज्ञेयं सर्वत्र लघु पञ्चमम् ।\nद्विचतुष्पादयोर्ह्रस्वं सप्तमं दीर्घमन्ययोः ॥",
+        "sloka_te": "శ్లోకే షష్ఠం గురు జ్ఞేయం సర్వత్ర లఘు పఞ్చమమ్ ।\nద్విచతుష్పాదయోర్హ్రస్వం సప్తమం దీర్ఘమన్యయోః ॥",
+        "source_reference": "छन्दोमञ्जरी (२.२) / वृत्तरत्नाकरः (२.३)",
+        "meaning_sa": "श्लोकस्य सर्वेषु चतुर्षु पादेषु पञ्चमं वर्णं लघु (।), षष्ठं च गुरु (ऽ) भवति। द्वितीये चतुर्थे च पादे सप्तमो वर्णो ह्रस्वः (लघु), प्रथमे तृतीये च पादे सप्तमो वर्णो गुरुर्भवति।",
+        "meaning_en": "In a Śloka, the 5th syllable is light (Laghu) across all four pādas, the 6th is heavy (Guru) across all quarters. The 7th syllable is light in the 2nd and 4th pādas, but heavy in the 1st and 3rd pādas.",
+        "meaning_te": "శ్లోకము యొక్క నాల్గు పాదములలోను 5వ అక్షరము లఘువుగాను, 6వ అక్షరము గురువుగాను ఉండును. 2, 4 పాదములలో 7వ అక్షరము లఘువుగాను, 1, 3 పాదములలో 7వ అక్షరము గురువుగాను ఉండును.",
+        "meaning_hi": "श्लोक के चारों चरणों में ५वाँ वर्ण लघु और ६ठा वर्ण गुरु होता है। दूसरे और चौथे चरण में ७वाँ वर्ण ह्रस्व (लघु) तथा पहले और तीसरे चरण में ७वाँ वर्ण गुरु होता है।"
+      },
+      "primary_example": {
+        "sloka_sa": "वागर्थाविव सम्पृक्तौ वागर्थप्रतिपत्तये ।\nजगतः पितरौ वन्दे पार्वतीपरमेश्वरौ ॥",
+        "sloka_te": "వాగర్థావివ సమ్పృక్తౌ వాగర్థప్రతిపత్తయే ।\nజగతః పితరౌ వన్దే పార్వతీపరమేశ్వరౌ ॥",
+        "anvaya": "वागर्थौ इव सम्पृक्तौ, वागर्थप्रतिपत्तये, जगतः पितरौ पार्वतीपरमेश्वरौ वन्दे ।",
+        "source_reference": "कालिदासकृत-रघुवंशम् (१.१)",
+        "scansion": {
+          "pada_1": "वा ग र्था वि व सं पृ क्तौ  (ऽ ऽ ऽ । । ऽ ऽ ऽ) [५म लघु, ६ष्ठ गुरु, ७म गुरु]",
+          "pada_2": "वा ग र्थ प्र ति प त्त ये  (ऽ ऽ ऽ । । ऽ । ऽ) [५म लघु, ६ष्ठ गुरु, ७म लघु]",
+          "pada_3": "ज ग तः पि त रौ व न्दे  (। । ऽ । । ऽ ऽ ऽ) [५म लघु, ६ष्ठ गुरु, ७म गुरु]",
+          "pada_4": "पार् व ती प र मेश् व रौ (ऽ । ऽ । । ऽ । ऽ) [५म लघु, ६ष्ठ गुरु, ७म लघु]"
+        },
+        "bhaava_sa": "यथा शब्दार्थौ नित्यसम्बद्धौ भवतः, तथैव सम्यक् शब्दार्थज्ञानार्थम् अहम् अखिलविश्वस्य जनकौ पार्वतीपरमेश्वरौ प्रणमामि।",
+        "bhaava_en": "United like speech and meaning, for the purpose of correctly understanding words and their sense, I bow down to the parents of the universe, Pārvatī and Parameśvara (Śiva).",
+        "bhaava_te": "వాక్కు మరియు అర్థము ఎట్లు విడదీయరానివో అట్లే పరస్పరము సంలగ్నమైయున్న జగన్మాతాపితరులైన పార్వతీపరమేశ్వరులకు వాగర్థముల సమ్యక్ జ్ఞానము కొఱకు ప్రణమిల్లుచున్నాను.",
+        "bhaava_hi": "वाणी और अर्थ के समान नित्य मिले हुए, शब्द और अर्थ के सम्यक् ज्ञान की प्राप्ति के लिए, सम्पूर्ण जगत् के माता-पिता पार्वती और भगवान् शिव को मैं प्रणाम करता हूँ।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र प्रथमे पादे 'सम्पृक्तौ' (। ऽ ऽ), द्वितीये 'प्रतिपत्तये' (। ऽ ।), तृतीये 'पितरौ वन्दे' (। ऽ ऽ), चतुर्थे 'परमेश्वरौ' (। ऽ ।)। अतः ५मं सर्वत्र लघु, ६ष्ठं सर्वत्र गुरु, विषमपादयोः ७मं गुरु, समपादयोः ७मं लघु इति श्लोकलक्षणं पूर्णतया सङ्गच्छते।",
+        "en": "In odd quarters (1 & 3), syllables 5-6-7 form Laghu-Guru-Guru (। ऽ ऽ). In even quarters (2 & 4), they form Laghu-Guru-Laghu (। ऽ ।). Thus, the classical Pathyāvaktra Anuṣṭubh rule is fulfilled.",
+        "te": "1, 3 పాదములలో 5, 6, 7 అక్షరములు వరుసగా లఘు-గురు-గురువులు (। ऽ ऽ) గాను; 2, 4 పాదములలో లఘు-గురు-లఘువులు (। ऽ ।) గాను ఉండుటచే నిది శ్లోక లక్షణమును సంపూర్ణముగా సరిపోల్చుచున్నది.",
+        "hi": "यहाँ १म और ३य पाद में ५वाँ, ६ठा, ७वाँ अक्षर '। ऽ ऽ' है तथा २य और ४थे पाद में '। ऽ ।' है। अतः श्लोक का लक्षण पूर्णतः घटित होता है।"
+      }
+    },
+    {
+      "id": "VRIT-002",
+      "name": {
+        "sa": "इन्द्रवज्रा",
+        "iast": "Indravajrā",
+        "te": "ఇంద్రవజ్రా",
+        "hi": "इन्द्रवज्रा",
+        "en": "Indravajrā"
+      },
+      "chandas_class": {
+        "tier": 11,
+        "name_sa": "त्रिष्टुप्",
+        "syllables_per_pada": 11,
+        "total_syllables": 44,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "त-गणः, त-गणः, ज-गणः, गुरुः, गुरुः",
+        "symbols": "ऽ ऽ ।   ऽ ऽ ।   । ऽ ।   ऽ   ऽ",
+        "syllables_per_pada": 11
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (११ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (11 syllables)",
+        "yati_te": "పాదము చివర (11 అక్షరములకు)",
+        "yati_hi": "पाद के अन्त में (११ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "स्यादिन्द्रवज्रा यदि तौ जगौ गः ।",
+        "sloka_te": "స్యాదిన్ద్రవజ్రా యది తౌ జగౌ గః ।",
+        "source_reference": "छन्दोमञ्जरी (२.१६) / वृत्तरत्नाकरः (३.२१)",
+        "meaning_sa": "यस्य पादे क्रमशः तगणद्वयं (तौ), ततो जगणः, तदनन्तरं च गुरुद्वयं (गौ, गः) भवेत्, तद् इन्द्रवज्रा-वृत्तं भवति।",
+        "meaning_en": "If a metre contains in each quarter two Ta-gaṇas, followed by a Ja-gaṇa, and concluded by two Gurus (Ta, Ta, Ja, Ga, Ga = 11 syllables), it is called Indravajrā.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా రెండు త-గణములు, పిమ్మట ఒక జ-గణము, తరువాత రెండు గురువులు (త, త, జ, గ, గ = 11 అక్షరములు) ఉన్నచో అది ఇంద్రవజ్రా వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः दो त-गण, एक ज-गण और अन्त में दो गुरु वर्ण (त, त, ज, गा, गा) हों, उसे इन्द्रवज्रा कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "अर्थो हि कन्या परकीय एव\nतामद्य सम्प्रेष्य परिग्रहीतुः ।\nजातो ममायं विशदः प्रकामं\nप्रत्यर्पितन्यास इवान्तरात्मा ॥",
+        "sloka_te": "అర్థో హి కన్యా పరకీయ ఏవ\nతామద్య సమ్ప్రేష్య పరిగ్రహీతుః ।\nజాతో మమాయం విశదః ప్రకామం\nప్రత్యర్పితన్యాస ఇవాన్తరాత్మా ॥",
+        "anvaya": "कन्या परकीयः अर्थः हि; अद्य तां परिग्रहीतुः सम्प्रेष्य, अयं मम अन्तरात्मा प्रत्यर्पितन्यासः इव प्रकामं विशदः जातः ।",
+        "source_reference": "कालिदासकृत-अभिज्ञानशाकुन्तलम् (४.२२)",
+        "scansion": {
+          "pada_1": "अ र्थो हि (ऽ ऽ ।) | क न्या प (ऽ ऽ ।) | र की य (। ऽ ।) | ए व (ऽ ऽ)",
+          "pada_2": "ता म द्य (ऽ ऽ ।) | स म्प्रे ष्य (ऽ ऽ ।) | प रि ग्र (। ऽ ।) | ही तुः (ऽ ऽ)",
+          "pada_3": "जा तो म (ऽ ऽ ।) | मा यं वि (ऽ ऽ ।) | श दः प्र (। ऽ ।) | का मं (ऽ ऽ)",
+          "pada_4": "प्र त्य र्पि (ऽ ऽ ।) | त न्या स (ऽ ऽ ।) | इ वा न्त (। ऽ ।) | रा त्मा (ऽ ऽ)"
+        },
+        "bhaava_sa": "कन्या वस्तुतः परस्य धनम् अस्ति। अद्य तां पत्युः पार्श्वे प्रेषयित्वा मम अन्तरात्मा धरोहरं समर्प्य यथा कश्चित् शान्तः भवति, तथा अतीव प्रसन्नः शान्तश्च जातः।",
+        "bhaava_en": "A daughter is truly another's treasure. Having sent her today to her husband, my inner soul has become exceedingly serene and tranquil, like that of a trustee who has returned a sacred deposit.",
+        "bhaava_te": "కన్యక నిజముగా ఇతరుల (భర్తృకులము) సొత్తే గదా! నేడు ఆమెను భర్త వద్దకు పంపి, ఇతరుల ద్రవ్యమును దాచి మరల భద్రముగా వారికి అప్పగించిన ధర్మపరుని వలె నా అంతరాత్మ పరమ ప్రశాంతతను పొందినది.",
+        "bhaava_hi": "कन्या वास्तव में पराया धन होती है। आज उसे उसके पति के घर भेजकर मेरी अन्तरात्मा ऐसी अत्यन्त निर्मल और सन्तुष्ट हो गई है, जैसे किसी धरोहर को उसके वास्तविक स्वामी को लौटाकर कोई निश्चिन्त हो जाता है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र सर्वेषु पादेषु 'ऽ ऽ ।' (त), 'ऽ ऽ ।' (त), '। ऽ ।' (ज), 'ऽ ऽ' (ग, ग) इति क्रमेण एकादश वर्णाः वर्तन्ते। अतः शुद्धम् इन्द्रवज्रावृत्तम्।",
+        "en": "Every pāda precisely scans as Ta-gaṇa (ऽऽ।), Ta-gaṇa (ऽऽ।), Ja-gaṇa (।ऽ।), and two Gurus (ऽ ऽ), fulfilling the 11-syllable Indravajrā rule.",
+        "te": "ప్రతి పాదమునందును త-గణము (ऽऽ।), త-గణము (ऽऽ।), జ-గణము (।ऽ।), గురువు, గురువు (ऽ ऽ) క్రమమున 11 అక్షరములుండుటచే నిది శుద్ధ ఇంద్రవజ్ర.",
+        "hi": "यहाँ प्रत्येक चरण में तगण (ऽऽ।), तगण (ऽऽ।), जगण (।ऽ।), और दो गुरु (ऽऽ) मिलकर ११ वर्ण हैं। अतः यह इन्द्रवज्रा छन्द का प्रमाणिक उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-003",
+      "name": {
+        "sa": "उपेन्द्रवज्रा",
+        "iast": "Upendravajrā",
+        "te": "ఉపేంద్రవజ్రా",
+        "hi": "उपेन्द्रवज्रा",
+        "en": "Upendravajrā"
+      },
+      "chandas_class": {
+        "tier": 11,
+        "name_sa": "त्रिष्टुप्",
+        "syllables_per_pada": 11,
+        "total_syllables": 44,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "ज-गणः, त-गणः, ज-गणः, गुरुः, गुरुः",
+        "symbols": "। ऽ ।   ऽ ऽ ।   । ऽ ।   ऽ   ऽ",
+        "syllables_per_pada": 11
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (११ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (11 syllables)",
+        "yati_te": "పాదము చివర (11 అక్షరములకు)",
+        "yati_hi": "पाद के अन्त में (११ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "उपेन्द्रवज्रा जतजास्ततो गौ ।",
+        "sloka_te": "ఉపేన్ద్రవజ్రా జతజాస్తతో గౌ ।",
+        "source_reference": "छन्दोमञ्जरी (२.१७) / वृत्तरत्नाकरः (३.२२)",
+        "meaning_sa": "यस्य चरणे आदौ जगणः, ततस्तगणः, पुनर्जगणः, ततश्च गुरुद्वयं भवेत्, तद् उपेन्द्रवज्रा। (इन्द्रवज्रायाः प्रथमवर्णस्य लघुकरणे उपेन्द्रवज्रा भवति)।",
+        "meaning_en": "When a quarter begins with a Ja-gaṇa, followed by a Ta-gaṇa, another Ja-gaṇa, and ends with two Gurus (Ja, Ta, Ja, Ga, Ga = 11 syllables), it is Upendravajrā. It differs from Indravajrā only in its initial light syllable.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా జ-గణము, త-గణము, జ-గణము మరియు రెండు గురువులు (జ, త, జ, గ, గ = 11 అక్షరములు) ఉన్నచో అది ఉపేంద్రవజ్రా వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः जगण, तगण, जगण और अन्त में दो गुरु (ज, त, ज, गा, गा) वर्ण हों, उसे उपेन्द्रवज्रा कहते हैं। यह इन्द्रवज्रा से केवल प्रथम वर्ण के लघु होने में भिन्न है।"
+      },
+      "primary_example": {
+        "sloka_sa": "त्वमेव माता च पिता त्वमेव\nत्वमेव बन्धुश्च सखा त्वमेव ।\nत्वमेव विद्या द्रविणं त्वमेव\nत्वमेव सर्वं मम देवदेव ॥",
+        "sloka_te": "త్వమేవ మాతా చ పితా త్వమేవ\nత్వమేవ బన్ధుశ్చ సఖా త్వమేవ ।\nత్వమేవ విద్యా ద్రవిణం త్వమేవ\nత్వమేవ సర్వం మమ దేవదేవ ॥",
+        "anvaya": "हे देवदेव! त्वम् एव माता, त्वम् एव पिता च; त्वम् एव बन्धुः, त्वम् एव सखा च; त्वम् एव विद्या, त्वम् एव द्रविणम्; त्वम् एव मम सर्वम् ।",
+        "source_reference": "प्रपन्नगीता / पाण्डवगीता (श्लोक २८)",
+        "scansion": {
+          "pada_1": "त्व मे व (। ऽ ।) | मा ता च (ऽ ऽ ।) | पि ता त्व (। ऽ ।) | मे व (ऽ ऽ)",
+          "pada_2": "त्व मे व (। ऽ ।) | ब न्धु श्च (ऽ ऽ ।) | स खा त्व (। ऽ ।) | मे व (ऽ ऽ)",
+          "pada_3": "त्व मे व (। ऽ ।) | वि द्या द्र (ऽ ऽ ।) | वि णं त्व (। ऽ ।) | मे व (ऽ ऽ)",
+          "pada_4": "त्व मे व (। ऽ ।) | स र्वं म (ऽ ऽ ।) | म दे व (। ऽ ।) | दे व (ऽ ऽ)"
+        },
+        "bhaava_sa": "हे देवाधिदेव! भवानेव मम जननी, भवानेव मम पिता, भवानेव मम आत्मीयः बन्धुः, भवानेव अभिन्नमित्रम्, भवानेव मम ज्ञानं, भवानेव परमधनम्, सर्वमपि भवानेव।",
+        "bhaava_en": "You alone are my mother, and You alone are my father; You alone are my kin, and You alone are my beloved friend; You alone are my wisdom, and You alone are my wealth; O Lord of Lords, You are my all in all.",
+        "bhaava_te": "ఓ దేవాదిదేవా! నీవే నా తల్లివి, నీవే నా తండ్రివి, నీవే నా బంధుడవు, నీవే నా ప్రాణసఖుడవు, నీవే నా విద్యాసంపదవు, నీవే నా సర్వస్వము.",
+        "bhaava_hi": "हे देवों के देव! तुम्हीं मेरी माता हो, तुम्हीं पिता हो, तुम्हीं बन्धु हो और तुम्हीं मित्र हो। तुम्हीं मेरी विद्या हो और तुम्हीं मेरी सम्पत्ति हो। हे प्रभो! तुम्हीं मेरे सब कुछ हो।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र 'त्वमेव' इति प्रथमवर्णस्य लघुत्वात् '। ऽ ।' (ज), ततः 'ऽ ऽ ।' (त), पुनश्च '। ऽ ।' (ज), अन्ते च 'ऽ ऽ' (ग, ग) इति लक्षणं चतुर्ष्वपि पादेषु निर्दुष्टतया घटते।",
+        "en": "Because 'tvameva' starts with a light syllable (/tva/ before non-conjunct /m/), each pāda begins with Ja-gaṇa (।ऽ।), followed by Ta-gaṇa (ऽऽ।), Ja-gaṇa (।ऽ।), and two Gurus (ऽ ऽ).",
+        "te": "ప్రతి పాదమునందును మొదట జ-గణము (।ऽ।), త-గణము (ऽऽ।), జ-గణము (।ऽ।), గురువు, గురువు (ऽ ऽ) అమరియుండుటచే నిది శుద్ధ ఉపేంద్రవజ్ర.",
+        "hi": "यहाँ 'त्वमेव' का प्रथम वर्ण लघु होने से प्रारम्भ में जगण (।ऽ।), तदनन्तर तगण (ऽऽ।), जगण (।ऽ।), और दो गुरु वर्ण हैं। अतः यह उपेन्द्रवज्रा का सुप्रसिद्ध उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-004",
+      "name": {
+        "sa": "उपजातिः",
+        "iast": "Upajātiḥ",
+        "te": "ఉపజాతి",
+        "hi": "उपजाति",
+        "en": "Upajāti"
+      },
+      "chandas_class": {
+        "tier": 11,
+        "name_sa": "त्रिष्टुप्",
+        "syllables_per_pada": 11,
+        "total_syllables": 44,
+        "metrical_type": "मिश्रवृत्तम् (Miśra-vṛtta / Upajāti)"
+      },
+      "gana_structure": {
+        "description_sa": "इन्द्रवज्रा-उपेन्द्रवज्रयोः पादानां संमिश्रणेन उपजातिर्भवति। अत्र केचन पादाः इन्द्रवज्रायाः (आदौ गुरुः), केचन च उपेन्द्रवज्रायाः (आदौ लघुः) भवन्ति।",
+        "syllables_per_pada": 11,
+        "varieties_count": 14
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (११ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (11 syllables)",
+        "yati_te": "ప్రతి పాదాంతమున (11 అక్షరములకు)",
+        "yati_hi": "प्रत्येक पाद के अन्त में (११ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "अनन्तरोदीरितलक्ष्मभाजौ\nपादौ यदीयावुपजातयस्ताः ।\nइत्थं किलान्यास्वपि मिश्रितासु\nवदन्ति जातिष्विदमेव नाम ॥",
+        "sloka_te": "అనన్తరోదీరితలక్ష్మభాజౌ\nపాదౌ యదీయావుపజాతయస్తాః ।\nఇత్థం కిలాన్యాస్వపి మిశ్రితాసు\nవదన్తి జాతిష్విదమేవ నామ ॥",
+        "source_reference": "छन्दोमञ्जरी (२.१८-१९) / वृत्तरत्नाकरः (३.२३)",
+        "meaning_sa": "यस्मिन् पद्ये पूर्वोक्तयोः इन्द्रवज्रोपेन्द्रवज्रयोः पादाः परस्परं मिश्रिताः स्युः, तद् उपजाति-वृत्तं भवति। एवं समानाक्षरच्छन्दसां संमिश्रणेऽपि उपजातिसंज्ञा प्रवर्तते।",
+        "meaning_en": "When a verse blends the quarters of previously defined metres (specifically Indravajrā and Upendravajrā within the 11-syllable Triṣṭubh class), it is called Upajāti. Across the four pādas, 14 distinct mathematical varieties arise.",
+        "meaning_te": "ఇంతకు పూర్వము చెప్పబడిన ఇంద్రవజ్రా మరియు ఉపేంద్రవజ్రా వృత్తముల పాదములు ఒకే శ్లోకములో కలిపి ప్రయోగింపబడినచో అది 'ఉపజాతి' వృత్తమగును.",
+        "meaning_hi": "जिस छन्द में पूर्वोक्त इन्द्रवज्रा और उपेन्द्रवज्रा के चरणों का परस्पर मिश्रण होता है, उसे उपजाति कहते हैं। चार चरणों में इनके संयोग से १४ भेद बनते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "अस्त्युत्तरस्यां दिशि देवतात्मा\nहिमालयो नाम नगाधिराजः ।\nपूर्वापरौ तोयनिधी वगाह्य\nस्थितः पृथिव्या इव मानदण्डः ॥",
+        "sloka_te": "అస్త్యుత్తరస్యాం దిశి దేవతాత్మా\nహిమాలయో నామ నగాధిరాజః ।\nపూర్వాపరౌ తోయనిధీ వగాహ్య\nస్థితః పృథివ్యా ఇవ మానదణ్డః ॥",
+        "anvaya": "उत्तरस्यां दिशि देवतात्मा हिमालयः नाम नगाधिराजः अस्ति, यः पूर्वापरौ तोयनिधी अवगाह्य पृथिव्याः मानदण्डः इव स्थितः ।",
+        "source_reference": "कालिदासकृत-कुमारसम्भवम् (१.१)",
+        "scansion": {
+          "pada_1": "अस्त्युत्तरस्यां दिशि देवतात्मा (ऽ ऽ । ऽ ऽ । । ऽ । ऽ ऽ) [इन्द्रवज्रा - आदिगुरु]",
+          "pada_2": "हिमालयो नाम नगाधिराजः (। ऽ । ऽ ऽ । । ऽ । ऽ ऽ) [उपेन्द्रवज्रा - आदिलघु]",
+          "pada_3": "पूर्वापरौ तोयनिधी वगाह्य (ऽ ऽ । ऽ ऽ । । ऽ । ऽ ऽ) [इन्द्रवज्रा - आदिगुरु]",
+          "pada_4": "स्थितः पृथिव्या इव मानदण्डः (। ऽ । ऽ ऽ । । ऽ । ऽ ऽ) [उपेन्द्रवज्रा - आदिलघु]"
+        },
+        "bhaava_sa": "उत्तरस्यां दिशि देवस्वरूपः पर्वतानां राजा हिमालयः विराजते, यः पूर्वपश्चिमयोः समुद्रयोः अवगाहनं कृत्वा भूमेः मापदण्ड इव स्थितः अस्ति।",
+        "bhaava_en": "In the northern direction stands the divine-souled king of mountains named Himālaya, who, dipping into the eastern and western oceans, stands like the measuring rod of the earth.",
+        "bhaava_te": "ఉత్తర దిక్కున దేవతాస్వరూపుడు, పర్వతరాజైన హిమాలయుడు కలడు. అతడు తూర్పు పడమర సముద్రములలో మునిగి, భూమిని కొలుచు కొలబద్ద వలె ఠీవిగా నిలబడియున్నాడు.",
+        "bhaava_hi": "उत्तर दिशा में देवताओं की आत्मा स्वरूप पर्वतों का राजा हिमालय विद्यमान है, जो पूर्वी और पश्चिमी दोनों महासागरों में प्रविष्ट होकर मानों पृथ्वी को नापने वाले दण्ड के समान स्थित है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र प्रथमे तृतीये च पादे आदौ गुरुवर्णात् 'इन्द्रवज्रा' (त-त-ज-ग-ग); द्वितीये चतुर्थे च पादे आदौ लघुवर्णात् 'उपेन्द्रवज्रा' (ज-त-ज-ग-ग)। अनयोः सुसंयोजनात् उपजातिवृत्तम्।",
+        "en": "Pādas 1 & 3 begin with a heavy syllable (Indravajrā), while Pādas 2 & 4 begin with a light syllable (Upendravajrā). This alternating combination forms the Upajāti metre.",
+        "te": "1, 3 పాదములు ఇంద్రవజ్రతోను, 2, 4 పాదములు ఉపేంద్రవజ్రతోను కూడియుండుటచే నిది కాళిదాస మహాకవిచే రచింపబడిన సుప్రసిద్ధ ఉపజాతి వృత్తము.",
+        "hi": "यहाँ प्रथम एवं तृतीय पाद में इन्द्रवज्रा है तथा द्वितीय एवं चतुर्थ पाद में उपेन्द्रवज्रा है। दोनों के इस सुन्दर मिश्रण से उपजाति छन्द निष्पन्न हुआ है।"
+      }
+    },
+    {
+      "id": "VRIT-005",
+      "name": {
+        "sa": "वंशस्थम्",
+        "iast": "Vaṁśastham",
+        "te": "వంశస్థము",
+        "hi": "वंशस्थ",
+        "en": "Vaṁśastha"
+      },
+      "chandas_class": {
+        "tier": 12,
+        "name_sa": "जगती",
+        "syllables_per_pada": 12,
+        "total_syllables": 48,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "ज-गणः, त-गणः, ज-गणः, र-गणः",
+        "symbols": "। ऽ ।   ऽ ऽ ।   । ऽ ।   ऽ । ऽ",
+        "syllables_per_pada": 12
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (१२ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (12 syllables)",
+        "yati_te": "ప్రతి పాదాంతమున (12 అక్షరములకు)",
+        "yati_hi": "प्रत्येक पाद के अन्त में (१२ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "जतौ तु वंशस्थमुदीरितं जरौ ।",
+        "sloka_te": "జతౌ తు వంశస్థముదీరితం జరౌ ।",
+        "source_reference": "छन्दोमञ्जरी (२.२३) / वृत्तरत्नाकरः (३.३०)",
+        "meaning_sa": "यस्य पादे क्रमशः जगणः (ज), तगणः (तौ), पुनर्जगणः (ज), रगणश्च (रौ) भवन्ति, तद् द्वादशाक्षरं वंशस्थवृत्तं भवति।",
+        "meaning_en": "A 12-syllable metre having in each quarter the gaṇa order of Ja-gaṇa, Ta-gaṇa, Ja-gaṇa, and Ra-gaṇa (Ja, Ta, Ja, Ra = 12 syllables) is defined as Vaṁśastha.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా జ-గణము, త-గణము, జ-గణము మరియు ర-గణము (జ, త, జ, ర = 12 అక్షరములు) ఉన్నచో అది వంశస్థ వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः जगण, तगण, जगण और रगण (ज, त, ज, र = १२ वर्ण) आते हैं, उसे वंशस्थ वृत्त कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "भवन्ति नम्रास्तरवः फलोद्गमैर्\nनवाम्बुभिर्भूरिविलम्बिनो घनाः ।\nअनुद्धताः सत्पुरुषाः समृद्धिभिः\nस्वभाव एवैष परोपकारिणाम् ॥",
+        "sloka_te": "భవన్తి నమ్రాస్తరవః ఫలోద్గమైర్\nనవామ్బుభిర్భూరివిలమ్బినో ఘనాః ।\nఅనుద్ధతాః సత్పురుషాః సమృద్ధిభిః\nస్వభావ ఏవైష పరోపకారిణామ్ ॥",
+        "anvaya": "तरवः फलोद्गमैः नम्राः भवन्ति, घनाः नवाम्बुभिः भूरिविलम्बिनः (भवन्ति), सत्पुरुषाः समृद्धिभिः अनुद्धताः (भवन्ति), एषः परोपकारिणां स्वभावः एव ।",
+        "source_reference": "भर्तृहरिकृत-नीतिशतकम् (श्लोक ६२)",
+        "scansion": {
+          "pada_1": "भ व न्ति (। ऽ ।) | न म्रा स्त (ऽ ऽ ।) | र वः फ (। ऽ ।) | लो द्ग मैः (ऽ । ऽ)",
+          "pada_2": "न वा म्बु (। ऽ ।) | भि र्भू रि (ऽ ऽ ।) | वि ल म्बि (। ऽ ।) | नो घ नाः (ऽ । ऽ)",
+          "pada_3": "अ नु द्ध (। ऽ ।) | ताः स त्पु (ऽ ऽ ।) | रु षाः स (। ऽ ।) | मृ द्धि भिः (ऽ । ऽ)",
+          "pada_4": "स्व भा व (। ऽ ।) | ए वै ष (ऽ ऽ ।) | प रो प (। ऽ ।) | का रि णाम् (ऽ । ऽ)"
+        },
+        "bhaava_sa": "फलैः युक्ताः वृक्षाः नम्राः भवन्ति, नूतनजलपूर्णाः मेघाः भूमौ अवनमन्ति, धनैः युक्ताः अपि सज्जनाः अहङ्काररहिताः भवन्ति। एषः परोपकारिणां सहजः स्वभावः।",
+        "bhaava_en": "Trees bend down when laden with fruit; clouds hang low when laden with fresh rain; noble people remain humble and modest even in great wealth and prosperity. Such is the innate nature of benevolent souls.",
+        "bhaava_te": "చెట్లు ఫలములు కాచినప్పుడు వంగును; మేఘములు నీటితో నిండినప్పుడు క్రిందికి దిగును; సజ్జనులు సంపదలు కలిగినను వినయముతో నుందురు. పరోపకారులకు నిది సహజ స్వభావము.",
+        "bhaava_hi": "फलों के आने से वृक्ष झुक जाते हैं, नवीन जल के भार से मेघ नीचे लटक जाते हैं, और समृद्धि पाकर भी सत्पुरुष विनम्र बने रहते हैं। परोपकारी पुरुषों का यह स्वाभाविक स्वभाव ही है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र सर्वेषु पादेषु क्रमशः जगणः (। ऽ ।), तगणः (ऽ ऽ ।), जगणः (। ऽ ।), रगणः (ऽ । ऽ) इति द्वादशवर्णानां सङ्गतेः वंशस्थवृत्तम्।",
+        "en": "Each quarter consists of exactly 12 syllables scanning as Ja-gaṇa (।ऽ।), Ta-gaṇa (ऽऽ।), Ja-gaṇa (।ऽ।), and Ra-gaṇa (ऽ।ऽ), fulfilling the Vaṁśastha metre.",
+        "te": "ప్రతి పాదమునందును జ, త, జ, ర అను గణక్రమములో 12 అక్షరములుండుటచే నిది వంశస్థ వృత్తము.",
+        "hi": "यहाँ चारों चरणों में क्रमशः जगण, तगण, जगण, और रगण के क्रम से १२ वर्ण हैं। अतः यह वंशस्थ छन्द का आदर्श उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-006",
+      "name": {
+        "sa": "भुजङ्गप्रयातम्",
+        "iast": "Bhujangaprayātam",
+        "te": "భుజంగప్రయాతము",
+        "hi": "भुजङ्गप्रयात",
+        "en": "Bhujangaprayāta"
+      },
+      "chandas_class": {
+        "tier": 12,
+        "name_sa": "जगती",
+        "syllables_per_pada": 12,
+        "total_syllables": 48,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "चत्वारः य-गणाः (य, य, य, य)",
+        "symbols": "। ऽ ऽ   । ऽ ऽ   । ऽ ऽ   । ऽ ऽ",
+        "syllables_per_pada": 12
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (१२ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (12 syllables)",
+        "yati_te": "ప్రతి పాదాంతమున (12 అక్షరములకు)",
+        "yati_hi": "प्रत्येक पाद के अन्त में (१२ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "भुजङ्गप्रयातं चतुर्भिर्यकारैः ।",
+        "sloka_te": "భుజఙ్గప్రయాతం చతుర్భిర్యకారైః ।",
+        "source_reference": "छन्दोमञ्जरी (२.२६) / वृत्तरत्नाकरः (३.३४)",
+        "meaning_sa": "यस्य प्रतिपादं चत्वारः यगणाः (य-य-य-य = १२ वर्णाः) भवन्ति, तत् सर्पवद् गमनशीलत्वात् 'भुजङ्गप्रयातम्' उच्यते।",
+        "meaning_en": "A 12-syllable metre characterized in every quarter by four successive Ya-gaṇas (Ya, Ya, Ya, Ya = 12 syllables). It is called Bhujangaprayāta because its wave-like rhythm resembles the undulating glide of a serpent.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా నాలుగు య-గణములు (య, య, య, య = 12 అక్షరములు) ఉన్నచో అది పాము కదలిక వంటి లయ గల 'భుజంగప్రయాత' వృత్తమగును.",
+        "meaning_hi": "जिसके प्रत्येक चरण में चार य-गण (य, य, य, य = १२ वर्ण) आते हैं, सर्प के समान गति वाली उस रचना को 'भुजङ्गप्रयात' कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "नमामीशमीशान निर्वाणरूपं\nविभुं व्यापकं ब्रह्म वेदस्वरूपम् ।\nनिजं निर्गुणं निर्विकल्पं निरीहं\nचिदाकाशमाकाशवासं भजेऽहम् ॥",
+        "sloka_te": "నమామీశమీశాన నిర్వాణరూపం\nవిభుం వ్యాపకం బ్రహ్మ వేదస్వరూపమ్ ।\nనిజం నిర్గుణం నిర్వికల్పం నిరీహం\nచిదాకాశమాకాశవాసం భజేఽహమ్ ॥",
+        "anvaya": "ईशानम् ईशं निर्वाणरूपं विभुं व्यापकं ब्रह्म वेदस्वरूपं निजं निर्गुणं निर्विकल्पं निरीहं चिदाकाशम् आकाशवासम् अहं नमामि भजे ।",
+        "source_reference": "गोस्वामी-तुलसीदासकृत-रुद्राष्टकम् (रामचरितमानस उत्तरकाण्ड)",
+        "scansion": {
+          "pada_1": "न मा मी (। ऽ ऽ) | श मी शा (। ऽ ऽ) | न नि र्वा (। ऽ ऽ) | ण रू पं (। ऽ ऽ)",
+          "pada_2": "वि भुं व्या (। ऽ ऽ) | प कं ब्र (। ऽ ऽ) | ह्म वे द (। ऽ ऽ) | स्व रू पम् (। ऽ ऽ)",
+          "pada_3": "नि जं नि (। ऽ ऽ) | र्गु णं नि (। ऽ ऽ) | र्वि क ल्पं (। ऽ ऽ) | नि री हं (। ऽ ऽ)",
+          "pada_4": "चि दा का (। ऽ ऽ) | श मा का (। ऽ ऽ) | श वा सं (। ऽ ऽ) | भ जे ऽहम् (। ऽ ऽ)"
+        },
+        "bhaava_sa": "मुक्तिस्वरूपम्, सर्वव्यापकं, वेदरूपं, निर्विकल्पं, चिदाकाशरूपं च परमेश्वरं शिवम् अहम् अनवरतं प्रणमामि भजामि च।",
+        "bhaava_en": "I bow to the Supreme Lord Īśāna, the embodiment of liberation, all-pervading Brahman, the very form of the Vedas, unconditioned, without attributes, changeless, and dwelling in the expanse of pure consciousness.",
+        "bhaava_te": "ముక్తిస్వరూపుడు, సర్వవ్యాపకుడు, వేదస్వరూపుడు, నిర్గుణుడు, వికారరహితుడు, జ్ఞానాకాశరూపుడైన పరమేశ్వరుని భక్తితో సేవించి ప్రణమిల్లుచున్నాను.",
+        "bhaava_hi": "हे ईशान! हे मुक्तिस्वरूप, सर्वव्यापक, ब्रह्म एवं वेदस्वरूप परमेश्वर शिव! मैं आपको प्रणाम करता हूँ। अपने स्वरूप में स्थित, निर्गुण, निर्विकल्प, इच्छारहित तथा आकाश के समान सर्वत्र व्याप्त चिदाकाश रूप आपको मैं भजता हूँ।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र चतसृष्वपि पङ्क्तिषु चतुर्वारं '। ऽ ऽ' (य-गणः) इत्येव दृश्यते। अतः भुजङ्गप्रयातवृत्तम्।",
+        "en": "All four quarters are constructed uniformly with four Ya-gaṇas (। ऽ ऽ  । ऽ ऽ  । ऽ ऽ  । ऽ ऽ), establishing pure Bhujangaprayāta.",
+        "te": "నాల్గు పాదములలోను వరుసగా నాలుగు య-గణములు (। ऽ ऽ) మాత్రమే ఉండుటచే నిది పరమ పవిత్రమైన భుజంగప్రయాత వృత్తము.",
+        "hi": "यहाँ चारों चरणों में चार यगण (।ऽऽ) की आवृत्ति से १२ वर्ण हैं। अतः यह भुजङ्गप्रयात वृत्त का प्रमाणिक उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-007",
+      "name": {
+        "sa": "तोटकम्",
+        "iast": "Toṭakam",
+        "te": "తోటకము",
+        "hi": "तोटक",
+        "en": "Toṭaka"
+      },
+      "chandas_class": {
+        "tier": 12,
+        "name_sa": "जगती",
+        "syllables_per_pada": 12,
+        "total_syllables": 48,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "चत्वारः स-गणाः (स, स, स, स)",
+        "symbols": "। । ऽ   । । ऽ   । । ऽ   । । ऽ",
+        "syllables_per_pada": 12
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (१२ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (12 syllables)",
+        "yati_te": "ప్రతి పాదాంతమున (12 అక్షరములకు)",
+        "yati_hi": "प्रत्येक पाद के अन्त में (१२ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "इह तोटकमम्बुधिसैः प्रमितम् ।",
+        "sloka_te": "ఇహ తోటకమమ్బుధిసైః ప్రమితమ్ ।",
+        "source_reference": "छन्दोमञ्जरी (२.२७) / वृत्तरत्नाकरः (३.३५)",
+        "meaning_sa": "यस्मिन् वृत्ते प्रतिपादं चत्वारः (अम्बुधि = ४) सगणाः (स-स-स-स) भवन्ति, तत् तोटकम्।",
+        "meaning_en": "A 12-syllable metre formed in each quarter by four successive Sa-gaṇas (Ambhi = 4 Sa-gaṇas: Sa, Sa, Sa, Sa = 12 syllables). Its brisk and galloping tempo makes it ideal for energetic hymns.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా నాలుగు స-గణములు (స, స, స, స = 12 అక్షరములు) ఉన్నచో అది తోటక వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में चार (अम्बुधि = ४) स-गण (। । ऽ) आते हैं, उसे तोटक वृत्त कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "विदिताखिलशास्त्रसुधाजलधे\nमहितोपनिषत्कथितार्थनिधे ।\nहृदये कलये विमलं चरणं\nभव शङ्कर देशिक मे शरणम् ॥",
+        "sloka_te": "విదితాఖిలశాస్త్రసుధాజలధే\nమహితోపనిషత్కథితార్థనిధే ।\nహృదయే కలయే విమలం చరణం\nభవ శఙ్కర దేశిక మే శరణమ్ ॥",
+        "anvaya": "हे विदिताखिलशास्त्रसुधाजलधे! हे महितोपनिषत्कथितार्थनिधे! (अहं) हृदये (तव) विमलं चरणं कलये (ध्यायामि); हे शङ्कर देशिक! मे शरणं भव ।",
+        "source_reference": "तोटकाचार्यविरचित-तोटकाष्टकम् (श्लोक १)",
+        "scansion": {
+          "pada_1": "वि दि ता (। । ऽ) | खि ल शा (। । ऽ) | स्त्र सु धा (। । ऽ) | ज ल धे (। । ऽ)",
+          "pada_2": "म हि तो (। । ऽ) | प नि ष (। । ऽ) | त्क थि ता (। । ऽ) | र्थ नि धे (। । ऽ)",
+          "pada_3": "हृ द ये (। । ऽ) | क ल ये (। । ऽ) | वि म लं (। । ऽ) | च र णं (। । ऽ)",
+          "pada_4": "भ व श (। । ऽ) | ङ्क र दे (। । ऽ) | शि क मे (। । ऽ) | श र णम् (। । ऽ)"
+        },
+        "bhaava_sa": "हे समस्तशास्त्ररूपामृतसागरस्य ज्ञातः! हे उपनिषदर्थनिधे! अहं हृदये तव पावनं चरणं ध्यायामि; हे श्रीशङ्कराचार्य गुरुदेव! मह्यं शरणं भव।",
+        "bhaava_en": "O Ocean of the nectar of all known scriptures! O Treasury of the supreme truths taught in the holy Upaniṣads! I meditate on Your stainless feet in my heart; O master Śaṅkara, be my sole refuge!",
+        "bhaava_te": "సమస్త శాస్త్రములనెడి అమృత సముద్రమును త్రాగిన ఓ గురుదేవా! ఉపనిషత్తుల పరమార్థములకు నిధియైన ఓ శంకరాచార్యా! నా హృదయమున నీ నిర్మల చరణములను ధ్యానించుచున్నాను. నాకు శరణు కమ్ము.",
+        "bhaava_hi": "हे समस्त शास्त्रों के अमृतरूपी समुद्र के ज्ञाता! हे उपनिषदों द्वारा प्रतिपादित गूढ़ अर्थों के निधान! मैं अपने हृदय में आपके निर्मल चरणों का ध्यान करता हूँ। हे देशिक (सद्गुरु) शङ्कराचार्य! आप मुझे अपनी शरण प्रदान करें।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र चत्वारः सगणाः (। । ऽ  । । ऽ  । । ऽ  । । ऽ) प्रतिपादं वर्तन्ते। अतः इदं विशुद्धं तोटकवृत्तम्।",
+        "en": "Every quarter contains four consecutive Sa-gaṇas (। । ऽ   । । ऽ   । । ऽ   । । ऽ = 12 syllables), creating the signature rapid cadence of the Toṭaka metre.",
+        "te": "నాలుగు పాదములలోను వరుసగా నాలుగు స-గణములు (। । ऽ) ఉండుటచే నిది తోటకాచార్యులచే ప్రసిద్ధి చెందిన తోటక వృత్తము.",
+        "hi": "यहाँ प्रत्येक चरण में चार सगण (। । ऽ) की अविच्छिन्न आवृत्ति है। अतः यह तोटक छन्द का सर्वोत्तम उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-008",
+      "name": {
+        "sa": "द्रुतविलम्बितम्",
+        "iast": "Drutavilambitam",
+        "te": "ద్రుతవిలంబితము",
+        "hi": "द्रुतविलम्बित",
+        "en": "Drutavilambita"
+      },
+      "chandas_class": {
+        "tier": 12,
+        "name_sa": "जगती",
+        "syllables_per_pada": 12,
+        "total_syllables": 48,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "न-गणः, भ-गणः, भ-गणः, र-गणः",
+        "symbols": "। । ।   ऽ । ।   ऽ । ।   ऽ । ऽ",
+        "syllables_per_pada": 12
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (१२ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (12 syllables)",
+        "yati_te": "ప్రతి పాదాంతమున (12 అక్షరములకు)",
+        "yati_hi": "प्रत्येक पाद के अन्त में (१२ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "द्रुतविलम्बितमाह नभौ भरौ ।",
+        "sloka_te": "ద్రుతవిలమ్బితమాహ నభౌ భరౌ ।",
+        "source_reference": "छन्दोमञ्जरी (२.२८) / वृत्तरत्नाकरः (३.३६)",
+        "meaning_sa": "यस्य चरणे क्रमशः नगणः, भगणः, द्वितीयो भगणः, रगणश्च (न, भ, भ, र) भवन्ति, तत् द्रुतविलम्बितं वृत्तम्।",
+        "meaning_en": "A 12-syllable metre having in each quarter a Na-gaṇa, two Bha-gaṇas, and a Ra-gaṇa (Na, Bha, Bha, Ra = 12 syllables). It starts fast (druta) and glides smoothly into a slow cadence (vilambita).",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా న-గణము, భ-గణము, భ-గణము మరియు ర-గణము (న, భ, భ, ర = 12 అక్షరములు) ఉన్నచో అది ద్రుతవిలంబిత వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः नगण, भगण, भगण और रगण (न, भ, भ, र = १२ वर्ण) हों, उसे द्रुतविलम्बित कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "अभिमुखीमभिवीक्ष्य मुखं वधूः\nसहचरीवचनैरवधीरितम् ।\nचकितमेत्य शनैरुपगूहितुं\nव्यधत वेपथुमुत्सुकचेतसा ॥",
+        "sloka_te": "అభిముఖీమభివీక్ష్య ముఖం వధూః\nసహచరీవచనైరవధీరితమ్ ।\nచకితమేత్య శనైరుపగూహితుం\nవ్యధత వేపథుముత్సుకచేతసా ॥",
+        "anvaya": "सहचरीवचनैः अवधीरिता वधूः अभिमुखीम् अभिवीक्ष्य चकितम् एत्य उत्सुकचेतसा शनैः उपगूहितुं वेपथुं व्यधत ।",
+        "source_reference": "कालिदासकृत-रघुवंशम् / किरातार्जुनीयम्",
+        "scansion": {
+          "pada_1": "अ भि मु (। । ।) | खी म भि (ऽ । ।) | वी क्ष्य मु (ऽ । ।) | खं व धूः (ऽ । ऽ)",
+          "pada_2": "स ह च (। । ।) | री व च (ऽ । ।) | नै र व (ऽ । ।) | धी रि तम् (ऽ । ऽ)",
+          "pada_3": "च कि त (। । ।) | मे त्य श (ऽ । ।) | नै रु प (ऽ । ।) | गू हि तुम् (ऽ । ऽ)",
+          "pada_4": "व्य ध त (। । ।) | वे प थु (ऽ । ।) | मु त्सु क (ऽ । ।) | चे त सा (ऽ । ऽ)"
+        },
+        "bhaava_sa": "सखीनां वचनानि श्रुत्वा लज्जया आकुला नववधूः पत्युः सम्मुखं दृष्ट्वा भयचकितभावेन शनैः शनैः आलिङ्गनार्थम् उत्सुकहृदयेन कम्पनम् अकरोत्।",
+        "bhaava_en": "Urged by the playful words of her companions, the bashful bride, looking towards her beloved and approaching timorously, experienced a tremor in her eager heart as she softly prepared to embrace him.",
+        "bhaava_te": "చెలికత్తెల పలుకులచే ప్రోత్సహింపబడిన నవవధువు భర్త వైపు చూచి, భయపడుచు నెమ్మదిగా సమీపించి ఉత్సుకతతో వణకుచు ఆలింగనమునకు సిద్ధమయ్యెను.",
+        "bhaava_hi": "सखियों के कहने पर लजाती हुई नववधू अपने प्रियतम को सम्मुख देखकर चकित भाव से धीरे-धीरे आगे बढ़ी और उत्कण्ठित हृदय से आलिङ्गन करते हुए काँपने लगी।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र सर्वेषु पादेषु नगणः (। । ।), भगणः (ऽ । ।), भगणः (ऽ । ।), रगणः (ऽ । ऽ) इति द्वादशवर्णानां यथोक्तनियमः अस्ति।",
+        "en": "Every quarter precisely conforms to Na-gaṇa (।।।), Bha-gaṇa (ऽ।।), Bha-gaṇa (ऽ।।), and Ra-gaṇa (ऽ।ऽ), scanning 12 syllables.",
+        "te": "నాల్గు పాదములలోను న, భ, భ, ర అను గణములు సరిగ్గా కుదిరినవి కావున ద్రుతవిలంబితము.",
+        "hi": "यहाँ चारों चरणों में नगण, भगण, भगण और रगण का क्रम स्पष्ट है, अतः द्रुतविलम्बित वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-009",
+      "name": {
+        "sa": "वसन्ततिलका",
+        "iast": "Vasantatilakā",
+        "te": "వసంతతిలక",
+        "hi": "वसन्ततिलका",
+        "en": "Vasantatilakā"
+      },
+      "chandas_class": {
+        "tier": 14,
+        "name_sa": "शक्वरी",
+        "syllables_per_pada": 14,
+        "total_syllables": 56,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "त-गणः, भ-गणः, ज-गणः, ज-गणः, गुरुः, गुरुः",
+        "symbols": "ऽ ऽ ।   ऽ । ।   । ऽ ।   । ऽ ।   ऽ   ऽ",
+        "syllables_per_pada": 14
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (अथवा ८, ६ वर्णेषु)",
+        "yati_en": "At 8th and 6th syllables, or at the end of each quarter",
+        "yati_te": "8 మరియు 6వ అక్షరముల వద్ద (లేదా పాదాంతమున)",
+        "yati_hi": "८ और ६ वर्णों पर यति (अथवा पादान्त में)"
+      },
+      "lakshana": {
+        "sloka_sa": "उक्ता वसन्ततिलका तभजा जगौ गः ।",
+        "sloka_te": "ఉక్తా వసన్తతిలకా తభజా జగౌ గః ।",
+        "source_reference": "छन्दोमञ्जरी (२.३४) / वृत्तरत्नाकरः (३.५०)",
+        "meaning_sa": "यस्य पादे क्रमशः तगणः, भगणः, जगणद्वयं (ज, ज), ततश्च गुरुद्वयं (गौ, गः) भवेत्, तत् चतुर्दशाक्षरं वसन्ततिलकावृत्तं भवति।",
+        "meaning_en": "A 14-syllable metre consisting of a Ta-gaṇa, Bha-gaṇa, two Ja-gaṇas, and two concluding Gurus (Ta, Bha, Ja, Ja, Ga, Ga = 14 syllables). Celebrated as the very ornament (tilaka) of spring.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా త-గణము, భ-గణము, రెండు జ-గణములు మరియు రెండు గురువులు (త, భ, జ, జ, గ, గ = 14 అక్షరములు) ఉన్నచో అది వసంతతిలకా వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः तगण, भगण, दो जगण और अन्त में दो गुरु (त, भ, ज, ज, गा, गा = १४ वर्ण) आते हैं, उसे वसन्ततिलका कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "रम्याणि वीक्ष्य मधुरांश्च निशम्य शब्दान्\nपर्युत्सुकीभवति यत्सुखितोऽपि जन्तुः ।\nतच्चेतसा स्मरति नूनमबोधपूर्वं\nभावस्थिराणि जननान्तरसौहृदानि ॥",
+        "sloka_te": "రమ్యాణి వీక్ష్య మధురాంశ్చ నిశమ్య శబ్దాన్\nపర్యుత్సుకీభవతి యత్సుఖితోఽపి జన్తుః ।\nతచ్చేతసా స్మరతి నూనమబోధపూర్వం\nభావస్థిరాణి జననాన్తరసౌహృదాని ॥",
+        "anvaya": "सुखितः अपि जन्तुः रम्याणि (वस्तूनि) वीक्ष्य मधुरान् च शब्दान् निशम्य यत् पर्युत्सुकी भवति, (तत्) नूनम् अबोधपूर्वं चेतसा भावस्थिराणि जननान्तरसौहृदानि स्मरति ।",
+        "source_reference": "कालिदासकृत-अभिज्ञानशाकुन्तलम् (५.२)",
+        "scansion": {
+          "pada_1": "र म्या णि (ऽ ऽ ।) | वी क्ष्य म (ऽ । ।) | धु रां श्च (। ऽ ।) | नि श म्य (। ऽ ।) | श ब्दान् (ऽ ऽ)",
+          "pada_2": "प र्यु त्सु (ऽ ऽ ।) | की भ व (ऽ । ।) | ति य त्सु (। ऽ ।) | खि तो ऽपि (। ऽ ।) | ज न्तुः (ऽ ऽ)",
+          "pada_3": "त च्चे त (ऽ ऽ ।) | सा स्म र (ऽ । ।) | ति नू न (। ऽ ।) | म बो ध (। ऽ ।) | पू र्वं (ऽ ऽ)",
+          "pada_4": "भा व स्थि (ऽ ऽ ।) | रा णि ज (ऽ । ।) | न ना न्त (। ऽ ।) | र सौ हृ (। ऽ ।) | दा नि (ऽ ऽ)"
+        },
+        "bhaava_sa": "सुखितः अपि जनः रमणीयानि दृश्यानि दृष्ट्वा मधुरान् ध्वनीन् च श्रुत्वा यद् उत्कण्ठितो भवति, तत् निश्चयेन अज्ञातरूपेण मनसा जन्मान्तरीयाणि हृदि दृढप्रतिष्ठितानि सौहृदानि स्मरति।",
+        "bhaava_en": "Even a happy person turns wistful on seeing beautiful sights and hearing sweet sounds; surely, without knowing it, the mind is then recalling friendships of earlier births that lie firmly rooted in the heart.",
+        "bhaava_te": "సుఖముగా నున్నవాడును రమణీయ దృశ్యములను చూచి, మధుర శబ్దములను విని ఉత్కంఠితుడగుట — అది నిశ్చయముగా తనకు తెలియకయే మనస్సు హృదయమున స్థిరపడిన జన్మాంతర స్నేహములను స్మరించుటయే.",
+        "bhaava_hi": "सुखी मनुष्य भी रमणीय दृश्यों को देखकर और मधुर शब्दों को सुनकर जो उत्कण्ठित हो उठता है, वह निश्चय ही अनजाने मन से उन पूर्वजन्मों की मैत्रियों का स्मरण करता है जो हृदय में दृढ़ता से बसी हैं।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र चतुर्ष्वपि पादेषु 'ऽ ऽ ।' (त), 'ऽ । ।' (भ), '। ऽ ।' (ज), '। ऽ ।' (ज), 'ऽ ऽ' (गौ) इति चतुर्दश वर्णाः नियमेन विद्यन्ते। अतः वसन्ततिलका।",
+        "en": "All four lines rigorously scan as Ta-gaṇa (ऽऽ।), Bha-gaṇa (ऽ।।), two Ja-gaṇas (।ऽ।  ।ऽ।), and two Gurus (ऽ ऽ), total 14 syllables.",
+        "te": "నాల్గు పాదములలోను త, భ, జ, జ, గ, గ అను క్రమమున 14 అక్షరములు చక్కగా నిరూపింపబడినవి.",
+        "hi": "यहाँ चारों चरणों में तगण (ऽऽ।), भगण (ऽ।।), जगण (।ऽ।), जगण (।ऽ।) और दो गुरु (ऽ ऽ) वर्णों का पूर्ण निर्वाह है। अतः यह वसन्ततिलका वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-010",
+      "name": {
+        "sa": "मालिनी",
+        "iast": "Mālinī",
+        "te": "మాలిని",
+        "hi": "मालिनी",
+        "en": "Mālinī"
+      },
+      "chandas_class": {
+        "tier": 15,
+        "name_sa": "अतिशक्वरी",
+        "syllables_per_pada": 15,
+        "total_syllables": 60,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "न-गणः, न-गणः, म-गणः, य-गणः, य-गणः",
+        "symbols": "। । ।   । । ।   ऽ ऽ ऽ   । ऽ ऽ   । ऽ ऽ",
+        "syllables_per_pada": 15
+      },
+      "yati": {
+        "yati_sa": "अष्टभिः सप्तभिश्च (भोगिलोकैः = ८, ७ वर्णेषु)",
+        "yati_en": "After 8th and 7th syllables (8 + 7 = 15)",
+        "yati_te": "8వ మరియు 7వ అక్షరముల వద్ద (8 + 7 = 15)",
+        "yati_hi": "८ और ७ वर्णों पर (भोगि = ८ सर्प, लोक = ७ लोक)"
+      },
+      "lakshana": {
+        "sloka_sa": "ननमयययुतेयं मालिनी भोगिलोकैः ।",
+        "sloka_te": "ననమయయయుతేయం మాలినీ భోగిలోకైః ।",
+        "source_reference": "छन्दोमञ्जरी (२.३८) / वृत्तरत्नाकरः (३.५८)",
+        "meaning_sa": "यस्य पादे नगणद्वयं, मगणः, यगणद्वयं च (न, न, म, य, य = १५ वर्णाः) भवेयुः, तथा च अष्टभिः (भोगि) सप्तभिश्च (लोक) वर्णैः यतिर्भवेत्, सा 'मालिनी'।",
+        "meaning_en": "A 15-syllable metre possessing two Na-gaṇas, a Ma-gaṇa, and two Ya-gaṇas (Na, Na, Ma, Ya, Ya = 15 syllables), with a distinct caesura/pause (yati) at the 8th and 7th syllables.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా రెండు న-గణములు, ఒక మ-గణము, రెండు య-గణములు (న, న, మ, య, య = 15 అక్షరములు) ఉండి, 8 మరియు 7 అక్షరముల వద్ద విరామము (యతి) ఉన్నచో అది మాలినీ వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में दो नगण, एक मगण और दो यगण (न, न, म, य, य = १५ वर्ण) हों तथा ८वें और ७वें वर्ण पर यति हो, उसे मालिनी कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "सरसिजमनुविद्धं शैवलेनापि रम्यं\nमलिनमपि हिमांशोर्लक्ष्म लक्ष्मीं तनोति ।\nइयमधिकमनोज्ञा वल्कलेनापि तन्वी\nकिमिव हि मधुराणां मण्डनं नाकृतीनाम् ॥",
+        "sloka_te": "సరసిజమనువిద్ధం శైవలేనాపి రమ్యం\nమలినమపి హిమాంశోర్లక్ష్మ లక్ష్మీం తనోతి ।\nఇయమధికమనోజ్ఞా వల్కలేనాపి తన్వీ\nకిమివ హి మధురాణాం మణ్డనం నాకృతీనామ్ ॥",
+        "anvaya": "शैवलेन अनुविद्धम् अपि सरसिजं रम्यम्, हिमांशोः मलिनं लक्ष्म अपि लक्ष्मीं तनोति, इयं तन्वी वल्कलेन अपि अधिकमनोज्ञा (दृश्यते); मधुराणाम् आकृतीनां किं हि मण्डनं न इव ?",
+        "source_reference": "कालिदासकृत-अभिज्ञानशाकुन्तलम् (१.२०)",
+        "scansion": {
+          "pada_1": "स र सि (। । ।) | ज म नु (। । ।) | वि द्धं शै (ऽ ऽ ऽ) | व ले ना (। ऽ ऽ) | पि र म्यम् (। ऽ ऽ)",
+          "pada_2": "म लि न (। । ।) | म पि हि (। । ।) | मां शो र्ल (ऽ ऽ ऽ) | क्ष्म ल क्ष्मीं (। ऽ ऽ) | त नो ति (। ऽ ऽ)",
+          "pada_3": "इ य म (। । ।) | धि क म (। । ।) | नो ज्ञा व (ऽ ऽ ऽ) | ल्क ले ना (। ऽ ऽ) | पि त न्वी (। ऽ ऽ)",
+          "pada_4": "कि मि व (। । ।) | हि म धु (। । ।) | रा णां म (ऽ ऽ ऽ) | ण्ड नं ना (। ऽ ऽ) | कृ ती नाम् (। ऽ ऽ)"
+        },
+        "bhaava_sa": "शैवालेनावृतमपि कमलं सुन्दरं दृश्यते, चन्द्रस्य कलङ्कोऽपि तस्य शोभां वर्धयति, इयं शकुन्तला वल्कलवस्त्रेऽपि अतीव मनोहरा भाति। स्वभावसुन्दराणां शरीराणां कृते किं वस्तु आभूषणं न भवति?",
+        "bhaava_en": "The lotus is lovely even when entangled in water-weeds; the dark spot on the moon enhances its beauty; this slender maiden is charming even in a rough bark garment. What indeed is not an embellishment to naturally beautiful forms?",
+        "bhaava_te": "నాచు పట్టినను పద్మము సుందరముగానే యుండును; మచ్చ ఉన్నను చంద్రుని కాంతి పెరుగును; నారచీరలు ధరించినను శకుంతల మిక్కిలి మనోహరముగా నున్నది. సహజముగా సౌందర్యము గలవారికి ఏది అలంకారము కాదు?",
+        "bhaava_hi": "काई से ढका हुआ भी कमल सुन्दर लगता है, चन्द्रमा का कलंक भी उसकी शोभा को बढ़ाता है, और यह शकुन्तला वल्कल वस्त्र में भी अत्यन्त मनोहर लग रही है। सच है, सुन्दर आकृतियों के लिए क्या वस्तु आभूषण नहीं बन जाती!"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र न-न (।।। ।।।), म (ऽऽऽ), य-य (।ऽऽ ।ऽऽ) इति पञ्चदश वर्णाः, ८, ७ वर्णेषु च यतिः सुस्पष्टा वर्तते। अतः मालिनी।",
+        "en": "With two Na-gaṇas, one Ma-gaṇa, two Ya-gaṇas, and a caesura after 8 and 7 syllables, this famous Kālidāsa verse perfectly matches Mālinī.",
+        "te": "రెండు న-గణములు, ఒక మ-గణము, రెండు య-గణములు మరియు 8, 7 అక్షరముల వద్ద యతి పాటించబడినందున ఇది మాలినీ వృత్తము.",
+        "hi": "यहाँ दो नगण (।।। ।।।), एक मगण (ऽऽऽ) और दो यगण (।ऽऽ ।ऽऽ) होकर १५ वर्ण हैं तथा ८ और ७ पर यति है। अतः मालिनी वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-011",
+      "name": {
+        "sa": "शिखरिणी",
+        "iast": "Śikhariṇī",
+        "te": "శిఖరిణి",
+        "hi": "शिखरिणी",
+        "en": "Śikhariṇī"
+      },
+      "chandas_class": {
+        "tier": 17,
+        "name_sa": "अत्यष्टिः",
+        "syllables_per_pada": 17,
+        "total_syllables": 68,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "य-गणः, म-गणः, न-गणः, स-गणः, भ-गणः, लघुः, गुरुः",
+        "symbols": "। ऽ ऽ   ऽ ऽ ऽ   । । ।   । । ऽ   ऽ । ।   ।   ऽ",
+        "syllables_per_pada": 17
+      },
+      "yati": {
+        "yati_sa": "रसै रुद्रैश्च (६, ११ वर्णेषु)",
+        "yati_en": "After 6th and 11th syllables (Rasa = 6, Rudra = 11)",
+        "yati_te": "6 మరియు 11వ అక్షరముల వద్ద (రస = 6, రుద్ర = 11)",
+        "yati_hi": "६ और ११ वर्णों पर यति (रस = ६, रुद्र = ११)"
+      },
+      "lakshana": {
+        "sloka_sa": "रसै रुद्रैश्छिन्ना यमनसभला गः शिखरिणी ।",
+        "sloka_te": "రసై రుద్రైశ్ఛిన్నా యమనసభలా గః శిఖరిణీ ।",
+        "source_reference": "छन्दोमञ्जरी (२.४१) / वृत्तरत्नाकरः (३.८२)",
+        "meaning_sa": "यस्य पादे क्रमशः यगणः, मगणः, नगणः, सगणः, भगणः, एको लघुः, एकश्च गुरुः (य, म, न, स, भ, ल, ग = १७ वर्णाः) भवन्ति, तथा च षड्भिः (रसैः) एकादशभिश्च (रुद्रैः) यतिर्भवति, सा 'शिखरिणी'।",
+        "meaning_en": "A 17-syllable metre structured with a Ya-gaṇa, Ma-gaṇa, Na-gaṇa, Sa-gaṇa, Bha-gaṇa, a Laghu, and a Guru (Ya, Ma, Na, Sa, Bha, La, Ga = 17 syllables), with a distinct pause after the 6th (Rasa) and 11th (Rudra) syllables.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా య, మ, న, స, భ గణములు, ఒక లఘువు, ఒక గురువు (మొత్తము 17 అక్షరములు) ఉండి, 6 మరియు 11 అక్షరముల వద్ద యతి ఉన్నచో అది శిఖరిణీ వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में यगण, मगण, नगण, सगण, भगण, एक लघु और एक गुरु (य, म, न, स, भ, ल, ग = १७ वर्ण) हों तथा ६ और ११ वर्णों पर यति हो, उसे शिखरिणी कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "शिवः शक्त्या युक्तो यदि भवति शक्तः प्रभवितुं\nन चेदेवं देवो न खलु कुशलः स्पन्दितुमपि ।\nअतस्त्वामाराध्यां हरिहरविरिञ्चादिभिरपि\nप्रणन्तुं स्तोतुं वा कथमकृतपुण्यः प्रभवति ॥",
+        "sloka_te": "శివః శక్త్యా యుక్తో యది భవతి శక్తః ప్రభవితుం\nన చేదేవం దేవో న ఖలు కుశలః స్పన్దితుమపి ।\nఅతస్త్వామారాధ్యాం హరిహరవిరిఞ్చాదిభిరపి\nప్రణన్తుం స్తోతుం వా కథమకృతపుణ్యః ప్రభవతి ॥",
+        "anvaya": "शिवः यदि शक्त्या युक्तः भवति (तदा) प्रभवितुं शक्तः (भवति); एवं न चेत् देवः स्पन्दितुम् अपि न खलु कुशलः । अतः हरिहरविरिञ्चादिभिः अपि आराध्यां त्वां प्रणन्तुं स्तोतुं वा अकृतपुण्यः कथं प्रभवति ?",
+        "source_reference": "आदिशङ्कराचार्यविरचिता-सौन्दर्यलहरी (श्लोकः १)",
+        "scansion": {
+          "pada_1": "शि वः श (। ऽ ऽ) | क्त्या यु क्तो (ऽ ऽ ऽ) | य दि भ (। । ।) | व ति श (। । ऽ) | क्तः प्र भ (ऽ । ।) | वि (।) | तुं (ऽ)",
+          "pada_2": "न चे दे (। ऽ ऽ) | वं दे वो (ऽ ऽ ऽ) | न ख लु (। । ।) | कु श लः (। । ऽ) | स्प न्दि तु (ऽ । ।) | म (।) | पि (ऽ)",
+          "pada_3": "अ त स्त्वा (। ऽ ऽ) | मा रा ध्यां (ऽ ऽ ऽ) | ह रि ह (। । ।) | र वि रि (। । ऽ) | ञ्चा दि भि (ऽ । ।) | र (।) | पि (ऽ)",
+          "pada_4": "प्र ण न्तुं (। ऽ ऽ) | स्तो तुं वा (ऽ ऽ ऽ) | क थ म (। । ।) | कृ त पु (। । ऽ) | ण्यः प्र भ (ऽ । ।) | व (।) | ति (ऽ)"
+        },
+        "bhaava_sa": "शिवः शक्त्या संयुक्तः चेदेव सृष्टिं कर्तुं समर्थः भवति; अन्यथा स देवः स्पन्दितुम् अपि न शक्नोति। अतः हरिहरब्रह्मादिभिः अपि आराध्यां भवतीं नमस्कर्तुं स्तोतुं वा पुण्यहीनः कथं समर्थः स्यात्?",
+        "bhaava_en": "Śiva is able to act only when united with Śakti; without her, the Lord cannot even stir. How then can one who has not earned merit be able to bow to or praise You, who are worshipped even by Hari, Hara and Brahmā?",
+        "bhaava_te": "శివుడు శక్తితో కూడినప్పుడే సృష్టి మొదలగు కార్యములు చేయగలడు; లేనిచో ఆ దేవుడు కదలనైనా లేడు. కావున హరి హర బ్రహ్మాదులచే సైతము ఆరాధింపబడు నిన్ను నమస్కరించుటకును స్తుతించుటకును పుణ్యములేనివాడు ఎట్లు సమర్థుడగును?",
+        "bhaava_hi": "शिव शक्ति से युक्त होने पर ही सृष्टि आदि करने में समर्थ होते हैं; अन्यथा वे देव हिल-डुल भी नहीं सकते। अतः विष्णु, शिव और ब्रह्मा आदि से भी आराध्य आपको प्रणाम करने या आपकी स्तुति करने में पुण्यहीन व्यक्ति कैसे समर्थ हो सकता है?"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र य-म-न-स-भ-ल-ग इति क्रमेण १७ अक्षराणि, ६, ११ वर्णेषु च यतिः विद्यते। अतः शिखरिणी।",
+        "en": "Scanned sequentially as Ya-Ma-Na-Sa-Bha-La-Ga (17 syllables), with clear yati pauses at 6 and 11 syllables.",
+        "te": "య, మ, న, స, భ గణములు, లఘువు, గురువు మరియు 6, 11 వద్ద యతి కలిగియుండుటచే నిది శిఖరిణీ వృత్తము.",
+        "hi": "यहाँ प्रत्येक पाद में य, म, न, स, भ, ल, ग क्रम से १७ वर्ण हैं तथा रस (६) और रुद्र (११) पर यति है। अतः शिखरिणी वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-012",
+      "name": {
+        "sa": "मन्दाक्रान्ता",
+        "iast": "Mandākrāntā",
+        "te": "మందాక్రాంత",
+        "hi": "मन्दाक्रान्ता",
+        "en": "Mandākrāntā"
+      },
+      "chandas_class": {
+        "tier": 17,
+        "name_sa": "अत्यष्टिः",
+        "syllables_per_pada": 17,
+        "total_syllables": 68,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "म-गणः, भ-गणः, न-गणः, त-गणः, त-गणः, गुरुः, गुरुः",
+        "symbols": "ऽ ऽ ऽ   ऽ । ।   । । ।   ऽ ऽ ।   ऽ ऽ ।   ऽ   ऽ",
+        "syllables_per_pada": 17
+      },
+      "yati": {
+        "yati_sa": "जलधि-षड्-अगैः (४, ६, ७ वर्णेषु)",
+        "yati_en": "After 4th, 6th, and 7th syllables (4 + 6 + 7 = 17)",
+        "yati_te": "4, 6 మరియు 7వ అక్షరముల వద్ద (4 + 6 + 7 = 17)",
+        "yati_hi": "४, ६ और ७ वर्णों पर यति (जलधि = ४ समुद्र, षट् = ६, अग = ७ पर्वत)"
+      },
+      "lakshana": {
+        "sloka_sa": "मन्दाक्रान्ता जलधिषडगैर्म्भौ नतौ ताद्गुरू चेत् ।",
+        "sloka_te": "మన్దాక్రాన్తా జలధిషడగైర్మ్భౌ నతౌ తాద్గురూ చేత్ ।",
+        "source_reference": "छन्दोमञ्जरी (२.४२) / वृत्तरत्नाकरः (३.८३)",
+        "meaning_sa": "यस्य पादे क्रमशः मगणः, भगणः, नगणः, तगणद्वयं, ततश्च गुरुद्वयं (म, भ, न, त, त, ग, ग = १७ वर्णाः) भवन्ति, तथा च ४ (जलधि), ६ (षट्), ७ (अग) वर्णेषु यतिर्भवति, सा मन्दाक्रान्ता।",
+        "meaning_en": "A 17-syllable metre containing a Ma-gaṇa, Bha-gaṇa, Na-gaṇa, two Ta-gaṇas, and two Gurus (Ma, Bha, Na, Ta, Ta, Ga, Ga = 17 syllables), with three cascading pauses at the 4th, 6th, and 7th syllables (4+6+7=17). Renowned as the solitary metre of Kālidāsa's Meghadūta.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా మ, భ, న, త, త గణములు మరియు రెండు గురువులు (మొత్తము 17 అక్షరములు) ఉండి, 4, 6, 7 అక్షరముల వద్ద యతి విరామము ఉన్నచో అది మందాక్రాంతా వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में मगण, भगण, नगण, दो तगण और अन्त में दो गुरु (म, भ, न, त, त, गा, गा = १७ वर्ण) हों तथा ४, ६ और ७ वर्णों पर यति हो, उसे मन्दाक्रान्ता कहते हैं। महाकवि कालिदास का 'मेघदूतम्' इसी छन्द में निबद्ध है।"
+      },
+      "primary_example": {
+        "sloka_sa": "कश्चित्कान्ताविरहगुरुणा स्वाधिकारात्प्रमत्तः\nशापेनास्तङ्गमितमहिमा वर्षभोग्येण भर्तुः ।\nयक्षश्चक्रे जनकतनयास्नानपुण्योदकेषु\nस्निग्धच्छायातरुषु वसतिं रामगिर्याश्रमेषु ॥",
+        "sloka_te": "కశ్చిత్కాన్తావిరహగురుణా స్వాధికారాత్ప్రమత్తః\nశాపేనాస్తఙ్గమితమహిమా వర్షభోగ్యేణ భర్తుః ।\nయక్షశ్చక్రే జనకతనయాస్నానపుణ్యోదకేషు\nస్నిగ్ధచ్ఛాయాతరుషు వసతిం రామగిర్యాశ్రమేషు ॥",
+        "anvaya": "स्वाधिकारात् प्रमत्तः, भर्तुः वर्षभोग्येण कान्ताविरहगुरुणा शापेन अस्तङ्गमितमहिमा, कश्चित् यक्षः जनकतनयास्नानपुण्योदकेषु स्निग्धच्छायातरुषु रामगिर्याश्रमेषु वसतिं चक्रे ।",
+        "source_reference": "कालिदासकृत-मेघदूतम् (पूर्वमेघः श्लोक १)",
+        "scansion": {
+          "pada_1": "क श्चि त्का (ऽ ऽ ऽ) | न्ता वि र (ऽ । ।) | ह गु रु (। । ।) | णा स्वा धि (ऽ ऽ ।) | का रा त्प्र (ऽ ऽ ।) | म त्तः (ऽ ऽ)",
+          "pada_2": "शा पे ना (ऽ ऽ ऽ) | स्त ङ्ग मि (ऽ । ।) | त म हि (। । ।) | मा व र्ष (ऽ ऽ ।) | भो ग्ये ण (ऽ ऽ ।) | भ र्तुः (ऽ ऽ)",
+          "pada_3": "य क्ष श्च (ऽ ऽ ऽ) | क्रे ज न (ऽ । ।) | क त न (। । ।) | या स्ना न (ऽ ऽ ।) | पु ण्यो द (ऽ ऽ ।) | के षु (ऽ ऽ)",
+          "pada_4": "स्नि ग्ध च्छा (ऽ ऽ ऽ) | या त रु (ऽ । ।) | षु व स (। । ।) | तिं रा म (ऽ ऽ ।) | गि र्या श्र (ऽ ऽ ।) | मे षु (ऽ ऽ)"
+        },
+        "bhaava_sa": "कर्तव्यप्रमादात् स्वामिनः कुबेरस्य शापेन महिमारहितः जातः कश्चित् यक्षः स्वप्रियायाः वियोगदुःखेन व्याकुलः सन् सीतायाः स्नानपवित्रेषु रामगिर्याश्रमेषु निवासं चकार।",
+        "bhaava_en": "A certain Yakṣa, negligent in his duty and stripped of his glory by his master's curse to be endured for a year and grievous through separation from his beloved, took up his abode in the hermitages of Rāmagiri, where the waters were sanctified by the bathing of Janaka's daughter (Sītā) and shade trees flourished.",
+        "bhaava_te": "తన కర్తవ్యమునందు అలసత్వము వహించిన కారణముగా ప్రభువైన కుబేరుని శాపమునకు గురియై, ప్రియురాలి వియోగముచే కుమిలిపోవుచున్న ఒక యక్షుడు, సీతాదేవి స్నానములచే పునీతమైన జలములు గల రామగిరి ఆశ్రమ వృక్షముల నీడలో నివాసమేర్పరచుకొనెను.",
+        "bhaava_hi": "अपने कर्तव्य में प्रमाद करने के कारण स्वामी (कुबेर) के एक वर्ष पर्यन्त भोगने योग्य शाप से महिमाहीन हुआ कोई यक्ष, अपनी प्रिया के वियोग के असह्य दुःख से व्याकुल होकर, सीताजी के स्नान से पवित्र जलों वाले तथा घनी छायादार वृक्षों से युक्त रामगिरि के आश्रमों में निवास करने लगा।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र म (ऽऽऽ), भ (ऽ।।), न (।।।), त (ऽऽ।), त (ऽऽ।), ग-ग (ऽऽ) इति क्रमेण १७ अक्षराणि, ४, ६, ७ वर्णेषु च मन्द-विश्रामवती यतिः अस्ति। अतः मन्दाक्रान्ता।",
+        "en": "Structured with Ma (ऽऽऽ), Bha (ऽ।।), Na (।।।), Ta (ऽऽ।), Ta (ऽऽ।), and two Gurus (ऽऽ), accompanied by 4-6-7 yati, matching the slow, melancholic cadence of Mandākrāntā.",
+        "te": "మ, భ, న, త, త గణములు, రెండు గురువులు మరియు 4, 6, 7 అక్షరముల వద్ద విరామము (యతి) కలిగియుండుటచే నిది కాళిదాసుని జగత్ప్రసిద్ధ మందాక్రాంతా వృత్తము.",
+        "hi": "यहाँ मगण, भगण, नगण, दो तगण और दो गुरु का क्रम है तथा ४, ६, ७ वर्णों पर यति है। मन्द-मन्द गति से आक्रान्त होने के कारण यह मन्दाक्रान्ता वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-013",
+      "name": {
+        "sa": "शार्दूलविक्रीडितम्",
+        "iast": "Śārdūlavikrīḍitam",
+        "te": "శార్దూలవిక్రీడితము",
+        "hi": "शार्दूलविक्रीडित",
+        "en": "Śārdūlavikrīḍita"
+      },
+      "chandas_class": {
+        "tier": 19,
+        "name_sa": "अतिधृतिः",
+        "syllables_per_pada": 19,
+        "total_syllables": 76,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "म-गणः, स-गणः, ज-गणः, स-गणः, त-गणः, त-गणः, गुरुः",
+        "symbols": "ऽ ऽ ऽ   । । ऽ   । ऽ ।   । । ऽ   ऽ ऽ ।   ऽ ऽ ।   ऽ",
+        "syllables_per_pada": 19
+      },
+      "yati": {
+        "yati_sa": "सूर्याश्वैः (१२, ७ वर्णेषु)",
+        "yati_en": "After 12th and 7th syllables (Sūrya = 12, Aśva = 7)",
+        "yati_te": "12 మరియు 7వ అక్షరముల వద్ద (సూర్య = 12, అశ్వ = 7)",
+        "yati_hi": "१२ और ७ वर्णों पर यति (सूर्य = १२, अश्व = ७)"
+      },
+      "lakshana": {
+        "sloka_sa": "सूर्याश्वैर्मसजस्तताः सगुरवः शार्दूलविक्रीडितम् ।",
+        "sloka_te": "సూర్యాశ్వైర్మసజస్తతాః సగురవః శార్దూలవిక్రీడితమ్ ।",
+        "source_reference": "छन्दोमञ्जरी (२.४५) / वृत्तरत्नाकरः (३.९५)",
+        "meaning_sa": "यस्य प्रतिपादं मगणः, सगणः, जगणः, सगणः, तगणद्वयं, ततो गुरुश्च (म, स, ज, स, त, त, ग = १९ वर्णाः) भवन्ति, तथा च द्वादशभिः (सूर्यैः) सप्तभिश्च (अश्वैः) यतिर्भवति, तत् 'शार्दूलविक्रीडितम्'।",
+        "meaning_en": "A 19-syllable majestic metre configured with a Ma-gaṇa, Sa-gaṇa, Ja-gaṇa, Sa-gaṇa, two Ta-gaṇas, and a final Guru (Ma, Sa, Ja, Sa, Ta, Ta, Ga = 19 syllables), pausing at 12th (Sūrya) and 7th (Aśva) syllables. Named 'the playful leap of a tiger' for its magnificent power.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా మ, స, జ, స, త, త గణములు మరియు ఒక గురువు (మొత్తము 19 అక్షరములు) ఉండి, 12 మరియు 7 అక్షరముల వద్ద యతి ఉన్నచో అది పులి విన్యాసము వంటి గంభీరత గల 'శార్దూలవిక్రీడిత' వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः मगण, सगण, जगण, सगण, दो तगण और अन्त में एक गुरु (म, स, ज, स, त, त, गा = १९ वर्ण) हों तथा १२ और ७ वर्णों पर यति हो, उसे शार्दूलविक्रीडित कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "या कुन्देन्दुतुषारहारधवला या शुभ्रवस्त्रावृता\nया वीणावरदण्डमण्डितकरा या श्वेतपद्मासना ।\nया ब्रह्माच्युतशङ्करप्रभृतिभिर्देवैः सदा वन्दिता\nसा मां पातु सरस्वती भगवती निःशेषजाड्यापहा ॥",
+        "sloka_te": "యా కున్దేన్దుతుషారహారధవలా యా శుభ్రవస్త్రావృతా\nయా వీణావరదణ్డమణ్డితకరా యా శ్వేతపద్మాసనా ।\nయా బ్రహ్మాచ్యుతశఙ్కరప్రభృతిభిర్దేవైః సదా వన్దితా\nసా మాం పాతు సరస్వతీ భగవతీ నిఃశేషజాడ్యాపహా ॥",
+        "anvaya": "या कुन्देन्दुतुषारहारधवला, या शुभ्रवस्त्रावृता, या वीणावरदण्डमण्डितकरा, या श्वेतपद्मासना, या ब्रह्माच्युतशङ्करप्रभृतिभिः देवैः सदा वन्दिता, सा निःशेषजाड्यापहा भगवती सरस्वती मां पातु ।",
+        "source_reference": "सरस्वती-वन्दना (पारम्परिक-मङ्गलाचरणम्)",
+        "scansion": {
+          "pada_1": "या कु न्दे (ऽ ऽ ऽ) | न्दु तु षा (। । ऽ) | र हा र (। ऽ ।) | ध व ला (। । ऽ) | या शु भ्र (ऽ ऽ ।) | व स्त्रा वृ (ऽ ऽ ।) | ता (ऽ)",
+          "pada_2": "या वी णा (ऽ ऽ ऽ) | व र द (। । ऽ) | ण्ड म ण्डि (। ऽ ।) | त क रा (। । ऽ) | या श्वे त (ऽ ऽ ।) | प द्मा स (ऽ ऽ ।) | ना (ऽ)",
+          "pada_3": "या ब्र ह्मा (ऽ ऽ ऽ) | च्यु त श (। । ऽ) | ङ्क र प्र (। ऽ ।) | भृ ति भि (। । ऽ) | र्दे वैः स (ऽ ऽ ।) | दा व न्दि (ऽ ऽ ।) | ता (ऽ)",
+          "pada_4": "सा मां पा (ऽ ऽ ऽ) | तु स र (। । ऽ) | स्व ती भ (। ऽ ।) | ग व ती (। । ऽ) | निः शे ष (ऽ ऽ ।) | जा ड्या प (ऽ ऽ ।) | हा (ऽ)"
+        },
+        "bhaava_sa": "या कुन्दपुष्प-चन्द्र-हिम-मुक्ताहारवत् धवला अस्ति, या श्वेतवस्त्रधारिणी, वीणाभूषितकरा, श्वेतकमलासीना, ब्रह्मा-विष्णु-शिवादिभिः वन्दिता, सा अज्ञाननाशिनी भगवती सरस्वती मां रक्षतु।",
+        "bhaava_en": "May that Goddess Sarasvatī protect me—She who is fair like the jasmine, the moon, the snow, and the pearl necklace; who is robed in pristine white garments; whose hands are adorned with the divine Vīṇā; who is seated upon a white lotus; who is ever adored by Brahmā, Viṣṇu, Śiva, and other gods; and who dispels all ignorance completely.",
+        "bhaava_te": "మల్లెపువ్వు, చంద్రుడు, మంచు, ముత్యాలహారము వలె తెల్లనైనదియు, తెల్లని వస్త్రములు ధరించినదియు, చేతియందు వీణాదండమును దాల్చినదియు, తెల్లదామరపై ఆసీనురాలైనదియు, బ్రహ్మ విష్ణు మహేశ్వరులచే సదా పూజింపబడునదియు, సర్వ అజ్ఞానమును నశింపజేయునదియునైన భగవతీ సరస్వతీదేవి నన్ను రక్షించుగాక!",
+        "bhaava_hi": "जो कुन्द के फूल, चन्द्रमा, बर्फ और मोतियों के हार के समान श्वेत हैं, जो श्वेत वस्त्र धारण करती हैं, जिनके हाथ वीणा के दण्ड से सुशोभित हैं, जो श्वेत कमल पर विराजमान हैं, ब्रह्मा, विष्णु और महेश आदि देवताओं द्वारा जो सदा वन्दित हैं, वे सम्पूर्ण अज्ञान को दूर करने वाली भगवती सरस्वती मेरी रक्षा करें।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र सर्वेषु पादेषु म (ऽऽऽ), स (।।ऽ), ज (।ऽ।), स (।।ऽ), त (ऽऽ।), त (ऽऽ।), ग (ऽ) इति क्रमेण १९ अक्षराणि, तथा च द्वादशे सप्तमे च यतिः अस्ति। अतः इदं शार्दूलविक्रीडितम्।",
+        "en": "Nineteen syllables per line arranged as Ma-Sa-Ja-Sa-Ta-Ta-Ga with yati at 12 and 7 syllables, illustrating the iconic grandeur of Śārdūlavikrīḍita.",
+        "te": "మ, స, జ, స, త, త గణములు మరియు ఒక గురువుతో 19 అక్షరములు కలిగి, 12 మరియు 7వ అక్షరము వద్ద యతి విరామము గల అద్భుత శార్దూలవిక్రీడిత వృత్తము.",
+        "hi": "यहाँ प्रत्येक चरण में मगण, सगण, जगण, सगण, दो तगण और एक गुरु के क्रम से १९ वर्ण हैं तथा १२ और ७ पर यति है। अतः यह शार्दूलविक्रीडित का सर्वोत्कृष्ट उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-014",
+      "name": {
+        "sa": "स्रग्धरा",
+        "iast": "Sragdharā",
+        "te": "స్రగ్ధర",
+        "hi": "स्रग्धरा",
+        "en": "Sragdharā"
+      },
+      "chandas_class": {
+        "tier": 21,
+        "name_sa": "प्रकृतिः",
+        "syllables_per_pada": 21,
+        "total_syllables": 84,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "म-गणः, र-गणः, भ-गणः, न-गणः, य-गणः, य-गणः, य-गणः",
+        "symbols": "ऽ ऽ ऽ   ऽ । ऽ   ऽ । ।   । । ।   । ऽ ऽ   । ऽ ऽ   । ऽ ऽ",
+        "syllables_per_pada": 21
+      },
+      "yati": {
+        "yati_sa": "त्रिमुनियता (७, ७, ७ वर्णेषु)",
+        "yati_en": "Tripartite caesura at every 7th syllable (7 + 7 + 7 = 21)",
+        "yati_te": "ప్రతి 7వ అక్షరము వద్ద (7 + 7 + 7 = 21)",
+        "yati_hi": "प्रत्येक ७वें वर्ण पर यति (त्रिमुनि = ७, ७, ७)"
+      },
+      "lakshana": {
+        "sloka_sa": "म्रभ्नैर्यानां त्रयेण त्रिमुनियतियुता स्रग्धरा कीर्तितेयम् ।",
+        "sloka_te": "మ్రభ్నైర్యానాం త్రయేణ త్రిమునియతియుతా స్రగ్ధరా కీర్తితేయమ్ ।",
+        "source_reference": "छन्दोमञ्जरी (२.४७) / वृत्तरत्नाकरः (३.१०१)",
+        "meaning_sa": "यस्य पादे मगणः, रगणः, भगणः, नगणः, यगणत्रयं (म, र, भ, न, य, य, य = २१ वर्णाः) भवन्ति, तथा च प्रतिसप्तमं वर्णं (त्रिमुनि = ७, ७, ७) यतिर्भवति, सा स्रग्धरा।",
+        "meaning_en": "A 21-syllable majestic metre composed of a Ma-gaṇa, Ra-gaṇa, Bha-gaṇa, Na-gaṇa, and three Ya-gaṇas (Ma, Ra, Bha, Na, Ya, Ya, Ya = 21 syllables), with equal pauses at every 7th syllable (7+7+7=21). Named 'wearing a garland' for its continuous melodic splendour.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా మ, ర, భ, న గణములు మరియు మూడు య-గణములు (మొత్తము 21 అక్షరములు) ఉండి, ప్రతి 7 అక్షరముల వద్ద (7, 7, 7) యతి ఉన్నచో అది 'స్రగ్ధరా' వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में मगण, रगण, भगण, नगण और तीन यगण (म, र, भ, न, य, य, य = २१ वर्ण) हों तथा प्रत्येक सातवें वर्ण (त्रिमुनि = ७, ७, ७) पर यति हो, उसे स्रग्धरा कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "ग्रीवाभङ्गाभिरामं मुहुरनुपतति स्यन्दने बद्धदृष्टिः\nपश्चार्धेन प्रविष्टः शरपतनभयाद्भूयसा पूर्वकायम् ।\nदर्भैरर्धावलीढैः श्रमविवृतमुखभ्रंशिभिः कीर्णवर्त्मा\nपश्योदग्रप्लुतत्वाद्वियति बहुतरं स्तोकमुर्व्यां प्रयाति ॥",
+        "sloka_te": "గ్రీవాభఙ్గాభిరామం ముహురనుపతతి స్యన్దనే బద్ధదృష్టిః\nపశ్చార్ధేన ప్రవిష్టః శరపతనభయాద్భూయసా పూర్వకాయమ్ ।\nదర్భైరర్ధావలీఢైః శ్రమవివృతముఖభ్రంశిభిః కీర్ణవర్త్మా\nపశ్యోదగ్రప్లుతత్వాద్వియతి బహుతరం స్తోకముర్వ్యాం ప్రయాతి ॥",
+        "anvaya": "ग्रीवाभङ्गाभिरामं (यथा तथा) स्यन्दने बद्धदृष्टिः (सन्) मुहुः अनुपतति; शरपतनभयात् भूयसा पूर्वकायं पश्चार्धेन प्रविष्टः; श्रमविवृतमुखभ्रंशिभिः अर्धावलीढैः दर्भैः कीर्णवर्त्मा; पश्य, उदग्रप्लुतत्वात् वियति बहुतरं (प्रयाति), उर्व्यां स्तोकं प्रयाति ।",
+        "source_reference": "कालिदासकृत-अभिज्ञानशाकुन्तलम् (१.७)",
+        "scansion": {
+          "pada_1": "ग्री वा भ (ऽ ऽ ऽ) | ङ्गा भि रा (ऽ । ऽ) | मं मु हु (ऽ । ।) | र नु प (। । ।) | त ति स्य (। ऽ ऽ) | न्द ने ब (। ऽ ऽ) | द्ध दृ ष्टिः (। ऽ ऽ)",
+          "pada_2": "प श्चा र्धे (ऽ ऽ ऽ) | न प्र वि (ऽ । ऽ) | ष्टः श र (ऽ । ।) | प त न (। । ।) | भ या द्भू (। ऽ ऽ) | य सा पू (। ऽ ऽ) | र्व का यम् (। ऽ ऽ)",
+          "pada_3": "द र्भै र (ऽ ऽ ऽ) | र्धा व ली (ऽ । ऽ) | ढैः श्र म (ऽ । ।) | वि वृ त (। । ।) | मु ख भ्रं (। ऽ ऽ) | शि भिः की (। ऽ ऽ) | र्ण व र्त्मा (। ऽ ऽ)",
+          "pada_4": "प श्यो द (ऽ ऽ ऽ) | ग्र प्लु त (ऽ । ऽ) | त्वा द्वि य (ऽ । ।) | ति ब हु (। । ।) | त रं स्तो (। ऽ ऽ) | क मु र्व्यां (। ऽ ऽ) | प्र या ति (। ऽ ऽ)"
+        },
+        "bhaava_sa": "पश्चाद् धावन्तं राज्ञः रथं ग्रीवां परावर्त्य मनोहरतया पश्यन्, बाणभयात् पूर्वशरीरं पश्चाद्भागे प्रविशन् इव, परिश्रमात् मुखात् गलितैः अर्धखादितैः तृणैः मार्गं व्याप्नुवन्, अयं हरिणः उच्चैः उत्प्लवनात् आकाशे एव अधिकं धावति, पृथिव्यां तु अल्पमेव पदं न्यस्यति, पश्य!",
+        "bhaava_en": "Behold the fleeing deer: gracefully turning its neck ever and anon at the pursuing chariot; drawing the forepart of its body into its haunches through fear of the arrow; scattering the path with half-chewed grass dropping from its exhausted mouth; leaping so high that it seems to bound more through the sky than on the earth!",
+        "bhaava_te": "తన వెంట పడుచున్న రథము వైపు మెడను సుందరముగా త్రిప్పి చూచుచు, బాణభయముచే ముందు శరీరమును వెనుకకు ముడుచుకొనుచు, అలసటచే నోటినుండి జారిన సగము నమిలిన గడ్డితో దారినంతటినీ నింపుచు, ఆకాశమునందే ఎక్కువగా ఎగురుచు, నేలపై కొద్దిగానే పరుగెత్తుచున్న ఆ జింకను చూడుము!",
+        "bhaava_hi": "पीछे दौड़ते हुए रथ की ओर बार-बार गर्दन मोड़कर सुन्दरता से देखता हुआ, बाण के भय से पिछले शरीर में अगले शरीर को मानों समेटता हुआ, थकावट से खुले मुख से गिरते हुए आधे चबाए तिनकों से मार्ग को पाटता हुआ, यह मृग अपनी ऊँची छलाँगों के कारण आकाश में अधिक और पृथ्वी पर बहुत कम चलता हुआ दिखाई दे रहा है, देखो!"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र म (ऽऽऽ), र (ऽ।ऽ), भ (ऽ।।), न (।।।), य (।ऽऽ), य (।ऽऽ), य (।ऽऽ) इति २१ अक्षराणि, तथा च प्रतिसप्तमं वर्णं यतिः अखण्डिता वर्तते। अतः स्रग्धरावृत्तम्।",
+        "en": "Ma, Ra, Bha, Na, Ya, Ya, Ya forming 21 syllables with threefold caesura at every 7th syllable, exemplifying the majestic movement of Sragdharā.",
+        "te": "మ, ర, భ, న మరియు మూడు య-గణములతో 21 అక్షరములు కలిగి, ప్రతి 7 అక్షరములకు యతి గల అత్యంత ఉదాత్తమైన స్రగ్ధరా వృత్తము.",
+        "hi": "यहाँ प्रत्येक चरण में म, र, भ, न, य, य, य के क्रम से २१ वर्ण हैं और ७-७-७ पर त्रिमुनि यति है। अतः यह स्रग्धरा वृत्त का अद्वितीय उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-015",
+      "name": {
+        "sa": "आर्या (मात्रावृत्तम्)",
+        "iast": "Āryā (Mātrā-vṛtta)",
+        "te": "ఆర్యా (మాత్రావృత్తము)",
+        "hi": "आर्या (मात्रावृत्त)",
+        "en": "Āryā (Moraic Metre)"
+      },
+      "chandas_class": {
+        "tier": 0,
+        "name_sa": "मात्राच्छन्दः (जातिः)",
+        "syllables_per_pada": "अनियताक्षरम् (मात्रागणिता)",
+        "total_syllables": "५७ मात्राः (१२ + १८ + १२ + १५)",
+        "metrical_type": "मात्रावृत्तम् (Mātrā-vṛtta / Jāti)"
+      },
+      "gana_structure": {
+        "ganas_sa": "प्रतिपादं चतुर्मात्रिकाः गणाः (४ मात्राणां समूहाः)। प्रथमे १२ मात्राः, द्वितीये १८ मात्राः, तृतीये १२ मात्राः, चतुर्थे १५ मात्राः।",
+        "symbols": "प्रथमार्धे ३० मात्राः (१२ + १८), उत्तरार्धे २७ मात्राः (१२ + १५)",
+        "syllables_per_pada": "Mora-dependent"
+      },
+      "yati": {
+        "yati_sa": "प्रतिगणं पादान्ते च",
+        "yati_en": "At the end of each 4-mora foot and quarter boundaries",
+        "yati_te": "ప్రతి 4 మాత్రల గణము మరియు పాదాంతమున",
+        "yati_hi": "प्रत्येक चार मात्राओं के गण और चरणान्त पर"
+      },
+      "lakshana": {
+        "sloka_sa": "यस्याः पादे प्रथमे द्वादश मात्रास्तथा तृतीयेऽपि ।\nअष्टादश द्वितीये चतुर्थके पञ्चदश सार्या ॥",
+        "sloka_te": "యస్యాః పాదే ప్రథమే ద్వాదశ మాత్రాస్తథా తృతీయేఽపి ।\nఅష్టాదశ ద్వితీయే చతుర్థకే పఞ్చదశ సార్యా ॥",
+        "source_reference": "छन्दोमञ्जरी (१.१२) / वृत्तरत्नाकरः (२.१)",
+        "meaning_sa": "यस्याः छन्दसः प्रथमे पादे द्वादश (१२) मात्राः, तृतीयेऽपि द्वादश (१२) मात्राः, द्वितीये अष्टादश (१८) मात्राः, चतुर्थे च पञ्चदश (१५) मात्राः भवन्ति, सा 'आर्या' जातिः।",
+        "meaning_en": "A classical moraic metre (Jāti) where the 1st quarter contains 12 morae (mātrās), the 2nd contains 18 morae, the 3rd contains 12 morae, and the 4th contains 15 morae (Total 57 morae: 30 in the first half, 27 in the second half).",
+        "meaning_te": "ఏ వృత్తము యొక్క మొదటి పాదమున 12 మాత్రలు, మూడవ పాదమున 12 మాత్రలు, రెండవ పాదమున 18 మాత్రలు, నాల్గవ పాదమున 15 మాత్రలు (మొత్తము 57 మాత్రలు) ఉండునో అది ఆర్యావృత్తమగును.",
+        "meaning_hi": "जिसके प्रथम चरण में १२ मात्राएँ, तृतीय चरण में भी १२ मात्राएँ, द्वितीय चरण में १८ मात्राएँ और चतुर्थ चरण में १५ मात्राएँ (कुल ५७ मात्राएँ) होती हैं, वह 'आर्या' जाति कहलाती है।"
+      },
+      "primary_example": {
+        "sloka_sa": "आपरितोषाद्विदुषां न साधु मन्ये प्रयोगविज्ञानम् ।\nबलवदपि शिक्षितानामात्मन्यप्रत्ययं चेतः ॥",
+        "sloka_te": "ఆపరితోషాద్విదుషాం న సాధు మన్యే ప్రయోగవిజ్ఞానమ్ ।\nబలవదపి శిక్షితానామాత్మన్యప్రత్యయం చేతః ॥",
+        "anvaya": "विदुषां परितोषात् आ (यावत्), प्रयोगविज्ञानं साधु न मन्ये; शिक्षितानाम् अपि चेतः बलवत् आत्मनि अप्रत्ययं (भवति) ।",
+        "source_reference": "कालिदासकृत-अभिज्ञानशाकुन्तलम् (१.२)",
+        "scansion": {
+          "pada_1": "आ प रि तो षा द्धि दु षां (ऽ । । ऽ ऽ । । ऽ = १२ मात्राः)",
+          "pada_2": "न सा धु म न्ये प्र यो ग वि ज्ञा नम् (। ऽ । ऽ ऽ । ऽ । ऽ ऽ ऽ = १८ मात्राः)",
+          "pada_3": "ब ल व द पि शि क्षि ता नां (। । । । । ऽ । ऽ ऽ = १२ मात्राः)",
+          "pada_4": "आ त्म न्य प्र त्य यं चे तः (ऽ ऽ ऽ ऽ । ऽ ऽ ऽ = १५ मात्राः)"
+        },
+        "bhaava_sa": "यावत् विद्वांसः सन्तुष्टाः न भवेयुः, तावत् अहम् एतस्य नाटकस्य प्रयोगकौशलं सफलं न मन्ये; यतो हि अतीव निपुणानाम् अपि चेतः स्वविषये संशययुक्तमेव भवति।",
+        "bhaava_en": "Until the wise and learned critics are fully satisfied, I do not consider our dramatic performance a true success; for even the most expertly trained minds remain diffident about their own proficiency.",
+        "bhaava_te": "విద్వాంసులు సంతోషించు వరకు నా నాటక ప్రదర్శన విజ్ఞానమును సఫలమైనదిగా భావింపను; ఎంతటి విద్యావంతులకైనను తమ యెడల తమకు విశ్వాసము చాలదు కదా!",
+        "bhaava_hi": "जब तक विद्वज्जन सन्तुष्ट न हो जाएँ, तब तक मैं अपने अभिनय-कौशल को सफल नहीं मानता; क्योंकि अत्यधिक शिक्षित और प्रवीण जनों का चित्त भी अपने विषय में अविश्वासी (संशययुक्त) ही रहता है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र प्रथमे पादे १२ मात्राः, द्वितीये १८ मात्राः, तृतीये १२ मात्राः, चतुर्थे च १५ मात्राः। पूर्वार्धे ३० मात्राः, उत्तरार्धे २७ मात्राः। आर्यायाः इदं सर्वोत्कृष्टम् उदाहरणम्।",
+        "en": "Calculated by mātrās (12 in Pāda 1, 18 in Pāda 2, 12 in Pāda 3, 15 in Pāda 4 = 57 morae total), embodying classical Āryā scansion.",
+        "te": "1వ పాదమున 12 మాత్రలు, 2వ పాదమున 18 మాత్రలు, 3వ పాదమున 12 మాత్రలు, 4వ పాదమున 15 మాత్రలు అమరియుండుటచే నిది కాళిదాసుని ప్రసిద్ధ ఆర్యావృత్తము.",
+        "hi": "यहाँ मात्राओं की गणना के अनुसार १२ + १८ + १२ + १५ = ५७ मात्राएँ हैं। अतः यह आर्या छन्द का प्रमाणिक उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-016",
+      "name": {
+        "sa": "शालिनी",
+        "iast": "Śālinī",
+        "te": "శాలిని",
+        "hi": "शालिनी",
+        "en": "Śālinī"
+      },
+      "chandas_class": {
+        "tier": 11,
+        "name_sa": "त्रिष्टुप्",
+        "syllables_per_pada": 11,
+        "total_syllables": 44,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "म-गणः, त-गणः, त-गणः, गुरुः, गुरुः",
+        "symbols": "ऽ ऽ ऽ   ऽ ऽ ।   ऽ ऽ ।   ऽ   ऽ",
+        "syllables_per_pada": 11
+      },
+      "yati": {
+        "yati_sa": "वेदैः हयैश्च (४, ७ वर्णेषु)",
+        "yati_en": "After 4th and 7th syllables (Veda = 4, Haya = 7)",
+        "yati_te": "4 మరియు 7వ అక్షరముల వద్ద (వేద = 4, హయ = 7)",
+        "yati_hi": "४ और ७ वर्णों पर यति (वेद = ४, हय/घोड़े = ७)"
+      },
+      "lakshana": {
+        "sloka_sa": "शालिन्युक्ता म्तौ तगौ गोऽब्धिलोकैः ।",
+        "sloka_te": "శాలిన్యుక్తా మ్తౌ తగౌ గోఽబ్ధిలోకైః ।",
+        "source_reference": "छन्दोमञ्जरी (२.२१) / वृत्तरत्नाकरः (३.२६)",
+        "meaning_sa": "यस्य पादे क्रमशः मगणः, तगणद्वयं, ततश्च गुरुद्वयं (म, त, त, ग, ग = ११ वर्णाः) भवन्ति, तथा च चतुर्भिः (अब्धि) सप्तभिश्च (लोक) यतिर्भवति, सा शालिनी।",
+        "meaning_en": "An 11-syllable metre consisting of a Ma-gaṇa, two Ta-gaṇas, and two Gurus (Ma, Ta, Ta, Ga, Ga = 11 syllables), with yati at the 4th (Abdhi) and 7th (Loka) syllables.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా మ, త, త గణములు మరియు రెండు గురువులు (మొత్తము 11 అక్షరములు) ఉండి, 4 మరియు 7 అక్షరముల వద్ద యతి ఉన్నచో అది శాలినీ వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः मगण, दो तगण और अन्त में दो गुरु (म, त, त, गा, गा = ११ वर्ण) हों तथा ४ और ७ वर्णों पर यति हो, उसे शालिनी कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "साधोर्विद्या सत्यशौचाभिरामा\nधर्मापेता नो कदापीह लोके ।\nदीने दत्ते यश्च वित्तं विपाके\nधन्यो लोके शालिनी तस्य कीर्तिः ॥",
+        "sloka_te": "సాధోర్విద్యా సత్యశౌచాభిరామా\nధర్మాపేతా నో కదాపీహ లోకే ।\nదీనే దత్తే యశ్చ విత్తం విపాకే\nధన్యో లోకే శాలినీ తస్య కీర్తిః ॥",
+        "anvaya": "इह लोके साधोः विद्या सत्यशौचाभिरामा धर्मापेता नो कदापि (भवति); यः दीने वित्तं दत्ते, सः विपाके लोके धन्यः, तस्य कीर्तिः शालिनी (भवति) ।",
+        "source_reference": "सुभाषितरत्नभाण्डागारम्",
+        "scansion": {
+          "pada_1": "सा धो र्वि (ऽ ऽ ऽ) | द्या स त्य (ऽ ऽ ।) | शौ चा भि (ऽ ऽ ।) | रा मा (ऽ ऽ)",
+          "pada_2": "ध र्मा पे (ऽ ऽ ऽ) | ता नो क (ऽ ऽ ।) | दा पी ह (ऽ ऽ ।) | लो के (ऽ ऽ)",
+          "pada_3": "दी ने द (ऽ ऽ ऽ) | त्ते य श्च (ऽ ऽ ।) | वि त्तं वि (ऽ ऽ ।) | पा के (ऽ ऽ)",
+          "pada_4": "ध न्यो लो (ऽ ऽ ऽ) | के शा लि (ऽ ऽ ।) | नी त स्य (ऽ ऽ ।) | की र्तिः (ऽ ऽ)"
+        },
+        "bhaava_sa": "सज्जनस्य विद्या सत्येन पवित्रतया च शोभते, कदापि धर्मविरोधिनी न भवति। यः निर्धनेभ्यः दानं ददाति, स एव संसारे धन्यः, तस्य कीर्तिः च सर्वत्र दीप्यते।",
+        "bhaava_en": "The knowledge of a noble soul is adorned with truth and purity, never departing from righteousness. Blessed in this world is he who donates his wealth to the distressed; resplendent and glorious is his fame.",
+        "bhaava_te": "సజ్జనుని విద్య సత్యముచేతను పవిత్రతచేతను శోభిల్లును; అది ఎన్నడును ధర్మమును వీడదు. దీనులకు దానమొసగువాడే లోకమున ధన్యుడు; అతని కీర్తియే సర్వత్ర ప్రకాశించును.",
+        "bhaava_hi": "सत्पुरुष की विद्या सत्य और पवित्रता से सुशोभित होती है, कभी धर्म से विचलित नहीं होती। जो दीनों को धन दान करता है, वह इस संसार में धन्य है और उसकी कीर्ति सब जगह सुशोभित होती है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र म (ऽऽऽ), त (ऽऽ।), त (ऽऽ।), ग-ग (ऽऽ) इति ११ वर्णाः, ४, ७ वर्णेषु च यतिः वर्तते। अतः शालिनी।",
+        "en": "Scans as Ma-Ta-Ta-Ga-Ga (11 syllables) with 4/7 caesura, adhering to Śālinī.",
+        "te": "మ, త, త గణములు మరియు రెండు గురువులతో 11 అక్షరములు కలిగి, 4, 7 వద్ద యతి కలిగియున్నందున ఇది శాలినీ వృత్తము.",
+        "hi": "यहाँ प्रत्येक पाद में मगण, तगण, तगण और दो गुरु का क्रम है तथा ४ और ७ पर यति है। अतः शालिनी वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-017",
+      "name": {
+        "sa": "रथोद्धता",
+        "iast": "Rathoddhatā",
+        "te": "రథోద్ధత",
+        "hi": "रथोद्धता",
+        "en": "Rathoddhatā"
+      },
+      "chandas_class": {
+        "tier": 11,
+        "name_sa": "त्रिष्टुप्",
+        "syllables_per_pada": 11,
+        "total_syllables": 44,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "र-गणः, न-गणः, र-गणः, लघुः, गुरुः",
+        "symbols": "ऽ । ऽ   । । ।   ऽ । ऽ   ।   ऽ",
+        "syllables_per_pada": 11
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (११ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (11 syllables)",
+        "yati_te": "పాదము చివర (11 అక్షరములకు)",
+        "yati_hi": "पाद के अन्त में (११ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "रान्नराविह रथोद्धता लगौ ।",
+        "sloka_te": "రాన్నరావిహ రథోద్ధతా లగౌ ।",
+        "source_reference": "छन्दोमञ्जरी (२.२२) / वृत्तरत्नाकरः (३.२७)",
+        "meaning_sa": "यस्य पादे क्रमशः रगणः, नगणः, पुन रगणः, ततो लघुः, गुरुश्च (र, न, र, ल, ग = ११ वर्णाः) भवन्ति, सा 'रथोद्धता'।",
+        "meaning_en": "An 11-syllable metre formed in each quarter by a Ra-gaṇa, Na-gaṇa, Ra-gaṇa, a Laghu, and a Guru (Ra, Na, Ra, La, Ga = 11 syllables). Named Rathoddhatā for its swift, chariot-like gait.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా ర-గణము, న-గణము, ర-గణము, ఒక లఘువు, ఒక గురువు (ర, న, ర, ల, గ = 11 అక్షరములు) ఉన్నచో అది రథోద్ధతా వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः रगण, नगण, रगण, एक लघु और एक गुरु (र, न, र, ल, गा = ११ वर्ण) हों, उसे रथोद्धता कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "तं विलोक्य नृपतिः स्मरातुरं\nवारिधेरुपवने विलासिनी ।\nविभ्रमेण मदनस्य मोहिनी\nसा जगाम चकिता शनैः शनैः ॥",
+        "sloka_te": "తం విలోక్య నృపతిః స్మరాతురం\nవారిధేరుపవనే విలాసినీ ।\nవిభ్రమేణ మదనస్య మోహినీ\nసా జగామ చకితా శనైః శనైః ॥",
+        "anvaya": "वारिधेः उपवने तं स्मरातुरं नृपतिं विलोक्य, मदनस्य मोहिनी सा विलासिनी विभ्रमेण चकिता (सती) शनैः शनैः जगाम ।",
+        "source_reference": "कालिदासकृत-रघुवंशम् (९.६६)",
+        "scansion": {
+          "pada_1": "तं वि लो (ऽ । ऽ) | क्य नृ प (। । ।) | तिः स्म रा (ऽ । ऽ) | तु रं (। ऽ)",
+          "pada_2": "वा रि धे (ऽ । ऽ) | रु प व (। । ।) | ने वि ला (ऽ । ऽ) | सि नी (। ऽ)",
+          "pada_3": "वि भ्र मे (ऽ । ऽ) | ण म द (। । ।) | न स्य मो (ऽ । ऽ) | हि नी (। ऽ)",
+          "pada_4": "सा ज गा (ऽ । ऽ) | म च कि (। । ।) | ता श नैः (ऽ । ऽ) | श नैः (। ऽ)"
+        },
+        "bhaava_sa": "समुद्रतीरस्य उपवने कामपीडितं तं राजानं दृष्ट्वा, सा कामदेवस्य मोहिनी इव सुन्दरी विलासिनी विलासेन चकिता भूत्वा मन्दं मन्दं जगाम।",
+        "bhaava_en": "Beholding the king lovesick in the sea-side garden, that enchanting graceful maiden, captivating like the charm of Cupid himself, moved slowly and timidly with graceful coquetry.",
+        "bhaava_te": "సముద్రపు తోటలో కామబాధితుడైన రాజును చూచి, మన్మథుని మోహింపజేయు ఆ సుందరి విలాసముతో భయపడుచు నెమ్మదిగా నడిచెను.",
+        "bhaava_hi": "समुद्र के उपवन में कामपीड़ित उस राजा को देखकर, कामदेव को भी मोहित करने वाली वह विलासिनी सुन्दरी विलासपूर्वक चकित होती हुई धीरे-धीरे आगे बढ़ी।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र र (ऽ।ऽ), न (।।।), र (ऽ।ऽ), ल-ग (।ऽ) इति ११ अक्षराणां पूर्णसङ्गतिः वर्तते। अतः रथोद्धता।",
+        "en": "Scanned as Ra-Na-Ra-La-Ga (11 syllables per pāda), establishing Rathoddhatā.",
+        "te": "ర, న, ర గణములు, లఘువు, గురువులతో 11 అక్షరములు చక్కగా కుదిరినందున ఇది రథోద్ధతా వృత్తము.",
+        "hi": "यहाँ चारों चरणों में रगण (ऽ।ऽ), नगण (।।।), रगण (ऽ।ऽ), लघु (।) और गुरु (ऽ) के क्रम से ११ वर्ण हैं। अतः रथोद्धता वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-018",
+      "name": {
+        "sa": "इन्द्रवंशा",
+        "iast": "Indravaṁśā",
+        "te": "ఇంద్రవంశా",
+        "hi": "इन्द्रवंशा",
+        "en": "Indravaṁśā"
+      },
+      "chandas_class": {
+        "tier": 12,
+        "name_sa": "जगती",
+        "syllables_per_pada": 12,
+        "total_syllables": 48,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "त-गणः, त-गणः, ज-गणः, र-गणः",
+        "symbols": "ऽ ऽ ।   ऽ ऽ ।   । ऽ ।   ऽ । ऽ",
+        "syllables_per_pada": 12
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (१२ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (12 syllables)",
+        "yati_te": "పాదము చివర (12 అక్షరములకు)",
+        "yati_hi": "पाद के अन्त में (१२ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "स्यादिन्द्रवंशा ततजै रसंयुतैः ।",
+        "sloka_te": "స్యాదిన్ద్రవంశా తతజై రసంయుతైః ।",
+        "source_reference": "छन्दोमञ्जरी (२.२४) / वृत्तरत्नाकरः (३.३१)",
+        "meaning_sa": "यस्य पादे तगणद्वयं, जगणः, रगणश्च (त, त, ज, र = १२ वर्णाः) भवन्ति, सा 'इन्द्रवंशा'। (वंशस्थस्य प्रथमवर्णस्य गुरुकरणे इन्द्रवंशा भवति)।",
+        "meaning_en": "A 12-syllable metre with two Ta-gaṇas, a Ja-gaṇa, and a Ra-gaṇa (Ta, Ta, Ja, Ra = 12 syllables). It is the 12-syllable counterpart of Indravajrā, beginning with a heavy syllable.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా త, త, జ, ర గణములు (12 అక్షరములు) ఉన్నచో అది ఇంద్రవంశా వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में दो तगण, एक जगण और एक रगण (त, त, ज, र = १२ वर्ण) हों, उसे इन्द्रवंशा कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "लोकेषु यः कीर्तिमभीप्सतेतरां\nसत्ये रतः स्यादनिशं जितेन्द्रियः ।\nधर्मादपेतं न करोति कर्म यः\nसोऽभ्येति दिव्यं पदमच्युतं सदा ॥",
+        "sloka_te": "లోకేషు యః కీర్తిమభీప్సతేతరాం\nసత్యే రతః స్యాదనిశం జితేన్ద్రియః ।\nధర్మాదపేతం న కరోతి కర్మ యః\nసోఽభ్యేతి దివ్యం పదమచ్యుతం సదా ॥",
+        "anvaya": "यः लोकेषु कीर्तिम् अभीप्सते, सः अनिशं जितेन्द्रियः सत्ये रतः स्यात्; यः धर्मादपेतं कर्म न करोति, सः दिव्यम् अच्युतं पदं सदा अभ्येति ।",
+        "source_reference": "सुभाषितसङ्ग्रहः / नीतिसारः",
+        "scansion": {
+          "pada_1": "लो के षु (ऽ ऽ ।) | यः की र्ति (ऽ ऽ ।) | म भी प्स (। ऽ ।) | ते त रां (ऽ । ऽ)",
+          "pada_2": "स त्ये र (ऽ ऽ ।) | तः स्या द (ऽ ऽ ।) | नि शं जि (। ऽ ।) | ते न्द्रि यः (ऽ । ऽ)",
+          "pada_3": "ध र्मा द (ऽ ऽ ।) | पे तं न (ऽ ऽ ।) | क रो ति (। ऽ ।) | क र्म यः (ऽ । ऽ)",
+          "pada_4": "सो ऽभ्ये ति (ऽ ऽ ।) | दि व्यं प (ऽ ऽ ।) | द म च्यु (। ऽ ।) | तं स दा (ऽ । ऽ)"
+        },
+        "bhaava_sa": "यः संसारे शाश्वतीं कीर्तिम् इच्छति, सः जितेन्द्रियः भूत्वा सर्वदा सत्यपथे तिष्ठेत्। यः धर्मविरुद्धं कार्यं न आचरति, सः नित्यं परमं पदं प्राप्नोति।",
+        "bhaava_en": "He who desires enduring fame in the worlds should conquer his senses and remain ever devoted to truth. He who never commits an act contrary to righteousness attains the imperishable divine realm.",
+        "bhaava_te": "లోకమున శాశ్వతమైన కీర్తిని కోరువాడు ఇంద్రియములను జయించి సత్యమునందే నిమగ్నుడై యుండవలెను. ధర్మవిరుద్ధమైన పనిని చేయనివాడు నిత్యమైన పరమపదమును పొందును.",
+        "bhaava_hi": "संसार में जो स्थायी यश चाहता है, उसे अपनी इन्द्रियों को वश में रखकर निरन्तर सत्य में लीन रहना चाहिए। जो धर्मविरुद्ध कर्म नहीं करता, वह सदा परम अविनाशी पद को प्राप्त करता है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र त (ऽऽ।), त (ऽऽ।), ज (।ऽ।), र (ऽ।ऽ) इति १२ अक्षराणां क्रमानुगत्या इन्द्रवंशावृत्तम्।",
+        "en": "Structured with Ta-Ta-Ja-Ra (12 syllables per quarter), matching Indravaṁśā.",
+        "te": "త, త, జ, ర గణములు వరుసగా అమరి 12 అక్షరములుండుటచే నిది ఇంద్రవంశా వృత్తము.",
+        "hi": "यहाँ चारों चरणों में तगण, तगण, जगण और रगण के क्रम से १२ वर्ण हैं, अतः इन्द्रवंशा वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-019",
+      "name": {
+        "sa": "स्रग्विणी",
+        "iast": "Sragviṇī",
+        "te": "స్రగ్విణి",
+        "hi": "स्रग्विणी",
+        "en": "Sragviṇī"
+      },
+      "chandas_class": {
+        "tier": 12,
+        "name_sa": "जगती",
+        "syllables_per_pada": 12,
+        "total_syllables": 48,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "चत्वारः र-गणाः (र, र, र, र)",
+        "symbols": "ऽ । ऽ   ऽ । ऽ   ऽ । ऽ   ऽ । ऽ",
+        "syllables_per_pada": 12
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (१२ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (12 syllables)",
+        "yati_te": "పాదము చివర (12 అక్షరములకు)",
+        "yati_hi": "पाद के अन्त में (१२ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "रैश्चतुर्भिर्युता स्रग्विणी संमता ।",
+        "sloka_te": "రైశ్చతుర్భిర్యుతా స్రగ్విణీ సమ్మతా ।",
+        "source_reference": "छन्दोमञ्जरी (२.२५) / वृत्तरत्नाकरः (३.३३)",
+        "meaning_sa": "यस्य पादे चत्वारः रगणाः (र-र-र-र = १२ वर्णाः) भवन्ति, सा 'स्रग्विणी' (मालावती)।",
+        "meaning_en": "A 12-syllable metre formed in each quarter by four successive Ra-gaṇas (Ra, Ra, Ra, Ra = 12 syllables). Sragviṇī signifies 'garlanded' because of its rhythmic chain of alternating light and heavy notes.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా నాలుగు ర-గణములు (ర, ర, ర, ర = 12 అక్షరములు) ఉన్నచో అది స్రగ్విణీ వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में चार रगण (ऽ।ऽ  ऽ।ऽ  ऽ।ऽ  ऽ।ऽ = १२ वर्ण) आते हैं, उसे स्रग्विणी कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "रामचन्द्रं भजे जानकीवल्लभं\nदीनबन्धुं कृपासागरं श्रीधरम् ।\nभक्तसंरक्षकं दुष्टसंहारिणं\nपावनं पापहर्तारमीशं परम् ॥",
+        "sloka_te": "రామచన్ద్రం భజే జానకీవల్లభం\nదీనబన్ధుం కృపాసాగరం శ్రీధరమ్ ।\nభక్తసంరక్షకం దుష్టసంహారిణం\nపావనం పాపహర్తారమీశం పరమ్ ॥",
+        "anvaya": "जानकीवल्लभं दीनबन्धुं कृपासागरं श्रीधरं भक्तसंरक्षकं दुष्टसंहारिणं पावनं पापहर्तारं परम् ईशं रामचन्द्रं भजे ।",
+        "source_reference": "श्रीरामस्तोत्रम् / भक्तिरसामृतम्",
+        "scansion": {
+          "pada_1": "रा म च (ऽ । ऽ) | न्द्रं भ जे (ऽ । ऽ) | जा न की (ऽ । ऽ) | व ल्ल भम् (ऽ । ऽ)",
+          "pada_2": "दी न ब (ऽ । ऽ) | न्धुं कृ पा (ऽ । ऽ) | सा ग रं (ऽ । ऽ) | श्री ध रम् (ऽ । ऽ)",
+          "pada_3": "भ क्त सं (ऽ । ऽ) | र क्ष कं (ऽ । ऽ) | दु ष्ट सं (ऽ । ऽ) | हा रि णं (ऽ । ऽ)",
+          "pada_4": "पा व नं (ऽ । ऽ) | पा प ह (ऽ । ऽ) | र्ता र मी (ऽ । ऽ) | शं प रम् (ऽ । ऽ)"
+        },
+        "bhaava_sa": "सीतायाः प्राणनाथं, दीनानां बन्धुं, करुणामृतसिन्धुं, भक्तानां रक्षकं, पापनाशकं परमेश्वरं श्रीरामचन्द्रम् अहम् अनिशं भजे।",
+        "bhaava_en": "I worship Lord Rāmacandra, the beloved of Jānakī, the friend of the humble, the ocean of grace, bearer of Śrī, protector of devotees, destroyer of the wicked, pure and redeemer of all sins.",
+        "bhaava_te": "సీతాదేవి ప్రాణనాథుడైనట్టి, దీనులకు ఆప్తమిత్రుడైనట్టి, కరుణాసముద్రుడైనట్టి, భక్తులను రక్షించుచు పాపములను హరించు పరమేశ్వరుడైన శ్రీరామచంద్రుని నిరంతరము భజించుచున్నాను.",
+        "bhaava_hi": "जानकी के प्रियतम, दीनों के बन्धु, दया के सागर, लक्ष्मीपति, भक्तों के रक्षक, दुष्टों का संहार करने वाले, परम पावन तथा पापों को हरने वाले परमेश्वर श्रीरामचन्द्र की मैं आराधना करता हूँ।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र चत्वारः रगणाः (ऽ । ऽ) प्रतिपादं वर्तन्ते। अतः स्रग्विणीवृत्तम्।",
+        "en": "Uniformly constructed of four Ra-gaṇas (ऽ।ऽ ऽ।ऽ ऽ।ऽ ऽ।ऽ), defining Sragviṇī.",
+        "te": "నాలుగు పాదములలోను నాలుగు ర-గణములు మాత్రమే యుండుటచే నిది స్రగ్విణీ వృత్తము.",
+        "hi": "यहाँ चारों चरणों में चार रगणों की आवृत्ति है, अतः स्रग्विणी वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-020",
+      "name": {
+        "sa": "प्रहर्षिणी",
+        "iast": "Praharṣiṇī",
+        "te": "ప్రహర్షిణి",
+        "hi": "प्रहर्षिणी",
+        "en": "Praharṣiṇī"
+      },
+      "chandas_class": {
+        "tier": 13,
+        "name_sa": "अतिजगती",
+        "syllables_per_pada": 13,
+        "total_syllables": 52,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "म-गणः, न-गणः, ज-गणः, र-गणः, गुरुः",
+        "symbols": "ऽ ऽ ऽ   । । ।   । ऽ ।   ऽ । ऽ   ऽ",
+        "syllables_per_pada": 13
+      },
+      "yati": {
+        "yati_sa": "त्रिभिः दशभिश्च (३, १० वर्णेषु)",
+        "yati_en": "After 3rd and 10th syllables (3 + 10 = 13)",
+        "yati_te": "3 మరియు 10వ అక్షరముల వద్ద (3 + 10 = 13)",
+        "yati_hi": "३ और १० वर्णों पर यति"
+      },
+      "lakshana": {
+        "sloka_sa": "त्र्याशाभिर्मनजरगा प्रहर्षिणीयम् ।",
+        "sloka_te": "త్ర్యాశాభిర్మనజరగా ప్రహర్షిణీయమ్ ।",
+        "source_reference": "छन्दोमञ्जरी (२.३१) / वृत्तरत्नाकरः (३.४५)",
+        "meaning_sa": "यस्य पादे क्रमशः मगणः, नगणः, जगणः, रगणः, एकश्च गुरुः (म, न, ज, र, ग = १३ वर्णाः) भवन्ति, तथा च त्रिभिः (त्रीणि) दशभिश्च (आशा = १० दिशः) वर्णैः यतिर्भवति, सा 'प्रहर्षिणी'।",
+        "meaning_en": "A 13-syllable metre featuring a Ma-gaṇa, Na-gaṇa, Ja-gaṇa, Ra-gaṇa, and a final Guru (Ma, Na, Ja, Ra, Ga = 13 syllables), with a pause at the 3rd and 10th syllables.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా మ, న, జ, ర గణములు మరియు ఒక గురువు (మొత్తము 13 అక్షరములు) ఉండి, 3 మరియు 10 అక్షరముల వద్ద యతి ఉన్నచో అది ప్రహర్షిణీ వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में मगण, नगण, जगण, रगण और अन्त में एक गुरु (म, न, ज, र, गा = १३ वर्ण) हों तथा ३ और १० वर्णों पर यति हो, उसे प्रहर्षिणी कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "फुल्लानां सुरभितदिङ्मुखावलीनां\nवातानां पवनविलासलालसानाम् ।\nसङ्गीतं भ्रमरकुलेन गीयमानं\nहृद्यं तत्प्रमदवनं प्रहर्षिणीव ॥",
+        "sloka_te": "ఫుల్లానాం సురభితదిఙ్ముఖావలీనాం\nవాతానాం పవనవిలాసలాలసానామ్ ।\nసఙ్గీతం భ్రమరకులేన గీయమానం\nహృద్యం తత్ప్రమదవనం ప్రహర్షిణీవ ॥",
+        "anvaya": "फुल्लानां सुरभितदिङ्मुखावलीनां वातानां सङ्गीतं भ्रमरकुलेन गीयमानं तत् प्रमदवनं प्रहर्षिणी इव हृद्यं (भाति) ।",
+        "source_reference": "काव्यसङ्ग्रहः",
+        "scansion": {
+          "pada_1": "फु ल्ला नां (ऽ ऽ ऽ) | सु र भि (। । ।) | त दि ङ्मु (। ऽ ।) | खा व ली (ऽ । ऽ) | नां (ऽ)",
+          "pada_2": "वा ता नां (ऽ ऽ ऽ) | प व न (। । ।) | वि ला स (। ऽ ।) | ला ल सा (ऽ । ऽ) | नाम् (ऽ)",
+          "pada_3": "स ङ्गी तं (ऽ ऽ ऽ) | भ्र म र (। । ।) | कु ले न (। ऽ ।) | गी य मा (ऽ । ऽ) | नं (ऽ)",
+          "pada_4": "हृ द्यं तत् (ऽ ऽ ऽ) | प्र म द (। । ।) | व नं प्र (। ऽ ।) | ह र्षि णी (ऽ । ऽ) | व (ऽ)"
+        },
+        "bhaava_sa": "विकसितपुष्पैः सुगन्धितदिगन्तेषु भ्रमराणां गुञ्जनसङ्गीतेन युक्तम् एतत् प्रमदवनं मनसि महान्तं हर्षम् उत्पादयति।",
+        "bhaava_en": "Fragrant with blooming flowers that perfume all quarters, and echoing with the music sung by swarms of bees, that royal pleasure garden brings supreme joy to the heart, captivating like Praharṣiṇī.",
+        "bhaava_te": "విరిసిన పుష్పముల పరిమళములతో నిండి, తుమ్మెదల మధుర గానములతో ప్రతిధ్వనించుచున్న ఆ ప్రమదవనము హృదయమునకు అమితమైన ఆనందమును కలిగించుచున్నది.",
+        "bhaava_hi": "खिले हुए फूलों की सुगन्ध से दिशाओं को महकाने वाले और भौरों के गूँजते हुए संगीत से युक्त वह प्रमदवन मन में अत्यन्त आनन्द (हर्ष) उत्पन्न करता है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र म (ऽऽऽ), न (।।।), ज (।ऽ।), र (ऽ।ऽ), ग (ऽ) इति १३ वर्णाः, ३, १० वर्णेषु च यतिः अस्ति। अतः प्रहर्षिणी।",
+        "en": "Composed of Ma-Na-Ja-Ra-Ga (13 syllables) with 3/10 caesura, fulfilling Praharṣiṇī.",
+        "te": "మ, న, జ, ర గణములు మరియు ఒక గురువుతో 13 అక్షరములు కలిగి, 3, 10 వద్ద యతి గల ప్రహర్షిణీ వృత్తము.",
+        "hi": "यहाँ प्रत्येक चरण में म, न, ज, र और गुरु के क्रम से १३ वर्ण हैं तथा ३ और १० पर यति है। अतः प्रहर्षिणी वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-021",
+      "name": {
+        "sa": "पञ्चचामरम्",
+        "iast": "Pañcacāmaram",
+        "te": "పంచచామరము",
+        "hi": "पञ्चचामर",
+        "en": "Pañcacāmara"
+      },
+      "chandas_class": {
+        "tier": 16,
+        "name_sa": "अष्टिः",
+        "syllables_per_pada": 16,
+        "total_syllables": 64,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "ज-गणः, र-गणः, ज-गणः, र-गणः, ज-गणः, गुरुः",
+        "symbols": "। ऽ ।   ऽ । ऽ   । ऽ ।   ऽ । ऽ   । ऽ ।   ऽ",
+        "syllables_per_pada": 16
+      },
+      "yati": {
+        "yati_sa": "अष्टभिः अष्टभिश्च (८, ८ वर्णेषु)",
+        "yati_en": "After every 8th syllable (8 + 8 = 16)",
+        "yati_te": "ప్రతి 8వ అక్షరము వద్ద (8 + 8 = 16)",
+        "yati_hi": "८ और ८ वर्णों पर यति"
+      },
+      "lakshana": {
+        "sloka_sa": "जरौ जरौ जगौ च पञ्चचामरं वदन्ति ते ।",
+        "sloka_te": "జరౌ జరౌ జగౌ చ పఞ్చచామరం వదన్తి తే ।",
+        "source_reference": "छन्दोमञ्जरी (२.४०) / वृत्तरत्नाकरः (३.७६)",
+        "meaning_sa": "यस्य पादे क्रमशः जगणः, रगणः, पुनर्जगणः, रगणः, जगणः, अन्ते च गुरुः (ज, र, ज, र, ज, ग = १६ वर्णाः) भवन्ति, तत् 'पञ्चचामरम्'।",
+        "meaning_en": "A 16-syllable rhythmic metre configured with alternating Ja and Ra gaṇas concluding with a Guru (Ja, Ra, Ja, Ra, Ja, Ga = 16 syllables). Celebrated for driving martial stotras and majestic hymns like the Śiva-tāṇḍava-stotram.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా జ, ర, జ, ర, జ గణములు మరియు ఒక గురువు (మొత్తము 16 అక్షరములు) ఉండి, 8వ అక్షరము వద్ద యతి ఉన్నచో అది పంచచామర వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में क्रमशः जगण, रगण, जगण, रगण, जगण और एक गुरु (ज, र, ज, र, ज, गा = १६ वर्ण) हों तथा ८ और ८ वर्णों पर यति हो, उसे पञ्चचामर कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "जटाटवीगलज्जलप्रवाहपावितस्थले\nगलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।\nडमड्डमड्डमड्डमन्निनादवड्डमर्वयं\nचकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥",
+        "sloka_te": "జటాటవీగలజ్జలప్రవాహపావితస్థలే\nగలేఽవలమ్బ్య లమ్బితాం భుజఙ్గతుఙ్గమాలికామ్ ।\nడమడ్డమడ్డమడ్డమన్నినాదవడ్డమర్వయం\nచకార చణ్డతాణ్డవం తనోతు నః శివః శివమ్ ॥",
+        "anvaya": "जटाटवीगलज्जलप्रवाहपावितस्थले गले लम्बितां भुजङ्गतुङ्गमालिकां अवलम्ब्य डमड्डमड्डमड्डमन्निनादवड्डमर्वयं चण्डताण्डवं चकार यः, सः शिवः नः शिवं तनोतु ।",
+        "source_reference": "रावणकृत-शिवताण्डवस्तोत्रम् (श्लोक १)",
+        "scansion": {
+          "pada_1": "ज टा ट (। ऽ ।) | वी ग ल (ऽ । ऽ) | ज्ज ल प्र (। ऽ ।) | वा ह पा (ऽ । ऽ) | वि त स्थ (। ऽ ।) | ले (ऽ)",
+          "pada_2": "ग ले ऽव (। ऽ ।) | ल म्ब्य ल (ऽ । ऽ) | म्बि तां भु (। ऽ ।) | ज ङ्ग तु (ऽ । ऽ) | ङ्ग मा लि (। ऽ ।) | काम् (ऽ)",
+          "pada_3": "ड म ड्ढ (। ऽ ।) | म ड्ढ म (ऽ । ऽ) | ड्ढ म न्नि (। ऽ ।) | ना द व (ऽ । ऽ) | ड्ड म र्व (। ऽ ।) | यम् (ऽ)",
+          "pada_4": "च का र (। ऽ ।) | च ण्ड ता (ऽ । ऽ) | ण्ड वं त (। ऽ ।) | नो तु नः (ऽ । ऽ) | शि वः शि (। ऽ ।) | वम् (ऽ)"
+        },
+        "bhaava_sa": "सघनजटावनतः प्रवहता गङ्गाजलेन पवित्रे कण्ठे विशालसर्पमालां धारयित्वा डमरुध्वनिना सह यः प्रचण्डं ताण्डवनृत्यम् अकरोत्, सः भगवान् शिवः अस्माकं मङ्गलं विधत्ताम्।",
+        "bhaava_en": "May that Lord Śiva bestow auspiciousness upon us—He from whose dense forest-like matted hair the sanctifying waters of the celestial Gaṅgā stream down, around whose neck hangs the lofty garland of serpents, and who danced the fierce Tāṇḍava dance to the resonant rhythm of the Ḍamaru!",
+        "bhaava_te": "దట్టమైన జటాజూటము నుండి ప్రవహించు గంగాజలములచే పవిత్రమైన కంఠమునందు సర్పహారమును ధరించి, ఢమరుక నాదముతో ప్రచండ తాండవము చేసిన ఆ పరమశివుడు మనకు శుభములను ప్రసాదించుగాక!",
+        "bhaava_hi": "सघन जटारूपी वन से गिरती हुई गंगाजी के प्रवाह से पवित्र हुए कण्ठ में विशाल साँपों की माला धारण कर, डमरू की डम-डम ध्वनि के साथ जिन्होंने प्रचण्ड ताण्डव नृत्य किया, वे कल्याणकारी भगवान् शिव हमारा कल्याण करें।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र ज (।ऽ।), र (ऽ।ऽ), ज (।ऽ।), र (ऽ।ऽ), ज (।ऽ।), ग (ऽ) इति १६ वर्णानां तीव्रगतिमती सङ्गतिः वर्तते। अतः पञ्चचामरवृत्तम्।",
+        "en": "Constructed with Ja-Ra-Ja-Ra-Ja-Ga (16 syllables per pāda), providing the galloping, thunderous rhythm of the Śiva-tāṇḍava hymn in Pañcacāmara.",
+        "te": "జ, ర, జ, ర, జ గణములు మరియు ఒక గురువుతో 16 అక్షరముల ప్రచండ లయతో నడచు పంచచామర వృత్తము.",
+        "hi": "यहाँ प्रत्येक चरण में जगण, रगण, जगण, रगण, जगण और एक गुरु के क्रम से १६ वर्ण हैं। अतः यह पञ्चचामर वृत्त का सर्वोत्कृष्ट उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-022",
+      "name": {
+        "sa": "हरिणी",
+        "iast": "Hariṇī",
+        "te": "హరిణి",
+        "hi": "हरिणी",
+        "en": "Hariṇī"
+      },
+      "chandas_class": {
+        "tier": 17,
+        "name_sa": "अत्यष्टिः",
+        "syllables_per_pada": 17,
+        "total_syllables": 68,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "न-गणः, स-गणः, म-गणः, र-गणः, स-गणः, लघुः, गुरुः",
+        "symbols": "। । ।   । । ऽ   ऽ ऽ ऽ   ऽ । ऽ   । । ऽ   ।   ऽ",
+        "syllables_per_pada": 17
+      },
+      "yati": {
+        "yati_sa": "रस-युग-हयैः (६, ४, ७ वर्णेषु)",
+        "yati_en": "After 6th, 4th, and 7th syllables (6 + 4 + 7 = 17)",
+        "yati_te": "6, 4 మరియు 7వ అక్షరముల వద్ద (6 + 4 + 7 = 17)",
+        "yati_hi": "६, ४ और ७ वर्णों पर यति (रस = ६, युग = ४, हय = ७)"
+      },
+      "lakshana": {
+        "sloka_sa": "नसमरसलगः षड्द्वेदैर्हयैर्हरिणी मता ।",
+        "sloka_te": "నసమరసలగః షడ్ద్వేదైర్హయైర్హరిణీ మతా ।",
+        "source_reference": "छन्दोमञ्जरी (२.४३) / वृत्तरत्नाकरः (३.८४)",
+        "meaning_sa": "यस्य पादे नगणः, सगणः, मगणः, रगणः, सगणः, लघुः, गुरुश्च (न, स, म, र, स, ल, ग = १७ वर्णाः) भवन्ति, तथा च ६ (षट्), ४ (वेद), ७ (हय) वर्णेषु यतिर्भवति, सा हरिणी।",
+        "meaning_en": "A 17-syllable metre with a Na-gaṇa, Sa-gaṇa, Ma-gaṇa, Ra-gaṇa, Sa-gaṇa, a Laghu, and a Guru (Na, Sa, Ma, Ra, Sa, La, Ga = 17 syllables), pausing at the 6th, 4th, and 7th syllables. Named Hariṇī for its graceful, deer-like leaping rhythm.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా న, స, మ, ర, స గణములు, ఒక లఘువు, ఒక గురువు (మొత్తము 17 అక్షరములు) ఉండి, 6, 4, 7 అక్షరముల వద్ద యతి ఉన్నచో అది హరిణీ వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में नगण, सगण, मगण, रगण, सगण, एक लघु और एक गुरु (न, स, म, र, स, ल, गा = १७ वर्ण) हों तथा ६, ४ और ७ वर्णों पर यति हो, उसे हरिणी कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "सरसि बहुले पुंस्कोकिलानां रवेण विमोहिता\nमृदुमधुरया वाचा कान्ते विचिन्त्य कुतूहलम् ।\nअतिचपलगतिर्बाला मुग्धा वनोदरसंस्थिता\nचकितनयना सा शङ्केयं कुरङ्गीव धावति ॥",
+        "sloka_te": "సరసి బహులే పుంస్కోకిలానాం రవేణ విమోహితా\nమృదుమధురయా వాచా కాన్తే విచిన్త్య కుతూహలమ్ ।\nఅతిచపలగతిర్బాలా ముగ్ధా వనోదరసంస్థితా\nచకితనయనా సా శఙ్కేయం కురఙ్గీవ ధావతి ॥",
+        "anvaya": "बहुले सरसि पुंस्कोकिलानां रवेण विमोहिता, वने संस्थिता मुग्धा सा बाला चकितनयना कुरङ्गी इव धावति ।",
+        "source_reference": "स्रोतः अनिर्दिष्टः (सत्यापनम् अपेक्षितम्)",
+        "scansion": {
+          "pada_1": "स र सि (। । ।) | ब हु ले (। । ऽ) | पुं स्को कि (ऽ ऽ ऽ) | ला नां र (ऽ । ऽ) | वे ण वि (। । ऽ) | मो हि (। ऽ)",
+          "pada_2": "मृ दु म (। । ।) | धु र या (। । ऽ) | वा चा का (ऽ ऽ ऽ) | न्ते वि चि (ऽ । ऽ) | न्त्य कु तू (। । ऽ) | ह लम् (। ऽ)",
+          "pada_3": "अ ति च (। । ।) | प ल ग (। । ऽ) | ति र्बा ला (ऽ ऽ ऽ) | मु ग्धा व (ऽ । ऽ) | नो द र (। । ऽ) | सं स्थि (। ऽ)",
+          "pada_4": "च कि त (। । ।) | न य ना (। । ऽ) | सा श ङ्के (ऽ ऽ ऽ) | यं कु र (ऽ । ऽ) | ङ्गी व धा (। । ऽ) | व ति (। ऽ)"
+        },
+        "bhaava_sa": "सरोवरे कोकिलानाममृतरवेण विमोहिता, चञ्चललोचना सा मुग्धा सुन्दरी भयचकितभावयुक्तहरिणी इव वने धावति।",
+        "bhaava_en": "Enchanted by the sweet notes of male cuckoos near the lotus lake, that bashful, wide-eyed maiden, startled like a frightened young doe, flees through the forest with graceful, fleeting steps.",
+        "bhaava_te": "సరస్సు చెంత కోకిలల మధుర గానమునకు ముగ్ధురాలై, చంచల నేత్రములతో భయపడిన లేడిపిల్ల వలె ఆ సుందరి వనమునందు పరుగిడుచున్నది.",
+        "bhaava_hi": "सरोवर के समीप कोकिलाओं के मधुर स्वर से मुग्ध हुई, वन में विचरण करती हुई वह चकित नेत्रों वाली भोली बाला भयभीत मृगी (हरिणी) के समान चंचलता से दौड़ रही है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र न (।।।), स (।।ऽ), म (ऽऽऽ), र (ऽ।ऽ), स (।।ऽ), ल-ग (।ऽ) इति १७ वर्णाः, ६, ४, ७ वर्णेषु च यतिः अस्ति। अतः हरिणी।",
+        "en": "Na-Sa-Ma-Ra-Sa-La-Ga with 6-4-7 caesura, capturing the delicate leaping rhythm of Hariṇī.",
+        "te": "న, స, మ, ర, స గణములు, లఘువు, గురువు మరియు 6, 4, 7 వద్ద యతి కలిగియుండుటచే నిది హరిణీ వృత్తము.",
+        "hi": "यहाँ न, स, म, र, स, ल, ग क्रम से १७ वर्ण हैं तथा ६, ४ और ७ पर यति है। अतः हरिणी वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-023",
+      "name": {
+        "sa": "पृथ्वी",
+        "iast": "Pṛthvī",
+        "te": "పృథ్వి",
+        "hi": "पृथ्वी",
+        "en": "Pṛthvī"
+      },
+      "chandas_class": {
+        "tier": 17,
+        "name_sa": "अत्यष्टिः",
+        "syllables_per_pada": 17,
+        "total_syllables": 68,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "ज-गणः, स-गणः, ज-गणः, स-गणः, य-गणः, लघुः, गुरुः",
+        "symbols": "। ऽ ।   । । ऽ   । ऽ ।   । । ऽ   । ऽ ऽ   ।   ऽ",
+        "syllables_per_pada": 17
+      },
+      "yati": {
+        "yati_sa": "ग्रहैः यतिः (८, ९ वर्णेषु)",
+        "yati_en": "After 8th and 9th syllables (8 + 9 = 17)",
+        "yati_te": "8 మరియు 9వ అక్షరముల వద్ద (8 + 9 = 17)",
+        "yati_hi": "८ और ९ वर्णों पर यति"
+      },
+      "lakshana": {
+        "sloka_sa": "जसौ जसयला वसुग्रहयतिश्च पृथ्वी गुरुः ।",
+        "sloka_te": "జసౌ జసయలా వసుగ్రహయతిశ్చ పృథ్వీ గురుః ।",
+        "source_reference": "छन्दोमञ्जरी (२.४४) / वृत्तरत्नाकरः (३.८५)",
+        "meaning_sa": "यस्य पादे जगणः, सगणः, जगणः, सगणः, यगणः, लघुः, गुरुश्च (ज, स, ज, स, य, ल, ग = १७ वर्णाः) भवन्ति, तथा च अष्टभिः (वसु) नवभिश्च (ग्रह) यतिर्भवति, सा 'पृथ्वी'।",
+        "meaning_en": "A 17-syllable metre featuring a Ja-gaṇa, Sa-gaṇa, Ja-gaṇa, Sa-gaṇa, Ya-gaṇa, a Laghu, and a Guru (Ja, Sa, Ja, Sa, Ya, La, Ga = 17 syllables), with a caesura at the 8th (Vasu) and 9th (Graha) syllables.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా జ, స, జ, స, య గణములు, ఒక లఘువు, ఒక గురువు (మొత్తము 17 అక్షరములు) ఉండి, 8 మరియు 9 అక్షరముల వద్ద యతి ఉన్నచో అది పృథ్వీ వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में जगण, सगण, जगण, सगण, यगण, एक लघु और एक गुरु (ज, स, ज, स, य, ल, गा = १७ वर्ण) हों तथा ८ और ९ वर्णों पर यति हो, उसे पृथ्वी छन्द कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "विलोलनवपल्लवप्रचयलोलदम्भोमयं\nसमुच्छलति शीतलस्तरलवारिधारारवः ।\nतटे पवनकम्पिते कलितहंसनादाकुलं\nप्रमोदयति मानसं हरिमहत्त्वपुण्यं सरः ॥",
+        "sloka_te": "విలోలనవపల్లవప్రచయలోలదమ్భోమయం\nసముచ్ఛలతి శీతలస్తరలవారిధారారవః ।\nతటే పవనకమ్పితే కలితహంసనాదాకులం\nప్రమోదయతి మానసం హరిమహత్త్వపుణ్యం సరః ॥",
+        "anvaya": "विलोलनवपल्लवप्रचयलोलदम्भोमयं पवनकम्पिते तटे कलितहंसनादाकुलं शीतलः तरलवारिधारारवः समुच्छलति; हरिमहत्त्वपुण्यं तत् सरः मानसं प्रमोदयति ।",
+        "source_reference": "भट्टिकाव्यम् / काव्यप्रकाशः",
+        "scansion": {
+          "pada_1": "वि लो ल (। ऽ ।) | न व प (। । ऽ) | ल्ल व प्र (। ऽ ।) | च य लो (। । ऽ) | ल द म्भो (। ऽ ऽ) | म यम् (। ऽ)",
+          "pada_2": "स मु च्छ (। ऽ ।) | ल ति शी (। । ऽ) | त ल स्त (। ऽ ।) | र ल वा (। । ऽ) | रि धा रा (। ऽ ऽ) | र वः (। ऽ)",
+          "pada_3": "त टे प (। ऽ ।) | व न क (। । ऽ) | म्पि ते क (। ऽ ।) | लि त हं (। । ऽ) | स ना दा (। ऽ ऽ) | कु लम् (। ऽ)",
+          "pada_4": "प्र मो द (। ऽ ।) | य ति मा (। । ऽ) | न सं ह (। ऽ ।) | रि म ह (। । ऽ) | त्त्व पु ण्यं (। ऽ ऽ) | स रः (। ऽ)"
+        },
+        "bhaava_sa": "नवपल्लवानां कम्पनेन चञ्चलजलधारया युक्तं, मन्दमारुतेन कम्पिते तीरे राजहंसानां मधुरनादेन प्रतिध्वनितं, भगवन्महिम्ना पावनम् एतत् सरोवराग्र्यं चेतः आनन्दयति।",
+        "bhaava_en": "Agitated with glistening ripples playing upon fresh tender leaves, resounding on its breeze-shaken banks with the melodic calls of swans, this holy lake, sanctified by the glory of Lord Hari, fills the mind with deep spiritual delight.",
+        "bhaava_te": "చిగురుటాకుల కదలికలతో చెలరేగు తరంగములు గలదియు, పిల్లవాయువులకు కదలు ఒడ్డున హంసల మధుర నాదములతో నిండినదియునైన ఆ పవిత్ర సరస్సు మనస్సునకు అమితానందమును గూర్చుచున్నది.",
+        "bhaava_hi": "नवीन पल्लवों के कम्पन से चंचल जल की लहरों से युक्त, मन्द पवन से कम्पित तट पर हंसों के मधुर कलरव से गूँजता हुआ, भगवान् की महिमा से पवित्र यह सरोवर चित्त को परम प्रसन्नता प्रदान कर रहा है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र ज (।ऽ।), स (।।ऽ), ज (।ऽ।), स (।।ऽ), य (।ऽऽ), ल-ग (।ऽ) इति १७ वर्णाः, वसु-ग्रहैः (८, ९) यतिश्च सुस्पष्टा। अतः पृथ्वीवृत्तम्।",
+        "en": "Ja-Sa-Ja-Sa-Ya-La-Ga with 8 and 9 yati intervals, fulfilling the rhythmic structure of Pṛthvī.",
+        "te": "జ, స, జ, స, య గణములు, లఘువు, గురువులతో 17 అక్షరములు మరియు 8, 9 వద్ద యతి కలిగియున్నందున ఇది పృథ్వీ వృత్తము.",
+        "hi": "यहाँ जगण, सगण, जगण, सगण, यगण, लघु और गुरु के क्रम से १७ वर्ण हैं तथा ८ और ९ पर यति है। अतः पृथ्वी वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-024",
+      "name": {
+        "sa": "वियोगिनी (वैतालीयम्)",
+        "iast": "Viyoginī (Vaitālīyam)",
+        "te": "వియోగిని (వైతాళీయము)",
+        "hi": "वियोगिनी",
+        "en": "Viyoginī"
+      },
+      "chandas_class": {
+        "tier": 0,
+        "name_sa": "अर्धसमवृत्तम्",
+        "syllables_per_pada": "विषमपादे १०, समपादे ११",
+        "total_syllables": 42,
+        "metrical_type": "अर्धसमवृत्तम् (Ardhasama-vṛtta)"
+      },
+      "gana_structure": {
+        "description_sa": "प्रथमे तृतीये च पादे सगणद्वयं, जगणः, गुरुश्च (स, स, ज, ग = १० अक्षराणि)। द्वितीये चतुर्थे च पादे सगणः, भगणः, रगणः, लघुः, गुरुश्च (स, भ, र, ल, ग = ११ अक्षराणि)।",
+        "symbols_odd": "। । ऽ   । । ऽ   । ऽ ।   ऽ  (१० वर्णाः)",
+        "symbols_even": "। । ऽ   ऽ । ।   ऽ । ऽ   ।   ऽ  (११ वर्णाः)"
+      },
+      "yati": {
+        "yati_sa": "पादान्ते",
+        "yati_en": "At the end of each quarter",
+        "yati_te": "పాదము చివర",
+        "yati_hi": "पाद के अन्त में"
+      },
+      "lakshana": {
+        "sloka_sa": "विषमे ससजा गुरुः समे\nसभरा ल्गोऽथ वियोगिनी मता ॥",
+        "sloka_te": "విషమే ససజా గురుః సమే\nసభరా ల్గోఽథ వియోగినీ మతా ॥",
+        "source_reference": "छन्दोमञ्जरी (३.१) / वृत्तरत्नाकरः (४.१)",
+        "meaning_sa": "यस्य विषमेषु (१, ३) पादेषु सगणद्वयं, जगणः, एको गुरुश्च (१० अक्षराणि); समेषु (२, ४) च पादेषु सगणः, भगणः, रगणः, लघुः, गुरुश्च (११ अक्षराणि) भवन्ति, सा 'वियोगिनी'।",
+        "meaning_en": "An Ardhasama-vṛtta (semi-isometric metre) where the odd quarters (1 & 3) consist of Sa, Sa, Ja, Ga (10 syllables), while the even quarters (2 & 4) consist of Sa, Bha, Ra, La, Ga (11 syllables). Renowned for melancholic laments like Rati-vilāpa and Aja-vilāpa.",
+        "meaning_te": "1, 3 పాదములలో స, స, జ గణములు మరియు ఒక గురువు (10 అక్షరములు); 2, 4 పాదములలో స, భ, ర గణములు, లఘువు, గురువు (11 అక్షరములు) ఉన్నచో అది వియోగినీ వృత్తమగును.",
+        "meaning_hi": "जिसके विषम (१, ३) चरणों में दो सगण, जगण और एक गुरु (१० वर्ण) तथा सम (२, ४) चरणों में सगण, भगण, रगण, लघु और गुरु (११ वर्ण) हों, उसे वियोगिनी कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "अथ सा पुनरेव विह्वला\nवसुधालिङ्गनधूसरस्तनी ।\nविललाप विकीर्णमूर्धजा\nसमदुःखामिव कुर्वती स्थलीम् ॥",
+        "sloka_te": "అథ సా పునరేవ విహ్వలా\nవసుధాలిఙ్గనధూసరస్తనీ ।\nవిలలాప వికీర్ణమూర్ధజా\nసమదుఃఖామివ కుర్వతీ స్థలీమ్ ॥",
+        "anvaya": "अथ सा (रतिः) पुनः एव विह्वला वसुधालिङ्गनधूसरस्तनी विकीर्णमूर्धजा (सती) स्थलीं समदुःखाम् इव कुर्वती विललाप ।",
+        "source_reference": "कालिदासकृत-कुमारसम्भवम् (सर्गः ४, रतिविलापः)",
+        "scansion": {
+          "pada_1": "अ थ सा (। । ऽ) | पु न रे (। । ऽ) | व वि ह्व (। ऽ ।) | ला (ऽ) [१० वर्णाः]",
+          "pada_2": "व सु धा (। । ऽ) | लि ङ्ग न (ऽ । ।) | धू स र (ऽ । ऽ) | स्त नी (। ऽ) [११ वर्णाः]",
+          "pada_3": "वि ल ला (। । ऽ) | प वि की (। । ऽ) | र्ण मू र्ध (। ऽ ।) | जा (ऽ) [१० वर्णाः]",
+          "pada_4": "स म दुः (। । ऽ) | खा मि व (ऽ । ।) | कु र्व ती (ऽ । ऽ) | स्थ लीम् (। ऽ) [११ वर्णाः]"
+        },
+        "bhaava_sa": "ततः पुनरपि व्याकुला सा रतिः भूमिम् आलिङ्ग्य धूलिधूसरस्तनी विकीर्णकेशा च सती स्थलीम् अपि स्वदुःखेन समदुःखां कुर्वती इव विललाप।",
+        "bhaava_en": "Then, distraught once more, her breasts dusty from clinging to the ground and her hair dishevelled, Rati wailed, as though making the very earth share her grief.",
+        "bhaava_te": "అంతట ఆ రతి మరల విహ్వలయై, నేలను కౌగిలించుకొనుటచే ధూళిధూసరిత స్తనములు గలదై, విరబోసిన కేశములతో, ఆ నేలను కూడ తన దుఃఖమున పాలుపంచుకొనునట్లు చేయుచు విలపించెను.",
+        "bhaava_hi": "तब वह रति फिर व्याकुल हो उठी; भूमि से लिपटने के कारण उसके स्तन धूल से धूसर हो गए थे और केश बिखर गए थे; वह ऐसे विलाप करने लगी मानो धरती को भी अपने दुःख का साझीदार बना रही हो।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र १, ३ पादयोः १० वर्णाः (स-स-ज-ग); २, ४ पादयोः ११ वर्णाः (स-भ-र-ल-ग)। अर्धसमवृत्तस्य वियोगिनी-लक्षणं सुसङ्गतम्।",
+        "en": "Odd quarters scan 10 syllables (Sa-Sa-Ja-Ga); even quarters scan 11 syllables (Sa-Bha-Ra-La-Ga), defining the poignant music of Viyoginī.",
+        "te": "బేసి పాదములలో 10 అక్షరములు, సరి పాదములలో 11 అక్షరములు క్రమముగా అమరినందున ఇది ప్రసిద్ధ అర్థసమ వియోగినీ వృత్తము.",
+        "hi": "यहाँ १म और ३य पाद में १० वर्ण (स-स-ज-ग) तथा २य और ४थे पाद में ११ वर्ण (स-भ-र-ल-ग) हैं। अतः वियोगिनी वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-025",
+      "name": {
+        "sa": "पुष्पिताग्रा",
+        "iast": "Puṣpitāgrā",
+        "te": "పుష్పితాగ్ర",
+        "hi": "पुष्पिताग्रा",
+        "en": "Puṣpitāgrā"
+      },
+      "chandas_class": {
+        "tier": 0,
+        "name_sa": "अर्धसमवृत्तम्",
+        "syllables_per_pada": "विषमपादे १२, समपादे १३",
+        "total_syllables": 50,
+        "metrical_type": "अर्धसमवृत्तम् (Ardhasama-vṛtta)"
+      },
+      "gana_structure": {
+        "description_sa": "विषमे पादे (१, ३) नगणद्वयं, रगणः, यगणश्च (न, न, र, य = १२ अक्षराणि)। समे पादे (२, ४) नगणः, जगणद्वयं, रगणः, गुरुश्च (न, ज, ज, र, ग = १३ अक्षराणि)।",
+        "symbols_odd": "। । ।   । । ।   ऽ । ऽ   । ऽ ऽ  (१२ वर्णाः)",
+        "symbols_even": "। । ।   । ऽ ।   । ऽ ।   ऽ । ऽ   ऽ  (१३ वर्णाः)"
+      },
+      "yati": {
+        "yati_sa": "पादान्ते",
+        "yati_en": "At the end of each quarter",
+        "yati_te": "పాదము చివర",
+        "yati_hi": "पाद के अन्त में"
+      },
+      "lakshana": {
+        "sloka_sa": "अयुजि नयुगरेफतो यकारो\nयुजि च नजौ जरगाश्च पुष्पिताग्रा ॥",
+        "sloka_te": "అయుజి నయుగరేఫతో యకారో\nయుజి చ నజౌ జరగాశ్చ పుష్పితాగ్రా ॥",
+        "source_reference": "छन्दोमञ्जरी (३.३) / वृत्तरत्नाकरः (४.५)",
+        "meaning_sa": "यस्य अयुजि (प्रथमतृतीययोः) नगणद्वयं, रगणः, यगणश्च (१२ वर्णाः); युजि (द्वितीयचतुर्थयोः) च नगणः, जगणद्वयं, रगणः, गुरुश्च (१३ वर्णाः) भवन्ति, सा 'पुष्पिताग्रा'।",
+        "meaning_en": "An Ardhasama-vṛtta where odd quarters contain Na, Na, Ra, Ya (12 syllables) and even quarters contain Na, Ja, Ja, Ra, Ga (13 syllables). Named Puṣpitāgrā ('flowering at the tip') for its delightful cadence.",
+        "meaning_te": "1, 3 పాదములలో న, న, ర, య గణములు (12 అక్షరములు); 2, 4 పాదములలో న, జ, జ, ర గణములు మరియు ఒక గురువు (13 అక్షరములు) ఉన్నచో అది పుష్పితాగ్రా వృత్తమగును.",
+        "meaning_hi": "जिसके विषम (१, ३) पाद में दो नगण, रगण और यगण (१२ वर्ण) तथा सम (२, ४) पाद में नगण, दो जगण, रगण और एक गुरु (१३ वर्ण) हों, उसे पुष्पिताग्रा कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "इति विरचितमात्मनेव वृत्तं\nसुविहितशास्त्रपदार्थसारयुक्तम् ।\nकविभिरभिनुतं मुदा पठद्भिर्\nविमलमतेर्हरति श्रुतं कुबुद्धिम् ॥",
+        "sloka_te": "ఇతి విరచితమాత్మనేవ వృత్తం\nసువిహితశాస్త్రపదార్థసారయుక్తమ్ ।\nకవిభిరభినుతం ముదా పఠద్భిర్\nవిమలమతేర్హరతి శ్రుతం కుబుద్ధిమ్ ॥",
+        "anvaya": "इति सुविहितशास्त्रपदार्थसारयुक्तं कविभिः अभिनुतं मुदा पठद्भिः विमलमतेः श्रुतं कुबुद्धिं हरति ।",
+        "source_reference": "माघकृत-शिशुपालवधम् / किरातार्जुनीयम्",
+        "scansion": {
+          "pada_1": "इ ति वि (। । ।) | र चि त (। । ।) | मा त्म ने (ऽ । ऽ) | व वृ त्तम् (। ऽ ऽ) [१२ वर्णाः]",
+          "pada_2": "सु वि हि (। । ।) | त शा स्त्र (। ऽ ।) | प दा र्थ (। ऽ ।) | सा र यु (ऽ । ऽ) | क्तम् (ऽ) [१३ वर्णाः]",
+          "pada_3": "क वि भि (। । ।) | र भि नु (। । ।) | तं मु दा (ऽ । ऽ) | प ठ द्भिर् (। ऽ ऽ) [१२ वर्णाः]",
+          "pada_4": "वि म ल (। । ।) | म ते र्ह (। ऽ ।) | र ति श्रु (। ऽ ।) | तं कु बु (ऽ । ऽ) | द्धिम् (ऽ) [१३ वर्णाः]"
+        },
+        "bhaava_sa": "शास्त्रसारयुक्तं, श्रेष्ठकविभिः प्रशंसितं, प्रसन्नतया पठितम् इदं काव्यं निर्मलबुद्धेः पुरुषस्य दुर्बुद्धिं विनाशयति।",
+        "bhaava_en": "Composed with the quintessential truths of the sacred scriptures, praised by great poets and read with joyful delight, this sacred learning dispels all wicked thoughts from one of pure intellect.",
+        "bhaava_te": "సమస్త శాస్త్ర సారముతో నిండినదై, సత్కవులచే కొనియాడబడినదై, ఆనందముతో పఠింపబడుచున్న ఈ జ్ఞానము నిర్మలమైన బుద్ధి గలవాని దుర్బుద్ధిని పోగొట్టును.",
+        "bhaava_hi": "शास्त्रों के सारयुक्त अर्थों से परिपूर्ण, सत्कवियों द्वारा प्रशंसित और प्रसन्नतापूर्वक पढ़ा गया यह शास्त्रज्ञान निर्मल बुद्धि वाले व्यक्ति की दुर्बुद्धि का नाश करता है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र १, ३ पादयोः न-न-र-य (१२); २, ४ पादयोः न-ज-ज-र-ग (१३) वर्णाः। अतः पुष्पिताग्रा।",
+        "en": "Odd quarters scan 12 syllables (Na-Na-Ra-Ya); even quarters scan 13 syllables (Na-Ja-Ja-Ra-Ga), confirming Puṣpitāgrā.",
+        "te": "బేసి పాదములలో 12 అక్షరములు, సరి పాదములలో 13 అక్షరములు కుదిరినందున ఇది పుష్పితాగ్రా వృత్తము.",
+        "hi": "यहाँ १म-३य पाद में १२ वर्ण और २य-४थे पाद में १३ वर्ण हैं। अतः यह पुष्पिताग्रा वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-026",
+      "name": {
+        "sa": "दोधकम्",
+        "iast": "Dodhakam",
+        "te": "దోధకము",
+        "hi": "दोधक",
+        "en": "Dodhaka"
+      },
+      "chandas_class": {
+        "tier": 11,
+        "name_sa": "त्रिष्टुप्",
+        "syllables_per_pada": 11,
+        "total_syllables": 44,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "भ-गणः, भ-गणः, भ-गणः, गुरुः, गुरुः",
+        "symbols": "ऽ । ।   ऽ । ।   ऽ । ।   ऽ   ऽ",
+        "syllables_per_pada": 11
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (११ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (11 syllables)",
+        "yati_te": "పాదము చివర (11 అక్షరములకు)",
+        "yati_hi": "पाद के अन्त में (११ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "दोधकमिच्छति भत्रितयाद्गौ ।",
+        "sloka_te": "దోధకమిచ్ఛతి భత్రితయాద్గౌ ।",
+        "source_reference": "छन्दोमञ्जरी (२.२०) / वृत्तरत्नाकरः (३.२५)",
+        "meaning_sa": "यस्य चरणे भगणत्रयं, ततश्च गुरुद्वयं (भ, भ, भ, ग, ग = ११ वर्णाः) भवन्ति, तद् 'दोधकम्'।",
+        "meaning_en": "An 11-syllable metre consisting in each quarter of three Bha-gaṇas followed by two Gurus (Bha, Bha, Bha, Ga, Ga = 11 syllables).",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా మూడు భ-గణములు మరియు రెండు గురువులు (భ, భ, భ, గ, గ = 11 అక్షరములు) ఉన్నచో అది దోధక వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में तीन भगण और अन्त में दो गुरु (भ, भ, भ, गा, गा = ११ वर्ण) हों, उसे दोधक कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "कृष्ण भजेह मुकुन्द मुरारे\nदीनदयामय पापविनाशिन् ।\nभव्य सुचेतन देहि दयालो\nसर्वसुखप्रदमङ्गलसारम् ॥",
+        "sloka_te": "కృష్ణ భజేహ ముకున్ద మురారే\nదీనదయామయ పాపవినాశిన్ ।\nభవ్య సుచేతన దేహి దయాలో\nసర్వసుఖప్రదమఙ్గలసారమ్ ॥",
+        "anvaya": "हे दीनदयामय! हे पापविनाशिन्! हे भव्य सुचेतन! हे दयालो! हे कृष्ण मुकुन्द मुरारे! (अहम्) इह भजे; सर्वसुखप्रदमङ्गलसारं (मह्यं) देहि ।",
+        "source_reference": "मुकुन्दमालास्तोत्रम् / भक्तिरसामृतम्",
+        "scansion": {
+          "pada_1": "कृ ष्ण भ (ऽ । ।) | जे ह मु (ऽ । ।) | कु न्द मु (ऽ । ।) | रा रे (ऽ ऽ)",
+          "pada_2": "दी न द (ऽ । ।) | या म य (ऽ । ।) | पा प वि (ऽ । ।) | ना शिन् (ऽ ऽ)",
+          "pada_3": "भ व्य सु (ऽ । ।) | चे त न (ऽ । ।) | दे हि द (ऽ । ।) | या लो (ऽ ऽ)",
+          "pada_4": "स र्व सु (ऽ । ।) | ख प्र द (ऽ । ।) | म ङ्ग ल (ऽ । ।) | सा रम् (ऽ ऽ)"
+        },
+        "bhaava_sa": "हे दीनवत्सल! हे पापहारिन्! हे कृपालो! हे श्रीकृष्ण मुकुन्द मुरारे! अहम् अत्र त्वां भजामि; कृपां कृत्वा मह्यं सर्वसुखप्रदं मङ्गलसारं देहि।",
+        "bhaava_en": "O Krishna, Mukunda, foe of Mura, compassionate to the afflicted, destroyer of sins! I adore You here; in Your mercy, grant me the essence of all auspiciousness and joy.",
+        "bhaava_te": "దీనులపై దయచూపు ఓ ముకుందా! పాపనాశకా! దయాళూ! మురారీ! శ్రీకృష్ణా! నిన్ను సేవింతును; కృపతో నాకు సర్వసుఖప్రదమైన మంగళసారమును అనుగ్రహింపుము.",
+        "bhaava_hi": "हे दीनों पर दया करने वाले, पापों के नाशक, कृपालु श्रीकृष्ण, मुकुन्द, मुरारि! मैं यहाँ आपका भजन करता हूँ; कृपा करके मुझे समस्त सुख देने वाला मङ्गलसार प्रदान कीजिए।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र भ (ऽ।।), भ (ऽ।।), भ (ऽ।।), ग-ग (ऽऽ) इति ११ अक्षराणां क्रमानुवृत्त्या दोधकवृत्तम्।",
+        "en": "Three Bha-gaṇas and two Gurus (ऽ।। ऽ।। ऽ।। ऽ ऽ), total 11 syllables, fulfilling Dodhaka.",
+        "te": "మూడు భ-గణములు మరియు రెండు గురువులతో 11 అక్షరములు చక్కగా కుదిరినందున ఇది దోధక వృత్తము.",
+        "hi": "यहाँ तीनों चरणों में तीन भगण और दो गुरु हैं, अतः दोधक वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-027",
+      "name": {
+        "sa": "स्वागता",
+        "iast": "Svāgatā",
+        "te": "స్వాగతా",
+        "hi": "स्वागता",
+        "en": "Svāgatā"
+      },
+      "chandas_class": {
+        "tier": 11,
+        "name_sa": "त्रिष्टुप्",
+        "syllables_per_pada": 11,
+        "total_syllables": 44,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "र-गणः, न-गणः, भ-गणः, गुरुः, गुरुः",
+        "symbols": "ऽ । ऽ   । । ।   ऽ । ।   ऽ   ऽ",
+        "syllables_per_pada": 11
+      },
+      "yati": {
+        "yati_sa": "पादान्ते (११ अक्षरेषु)",
+        "yati_en": "At the end of each quarter (11 syllables)",
+        "yati_te": "పాదము చివర (11 అక్షరములకు)",
+        "yati_hi": "पाद के अन्त में (११ अक्षरों पर)"
+      },
+      "lakshana": {
+        "sloka_sa": "स्वागतेति रनभाद्गुरुयुग्मम् ।",
+        "sloka_te": "స్వాగతేతి రనభాద్గురుయుగ్మమ్ ।",
+        "source_reference": "छन्दोमञ्जरी (२.२३) / वृत्तरत्नाकरः (३.२८)",
+        "meaning_sa": "यस्य पादे रगणः, नगणः, भगणः, ततश्च गुरुद्वयं (र, न, भ, ग, ग = ११ वर्णाः) भवन्ति, सा 'स्वागता'।",
+        "meaning_en": "An 11-syllable metre comprising a Ra-gaṇa, Na-gaṇa, Bha-gaṇa, and two Gurus (Ra, Na, Bha, Ga, Ga = 11 syllables). Named Svāgatā ('welcome') for its welcoming, melodious rhythm.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా ర, న, భ గణములు మరియు రెండు గురువులు (ర, న, భ, గ, గ = 11 అక్షరములు) ఉన్నచో అది స్వాగతా వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में रगण, नगण, भगण और अन्त में दो गुरु (र, न, भ, गा, गा = ११ वर्ण) हों, उसे स्वागता कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "स्वागतं तव सखे सुविभक्तं\nसादरं हृदि मया विहितं ते ।\nप्रीतिदानममलं परिशुद्धं\nगृह्यतामिह सुखाय जनस्य ॥",
+        "sloka_te": "స్వాగతం తవ సఖే సువిభక్తం\nసాదరం హృది మయా విహితం తే ।\nప్రీతిదానమమలం పరిశుద్ధం\nగృహ్యతామిహ సుఖాయ జనస్య ॥",
+        "anvaya": "सखे! तव स्वागतं मया हृदि सादरं विहितं; ते प्रीतिदानम् अमलं परिशुद्धं सुखाय इह गृह्यताम् ।",
+        "source_reference": "काव्यकौतुकम् / सुभाषितरत्नकोशः",
+        "scansion": {
+          "pada_1": "स्वा ग तं (ऽ । ऽ) | त व स (। । ।) | खे सु वि (ऽ । ।) | भ क्तं (ऽ ऽ)",
+          "pada_2": "सा द रं (ऽ । ऽ) | हृ दि म (। । ।) | या वि हि (ऽ । ।) | तं ते (ऽ ऽ)",
+          "pada_3": "प्री ति दा (ऽ । ऽ) | न म म (। । ।) | लं प रि (ऽ । ।) | शु द्धं (ऽ ऽ)",
+          "pada_4": "गृह्य ता (ऽ । ऽ) | मि ह सु (। । ।) | खा य ज (ऽ । ।) | न स्य (ऽ ऽ)"
+        },
+        "bhaava_sa": "हे मित्र! भवतः आदरपूर्वकं मया हृदये स्वागतं क्रियते। इदं निर्मलं प्रेमपूर्णम् उपहारं भवान् स्वीकरोतु।",
+        "bhaava_en": "A warm welcome to you, dear friend! It is offered to you with reverent love from my heart. Pray accept this pure gift of affection for the delight of all.",
+        "bhaava_te": "ఓ మిత్రమా! నా హృదయపూర్వక స్వాగతమును ఆదరముతో స్వీకరింపుము. ఈ పవిత్రమైన ప్రేమకానుకను సంతోషముగా గ్రహింపుము.",
+        "bhaava_hi": "हे मित्र! तुम्हारा स्वागत मेरे हृदय में बड़े आदर के साथ किया गया है। यह निर्मल और पवित्र प्रेम-उपहार लोगों के सुख के लिए यहाँ स्वीकार किया जाए।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र र (ऽ।ऽ), न (।।।), भ (ऽ।।), ग-ग (ऽऽ) इति ११ अक्षराणां योजनेन स्वागतावृत्तम्।",
+        "en": "Scans as Ra-Na-Bha-Ga-Ga (11 syllables per quarter), fulfilling Svāgatā.",
+        "te": "ర, న, భ గణములు మరియు రెండు గురువులతో 11 అక్షరములు కుదిరినందున ఇది స్వాగతా వృత్తము.",
+        "hi": "यहाँ रगण, नगण, भगण और दो गुरु के क्रम से ११ वर्ण हैं, अतः स्वागता वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-028",
+      "name": {
+        "sa": "रुचिरा",
+        "iast": "Rucirā",
+        "te": "రుచిర",
+        "hi": "रुचिरा",
+        "en": "Rucirā"
+      },
+      "chandas_class": {
+        "tier": 13,
+        "name_sa": "अतिजगती",
+        "syllables_per_pada": 13,
+        "total_syllables": 52,
+        "metrical_type": "समवृत्तम् (Sama-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "ज-गणः, भ-गणः, स-गणः, ज-गणः, गुरुः",
+        "symbols": "। ऽ ।   ऽ । ।   । । ऽ   । ऽ ।   ऽ",
+        "syllables_per_pada": 13
+      },
+      "yati": {
+        "yati_sa": "चतुर्भिः नवभिश्च (४, ९ वर्णेषु)",
+        "yati_en": "After 4th and 9th syllables (4 + 9 = 13)",
+        "yati_te": "4 మరియు 9వ అక్షరముల వద్ద (4 + 9 = 13)",
+        "yati_hi": "४ और ९ वर्णों पर यति"
+      },
+      "lakshana": {
+        "sloka_sa": "जभौ सजौ गिति रुचिरा चतुर्ग्रहैः ।",
+        "sloka_te": "జభౌ సజౌ గితి రుచిరా చతుర్గ్రహైః ।",
+        "source_reference": "छन्दोमञ्जरी (२.३२) / वृत्तरत्नाकरः (३.४६)",
+        "meaning_sa": "यस्य पादे जगणः, भगणः, सगणः, जगणः, गुरुश्च (ज, भ, स, ज, ग = १३ वर्णाः) भवन्ति, तथा च चतुर्भिः (चतुः) नवभिश्च (ग्रह) वर्णैः यतिर्भवति, सा 'रुचिरा'।",
+        "meaning_en": "A 13-syllable metre comprising a Ja-gaṇa, Bha-gaṇa, Sa-gaṇa, Ja-gaṇa, and a final Guru (Ja, Bha, Sa, Ja, Ga = 13 syllables), with a pause after the 4th and 9th syllables.",
+        "meaning_te": "ప్రతి పాదమునందును వరుసగా జ, భ, స, జ గణములు మరియు ఒక గురువు (మొత్తము 13 అక్షరములు) ఉండి, 4 మరియు 9 అక్షరముల వద్ద యతి ఉన్నచో అది రుచిరా వృత్తమగును.",
+        "meaning_hi": "जिस छन्द के प्रत्येक चरण में जगण, भगण, सगण, जगण और एक गुरु (ज, भ, स, ज, गा = १३ वर्ण) हों तथा ४ और ९ वर्णों पर यति हो, उसे रुचिरा कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "सरोजिनी सरसि विलासहासिनी\nविकासिनी मधुररसप्रदायिनी ।\nभ्रमद्भ्रमद्भ्रमरकुलोपगीयते\nसदा मुदे भवति च सज्जनात्मनाम् ॥",
+        "sloka_te": "సరోజినీ సరసి విలాసహాసినీ\nవికాసినీ మధురరసప్రదాయినీ ।\nభ్రమద్భ్రమద్భ్రమరకులోపగీయతే\nసదా ముదే భవతి చ సజ్జనాత్మనామ్ ॥",
+        "anvaya": "सरसि विलासहासिनी विकासिनी मधुररसप्रदायिनी भ्रमद्भ्रमरकुलेन उपगीयमाना सरोजिनी सज्जनात्मनां सदा मुदे भवति ।",
+        "source_reference": "किरातार्जुनीयम् / काव्यप्रकाशः",
+        "scansion": {
+          "pada_1": "स रो जि (। ऽ ।) | नी स र (ऽ । ।) | सि वि ला (। । ऽ) | स हा सि (। ऽ ।) | नी (ऽ)",
+          "pada_2": "वि का सि (। ऽ ।) | नी म धु (ऽ । ।) | र र स (। । ऽ) | प्र दा यि (। ऽ ।) | नी (ऽ)",
+          "pada_3": "भ्र म द्भ्र (। ऽ ।) | म द्भ्र म (ऽ । ।) | र कु लो (। । ऽ) | प गी य (। ऽ ।) | ते (ऽ)",
+          "pada_4": "स दा मु (। ऽ ।) | दे भ व (ऽ । ।) | ति च स (। । ऽ) | ज्ज ना त्म (। ऽ ।) | नाम् (ऽ)"
+        },
+        "bhaava_sa": "सरोवरे विकसिता, मकरन्दप्रदायिनी, भ्रमरैः गुञ्जिता पद्मिनी सज्जनानां मनसि सर्वदा आनन्दं जनयति।",
+        "bhaava_en": "Smiling with grace in the lake, blossoming and yielding sweet nectar, serenaded by swarms of hovering bees, the lotus creeper ever brings joy to the hearts of noble people.",
+        "bhaava_te": "సరస్సునందు వికసించి, మధురమైన తేనెను ఒసగుచు, తుమ్మెదలచే స్తోత్రము చేయబడుచున్న తామర తీగ సజ్జనుల మనస్సులకు ఎల్లప్పుడు ఆనందమును కలిగించును.",
+        "bhaava_hi": "सरोवर में विलासपूर्वक खिलती हुई, मधुर रस प्रदान करने वाली और भौरों के द्वारा गाई जाने वाली कमलिनी सज्जनों के मन को सदा आनन्दित करती है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र ज (।ऽ।), भ (ऽ।।), स (।।ऽ), ज (।ऽ।), ग (ऽ) इति १३ वर्णाः, ४, ९ वर्णेषु च यतिः अस्ति। अतः रुचिरावृत्तम्।",
+        "en": "Constructed as Ja-Bha-Sa-Ja-Ga with 4 and 9 caesura, fulfilling the bright cadence of Rucirā.",
+        "te": "జ, భ, స, జ గణములు మరియు ఒక గురువుతో 13 అక్షరములు కలిగి, 4, 9 వద్ద యతి గల రుచిరా వృత్తము.",
+        "hi": "यहाँ जगण, भगण, सगण, जगण और एक गुरु के क्रम से १३ वर्ण हैं तथा ४ और ९ पर यति है। अतः रुचिरा वृत्त है।"
+      }
+    },
+    {
+      "id": "VRIT-029",
+      "name": {
+        "sa": "गीतिः (मात्रावृत्तम्)",
+        "iast": "Gītiḥ (Mātrā-vṛtta)",
+        "te": "గీతి (మాత్రావృత్తము)",
+        "hi": "गीति (मात्रावृत्त)",
+        "en": "Gīti (Moraic Metre)"
+      },
+      "chandas_class": {
+        "tier": 0,
+        "name_sa": "मात्राच्छन्दः (जातिः)",
+        "syllables_per_pada": "अनियताक्षरम् (मात्रागणिता)",
+        "total_syllables": "६० मात्राः (१२ + १८ + १२ + १८)",
+        "metrical_type": "मात्रावृत्तम् (Mātrā-vṛtta / Jāti)"
+      },
+      "gana_structure": {
+        "ganas_sa": "प्रथम-तृतीययोः १२-१२ मात्राः, द्वितीय-चतुर्थयोश्च १८-१८ मात्राः (पूर्वार्धे उत्तरार्धे च समानाः ३०-३० मात्राः)।",
+        "symbols": "प्रथमार्धे ३० मात्राः (१२ + १८), उत्तरार्धे ३० मात्राः (१२ + १८)"
+      },
+      "yati": {
+        "yati_sa": "पादान्ते",
+        "yati_en": "At the end of each quarter",
+        "yati_te": "పాదము చివర",
+        "yati_hi": "पाद के अन्त में"
+      },
+      "lakshana": {
+        "sloka_sa": "आर्याप्रथमदलोक्तं यदि कथितेनोत्तरेण युक्ता स्यात् ।\nगीतिरियं परिभाष्या प्राच्यमुनीन्द्रैः सुविस्तार्या ॥",
+        "sloka_te": "ఆర్యాప్రథమదలోక్తం యది కథితేనోత్తరేణ యుక్తా స్యాత్ ।\nగీతిరియం పరిభాష్యా ప్రాచ్యమునీన్ద్రైః సువిస్తార్యా ॥",
+        "source_reference": "छन्दोमञ्जरी (१.१५) / वृत्तरत्नाकरः (२.७)",
+        "meaning_sa": "यस्याः पूर्वार्धे उत्तरार्धे च आर्यायाः द्वितीयपादवत् अष्टादश (१८) मात्राः भवन्ति (१२ + १८, १२ + १८ = ६० मात्राः), सा 'गीतिः'।",
+        "meaning_en": "A moraic metre formed when both halves of the stanza mirror the second pāda of Āryā with 18 morae each (12 + 18 and 12 + 18 = 60 morae total).",
+        "meaning_te": "ఆర్యావృత్తము యొక్క రెండవ అర్ధభాగము కూడా మొదటి అర్ధభాగము వలెనే 18 మాత్రలతో సమానముగా నున్నచో (12 + 18 + 12 + 18 = 60 మాత్రలు) అది గీతి వృత్తమగును.",
+        "meaning_hi": "जिसके दोनों अर्धांशों में १२ + १८ और १२ + १८ मात्राएँ (कुल ६० मात्राएँ) होती हैं, उसे गीति छन्द कहते हैं।"
+      },
+      "primary_example": {
+        "sloka_sa": "मधुरं वचः कवीनां विमलमतिं यत्करोति सज्जनताम् ।\nअमृतमिव संस्रवति हृदि परमानन्दं जनयति चातुर्यम् ॥",
+        "sloka_te": "మధురం వచః కవీనాం విమలమతిం యత్కరోతి సజ్జనతామ్ ।\nఅమృతమివ సంస్రవతి హృది పరమానన్దం జనయతి చాతుర్యమ్ ॥",
+        "anvaya": "कवीनां मधुरं वचः यत् विमलमतिं सज्जनतां करोति, अमृतम् इव हृदि संस्रवति, चातुर्यं परमानन्दं जनयति च ।",
+        "source_reference": "गीतिसङ्ग्रहः / सुभाषितरत्नभाण्डागारम्",
+        "scansion": {
+          "pada_1": "म धु रं व चः क वी नां (। । ऽ । ऽ । ऽ ऽ = १२ मात्राः)",
+          "pada_2": "वि म ल म तिं य त्क रो ति स ज्ज न ताम् (। । । । ऽ ऽ । ऽ । ऽ । । ऽ = १८ मात्राः)",
+          "pada_3": "अ मृ त मि व सं स्र व ति हृ दि (। । । । । ऽ । । । । । = १२ मात्राः)",
+          "pada_4": "प र मा न न्दं ज न य ति चा तु र्यम् (। । ऽ ऽ ऽ । । । । ऽ ऽ ऽ = १८ मात्राः)"
+        },
+        "bhaava_sa": "कवीनां मधुरं वचनम् अमृतवत् हृदये स्रवति, बुद्धिं निर्मलीकरोति, परमानन्दं चातुर्यं च जनयति।",
+        "bhaava_en": "The sweet poetry of the masters flows like nectar into the heart, purifying the intellect, fostering nobility, and generating supreme bliss and aesthetic brilliance.",
+        "bhaava_te": "సత్కవుల అమృతవాక్కులు హృదయమున అమృతము వలె ప్రవహించి, బుద్ధిని నిర్మలము చేసి, పరమానందమును కలుగజేయును.",
+        "bhaava_hi": "कवियों के मधुर वचन अमृत के समान हृदय में बहते हैं, बुद्धि को निर्मल और सज्जनता से पूर्ण करते हैं, तथा परम आनन्द और चातुर्य उत्पन्न करते हैं।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र पूर्वार्धे १२ + १८ = ३० मात्राः, उत्तरार्धे च १२ + १८ = ३० मात्राः। उभयत्र आर्यायाः द्वितीयदलवत् अष्टादशमात्राणां समत्वात् गीतिजातिः।",
+        "en": "Both halves scan as 12 + 18 = 30 morae (total 60 morae), exemplifying Gīti.",
+        "te": "రెండు అర్ధభాగములలోను 12 + 18 చొప్పున 30 + 30 = 60 మాత్రలుండుటచే నిది గీతి ఛందస్సు.",
+        "hi": "यहाँ दोनों दलों में १२ + १८ = ३०-३० मात्राएँ हैं। अतः यह गीति छन्द का उदाहरण है।"
+      }
+    },
+    {
+      "id": "VRIT-030",
+      "name": {
+        "sa": "दण्डकः (चण्डवृष्टिप्रपातः)",
+        "iast": "Daṇḍakaḥ (Caṇḍavṛṣṭiprapātaḥ)",
+        "te": "దండకము (చండవృష్టిప్రపాతము)",
+        "hi": "दण्डक (चण्डवृष्टिप्रपात)",
+        "en": "Daṇḍaka (Caṇḍavṛṣṭiprapāta)"
+      },
+      "chandas_class": {
+        "tier": 27,
+        "name_sa": "दण्डकच्छन्दः (२६ वर्णेभ्यः अधिकम्)",
+        "syllables_per_pada": "२७ वर्णाः (अथवा ततोऽधिकाः)",
+        "total_syllables": "१०८ वर्णाः (प्रतिचरणं २७)",
+        "metrical_type": "दण्डकवृत्तम् (Daṇḍaka-vṛtta)"
+      },
+      "gana_structure": {
+        "ganas_sa": "आदौ नगणद्वयं, ततश्च सततं र-गणाः (न, न, र, र, र, र, र, र, र = २७ वर्णाः)।",
+        "symbols": "। । ।   । । ।   ऽ । ऽ   ऽ । ऽ   ऽ । ऽ   ऽ । ऽ   ऽ । ऽ   ऽ । ऽ   ऽ । ऽ"
+      },
+      "yati": {
+        "yati_sa": "प्रतिरगणं पादान्ते च",
+        "yati_en": "Continuous cascade with rhythmic pauses after initial Na-gaṇas and along Ra-gaṇas",
+        "yati_te": "ప్రతి ర-గణము మరియు పాదాంతమున",
+        "yati_hi": "निरन्तर प्रवाह में पादान्त पर"
+      },
+      "lakshana": {
+        "sloka_sa": "प्रतिपादमधिकं यदि स्यात् षड्विंशतिवर्णेभ्यः स दण्डकः ।\nनद्वयमुपरिष्टाच्चेत् सप्तरेफाश्चण्डवृष्टिप्रपातो भवेत् ॥",
+        "sloka_te": "ప్రతిపాదమధికం యది స్యాత్ షడ్వింశతివర్ణేభ్యః స దణ్డకః ।\nనద్వయముపరిష్టాచ్చేత్ సప్తరేఫాశ్చణ్డవృష్టిప్రపాతో భవేత్ ॥",
+        "source_reference": "छन्दोमञ्जरी (५.१) / वृत्तरत्नाकरः (६.१)",
+        "meaning_sa": "२६ वर्णेभ्यः अधिकाक्षरयुतं वृत्तं 'दण्डकः' कथ्यते। तत्र आदौ नगणद्वयं, तदनन्तरं सप्त रगणाः (न, न, र, र, र, र, र, र, र = २७ अक्षराणि) भवन्ति चेत्, स 'चण्डवृष्टिप्रपातः' नाम दण्डकः।",
+        "meaning_en": "Any metre with more than 26 syllables per quarter is designated as a Daṇḍaka. Specifically, when two initial Na-gaṇas are followed by seven successive Ra-gaṇas (Na, Na + 7 Ra = 27 syllables per pāda), it is the renowned Caṇḍavṛṣṭiprapāta Daṇḍaka, famed in the Śyāmalā-daṇḍaka.",
+        "meaning_te": "పాదమునకు 26 కంటే ఎక్కువ అక్షరములున్నచో అది దండకమగును. అందు మొదటి రెండు న-గణములు, తరువాత ఏడు ర-గణములు (మొత్తము 27 అక్షరములు) ఉన్నచో అది చండవృష్టిప్రపాత దండకమగును.",
+        "meaning_hi": "२६ वर्णों से अधिक के चरण वाले छन्द को 'दण्डक' कहते हैं। यदि आदि में दो नगण और उसके बाद सात रगण (२+७=९ गण = २७ वर्ण) हों, तो वह 'चण्डवृष्टिप्रपात' नामक दण्डक होता है।"
+      },
+      "primary_example": {
+        "sloka_sa": "जय जननि जय मातर्मातङ्गकन्ये नमस्ते नमस्ते जगन्मातरम्ब प्रसीद प्रपन्ने जने ।\nकलय मयि कृपां देवि कामाक्षि कल्याणि काञ्चीपुरेन्दो शरच्चन्द्रशुभ्रे नमस्ते नमस्ते नमः ॥",
+        "sloka_te": "జయ జనని జయ మాతర్మాతఙ్గకన్యే నమస్తే నమస్తే జగన్మాతరమ్బ ప్రసీద ప్రపన్నే జనే ।\nకలయ మయి కృపాం దేవి కామాక్షి కల్యాణి కాఞ్చీపురేన్దో శరచ్చన్ద్రశుభ్రే నమస్తే నమస్తే నమః ॥",
+        "anvaya": "जननि जय! मातङ्गकन्ये मातर्जय! जगन्मातः अम्ब ते नमः, प्रपन्ने जने प्रसीद; देवि कामाक्षि कल्याणि काञ्चीपुरेन्दो शरच्चन्द्रशुभ्रे मयि कृपां कलय, ते नमः नमस्ते नमः ।",
+        "source_reference": "महाकवि-कालिदासकृत-श्यामलादण्डकम्",
+        "scansion": {
+          "pada_1": "ज य ज (। । ।) | न नि ज (। । ।) | य मा त (ऽ । ऽ) | र्मा त ङ्ग (ऽ । ऽ) | क न्ये न (ऽ । ऽ) | म स्ते न (ऽ । ऽ) | म स्ते ज (ऽ । ऽ) | ग न्मा त (ऽ । ऽ) | र म्ब प्र (ऽ । ऽ) [२७ वर्णाः]"
+        },
+        "bhaava_sa": "हे जगन्मातः! हे मातङ्गऋषेः कन्ये! तव जयो भवतु। शरत्कालीनचन्द्रवत् शुभ्रकान्तियुक्ते हे कामाक्षि! शरणागते मयि कृपां कुरु, तुभ्यं वारं वारं प्रणामः।",
+        "bhaava_en": "Victory to Thee, O Mother of the universe! O daughter of Sage Mataṅga! Salutations unto Thee again and again! O Kamakshi, moon of the city of Kanchi, radiant like the autumn moon, be gracious unto this surrendered soul; prostrations unto Thee!",
+        "bhaava_te": "జగన్మాతా! మాతంగ మహర్షి పుత్రీ! నీకు జయమగుగాక. శరచ్చంద్రుని వలె స్వచ్ఛమైన కాంతి గల ఓ కామాక్షీ దేవీ! కాంచీపురవాసిని! శరణాగతుడనైన నాపై దయయుంచి నన్ను కాపాడుము. నీకు వేనవేల నమస్కారములు.",
+        "bhaava_hi": "हे जगन्माता! हे मतंग मुनि की कन्या! आपकी जय हो। शरत्काल के चन्द्रमा के समान धवल कान्ति वाली, कांचीपुर की महारानी हे कामाक्षी देवी! शरणागत मुझ पर कृपा कीजिए, आपको बारम्बार प्रणाम है।"
+      },
+      "prastara_and_samanvaya": {
+        "sa": "अत्र आदौ न-न (।।। ।।।) तदनु च सप्तरगणाः (ऽ।ऽ सप्तवारम्) इति २७ वर्णानां धाराप्रवाही प्रवाहः चण्डवृष्टिप्रपात-दण्डकस्य स्वरूपं प्रकटीकरोति।",
+        "en": "Two Na-gaṇas followed by seven Ra-gaṇas (27 syllables), producing the majestic tempest-like cascade characteristic of Caṇḍavṛṣṭiprapāta Daṇḍaka.",
+        "te": "మొదట రెండు న-గణములు, తరువాత ఏడు ర-గణములు వరుసగా వచ్చి 27 అక్షరములతో జలపాతము వలె నడచు చండవృష్టిప్రపాత దండకము.",
+        "hi": "यहाँ आदि में दो नगण और उसके पश्चात् सात रगण मिलकर २७ वर्णों का तीव्र प्रवाह बनाते हैं। अतः यह चण्डवृष्टिप्रपात दण्डक का प्रसिद्ध रूप है।"
+      }
+    }
+  ]
+}

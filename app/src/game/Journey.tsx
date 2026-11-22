@@ -8,7 +8,6 @@ import GameShell from "./GameShell";
 import Quiz from "./games/Quiz";
 import MemoryMatch from "./games/MemoryMatch";
 import SentenceBuilder from "./games/SentenceBuilder";
-import { LangPicker } from "../FlagUI";
 import "./game.css";
 
 const KIND_INFO: Record<Station["kind"], { name: string; how: string }> = {
@@ -67,7 +66,6 @@ const Journey: React.FC = () => {
           <p className="jy-sub">Earn at least one star to open the next station. Each region ends with a 👑 challenge.</p>
         </div>
         <div className="jy-top-right">
-          <LangPicker />
           <span className="jy-total">⭐ {totalStars} / {STATIONS.length * 3}</span>
           <label className="jy-open" title="Open every station (for teachers or review)">
             <input type="checkbox" checked={prog.openAll} onChange={e => update({ ...prog, openAll: e.target.checked })} />

@@ -1,0 +1,1330 @@
+{
+  "project": "Medhā Sanskrit Game",
+  "dataset": "composition_picture_quests.json",
+  "version": "2.0",
+  "title": "चित्राधारित-रचना एवं चित्रवर्णन-मार्गदर्शिका (Picture Description & Visual Composition System)",
+  "description": "Comprehensive 15-theme Picture Description question bank for School (Classes 6-10), Intermediate, and University Sanskrit students. Fully aligned with CBSE, ICSE, and State Board exams.",
+  "total_quests": 15,
+  "quests": [
+    {
+      "quest_id": "PIC-001",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "विद्यालयस्य क्रीडाङ्गणम्",
+      "theme_en": "School Playground",
+      "visual_description": "A vibrant school sports field with students playing football, teachers observing, a boundary of green trees, and the school building in the background.",
+      "manjusha": [
+        {
+          "word_sa": "क्रीडाङ्गणम्",
+          "gloss_en": "playground"
+        },
+        {
+          "word_sa": "पादकन्दुकेन",
+          "gloss_en": "with a football"
+        },
+        {
+          "word_sa": "क्रीडन्ति",
+          "gloss_en": "they play"
+        },
+        {
+          "word_sa": "छात्रौ",
+          "gloss_en": "two students"
+        },
+        {
+          "word_sa": "धावतः",
+          "gloss_en": "two run"
+        },
+        {
+          "word_sa": "परितः",
+          "gloss_en": "around / surrounding"
+        },
+        {
+          "word_sa": "हरिताः वृक्षाः",
+          "gloss_en": "green trees"
+        },
+        {
+          "word_sa": "उत्साहेन",
+          "gloss_en": "with enthusiasm"
+        },
+        {
+          "word_sa": "अध्यापकः",
+          "gloss_en": "teacher"
+        },
+        {
+          "word_sa": "पश्यति",
+          "gloss_en": "observes / looks"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं चित्रम् ________ अस्ति। (विद्यालयस्य / क्रीडाङ्गणस्य)",
+        "अत्र बालकाः ________ क्रीडन्ति। (पादकन्दुकेन)",
+        "क्रीडाङ्गणं ________ हरिताः वृक्षाः सन्ति। (परितः)",
+        "द्वौ छात्रौ वेगेन ________। (धावतः)",
+        "अध्यापकः बालकान् स्नेहेन ________। (पश्यति)"
+      ],
+      "model_composition": [
+        "इदं विद्यालयस्य विशालस्य क्रीडाङ्गणस्य चित्रम् अस्ति।",
+        "चित्रे बहवः बालकाः उत्साहेन पादकन्दुकेन क्रीडन्ति।",
+        "क्रीडाङ्गणं परितः मनोहराः हरिताः वृक्षाः शोभन्ते।",
+        "द्वौ छात्रौ कन्दुकं ग्रहीतुं वेगेन धावतः।",
+        "एकः अध्यापकः अपि क्रीडाङ्गणे स्थित्वा छात्रान् पश्यति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'क्रीडाङ्गणं परितः वृक्षाः सन्ति' इत्यत्र 'परितः' शब्दस्य योगे का विभक्तिः प्रयुक्ता?",
+        "question_en": "In the sentence 'क्रीडाङ्गणं परितः वृक्षाः सन्ति', which case is governed by the preposition 'परितः'?",
+        "options": [
+          {
+            "text": "द्वितीया विभक्तिः (Accusative)",
+            "is_correct": true
+          },
+          {
+            "text": "तृतीया विभक्तिः (Instrumental)",
+            "is_correct": false
+          },
+          {
+            "text": "पञ्चमी विभक्तिः (Ablative)",
+            "is_correct": false
+          },
+          {
+            "text": "सप्तमी विभक्तिः (Locative)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "By the Upapada rule 'उभयसर्वतसोः कार्या... परितः-योगे द्वितीया', words governed by paritaḥ take the 2nd case (क्रीडाङ्गणम्).",
+        "explanation_hi": "'परितः' (चारों ओर) के योग में द्वितीया विभक्ति होती है (क्रीडाङ्गणम्)।",
+        "explanation_te": "'పరితః' (చుట్టూ) అను ఉపపదమునకు ద్వితీయా విభక్తి వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-002",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "प्रातःकालीनं वाटिका-दृश्यम्",
+      "theme_en": "Morning Garden Scene",
+      "visual_description": "A beautiful morning in a public garden with the rising sun, flying birds, blooming flowers, and people performing morning walks.",
+      "manjusha": [
+        {
+          "word_sa": "सूर्यः",
+          "gloss_en": "sun"
+        },
+        {
+          "word_sa": "उदेति",
+          "gloss_en": "rises"
+        },
+        {
+          "word_sa": "पुष्पाणि",
+          "gloss_en": "flowers"
+        },
+        {
+          "word_sa": "विकसन्ति",
+          "gloss_en": "bloom"
+        },
+        {
+          "word_sa": "खगाः",
+          "gloss_en": "birds"
+        },
+        {
+          "word_sa": "कूजन्ति",
+          "gloss_en": "chirp / sing"
+        },
+        {
+          "word_sa": "भ्रमन्ति",
+          "gloss_en": "walk / stroll"
+        },
+        {
+          "word_sa": "उद्याने",
+          "gloss_en": "in the garden"
+        },
+        {
+          "word_sa": "मालाकारः",
+          "gloss_en": "gardener"
+        },
+        {
+          "word_sa": "सिञ्चति",
+          "gloss_en": "waters"
+        }
+      ],
+      "scaffolding_templates": [
+        "अस्मिन् चित्रे प्रातःकाले पूर्वदिशि ________ उदेति। (सूर्यः)",
+        "उद्याने विविधानि सुन्दराणि ________ विकसन्ति। (पुष्पाणि)",
+        "वृक्षाणां शाखासु ________ मधुरं कूजन्ति। (खगाः)",
+        "नागरिकाः स्वास्थ्यरक्षार्थम् उद्याने ________। (भ्रमन्ति)",
+        "मालाकारः जलेन पादपान् ________। (सिञ्चति)"
+      ],
+      "model_composition": [
+        "इदं प्रातःकालीनस्य सुरम्यस्य उद्यानस्य चित्रम् अस्ति।",
+        "प्रातःकाले पूर्वस्यां दिशि रक्तवर्णः भगवान् सूर्यः उदेति।",
+        "उद्याने विविधानि सुगन्धियुक्तानि पुष्पाणि विकसन्ति।",
+        "वृक्षेषु खगाः कलरवं कुर्वन्तः इतस्ततः उत्पतन्ति।",
+        "अनेके जनाः प्रातःभ्रमणाय उद्याने आगच्छन्ति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'मालाकारः पादपान् जलेन सिञ्चति' अत्र करणकारके का विभक्तिः प्रयुक्ता?",
+        "question_en": "In 'The gardener waters plants with water', which case marks the instrument of action?",
+        "options": [
+          {
+            "text": "तृतीया विभक्तिः (जलेन)",
+            "is_correct": true
+          },
+          {
+            "text": "द्वितीया विभक्तिः (पादपान्)",
+            "is_correct": false
+          },
+          {
+            "text": "प्रथमा विभक्तिः (मालाकारः)",
+            "is_correct": false
+          },
+          {
+            "text": "पञ्चमी विभक्तिः (जलात्)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "'साधकतमं करणम्' (1.4.42) - Water is the primary instrument of watering, hence instrumental singular 'जलेन'.",
+        "explanation_hi": "क्रिया की सिद्धि में सबसे सहायक साधन 'करण' कहलाता है, अतः जल में तृतीया विभक्ति (जलेन) है।",
+        "explanation_te": "క్రియకు సాధనమైన కరణకారకమునకు తృతీయా విభక్తి వర్తించును (జలేన)."
+      }
+    },
+    {
+      "quest_id": "PIC-003",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "विद्यालयस्य पुस्तकालयः",
+      "theme_en": "School Library",
+      "visual_description": "A spacious and quiet library with bookshelves, students reading attentively, and a librarian at the desk.",
+      "manjusha": [
+        {
+          "word_sa": "पुस्तकालयः",
+          "gloss_en": "library"
+        },
+        {
+          "word_sa": "पुस्तकानि",
+          "gloss_en": "books"
+        },
+        {
+          "word_sa": "शान्त्या",
+          "gloss_en": "peacefully / silently"
+        },
+        {
+          "word_sa": "पठन्ति",
+          "gloss_en": "they read"
+        },
+        {
+          "word_sa": "कपाटिकामु",
+          "gloss_en": "in the shelves"
+        },
+        {
+          "word_sa": "पुस्तकालयाध्यक्षः",
+          "gloss_en": "librarian"
+        },
+        {
+          "word_sa": "ज्ञानाय",
+          "gloss_en": "for knowledge"
+        },
+        {
+          "word_sa": "तिष्ठन्ति",
+          "gloss_en": "they sit/stay"
+        },
+        {
+          "word_sa": "उत्पीठिकायाम्",
+          "gloss_en": "on the table"
+        },
+        {
+          "word_sa": "समाचारपत्रम्",
+          "gloss_en": "newspaper"
+        }
+      ],
+      "scaffolding_templates": [
+        "चित्रे विद्यालयस्य ________ दृश्यते। (पुस्तकालयः)",
+        "कपाटिकासु विविधानां विषयाणां ________ सज्जितानि सन्ति। (पुस्तकानि)",
+        "छात्राः उत्पीठिकासु उपविश्य ________ पठन्ति। (शान्त्या)",
+        "एकः छात्रः वार्तायै ________ पठति। (समाचारपत्रम्)",
+        "पुस्तकालये सर्वत्र नीरवता ________। (वर्तते)"
+      ],
+      "model_composition": [
+        "इदं विद्यालयस्य समृद्धस्य पुस्तकालयस्य चित्रम् अस्ति।",
+        "कपाटिकासु विविधानां विषयाणां बहूनि पुस्तकानि सन्ति।",
+        "छात्राः आसन्दिकासु उपविश्य शान्तचित्तेन पुस्तकानि पठन्ति।",
+        "एकः वृद्धः जनः उत्पीठिकायां समाचारपत्रं पश्यति।",
+        "पुस्तकालयाध्यक्षः स्वपीठिकायां स्थित्वा छात्राणां साहाय्यं करोति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'छात्राः ज्ञानाय पुस्तकानि पठन्ति' इत्यत्र 'ज्ञानाय' पदे कः कारकः?",
+        "question_en": "In 'Students read books for knowledge', which case and relation is expressed by 'ज्ञानाय'?",
+        "options": [
+          {
+            "text": "तादर्थ्ये चतुर्थी विभक्तिः (Dative of Purpose)",
+            "is_correct": true
+          },
+          {
+            "text": "करणकारके तृतीया",
+            "is_correct": false
+          },
+          {
+            "text": "अपादाने पञ्चमी",
+            "is_correct": false
+          },
+          {
+            "text": "सम्बन्धे षष्ठी",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "By the rule 'तादर्थ्ये चतुर्थी वाच्या', an action done for a specific purpose takes the 4th dative case (ज्ञानाय).",
+        "explanation_hi": "जिस प्रयोजन के लिए कोई क्रिया की जाती है, उसमें 'तादर्थ्ये चतुर्थी' से चतुर्थी विभक्ति होती है (ज्ञानाय)।",
+        "explanation_te": "ప్రయోజనమును తెలియజేయుటకు చతుర్థీ విభక్తి వర్తించును (జ్ఞానాయ = జ్ఞానము కొరకు)."
+      }
+    },
+    {
+      "quest_id": "PIC-004",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "चिकित्सालयः एवं रुग्णाः",
+      "theme_en": "Hospital & Healthcare",
+      "visual_description": "A hospital ward with a doctor examining a patient, a nurse administering medicine, and clean medical beds.",
+      "manjusha": [
+        {
+          "word_sa": "चिकित्सालयः",
+          "gloss_en": "hospital"
+        },
+        {
+          "word_sa": "चिकित्सकः",
+          "gloss_en": "doctor"
+        },
+        {
+          "word_sa": "रुग्णम्",
+          "gloss_en": "patient"
+        },
+        {
+          "word_sa": "परीक्षते",
+          "gloss_en": "examines"
+        },
+        {
+          "word_sa": "उपचारिका",
+          "gloss_en": "nurse"
+        },
+        {
+          "word_sa": "औषधम्",
+          "gloss_en": "medicine"
+        },
+        {
+          "word_sa": "ददाति",
+          "gloss_en": "gives"
+        },
+        {
+          "word_sa": "शय्यासु",
+          "gloss_en": "on the beds"
+        },
+        {
+          "word_sa": "स्वच्छता",
+          "gloss_en": "cleanliness"
+        },
+        {
+          "word_sa": "रोगमुक्ताः",
+          "gloss_en": "cured of illness"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं नगरस्य प्रसिद्धस्य ________ चित्रम् अस्ति। (चिकित्सालयस्य)",
+        "चित्रे शय्यायां शयानं रुग्णम् ________ परीक्षते। (चिकित्सकः)",
+        "उपचारिका स्नेहेन रुग्णेभ्यः ________ वितरति। (औषधम्)",
+        "अत्र सर्वत्र महती ________ वर्तते। (स्वच्छता)",
+        "चिकित्सकाः अहर्निशं मानवानां ________ कुर्वन्ति। (सेवाम्)"
+      ],
+      "model_composition": [
+        "इदं नगरस्य एकस्य आदर्श-चिकित्सालयस्य चित्रम् अस्ति।",
+        "चित्रे एकः दयालुः चिकित्सकः रुग्णस्य स्वास्थ्यं परीक्षते।",
+        "उपचारिका रुग्णानां सेवां कुर्वती औषधं यच्छति।",
+        "चिकित्सालये सर्वत्र परिशुद्धा व्यवस्था स्वच्छता च दृश्यते।",
+        "रुग्णाः औषधसेवनेन शीघ्रमेव रोगमुक्ताः भवन्ति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'उपचारिका रुग्णेभ्यः औषधं यच्छति' अत्र 'रुग्णेभ्यः' इत्यत्र चतुर्थी कस्मात् सूत्रात्?",
+        "question_en": "Why is 'रुग्णेभ्यः' in the dative 4th case when the nurse gives medicine to patients?",
+        "options": [
+          {
+            "text": "दाणश्चतुर्थी / कर्मणा यमभिप्रेति स सम्प्रदानम् (1.4.32)",
+            "is_correct": true
+          },
+          {
+            "text": "सहार्थे तृतीया (2.3.19)",
+            "is_correct": false
+          },
+          {
+            "text": "भीत्रार्थानां भयहेतुः (1.4.25)",
+            "is_correct": false
+          },
+          {
+            "text": "अपादाने पञ्चमी (2.3.28)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "The recipient of a gift/offering takes Sampradāna Sañjñā via 'कर्मणा यमभिप्रेति स सम्प्रदानम्' (1.4.32), receiving the 4th dative case.",
+        "explanation_hi": "दान की क्रिया का फल जिसे प्राप्त होता है वह सम्प्रदान कहलाता है, अतः 'रुग्णेभ्यः' में चतुर्थी विभक्ति है।",
+        "explanation_te": "దాన క్రియలో గ్రహీత సంప్రదానమగుటచే చతుర్థీ విభక్తి వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-005",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "धूमशकट-स्थानकम् (रेलस्थानकम्)",
+      "theme_en": "Railway Station",
+      "visual_description": "A bustling railway platform with a train arriving, passengers boarding with luggage, vendors selling tea and snacks, and porters.",
+      "manjusha": [
+        {
+          "word_sa": "रेलस्थानकम्",
+          "gloss_en": "railway station"
+        },
+        {
+          "word_sa": "रेलयानम्",
+          "gloss_en": "train"
+        },
+        {
+          "word_sa": "आगच्छति",
+          "gloss_en": "arrives"
+        },
+        {
+          "word_sa": "यात्रिकाः",
+          "gloss_en": "passengers"
+        },
+        {
+          "word_sa": "भारवाहकः",
+          "gloss_en": "porter / coolie"
+        },
+        {
+          "word_sa": "भारम्",
+          "gloss_en": "luggage / weight"
+        },
+        {
+          "word_sa": "वहति",
+          "gloss_en": "carries"
+        },
+        {
+          "word_sa": "विक्रेतारः",
+          "gloss_en": "vendors"
+        },
+        {
+          "word_sa": "चायम्",
+          "gloss_en": "tea"
+        },
+        {
+          "word_sa": "सङ्मर्दः",
+          "gloss_en": "crowd / rush"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं व्यस्तस्य ________ चित्रम् अस्ति। (रेलस्थानकस्य)",
+        "स्थानके अयःपथे वेगेन ________ आगच्छति। (रेलयानम्)",
+        "बहवः यात्रिकाः यानम् आरोढुं ________ कुर्वन्ति। (प्रयत्नम्)",
+        "रक्तवस्त्रधारी भारवाहकः शिरसि यात्रिकाणां ________ वहति। (भारम्)",
+        "स्थानके सर्वत्र यात्रिकाणां महान् ________ दृश्यते। (सङ्मर्दः)"
+      ],
+      "model_composition": [
+        "इदं नगरस्य प्रधानस्य धूमशकट-स्थानकस्य चित्रम् अस्ति।",
+        "चित्रे अयःपथे एकं दीर्घं रेलयानं शनैः आगच्छति।",
+        "यात्रिकाः स्वसामग्रीं गृहीत्वा इतस्ततः गच्छन्ति।",
+        "भारवाहकः यात्रिकस्य भारं स्वशिरसि वहन् गच्छति।",
+        "स्थानके आपणाः सन्ति यत्र चायं जलं च विक्रीयते।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'भारवाहकः शिरसि भारं वहति' अत्र 'शिरसि' पदे का विभक्तिः?",
+        "question_en": "In 'The porter carries the load upon his head', what case is 'शिरसि'?",
+        "options": [
+          {
+            "text": "सप्तमी विभक्तिः (अधिकरणकारके)",
+            "is_correct": true
+          },
+          {
+            "text": "तृतीया विभक्तिः (करणे)",
+            "is_correct": false
+          },
+          {
+            "text": "द्वितीया विभक्तिः (कर्मणि)",
+            "is_correct": false
+          },
+          {
+            "text": "षष्ठी विभक्तिः (सम्बन्धे)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "'आधारोऽधिकरणम्' (1.4.45) - The head is the physical locus/substratum (Aupaśleṣika Ādhāra) of the weight, taking locative 'शिरसि'.",
+        "explanation_hi": "आधार को अधिकरण कहते हैं, अतः सिर पर भार धारण करने में 'शिरस्' शब्द में सप्तमी (शिरसि) प्रयुक्त है।",
+        "explanation_te": "భారమును మోయుటకు ఆధారమైన శిరస్సునకు అధికరణ కారకమున సప్తమీ విభక్తి వర్తించును (శిరసి)."
+      }
+    },
+    {
+      "quest_id": "PIC-006",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "वर्षाऋतुः एवं जलवृष्टिः",
+      "theme_en": "Rainy Day / Monsoon Scene",
+      "visual_description": "Dark rain clouds in the sky, heavy rain falling, children holding colourful umbrellas, paper boats floating in puddles, and peacocks dancing.",
+      "manjusha": [
+        {
+          "word_sa": "मेघाः",
+          "gloss_en": "clouds"
+        },
+        {
+          "word_sa": "गर्जन्ति",
+          "gloss_en": "thunder / roar"
+        },
+        {
+          "word_sa": "वृष्टिः",
+          "gloss_en": "rain"
+        },
+        {
+          "word_sa": "पतति",
+          "gloss_en": "falls"
+        },
+        {
+          "word_sa": "छत्रम्",
+          "gloss_en": "umbrella"
+        },
+        {
+          "word_sa": "धारयन्ति",
+          "gloss_en": "they hold/wear"
+        },
+        {
+          "word_sa": "मयूरः",
+          "gloss_en": "peacock"
+        },
+        {
+          "word_sa": "नृत्यति",
+          "gloss_en": "dances"
+        },
+        {
+          "word_sa": "बालकाः",
+          "gloss_en": "children"
+        },
+        {
+          "word_sa": "कागजनौकाः",
+          "gloss_en": "paper boats"
+        }
+      ],
+      "scaffolding_templates": [
+        "अस्मिन् चित्रे आकाशे कृष्णाः ________ दृश्यन्ते। (मेघाः)",
+        "गगनात् निरन्तरं धारासाररूपेण ________ वर्षति। (जलम्)",
+        "वृष्टेः रक्षणार्थं जनाः हस्तयोः ________ धारयन्ति। (छत्राणि)",
+        "हर्षेण मयूरः स्वपक्षान् प्रसार्य ________। (नृत्यति)",
+        "जले लघवः बालकाः ________ प्लावयन्ति। (कागजनौकाः)"
+      ],
+      "model_composition": [
+        "इदं रमणीयस्य वर्षाकालस्य जलवृष्टेः च चित्रम् अस्ति।",
+        "आकाशे मेघमालाः गर्जन्ति, धारासारं जलं च वर्षति।",
+        "जनाः वृष्टेः रक्षणाय विविधानि छत्राणि धारयन्ति।",
+        "मेघान् दृष्ट्वा मयूरः वने बर्हं प्रसार्य नृत्यति।",
+        "प्रसन्नाः बालकाः सञ्चिते जले कागजनौकाः चालयन्ति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'मेघात् जलं पतति' अत्र अपादानकारके का विभक्तिः?",
+        "question_en": "In 'Water falls from the cloud', which case marks the point of separation (Apādāna)?",
+        "options": [
+          {
+            "text": "पञ्चमी विभक्तिः (मेघात्)",
+            "is_correct": true
+          },
+          {
+            "text": "तृतीया विभक्तिः (मेघेन)",
+            "is_correct": false
+          },
+          {
+            "text": "षष्ठी विभक्तिः (मेघस्य)",
+            "is_correct": false
+          },
+          {
+            "text": "द्वितीया विभक्तिः (मेघम्)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "'ध्रुवमपायेऽपादानम्' (1.4.24) - The cloud is the fixed point from which rain departs, hence ablative 'मेघात्'.",
+        "explanation_hi": "अलग होने के अर्थ में ध्रुव (स्थिर बिन्दु) अपादान होता है और उसमें पञ्चमी विभक्ति (मेघात्) लगती है।",
+        "explanation_te": "విడివడు స్థానమునకు అపాదాన కారకములో పంచమీ విభక్తి వర్తించును (మేఘాత్)."
+      }
+    },
+    {
+      "quest_id": "PIC-007",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "दीपावलि-उत्सवः",
+      "theme_en": "Diwali Festival",
+      "visual_description": "A family celebrating Diwali: rows of lit clay lamps (diyas), colourful rangoli on the floor, children bursting sparkles, and parents distributing sweets.",
+      "manjusha": [
+        {
+          "word_sa": "दीपावलिः",
+          "gloss_en": "festival of lights"
+        },
+        {
+          "word_sa": "दीपकान्",
+          "gloss_en": "clay lamps"
+        },
+        {
+          "word_sa": "प्रज्वालयन्ति",
+          "gloss_en": "they ignite/light"
+        },
+        {
+          "word_sa": "रङ्गावली",
+          "gloss_en": "rangoli design"
+        },
+        {
+          "word_sa": "मिष्टान्नम्",
+          "gloss_en": "sweets"
+        },
+        {
+          "word_sa": "खादन्ति",
+          "gloss_en": "they eat"
+        },
+        {
+          "word_sa": "नूतनवस्त्राणि",
+          "gloss_en": "new clothes"
+        },
+        {
+          "word_sa": "आनन्दः",
+          "gloss_en": "joy / happiness"
+        },
+        {
+          "word_sa": "लक्ष्मीपूजनम्",
+          "gloss_en": "worship of Goddess Lakshmi"
+        },
+        {
+          "word_sa": "स्फोटकान्",
+          "gloss_en": "firecrackers"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं भारतीयानां प्रसिद्धस्य ________ चित्रम् अस्ति। (दीपावल्युत्सवस्य)",
+        "गृहेषु सर्वे जनाः सस्नेहं विविधान् ________ प्रज्वालयन्ति। (दीपकान्)",
+        "गृहस्य द्वारे महिला मनोहरां ________ रचयति। (रङ्गावलीम्)",
+        "बालाः नूतनवस्त्राणि धृत्वा ________ खादन्ति। (मिष्टान्नम्)",
+        "रात्रौ सर्वे मिलित्वा भगवत्याः ________ कुर्वन्ति। (लक्ष्मीपूजनम्)"
+      ],
+      "model_composition": [
+        "इदं प्रकाशपर्वणः दीपावल्याः अतीव मनोहरं चित्रम् अस्ति।",
+        "गृहाणां प्राङ्गणे बालकाः पङ्क्तिबद्धान् दीपकान् प्रज्वालयन्ति।",
+        "द्वारे सुन्दरा रङ्गावली विरचिता दृश्यते।",
+        "सर्वे जनाः नूतनानि वस्त्राणि परिधाय मिष्टान्नं परस्परं वितरन्ति।",
+        "दीपानां धवलप्रकाशेन सर्वत्र अन्धकारः नश्यति, आनन्दश्च प्रसरति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'बालकाः मित्रेभ्यः मिष्टान्नं वितरन्ति' अत्र 'मित्रेभ्यः' पदे का विभक्तिः?",
+        "question_en": "In 'Children distribute sweets to their friends', what case is 'मित्रेभ्यः'?",
+        "options": [
+          {
+            "text": "चतुर्थी विभक्तिः (सम्प्रदाने)",
+            "is_correct": true
+          },
+          {
+            "text": "तृतीया विभक्तिः (करणे)",
+            "is_correct": false
+          },
+          {
+            "text": "पञ्चमी विभक्तिः (अपादाने)",
+            "is_correct": false
+          },
+          {
+            "text": "सप्तमी विभक्तिः (अधिकरणे)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "With distribution/giving (vitaraṇam), recipients of the sweets receive Sampradāna Sañjñā, hence 4th dative plural 'मित्रेभ्यः'.",
+        "explanation_hi": "वितरण अथवा दान के योग में सम्प्रदान कारक होकर चतुर्थी विभक्ति (मित्रेभ्यः) होती है।",
+        "explanation_te": "పంచిపెట్టుట అను అర్థములో సంప్రదాన కారకమున చతుర్థీ విభక్తి బహువచనము (మిత్రేభ్యః) వచ్చును."
+      }
+    },
+    {
+      "quest_id": "PIC-008",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "ग्राम्य-विपणिः (ग्रामस्य आपणम्)",
+      "theme_en": "Village Market / Bazaar",
+      "visual_description": "A colourful open-air rural bazaar where vegetable vendors sit on mats, villagers buy daily groceries, fruits, and clay pottery.",
+      "manjusha": [
+        {
+          "word_sa": "विपणिः",
+          "gloss_en": "market"
+        },
+        {
+          "word_sa": "शाकविक्रेता",
+          "gloss_en": "vegetable seller"
+        },
+        {
+          "word_sa": "शाकानि",
+          "gloss_en": "vegetables"
+        },
+        {
+          "word_sa": "विक्रीणाति",
+          "gloss_en": "sells"
+        },
+        {
+          "word_sa": "क्रीणन्ति",
+          "gloss_en": "they buy"
+        },
+        {
+          "word_sa": "कुम्भकारः",
+          "gloss_en": "potter"
+        },
+        {
+          "word_sa": "घटान्",
+          "gloss_en": "clay pots"
+        },
+        {
+          "word_sa": "फलानाम्",
+          "gloss_en": "of fruits"
+        },
+        {
+          "word_sa": "कोलाहलः",
+          "gloss_en": "bustle / noise"
+        },
+        {
+          "word_sa": "ग्रामीणजनाः",
+          "gloss_en": "villagers"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं ग्रामीण-क्षेत्रस्य सजीवस्य ________ चित्रम् अस्ति। (विपणेः)",
+        "आपणेषु विक्रेतारः हरितानि ताज्यानि ________ विक्रीयन्ते। (शाकानि)",
+        "कुम्भकारः हस्तेन मृत्तिकया निर्मितान् ________ प्रदर्शयति। (घटान्)",
+        "ग्रामीणमहिलाः गृहकार्याय विविधानि वस्तूनि ________। (क्रीणन्ति)",
+        "विपणौ सर्वत्र क्रेतृ-विक्रेतृणां महान् ________ श्रूयते। (कोलाहलः)"
+      ],
+      "model_composition": [
+        "इदं ग्रामस्य साप्ताहिक्याः विपणेः एकं रम्यं चित्रम् अस्ति।",
+        "शाकविक्रेतारः भूमौ उपविश्य विविधानि शाकानि विक्रीयन्ते।",
+        "कुम्भकारः स्वहस्तनिर्मितान् मृत्तिकाघटान् विक्रयणाय स्थापयति।",
+        "बहवः ग्रामीणाः आवश्यकवस्तूनि क्रेतुं विपणिम् आगच्छन्ति।",
+        "अत्र विक्रेतारः मधुरवचनेन ग्राहकान् आकर्षयन्ति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'विक्रेता आपणात् शाकं विक्रीणाति' अत्र 'आपणात्' पदे कः कारकः?",
+        "question_en": "In 'The seller sells vegetables from the shop', what kāraka is 'आपणात्'?",
+        "options": [
+          {
+            "text": "अपादानकारकम् (पञ्चमी विभक्तिः)",
+            "is_correct": true
+          },
+          {
+            "text": "करणकारकम् (तृतीया)",
+            "is_correct": false
+          },
+          {
+            "text": "कर्मकारकम् (द्वितीया)",
+            "is_correct": false
+          },
+          {
+            "text": "अधिकरणकारकम् (सप्तमी)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "Goods depart/disperse from the shop, marking it as the locus of departure (Apādāna), taking ablative 'आपणात्'.",
+        "explanation_hi": "दुकान से वस्तु बाहर जाती है, अतः अलग होने के अर्थ में अपादान कारक होकर पञ्चमी विभक्ति (आपणात्) है।",
+        "explanation_te": "దుకాణము నుండి వస్తువులు వేరగుచున్నందున అపాదాన కారకమున పంచమీ విభక్తి (ఆపణాత్) వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-009",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "स्वच्छभारताभियानम् (परिसर-स्वच्छता)",
+      "theme_en": "Cleanliness Drive / Campus Cleanup",
+      "visual_description": "Students and volunteers sweeping a park, gathering plastic waste into bins, planting bushes, and displaying cleanliness banners.",
+      "manjusha": [
+        {
+          "word_sa": "स्वच्छता",
+          "gloss_en": "cleanliness"
+        },
+        {
+          "word_sa": "सम्मार्जनीभिः",
+          "gloss_en": "with brooms"
+        },
+        {
+          "word_sa": "मार्जयन्ति",
+          "gloss_en": "they sweep/clean"
+        },
+        {
+          "word_sa": "अवकरम्",
+          "gloss_en": "garbage / trash"
+        },
+        {
+          "word_sa": "अवकरकण्डोले",
+          "gloss_en": "into the dustbin"
+        },
+        {
+          "word_sa": "क्षिपति",
+          "gloss_en": "throws / deposits"
+        },
+        {
+          "word_sa": "परिसरः",
+          "gloss_en": "campus / surroundings"
+        },
+        {
+          "word_sa": "स्वस्थम्",
+          "gloss_en": "healthy"
+        },
+        {
+          "word_sa": "श्रमदानम्",
+          "gloss_en": "voluntary labor"
+        },
+        {
+          "word_sa": "उत्साहेन",
+          "gloss_en": "with enthusiasm"
+        }
+      ],
+      "scaffolding_templates": [
+        "चित्रे छात्राः विद्यालयस्य परिसरस्य ________ कुर्वन्ति। (स्वच्छताम्)",
+        "केचन बालकाः हस्तयोः सम्मार्जनीं गृहीत्वा मार्गं ________। (मार्जयन्ति)",
+        "एकः छात्रः इतस्ततः पतितम् अवकरं ________ क्षिपति। (अवकरकण्डोले)",
+        "परिसरस्य स्वच्छतया जीवनं ________ भवति। (स्वस्थम्)",
+        "सर्वे नागरिकाः उत्साहेन ________ कुर्वन्ति। (श्रमदानम्)"
+      ],
+      "model_composition": [
+        "इदं स्वच्छभारताभियानस्य प्रेरकमहापर्वणः चित्रम् अस्ति।",
+        "चित्रे निष्ठावन्तः छात्राः सम्मार्जनीभिः भूमिं परिशोधयन्ति।",
+        "एकः बालकः भूमिस्थं सर्वम् अवकरं सङ्गृह्य अवकरकण्डोले क्षिपति।",
+        "स्वच्छपरिसरेण रोगाः दूरीभवन्ति, वातावरणं च शुद्धं तिष्ठति।",
+        "'स्वच्छता एव सेवा' इति मत्वा सर्वे उत्साहेन श्रमदानं कुर्वन्ति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'बालकः अवकरकण्डोले अवकरं क्षिपति' अत्र अधिकरणकारके का विभक्तिः?",
+        "question_en": "In 'The boy throws trash into the dustbin', which case marks the receptacle (Ādhāra)?",
+        "options": [
+          {
+            "text": "सप्तमी विभक्तिः (अवकरकण्डोले)",
+            "is_correct": true
+          },
+          {
+            "text": "तृतीया विभक्तिः (अवकरकण्डोलेन)",
+            "is_correct": false
+          },
+          {
+            "text": "पञ्चमी विभक्तिः (अवकरकण्डोलात्)",
+            "is_correct": false
+          },
+          {
+            "text": "द्वितीया विभक्तिः (अवकरकण्डोलम्)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "'आधारोऽधिकरणम्' (1.4.45) - The dustbin is the physical receptacle into which trash is placed, taking locative 'अवकरकण्डोले'.",
+        "explanation_hi": "कूड़ा डालने का आधार 'अवकरकण्डोल' (कूड़ेदान) है, अतः अधिकरण कारक होने से सप्तमी विभक्ति (अवकरकण्डोले) है।",
+        "explanation_te": "చెత్తను వేయుటకు ఆధారమైన కుండీకి అధికరణ కారకమున సప్తమీ విభక్తి వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-010",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "अन्तर्राष्ट्रिय-योगदिवसः",
+      "theme_en": "International Yoga Day",
+      "visual_description": "People gathered outdoors on green grass on yoga mats, guided by an instructor, performing Padmāsana and Prāṇāyāma under the morning sun.",
+      "manjusha": [
+        {
+          "word_sa": "योगाभ्यासम्",
+          "gloss_en": "practice of yoga"
+        },
+        {
+          "word_sa": "कुर्वन्ति",
+          "gloss_en": "they perform"
+        },
+        {
+          "word_sa": "पद्मासने",
+          "gloss_en": "in lotus posture"
+        },
+        {
+          "word_sa": "उपविशन्ति",
+          "gloss_en": "they sit"
+        },
+        {
+          "word_sa": "प्राणायामेन",
+          "gloss_en": "through breath control"
+        },
+        {
+          "word_sa": "योगगुरुः",
+          "gloss_en": "yoga instructor"
+        },
+        {
+          "word_sa": "शिक्षयति",
+          "gloss_en": "teaches / guides"
+        },
+        {
+          "word_sa": "शरीरम्",
+          "gloss_en": "body"
+        },
+        {
+          "word_sa": "नीरोगम्",
+          "gloss_en": "free from diseases"
+        },
+        {
+          "word_sa": "शान्तिः",
+          "gloss_en": "peace of mind"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं प्रातःकाले आयोजितायाः ________ चित्रम् अस्ति। (योगसभायाः)",
+        "सर्वे जनाः भूमौ आसनं प्रसार्य ________ उपविशन्ति। (पद्मासने)",
+        "योगगुरुः पुरतः स्थित्वा विविधानि शासनानि ________। (शिक्षयति)",
+        "प्रतिदिनं योगाभ्यासेन मानवशरीरं ________ भवति। (नीरोगम्)",
+        "प्राणायामेन मनसि अपूर्वा ________ उत्पद्यते। (शान्तिः)"
+      ],
+      "model_composition": [
+        "इदं विश्वप्रसिद्धस्य अन्तर्राष्ट्रिय-योगदिवसस्य एकं मनोहरं चित्रम् अस्ति।",
+        "उद्याने बहवः पुरुषाः महिलाः बालकाः च योगवस्त्राणि धृत्वा उपविष्टाः सन्ति।",
+        "योगगुरुणा सह सर्वे जनाः पद्मासने स्थित्वा प्राणायामं कुर्वन्ति।",
+        "योगासनेन शरीरं दृढं भवति, मानसिकः तनावः च विनश्यति।",
+        "'शरीरमाद्यं खलु धर्मसाधनम्' इति मत्वा सर्वे योगं समाचरन्ति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'प्राणायामेन मनः शान्तं भवति' अत्र 'प्राणायामेन' पदे कः कारकः?",
+        "question_en": "In 'Through pranayama the mind becomes calm', what case and kāraka is 'प्राणायामेन'?",
+        "options": [
+          {
+            "text": "करणकारकम् (तृतीया विभक्तिः)",
+            "is_correct": true
+          },
+          {
+            "text": "कर्मकारकम् (द्वितीया)",
+            "is_correct": false
+          },
+          {
+            "text": "अपादानकारकम् (पञ्चमी)",
+            "is_correct": false
+          },
+          {
+            "text": "सम्प्रदानकारकम् (चतुर्थी)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "Prāṇāyāma is the instrument/means through which mental calm is realized, taking instrumental 'प्राणायामेन' via 'साधकतमं करणम्'.",
+        "explanation_hi": "मन की शान्ति का सर्वोत्तम साधन प्राणायाम है, अतः 'साधकतमं करणम्' से तृतीया विभक्ति (प्राणायामेन) है।",
+        "explanation_te": "మనస్సు ప్రశాంతమగుటకు సాధనమైన ప్రాణాయామమునకు కరణకారకమున తృతీయా విభక్తి వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-011",
+      "level": "सरलस्तरः (Level 1: School Classes 6-8)",
+      "theme_sa": "विद्यालयस्य विज्ञान-प्रयोगशाला",
+      "theme_en": "School Science Laboratory",
+      "visual_description": "Students in white lab coats conducting physics and chemistry experiments using test tubes, microscopes, and flasks under teacher guidance.",
+      "manjusha": [
+        {
+          "word_sa": "प्रयोगशाला",
+          "gloss_en": "laboratory"
+        },
+        {
+          "word_sa": "प्रयोगम्",
+          "gloss_en": "experiment"
+        },
+        {
+          "word_sa": "कुर्वन्ति",
+          "gloss_en": "they perform"
+        },
+        {
+          "word_sa": "यन्त्राणि",
+          "gloss_en": "apparatus / instruments"
+        },
+        {
+          "word_sa": "सूक्ष्मदर्शकेन",
+          "gloss_en": "through microscope"
+        },
+        {
+          "word_sa": "पश्यति",
+          "gloss_en": "examines / sees"
+        },
+        {
+          "word_sa": "अध्यापिका",
+          "gloss_en": "female teacher"
+        },
+        {
+          "word_sa": "मार्गदर्शनम्",
+          "gloss_en": "guidance"
+        },
+        {
+          "word_sa": "कौतुकेन",
+          "gloss_en": "with curiosity"
+        },
+        {
+          "word_sa": "जिज्ञासा",
+          "gloss_en": "inquisitiveness"
+        }
+      ],
+      "scaffolding_templates": [
+        "चित्रे विद्यालयस्य सुसज्जिता ________ दृश्यते। (प्रयोगशाला)",
+        "छात्राः श्वेतवस्त्राणि परिधाय वैज्ञानिकं ________ कुर्वन्ति। (प्रयोगम्)",
+        "एकः छात्रः उत्पीठिकायां स्थित्वा ________ जन्तून् पश्यति। (सूक्ष्मदर्शकेन)",
+        "अध्यापिका सस्नेहं छात्राणां सन्देहान् निवारयन्ती ________ करोति। (मार्गदर्शनम्)",
+        "वैज्ञानिकाध्ययनेन बालकानां मतिषु ________ वर्धते। (जिज्ञासा)"
+      ],
+      "model_composition": [
+        "इदं विद्यालयस्य आधुनिक-विज्ञान-प्रयोगशालायाः चित्रम् अस्ति।",
+        "अत्र उत्पीठिकासु विविधानि काचपात्राणि वैज्ञानिक-उपकरणानि च सन्ति।",
+        "छात्राः अध्यापिकायाः मार्गदर्शने रसायनशास्त्रस्य प्रयोगं कुर्वन्ति।",
+        "एका छात्रा सूक्ष्मदर्शक-यन्त्रेण सूक्ष्माङ्गानिरीक्षणं करोति।",
+        "अनेन प्रयोगात्मकाध्ययनेन छात्राणां वैज्ञानिक-दृष्टिकोणः विकसितः भवति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'छात्रा सूक्ष्मदर्शकेन जीवाणून् पश्यति' अत्र करणकारके कः शब्दः?",
+        "question_en": "In 'The student observes bacteria with a microscope', which word functions as the instrument?",
+        "options": [
+          {
+            "text": "सूक्ष्मदर्शकेन (Instrumental Singular)",
+            "is_correct": true
+          },
+          {
+            "text": "जीवाणून् (Accusative Plural)",
+            "is_correct": false
+          },
+          {
+            "text": "छात्रा (Nominative Singular)",
+            "is_correct": false
+          },
+          {
+            "text": "पश्यति (Verb)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "The microscope is the operative instrument through which viewing is accomplished, hence instrumental 'सूक्ष्मदर्शकेन'.",
+        "explanation_hi": "देखने की क्रिया का प्रमुख साधन सूक्ष्मदर्शक है, अतः इसमें तृतीया विभक्ति (सूक्ष्मदर्शकेन) है।",
+        "explanation_te": "చూచుటకు సాధనమైన సూక్ష్మదర్శినికి కరణకారకమున తృతీయా విభక్తి వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-012",
+      "level": "मध्यमस्तरः (Level 2: College / High School)",
+      "theme_sa": "पादपारोपणम् एवं वृक्षारोपण-समारोहः",
+      "theme_en": "Tree Plantation Drive",
+      "visual_description": "Volunteers and students digging soil, planting young saplings, supporting them with sticks, and watering them carefully.",
+      "manjusha": [
+        {
+          "word_sa": "पादपारोपणम्",
+          "gloss_en": "planting of saplings"
+        },
+        {
+          "word_sa": "खनित्रेण",
+          "gloss_en": "with a spade/hoe"
+        },
+        {
+          "word_sa": "गर्तं खनति",
+          "gloss_en": "digs a pit"
+        },
+        {
+          "word_sa": "रोपयन्ति",
+          "gloss_en": "they plant"
+        },
+        {
+          "word_sa": "जलेन",
+          "gloss_en": "with water"
+        },
+        {
+          "word_sa": "सिञ्चति",
+          "gloss_en": "waters"
+        },
+        {
+          "word_sa": "पर्यावरणम्",
+          "gloss_en": "environment"
+        },
+        {
+          "word_sa": "प्राणवायुम्",
+          "gloss_en": "oxygen"
+        },
+        {
+          "word_sa": "यच्छन्ति",
+          "gloss_en": "they bestow / give"
+        },
+        {
+          "word_sa": "वृक्षारोपणम्",
+          "gloss_en": "afforestation"
+        }
+      ],
+      "scaffolding_templates": [
+        "चित्रे उत्साहिणः युवानः मिलित्वा ________ कुर्वन्ति। (पादपारोपणम्)",
+        "एकः युवकः हस्ते खनित्रं गृहीत्वा भूमौ ________। (गर्तं खनति)",
+        "बालिका नवं कोमलं पादपं गर्ते संस्थाप्य ________। (रोपयति)",
+        "वृक्षाः अस्माकं जीवनाय शुद्धं ________ ददति। (प्राणवायुम्)",
+        "'वृक्षो रक्षति रक्षितः' अतः सर्वैः ________ कर्तव्यम्। (वृक्षारोपणम्)"
+      ],
+      "model_composition": [
+        "इदं पर्यावरण-रक्षणार्थम् आयोजितायाः वृक्षारोपण-योजनायाः चित्रम् अस्ति।",
+        "चित्रे एकः युवा खनित्रेण गर्तं खनन् नवपादपस्य रोपणाय भूमिं सज्जीकरोति।",
+        "बालिका कोमलपादपं गर्ते संस्थाप्य कुम्भात् जलेन सिञ्चति।",
+        "वृक्षाः कार्बन-अम्लं गृहीत्वा मानवेभ्यः जीवनदायिनं प्राणवायुं यच्छन्ति।",
+        "अनेन पुण्यकर्मणा धरा हरितिमायुक्ता भवति, सर्वत्र च शान्तिः प्रसरति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'वृक्षाः जीवेभ्यः प्राणवायुं यच्छन्ति' अत्र 'जीवेभ्यः' इत्यत्र का विभक्तिः?",
+        "question_en": "In 'Trees grant oxygen to living beings', what case is 'जीवेभ्यः'?",
+        "options": [
+          {
+            "text": "चतुर्थी विभक्तिः (सम्प्रदाने)",
+            "is_correct": true
+          },
+          {
+            "text": "पञ्चमी विभक्तिः (अपादाने)",
+            "is_correct": false
+          },
+          {
+            "text": "तृतीया विभक्तिः (करणे)",
+            "is_correct": false
+          },
+          {
+            "text": "षष्ठी विभक्तिः (सम्बन्धे)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "Living beings are the recipients of the life-giving oxygen gifted by trees, taking Sampradāna 4th dative plural 'जीवेभ्यः'.",
+        "explanation_hi": "'दा' (यच्छ) धातु के प्रयोग में जिसको दान दिया जाता है वह सम्प्रदान होता है, अतः 'जीवेभ्यः' में चतुर्थी है।",
+        "explanation_te": "ఇచ్చుట అను అర్థములో గ్రహీతయైన సమస్త ప్రాణులకు సంప్రదాన చతుర్థీ విభక్తి (జీవేభ్యః) వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-013",
+      "level": "मध्यमस्तरः (Level 2: College / High School)",
+      "theme_sa": "कृषिकर्म एवं ग्राम्यजीवनम्",
+      "theme_en": "Agricultural Life & Harvesting",
+      "visual_description": "A fertile green field where a farmer ploughs the earth with two oxen, crops wave in the breeze, and a farmer's wife carries a meal basket.",
+      "manjusha": [
+        {
+          "word_sa": "कृषकः",
+          "gloss_en": "farmer"
+        },
+        {
+          "word_sa": "हलेन",
+          "gloss_en": "with a plough"
+        },
+        {
+          "word_sa": "कर्षति",
+          "gloss_en": "ploughs"
+        },
+        {
+          "word_sa": "वृषभौ",
+          "gloss_en": "two oxen"
+        },
+        {
+          "word_sa": "सञ्चालयति",
+          "gloss_en": "drives / leads"
+        },
+        {
+          "word_sa": "शस्यश्यामलम्",
+          "gloss_en": "lush green with crops"
+        },
+        {
+          "word_sa": "परिश्रमेण",
+          "gloss_en": "through hard work"
+        },
+        {
+          "word_sa": "अन्नदाता",
+          "gloss_en": "giver of food"
+        },
+        {
+          "word_sa": "सस्यानि",
+          "gloss_en": "grains / crops"
+        },
+        {
+          "word_sa": "उत्पादयति",
+          "gloss_en": "produces"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं भारतीय-ग्रामस्य परिश्रमिणः कृषकस्य ________ चित्रम् अस्ति। (क्षेत्रस्य)",
+        "चित्रे बलीवर्दद्वयं योजयित्वा कृषकः हलेन क्षेत्रं ________। (कर्षति)",
+        "क्षेत्रे सर्वत्र सुन्दराणि हरितानि ________ लसन्ति। (सस्यानि)",
+        "कृषकः स्वस्य अविश्रान्त-परिश्रमेण सम्पूर्णाय जगते ________ उत्पद्यते। (अन्नम्)",
+        "सत्यमेव कृषकः राष्ट्रस्य परमः ________ कथ्यते। (अन्नदाता)"
+      ],
+      "model_composition": [
+        "इदं भारतीय-ग्राम्यजीवनस्य शस्यश्यामलस्य कृषि-क्षेत्रस्य च चित्रम् अस्ति।",
+        "चित्रे कर्मठः कृषकः वृषभद्वयं हले योजयित्वा धरित्रीं कर्षन् दृश्यते।",
+        "तस्य पृष्ठतः क्षेत्रे मन्दमारुतेन कम्पमानानि पक्वानि सस्यानि शोभन्ते।",
+        "कृषकः शीतातपं सोढ्वा परिश्रमेण सम्पूर्णस्य देशस्य पोषणाय अन्नम् उत्पादयति।",
+        "'जय जवान, जय किसान' इति आदर्शवाक्यं कृषकस्य त्यागमहात्म्यं घोषयति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'कृषकः हलेन क्षेत्रं कर्षति' अत्र 'हलेन' पदे का विभक्तिः?",
+        "question_en": "In 'The farmer ploughs the field with a plough', what case is 'हलेन'?",
+        "options": [
+          {
+            "text": "तृतीया विभक्तिः (करणकारके)",
+            "is_correct": true
+          },
+          {
+            "text": "द्वितीया विभक्तिः (कर्मणि)",
+            "is_correct": false
+          },
+          {
+            "text": "प्रथमा विभक्तिः (कर्तरि)",
+            "is_correct": false
+          },
+          {
+            "text": "सप्तमी विभक्तिः (अधिकरणे)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "The plough (hala) is the primary instrument of tilling, taking instrumental 'हलेन'.",
+        "explanation_hi": "खेत जोतने की क्रिया का मुख्य साधन 'हल' है, अतः करण कारक से तृतीया विभक्ति (हलेन) प्रयुक्त है।",
+        "explanation_te": "దున్నుటకు సాధనమైన నాగలికి కరణకారకమున తృతీయా విభక్తి వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-014",
+      "level": "मध्यमस्तरः (Level 2: College / High School)",
+      "theme_sa": "पुण्यसलिला गङ्गातटम् एवं सन्ध्यावन्दनम्",
+      "theme_en": "Holy River Bank & Evening Prayer",
+      "visual_description": "Ancient temple steps on the holy Ganges at dusk: devotees taking a holy dip, priests performing evening Ārati with fire lamps, and bells ringing.",
+      "manjusha": [
+        {
+          "word_sa": "गङ्गानदी",
+          "gloss_en": "River Ganges"
+        },
+        {
+          "word_sa": "तटे",
+          "gloss_en": "on the bank"
+        },
+        {
+          "word_sa": "मन्दिराणि",
+          "gloss_en": "temples"
+        },
+        {
+          "word_sa": "भक्ताः",
+          "gloss_en": "devotees"
+        },
+        {
+          "word_sa": "स्नानम्",
+          "gloss_en": "sacred bath"
+        },
+        {
+          "word_sa": "कुर्वन्ति",
+          "gloss_en": "they perform"
+        },
+        {
+          "word_sa": "दीपारार्तिक्यम्",
+          "gloss_en": "lamp offering / Ārati"
+        },
+        {
+          "word_sa": "घण्टानादः",
+          "gloss_en": "ringing of bells"
+        },
+        {
+          "word_sa": "श्रूयते",
+          "gloss_en": "is heard"
+        },
+        {
+          "word_sa": "पवित्रम्",
+          "gloss_en": "pure / sacred"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं पापनाशिन्याः भगवत्याः गङ्गायाः रम्यस्य ________ चित्रम् अस्ति। (तटस्य)",
+        "चित्रे बहवः भक्ताः श्रद्धया निर्मले जले ________ कुर्वन्ति। (स्नानम्)",
+        "तटे स्थितेषु भव्येषु मन्दिरेषु सुमधुरः ________ श्रूयते। (घण्टानादः)",
+        "पुरोहिताः कांस्यदीपैः गङ्गामातुः पावनम् ________ कुर्वन्ति। (आरार्तिक्यम्)",
+        "अत्र वातावरणं सर्वथा शान्तं भक्तिरसमयं च ________। (दृश्यते)"
+      ],
+      "model_composition": [
+        "इदं पुण्यसलिलायाः भगवत्याः गङ्गायाः पवित्रस्य घट्टस्य सन्ध्याकालीनं चित्रम् अस्ति।",
+        "नद्याः विमले तरङ्गित-जले भक्ताः प्रणम्य श्रद्धाभावेन स्नानं समाचरन्ति।",
+        "तटे पावनमन्दिरेषु उच्चैः शङ्खनादः घण्टानादश्च सर्वदिक्षु प्रसरति।",
+        "वेदज्ञाः ब्राह्मणाः प्रज्वलितैः महद्दीपैः गङ्गायाः महा-आरार्तिक्यं सम्पादयन्ति।",
+        "जले प्रवहन्तः सहस्रशः प्रदीपाः आकाशस्थाः तारकाः इव अनुपमां शोभां जनयन्ति।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'गङ्गा हिमालयात् प्रभवति' अत्र अपादानकारके कः नियमः?",
+        "question_en": "In 'The Ganges originates from the Himalayas', what Pāṇinian sūtra governs the ablative case in 'हिमालयात्'?",
+        "options": [
+          {
+            "text": "भुवः प्रभवः (1.4.31)",
+            "is_correct": true
+          },
+          {
+            "text": "जनिकर्तुः प्रकृतिः (1.4.30)",
+            "is_correct": false
+          },
+          {
+            "text": "भीत्रार्थानां भयहेतुः (1.4.25)",
+            "is_correct": false
+          },
+          {
+            "text": "आख्यातोपयोगे (1.4.29)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "'भुवः प्रभवः' (1.4.31) - The locus where an entity first emerges or appears (Himavat) takes Apādāna sañjñā and 5th ablative 'हिमालयात्'.",
+        "explanation_hi": "'भुवः प्रभवः' सूत्र से जहाँ से कोई नदी या वस्तु पहली बार प्रकट होती है, उस उद्गम स्थल में अपादान कारक होकर पञ्चमी विभक्ति (हिमालयात्) होती है।",
+        "explanation_te": "'భువః ప్రభవః' అను సూత్రముచే నది మొదలగునవి ఆవిర్భవించు జన్మస్థానమునకు పంచమీ విభక్తి వర్తించును."
+      }
+    },
+    {
+      "quest_id": "PIC-015",
+      "level": "प्रौढस्तरः (Level 3: University / Śāstrī)",
+      "theme_sa": "प्राचीन-तपोवनम् एवं गुरुकुल-परम्परा",
+      "theme_en": "Ancient Gurukula Hermitage",
+      "visual_description": "A tranquil Vedic tapovana under banyan trees: a sage imparting Upaniṣadic wisdom, disciples seated with palm-leaf manuscripts, deer resting peacefully with predators.",
+      "manjusha": [
+        {
+          "word_sa": "तपोवनम्",
+          "gloss_en": "sacred hermitage"
+        },
+        {
+          "word_sa": "ऋषिः",
+          "gloss_en": "sage / preceptor"
+        },
+        {
+          "word_sa": "शिष्यान्",
+          "gloss_en": "disciples"
+        },
+        {
+          "word_sa": "अध्यापयति",
+          "gloss_en": "teaches / imparts"
+        },
+        {
+          "word_sa": "यज्ञवेदी",
+          "gloss_en": "sacrificial altar"
+        },
+        {
+          "word_sa": "धूमः",
+          "gloss_en": "sacrificial smoke"
+        },
+        {
+          "word_sa": "हरिणाः",
+          "gloss_en": "deer"
+        },
+        {
+          "word_sa": "विगतवैराः",
+          "gloss_en": "freed from enmity"
+        },
+        {
+          "word_sa": "प्रशान्तता",
+          "gloss_en": "profound tranquility"
+        },
+        {
+          "word_sa": "ब्रह्मविद्या",
+          "gloss_en": "supreme sacred wisdom"
+        }
+      ],
+      "scaffolding_templates": [
+        "इदं महर्षेः काश्यपस्य आश्रमस्य पावनस्य ________ चित्रम् अस्ति। (तपोवनस्य)",
+        "चित्रे वटवृक्षस्य अधः समासीनः कुलगुरुः शिष्यान् ________। (अध्यापयति)",
+        "वितानवेदिभ्यः समुद्गच्छन् सुगन्धिः ________ नभः पुनीते। (धूमः)",
+        "अहिंसामहिम्ना व्याघ्राः मृगाश्च परस्परं ________ विहरन्ति। (विगतवैराः)",
+        "अत्र अध्यात्मविद्यायाः तपसश्च परमः ________ प्रस्फुरति। (प्रभावः)"
+      ],
+      "model_composition": [
+        "इदं कालिदासीय-काव्य-प्रतिबिम्बितस्य शकुन्तला-निवासभूतस्य तपोवनस्य अतीव प्रशान्तं चित्रम् अस्ति।",
+        "अत्र वितानवेदीनां हविर्गन्धिभिः पावनाभिः शिखाभिः समन्ततः आश्रमवातावरणं सुरभीक्रियते।",
+        "प्रशान्तचित्तः ब्रह्मर्षिः पलाशदण्ड-कृष्णाजिनधारिणः अन्तेवासिनः उपनिषदां गूढतत्त्वानि ग्राहयति।",
+        "आश्रमस्य तपोबलेन विगलित-स्वाभाविक-वैराः व्याघ्राः हरिणशावकाश्च एकत्रैव मन्दाकिन्याः जलं पिबन्ति।",
+        "एतादृशं शान्तरसास्पदं गुरुकुलं दृष्ट्वा 'शमप्रधानेषु तपोधनेषु गूढं हि संतिष्ठति चक्रवर्तितेजः' इति वचनं स्मर्यते।"
+      ],
+      "interactive_challenge": {
+        "question_sa": "'ऋषिः शिष्यान् वेदान् अध्यापयति' अत्र 'शिष्यान्' इत्यत्र द्वितीया कस्मात् सूत्रात्?",
+        "question_en": "In 'The sage instructs disciples in the Vedas', which rule governs the 2nd accusative case on 'शिष्यान्'?",
+        "options": [
+          {
+            "text": "गतिबुद्धिप्रत्यवसानार्थशब्दकर्माकर्मकाणामणि कर्ता स णौ (1.4.52)",
+            "is_correct": true
+          },
+          {
+            "text": "अकथितं च (1.4.51)",
+            "is_correct": false
+          },
+          {
+            "text": "अधिशीङ्स्थासां कर्म (1.4.46)",
+            "is_correct": false
+          },
+          {
+            "text": "उपान्वध्याङ्वसः (1.4.48)",
+            "is_correct": false
+          }
+        ],
+        "explanation_en": "In causative formations (णिच्) of roots denoting learning/teaching (√iṅ with adhi), the original agent (शिष्याः) becomes object (कर्म) via 'गतिबुद्धि... 1.4.52'.",
+        "explanation_hi": "णिच् (प्रेरणार्थक) अवस्था में अध्ययन/ज्ञानार्थक धातुओं के कर्ता की 'गतिबुद्धि...' सूत्र से कर्म संज्ञा होकर द्वितीया (शिष्यान्) होती है।",
+        "explanation_te": "'గతిబుద్ధి...' సూత్రముచే బోధనార్థక ధాతువుల ప్రేరణార్థక రూపమున ప్రథమ కర్త కర్మగా మారి ద్వితీయా విభక్తి (శిష్యాన్) పొందును."
+      }
+    }
+  ]
+}

@@ -1,0 +1,733 @@
+{
+  "project": "Saṁskṛtamedhā (samskritam.medhaa.net)",
+  "target_audience": "College & Undergraduate Students (Intermediate / Junior College / PUC / BA General / B.Ed / College Electives)",
+  "curriculum_level": "Level 2: मध्यम-स्नातकस्तरः (Intermediate / Undergraduate)",
+  "curriculum_version": "2.0.0",
+  "title": "माध्यमिक-संस्कृतम् · College Undergraduate Sanskrit Curriculum & Interactive Quest Engine",
+  "description": "A comprehensive undergraduate curriculum bridging foundational school grammar and specialized university research. Focuses on practical reading fluency, popular analytical maxims (Laukika-Nyāyas), ethical & leadership literature (Subhāṣitas), functional composition & epistolary style (Patralekhanam), introductory classical drama & narrative prose, and foundational Indian Knowledge Systems (IKS).",
+  "modules": [
+    {
+      "module_id": "COL-UG-MOD-01",
+      "title_sa": "लौकिक-न्यायाः (Classical Maxims & Analytical Reasoning)",
+      "title_en": "Laukika Nyāyas: Classical Sanskrit Idioms & Analytical Maxims",
+      "overview_en": "Laukika Nyāyas are celebrated analogies and empirical maxims derived from everyday observation, employed across Sanskrit literature, debate, and jurisprudence to illustrate complex human dilemmas, logical deductions, and cooperative ethics.",
+      "theoretical_framework": [
+        {
+          "nyaya_name": "अन्धपङ्गु-न्यायः (The Maxim of the Blind and the Lame)",
+          "meaning_sa": "परस्पर-साहाय्येन कार्यसिद्धिः।",
+          "meaning_en": "Mutual cooperation between two individuals with complementary deficiencies to achieve a common goal (as a blind man with legs carries a lame man with sight out of a burning forest; also used in Sāṅkhya philosophy for Puruṣa and Prakṛti).",
+          "meaning_hi": "परस्पर सहयोग से कार्य की सिद्धि (जैसे लंगड़ा और अंधा मिलकर संकट पार करते हैं)।",
+          "meaning_te": "పరస్పర సహకారముతో కార్యసాధన (అంధుడు నడవగలడు, కుంటివాడు చూడగలడు; ఇద్దరూ కలిసి అడవిని దాటుట)."
+        },
+        {
+          "nyaya_name": "काकतालीय-न्यायः (The Maxim of the Crow and the Palm Fruit)",
+          "meaning_sa": "अकस्मात् आपतितः संयोगः (यदृच्छासंवादः)।",
+          "meaning_en": "Pure, uncoordinated coincidence (just as a crow alights on a palm tree at the precise instant a palm fruit detaches and falls, though the crow did not cause it).",
+          "meaning_hi": "आकस्मिक संयोग (कौवे के बैठते ही ताड़ के फल का गिरना)।",
+          "meaning_te": "కాకతాళీయము / అనుకోకుండా జరిగిన యాదృచ్ఛిక సంఘటన."
+        },
+        {
+          "nyaya_name": "कूपमण्डूक-न्यायः (The Maxim of the Frog in the Well)",
+          "meaning_sa": "संकीर्ण-दृष्टिकोणः, बहिर्जगतः अनभिज्ञता।",
+          "meaning_en": "Parochial narrow-mindedness; a person oblivious to the vast world outside their tiny local sphere.",
+          "meaning_hi": "संकुचित दृष्टि वाला व्यक्ति जो बाह्य जगत के विस्तार से अनभिज्ञ हो।",
+          "meaning_te": "కప్ప బావిలోనే ఉంటూ అదే ప్రపంచం అనుకొనుట (సంకుచిత మనస్తత్వము)."
+        },
+        {
+          "nyaya_name": "दण्डपूपिका-न्यायः (The Maxim of the Stick and the Cakes)",
+          "meaning_sa": "कैमुतिक-न्यायः (सुतरां सिद्धिरर्थापत्या)।",
+          "meaning_en": "A fortiori deduction: If sweet cakes tied to a wooden stick are eaten by rats, it is naturally established beyond doubt that the stick itself was gnawed.",
+          "meaning_hi": "कैमुतिक न्याय (जब कठिन बात सिद्ध हो, तो सरल बात अपने आप सिद्ध हो जाती है)।",
+          "meaning_te": "ఒక బలమైన విషయం రుజువైనప్పుడు దానితో ముడిపడిన చిన్న విషయం దానంతటదే రుజువగుట."
+        },
+        {
+          "nyaya_name": "स्थूणाखनन-न्यायः (The Maxim of Ramming the Post)",
+          "meaning_sa": "अभ्यासेन युक्त्या च सिद्धान्तस्य दृढीकरणम्।",
+          "meaning_en": "Firmly consolidating a premise or skill: Just as one shakes, rams, and packs earth around a newly erected wooden post repeatedly until it stands immovable, an argument is tested and consolidated.",
+          "meaning_hi": "खम्भे को गाड़ते समय हिला-हिलाकर और मिट्टी दबाकर दृढ़ करना; वैसे ही तर्क को सुदृढ़ करना।",
+          "meaning_te": "స్తంభమును నాటేటప్పుడు మాటిమాటికి కదిలించి గట్టిగా నిలబెట్టుట వలె ఒక వాదనను బలపరచుట."
+        }
+      ],
+      "challenges": [
+        {
+          "id": "COL-UG-NYA-001",
+          "topic": "Cooperative Action (Andha-Paṅgu-Nyāya)",
+          "prompt_sa": "एकः जनः दृष्टिहीनः किन्तु बलवान्, अपरः प्रज्ञावान् किन्तु पादहीनः। द्वावपि मिलित्वा कठिनं मार्गं पारं कुर्वन्ति। अत्र कः न्यायः प्रयुज्यते?",
+          "prompt_en": "A blind but strong man carries a lame but clear-sighted companion on his shoulders; together they safely navigate a perilous mountain path. Which classical Sanskrit maxim illustrates this synergy?",
+          "options": [
+            {
+              "text": "अन्धपङ्गु-न्यायः",
+              "is_correct": true
+            },
+            {
+              "text": "काकतालीय-न्यायः",
+              "is_correct": false
+            },
+            {
+              "text": "कूपमण्डूक-न्यायः",
+              "is_correct": false
+            },
+            {
+              "text": "शृङ्गग्राहिका-न्यायः",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "अन्धपङ्गु-न्यायेन द्वयोः असंपूर्णयोः जनयोः परस्पर-साहाय्येन पूर्णता तथा कार्यसिद्धिः भवति। सांख्यदर्शने पुरुष-प्रकृत्योः सम्बन्धेऽपि अयं न्यायः प्रसिद्धः।",
+          "explanation_en": "The Andhapangu-nyāya (Maxim of the Blind and Lame) illustrates how complementary weaknesses combine through cooperation into collective strength. In Sāṅkhya philosophy, it explains the cosmic collaboration between passive conscious Puruṣa (lame) and active blind Prakṛti.",
+          "explanation_hi": "अन्धपङ्गु-न्याय यह दर्शाता है कि कैसे दो अपूर्ण व्यक्ति आपस में मिलकर एक-दूसरे की कमी पूरी करते हैं और सफलता प्राप्त करते हैं।",
+          "explanation_te": "అంధపంగు న్యాయము పరస్పర సహకారముతో పనులను సాధించుటను సూచిస్తుంది.",
+          "points": 20
+        },
+        {
+          "id": "COL-UG-NYA-002",
+          "topic": "Coincidental Events (Kākatālīya-Nyāya)",
+          "prompt_sa": "काकः तालवृक्षे उपविष्टः, तस्मिन्नेव क्षणे पक्वं तालफलं भूमौ अपतत्। अत्र 'काकस्य उपवेशनं फलपतनस्य कारणं न आसीत्' इति बोधयितुं कः न्यायः प्रयुज्यते?",
+          "prompt_en": "A crow settles upon a palm branch, and at that very second a ripe palm fruit falls to the earth. To express that this was a pure accident and not caused by the crow, which maxim is cited?",
+          "options": [
+            {
+              "text": "काकतालीय-न्यायः",
+              "is_correct": true
+            },
+            {
+              "text": "दण्डपूपिका-न्यायः",
+              "is_correct": false
+            },
+            {
+              "text": "स्थूणाखनन-न्यायः",
+              "is_correct": false
+            },
+            {
+              "text": "अरण्यरोदन-न्यायः",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "काकतालीय-न्यायः यदृच्छासंवादं (अकस्मात् सम्भूतं घटनाद्वयं यत्र कार्यकारणभावो नास्ति) बोधयति।",
+          "explanation_en": "Kākatālīya-nyāya describes serendipitous coincidence where two independent events occur simultaneously without any causal link (post hoc ergo propter hoc fallacy avoidance).",
+          "explanation_hi": "काकतालीय न्याय का अर्थ है अप्रत्याशित या अकारण संयोग, जहाँ कौवे के बैठने और फल गिरने में कोई संबंध नहीं था।",
+          "explanation_te": "కాకతాళీయ న్యాయము అనుకోకుండా జరిగిన యాదృచ్ఛిక ఘటనను వివరిస్తుంది.",
+          "points": 20
+        },
+        {
+          "id": "COL-UG-NYA-003",
+          "topic": "Parochial Narrowness (Kūpamaṇḍūka-Nyāya)",
+          "prompt_sa": "कश्चित् विद्वान् मन्यते यत् तस्य ग्राम एव समग्रं जगत्, सः बाह्यज्ञानं तिरस्करोति। तादृशस्य जनस्य कृते कः न्यायः उपयुज्यते?",
+          "prompt_en": "A man presumes that his small village represents the entire universe and arrogantly disdains foreign learning. Which proverb characterizes his limited worldview?",
+          "options": [
+            {
+              "text": "कूपमण्डूक-न्यायः",
+              "is_correct": true
+            },
+            {
+              "text": "मत्स्य-न्यायः",
+              "is_correct": false
+            },
+            {
+              "text": "बीजाङ्कुर-न्यायः",
+              "is_correct": false
+            },
+            {
+              "text": "लोष्टप्रस्तार-न्यायः",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "कूपे वसन् मण्डूकः कूपमेव समुद्रं मन्यते। तथा संकुचित-विचारधारावान् जनः 'कूपमण्डूकः' कथ्यते।",
+          "explanation_en": "Kūpamaṇḍūka-nyāya (frog in a well) refers to an insular, narrow-minded individual who mistakes their minuscule pond for the infinite ocean.",
+          "explanation_hi": "कुएं का मेंढक समझता है कि उसका कुआं ही पूरा संसार है; संकीर्ण बुद्धि वाले के लिए यह न्याय प्रयुक्त होता है।",
+          "explanation_te": "బావిలో కప్ప బావినే ప్రపంచంగా భావించునట్లు సంకుచిత మనస్తత్వం కలవారిని 'కూపమండూక న్యాయం' అంటారు.",
+          "points": 20
+        },
+        {
+          "id": "COL-UG-NYA-004",
+          "topic": "A Fortiori Deduction (Daṇḍapūpikā-Nyāya)",
+          "prompt_sa": "यदि मूषकैः काष्ठनिर्मितः कठिनः दण्डः एव भक्षितः, तर्हि तत्र बद्धाः कोमलाः अपूपाः (मोदकाः) भक्षिताः इति सुतरां सिद्धम्। अयम् अनुमानप्रकारः कः?",
+          "prompt_en": "If mice have chewed through the hard wooden stick itself, it follows without saying that the soft sweetmeats tied to it were eaten. What is this deductive maxim?",
+          "options": [
+            {
+              "text": "दण्डपूपिका-न्यायः",
+              "is_correct": true
+            },
+            {
+              "text": "अजकृपाणीय-न्यायः",
+              "is_correct": false
+            },
+            {
+              "text": "नहिवन्ध्या-न्यायः",
+              "is_correct": false
+            },
+            {
+              "text": "कदम्बकोरक-न्यायः",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "दण्डपूपिका-न्यायेन यदा महतः कठिनस्य वा वस्तुनः सिद्धिः भवति, तदा तदाश्रितस्य लघुवस्तुनः सिद्धिः स्वतः एव सिद्ध्यति (कैमुतिक-न्यायः)।",
+          "explanation_en": "Daṇḍapūpikā-nyāya is the classical Sanskrit logical principle of a fortiori argument (if the more difficult or robust proposition holds true, the lesser and softer one is inevitably established).",
+          "explanation_hi": "दण्डपूपिका न्याय: जब डंडा ही खा लिया गया, तो उस पर बंधे पुए (मिठाई) तो खा ही लिए गए होंगे।",
+          "explanation_te": "దండపూపికా న్యాయము: కఠినమైన కర్రనే ఎలుకలు కొరికినపుడు, దానికి కట్టిన పిండివంటలు తిని ఉంటారని వేరే చెప్పనక్కరలేదు.",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "module_id": "COL-UG-MOD-02",
+      "title_sa": "नीति-साहित्यम् एवं सूक्ति-सुधा (Subhāṣitas, Practical Ethics & Leadership)",
+      "title_en": "Nīti Literature: Wisdom Verses, Practical Ethics & Moral Leadership",
+      "overview_en": "A deep exploration of classical epigrammatic wisdom from Bhartṛhari’s Nītiśatakam, Viduranīti, and the Hitopadeśa, analyzing timeless Sanskrit verses on perseverance, true friendship, character, and civic duty.",
+      "theoretical_framework": [
+        {
+          "concept": "त्रिगुणात्मक-प्रयत्न-भेदः (The 3 Grades of Human Endeavour)",
+          "verse_sa": "प्रारभ्यते न खलु विघ्नभयेन नीचैः प्रारभ्य विघ्नविहता विरमन्ति मध्याः । विघ्नैः पुनः पुनरपि प्रतिहन्यमानाः प्रारब्धमुत्तमगुणा न परित्यजन्ति ॥",
+          "meaning_en": "The low-minded do not begin any noble venture out of fear of obstacles; average individuals initiate but abandon when thwarted by hurdles; but noble, resolute souls, though repeatedly buffeted by adversity, never abandon what they have commenced.",
+          "meaning_hi": "नीच लोग विघ्न के भय से कार्य शुरू ही नहीं करते; मध्यम लोग शुरू करके विघ्न आने पर छोड़ देते हैं; परन्तु उत्तम लोग बार-बार विघ्न आने पर भी कार्य पूरा करके ही छोड़ते हैं।"
+        },
+        {
+          "concept": "सन्मित्र-लक्षणम् (Characteristics of a True Friend)",
+          "verse_sa": "पापान्निवारयति योजयते हिताय गुह्यं च गूहति गुणान् प्रकटीकरोति । आपद्गतं च न जहाति ददाति काले सन्मित्रलक्षणमिदं प्रवदन्ति सन्तः ॥",
+          "meaning_en": "A true friend restrains you from wrongdoing, guides you toward wholesome pursuits, keeps confidential matters secret, highlights your virtues publicly, does not abandon you in crisis, and provides support when in need.",
+          "meaning_hi": "सच्चा मित्र पाप से रोकता है, हित में लगाता है, गुप्त बातों को छिपाता है, गुणों को प्रकट करता है, विपत्ति में साथ नहीं छोड़ता और समय पर सहायता देता है।"
+        }
+      ],
+      "challenges": [
+        {
+          "id": "COL-UG-NIT-001",
+          "topic": "Resilience in Action (Nītiśatakam)",
+          "prompt_sa": "'विघ्नैः पुनः पुनरपि प्रतिहन्यमानाः प्रारब्धमुत्तमगुणा न परित्यजन्ति।' अस्मिन् श्लोके उत्तमगुणानां जनानां कः स्वभावः वर्णितः?",
+          "prompt_en": "In the celebrated verse 'vighnaiḥ punaḥ punarapi...', what distinguishing trait of superior, resolute individuals (uttama-guṇāḥ) is extolled by Bhartṛhari?",
+          "options": [
+            {
+              "text": "विघ्नानां बाहुल्येऽपि प्रारब्धकार्यस्य अनिर्वाहेण अयागः (अविचल-धैर्यम्)",
+              "is_correct": true
+            },
+            {
+              "text": "विघ्नभयेन कार्यस्य अप्रारम्भः",
+              "is_correct": false
+            },
+            {
+              "text": "प्रथमविघ्ने आगते सति कार्यपरित्यागः",
+              "is_correct": false
+            },
+            {
+              "text": "भाग्यस्योपरि सर्वं त्यक्त्वा उपवेशनम्",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "उत्तमगुणाः धीराः जनाः विघ्नैः पुनः पुनः प्रतिहताः अपि आरब्धं कार्यं न परित्यजन्ति, यावत् कार्यं सिद्धं न भवति।",
+          "explanation_en": "Bhartṛhari highlights unwavering perseverance (dhairyam): average persons give up when hit by roadblocks, but resilient leaders persist until accomplishment.",
+          "explanation_hi": "उत्तम कोटि के व्यक्ति विपत्तियों के बार-बार आने पर भी प्रारंभ किए गए कार्य को कभी बीच में नहीं छोड़ते।",
+          "explanation_te": "ఉత్తమ గుణములు కలవారు ఎన్ని ఆటంకాలు ఎదురైనా ప్రారంభించిన పనిని ఎన్నడూ విడిచిపెట్టరు.",
+          "points": 25
+        },
+        {
+          "id": "COL-UG-NIT-002",
+          "topic": "The Anatomy of True Friendship (Sanmitra-Lakṣaṇam)",
+          "prompt_sa": "भर्तृहरिमते सन्मित्रस्य षड्-लक्षणेषु अधस्तनेषु कः गुणः 'न' अन्तर्भवति?",
+          "prompt_en": "According to Bhartṛhari's six criteria of a genuine friend (सन्मित्रलक्षणम्), which of the following is NOT a quality of a true friend?",
+          "options": [
+            {
+              "text": "मित्रात् धनग्रहणाय एव सर्वदा सम्भाषणम्",
+              "is_correct": true
+            },
+            {
+              "text": "पापान्निवारणम् (अधर्मात् रक्षणम्)",
+              "is_correct": false
+            },
+            {
+              "text": "हिताय योजनम् (सत्कर्मणि प्रेरणम्)",
+              "is_correct": false
+            },
+            {
+              "text": "गुह्यं गूहनम् (रहस्यस्य गोपनम्)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "सन्मित्रं पापान् निवारयति, हिते योजयति, गुह्यं गूहति, गुणान् प्रकाशयति, आपदि न त्यजति। केवलं स्वार्थाय धनयाचना तु कुमित्रस्य लक्षणम्।",
+          "explanation_en": "The verse explicitly states that a friend restrains from sin, inspires good deeds, guards confidences, magnifies virtues, and stays loyal during catastrophes.",
+          "explanation_hi": "सच्चा मित्र पाप से रोकता है, हितकारी कार्यों में लगाता है, रहस्य को गुप्त रखता है; स्वार्थ के लिए धन की ताक में रहना कुमित्र का लक्षण है।",
+          "explanation_te": "మంచి స్నేహితుడు పాపమునుండి నివారించును, హితమును కూర్చును, రహస్యములను కాపాడును.",
+          "points": 25
+        },
+        {
+          "id": "COL-UG-NIT-003",
+          "topic": "Power of Gentle Speech (Vāg-Bhūṣaṇam)",
+          "prompt_sa": "'केयूरा न विभूषयन्ति पुरुषं हारा न चन्द्रोज्ज्वलाः... वाण्येका समलङ्करोति पुरुषं या संस्कृता धार्यते।' अत्र किम् भूषणं नित्यम् उक्तम्?",
+          "prompt_en": "In the famous stanza 'Keyūrā na vibhūṣayanti...', what is declared to be the sole eternal ornament that never perishes with age or circumstance?",
+          "options": [
+            {
+              "text": "संस्कृता (परिष्कृता) वाणी",
+              "is_correct": true
+            },
+            {
+              "text": "सुवर्णनिर्मिताः केयूराः (भुजबन्धाः)",
+              "is_correct": false
+            },
+            {
+              "text": "मुक्ताहाराः",
+              "is_correct": false
+            },
+            {
+              "text": "सुगन्धित-कुसुमानि",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "सर्वाणि बाह्यविभूषणानि (सुवर्णहारादयः) कालान्तरे क्षीयन्ते, किन्तु परिष्कृता संस्कृता वाणी एव नित्यं भूषणं भवति (वाग्भूषणं भूषणम्)।",
+          "explanation_en": "Ornaments of gold, pearl necklaces, and scented flowers decay over time; culture-refined speech (saṁskṛtā vāṇī) is the only imperishable adornment of a human being.",
+          "explanation_hi": "बाजूबंद, हार या स्नान मनुष्य को वास्तविक शोभा नहीं देते, बल्कि सुसंस्कृत वाणी ही मनुष्य का स्थायी आभूषण है।",
+          "explanation_te": "బంగారు నగలన్నియు నశించిపోవును, కాని సంస్కారవంతమైన వాక్కు ఒక్కటే మానవునికి శాశ్వతమైన అలంకారము.",
+          "points": 25
+        },
+        {
+          "id": "COL-UG-NIT-004",
+          "topic": "Vidura-Nīti on Wisdom & Folly",
+          "prompt_sa": "विदुरनीतौ पण्डितस्य प्रमुखं लक्षणं किम् उक्तम्?",
+          "prompt_en": "In Vidura-Nīti (Mahābhārata), what is celebrated as the foremost hallmark of a wise scholar (paṇḍitaḥ)?",
+          "options": [
+            {
+              "text": "यस्य कृत्यं न विघ्नन्ति शीतमुष्णं भयं रतिः। समृद्धिरसमृद्धिर्वा स वै पण्डित उच्यते॥",
+              "is_correct": true
+            },
+            {
+              "text": "यः केवलं राजसभायां वाग्मी भवति",
+              "is_correct": false
+            },
+            {
+              "text": "यः बहुग्रन्थान् कण्ठस्थीकरोति किन्तु न आचरति",
+              "is_correct": false
+            },
+            {
+              "text": "यः शत्रून् दृष्ट्वा पलायनं करोति",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "विदुरनीत्यानुसारं यस्य संकल्पितं कार्यं शीत-उष्ण-भय-राग-समृद्धि-दारिद्र्यादिभिः न विहन्यते, स एव वास्तविकः पण्डितः।",
+          "explanation_en": "Vidura defines true wisdom not as dry book learning, but as equanimity: one whose dutiful actions are never disrupted by heat, cold, fear, desire, prosperity, or adversity.",
+          "explanation_hi": "जिसके कार्यों में सर्दी, गर्मी, भय, प्रेम, धन की प्रचुरता या दरिद्रता बाधा नहीं डालते, वही सच्चा पंडित कहलाता है।",
+          "explanation_te": "శీతోష్ణములు, భయము, సంపద లేదా దారిద్ర్యము ఎవరి కర్తవ్యమునకు ఆటంకము కలిగించవో అతడే నిజమైన పండితుడు.",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "module_id": "COL-UG-MOD-03",
+      "title_sa": "व्यावहारिक-रचना एवं पत्रलेखनम् (Functional Composition & Epistolary Style)",
+      "title_en": "Functional Composition: Sanskrit Letter Writing, Epistolary Conventions & Reading Comprehension",
+      "overview_en": "Mastering the structural art of composing modern and formal communications in Sanskrit: leave applications, invitations, congratulatory notes, institutional requests, and unpicking unseen classical prose passages.",
+      "theoretical_framework": [
+        {
+          "letter_type": "प्रार्थनापत्रम् (Official Leave / Exemption Application)",
+          "structure": [
+            "१. सम्बोधनम्: श्रीमन्तः प्रधानाचार्याः / कुलपतयः (Respected Principal/Vice-Chancellor)",
+            "२. स्थाननिर्देशः: राजकीय-महाविद्यालयः, देहली (Institution Name & City)",
+            "३. विषयः: दिनद्वयस्य विरामार्थं प्रार्थनापत्रम् (Subject Line)",
+            "४. महोदय / मान्यवर: सविनयं निवेदयामि यत्... (Formal Opening Body)",
+            "५. समापनम्: भवताम् आज्ञापालकः / भवदीयः विनीत-छात्रः (Complimentary Close)",
+            "६. नाम, वर्गः, अनुक्रमाङ्कः, दिनांकश्च (Name, Class, Roll Number, Date)"
+          ]
+        },
+        {
+          "letter_type": "निमन्त्रणपत्रम् (Invitation Letter)",
+          "structure": [
+            "१. मङ्गलवाक्यम्: ॐ श्रीगणेशाय नमः",
+            "२. प्रेषकः: सस्नेहं निमन्त्र्यते यत्... (Cordial Greeting)",
+            "३. कार्यक्रमः: वार्षिकोत्सवः / दीक्षान्तसमारोहः (Event Details & Venue)",
+            "४. दर्शनाभिलाषिणः / विनीताः (Family / Host signature)"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "id": "COL-UG-PAT-001",
+          "topic": "Formal Salutations in Sanskrit Applications",
+          "prompt_sa": "महाविद्यालयस्य प्राचार्याय लिख्यमाने प्रार्थनापत्रे आरम्भे समुचितं सम्बोधनं किं स्यात्?",
+          "prompt_en": "In an official leave application addressed to the College Principal, which of the following is the most appropriate formal Sanskrit salutation?",
+          "options": [
+            {
+              "text": "श्रीमन्तः प्राचार्याः / आदरणीयाः प्राचार्यमहोदयाः",
+              "is_correct": true
+            },
+            {
+              "text": "प्रिय प्राचार्य!",
+              "is_correct": false
+            },
+            {
+              "text": "भो मित्र प्राचार्य!",
+              "is_correct": false
+            },
+            {
+              "text": "हे प्राचार्य!",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "औपचारिकपत्रेषु गुरुजनेभ्यः अधिकारिभ्यश्च 'श्रीमन्तः / आदरणीयाः / मान्यवराः' इति आदरसूचक-पदानि एव प्रयुज्यन्ते। 'प्रिय' अथवा 'हे' इति अनौपचारिकम्।",
+          "explanation_en": "In formal administrative letters, respectful plural honorifics like 'Śrīmantaḥ Prācāryāḥ' or 'Mānyavarāḥ' are mandatory; familiar forms like 'Priya' are only for peers and younger friends.",
+          "explanation_hi": "औपचारिक पत्रों में प्राचार्य अथवा उच्च अधिकारियों के लिए 'श्रीमन्तः / आदरणीयाः प्राचार्यमहोदयाः' जैसे आदरसूचक शब्दों का प्रयोग होता है।",
+          "explanation_te": "అధికారిక పత్రములలో 'శ్రీమంతః ప్రాచార్యాః' లేదా 'ఆదరణీయాః' అను గౌరవప్రదమైన సంబోధనలను వాడవలెను.",
+          "points": 20
+        },
+        {
+          "id": "COL-UG-PAT-002",
+          "topic": "Complimentary Close (Valediction)",
+          "prompt_sa": "प्रधानाचार्यं प्रति छात्रेण प्रेषितस्य पत्रस्य अन्ते अधोलिखितेषु किं समापन-पदं सर्वाधिकं शुद्धम्?",
+          "prompt_en": "At the conclusion of a formal student petition to the Principal, what is the standard Sanskrit complimentary closing formula?",
+          "options": [
+            {
+              "text": "भवताम् आज्ञानुवर्ती / आज्ञापालकः शिष्यः",
+              "is_correct": true
+            },
+            {
+              "text": "भवतः प्रियमित्रम्",
+              "is_correct": false
+            },
+            {
+              "text": "त्वदीयः भ्राता",
+              "is_correct": false
+            },
+            {
+              "text": "सस्नेहं वन्दे",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "छात्रेण गुरवे समर्पिते पत्रे 'भवताम् आज्ञापालकः शिष्यः' अथवा 'भवदीयः विनीत-छात्रः' इत्येव समापनं भवति।",
+          "explanation_en": "The polite valediction for a student addressing institutional elders is 'Bhavatām ājñānuvartī śiṣyaḥ' (Your obedient student) or 'Bhavadīyaḥ vinītaḥ'.",
+          "explanation_hi": "छात्र द्वारा प्रधानाचार्य को लिखे पत्र के अंत में 'भवताम् आज्ञापालकः शिष्यः' (आपका आज्ञाकारी शिष्य) लिखा जाता है।",
+          "explanation_te": "విద్యార్థి ఉపాధ్యాయులకు లేదా ప్రిన్సిపాల్‌కు రాసే లేఖ ముగింపులో 'భవతామ్ ఆజ్ఞానువర్తీ శిష్యః' అని వ్రాయవలెను.",
+          "points": 20
+        },
+        {
+          "id": "COL-UG-PAT-003",
+          "topic": "Reading Comprehension Strategy",
+          "prompt_sa": "अपठित-गद्यांशस्य (Unseen Passage) शीर्षके (Title) अधोलिखितेषु कः गुणः अनिवार्यः?",
+          "prompt_en": "When selecting an ideal title (शीर्षकम्) for an unseen Sanskrit prose passage in a college examination, which criterion is paramount?",
+          "options": [
+            {
+              "text": "संक्षिप्तम्, सार्थकम, समग्र-गद्यांशस्य मुख्यकेन्द्रबिन्दुभूतम्",
+              "is_correct": true
+            },
+            {
+              "text": "अतिदीर्घं सम्पूर्ण-वाक्यरूपम्",
+              "is_correct": false
+            },
+            {
+              "text": "केवलं प्रथमपङ्क्तेः आदिशब्दः",
+              "is_correct": false
+            },
+            {
+              "text": "गद्यांशे यस्य उल्लेख एव नास्ति तादृशं गूढपदम्",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "शीर्षकं सर्वदा संक्षिप्तं (२-३ पदपरिमितम्), सार्थकं, गद्यांशस्य मूलभावं स्पष्टीकर्तृ च भवेत्।",
+          "explanation_en": "A Sanskrit title (śīrṣakam) must be concise (2 to 3 words), meaningful, and encapsulate the central thesis of the entire passage.",
+          "explanation_hi": "शीर्षक हमेशा संक्षिप्त, सारगर्भित और गद्यांश के मुख्य भाव को व्यक्त करने वाला होना चाहिए।",
+          "explanation_te": "శీర్షిక ఎల్లప్పుడూ సంక్షిప్తముగా, అర్థవంతముగా మరియు పేరా యొక్క ప్రధాన భావమును ప్రతిబింబించునదై ఉండవలెను.",
+          "points": 20
+        },
+        {
+          "id": "COL-UG-PAT-004",
+          "topic": "Epistolary Vocabulary for Illness Leave",
+          "prompt_sa": "कश्चित् छात्रः ज्वरेण पीडितः अस्ति। सः पत्रे 'अहं ज्वरेण पीडितः अस्मि' इति कथं शुद्धरूपेण व्यञ्जयति?",
+          "prompt_en": "A student suffering from fever needs to write an excuse in an application. Which sentence expresses this cleanly in classical Sanskrit idiom?",
+          "options": [
+            {
+              "text": "अहं सहसा ज्वरपीडितः जातः, अतः विद्यालये उपस्थातुं न शक्नोमि।",
+              "is_correct": true
+            },
+            {
+              "text": "मह्यं ज्वरः अस्ति अतः न आगमिष्यामि।",
+              "is_correct": false
+            },
+            {
+              "text": "मम देहे तापेन विद्यालयं गन्तुं मनः नास्ति।",
+              "is_correct": false
+            },
+            {
+              "text": "ज्वरः मां खादति अतः विरामं देहि।",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "'ज्वरपीडितः जातः अतः उपस्थातुं न शक्नोमि' इति शिष्टसंस्कृतस्य सुसंस्कृतः प्रयोगः अस्ति।",
+          "explanation_en": "'Ahaṁ sahasā jvarapīḍitaḥ jātaḥ, ataḥ vidyālaye upasthātuṁ na śaknomi' is the refined classical formula for expressing medical indisposition.",
+          "explanation_hi": "'मैं अचानक ज्वरग्रस्त हो गया हूँ, अतः विद्यालय में उपस्थित होने में असमर्थ हूँ' - यह शुद्ध संस्कृत शैली है।",
+          "explanation_te": "'నేను అకస్మాత్తుగా జ్వరపీడితుడనైతిని, కావున కళాశాలకు రాలేకపోవుచున్నాను' అనేది సరైన శైలి.",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "module_id": "COL-UG-MOD-04",
+      "title_sa": "सुगम-साहित्य-प्रवेशः (Introduction to Classical Drama & Narrative Prose)",
+      "title_en": "Introductory Classical Literature: Masterpieces of Drama, Fables & Narrative Art",
+      "overview_en": "Guided entry into classical Sanskrit drama and narrative prose, studying dramatic conventions, famous character soliloquies from Kālidāsa’s Abhijñānaśākuntalam, Bhāsa’s Svapnavāsavadattam, and the didactic fables of Pañcatantra.",
+      "theoretical_framework": [
+        {
+          "work": "अभिज्ञानशाकुन्तलम् (चतुर्थोऽङ्कः - शकुन्तला-प्रस्थानम्)",
+          "celebrated_maxim": "काव्येषु नाटकं रम्यं तत्र रम्या शकुन्तला । तत्रापि च चतुर्थोऽङ्कस्तत्र श्लोकचतुष्टयम् ॥",
+          "core_emotion": "Paternal affection, environmental sanctity, and poignant grief of separation (Karuna & Vipralambha Śṛṅgāra) as Kaṇva bids farewell to foster-daughter Śakuntalā."
+        },
+        {
+          "work": "पञ्चतन्त्रम् (विष्णुशर्मा)",
+          "structure": "५ तन्त्राणि: मित्रभेदः, मित्रप्राप्तिः, काकोलूकीयम्, लब्धप्रणाशः, अपरीक्षितकारकम्।",
+          "pedagogy": "Nīti-śāstra transmitted through anthropomorphic animal fables with embedded frame narratives."
+        }
+      ],
+      "challenges": [
+        {
+          "id": "COL-UG-LIT-001",
+          "topic": "The Four Pre-eminent Verses of Śākuntalam",
+          "prompt_sa": "'काव्येषु नाटकं रम्यं तत्र रम्या शकुन्तला । तत्रापि च चतुर्थोऽङ्कस्तत्र श्लोकचतुष्टयम् ॥' अस्मिन् श्लोके कस्य नाटकस्य प्रशंसा कृता?",
+          "prompt_en": "The famous literary appreciation 'Kāvyeṣu nāṭakaṁ ramyaṁ...' crowns which Sanskrit drama and specific act as the pinnacle of dramatic art?",
+          "options": [
+            {
+              "text": "कालिदासस्य 'अभिज्ञानशाकुन्तलम्' (चतुर्थाङ्कः)",
+              "is_correct": true
+            },
+            {
+              "text": "भवभूतेः 'उत्तररामचरितम्' (तृतीयाङ्कः)",
+              "is_correct": false
+            },
+            {
+              "text": "शूद्रकस्य 'मृच्छकटिकम्' (पञ्चमाङ्कः)",
+              "is_correct": false
+            },
+            {
+              "text": "विशाखदत्तस्य 'मुद्राराक्षसम्' (प्रथमाङ्कः)",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "अयं श्लोकः कालिदासकृतस्य 'अभिज्ञानशाकुन्तलम्' इति नाटकस्य चतुर्थाङ्के स्थितानां शकुन्तला-विदाई-विषयकाणां चतुर्णां श्लोकानाम् अलौकिकं सौन्दर्यं वर्णयति।",
+          "explanation_en": "This verse praises Kālidāsa's Abhijñānaśākuntalam, specifically Act 4 containing the four heart-touching farewell verses of sage Kaṇva.",
+          "explanation_hi": "यह प्रसिद्ध श्लोक कालिदास के 'अभिज्ञानशाकुन्तलम्' के चतुर्थ अंक (शकुन्तला विदाई प्रसंग) की प्रशंसा करता है।",
+          "explanation_te": "ఈ ప్రసిద్ధ శ్లోకము కాళిదాసుని 'అభిజ్ఞానశాకుంతలము' లోని నాల్గవ అంకమును కొనియాడుచున్నది.",
+          "points": 25
+        },
+        {
+          "id": "COL-UG-LIT-002",
+          "topic": "Fatherly Love & Nature in Kaṇva's Hermitage",
+          "prompt_sa": "'यास्यत्यद्य शकुन्तलेति हृदयं संस्पृष्टमुत्कण्ठया...' इति श्लोकः केन महर्षिणा उक्तः?",
+          "prompt_en": "The iconic verse 'Yāsyatyadya Śakuntaleti hṛdayaṁ saṁspṛṣṭam utkaṇṭhayā...' (My heart is touched with grief thinking that today Śakuntalā will depart...) is uttered by which sage?",
+          "options": [
+            {
+              "text": "महर्षिणा कण्वेन (काश्यपेन)",
+              "is_correct": true
+            },
+            {
+              "text": "महर्षिणा दुर्वाससा",
+              "is_correct": false
+            },
+            {
+              "text": "महर्षिणा वसिष्ठेन",
+              "is_correct": false
+            },
+            {
+              "text": "महर्षिणा विश्वामित्रेण",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "महर्षिः कण्वः (काश्यपः) आजन्म-तपस्वी अपि शकुन्तलायाः पतिगृहगमनावसरे लौकिकपितृवत् वात्सल्यस्नेहेन व्याकुलः भवति।",
+          "explanation_en": "Sage Kaṇva, despite being an ascetic forest-dweller, experiences profound paternal tenderness and grief upon the departure of his foster daughter Śakuntalā.",
+          "explanation_hi": "यह श्लोक महर्षि कण्व का है, जो शकुन्तला की विदाई पर अत्यंत भावुक होकर एक सांसारिक पिता की भांति वात्सल्य व्यक्त करते हैं।",
+          "explanation_te": "ఈ శ్లోకమును మహర్షి కణ్వుడు పలికెను. సన్యాసియైనను పెంపుడు కూతురి వీడ్కోలు వేళ తండ్రిగా భావోద్వేగానికి లోనగును.",
+          "points": 25
+        },
+        {
+          "id": "COL-UG-LIT-003",
+          "topic": "Architecture of the Pañcatantra",
+          "prompt_sa": "विष्णुशर्मणा रचितायाः 'पञ्चतन्त्र' कथापरम्परायाः पञ्चभागेषु अधस्तनेषु कः भागः 'न' अस्ति?",
+          "prompt_en": "In Viṣṇuśarman's classic Pañcatantra, which of the following is NOT one of the five structural Tantras (divisions)?",
+          "options": [
+            {
+              "text": "शत्रुवधः",
+              "is_correct": true
+            },
+            {
+              "text": "मित्रभेदः",
+              "is_correct": false
+            },
+            {
+              "text": "मित्रप्राप्तिः (मित्रलाभः)",
+              "is_correct": false
+            },
+            {
+              "text": "काकोलूकीयम्",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "पञ्चतन्त्रस्य पञ्च विभागाः सन्ति- १. मित्रभेदः, २. मित्रप्राप्तिः, ३. काकोलूकीयम्, ४. लब्धप्रणाशः, ५. अपरीक्षितकारकम् च। 'शत्रुवधः' इति तन्त्रं नास्ति।",
+          "explanation_en": "The five structural books of Pañcatantra are: Mitra-bheda, Mitra-prāpti, Kākolūkīyam, Labdha-praṇāśa, and Aparīkṣita-kārakam.",
+          "explanation_hi": "पञ्चतन्त्र के पाँच भाग हैं: मित्रभेद, मित्रप्राप्ति, काकोलूकीय, लब्धप्रणाश, और अपरीक्षितकारक। 'शत्रुवध' इसका भाग नहीं है।",
+          "explanation_te": "పంచతంత్రములోని 5 విభాగాలు: మిత్రభేదం, మిత్రప్రాప్తి, కాకోలూకీయం, లబ్దప్రణాశం, అపరీక్షితకారకం.",
+          "points": 25
+        },
+        {
+          "id": "COL-UG-LIT-004",
+          "topic": "Dramatic Conventions: The Vidūṣaka",
+          "prompt_sa": "संस्कृत-नाटकेषु 'विदूषकः' प्रायेण कस्यां भाषायां सम्भाषणं करोति तथा तस्य प्रियविषयः कः भवति?",
+          "prompt_en": "In classical Sanskrit dramaturgy, what language does the Vidūṣaka (comic jester and loyal companion of the king) speak, and what is his perennial obsession?",
+          "options": [
+            {
+              "text": "प्राकृतभाषाम् भाषते, भोजनप्रियश्च भवति",
+              "is_correct": true
+            },
+            {
+              "text": "शुद्धवैदिकसंस्कृतं भाषते, युद्धप्रियश्च भवति",
+              "is_correct": false
+            },
+            {
+              "text": "केवलं मौनं धारयति",
+              "is_correct": false
+            },
+            {
+              "text": "फारसीभाषां भाषते, धनलोलुपश्च भवति",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "संस्कृतनाटकेषु विदूषकः (यथा शाकुन्तले माढव्यः) प्राकृतभाषया वदति, भोजनलोलुपः भवति, नायकस्य अन्तरङ्गः सखा च भवति।",
+          "explanation_en": "The Vidūṣaka conventionally speaks Prākrit (unlike the Sanskrit-speaking hero and king), provides comedic relief, is obsessed with delicacies (modakas), and acts as the hero's trusted confidant.",
+          "explanation_hi": "संस्कृत नाटकों में विदूषक प्राकृत भाषा बोलता है, भोजनप्रिय (मिष्ठान्नप्रेमी) होता है और राजा का घनिष्ठ मित्र होता है।",
+          "explanation_te": "సంస్కృత నాటకములలో విదూషకుడు ప్రాకృత భాషను మాట్లాడును మరియు భోజనప్రియుడై ఉండును.",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "module_id": "COL-UG-MOD-05",
+      "title_sa": "भारतीय-ज्ञान-परम्परा (Sanskrit & Indian Knowledge Systems - IKS)",
+      "title_en": "Indian Knowledge Systems (IKS): Sanskrit Science, Mathematics & Holistic Life Principles",
+      "overview_en": "An overview of ancient Indian scientific, ecological, and civilizational achievements documented in Sanskrit texts: mathematical place value and trigonometry (Āryabhaṭīya), binary metrics (Piṅgala), ecological ethics, and the core pillars of human life (Puruṣārtha-catuṣṭaya).",
+      "theoretical_framework": [
+        {
+          "field": "गणितम् एवं खगोलशास्त्रम् (Mathematics & Astronomy)",
+          "achievements": [
+            "आर्यभटः (आर्यभटीयम्): शून्यस्य प्रयोगः, भूमेः अक्षभ्रमणम् (Earth rotates on its axis), π (pi) इत्यस्य सन्निकटमानम् (3.1416)।",
+            "भास्कराचार्यः (सिद्धान्तशिरोमणिः / लीलावती): गुरुत्वाकर्षणस्य पूर्वाभासः, बीजगणितस्य नियमाः।",
+            "पिङ्गलनागः (छन्दःशास्त्रम्): मेरुप्रस्तारः (Pascal's Triangle), द्व्यङ्क-पद्धतिः (Binary representation in laghu-guru)."
+          ]
+        },
+        {
+          "field": "आयुर्वेदः एवं जीवनदृष्टिः (Holistic Health & Life Pillars)",
+          "achievements": [
+            "त्रिदोषाः: वातः, पित्तम्, कफः (Tridoṣa balance creates health; imbalance leads to disease).",
+            "दिनचर्या एवं ऋतुचर्या: Circadian lifestyle alignment for physical and mental immunity.",
+            "पुरुषार्थ-चतुष्टयम्: धर्मः, अर्थः, कामः, मोक्षः (Balanced pursuit of ethics, livelihood, desires, and spiritual liberation)."
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "id": "COL-UG-IKS-001",
+          "topic": "Astronomy in Aryabhatiya",
+          "prompt_sa": "'अनुलोमगतिर्नौस्थः पश्यत्यचलं विलोमगं यद्वत्। अचलानि भानि तद्वत् समपश्चिमगानि लङ्कायाम्॥' इत्यनेन आर्यभटः कस्य सिद्धान्तस्य प्रतिपादनम् अकरोत्?",
+          "prompt_en": "In the famous verse from the Āryabhaṭīya comparing a moving boat to the apparent motion of trees, what groundbreaking astronomical truth was stated by Āryabhaṭa in the 5th century CE?",
+          "options": [
+            {
+              "text": "पृथिवी स्वकीये अक्षे भ्रमति, न तु नक्षत्राणि (Earth's diurnal rotation on its own axis)",
+              "is_correct": true
+            },
+            {
+              "text": "सूर्यः पृथिव्याः परितः भ्रमति",
+              "is_correct": false
+            },
+            {
+              "text": "चन्द्रः स्वयंप्रकाशवान् अस्ति",
+              "is_correct": false
+            },
+            {
+              "text": "आकाशे नक्षत्राणि परस्परं सङ्घर्षं कुर्वन्ति",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "आर्यभटः प्रतिपादितवान् यत् यथा नौकायां स्थितः जनः तीरस्थान् अचलान् वृक्षान् पश्चाद्गच्छतः पश्यति, तथैव पृथिव्याः अक्षभ्रमणात् नक्षत्राणि भ्रमन्तीव दृश्यन्ते।",
+          "explanation_en": "Āryabhaṭa correctly deduced that the apparent east-to-west motion of the constellations is an illusion caused by the Earth rotating on its own axis from west to east.",
+          "explanation_hi": "आर्यभट ने नाव और किनारे के पेड़ों का उदाहरण देकर सिद्ध किया कि नक्षत्र स्थिर हैं और पृथ्वी अपनी धुरी पर घूमती है।",
+          "explanation_te": "నదిలో ప్రయాణించే పడవలో ఉన్నవాడికి ఒడ్డున ఉన్న చెట్లు వెనుకకు వెళ్తున్నట్లు కనిపించునట్లే, భూమి తన అక్షంపై తాను తిరుగుట వలన నక్షత్రాలు కదులుతున్నట్లు కనిపిస్తాయి.",
+          "points": 30
+        },
+        {
+          "id": "COL-UG-IKS-002",
+          "topic": "Combinatorics in Pingala's Chandaḥ-śāstra",
+          "prompt_sa": "आचार्यपिङ्गलेन छन्दःशास्त्रे प्रस्तारार्थं यत् त्रिकोणाकारं रेखाचित्रं कल्पितं (यत् पश्चात् 'पास्कल-त्रिभुजम्' इति पाश्चात्त्यैः ख्यातम्), तस्य संस्कृतनाम किम्?",
+          "prompt_en": "What is the ancient Sanskrit name given by Piṅgala (and his commentator Halāyudha) to the triangular combinatoric grid for binary binomial coefficients, later known in Europe as Pascal's Triangle?",
+          "options": [
+            {
+              "text": "मेरुप्रस्तारः (Meru-Prastāra)",
+              "is_correct": true
+            },
+            {
+              "text": "पताका-प्रस्तारः",
+              "is_correct": false
+            },
+            {
+              "text": "मर्कटी-प्रस्तारः",
+              "is_correct": false
+            },
+            {
+              "text": "समुद्ग-प्रस्तारः",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "पिङ्गलस्य छन्दःशास्त्रे 'परे पूर्णमिति' सूत्रस्य व्याख्यायां हलायुधेन 'मेरुप्रस्तारः' इति पर्वताकारः पिरामिड-विन्यासः वर्णितः, यः पास्कल-त्रिभुजस्य (Pascal's Triangle) प्राचीनतमं रूपम्।",
+          "explanation_en": "Meru-Prastāra (staircase of Mount Meru) is the combinatoric triangle described centuries before Blaise Pascal to calculate the permutations of laghu and guru syllables in metres.",
+          "explanation_hi": "पिङ्गल के छन्दःशास्त्र में छन्दों के प्रस्तार के लिए कल्पित त्रिभुजाकार विन्यास को 'मेरुप्रस्तार' कहा गया है।",
+          "explanation_te": "పింగళ ఛందశ్శాస్త్రమునందు బైనరీ అంకెలను లెక్కించు త్రికోణీయ పద్ధతిని 'మేరుప్రస్తారము' అంటారు.",
+          "points": 30
+        },
+        {
+          "id": "COL-UG-IKS-003",
+          "topic": "The Four Goals of Human Life (Puruṣārtha-Catuṣṭayam)",
+          "prompt_sa": "भारतीयसंस्कृती जीवनस्य चतुर्विध-पुरुषार्थेषु कः क्रमः शास्त्रीयरूपेण स्वीकृतः?",
+          "prompt_en": "In Indian intellectual and cultural tradition, what is the canonically accepted progression of the Four Puruṣārthas (cardinal goals of life)?",
+          "options": [
+            {
+              "text": "धर्मः, अर्थः, कामः, मोक्षश्च",
+              "is_correct": true
+            },
+            {
+              "text": "अर्थः, कामः, धर्मः, मोक्षः",
+              "is_correct": false
+            },
+            {
+              "text": "कामः, अर्थः, मोक्षः, धर्मः",
+              "is_correct": false
+            },
+            {
+              "text": "मोक्षः, धर्मः, कामः, अर्थः",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "धर्मेण अर्थस्य उपार्जनम्, धर्मानुकूलः कामोपभोगः, ततश्च सर्वबन्धनमुक्तेः परमं पदं 'मोक्षः' इति क्रमेण चत्वारः पुरुषार्थाः सिद्ध्यन्ति।",
+          "explanation_en": "The Puruṣārthas are harmoniously ordered: Dharma (righteousness/duty) anchors Artha (wealth generation) and Kāma (fulfillment of desires), leading to Mokṣa (spiritual liberation).",
+          "explanation_hi": "धर्म, अर्थ, काम और मोक्ष - यह चतुर्विध पुरुषार्थ का शास्त्रीय क्रम है, जिसमें धर्म सभी की नींव है और मोक्ष परम लक्ष्य।",
+          "explanation_te": "ధర్మము, అర్థము, కామము మరియు మోక్షము అనునవి భారతీయ జీవన విధానములోని నాలుగు ప్రధాన పురుషార్థములు.",
+          "points": 30
+        },
+        {
+          "id": "COL-UG-IKS-004",
+          "topic": "Foundations of Ayurveda",
+          "prompt_sa": "आयुर्वेदे शरीरस्य स्वस्थतायै केषां त्रयाणां दोषाणां साम्यावस्था अनिवर्या भवति?",
+          "prompt_en": "In Āyurvedic medicine (as articulated in Caraka and Suśruta Saṁhitās), dynamic equilibrium among which three physiological bio-energies (Tridoṣas) constitutes radiant health?",
+          "options": [
+            {
+              "text": "वातः, पित्तम्, कफश्च (त्रिदोषाः)",
+              "is_correct": true
+            },
+            {
+              "text": "सत्त्वं, रजः, तमश्च",
+              "is_correct": false
+            },
+            {
+              "text": "जलम्, वायुः, अग्निः",
+              "is_correct": false
+            },
+            {
+              "text": "प्राणः, अपानः, व्यानः",
+              "is_correct": false
+            }
+          ],
+          "explanation_sa": "'दोषधातुमलमूलं हि शरीरम्।' वात-पित्त-कफानां समत्वं स्वास्थ्यं, विषमता तु रोगः (रोगस्तु दोषवैषम्यं दोषसाम्यमरोगता)।",
+          "explanation_en": "Vāta (kinetic/air principle), Pitta (metabolic/fire principle), and Kapha (structural/water principle) constitute the Tridoṣas; their harmony is health (*Arogatā*), and their imbalance is pathology (*Roga*).",
+          "explanation_hi": "वात, पित्त और कफ - इन तीनों दोषों की समता ही स्वास्थ्य है तथा इनकी विषमता ही रोग का कारण बनती है।",
+          "explanation_te": "వాతము, పిత్తము మరియు కఫము అను త్రిదోషముల సమతుల్యతయే ఆరోగ్యము.",
+          "points": 30
+        }
+      ]
+    }
+  ]
+}

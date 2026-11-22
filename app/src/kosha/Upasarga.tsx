@@ -64,7 +64,7 @@ export const comboSearch = (c: UpasargaCombo) => [c.w, ...c.u, ...c.rows, c.d, c
 export const comboLabel = (c: UpasargaCombo, lang: string, S: (t: string) => string) =>
   <><span className="ks-l-sa">{S(c.w)}</span><span className="ks-l-en">{meaningOf(c, lang)}</span></>;
 
-/** one prefixed verb on its own (the “With prefixes” tab of the धातुकोशः) */
+/** one prefixed verb shown inside the matching root's धातुरूपाणि */
 export const ComboCard: React.FC<{ c: UpasargaCombo; openRoot?: () => void; rootLabel?: string }> = ({ c, openRoot, rootLabel }) => {
   const S = useSa();
   const lang = useLang();

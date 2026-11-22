@@ -6,7 +6,7 @@
 // ═══════════════════════════════════════════════════════════════
 import React, { useEffect, useRef, useState } from "react";
 import {
-  WORDS, VERBS, AVYAYA, AVYAYA_CATS, LANGS, MEANING_LANGS, VIBHAKTI, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO,
+  WORDS, VERBS, AVYAYA, AVYAYA_CATS, COMPOSITION, CURRICULUM, LANGS, MEANING_LANGS, VIBHAKTI, VACANA, PURUSHA, LAKARA, LAKARA_ORDER, LAKARA_INFO,
   headForm, wordMeaning, verbMeaning, avyayaMeaning, type Word,
 } from "../data";
 import { nounGloss, verbGloss } from "../i18n/forms";
@@ -15,15 +15,18 @@ import { speak } from "../speech";
 import { PrakritiPratyaya, Prakriya } from "./Prakriya";
 import { AgreementCard, PrathamaCard, AdhyaharaCard } from "./Samanvaya";
 import { ShabdaScene, KarakaScene, PotScene, WorldScene, PersonScene, LakaraScene, AvyayaScene } from "./anim";
+import { useSa } from "../i18n/script";
 import "./learn.css";
 
-type Ch = "shabda" | "dhatu" | "avyaya" | "prakriti" | "prakriya";
+type Ch = "shabda" | "dhatu" | "avyaya" | "prakriti" | "prakriya" | "pathya" | "rachana";
 const CHAPTERS: [Ch, string, string][] = [
   ["shabda", "शब्दरूपाणि", "Why every noun has 24 forms"],
   ["dhatu", "धातुरूपाणि", "Why every verb has 9 forms in each tense"],
   ["avyaya", "अव्ययानि", "Words that never change"],
   ["prakriti", "प्रकृतिः प्रत्ययश्च", "Root, stem and suffix"],
   ["prakriya", "प्रक्रिया", "How a sentence is taken apart and built"],
+  ["pathya", "पाठ्यक्रमः", "School, college and university learning tracks"],
+  ["rachana", "रचनम्", "Paragraph, picture and letter composition"],
 ];
 
 const Learn: React.FC = () => {
@@ -49,7 +52,7 @@ const Learn: React.FC = () => {
           <button key={k} className={ch === k ? "on" : ""} onClick={() => setCh(k)}><b>{sa}</b><small>{en}</small></button>
         ))}
       </div>
-      <div key={ch} className="ln-chapter-in">{ch === "shabda" ? <Shabda /> : ch === "dhatu" ? <Dhatu /> : ch === "avyaya" ? <Avyaya /> : ch === "prakriti" ? <PrakritiPratyaya /> : <Prakriya />}</div>
+      <div key={ch} className="ln-chapter-in">{ch === "shabda" ? <Shabda /> : ch === "dhatu" ? <Dhatu /> : ch === "avyaya" ? <Avyaya /> : ch === "prakriti" ? <PrakritiPratyaya /> : ch === "pathya" ? <Curriculum /> : ch === "rachana" ? <Composition /> : <Prakriya />}</div>
     </div>
   );
 };
@@ -75,6 +78,283 @@ const LangChips: React.FC<{ langs: string[]; toggle: (l: string) => void }> = ({
   </div>
 );
 
+type TrackKey = "school" | "college" | "university";
+const CURRICULUM_TRACKS: [TrackKey, string, string][] = [
+  ["school", "बालपाठ्यक्रमः", "Classes 6–12 · School"],
+  ["college", "माध्यमिक-स्नातकस्तरः", "College / Undergraduate"],
+  ["university", "विद्वत्पाठ्यक्रमः", "University / Research"],
+];
+
+const Curriculum: React.FC = () => {
+  const S = useSa();
+  const lang = useLang();
+  const [track, setTrack] = useState<TrackKey>("school");
+  const [moduleId, setModuleId] = useState(CURRICULUM.school.modules[0].id);
+  const [challengeIndex, setChallengeIndex] = useState(0);
+  const [answer, setAnswer] = useState<string | null>(null);
+  const [answered, setAnswered] = useState<string[]>([]);
+  const [score, setScore] = useState(0);
+  const data = CURRICULUM[track];
+  const module = data.modules.find(m => m.id === moduleId) ?? data.modules[0];
+  const challenge = module.challenges[challengeIndex] ?? null;
+  const answeredSet = new Set(answered);
+  const explanation = lang === "hi" ? challenge?.explanation_hi
+    : lang === "te" ? challenge?.explanation_te
+    : challenge?.explanation_en;
+
+  const chooseTrack = (next: TrackKey) => {
+    setTrack(next);
+    setModuleId(CURRICULUM[next].modules[0].id);
+    setChallengeIndex(0);
+    setAnswer(null);
+  };
+  const chooseModule = (id: string) => {
+    setModuleId(id);
+    setChallengeIndex(0);
+    setAnswer(null);
+  };
+  const chooseAnswer = (option: string) => {
+    if (!challenge || answer !== null) return;
+    setAnswer(option);
+    if (!answeredSet.has(challenge.id)) {
+      setAnswered(cur => [...cur, challenge.id]);
+      if (option === challenge.answer) setScore(cur => cur + challenge.points);
+    }
+  };
+  const nextChallenge = () => {
+    setChallengeIndex(i => (i + 1) % module.challenges.length);
+    setAnswer(null);
+  };
+
+  return (
+    <div className="ln-body ln-curriculum">
+      <Card title="पाठ्यक्रमाः · Learner tracks" tone="ln-key">
+        <p><span className="ln-l-en">Choose your learning level. Each track has theory, examples and multiple-choice practice.</span></p>
+        <div className="ln-pathya-tracks" role="group" aria-label="Curriculum level">
+          {CURRICULUM_TRACKS.map(([key, sa, en]) => (
+            <button key={key} className={track === key ? "on" : ""} onClick={() => chooseTrack(key)}>
+              <b>{S(sa)}</b><span>{en}</span>
+            </button>
+          ))}
+        </div>
+        <div className="ln-pathya-summary">
+          <div><strong>{data.modules.length}</strong><span>घटकाः · Modules</span></div>
+          <div><strong>{data.modules.reduce((n, m) => n + m.challenges.length, 0)}</strong><span>प्रश्नाः · Questions</span></div>
+          <div><strong>{answeredSet.size}</strong><span>Attempted</span></div>
+          <div><strong>{score}</strong><span>Points</span></div>
+        </div>
+      </Card>
+
+      <Card title={`${S(data.title)} · Course overview`}>
+        <p className="ln-pathya-audience"><b>{S(data.audience)}</b></p>
+        <p>{data.description}</p>
+      </Card>
+
+      <Card title="घटकाः · Course modules">
+        <div className="ln-pathya-modules">
+          {data.modules.map((m, i) => (
+            <button key={m.id} className={module.id === m.id ? "on" : ""} onClick={() => chooseModule(m.id)}>
+              <span>{String(i + 1).padStart(2, "0")}</span>
+              <div><b>{S(m.name_sa)}</b><small>{m.name_en}</small></div>
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <Card title={`${module.name_sa} · ${module.name_en}`}>
+        <p>{module.description}</p>
+        {module.theory.length > 0 && (
+          <details className="ln-demo-details ln-forms-details">
+            <summary><span>सिद्धान्तः · Theory and examples</span><small>{module.theory.length} points</small></summary>
+            <div className="ln-demo-content">
+              <ul className="ln-pathya-theory">
+                {module.theory.map((item, i) => <li key={i}>{S(item)}</li>)}
+              </ul>
+            </div>
+          </details>
+        )}
+      </Card>
+
+      {challenge && (
+        <Card title="अभ्यासः · Practice challenge" tone="ln-key">
+          <div className="ln-pathya-quiz">
+            <div className="ln-pathya-qmeta"><span>{challenge.topic}</span><small>{challengeIndex + 1} / {module.challenges.length} · {challenge.points} points</small></div>
+            <h4 className="ln-sa">{S(challenge.prompt_sa)}</h4>
+            {challenge.prompt_en && <p className="ln-pathya-prompt-en">{challenge.prompt_en}</p>}
+            <div className="ln-pathya-options">
+              {challenge.options.map(option => {
+                const chosen = answer === option;
+                const correct = answer !== null && option === challenge.answer;
+                const wrong = chosen && option !== challenge.answer;
+                return (
+                  <button key={option} className={correct ? "correct" : wrong ? "wrong" : ""} disabled={answer !== null} onClick={() => chooseAnswer(option)}>
+                    {S(option)}
+                  </button>
+                );
+              })}
+            </div>
+            {answer !== null && (
+              <div className={`ln-pathya-result ${answer === challenge.answer ? "ok" : "no"}`} aria-live="polite">
+                <b>{answer === challenge.answer ? "साधु! · Correct" : "पुनः विचारयतु · Try again"}</b>
+                {challenge.explanation_sa && <p className="ln-sa">{S(challenge.explanation_sa)}</p>}
+                {explanation && <p>{explanation}</p>}
+                <button className="ln-pathya-next" onClick={nextChallenge}>अग्रिमप्रश्नम् · Next</button>
+              </div>
+            )}
+          </div>
+        </Card>
+      )}
+    </div>
+  );
+};
+
+type CompositionKind = "paragraph" | "picture" | "letter";
+const COMPOSITION_KINDS: [CompositionKind, string, string][] = [
+  ["paragraph", "अनुच्छेद-निबन्धः", "Paragraph / essay"],
+  ["picture", "चित्रवर्णनम्", "Picture composition"],
+  ["letter", "पत्रलेखनम्", "Letter writing"],
+];
+
+const Composition: React.FC = () => {
+  const S = useSa();
+  const lang = useLang();
+  const [kind, setKind] = useState<CompositionKind>("paragraph");
+  const [questId, setQuestId] = useState(COMPOSITION.paragraph.quests[0].id);
+  const [answer, setAnswer] = useState<string | null>(null);
+  const data = COMPOSITION[kind];
+  const quest = data.quests.find(q => q.id === questId) ?? data.quests[0];
+  const challenge = quest.challenge;
+  const explanation = lang === "hi" ? challenge.explanation_hi
+    : lang === "te" ? challenge.explanation_te
+    : challenge.explanation_en;
+
+  const chooseKind = (next: CompositionKind) => {
+    setKind(next);
+    setQuestId(COMPOSITION[next].quests[0].id);
+    setAnswer(null);
+  };
+
+  const modelText = typeof quest.model === "string"
+    ? quest.model
+    : Array.isArray(quest.model)
+      ? quest.model.map(String).join("\n")
+      : "";
+
+  return (
+    <div className="ln-body ln-composition">
+      <Card title="रचनम् · Sanskrit composition" tone="ln-key">
+        <p>{data.description}</p>
+        <div className="ln-composition-kinds" role="group" aria-label="Composition type">
+          {COMPOSITION_KINDS.map(([key, sa, en]) => (
+            <button key={key} className={kind === key ? "on" : ""} onClick={() => chooseKind(key)}>
+              <b>{S(sa)}</b><span>{en}</span>
+            </button>
+          ))}
+        </div>
+        <p className="ln-composition-count"><strong>{data.total}</strong> रचनप्रश्नाः · quests</p>
+      </Card>
+
+      <Card title="प्रश्नाः · Choose a quest">
+        <div className="ln-composition-list">
+          {data.quests.map((item, i) => (
+            <button key={item.id} className={quest.id === item.id ? "on" : ""} onClick={() => { setQuestId(item.id); setAnswer(null); }}>
+              <span>{String(i + 1).padStart(2, "0")}</span>
+              <div><b>{S(item.title_sa)}</b><small>{item.title_en}</small><em>{S(item.level)}</em></div>
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <Card title={`${S(quest.title_sa)} · ${quest.title_en}`}>
+        {quest.level && <p className="ln-composition-level">{S(quest.level)}</p>}
+        {quest.context && <p>{quest.context}</p>}
+
+        {Object.keys(quest.framework).length > 0 && (
+          <details className="ln-demo-details">
+            <summary><span>रचनाविन्यासः · Structure</span><small>{Object.keys(quest.framework).length} steps</small></summary>
+            <div className="ln-demo-content">
+              <ol className="ln-composition-framework">
+                {Object.values(quest.framework).map((step, i) => <li key={i}>{S(step)}</li>)}
+              </ol>
+            </div>
+          </details>
+        )}
+
+        {quest.subhashita?.verse && (
+          <details className="ln-demo-details">
+            <summary><span>सूक्ति-सङ्ग्रहः · Subhāṣita</span><small>{lang === "hi" ? "हिन्दी अर्थ" : lang === "te" ? "తెలుగు अर्थ" : "English meaning"}</small></summary>
+            <div className="ln-demo-content">
+              <p className="ln-composition-verse ln-sa">{S(quest.subhashita.verse)}</p>
+              <p>{quest.subhashita[`meaning_${lang}`] || quest.subhashita.meaning_en}</p>
+            </div>
+          </details>
+        )}
+
+        {quest.templates.length > 0 && (
+          <details className="ln-demo-details">
+            <summary><span>पूरण-वाक्यानि · Fill-in scaffolds</span><small>{quest.templates.length} templates</small></summary>
+            <div className="ln-demo-content">
+              <ol className="ln-composition-framework">
+                {quest.templates.map((template, i) => <li key={i}>{S(String(template))}</li>)}
+              </ol>
+            </div>
+          </details>
+        )}
+
+        {quest.manjusha.length > 0 && (
+          <details className="ln-demo-details">
+            <summary><span>मञ्जूषा · Helpful words</span><small>{quest.manjusha.length} words</small></summary>
+            <div className="ln-composition-manjusha">
+              {quest.manjusha.map((item, i) => {
+                if (typeof item === "string") return <span key={i}>{S(item)}</span>;
+                const word = item as { word_sa?: string; gloss_en?: string };
+                return <span key={i}><b>{S(word.word_sa || "")}</b><small>{word.gloss_en || ""}</small></span>;
+              })}
+            </div>
+          </details>
+        )}
+
+        {quest.cloze.length > 0 && (
+          <details className="ln-demo-details">
+            <summary><span>रिक्तपूर्तिः · Cloze letter</span><small>{quest.cloze.length} lines</small></summary>
+            <div className="ln-demo-content ln-composition-cloze">
+              {quest.cloze.map((line, i) => <p key={i}>{S(line)}</p>)}
+            </div>
+          </details>
+        )}
+
+        {modelText && (
+          <details className="ln-demo-details">
+            <summary><span>आदर्शरचनम् · Model answer</span><small>Read after attempting</small></summary>
+            <div className="ln-demo-content ln-composition-model">{modelText.split("\n").map((line, i) => <p key={i}>{S(line)}</p>)}</div>
+          </details>
+        )}
+      </Card>
+
+      <Card title="व्याकरणाभ्यासः · Grammar challenge" tone="ln-key">
+        <div className="ln-composition-quiz">
+          <h4 className="ln-sa">{S(challenge.question_sa)}</h4>
+          {challenge.question_en && <p>{challenge.question_en}</p>}
+          <div className="ln-pathya-options">
+            {challenge.options.map(option => {
+              const chosen = answer === option;
+              const correct = answer !== null && option === challenge.answer;
+              const wrong = chosen && option !== challenge.answer;
+              return <button key={option} className={correct ? "correct" : wrong ? "wrong" : ""} disabled={answer !== null} onClick={() => setAnswer(option)}>{S(option)}</button>;
+            })}
+          </div>
+          {answer !== null && (
+            <div className={`ln-pathya-result ${answer === challenge.answer ? "ok" : "no"}`}>
+              <b>{answer === challenge.answer ? "साधु! · Correct" : "पुनः विचारयतु · Try again"}</b>
+              <p>{explanation}</p>
+            </div>
+          )}
+        </div>
+      </Card>
+    </div>
+  );
+};
+
 // ═══════════ 1. शब्दरूपाणि ═══════════
 const KARAKA: [string, string, string, string, string][] = [
   ["प्रथमा", "कर्ता", "स्वतन्त्रः कर्ता", "1.4.54", "who does it? (प्रथमा when the verb names the doer: अभिहिते कर्तरि प्रथमा)"],
@@ -86,6 +366,11 @@ const KARAKA: [string, string, string, string, string][] = [
   ["सप्तमी", "अधिकरणम्", "आधारोऽधिकरणम्", "1.4.45", "where / in what?"],
   ["सम्बोधनम्", "सम्बोधनम्", "सम्बोधने च", "2.3.47", "calling someone: O …!"],
 ];
+const CASE_RULE: Record<string, string> = {
+  "प्रथमा": "अभिहितकर्तादिः",
+  "द्वितीया": "अनभिहितं कर्म",
+  "तृतीया": "अभिहितः कर्ता अथवा करणम्",
+};
 // finer meanings under each vibhakti (Pāṇini 2.3, 1.4)
 const SUBTYPES: [string, string, string, string][] = [
   ["प्रथमा", "naming; the subject of an active verb, the object of a passive one", "रामः गच्छति · ग्रन्थः पठ्यते", "प्रातिपदिकार्थ… प्रथमा 2.3.46"],
@@ -161,9 +446,14 @@ const Shabda: React.FC = () => {
         <p className="ln-center"><Sutra t="स्वौजसमौट्छष्टाभ्याम्भिस्ङेभ्याम्भ्यस्ङसिभ्याम्भ्यस्ङसोसाम्ङ्योस्सुप्" n="4.1.2" /></p>
         <ShabdaScene />
         <div className="ln-eq"><span className="ln-stem">राम</span> + <span className="ln-suf">टा</span> = <span className="ln-word">रामेण</span><small>stem + 3rd-case singular ending = “by Rāma”</small></div>
-        <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>विभक्तिः</th>{VACANA.map(v => <th key={v}>{v}</th>)}</tr></thead>
-          <tbody>{SUP.map((r, i) => <tr key={i}><th>{VIBHAKTI[i]}</th>{r.map((x, j) => <td key={j} className="ln-deva">{x}</td>)}</tr>)}
-            <tr><th>सम्बोधनम्</th><td colSpan={3} className="ln-note-cell">uses the प्रथमा endings (<Sutra t="सम्बोधने च" n="2.3.47" />), so 7 × 3 + 3 = <b>24 forms</b></td></tr></tbody></table></div>
+        <details className="ln-demo-details ln-forms-details">
+          <summary><span>शब्दरूपसारणी · 24 noun forms</span><small>विभक्तिः × वचनम् · One, two and many</small></summary>
+          <div className="ln-demo-content">
+            <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>विभक्तिः</th>{VACANA.map(v => <th key={v}>{v}</th>)}</tr></thead>
+              <tbody>{SUP.map((r, i) => <tr key={i}><th>{VIBHAKTI[i]}</th>{r.map((x, j) => <td key={j} className="ln-deva">{x}</td>)}</tr>)}
+                <tr><th>सम्बोधनम्</th><td colSpan={3} className="ln-note-cell">uses the प्रथमा endings (<Sutra t="सम्बोधने च" n="2.3.47" />), so 7 × 3 + 3 = <b>24 forms</b></td></tr></tbody></table></div>
+          </div>
+        </details>
         <p>Three numbers (वचनानि: one, two, many) × eight relations (विभक्तयः) = <b>24</b>. Every declinable word has these 24 places, whatever its gender or stem. Some words fill only part of them: दाराः, आपः, प्राणाः occur only in the plural, द्वि only in the dual, and pronouns have no सम्बोधनम्. Traditional teaching memorises शब्दरूपाणि early because the whole grid comes with every new word.</p>
       </Card>
 
@@ -203,54 +493,35 @@ const Shabda: React.FC = () => {
       </Card>
 
       <Card title="सर्वासु भाषासु · The same 24 places in every language" tone="ln-key">
-        <p>The thesis sets the case systems of about twenty languages side by side with the Sanskrit table, stem by stem and ending by ending. Its conclusion: <i>“यदि संस्कृतोक्तकारकविभागः परिशील्यते तर्हि अयं विभागः सर्वासु भाषासु अन्तर्भवति”</i>, the kāraka division is found inside every language. Languages differ only in <b>how</b> they mark the relation: an ending, a separate word before or after, or word order. They do not differ in <b>which</b> relations exist.</p>
+        <p>Languages differ in <b>how</b> they mark a relation—through an ending, a separate word, or word order. They do not fundamentally differ in <b>which</b> relations they express.</p>
         <div className="ln-table-wrap"><table className="ln-table ln-world"><thead><tr><th>Language</th><th>How it marks the 8 relations</th><th>Markers</th></tr></thead>
           <tbody>{WORLD.map(([l, h, m]) => <tr key={l}><th>{l}</th><td>{h}</td><td>{m}</td></tr>)}</tbody></table></div>
         <WorldScene />
-        <div className="ln-claim">
-          <b>The claim, stated precisely.</b> Every use of a noun stem is one of three things:
-          <ol>
-            <li>one of its <b>24 forms</b>, carrying one of the 8 relations with its Pāṇinian finer meanings;</li>
-            <li>an <b>avyaya</b> made from it (ततः, तत्र, बहुशः, राजवत्…), whose meaning Pāṇini states through those same vibhakti meanings; or</li>
-            <li>a <b>new stem</b> (समास, तद्धित, नामधातु) with its own 24.</li>
-          </ol>
-          Every language maps its noun usages onto this inventory.
-        </div>
-        <p>The table below shows it live. Choose a word and some languages: each row is one relation, and each language fills it in its own way.</p>
-        <div className="ln-demo-bar">
-          <label>शब्दः <select value={wid} onChange={e => setWid(e.target.value)}>{nouns.map(x => <option key={x.id} value={x.id}>{headForm(x)} · {wordMeaning(x, "en").split(";")[0]}</option>)}</select></label>
-          <div className="ks-chips">{VACANA.map((v, i) => <button key={v} className={num === i ? "on" : ""} onClick={() => setNum(i)}>{v}</button>)}</div>
-        </div>
-        <LangChips langs={langs} toggle={toggle} />
-        <div className="ln-table-wrap"><table className="ln-table ln-demo">
-          <thead><tr><th>विभक्तिः</th><th>संस्कृतम्</th>{langs.map(l => <th key={l}>{LANGS[l]}</th>)}</tr></thead>
-          <tbody>{VIBHAKTI.map((v, i) => {
-            const f = w.d[num]?.[i];
-            return <tr key={v}><th>{v}<small>{KARAKA[i][1]}</small></th>
-              <td className="ln-deva ln-big">{f ? <button className="ln-say" onClick={() => speak((i === 7 ? "हे " : "") + f)}>{i === 7 ? "हे " : ""}{f}</button> : "—"}</td>
-              {langs.map(l => <td key={l}>{f ? nounGloss(w, i, num, l) : "—"}</td>)}</tr>;
-          })}</tbody></table></div>
+        <details className="ln-demo-details">
+          <summary><span>रूपसारणी · रूपाणि द्रष्टुम्</span><small>शब्दं वचनं भाषां च चिनुत · Choose word, number and language</small></summary>
+          <div className="ln-demo-content">
+            <div className="ln-demo-bar">
+              <label>शब्दः <select value={wid} onChange={e => setWid(e.target.value)}>{nouns.map(x => <option key={x.id} value={x.id}>{headForm(x)} · {wordMeaning(x, "en").split(";")[0]}</option>)}</select></label>
+              <div className="ks-chips">{VACANA.map((v, i) => <button key={v} className={num === i ? "on" : ""} onClick={() => setNum(i)}>{v}</button>)}</div>
+            </div>
+            <LangChips langs={langs} toggle={toggle} />
+            <div className="ln-role-key" aria-label="Key Pāṇinian case rules">
+              {VIBHAKTI.slice(0, 3).map(v => CASE_RULE[v] && (
+                <div key={v}><b>{v}</b><span>{CASE_RULE[v]}</span></div>
+              ))}
+            </div>
+            <div className="ln-table-wrap"><table className="ln-table ln-demo">
+              <thead><tr><th>विभक्तिः</th><th>संस्कृतम्</th>{langs.map(l => <th key={l}>{LANGS[l]}</th>)}</tr></thead>
+              <tbody>{VIBHAKTI.map((v, i) => {
+                const f = w.d[num]?.[i];
+                return <tr key={v}><th>{v}<small>{KARAKA[i][1]}</small>{CASE_RULE[v] && <small className="ln-role-rule">{CASE_RULE[v]}</small>}</th>
+                  <td className="ln-deva ln-big">{f ? <button className="ln-say" onClick={() => speak((i === 7 ? "हे " : "") + f)}>{i === 7 ? "हे " : ""}{f}</button> : "—"}</td>
+                  {langs.map(l => <td key={l}>{f ? nounGloss(w, i, num, l) : "—"}</td>)}</tr>;
+              })}</tbody></table></div>
+          </div>
+        </details>
       </Card>
 
-      <Card title="विमर्शः · Testing the claim against hard cases" tone="ln-check rv-only">
-        <p>A strong claim should be tested against the languages that look most different. These are the patterns that seem to break it, and what they show:</p>
-        <ul className="ln-points">
-          <li><b>Hungarian and Finnish (15–27 cases).</b> Most of these cases were once separate words, postpositions meaning “inside”, “surface”, “near”, that fused onto the noun. Their nine local cases are exactly <b>three Sanskrit vibhaktis × three positions</b>:
-            <div className="ln-table-wrap"><table className="ln-table ln-hu"><thead><tr><th></th><th>at · सप्तमी</th><th>to · द्वितीया (motion)</th><th>from · पञ्चमी</th></tr></thead>
-              <tbody>
-                <tr><th>inside · अन्तः</th><td><i>házban</i> in the house</td><td><i>házba</i> into the house</td><td><i>házból</i> out of the house</td></tr>
-                <tr><th>surface · उपरि</th><td><i>házon</i> on the house</td><td><i>házra</i> onto the house</td><td><i>házról</i> off the house</td></tr>
-                <tr><th>near · समीपे</th><td><i>háznál</i> at the house</td><td><i>házhoz</i> to the house</td><td><i>háztól</i> from the house</td></tr>
-              </tbody></table></div>
-            The rest are the 8 relations (<i>-t</i> द्वितीया, <i>-nak</i> चतुर्थी / षष्ठी, <i>-val</i> तृतीया + सह, <i>-ért</i> चतुर्थी / -अर्थम्, <i>-kor</i> सप्तमी) or avyaya meanings (<i>-ig</i> “until” = आ + पञ्चमी, <i>-vá</i> “becoming” = च्वि / -सात्, <i>-ként</i> “as” = इव / -वत्). The same holds for Finnish comitative “with” and abessive “without” (सह + तृतीया, विना). Sanskrit says with a vibhakti + an avyaya what these languages fuse into one ending. It is the same thing Pāṇini's तसिल् and त्रल् do for a few words (ग्रामतः, तत्र); Hungarian does it for every noun.</li>
-          <li><b>Possessive endings (Turkish, Finnish, Arabic).</b> Turkish <i>evim</i>, Arabic <i>baytī</i> = “my house”, one word. Sanskrit uses two words (मम गृहम्), but the relation is the same षष्ठी. The language has <b>packed two words into one</b>; it has not added a relation.</li>
-          <li><b>Articles and definiteness (English, Arabic, Bengali, Scandinavian).</b> “the / a”, <i>al-</i>, -টা / -টি, <i>huset</i>. This tells you <i>which</i> thing, not its role. Sanskrit marks it with सः, एषः, कश्चित् when needed. It is a layer on top of the 24, not a 25th place.</li>
-          <li><b>Honorific and polite forms (Telugu మీరు, Hindi आप, Japanese, Korean).</b> Respect is a separate scale. Sanskrit uses भवान् (with a 3rd-person verb) for it, and every one of those forms still sits in the same 24 places.</li>
-          <li><b>Noun classes and counters (Bantu languages, Chinese 个 / 位, Japanese 人 / つ).</b> These classify the noun (person, flat thing, animal). In Sanskrit that is the work of लिङ्गम् and of number words. Telugu ఇద్దరు / రెండు is the same idea, and the game uses it.</li>
-          <li><b>Trial or paucal number (some Pacific languages).</b> A special “three” or “a few” falls inside बहुवचनम्, which means “three or more”.</li>
-        </ul>
-        <p className="ln-verdict">Result: none of these needs a relation outside the inventory. Some languages fuse a vibhakti and an avyaya into one ending; others add information that is not a relation at all (owner, definiteness, respect, class), which Sanskrit gives with a separate word. Two things must be stated explicitly for the argument to hold: (1) the grid counts <b>relations with their finer meanings</b>, not endings; (2) avyayas and new stems (समास, तद्धित, नामधातु) are part of the system, as in the three-part statement above.</p>
-      </Card>
     </div>
   );
 };
@@ -276,12 +547,12 @@ const Dhatu: React.FC = () => {
           <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>आत्मनेपदम्</th>{VACANA.map(x => <th key={x}>{x}</th>)}</tr></thead>
             <tbody>{TIN_A.map((r, i) => <tr key={i}><th>{PURUSHA[i]}</th>{r.map(x => <td key={x} className="ln-deva">{x}</td>)}</tr>)}</tbody></table></div>
         </div>
-        <p>Every language distinguishes the speaker, the listener and others (the thesis, 4.8.8 Person / Deixis), and most also mark number (4.8.9). So the 3 × 3 grid of meanings is found everywhere, even where the verb itself does not change (Chinese, Japanese state it with a pronoun or leave it to context). Some languages make finer person distinctions; see the open point below.</p>
+        <p>Every language distinguishes the speaker, the listener and others. Most languages also mark number. The 3 × 3 pattern of person and number is therefore found everywhere, even where the verb itself does not change.</p>
       </Card>
 
       <AgreementCard />
       <Card title="दश लकाराः · Ten tenses and moods">
-        <p>The same nine endings are set in ten <b>lakāras</b> (Classical Sanskrit; the Veda also has an eleventh, लेट्): six describe <b>time</b> and four describe the speaker's <b>attitude</b> (command, wish, blessing, condition). Modern linguistics calls these tense, aspect and mood (thesis 4.8.6.6–8). Pāṇini fixed each by its meaning:</p>
+        <p>The same nine endings appear in ten <b>lakāras</b>: six describe <b>time</b>, while four express a speaker's attitude—command, wish, blessing or condition.</p>
         <LakaraScene />
         <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>लकारः</th><th>Pāṇini</th><th>meaning</th><th>{v.w} · हिन्दी</th><th>{v.w} · తెలుగు</th></tr></thead>
           <tbody>{LAKARA_ORDER.map(l => grid[l] && <tr key={l}><th>{LAKARA[l][0]}</th><td className="ln-deva">{LAK_INFO[l][0]}</td><td>{LAK_INFO[l][1]}</td>
@@ -306,18 +577,6 @@ const Dhatu: React.FC = () => {
           }))}</tbody></table></div>
       </Card>
 
-      <Card title="विमर्शः · Testing the claim against hard cases" tone="ln-check rv-only">
-        <ul className="ln-points">
-          <li><b>Progressive aspect (English “is going”, Telugu వెళ్తున్నాడు).</b> Sanskrit लट् covers both “goes” and “is going”. Where the ongoing sense must be stressed, it uses the participle with अस् (गच्छन् अस्ति). This is a combination of forms, not a missing one.</li>
-          <li><b>Evidentiality (Turkish -miş, Quechua, Tibetan): “I didn't see it myself.”</b> Pāṇini defines लिट् by <i>परोक्षे</i> (out of the speaker's sight), an interesting parallel. In classical usage, though, लिट् is mainly a narrative remote past, not a grammatical evidential. Sanskrit expresses hearsay with किल, इति श्रूयते.</li>
-          <li><b>Gender and object in the verb (Arabic, Hebrew, Hindi; Georgian, Basque, Swahili).</b> Arabic verbs have 13 forms, not 9, because the 2nd and 3rd persons also mark gender (Hindi जाता / जाती does the same). Georgian and Basque verbs agree with the object too. The 3 × 3 grid holds for <b>meaning</b>; these languages add more information to the <b>form</b>.</li>
-          <li><b>Polite and honorific verb forms (Japanese keigo, Korean -시-, Telugu -ండి).</b> These are a separate respect scale. Sanskrit expresses respect with भवान् plus the 3rd person (भवान् गच्छतु). Same grid, different setting.</li>
-          <li><b>Languages with no dual (most of them).</b> They use a number word: “you two”, మీరిద్దరు, हम दोनों. The dual place still exists in meaning.</li>
-          <li><b>Causative, desiderative, intensive (कारयति, पिपठिषति, …).</b> The suffixes णिच्, सन् and यङ् make a <b>new root</b>, which again has its own 9 × 10 grid. The same is true of nāmadhātus, which are excluded here.</li>
-          <li className="ln-open"><b>Open point: clusivity.</b> Telugu మనం “we, including you” and మేము “we, without you” (Tamil நாம் / நாங்கள், also many languages of the Pacific and the Americas) are a real distinction of meaning in the person grid. Sanskrit अस्मद् and the 3 × 3 grid have no separate place for it; Sanskrit can only paraphrase (अहं च त्वं च). This affects pronouns and verbs, not the 24 noun forms.</li>
-          <li><b>Non-finite forms (participles, infinitives, gerunds).</b> These are कृदन्त words. They leave the verb grid and become nouns (24 forms) or avyayas (one form). See the धातुकोशः for every root's kṛdantas.</li>
-        </ul>
-      </Card>
     </div>
   );
 };
@@ -341,7 +600,7 @@ const Avyaya: React.FC = () => {
           <li><b>कृदन्तानि:</b> गन्तुम् (कृन्मेजन्तः 1.1.39); गत्वा, आगत्य (क्त्वातोसुन्कसुनः 1.1.40), made from verbs</li>
           <li><b>तद्धितान्तानि:</b> ततः, तत्र, तदा, तर्हि, सर्वदा, सर्वथा … made from pronouns and nouns (तद्धितश्चासर्वविभक्तिः 1.1.38)</li>
         </ul>
-        <p>In the thesis tree of stems (4.7.2.2.4), the प्रातिपदिकम् has six kinds: कृदन्तम्, तद्धितान्तम्, अव्युत्पन्नम्, अनुकरणम्, संज्ञा and अव्ययम्.</p>
+        <p>In Sanskrit, a stem is understood in six useful kinds: कृदन्तम्, तद्धितान्तम्, अव्युत्पन्नम्, अनुकरणम्, संज्ञा and अव्ययम्.</p>
         <div className="ln-tree"><span className="ln-tree-root">प्रातिपदिकम्</span><div className="ln-tree-kids">{["कृदन्तम्", "तद्धितान्तम्", "अव्युत्पन्नम्", "अनुकरणम्", "संज्ञा", "अव्ययम्"].map(k => <span key={k}>{k}</span>)}</div></div>
       </Card>
 

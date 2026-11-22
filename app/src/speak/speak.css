@@ -99,6 +99,9 @@
 @media (max-width: 560px) {
   .sp-steps { grid-template-columns: repeat(3, 1fr); }
   .sp-step span:last-child { display: none; }
+  .sp-levels { grid-template-columns: 1fr; }
+  .sp-lessons { grid-template-columns: 1fr; }
+  .sp-level, .sp-lesson, .sp-step, .sp-go, .sp-ghost, .sp-chip, .sp-tile { min-height: 44px; }
   .sp-continue .sp-go { width: 100%; }
   .sp-cards { grid-template-columns: 1fr; }
 }

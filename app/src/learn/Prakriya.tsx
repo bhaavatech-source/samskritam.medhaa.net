@@ -192,10 +192,6 @@ export const Prakriya: React.FC = () => {
       <Card title="पदनिष्पत्तिः · Every word, step by step">
         <Stepper start={9} />
       </Card>
-      <Card title="विमर्शः · Changes made to the Gold text" tone="ln-check rv-only">
-        <div className="ln-table-wrap"><table className="ln-table"><thead><tr><th>where</th><th>Gold text</th><th>now</th></tr></thead>
-          <tbody>{PRAKRIYA.fixes.map(([w, a, b], k) => <tr key={k}><td>{w}</td><td className="ln-deva">{a}</td><td className="ln-deva">{b}</td></tr>)}</tbody></table></div>
-      </Card>
     </div>
   );
 };

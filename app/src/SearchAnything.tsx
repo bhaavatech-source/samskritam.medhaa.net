@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { FormFinder } from "./search/FormFinder";
 import {
-  AVYAYA, AVYAYA_CATS, ERRORS, GRAMMAR, KRT, LAKARA_INFO, LANGS, PADACCHEDA, PADYA, PRAKRIYA, SAMANVAYA, SENTENCES, VERBS, WORDS,
-  loadDhatu400Data, loadUnadi, loadUpasargaForms,
+  AVYAYA, AVYAYA_CATS, COMPOSITION, CURRICULUM, ERRORS, GRAMMAR, KRT, LAKARA_INFO, LANGS, PADACCHEDA, PADYA, PRAKRIYA, SAMANVAYA, SENTENCES, VERBS, WORDS,
+  loadDhatu400Data, loadUnadi, loadUpasargaForms, loadAlankara, loadChandas,
 } from "./data";
 import playDhatu from "./data/play_dhatu.json";
 import krtLexicon from "./data/krtlex.json";
@@ -9,7 +10,7 @@ import sambhashanam from "./data/sambhashanam.json";
 import { TOPICS } from "./play/topics";
 import "./search.css";
 
-type SearchSection = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar";
+type SearchSection = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar" | "sahitya";
 type SearchHit = { id: string; section: SearchSection; sectionName: string; title: string; path: string; text: string; normalized: string };
 type SearchSource = { data: unknown; section: SearchSection; name: string };
 
@@ -21,12 +22,14 @@ const SOURCES: SearchSource[] = [
   { data: AVYAYA, section: "sentences", name: "Indeclinables" },
   { data: AVYAYA_CATS, section: "sentences", name: "Indeclinable categories" },
   { data: ERRORS, section: "sentences", name: "Corrections" },
-  { data: PADACCHEDA, section: "sentences", name: "Ślokas" },
-  { data: PADYA, section: "sentences", name: "Verse analysis" },
+  { data: PADACCHEDA, section: "sahitya", name: "Ślokas" },
+  { data: PADYA, section: "sahitya", name: "Verse analysis" },
   { data: GRAMMAR, section: "grammar", name: "Grammar" },
   { data: LAKARA_INFO, section: "grammar", name: "Tense and mood meanings" },
   { data: PRAKRIYA, section: "learn", name: "Word derivations" },
   { data: SAMANVAYA, section: "learn", name: "Sentence analysis" },
+  { data: CURRICULUM, section: "learn", name: "Learner curricula" },
+  { data: COMPOSITION, section: "learn", name: "Sanskrit composition" },
   { data: playDhatu, section: "play", name: "Root games" },
   { data: TOPICS, section: "play", name: "Learning path topics" },
   { data: krtLexicon, section: "verbs", name: "Kṛt lexicon" },
@@ -82,14 +85,15 @@ function makeSearchIndex(sources: SearchSource[], extended: unknown[]): SearchHi
   };
 
   for (const source of sources) visit(source.data, source.section, source.name, [source.name]);
-  extended.forEach((data, index) => visit(data, index === 0 ? "verbs" : "verbs", index === 0 ? "Expanded verb forms" : index === 1 ? "Uṇādi dictionary" : "Prefixed verb forms", [index === 0 ? "Expanded verb forms" : index === 1 ? "Uṇādi dictionary" : "Prefixed verb forms"]));
+  const EXT: [SearchSection, string][] = [["verbs", "Expanded verb forms"], ["verbs", "Uṇādi dictionary"], ["verbs", "Prefixed verb forms"], ["sahitya", "Alaṅkāras"], ["sahitya", "Metres"]];
+  extended.forEach((data, index) => visit(data, EXT[index][0], EXT[index][1], [EXT[index][1]]));
   return hits;
 }
 
 let searchIndexPromise: Promise<SearchHit[]> | null = null;
 function loadSearchIndex(): Promise<SearchHit[]> {
-  searchIndexPromise ??= Promise.all([loadDhatu400Data(), loadUnadi(), loadUpasargaForms()])
-    .then(([dhatus, unadi, upasarga]) => makeSearchIndex(SOURCES, [dhatus, unadi, upasarga]))
+  searchIndexPromise ??= Promise.all([loadDhatu400Data(), loadUnadi(), loadUpasargaForms(), loadAlankara(), loadChandas()])
+    .then(([dhatus, unadi, upasarga, alankara, chandas]) => makeSearchIndex(SOURCES, [dhatus, unadi, upasarga, alankara.alankaras, chandas.vrittas]))
     .catch(error => { searchIndexPromise = null; throw error; });
   return searchIndexPromise;
 }
@@ -135,7 +139,7 @@ export const SearchAnything: React.FC<{ onNavigate: (section: SearchSection) => 
   return (
     <main className="sa-page">
       <header className="sa-heading">
-        <h2>🔎 Search Anything <span>· अन्वेषणम्</span></h2>
+        <h2>🔎 Search Anything <span>· अन्विष्यताम्</span></h2>
         <p>Search words, forms, meanings, conversations, verses and grammar in any supported language.</p>
       </header>
       <label className="sa-input-wrap">
@@ -144,12 +148,13 @@ export const SearchAnything: React.FC<{ onNavigate: (section: SearchSection) => 
           type="search"
           value={query}
           onChange={event => { setQuery(event.target.value); setVisible(MAX_RESULTS); }}
-          placeholder="Search in any script or language…"
+          placeholder="Search in any script or language, or type any form: अवाप, रामेण…"
           aria-label="Search all site content in any language"
           autoFocus
         />
       </label>
       <p className="sa-hint">Try Sanskrit, IAST, English, हिन्दी, తెలుగు, العربية, 中文, 日本語, or any other supported language.</p>
+      <FormFinder q={query} />
 
       {loading && <p className="sa-status" role="status">Searching all site content…</p>}
       {error && <p className="sa-error" role="alert">Search could not load all site content: {error}</p>}

@@ -8,3 +8,7 @@ To rebuild (only needed when roots or upasarga combinations are added):
 1. Add `lib.rs` (as `src/lib.rs`) and `batch.rs` (as a `[[bin]]` named `rupa-batch`) to a crate that depends on `vidyut-prakriya`.
 2. `cargo build --release`
 3. `python tools/build_rupa_tables.py <path to rupa-batch> <path to vidyut-prakriya/data/dhatupatha.tsv>`
+
+The batch program also reads an optional third input column, a sanādi suffix: `Ric` (णिच्, causative) or `san` (सन्,
+desiderative). `tools/build_form_index.py <path to rupa-batch> <path to dhatupatha.tsv>` uses it to make
+`tools/sanadi_forms.json`, the causative and desiderative forms of the form search.

@@ -5,6 +5,8 @@
 //  (see tools/README.md). Do not hand-edit them; flag errors in the app.
 // ═══════════════════════════════════════════════════════════════
 import wordsJson from "./words.json";
+import curriculumJson from "./curriculum.json";
+import compositionJson from "./composition.json";
 import verbsJson from "./verbs.json";
 import krtJson from "./krt.json";
 import sentencesJson from "./sentences.json";
@@ -17,6 +19,8 @@ import dhatu400TinantaUrl from "../../../dhatu_400_tinanta.json?url";
 import dhatu400KrtUrl from "../../../dhatu_400_krt.json?url";
 import upasargaFormsUrl from "./upasarga_forms.json?url";
 import unadiUrl from "./unadi.json?url";
+import alankaraUrl from "./alankara.json?url";
+import chandasUrl from "./chandas.json?url";
 
 /** a meaning in one language: [text, how it was sourced] */
 export type Meaning = [string, string];
@@ -53,6 +57,29 @@ export type Padaccheda = { id: string; sloka: string; padas: string[] };
 export type Avyaya = { sa: string; cat: string; en: string; hi: string; te: string };
 
 export const WORDS = wordsJson as unknown as Word[];
+export type CurriculumChallenge = {
+  id: string; topic: string; prompt_sa: string; prompt_en: string; options: string[]; answer: string;
+  explanation_sa: string; explanation_en: string; explanation_hi: string; explanation_te: string; points: number;
+};
+export type CurriculumModule = {
+  id: string; name_sa: string; name_en: string; description: string; theory: string[]; challenges: CurriculumChallenge[];
+};
+export type CurriculumTrack = {
+  title: string; audience: string; level: string; description: string; modules: CurriculumModule[];
+};
+export const CURRICULUM = curriculumJson as unknown as Record<"school" | "college" | "university", CurriculumTrack>;
+export type CompositionChallenge = {
+  question_sa: string; question_en: string; options: string[]; answer: string;
+  explanation_en: string; explanation_hi: string; explanation_te: string;
+};
+export type CompositionQuest = {
+  id: string; level: string; type: string; title_sa: string; title_en: string; context: string;
+  framework: Record<string, string>; subhashita: Record<string, string>;
+  manjusha: unknown[]; templates: string[]; model: unknown; cloze: string[];
+  challenge: CompositionChallenge;
+};
+export type CompositionSet = { title: string; description: string; total: number; quests: CompositionQuest[] };
+export const COMPOSITION = compositionJson as unknown as Record<"paragraph" | "picture" | "letter", CompositionSet>;
 export const VERBS = verbsJson as unknown as Verb[];
 export const KRT = krtJson as unknown as KrtRoot[];
 export type Dhatu400Cell = {
@@ -286,3 +313,69 @@ export type Derivation = { w: string; en: string; steps: [string, string][] };
 export const PRAKRIYA = prakriyaJson as unknown as {
   prakriti: Record<string, any>; prakriya: Record<string, any>; derivations: Derivation[]; fixes: [string, string, string][];
 };
+
+// ── साहित्यम्: अलङ्काराः and छन्दांसि (built by tools/build_sahitya.py; loaded when the tab opens) ──
+export type L4 = { sa: string; en: string; te: string; hi: string };
+export type Alankara = {
+  id: string; name: { sa: string; iast: string; te: string; hi: string; en: string }; category: string;
+  lakshana: { sloka_sa: string; meaning_sa: string; meaning_en: string; meaning_te: string; meaning_hi: string; source_reference: string };
+  elements?: { element_sa: string; element_en: string; element_te: string; element_hi: string }[];
+  types?: { type_name_sa: string; type_name_en: string; description_en: string; description_te: string; description_hi: string }[];
+  primary_example: { sloka_sa: string; anvaya: string; bhaava_sa: string; bhaava_en: string; bhaava_te: string; bhaava_hi: string; source_reference: string };
+  alankara_samanvaya: L4;
+  anya_udaharanani?: { sloka_sa: string; source_reference: string; note_en: string }[];
+  shodhana_tippani: string[];
+};
+export type Vritta = {
+  id: string; name: { sa: string; iast: string; te: string; hi: string; en: string };
+  chandas_class: { tier: number; name_sa: string; syllables_per_pada: number | string; total_syllables: number | string; metrical_type: string };
+  gana_structure: { ganas_sa?: string; description_sa?: string; symbols?: string; symbols_pada_1_3?: string; symbols_pada_2_4?: string; symbols_odd?: string; symbols_even?: string };
+  yati: { yati_sa: string; yati_en: string; yati_te: string; yati_hi: string };
+  lakshana: { sloka_sa: string; source_reference: string; meaning_sa: string; meaning_en: string; meaning_te: string; meaning_hi: string };
+  metre: import("../sahitya/scan").Metre;
+  primary_example?: { sloka_sa: string; anvaya: string; source_reference: string; bhaava_sa: string; bhaava_en: string; bhaava_te: string; bhaava_hi: string };
+  prastara_and_samanvaya?: L4;
+  example_note?: { sa: string; en: string };
+  vr_check?: { vr?: string; line?: string; en: string };
+};
+export type VRMetre = { vr: number; name: string; ganas: string; pattern: string; yati: string; line: string; scans: boolean; aliases?: string[]; note?: string; detail?: string };
+export type ChandasClass = {
+  n: number; name: string; alt: string; alt2: string; group: string; patterns: number; vrittas: VRMetre[];
+  vedic?: { vedic_syllables: string; en: string; te: string; hi: string };
+};
+export type ChGroup = { sa: string; en: string; te: string; hi: string; note_en: string };
+export type Gana = { id: string; name: { sa: string; en: string }; symbol: string; pattern: string; mnemonic: string };
+export type Chandas = {
+  framework: {
+    etymology_and_definition: L4;
+    laghu_guru_system: {
+      definition_rule: { sloka_sa: string };
+      laghu: { symbol: string; description_sa: string; description_en: string; description_te: string; description_hi: string };
+      guru: { symbol: string; conditions: { condition_sa: string; condition_en: string; condition_te: string; condition_hi: string }[] };
+    };
+    ashta_ganas: Gana[];
+    twenty_six_akshara_chandas_classes: { tier: number; name_sa: string; syllables_per_pada: number; example_vrittas: string }[];
+  };
+  vrittas: Vritta[];
+  classes: ChandasClass[];
+  groups: Record<string, ChGroup>;
+  vedic_classes: { sa: string; en: string; counts: number[] }[]; vedic_classes_note: string;
+  variants: { sa: string; en: string; d_en: string; d_te: string; d_hi: string }[]; variants_note: string;
+  kinds: { sa: string; en: string; te: string; hi: string }[]; vr_defs: string[]; vr_names: string[];
+  dandaka: { vr: number; name: string; ganas: string; line: string }[];
+  jati: string[]; ardhasama: { name: string; ganas: string; pats: string[] }[]; vishama: string[];
+  source: string;
+};
+let alankara: Promise<{ base_edition: string; alankaras: Alankara[] }> | undefined;
+let chandas: Promise<Chandas> | undefined;
+export function loadAlankara() {
+  alankara ??= fetch(alankaraUrl).then(r => { if (!r.ok) throw new Error(`Could not load the alaṅkāras (HTTP ${r.status}).`); return r.json(); });
+  return alankara;
+}
+export function loadChandas() {
+  chandas ??= fetch(chandasUrl).then(r => { if (!r.ok) throw new Error(`Could not load the metres (HTTP ${r.status}).`); return r.json(); });
+  return chandas;
+}
+/** pick a 4-language field: obj[prefix+lang], falling back to English */
+export const pick4 = (o: Record<string, unknown>, prefix: string, lang: string): string =>
+  String(o[prefix + lang] ?? o[prefix + "en"] ?? "");
