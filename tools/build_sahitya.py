@@ -1,7 +1,7 @@
 """tools/build_sahitya.py — builds the data of the साहित्यम् section's अलङ्काराः and छन्दांसि tabs.
 
 Reads (nothing is edited):
-  data-source/26-alankara/alankaras_corrected_2026-11-22.json
+  data-source/26-alankara/alankaras_complete-v3.json
   data-source/27-chandas-vrittas/chandas_vrittas_complete_corrected.json
   data-source/27-chandas-vrittas/chandas_classes_2026-11-22.py   (26 classes, Vṛttaratnākara lists, Vedic notes)
 Writes:
@@ -150,8 +150,6 @@ out = {"framework": fw, "vrittas": vr, "classes": classes, "groups": K["GROUPS"]
 json.dump(out, open(P("app/src/data/chandas.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 print(sum(len(c["vrittas"]) for c in classes), "VR metres in", len(classes), "classes;", sum(1 for e in vr3 if e["pattern"] and not e["scans"]), "definitions that do not scan")
 
-A = json.load(open(P("data-source/26-alankara/alankaras_corrected_2026-11-22.json"), encoding="utf-8"))
-keep = ("id", "name", "category", "lakshana", "elements", "types", "primary_example", "alankara_samanvaya", "anya_udaharanani", "shodhana_tippani")
-al = [{k: a[k] for k in keep if k in a} for a in A["alankaras"]]
-json.dump({"base_edition": A["base_edition"], "alankaras": al}, open(P("app/src/data/alankara.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-print(len(vr), "vṛttas,", len(al), "alaṅkāras")
+A = json.load(open(P("data-source/26-alankara/alankaras_complete-v3.json"), encoding="utf-8"))
+json.dump(A, open(P("app/src/data/alankara.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+print(len(vr), "vṛttas,", len(A["alankaras"]), "alaṅkāras")

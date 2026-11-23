@@ -173,6 +173,7 @@ export const AlankaraDetail: React.FC<{ a: Alankara }> = ({ a }) => {
     <div className="ks-card">
       <div className="ks-head"><h3>{S(a.name.sa)}</h3><Speak t={a.name.sa} /></div>
       <p className="ks-sub">{a.name.iast} · {a.name.en} · {S(a.category)}</p>
+      <p className="sh-src">{S(a.source_text)}</p>
       <h4>लक्षणम् · Definition</h4>
       {!same && <Verse t={L.sloka_sa} />}
       {same && <p className="ks-note-plain">{S(L.sloka_sa)}</p>}
@@ -193,10 +194,23 @@ export const AlankaraDetail: React.FC<{ a: Alankara }> = ({ a }) => {
       {a.types && <><h4>भेदाः · Kinds</h4>
         <table className="ks-karaka"><tbody>{a.types.map(t => <tr key={t.type_name_sa}><td className="ks-l-sa">{S(t.type_name_sa)}</td>
           <td dir="auto"><b>{t.type_name_en}</b><br />{S(pick4(t, "description_", lang))}</td></tr>)}</tbody></table></>}
-      {a.anya_udaharanani && <><h4>अन्यानि उदाहरणानि · More examples</h4>
-        {a.anya_udaharanani.map((x, i) => <div key={i} className="sh-more"><Verse t={x.sloka_sa} /><p className="sh-src">{S(x.source_reference)}</p><p className="ks-l-en">{x.note_en}</p></div>)}</>}
-      <details className="sh-fix"><summary>शोधनम् · What was corrected in this entry ({a.shodhana_tippani.length})</summary>
-        <ul>{a.shodhana_tippani.map((n, i) => <li key={i}>{S(n)}</li>)}</ul></details>
+      {(a.additional_examples?.length || a.anya_udaharanani?.length) ? <><h4>अन्यानि उदाहरणानि · More examples</h4>
+        {(a.additional_examples ?? a.anya_udaharanani ?? []).map((x, i) => <div key={i} className="sh-more"><Verse t={x.sloka_sa} /><p className="sh-src">{S(x.source_reference)}</p>{x.note_en && <p className="ks-l-en">{x.note_en}</p>}</div>)}</> : null}
+      {a.kuvalayananda && <details className="sh-fix">
+        <summary>कुवलयानन्दः · Kuvalayānanda</summary>
+        {a.kuvalayananda.note && <p>{S(a.kuvalayananda.note)}</p>}
+        {a.kuvalayananda.name_sa && <p className="ks-l-sa">{S(a.kuvalayananda.name_sa)}{a.kuvalayananda.number ? ` · ${a.kuvalayananda.number}` : ""}{a.kuvalayananda.printed_pages ? ` · p. ${a.kuvalayananda.printed_pages}` : ""}</p>}
+        {a.kuvalayananda.karikas?.map((k, i) => <div key={i} className="sh-more">
+          <Verse t={k.sloka_sa} />
+          <p className="ks-l-en">{k.role}{k.printed_page ? ` · p. ${k.printed_page}` : ""}</p>
+        </div>)}
+        {a.kuvalayananda.examples?.map((x, i) => <div key={i} className="sh-more">
+          <Verse t={x.sloka_sa} /><p className="sh-src">{x.source_reference && S(x.source_reference)}</p>{x.note_en && <p className="ks-l-en">{x.note_en}</p>}
+        </div>)}
+        {a.kuvalayananda.corresponds_to?.map((x, i) => <p key={i} className="ks-l-en">{S(x.name_sa)} · {x.number}{x.printed_page ? ` · p. ${x.printed_page}` : ""} · {x.status}</p>)}
+      </details>}
+      {a.shodhana_tippani && <details className="sh-fix"><summary>शोधनम् · What was corrected in this entry ({a.shodhana_tippani.length})</summary>
+        <ul>{a.shodhana_tippani.map((n, i) => <li key={i}>{S(n)}</li>)}</ul></details>}
       <p className="ks-id">{a.id}</p>
     </div>
   );
@@ -204,8 +218,8 @@ export const AlankaraDetail: React.FC<{ a: Alankara }> = ({ a }) => {
 
 const AlankaraTab: React.FC = () => {
   const S = useSa(); const lang = useLang();
-  const [d, setD] = useState<Alankara[] | null>(null); const [ed, setEd] = useState(""); const [err, setErr] = useState("");
-  useEffect(() => { loadAlankara().then(x => { setD(x.alankaras); setEd(x.base_edition); }, e => setErr(String(e.message ?? e))); }, []);
+  const [d, setD] = useState<Alankara[] | null>(null); const [datasetTitle, setDatasetTitle] = useState(""); const [err, setErr] = useState("");
+  useEffect(() => { loadAlankara().then(x => { setD(x.alankaras); setDatasetTitle(x.title); }, e => setErr(String(e.message ?? e))); }, []);
   if (err) return <p className="ks-none">{err}</p>;
   if (!d) return <p className="ks-none">Loading…</p>;
   return (<>
@@ -213,9 +227,9 @@ const AlankaraTab: React.FC = () => {
       <p>{S("शब्दार्थयोः प्रसिद्ध्या वा कवेः प्रौढिवशेन वा । हारादिवदलङ्कारः सन्निवेशो मनोहरः ॥")} <span className="ks-l-en">(चन्द्रालोकः ५.१)</span></p>
       <p>An alaṅkāra is a charming arrangement of sound or sense, like a necklace on the body of poetry. Figures of sound (शब्दालङ्काराः)
         play with letters — अनुप्रासः, यमकम्; figures of meaning (अर्थालङ्काराः) play with ideas — उपमा, रूपकम्, उत्प्रेक्षा.</p>
-      <p className="ks-l-en">Definitions and examples follow {S(ed)}. Most of Jayadeva's verses give the definition in the first half and an example in the second.</p></details>
+      <p className="ks-l-en">{datasetTitle} · {d.length} figures collected from classical Sanskrit poetics. Each entry cites its source.</p></details>
     <ListDetail items={d} idOf={a => a.id} kind="grammar" placeholder="Search a figure: उपमा, simile…"
-      search={a => [a.name.sa, a.name.iast, a.name.en, a.name.te, a.name.hi, a.lakshana.sloka_sa, a.primary_example.sloka_sa, pick4(a.lakshana, "meaning_", lang)].join(" ")}
+      search={a => [a.name.sa, a.name.iast, a.name.en, a.name.te, a.name.hi, a.category, a.source_text, a.lakshana.sloka_sa, a.primary_example.sloka_sa, pick4(a.lakshana, "meaning_", lang), a.kuvalayananda?.name_sa ?? "", a.kuvalayananda?.note ?? ""].join(" ")}
       label={a => <><span className="ks-l-sa">{S(a.name.sa)}</span><span className="ks-l-en">{a.name.en}</span></>}
       detail={a => <AlankaraDetail a={a} />} />
   </>);

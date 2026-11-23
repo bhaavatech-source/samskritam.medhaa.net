@@ -16,6 +16,9 @@ cd app
 npm run build
 ```
 
+## build_sahitya.py
+`python tools/build_sahitya.py` reads `data-source/26-alankara/alankaras_complete-v3.json` and writes the complete Alankāra dataset to `app/src/data/alankara.json`, alongside the generated Chandas data.
+
 ## build_grammar.py
 `python tools/build_grammar.py` → `app/src/data/grammar.json` (sandhi, samāsa, kṛt suffixes, upasargas) from the Gold files plus the reviewed corrections in `data-source/12-samasa/` and `data-source/13-sandhi/`. `--list` prints every sandhi example with the index used in the corrections file.
 

@@ -375,22 +375,30 @@
 @keyframes an-flicker { from { transform: scale(1) rotate(-3deg); opacity: .85; } to { transform: scale(1.12) rotate(3deg); opacity: 1; } }
 
 @media (max-width: 560px) {
-  .an-eq { font-size: 1.2rem; gap: 6px; }
-  .an-result { font-size: 1.3rem; }
+  .an-eq { font-size: 1.05rem; gap: 4px; min-height: 3.6rem; }
+  .an-tile { padding: 5px 8px; }
+  .an-result { font-size: 1.15rem; padding: 5px 10px; }
   .an-film-form { font-size: 1.7rem; }
   .an-lk { font-size: .8rem; padding: 2px 6px; }
   .an-fire { display: none; }
   .an-scene { padding: 12px 10px 8px; border-radius: 16px; }
   .an-scene { max-width: 100%; }
   .an-scene * { min-width: 0; }
-  .an-scene-title { line-height: 1.45; }
+  .an-scene-title { line-height: 1.45; font-size: .82rem; }
   .an-pick button { min-height: 44px; padding: 6px 10px; }
+  .an-ctrl { gap: 4px; }
   .an-ctrl button { min-width: 44px; height: 44px; }
   .an-ctrl .an-play { min-width: 44px; }
+  .an-dots { display: none; }
+  .an-count { min-width: 48px; text-align: center; font-size: .78rem; }
   .an-grid24, .an-grid9 { width: 100%; gap: 3px; }
+  .an-grid24 { grid-template-columns: minmax(4.8rem, .85fr) repeat(3, minmax(0, 1fr)); }
   .an-grid24.small { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .an-gh { font-size: .72rem; padding: 2px; overflow-wrap: anywhere; }
-  .an-cell { min-height: 44px; height: auto; font-size: .9rem; padding: 4px 2px; overflow-wrap: anywhere; }
+  .an-gh { min-height: 36px; font-size: .78rem; font-weight: 700; color: #475569; padding: 3px 2px; overflow-wrap: anywhere; }
+  .an-grid24 > .an-gh:first-of-type { color: #64748b; }
+  .an-cell { min-height: 48px; height: auto; font-size: 1rem; font-weight: 700; padding: 4px 2px; overflow-wrap: anywhere; }
+  .an-cell.full { background: #fff; border-color: rgba(190,24,93,.32); }
+  .an-cell.now { border-width: 3px; background: #fdf2f8; box-shadow: 0 0 0 2px rgba(190,24,93,.10); }
   .an-stage { min-height: 7.2rem; }
   .an-bubble { min-height: 44px; max-width: 100%; font-size: 1.25rem; overflow-wrap: anywhere; }
   .an-pot { flex-wrap: wrap; gap: 6px; text-align: center; }

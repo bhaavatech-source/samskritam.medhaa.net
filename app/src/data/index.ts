@@ -318,13 +318,22 @@ export const PRAKRIYA = prakriyaJson as unknown as {
 export type L4 = { sa: string; en: string; te: string; hi: string };
 export type Alankara = {
   id: string; name: { sa: string; iast: string; te: string; hi: string; en: string }; category: string;
+  source_text: string;
   lakshana: { sloka_sa: string; meaning_sa: string; meaning_en: string; meaning_te: string; meaning_hi: string; source_reference: string };
   elements?: { element_sa: string; element_en: string; element_te: string; element_hi: string }[];
   types?: { type_name_sa: string; type_name_en: string; description_en: string; description_te: string; description_hi: string }[];
   primary_example: { sloka_sa: string; anvaya: string; bhaava_sa: string; bhaava_en: string; bhaava_te: string; bhaava_hi: string; source_reference: string };
   alankara_samanvaya: L4;
   anya_udaharanani?: { sloka_sa: string; source_reference: string; note_en: string }[];
-  shodhana_tippani: string[];
+  additional_examples?: { sloka_sa: string; source_reference: string; note_en?: string }[];
+  kuvalayananda?: {
+    status: string; note?: string; number?: number; name_sa?: string;
+    printed_pages?: string | number; page_note?: string;
+    karikas?: { karika_no: number; sloka_sa: string; printed_page?: number; role?: string; verification_note?: string }[];
+    examples?: { sloka_sa: string; source_reference?: string; note_en?: string }[];
+    corresponds_to?: { number: number; name_sa: string; printed_page?: number; status?: string }[];
+  };
+  shodhana_tippani?: string[];
 };
 export type Vritta = {
   id: string; name: { sa: string; iast: string; te: string; hi: string; en: string };
@@ -366,10 +375,15 @@ export type Chandas = {
   jati: string[]; ardhasama: { name: string; ganas: string; pats: string[] }[]; vishama: string[];
   source: string;
 };
-let alankara: Promise<{ base_edition: string; alankaras: Alankara[] }> | undefined;
+export type AlankaraData = {
+  title: string; description: string; total_alankaras: number; alankaras: Alankara[];
+  kuvalayananda_integration: Record<string, unknown>; kuvalayananda_index: Record<string, unknown>[];
+  references: unknown[];
+};
+let alankara: Promise<AlankaraData> | undefined;
 let chandas: Promise<Chandas> | undefined;
 export function loadAlankara() {
-  alankara ??= fetch(alankaraUrl).then(r => { if (!r.ok) throw new Error(`Could not load the alaṅkāras (HTTP ${r.status}).`); return r.json(); });
+  alankara ??= fetch(alankaraUrl).then(r => { if (!r.ok) throw new Error(`Could not load the alaṅkāras (HTTP ${r.status}).`); return r.json() as Promise<AlankaraData>; });
   return alankara;
 }
 export function loadChandas() {
