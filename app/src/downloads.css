@@ -1,0 +1,36 @@
+/* ═══════════════════════════════════════════════════════════════
+   downloads.css — डाउनलोड्यम् · free, downloadable data
+   ═══════════════════════════════════════════════════════════════ */
+.dl-wrap { max-width: 880px; margin: 0 auto; padding: 18px 16px 48px; }
+.dl-head { text-align: center; margin-bottom: 22px; }
+.dl-eyebrow { color: #166534; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.dl-head h2 { margin: 4px 0 10px; color: var(--ink, #1e293b); font-size: 1.6rem; line-height: 1.3; }
+.dl-head h2 small { display: block; margin-top: 2px; color: var(--muted, #526079); font-size: 1rem; font-weight: 600; }
+.dl-copy { max-width: 620px; margin: 0 auto 16px; color: var(--muted, #526079); font-size: .95rem; line-height: 1.55; }
+
+.dl-btn { min-height: 44px; padding: 8px 16px; border-radius: 10px; border: 1px solid var(--card-border, rgba(148,163,184,.28));
+  background: rgba(255,255,255,.85); color: var(--ink, #1e293b); font-size: .9rem; font-weight: 700; cursor: pointer; transition: transform .12s, box-shadow .12s; }
+.dl-btn:hover:not(:disabled) { transform: translateY(-1px); box-shadow: var(--shadow-soft, 0 10px 30px rgba(99,102,241,.1)); }
+.dl-btn:disabled { opacity: .6; cursor: default; }
+.dl-btn-all { background: linear-gradient(135deg, #f97316, #ec4899); color: #fff; border: none; font-size: .95rem; }
+.dl-btn-json { color: #3730a3; }
+.dl-btn-csv { color: #166534; }
+
+.dl-list { display: flex; flex-direction: column; gap: 10px; }
+.dl-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px;
+  padding: 14px 16px; border-radius: 14px; background: var(--card, rgba(255,255,255,.78));
+  border: 1px solid var(--card-border, rgba(148,163,184,.28)); box-shadow: var(--shadow-soft, 0 10px 30px rgba(99,102,241,.1)); }
+.dl-row-text h3 { margin: 0 0 2px; font-size: 1.02rem; color: var(--ink, #1e293b); }
+.dl-row-text h3 small { margin-left: 6px; font-weight: 600; color: var(--muted, #526079); font-size: .82rem; }
+.dl-row-text p { margin: 0; color: var(--muted, #526079); font-size: .84rem; }
+.dl-row-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dl-status { font-size: .8rem; font-weight: 700; color: var(--muted, #526079); }
+.dl-status-ok { color: #166534; }
+.dl-status-err { color: #be123c; }
+
+.dl-license { text-align: center; margin-top: 26px; color: var(--muted, #526079); font-size: .82rem; }
+
+@media (max-width: 540px) {
+  .dl-row { flex-direction: column; align-items: flex-start; }
+  .dl-row-actions { width: 100%; }
+}

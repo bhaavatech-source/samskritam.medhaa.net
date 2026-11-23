@@ -10,11 +10,13 @@ import { SamskritaVak } from "./vak/SamskritaVak";
 import { FlagDialog } from "./FlagUI";
 import { openFlag } from "./flags";
 import { LangPicker } from "./FlagUI";
+import { Downloads } from "./Downloads";
+import { SupportSection } from "./Support";
 
 // ── the game's name, in one place ──
 export const APP_NAME = { sa: "संस्कृतम्", en: "Saṃskṛtam", tagline: "Learn Saṃskṛtam by playing — words, forms and sentences" };
 
-type View = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar" | "sahitya" | "vak" | "search";
+type View = "learn" | "play" | "speak" | "words" | "verbs" | "sentences" | "grammar" | "sahitya" | "vak" | "search" | "downloads";
 type NavItem =
   | { type: "view"; v: View; icon: string; sa: string; en: string }
   | { type: "link"; href: string; icon: string; sa: string; en: string };
@@ -31,6 +33,7 @@ const NAV: NavItem[] = [
   { type: "link", href: "https://medhaa.net/games-static/devanagari-game/index.html", icon: "🪷", sa: "अक्षराभ्यासः", en: "Akṣarābhyāsaḥ" },
   { type: "view", v: "vak", icon: "🔊", sa: "संस्कृतवाक्", en: "Samskrita-vāk" },
   { type: "view", v: "search", icon: "🔎", sa: "अन्विष्यताम्", en: "Search Anything" },
+  { type: "view", v: "downloads", icon: "⬇️", sa: "डाउनलोड् कुर्वन्तु", en: "Downloads" },
 ];
 
 // faint floating letters behind everything (decorative)
@@ -60,7 +63,7 @@ const Backdrop: React.FC = () => (
 const readHash = (): View => {
   const h = location.hash.slice(1).split("/")[0];   // "#speak/2-03" → speak
   // "#game" was the old यात्रा, now part of क्रीडाङ्गणम्
-  return (["learn", "play", "speak", "words", "verbs", "sentences", "grammar", "sahitya", "vak", "search"] as View[]).includes(h as View) ? (h as View) : "play";
+  return (["learn", "play", "speak", "words", "verbs", "sentences", "grammar", "sahitya", "vak", "search", "downloads"] as View[]).includes(h as View) ? (h as View) : "play";
 };
 
 const App: React.FC = () => {
@@ -122,6 +125,7 @@ const App: React.FC = () => {
         : view === "sahitya" ? <SahityaBook />
         : view === "vak" ? <SamskritaVak />
         : view === "search" ? <SearchAnything onNavigate={setView} />
+        : view === "downloads" ? <Downloads />
         : <Play />}
 
       <footer className="app-footer">
@@ -146,6 +150,7 @@ const App: React.FC = () => {
           <nav className="app-footer-links" aria-label="Bhāva Tech websites">
             <a href="https://medhaa.net/" target="_blank" rel="noopener noreferrer">Medhaa.net</a>
             <a href="https://naada.medhaa.net/" target="_blank" rel="noopener noreferrer">naada.medhaa.net</a>
+            <SupportSection />
           </nav>
         </div>
       </footer>

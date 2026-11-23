@@ -1,0 +1,33 @@
+/* ═══════════════════════════════════════════════════════════════
+   support.css — small "Support" link next to the footer site links
+   ═══════════════════════════════════════════════════════════════ */
+.app-support-wrap { position: relative; display: inline-flex; }
+
+.app-footer-support-btn { min-height: 40px; display: inline-flex; align-items: center; padding: 4px 8px;
+  border-radius: 8px; border: none; background: none; color: #3730a3; font-size: .88rem; font-weight: 600;
+  text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-family: inherit; }
+.app-footer-support-btn:hover { color: #7c2d12; background: rgba(255,255,255,.65); }
+.app-footer-support-btn:focus-visible { outline: 3px solid #6366f1; outline-offset: 2px; }
+
+.app-support-panel { position: absolute; z-index: 20; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%);
+  width: min(320px, 86vw); padding: 14px; border-radius: 14px; text-align: left;
+  background: #fff; border: 1px solid rgba(15,23,42,.14); box-shadow: 0 14px 34px rgba(15,23,42,.16); }
+.app-support-copy { margin: 0 0 12px; color: #475569; font-size: .82rem; line-height: 1.5; }
+
+.app-support-bank { display: flex; flex-direction: column; gap: 6px; }
+.app-support-field { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; padding: 6px 10px; border-radius: 10px;
+  background: #f8fafc; border: 1px solid rgba(15,23,42,.1); }
+.app-support-field-label { flex: 1 1 100%; color: #64748b; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+.app-support-field-value { flex: 1 1 auto; color: #1e293b; font-size: .84rem; font-weight: 700; font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere; }
+.app-support-field-copy { flex: 0 0 auto; min-height: 26px; padding: 0 10px; border-radius: 999px; border: none;
+  background: #1e293b; color: #fff; font-size: .7rem; font-weight: 700; cursor: pointer; }
+.app-support-field-copy:hover { background: #0f172a; }
+.app-support-field-copy:focus-visible { outline: 3px solid #6366f1; outline-offset: 2px; }
+
+.app-support-hint { margin: 12px 0 0; color: #64748b; font-size: .74rem; line-height: 1.45; }
+.app-support-hint a { color: #166534; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 480px) {
+  .app-support-panel { left: auto; right: 0; transform: none; }
+}
